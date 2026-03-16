@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <title>IIOHR Apple Touch Icon</title>
+  <rect width="180" height="180" rx="36" fill="#F4F1EA"/>
+  <g transform="translate(26 26)">
+    <g stroke="#4A3526" stroke-width="6" fill="none">
+      <circle cx="64" cy="64" r="54"/>
+      <circle cx="64" cy="64" r="27"/>
+    </g>
+    <circle cx="64" cy="64" r="9" fill="#C8A47E" stroke="#4A3526" stroke-width="6"/>
+  </g>
+</svg>

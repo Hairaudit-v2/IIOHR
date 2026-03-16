@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>IIOHR Crest Favicon</title>
+  <g stroke="#4A3526" stroke-width="2.5" fill="none">
+    <circle cx="32" cy="32" r="27"/>
+    <circle cx="32" cy="32" r="13.5"/>
+  </g>
+  <circle cx="32" cy="32" r="5" fill="#C8A47E" stroke="#4A3526" stroke-width="2.5"/>
+</svg>

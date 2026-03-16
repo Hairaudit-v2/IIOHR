@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply or enquire — IIOHR. For doctors and clinics interested in the structured pathway for hair restoration training and surgeon development.">
+  <title>Apply or Enquire — IIOHR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">IIOHR</a>
+      <nav class="nav-primary" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="training-pathways.html">Training Pathways</a>
+        <a href="practical-fue.html">Practical FUE</a>
+        <a href="hair-loss-science.html">Hair Loss Science</a>
+        <a href="follicle-intelligence.html">Follicle Intelligence</a>
+        <a href="for-clinics.html">For Clinics</a>
+        <a href="apply.html" class="btn btn-primary" aria-current="page">Apply / Enquire</a>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Thank-you state (hidden by default) -->
+    <section class="apply-thankyou" id="thank-you" aria-live="polite" hidden>
+      <div class="container container--narrow">
+        <div class="apply-thankyou__inner">
+          <h1 class="page-hero__title" id="thank-you-heading" tabindex="-1">Thank you for your enquiry</h1>
+          <p class="apply-thankyou__body">We have received your submission and will review it with care. A member of our team will be in touch within a few business days according to the next step you indicated. If you have any urgent questions in the meantime, you may reply to the confirmation email you will receive shortly.</p>
+          <p class="apply-thankyou__email">You will receive a confirmation email at the address you provided.</p>
+          <a href="index.html" class="btn btn-primary">Return to homepage</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apply content (form + flow selector) -->
+    <div id="apply-content">
+      <section class="page-hero">
+        <div class="container container--narrow">
+          <p class="page-hero__label">Apply or Enquire</p>
+          <h1 class="page-hero__title">Apply or enquire</h1>
+          <p class="page-hero__lead">We welcome serious enquiries from doctors and clinics interested in the IIOHR pathway. The information you provide helps us respond with relevance and clarity.</p>
+        </div>
+      </section>
+
+      <!-- Flow selector -->
+      <section class="section section--alt" id="flow-select">
+        <div class="container container--narrow">
+          <h2 class="section-heading">How would you like to proceed?</h2>
+          <div class="flow-cards" role="group" aria-labelledby="flow-select-heading">
+            <p id="flow-select-heading" class="visually-hidden">Choose application type</p>
+            <label class="flow-card">
+              <input type="radio" name="flow" value="doctor" class="flow-card__input" checked>
+              <span class="flow-card__content">
+                <span class="flow-card__title">I'm applying or enquiring as a doctor</span>
+                <span class="flow-card__desc">Individual physician or surgeon</span>
+              </span>
+            </label>
+            <label class="flow-card">
+              <input type="radio" name="flow" value="clinic" class="flow-card__input">
+              <span class="flow-card__content">
+                <span class="flow-card__title">My clinic or organisation is enquiring</span>
+                <span class="flow-card__desc">Clinic, hospital, or training body</span>
+              </span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Doctor form -->
+      <section class="section apply-form-section" id="form-doctor" aria-labelledby="form-doctor-heading">
+        <div class="container container--narrow">
+          <h2 id="form-doctor-heading" class="section-heading">Your application or enquiry</h2>
+          <p class="section-lead">A few details help us understand your background and how the pathway might support your development. All fields marked with an asterisk are required.</p>
+
+          <form class="apply-form" id="form-doctor-form" action="#" method="post" novalidate>
+            <input type="hidden" name="flow" value="doctor">
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Contact details</legend>
+              <div class="apply-field">
+                <label for="doctor-name">Full name <span class="required">*</span></label>
+                <input type="text" id="doctor-name" name="full_name" required autocomplete="name">
+              </div>
+              <div class="apply-field">
+                <label for="doctor-email">Email <span class="required">*</span></label>
+                <input type="email" id="doctor-email" name="email" required autocomplete="email">
+              </div>
+              <div class="apply-field">
+                <label for="doctor-phone">Phone <span class="required">*</span></label>
+                <input type="tel" id="doctor-phone" name="phone" required autocomplete="tel" placeholder="Include country code">
+              </div>
+              <div class="apply-field">
+                <label for="doctor-country">Country <span class="required">*</span></label>
+                <input type="text" id="doctor-country" name="country" required autocomplete="country-name">
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Professional background</legend>
+              <div class="apply-field">
+                <label for="doctor-medical-background">Medical background <span class="required">*</span></label>
+                <select id="doctor-medical-background" name="medical_background" required>
+                  <option value="">Select</option>
+                  <option value="general_practice">General practice</option>
+                  <option value="dermatology">Dermatology</option>
+                  <option value="plastic_surgery">Plastic surgery</option>
+                  <option value="other_surgery">Other surgery</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="apply-field">
+                <label for="doctor-surgical-exp">Current surgical experience <span class="required">*</span></label>
+                <select id="doctor-surgical-exp" name="surgical_experience" required>
+                  <option value="">Select</option>
+                  <option value="none">None</option>
+                  <option value="minimal">Minimal</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="extensive">Extensive</option>
+                </select>
+              </div>
+              <div class="apply-field">
+                <label for="doctor-hr-exp">Current hair restoration experience <span class="required">*</span></label>
+                <select id="doctor-hr-exp" name="hair_restoration_experience" required>
+                  <option value="">Select</option>
+                  <option value="none">None</option>
+                  <option value="observing">Observing only</option>
+                  <option value="assisting">Assisting</option>
+                  <option value="performing_limited">Performing (limited)</option>
+                  <option value="performing_regular">Performing (regular)</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Training interests</legend>
+              <div class="apply-field">
+                <span class="apply-label">Training interest area <span class="required">*</span></span>
+                <div class="apply-checkboxes">
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_fue" value="yes" id="interest-fue">
+                    <span>Practical FUE</span>
+                  </label>
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_trichology" value="yes" id="interest-trichology">
+                    <span>Trichology & theory</span>
+                  </label>
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_audit" value="yes">
+                    <span>Auditing & development</span>
+                  </label>
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_full" value="yes">
+                    <span>Full pathway</span>
+                  </label>
+                </div>
+              </div>
+              <div class="apply-field apply-field--conditional" id="doctor-fue-interest" aria-hidden="true">
+                <label for="doctor-fue-level">Practical FUE interest level</label>
+                <select id="doctor-fue-level" name="fue_interest_level">
+                  <option value="">Select</option>
+                  <option value="exploring">Exploring</option>
+                  <option value="ready_to_train">Ready to train</option>
+                  <option value="advanced_refinement">Seeking advanced refinement</option>
+                </select>
+              </div>
+              <div class="apply-field apply-field--conditional" id="doctor-theory-interest" aria-hidden="true">
+                <label for="doctor-theory-level">Trichology / theory interest level</label>
+                <select id="doctor-theory-level" name="theory_interest_level">
+                  <option value="">Select</option>
+                  <option value="foundation">Foundation</option>
+                  <option value="deepening">Deepening understanding</option>
+                  <option value="integration">Integration with practice</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Affiliation</legend>
+              <div class="apply-field">
+                <label for="doctor-clinic">Clinic affiliation</label>
+                <input type="text" id="doctor-clinic" name="clinic_affiliation" placeholder="Name of clinic or None / Independent">
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Next step</legend>
+              <div class="apply-field">
+                <label for="doctor-next-step">Desired next step <span class="required">*</span></label>
+                <select id="doctor-next-step" name="desired_next_step" required>
+                  <option value="">Select</option>
+                  <option value="conversation">Request a conversation</option>
+                  <option value="information">Receive pathway information</option>
+                  <option value="intake">Apply for the next intake</option>
+                  <option value="partnership">Discuss clinic partnership</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Anything else we should know</legend>
+              <div class="apply-field">
+                <label for="doctor-goals">Goals, challenges, or questions</label>
+                <textarea id="doctor-goals" name="goals_challenges" rows="4" placeholder="Optional"></textarea>
+              </div>
+            </fieldset>
+
+            <div class="apply-actions">
+              <button type="submit" class="btn btn-primary btn-large">Submit application</button>
+              <a href="training-pathways.html" class="apply-back">Back to pathway</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Clinic form -->
+      <section class="section apply-form-section" id="form-clinic" aria-labelledby="form-clinic-heading" hidden>
+        <div class="container container--narrow">
+          <h2 id="form-clinic-heading" class="section-heading">Your organisation's enquiry</h2>
+          <p class="section-lead">Tell us about your clinic or organisation and what you hope to achieve. We will respond with information relevant to structured surgeon development and partnership options.</p>
+
+          <form class="apply-form" id="form-clinic-form" action="#" method="post" novalidate>
+            <input type="hidden" name="flow" value="clinic">
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Contact details</legend>
+              <div class="apply-field">
+                <label for="clinic-name">Your full name <span class="required">*</span></label>
+                <input type="text" id="clinic-name" name="full_name" required autocomplete="name">
+              </div>
+              <div class="apply-field">
+                <label for="clinic-email">Email <span class="required">*</span></label>
+                <input type="email" id="clinic-email" name="email" required autocomplete="email">
+              </div>
+              <div class="apply-field">
+                <label for="clinic-phone">Phone <span class="required">*</span></label>
+                <input type="tel" id="clinic-phone" name="phone" required autocomplete="tel" placeholder="Include country code">
+              </div>
+              <div class="apply-field">
+                <label for="clinic-country">Country <span class="required">*</span></label>
+                <input type="text" id="clinic-country" name="country" required autocomplete="country-name">
+              </div>
+              <div class="apply-field">
+                <label for="clinic-org">Organisation name <span class="required">*</span></label>
+                <input type="text" id="clinic-org" name="organisation_name" required>
+              </div>
+              <div class="apply-field">
+                <label for="clinic-role">Your role <span class="required">*</span></label>
+                <select id="clinic-role" name="role" required>
+                  <option value="">Select</option>
+                  <option value="owner">Owner</option>
+                  <option value="medical_director">Medical director</option>
+                  <option value="training_lead">Training lead</option>
+                  <option value="hr">HR</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Context</legend>
+              <div class="apply-field">
+                <label for="clinic-surgeons">Number of surgeons to develop (approx.)</label>
+                <select id="clinic-surgeons" name="surgeons_to_develop">
+                  <option value="">Select</option>
+                  <option value="1-2">1–2</option>
+                  <option value="3-5">3–5</option>
+                  <option value="6-plus">6+</option>
+                  <option value="exploring">Exploring</option>
+                </select>
+              </div>
+              <div class="apply-field">
+                <label for="clinic-goal">Primary goal <span class="required">*</span></label>
+                <select id="clinic-goal" name="primary_goal" required>
+                  <option value="">Select</option>
+                  <option value="train_new">Train new surgeons</option>
+                  <option value="upskill">Upskill existing team</option>
+                  <option value="audit_standards">Audit and standards</option>
+                  <option value="partnership">Partnership discussion</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Training interests</legend>
+              <div class="apply-field">
+                <span class="apply-label">Training interest area <span class="required">*</span></span>
+                <div class="apply-checkboxes">
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_fue" value="yes">
+                    <span>Practical FUE</span>
+                  </label>
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_trichology" value="yes">
+                    <span>Trichology & theory</span>
+                  </label>
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_audit" value="yes">
+                    <span>Auditing & development</span>
+                  </label>
+                  <label class="apply-checkbox">
+                    <input type="checkbox" name="interest_full" value="yes">
+                    <span>Full pathway</span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Next step</legend>
+              <div class="apply-field">
+                <label for="clinic-next-step">Desired next step <span class="required">*</span></label>
+                <select id="clinic-next-step" name="desired_next_step" required>
+                  <option value="">Select</option>
+                  <option value="conversation">Request a conversation</option>
+                  <option value="information">Receive pathway information</option>
+                  <option value="intake">Apply for the next intake</option>
+                  <option value="partnership">Discuss clinic partnership</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="apply-fieldset">
+              <legend class="apply-fieldset__legend">Anything else we should know</legend>
+              <div class="apply-field">
+                <label for="clinic-goals">Goals, challenges, or questions</label>
+                <textarea id="clinic-goals" name="goals_challenges" rows="4" placeholder="Optional"></textarea>
+              </div>
+            </fieldset>
+
+            <div class="apply-actions">
+              <button type="submit" class="btn btn-primary btn-large">Submit enquiry</button>
+              <a href="training-pathways.html" class="apply-back">Back to pathway</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-trust">
+        <div class="container">
+          <ul class="footer-trust-list" aria-label="Standards and approach">
+            <li>Australian standards framework</li>
+            <li>Live-patient training</li>
+            <li>Theory and practical integration</li>
+            <li>Audit-backed development</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container">
+          <p class="footer-tagline">International Institute of Hair Restoration — training, auditing, mentoring, support.</p>
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="training-pathways.html">Training Pathways</a>
+            <a href="practical-fue.html">Practical FUE</a>
+            <a href="hair-loss-science.html">Hair Loss Science</a>
+            <a href="follicle-intelligence.html">Follicle Intelligence</a>
+            <a href="for-clinics.html">For Clinics</a>
+            <a href="apply.html">Apply / Enquire</a>
+          </nav>
+          <p class="footer-legal"><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/apply.js"></script>
+</body>
+</html>

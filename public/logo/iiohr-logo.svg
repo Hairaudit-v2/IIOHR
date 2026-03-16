@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" aria-labelledby="iiohr-logo-title iiohr-logo-desc">
+  <title id="iiohr-logo-title">IIOHR Logo</title>
+  <desc id="iiohr-logo-desc">IIOHR institute crest</desc>
+  <defs>
+    <style>
+      .logo-text { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; letter-spacing: 0.08em; }
+      .logo-acronym { font-size: 28px; font-weight: 600; fill: #4A3526; }
+      .logo-tagline { font-size: 11px; font-weight: 500; fill: #4A3526; letter-spacing: 0.12em; text-transform: uppercase; }
+    </style>
+    <g id="crest">
+      <g stroke="#4A3526" stroke-width="2" fill="none">
+        <circle cx="32" cy="32" r="28"/>
+        <circle cx="32" cy="32" r="14"/>
+        <circle cx="32" cy="32" r="7" stroke-width="1.5"/>
+      </g>
+      <circle cx="32" cy="32" r="4" fill="#C8A47E" stroke="#4A3526" stroke-width="2"/>
+    </g>
+  </defs>
+  <use href="#crest" x="0" y="0" width="64" height="64"/>
+  <text x="76" y="36" class="logo-text logo-acronym">IIOHR</text>
+  <text x="76" y="54" class="logo-text logo-tagline">International Institute of Hair Restoration</text>
+</svg>
