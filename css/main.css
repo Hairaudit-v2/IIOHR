@@ -5,9 +5,11 @@
 
 :root {
   /* Refined surgical institute palette: academic, warm, restrained */
-  --color-bg: #F7F5F1;
-  --color-bg-alt: #F1EEE8;
+  --color-bg: #F6F3ED;
+  --color-bg-alt: #EDE9E1;
   --color-bg-dark: #1E2A38;
+  --color-cta-gold: #B79A67;
+  --color-cta-gold-soft: rgba(183, 154, 103, 0.14);
   --color-bg-paper: #FFFFFF;
   --color-text: #222222;
   --color-text-muted: #5A6169;
@@ -221,7 +223,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(247, 245, 241, 0.985);
+  background: rgba(246, 243, 237, 0.985);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   box-shadow: 0 1px 0 0 rgba(183, 154, 103, 0.08);
@@ -361,6 +363,26 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 .section--cta .section-lead { color: var(--color-text-light); }
 .section--cta a { color: var(--color-accent); }
 .section--cta a:hover { color: var(--color-accent-soft); }
+/* CTA buttons: gold outline, not filled — premium institute */
+.section--cta .btn-primary {
+  background: transparent;
+  color: var(--color-cta-gold);
+  border: 1px solid var(--color-cta-gold);
+}
+.section--cta .btn-primary:hover {
+  background: var(--color-cta-gold-soft);
+  border-color: var(--color-accent-soft);
+  color: var(--color-accent-soft);
+}
+.section--cta .btn-secondary.btn--light {
+  color: rgba(247, 245, 241, 0.9);
+  border-color: rgba(183, 154, 103, 0.5);
+}
+.section--cta .btn-secondary.btn--light:hover {
+  background: var(--color-cta-gold-soft);
+  border-color: var(--color-accent);
+  color: var(--color-text-light);
+}
 
 /* Section rhythm: thin dividers and optional eyebrow labels */
 .section--with-divider {
@@ -660,7 +682,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
   gap: clamp(var(--space-xl), 6vw, var(--space-3xl));
-  align-items: center;
+  align-items: start;
 }
 .follicle-intelligence-copy {
   max-width: 40rem;
@@ -669,6 +691,26 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   justify-self: end;
   width: min(100%, 26rem);
   overflow: hidden;
+  margin: 0;
+}
+.fi-visual-anchored__caption {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: var(--line-tight);
+  color: var(--color-institute);
+  margin: 0 0 var(--space-xs);
+  letter-spacing: -0.01em;
+}
+.fi-visual-anchored__desc {
+  font-size: var(--text-small);
+  line-height: var(--line-body);
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-md);
+  max-width: 20em;
+}
+.fi-visual-anchored .section-photo {
+  margin-top: 0;
 }
 .follicle-intelligence-illustration {
   width: 125%;
@@ -712,6 +754,8 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 .section-photo--max-26 { max-width: 26rem; }
 .section-photo--max-20 { max-width: 20rem; }
 .section-photo--max-18 { max-width: 18rem; }
+.section-photo--max-14 { max-width: 14rem; }
+.section-photo--max-16 { max-width: 16rem; }
 .mentorship-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.45fr);
@@ -736,11 +780,13 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   align-items: start;
 }
 .science-section-with-photo .section-photo { max-width: 20rem; }
+.science-section-with-photo--reduced .section-photo { max-width: 14rem; }
 @media (max-width: 768px) {
   .science-section-with-photo {
     grid-template-columns: 1fr;
   }
-  .science-section-with-photo .section-photo { max-width: 100%; }
+  .science-section-with-photo .section-photo,
+  .science-section-with-photo--reduced .section-photo { max-width: 100%; }
 }
 
 /* ==========================================================================
