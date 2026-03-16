@@ -1525,6 +1525,137 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   transform: rotate(-135deg);
   margin-left: 0.25rem;
 }
+
+/* Competence loop — circular surgical thinking model */
+.competence-loop {
+  position: relative;
+  width: min(22rem, 92vw);
+  margin: var(--space-2xl) auto;
+  aspect-ratio: 1;
+}
+.competence-loop__track {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--color-accent);
+  opacity: 0.35;
+}
+.competence-loop__nodes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.competence-loop__node {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5rem;
+  margin-left: -2.5rem;
+  margin-top: -1.25rem;
+  text-align: center;
+  --angle: calc(-90deg + var(--i) * 51.43deg);
+  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-7.25rem) rotate(calc(-1 * var(--angle)));
+}
+.competence-loop__label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-institute);
+  line-height: 1.3;
+}
+.competence-loop__desc {
+  display: block;
+  font-size: 0.625rem;
+  line-height: 1.35;
+  color: var(--color-text-muted);
+  margin-top: 0.15rem;
+  letter-spacing: 0.01em;
+}
+.pathways-page .competence-loop {
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+}
+@media (max-width: 480px) {
+  .competence-loop { width: min(18rem, 92vw); }
+  .competence-loop__node {
+    width: 4rem;
+    margin-left: -2rem;
+    margin-top: -1rem;
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-5.75rem) rotate(calc(-1 * var(--angle)));
+  }
+  .competence-loop__label { font-size: 0.625rem; }
+  .competence-loop__desc { font-size: 0.5625rem; }
+}
+
+/* Competency Progression Framework */
+.competency-levels {
+  list-style: none;
+  margin: var(--space-2xl) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 44rem;
+}
+.competency-level {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  margin-bottom: var(--space-sm);
+  border-left-width: 3px;
+  border-left-color: var(--color-accent);
+}
+.competency-level:last-child {
+  margin-bottom: 0;
+}
+.competency-level__marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-institute);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.competency-level__content {
+  min-width: 0;
+}
+.competency-level__title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: var(--line-tight);
+  margin: 0 0 var(--space-xs);
+  color: var(--color-text);
+}
+.competency-level__desc {
+  margin: 0;
+  font-size: var(--text-small);
+  line-height: var(--line-body);
+  color: var(--color-text-muted);
+}
+.pathways-page .competency-levels {
+  margin-top: var(--space-2xl);
+}
+
 /* Follicle Intelligence block */
 .fi-block {
   position: relative;
@@ -1666,6 +1797,10 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   }
   .pathways-page .fi-block__content {
     padding-left: var(--space-sm);
+  }
+  .competency-level {
+    padding: var(--space-md) var(--space-lg);
+    gap: var(--space-md);
   }
   .pathways-page .cta-band--pathways {
     gap: var(--space-md);
