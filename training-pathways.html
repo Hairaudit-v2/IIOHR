@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/svg+xml" href="/public/logo/iiohr-mark.svg">
 </head>
-<body>
+<body class="pathways-page">
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo">
@@ -33,53 +33,108 @@
 
   <main>
     <!-- Page hero -->
-    <section class="page-hero" aria-labelledby="page-heading">
-      <div class="container">
+    <section class="page-hero page-hero--pathways watermark-wrap" aria-labelledby="page-heading">
+      <div class="watermark-layer watermark-layer--light watermark-layer--pathway-hero" aria-hidden="true">
+        <svg viewBox="0 0 640 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="watermark-svg pathway-hero-motif" aria-hidden="true">
+          <use href="/public/illustrations/scientific-sprite.svg#hair-growth-cycle"></use>
+        </svg>
+      </div>
+      <div class="container watermark-content">
         <p class="page-hero__label">Training Pathways</p>
+        <div class="page-hero__divider" aria-hidden="true"></div>
         <h1 id="page-heading" class="page-hero__title">A structured pathway, not a one-off course</h1>
         <p class="page-hero__lead">Surgeon development at IIOHR happens in stages — strengthened by ongoing feedback, auditing, and support. This page outlines how the pathway is built and how each component supports your development.</p>
       </div>
     </section>
 
     <!-- 1. Intro: why short-format alone is insufficient -->
-    <section class="section section--alt" id="intro" aria-labelledby="intro-heading">
+    <section class="section section--alt section--with-divider" id="intro" aria-labelledby="intro-heading">
       <div class="container container--narrow">
+        <p class="section-eyebrow">Context</p>
         <h2 id="intro-heading" class="section-heading">Why short-format training alone is often insufficient</h2>
         <p class="section-lead">Intensive short courses can introduce technique and theory, but they rarely provide the structure needed for sustained surgical development.</p>
-        <p>Without staged progression, live-patient immersion, and post-training feedback, doctors are left to close the gap between “course completed” and “practising with confidence” on their own. IIOHR is designed around a different premise: that surgeon development is continuous, that it benefits from audit and review, and that long-term support and mentorship are part of the pathway — not an afterthought.</p>
+        <div class="section__body content-measure">
+          <p>Without staged progression, live-patient immersion, and post-training feedback, doctors are left to close the gap between “course completed” and “practising with confidence” on their own. IIOHR is designed around a different premise: that surgeon development is continuous, that it benefits from audit and review, and that long-term support and mentorship are part of the pathway — not an afterthought.</p>
+        </div>
       </div>
     </section>
 
-    <!-- 2. Overview of the staged pathway -->
-    <section class="section" id="overview" aria-labelledby="overview-heading">
+    <!-- 2. Visual pathway: 7 stages -->
+    <section class="section section--with-divider" id="overview" aria-labelledby="overview-heading">
       <div class="container">
+        <p class="section-eyebrow">Overview</p>
         <h2 id="overview-heading" class="section-heading">The IIOHR staged pathway</h2>
         <p class="section-lead">The pathway integrates seven components. Each stage builds on the last; theory informs practice, practice is observed and reviewed, and post-training audit and mentorship support continued progression.</p>
-        <ol class="pathway-overview-list" aria-label="Pathway stages">
-          <li>Foundational theory of hair loss and trichology</li>
-          <li>Practical FUE principles</li>
-          <li>Observation and surgical immersion</li>
-          <li>Hands-on live patient training</li>
-          <li>Post-training audit and review</li>
-          <li>Progression support toward higher surgical competence</li>
-          <li>Mentorship and refinement</li>
+        <ol class="pathway-timeline" aria-label="Surgeon development pathway">
+          <li class="pathway-timeline__stage">
+            <span class="pathway-timeline__num">1</span>
+            <div class="pathway-timeline__content">
+              <h3 class="pathway-timeline__title">Foundational theory of hair loss and trichology</h3>
+              <p class="pathway-timeline__desc">Biology, trichology, and treatment planning before hands-on work.</p>
+            </div>
+          </li>
+          <li class="pathway-timeline__stage">
+            <span class="pathway-timeline__num">2</span>
+            <div class="pathway-timeline__content">
+              <h3 class="pathway-timeline__title">Practical FUE principles</h3>
+              <p class="pathway-timeline__desc">Extraction, handling, placement; standards and mental model.</p>
+            </div>
+          </li>
+          <li class="pathway-timeline__stage">
+            <span class="pathway-timeline__num">3</span>
+            <div class="pathway-timeline__content">
+              <h3 class="pathway-timeline__title">Observation and surgical immersion</h3>
+              <p class="pathway-timeline__desc">Live surgery in a controlled setting; bridge to hands-on.</p>
+            </div>
+          </li>
+          <li class="pathway-timeline__stage">
+            <span class="pathway-timeline__num">4</span>
+            <div class="pathway-timeline__content">
+              <h3 class="pathway-timeline__title">Hands-on live patient training</h3>
+              <p class="pathway-timeline__desc">Supervised FUE with live patients; immediate, structured feedback.</p>
+            </div>
+          </li>
+          <li class="pathway-timeline__stage">
+            <span class="pathway-timeline__num">5</span>
+            <div class="pathway-timeline__content">
+              <h3 class="pathway-timeline__title">Post-training audit and review</h3>
+              <p class="pathway-timeline__desc">Cases reviewed against benchmarks; strengths and gaps identified.</p>
+            </div>
+          </li>
+          <li class="pathway-timeline__stage">
+            <span class="pathway-timeline__num">6</span>
+            <div class="pathway-timeline__content">
+              <h3 class="pathway-timeline__title">Progression support toward higher surgical competence</h3>
+              <p class="pathway-timeline__desc">Ongoing support and development beyond course completion.</p>
+            </div>
+          </li>
+          <li class="pathway-timeline__stage">
+            <span class="pathway-timeline__num">7</span>
+            <div class="pathway-timeline__content">
+              <h3 class="pathway-timeline__title">Mentorship and refinement</h3>
+              <p class="pathway-timeline__desc">Guidance and refinement through and beyond training.</p>
+            </div>
+          </li>
         </ol>
-        <p class="pathway-links-intro">Explore each component in detail:</p>
-        <ul class="pathway-links">
-          <li><a href="practical-fue.html">Practical FUE training</a></li>
-          <li><a href="hair-loss-science.html">Hair loss science & trichology</a></li>
-          <li><a href="follicle-intelligence.html">Follicle Intelligence integration</a></li>
-        </ul>
+        <div class="pathway-links-group">
+          <p class="pathway-links-intro">Explore each component in detail:</p>
+          <ul class="pathway-links">
+            <li><a href="practical-fue.html">Practical FUE training</a></li>
+            <li><a href="hair-loss-science.html">Hair loss science & trichology</a></li>
+            <li><a href="follicle-intelligence.html">Follicle Intelligence integration</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- 3. Detailed pathway blocks -->
-    <section class="section section--alt" id="pathway-blocks" aria-labelledby="blocks-heading">
+    <!-- 3. Detailed pathway blocks (cards) -->
+    <section class="section section--alt section--with-divider" id="pathway-blocks" aria-labelledby="blocks-heading">
       <div class="container">
+        <p class="section-eyebrow">In detail</p>
         <h2 id="blocks-heading" class="section-heading">Pathway components in detail</h2>
         <p class="section-lead">How each element of the pathway contributes to structured surgeon development.</p>
 
-        <div class="pathway-blocks">
+        <div class="pathway-blocks pathway-blocks--cards">
           <article class="pathway-block">
             <span class="pathway-block__num" aria-hidden="true">1</span>
             <div class="pathway-block__content">
@@ -139,31 +194,117 @@
       </div>
     </section>
 
-    <!-- 4. Theory and practice reinforce each other -->
-    <section class="section" id="theory-practice" aria-labelledby="theory-practice-heading">
-      <div class="container container--narrow">
+    <!-- 4. Comparison: why this pathway differs -->
+    <section class="section section--with-divider" id="comparison" aria-labelledby="comparison-heading">
+      <div class="container">
+        <p class="section-eyebrow">Compare</p>
+        <h2 id="comparison-heading" class="section-heading">Why this pathway differs from a one-off short course</h2>
+        <p class="section-lead">A measured contrast — duration, support, and how development continues.</p>
+        <div class="comparison-block comparison-block--rows">
+          <div class="comparison-block__headers">
+            <h3 class="comparison-block__col-title">Short-format training</h3>
+            <h3 class="comparison-block__col-title">IIOHR structured pathway</h3>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-cell--left">
+              <p>Fixed duration; intensive burst with little time for consolidation.</p>
+            </div>
+            <div class="comparison-cell comparison-cell--right">
+              <p>Staged progression over time; each phase builds on the last.</p>
+            </div>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-cell--left">
+              <p>Technique introduced in isolation; limited link to underlying theory.</p>
+            </div>
+            <div class="comparison-cell comparison-cell--right">
+              <p>Integrated theory and practice; technique grounded in understanding.</p>
+            </div>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-cell--left">
+              <p>Isolated learning; limited or no live-patient exposure.</p>
+            </div>
+            <div class="comparison-cell comparison-cell--right">
+              <p>Live-patient immersion; observation and hands-on in a controlled setting.</p>
+            </div>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-cell--left">
+              <p>No structured follow-up after completion.</p>
+            </div>
+            <div class="comparison-cell comparison-cell--right">
+              <p>Audit and mentorship; ongoing feedback and support.</p>
+            </div>
+          </div>
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-cell--left">
+              <p>Focus on course completion as endpoint.</p>
+            </div>
+            <div class="comparison-cell comparison-cell--right">
+              <p>Continued development; pathway extends beyond initial training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Theory and practice reinforce each other -->
+    <section class="section section--alt section--with-divider" id="theory-practice" aria-labelledby="theory-practice-heading">
+      <div class="container">
+        <p class="section-eyebrow">Method</p>
         <h2 id="theory-practice-heading" class="section-heading">How theory and practice reinforce each other</h2>
         <p class="section-lead">The pathway is designed so that theory and practice are integrated, not sequential in a one-off way.</p>
-        <p>Foundational theory gives you the language and concepts to understand why certain techniques work and how to adapt to patient variation. When you observe and then perform surgery, you see those concepts in action — and when you receive feedback and audit results, you can relate them back to underlying principles. That loop — theory informing practice, practice informing reflection — is what supports durable learning and continued improvement. IIOHR structures that loop explicitly, so your development is both practical and intellectually grounded.</p>
+        <div class="theory-practice-loop" aria-hidden="true">
+          <span class="loop-node">Theory</span>
+          <span class="loop-arrow" aria-hidden="true"></span>
+          <span class="loop-node">Observation</span>
+          <span class="loop-arrow" aria-hidden="true"></span>
+          <span class="loop-node">Hands-on</span>
+          <span class="loop-arrow" aria-hidden="true"></span>
+          <span class="loop-node">Feedback</span>
+          <span class="loop-arrow" aria-hidden="true"></span>
+          <span class="loop-node">Refinement</span>
+          <span class="loop-arrow loop-arrow--back" aria-hidden="true"></span>
+        </div>
+        <div class="theory-practice-copy container--narrow content-measure">
+          <p>Foundational theory gives you the language and concepts to understand why certain techniques work and how to adapt to patient variation. When you observe and then perform surgery, you see those concepts in action — and when you receive feedback and audit results, you can relate them back to underlying principles. That loop — theory informing practice, practice informing reflection — is what supports durable learning and continued improvement. IIOHR structures that loop explicitly, so your development is both practical and intellectually grounded.</p>
+        </div>
       </div>
     </section>
 
-    <!-- 5. Follicle Intelligence supports the journey -->
-    <section class="section section--alt" id="follicle-intelligence" aria-labelledby="fi-heading">
-      <div class="container container--narrow">
-        <h2 id="fi-heading" class="section-heading">How Follicle Intelligence supports the learning journey</h2>
-        <p class="section-lead">Follicle Intelligence is integrated into the pathway to support audit, feedback, and measurable progression.</p>
-        <p>After training, your cases can be reviewed using Follicle Intelligence — enabling structured audit, benchmarking against standards, and clear feedback on outcomes. That data informs where you stand and where to focus next. The result is not assumed competence but supported development: you see your own results in context and can work with mentors to improve systematically. Follicle Intelligence is one of the tools that makes long-term support and audit-backed improvement a practical part of the pathway.</p>
-        <a href="index.html#follicle-intelligence" class="link-arrow">Follicle Intelligence on the homepage</a>
+    <!-- 6. Follicle Intelligence supports the journey -->
+    <section class="section section--with-divider" id="follicle-intelligence" aria-labelledby="fi-heading">
+      <div class="container">
+        <div class="fi-block">
+          <div class="fi-block__accent" aria-hidden="true"></div>
+          <div class="fi-block__content">
+            <p class="section-eyebrow">Tools</p>
+            <h2 id="fi-heading" class="section-heading">How Follicle Intelligence supports the learning journey</h2>
+            <p class="section-lead">Follicle Intelligence is integrated into the pathway to support audit, feedback, and measurable progression.</p>
+            <div class="fi-block__body content-measure">
+              <ul class="fi-points">
+                <li><strong>Structured audit</strong> — Your cases reviewed against clear criteria.</li>
+                <li><strong>Benchmarking</strong> — Outcomes compared to standards; gaps identified.</li>
+                <li><strong>Actionable feedback</strong> — Where you stand and where to focus next.</li>
+                <li><strong>Supported development</strong> — Not assumed competence; improvement with mentors.</li>
+              </ul>
+              <p>Follicle Intelligence is one of the tools that makes long-term support and audit-backed improvement a practical part of the pathway.</p>
+            </div>
+            <a href="follicle-intelligence.html" class="link-arrow">Follicle Intelligence</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- 6. CTA for doctors and clinics -->
-    <section class="section section--cta" id="apply" aria-labelledby="cta-heading">
+    <!-- 7. CTA for doctors and clinics -->
+    <section class="section section--cta section--with-divider" id="apply" aria-labelledby="cta-heading">
+      <div class="section-divider section-divider--cta" aria-hidden="true"></div>
       <div class="container container--narrow">
-        <h2 id="cta-heading" class="section-heading section-heading--light">Take the next step</h2>
-        <p class="section-lead section-lead--light">The pathway is designed for doctors and clinics committed to structured surgeon development. If you are entering hair restoration or seeking to strengthen your practice through audit, mentorship, and ongoing support, we welcome your enquiry.</p>
-        <div class="cta-band">
+        <p class="cta-eyebrow">Training Pathways</p>
+        <h2 id="cta-heading" class="section-heading section-heading--light cta-heading">Take the next step</h2>
+        <p class="section-lead section-lead--light cta-lead">The pathway is designed for doctors and clinics committed to structured surgeon development. If you are entering hair restoration or seeking to strengthen your practice through audit, mentorship, and ongoing support, we welcome your enquiry.</p>
+        <div class="cta-band cta-band--pathways">
           <a href="apply.html" class="btn btn-primary btn-large">Apply / Enquire</a>
           <a href="index.html" class="btn btn-secondary btn-large btn--light">Back to homepage</a>
         </div>
@@ -171,8 +312,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-trust">
+    <footer class="site-footer watermark-wrap">
+      <div class="watermark-layer watermark-layer--crest watermark-layer--footer-crest" aria-hidden="true">
+        <img src="/public/logo/iiohr-mark-dark.svg" alt="" width="64" height="64" class="watermark-crest-img">
+      </div>
+      <div class="watermark-layer watermark-layer--dark watermark-layer--scientific watermark-layer--footer" aria-hidden="true">
+        <svg viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="watermark-svg scientific-illustration scientific-illustration--dark scientific-illustration--watermark" aria-hidden="true">
+          <use href="/public/illustrations/scientific-sprite.svg#follicular-unit"></use>
+        </svg>
+      </div>
+      <div class="footer-trust watermark-content">
         <div class="container">
           <ul class="footer-trust-list" aria-label="Standards and approach">
             <li>Australian standards framework</li>
@@ -182,9 +331,14 @@
           </ul>
         </div>
       </div>
-      <div class="footer-main">
+      <div class="footer-main watermark-content">
         <div class="container">
-          <p class="footer-tagline">International Institute of Hair Restoration — training, auditing, mentoring, support.</p>
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo footer-logo--signature">
+              <img src="/public/logo/iiohr-logo-dark.svg" alt="IIOHR — International Institute of Hair Restoration" width="256" height="64">
+            </a>
+            <p class="footer-tagline">International Institute of Hair Restoration — training, auditing, mentoring, support.</p>
+          </div>
           <nav class="footer-nav" aria-label="Footer">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
