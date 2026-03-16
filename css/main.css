@@ -4,25 +4,25 @@
    ========================================================================== */
 
 :root {
-  /* Premium medical institute palette */
-  --color-bg: #F4F1EA;
-  --color-bg-alt: #EFE9DF;
-  --color-bg-dark: #2A1E17;
-  --color-bg-paper: #FAF9F6;
-  --color-text: #2A1E17;
-  --color-text-muted: #5A5248;
-  --color-text-light: #F4F1EA;
-  --color-institute: #4A3526;
-  --color-accent: #C8A47E;
-  --color-accent-soft: #D4B896;
-  --color-accent-highlight: #C8A47E;
-  --color-border: rgba(74, 53, 38, 0.12);
-  --color-border-soft: rgba(74, 53, 38, 0.08);
-  --color-border-strong: rgba(74, 53, 38, 0.2);
-  --color-border-dark: rgba(244, 241, 234, 0.15);
-  --illustration-line-light: #8B6B4A;
-  --illustration-line-dark: #C8A47E;
-  --illustration-line-secondary: rgba(74, 53, 38, 0.35);
+  /* Refined surgical institute palette: academic, warm, restrained */
+  --color-bg: #F7F5F1;
+  --color-bg-alt: #F1EEE8;
+  --color-bg-dark: #1E2A38;
+  --color-bg-paper: #FFFFFF;
+  --color-text: #222222;
+  --color-text-muted: #5A6169;
+  --color-text-light: #F7F5F1;
+  --color-institute: #1E2A38;
+  --color-accent: #B79A67;
+  --color-accent-soft: #C4AD82;
+  --color-accent-highlight: #B79A67;
+  --color-border: rgba(30, 42, 56, 0.12);
+  --color-border-soft: rgba(30, 42, 56, 0.08);
+  --color-border-strong: rgba(30, 42, 56, 0.2);
+  --color-border-dark: rgba(247, 245, 241, 0.15);
+  --illustration-line-light: #B79A67;
+  --illustration-line-dark: #B79A67;
+  --illustration-line-secondary: rgba(30, 42, 56, 0.35);
 
   /* Typography: refined editorial */
   --font-heading: "Crimson Text", Georgia, serif;
@@ -221,10 +221,10 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(244, 241, 234, 0.985);
+  background: rgba(247, 245, 241, 0.985);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
-  box-shadow: 0 1px 0 0 rgba(200, 164, 126, 0.12);
+  box-shadow: 0 1px 0 0 rgba(183, 154, 103, 0.08);
 }
 .header-inner {
   max-width: var(--container-max);
@@ -313,18 +313,19 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   border-color: var(--color-institute);
 }
 .btn-primary:hover {
-  background: var(--color-bg-dark);
-  border-color: var(--color-bg-dark);
+  background: #252f3d;
+  border-color: #252f3d;
   color: var(--color-text-light);
 }
 .btn-secondary {
   background: transparent;
-  color: var(--color-text);
-  border-color: var(--color-border);
+  color: var(--color-institute);
+  border-color: var(--color-accent);
 }
 .btn-secondary:hover {
-  border-color: var(--color-text);
-  color: var(--color-text);
+  border-color: #9a8557;
+  color: var(--color-institute);
+  background: rgba(183, 154, 103, 0.06);
 }
 .btn-ghost {
   background: transparent;
@@ -332,8 +333,8 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   border: none;
 }
 .btn-ghost:hover { opacity: 0.85; }
-.btn--light.btn-secondary { color: var(--color-text-light); border-color: rgba(255,255,255,0.4); }
-.btn--light.btn-secondary:hover { border-color: var(--color-text-light); color: var(--color-text-light); }
+.btn--light.btn-secondary { color: var(--color-text-light); border-color: rgba(247, 245, 241, 0.5); }
+.btn--light.btn-secondary:hover { border-color: var(--color-accent); color: var(--color-text-light); background: rgba(183, 154, 103, 0.1); }
 .btn--light.btn-ghost { color: var(--color-text-light); }
 .btn-large { padding: 1rem 2rem; font-size: 1rem; }
 
@@ -501,7 +502,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 .divider-gold {
   width: 120px;
   height: 2px;
-  background: #C8A47E;
+  background: var(--color-accent);
   margin-top: 12px;
   margin-bottom: 28px;
 }
@@ -775,7 +776,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 }
 .audience-card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 4px 20px rgba(74, 53, 38, 0.06);
+  box-shadow: 0 4px 20px rgba(30, 42, 56, 0.06);
 }
 .audience-card__title {
   font-family: var(--font-heading);
@@ -815,7 +816,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 .site-footer .footer-tagline,
 .site-footer .footer-nav a,
 .site-footer .footer-legal,
-.site-footer .footer-legal a { color: rgba(244, 241, 234, 0.88); }
+.site-footer .footer-legal a { color: rgba(247, 245, 241, 0.88); }
 .site-footer .footer-nav a:hover { color: var(--color-accent); }
 .footer-trust {
   padding: var(--space-2xl) 0;
@@ -833,7 +834,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: rgba(244, 241, 234, 0.75);
+  color: rgba(247, 245, 241, 0.75);
 }
 .footer-main {
   padding: var(--space-2xl) 0;
@@ -861,7 +862,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   font-family: var(--font-body);
   font-size: 0.95rem;
   line-height: 1.7;
-  color: rgba(244, 241, 234, 0.72);
+  color: rgba(247, 245, 241, 0.72);
   margin: 0 0 var(--space-xl);
   max-width: 36em;
   font-weight: 400;
@@ -879,17 +880,17 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   font-size: var(--text-small);
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: rgba(244, 241, 234, 0.8);
+  color: rgba(247, 245, 241, 0.8);
 }
 .footer-nav a:hover { color: var(--color-text-light); }
 .footer-legal {
   font-size: 0.8125rem;
-  color: rgba(244, 241, 234, 0.55);
+  color: rgba(247, 245, 241, 0.55);
   margin: 0;
   letter-spacing: 0.02em;
 }
-.footer-legal a { color: rgba(244, 241, 234, 0.65); }
-.footer-legal a:hover { color: rgba(244, 241, 234, 0.85); }
+.footer-legal a { color: rgba(247, 245, 241, 0.65); }
+.footer-legal a:hover { color: rgba(247, 245, 241, 0.85); }
 
 /* ==========================================================================
    Inner page hero (e.g. Training Pathways)
@@ -974,7 +975,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   font-size: var(--text-small);
   font-weight: 600;
   color: var(--color-institute);
-  background: rgba(74, 53, 38, 0.1);
+  background: rgba(30, 42, 56, 0.08);
   border-radius: 2px;
 }
 .pathway-overview-list li:last-child { border-bottom: none; }
@@ -1014,7 +1015,8 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   left: 0;
   right: 0;
   height: 1px;
-  background: var(--color-border);
+  background: var(--color-accent);
+  opacity: 0.5;
   z-index: 0;
 }
 .pathway-timeline__stage {
@@ -1192,7 +1194,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-institute);
-  background: rgba(74, 53, 38, 0.1);
+  background: rgba(30, 42, 56, 0.08);
   border-radius: 2px;
   flex-shrink: 0;
 }
@@ -1406,8 +1408,8 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   content: "✓";
 }
 .comparison-column--right {
-  border-color: rgba(74, 53, 38, 0.18);
-  background: linear-gradient(180deg, rgba(250, 249, 246, 0.98), var(--color-bg-paper));
+  border-color: var(--color-border-strong);
+  background: var(--color-bg-paper);
 }
 
 /* Comparison block — row layout (premium table treatment) */
@@ -1427,7 +1429,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   grid-template-columns: 1fr 1fr;
   gap: 0;
   border-bottom: 1px solid var(--color-border);
-  background: rgba(74, 53, 38, 0.03);
+  background: rgba(30, 42, 56, 0.03);
 }
 .comparison-block__col-title {
   font-family: var(--font-heading);
@@ -1461,7 +1463,7 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 }
 .comparison-cell--right {
   border-left: 1px solid var(--color-border);
-  background: rgba(250, 249, 246, 0.5);
+  background: rgba(30, 42, 56, 0.02);
 }
 .comparison-block--rows .comparison-cell--right {
   color: var(--color-text);
