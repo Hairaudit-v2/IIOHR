@@ -1,0 +1,14 @@
+node_modules/
+.vercel/
+.DS_Store
+*.log
+
+# Nested Next.js app artifacts
+iiohr-next/node_modules/
+iiohr-next/.next/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
