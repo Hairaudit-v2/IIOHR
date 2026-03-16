@@ -694,6 +694,55 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 }
 .link-arrow:hover::after { transform: translateX(4px); }
 
+/* Section imagery — restrained, one per section */
+.section-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+}
+.section-photo__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.section-photo--max-26 { max-width: 26rem; }
+.section-photo--max-20 { max-width: 20rem; }
+.section-photo--max-18 { max-width: 18rem; }
+.mentorship-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.45fr);
+  gap: var(--space-xl);
+  align-items: center;
+  margin-top: var(--space-2xl);
+  max-width: 48rem;
+}
+.mentorship-block__photo .section-photo { max-width: 18rem; }
+@media (max-width: 768px) {
+  .mentorship-block {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .mentorship-block__photo { order: -1; }
+  .mentorship-block__photo .section-photo { max-width: 100%; }
+}
+.science-section-with-photo {
+  display: grid;
+  grid-template-columns: 1fr minmax(14rem, 0.5fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+.science-section-with-photo .section-photo { max-width: 20rem; }
+@media (max-width: 768px) {
+  .science-section-with-photo {
+    grid-template-columns: 1fr;
+  }
+  .science-section-with-photo .section-photo { max-width: 100%; }
+}
+
 /* ==========================================================================
    Progression pathway
    ========================================================================== */
