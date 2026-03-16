@@ -884,9 +884,99 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   color: var(--color-text-muted);
 }
 
+/* Powered by Surgical Intelligence */
+.si-platforms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+  max-width: 52rem;
+}
+.si-platform {
+  padding: var(--space-lg);
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+}
+.si-platform__name {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: var(--line-tight);
+  margin: 0 0 var(--space-xs);
+}
+.si-platform__name a {
+  color: var(--color-institute);
+}
+.si-platform__name a:hover {
+  color: var(--color-accent);
+}
+.si-platform__role {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-sm);
+}
+.si-platform__text {
+  margin: 0;
+  font-size: var(--text-small);
+  line-height: var(--line-body);
+  color: var(--color-text-muted);
+}
+.si-flow {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border-soft);
+}
+.si-flow__label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-md);
+}
+.si-flow__chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm) var(--space-xs);
+}
+.si-flow__node {
+  font-size: var(--text-small);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-institute);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+}
+.si-flow__arrow {
+  width: 0.75rem;
+  height: 1px;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+.si-flow__arrow::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-right: 1.5px solid var(--color-text-muted);
+  border-top: 1.5px solid var(--color-text-muted);
+  transform: rotate(45deg);
+  margin-left: 0.5rem;
+  margin-top: -3px;
+}
+
 @media (max-width: 768px) {
   .fi-pillars { grid-template-columns: 1fr; }
   .fi-page .page-hero__title--fi { max-width: none; }
+  .si-platforms { grid-template-columns: 1fr; }
+  .si-flow__chain { justify-content: flex-start; }
 }
 
 /* Section imagery — restrained, one per section */
@@ -1066,6 +1156,63 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 .site-footer .footer-legal,
 .site-footer .footer-legal a { color: rgba(247, 245, 241, 0.88); }
 .site-footer .footer-nav a:hover { color: var(--color-accent); }
+
+/* Footer ecosystem band — consistent across all platforms */
+.footer-ecosystem {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border-dark);
+}
+.footer-ecosystem .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md) var(--space-xl);
+}
+.footer-ecosystem__label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(247, 245, 241, 0.6);
+  margin: 0;
+  white-space: nowrap;
+}
+.footer-ecosystem__label .tm {
+  font-size: 0.7em;
+  vertical-align: super;
+  letter-spacing: 0;
+}
+.footer-ecosystem__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm) var(--space-lg);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-ecosystem__links a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: rgba(247, 245, 241, 0.85);
+}
+.footer-ecosystem__links a:hover { color: var(--color-accent); }
+.footer-ecosystem__links .sep {
+  color: rgba(247, 245, 241, 0.35);
+  font-weight: 400;
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .footer-ecosystem .container {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  .footer-ecosystem__label { white-space: normal; text-align: center; }
+}
+
 .footer-trust {
   padding: var(--space-2xl) 0;
   border-bottom: 1px solid var(--color-border-dark);
