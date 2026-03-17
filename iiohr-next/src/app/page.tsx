@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { EcosystemSection } from "@/components/EcosystemSection";
+import { GlobalHairIntelligenceSection } from "@/components/ecosystem/GlobalHairIntelligenceSection";
 
 export default function Home() {
   return (
@@ -61,7 +61,12 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <EcosystemSection variant="light" />
+      <GlobalHairIntelligenceSection
+        variant="iiohr"
+        heading="Training Within a Connected Intelligence System"
+        description="IIOHR is the education and certification pillar within the broader Hair Intelligence ecosystem. Our training connects directly to surgical quality, treatment understanding, and analytical intelligence — positioning the institute as a standards-setting body for surgeon development."
+        theme="light"
+      />
     </div>
   );
 }
