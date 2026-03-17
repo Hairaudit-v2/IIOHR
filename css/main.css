@@ -736,6 +736,120 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 }
 .link-arrow:hover::after { transform: translateX(4px); }
 
+/* ==========================================================================
+   Ecosystem diagram — shared Surgical Intelligence Ecosystem
+   Training Within a Connected Intelligence System (IIOHR)
+   ========================================================================== */
+.ecosystem-section .container--narrow.ecosystem-section__container {
+  max-width: var(--container-narrow);
+}
+.ecosystem-section__lead {
+  margin-bottom: var(--space-md);
+  max-width: 42em;
+}
+.ecosystem-section__copy {
+  font-size: var(--text-base);
+  line-height: var(--line-loose);
+  color: var(--color-text-muted);
+  max-width: 42em;
+  margin: 0 0 var(--space-2xl);
+}
+.section--alt .ecosystem-section__copy {
+  color: var(--color-text-muted);
+}
+.ecosystem-section__cta-wrap {
+  margin: var(--space-xl) 0 0;
+  text-align: center;
+}
+.ecosystem-section__cta-wrap .btn {
+  margin: 0;
+}
+
+.ecosystem-diagram {
+  margin: var(--space-2xl) 0;
+  color: var(--color-text);
+}
+.ecosystem-diagram__inner {
+  max-width: 32rem;
+  margin-inline: auto;
+}
+.ecosystem-diagram__svg {
+  width: 100%;
+  height: auto;
+  color: var(--color-institute);
+}
+.ecosystem-diagram__line {
+  transition: stroke-opacity var(--transition-base);
+}
+.ecosystem-diagram__ring,
+.ecosystem-diagram__centre-fill,
+.ecosystem-diagram__satellite-ring {
+  transition: opacity var(--transition-base), stroke var(--transition-base);
+}
+.ecosystem-diagram__node--centre text {
+  font-family: var(--font-heading);
+}
+.ecosystem-diagram__centre-title {
+  font-size: 14px;
+  font-weight: 600;
+  fill: currentColor;
+  letter-spacing: -0.01em;
+}
+.ecosystem-diagram__centre-role {
+  font-size: 11px;
+  font-weight: 500;
+  fill: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+.ecosystem-diagram__satellite-title {
+  font-size: 12px;
+  font-weight: 600;
+  fill: currentColor;
+}
+.ecosystem-diagram__satellite-role {
+  font-size: 10px;
+  font-weight: 500;
+  fill: var(--color-text-muted);
+}
+.ecosystem-diagram__svg .tm {
+  font-size: 0.7em;
+  baseline-shift: super;
+}
+.ecosystem-diagram__node--highlight .ecosystem-diagram__satellite-ring {
+  stroke: var(--color-accent);
+  stroke-width: 1.25;
+}
+.ecosystem-diagram__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm) var(--space-lg);
+  margin-top: var(--space-xl);
+  font-size: var(--text-small);
+  font-weight: 500;
+}
+.ecosystem-diagram__links a {
+  color: var(--color-text-muted);
+}
+.ecosystem-diagram__links a:hover {
+  color: var(--color-accent);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ecosystem-diagram__inner {
+    animation: ecosystem-fade-in 0.4s var(--ease-out) both;
+  }
+}
+@keyframes ecosystem-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (max-width: 520px) {
+  .ecosystem-diagram__inner { max-width: 100%; }
+  .ecosystem-diagram__centre-title { font-size: 12px; }
+  .ecosystem-diagram__satellite-title { font-size: 11px; }
+  .ecosystem-diagram__satellite-role { font-size: 9px; }
+}
+
 /* Follicle Intelligence page — premium, text-dominant, minimal imagery */
 .fi-page .page-hero--fi {
   padding: clamp(var(--space-2xl), 5vw, var(--space-3xl)) 0 clamp(var(--space-xl), 4vw, var(--space-2xl));
