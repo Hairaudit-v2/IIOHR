@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { GlobalHairIntelligenceNetwork } from "@/components/ecosystem/GlobalHairIntelligenceNetwork";
 import type { GlobalNetworkTheme, GlobalNetworkVariant } from "@/components/ecosystem/GlobalHairIntelligenceNetwork";
@@ -37,6 +38,8 @@ export interface GlobalHairIntelligenceSectionProps {
   nodeLinks?: Partial<Record<"iiohr" | "hli" | "hairaudit" | "fi", string>>;
   /** Optional slot for future shared animated diagram implementation. */
   diagramSlot?: ReactNode;
+  /** Optional lab/DNA background visual when sectionTone is dark (homepage). */
+  labImage?: { src: string; alt: string };
 }
 
 /**
@@ -56,6 +59,7 @@ export function GlobalHairIntelligenceSection({
   className = "",
   nodeLinks = GLOBAL_NETWORK_NODE_LINKS,
   diagramSlot,
+  labImage,
 }: GlobalHairIntelligenceSectionProps) {
   const isDark = sectionTone === "dark";
   const sectionClass = isDark
@@ -68,7 +72,28 @@ export function GlobalHairIntelligenceSection({
       aria-labelledby={`${id}-heading`}
       data-section-tone={isDark ? "dark" : undefined}
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-32">
+      {isDark && labImage ? (
+        <div
+          className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
+          aria-hidden
+        >
+          <div className="relative size-full">
+            <Image
+              src={labImage.src}
+              alt={labImage.alt}
+              fill
+              className="object-cover object-center opacity-[0.12] blur-[4px]"
+              sizes="100vw"
+            />
+          </div>
+          {/* Gradient overlay to match dark section; edges blend, center allows subtle image through */}
+          <div
+            className="absolute inset-0 bg-gradient-to-b from-section-charcoal/70 via-transparent to-section-charcoal/70"
+            aria-hidden
+          />
+        </div>
+      ) : null}
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-32">
         <SectionHeading
           eyebrow="Connected System"
           title={heading}

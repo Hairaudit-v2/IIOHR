@@ -1,12 +1,16 @@
 import { LinkArrow } from "@/components/ui/LinkArrow";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SplitSection } from "@/components/sections/shared/SplitSection";
-import { follicleSectionImage } from "@/lib/homeImages";
+import { HOME_IMAGES, follicleSectionImage } from "@/lib/homeImages";
 import { siteConfig } from "@/lib/site";
 
 export function FollicleIntelligenceSupportSection() {
   return (
-    <SplitSection image={follicleSectionImage} imagePosition="right" className="section-ai-accent">
+    <SplitSection
+      image={{ src: HOME_IMAGES.science.dna, alt: follicleSectionImage.alt }}
+      imagePosition="right"
+      className="section-ai-accent"
+    >
       <SectionHeading
         eyebrow="Follicle Intelligence"
         title="Ecosystem intelligence that supports surgical development"

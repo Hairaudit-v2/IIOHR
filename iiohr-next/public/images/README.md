@@ -1,8 +1,34 @@
 # Homepage and site images
 
-Assets in this folder are used by the IIOHR Next.js app. They are copied from the repo root `Images/` folder (see `Images/README.md` for placement mapping).
+All paths are centralized in `src/lib/homeImages.ts` under **HOME_IMAGES**. Use the following folder structure and filenames so components resolve correctly.
 
-- **Home hero:** `A9xyymvo_ncjkle_pfs.jpg` — clinical education / mentorship.
-- **Follicle Intelligence section:** `A91fwobcw_qrrrks_ds8.jpg` — research / data / intelligence.
+## Folder structure
 
-To update: replace files here and keep filenames in sync with `src/lib/homeImages.ts` and `src/lib/heroImages.ts`, or update those paths.
+```
+public/images/
+  hero/     → hero-hair-texture.jpg, hero-hair-progression.jpg
+  science/  → science-follicle-cross-section.jpg, science-follicle-render.png,
+               science-hair-cycle.jpg, science-dna-lab.jpg, science-genetics.jpg,
+               science-hormones-dht.jpg
+  human/    → human-mirror-check.jpg
+  trust/    → trust-doctor-portrait.jpg
+  ecosystem/ → ecosystem-dna-lab.jpg
+```
+
+## Path reference (HOME_IMAGES)
+
+| Key | Path |
+|-----|------|
+| hero.texture | `/images/hero/hero-hair-texture.jpg` |
+| hero.progression | `/images/hero/hero-hair-progression.jpg` |
+| science.follicle | `/images/science/science-follicle-cross-section.jpg` |
+| science.follicleRender | `/images/science/science-follicle-render.png` |
+| science.hairCycle | `/images/science/science-hair-cycle.jpg` |
+| science.dna | `/images/science/science-dna-lab.jpg` |
+| science.genetics | `/images/science/science-genetics.jpg` |
+| science.hormones | `/images/science/science-hormones-dht.jpg` |
+| human.mirror | `/images/human/human-mirror-check.jpg` |
+| trust.doctor | `/images/trust/trust-doctor-portrait.jpg` |
+| ecosystem.dnaLab | `/images/ecosystem/ecosystem-dna-lab.jpg` |
+
+Components import from `@/lib/homeImages` only; do not hardcode image paths elsewhere.

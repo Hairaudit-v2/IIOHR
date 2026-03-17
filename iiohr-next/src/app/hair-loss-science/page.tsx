@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { BiologyTreatmentPlanningSection } from "@/components/sections/hair-loss-science/BiologyTreatmentPlanningSection";
 import { CausesAndAssessmentSection } from "@/components/sections/hair-loss-science/CausesAndAssessmentSection";
 import { EcosystemScienceSection } from "@/components/sections/hair-loss-science/EcosystemScienceSection";
+import { FollicleFullWidthSection } from "@/components/sections/hair-loss-science/FollicleFullWidthSection";
+import { HairCycleSection } from "@/components/sections/hair-loss-science/HairCycleSection";
 import { HairLossScienceCtaSection } from "@/components/sections/hair-loss-science/HairLossScienceCtaSection";
 import { HairLossScienceHero } from "@/components/sections/hair-loss-science/HairLossScienceHero";
 import { JudgmentOutcomesSection } from "@/components/sections/hair-loss-science/JudgmentOutcomesSection";
@@ -25,7 +26,8 @@ export default function HairLossSciencePage() {
       <ScienceImportanceSection />
       <CausesAndAssessmentSection />
       <TrichologyAndDiagnosisSection />
-      <BiologyTreatmentPlanningSection />
+      <HairCycleSection />
+      <FollicleFullWidthSection />
       <EcosystemScienceSection />
       <JudgmentOutcomesSection />
       <HairLossScienceCtaSection />

@@ -1,18 +1,54 @@
-import { FeatureGrid } from "@/components/sections/shared/FeatureGrid";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { Card } from "@/components/ui/Card";
+import { ImageWrapper } from "@/components/ui/ImageWrapper";
+import { HOME_IMAGES, humanImpactImage } from "@/lib/homeImages";
+
+const problemItems = [
+  "Short and shallow training windows",
+  "Doctors left without mentorship after completion",
+  "Limited outcome feedback and audit loops",
+  "No clear progression from observation to independent practice",
+];
 
 export function ProblemSection() {
   return (
-    <FeatureGrid
-      muted
-      eyebrow="Context"
-      title="The problem with traditional training"
-      description="Hair restoration training is often too short, too shallow, and too unsupported to build lasting surgical competence and clinical judgment."
-      items={[
-        "Short and shallow training windows",
-        "Doctors left without mentorship after completion",
-        "Limited outcome feedback and audit loops",
-        "No clear progression from observation to independent practice",
-      ]}
-    />
+    <SectionShell muted id="problem">
+      <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+        {/* Image left (stacked first on mobile) */}
+        <div className="relative order-2 min-h-[220px] lg:order-1">
+          <ImageWrapper
+            src={HOME_IMAGES.human.mirror}
+            alt={humanImpactImage.alt}
+            className="aspect-[4/3] w-full"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            glowOnHover
+          >
+            <div
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-accent/25 via-accent/5 to-transparent"
+              aria-hidden
+            />
+          </ImageWrapper>
+        </div>
+
+        {/* Text right */}
+        <div className="order-1 min-w-0 lg:order-2">
+          <SectionHeading
+            eyebrow="Context"
+            title="The problem with traditional training"
+            description="Hair restoration training is often too short, too shallow, and too unsupported to build lasting surgical competence and clinical judgment."
+          />
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-12">
+            {problemItems.map((item) => (
+              <Card key={item}>
+                <p className="text-sm font-medium leading-snug tracking-tight text-foreground">
+                  {item}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </SectionShell>
   );
 }

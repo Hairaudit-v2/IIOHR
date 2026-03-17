@@ -3,7 +3,7 @@
  * Recommended: 340×255 px (4:3), clinical/educational, warm-toned.
  */
 
-import { heroEducationImage } from "./homeImages";
+import { hairProgressionImage } from "./homeImages";
 
 export interface HeroImageConfig {
   src: string;
@@ -16,7 +16,7 @@ const PLACEHOLDER: HeroImageConfig = {
 };
 
 export const heroImages = {
-  home: heroEducationImage,
+  home: hairProgressionImage,
   about: {
     src: "/hero/placeholder.svg",
     alt: "International Institute of Hair Restoration",
