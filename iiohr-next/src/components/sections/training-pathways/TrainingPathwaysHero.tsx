@@ -1,3 +1,4 @@
+import { getHeroImage } from "@/lib/heroImages";
 import { PageHero } from "@/components/sections/shared/PageHero";
 
 export function TrainingPathwaysHero() {
@@ -8,6 +9,7 @@ export function TrainingPathwaysHero() {
       description="IIOHR pathways are designed to build durable surgeon capability through staged practical exposure, academic depth, quality auditing, and long-term mentorship."
       primaryCta={{ href: "/apply", label: "Apply for Training" }}
       secondaryCta={{ href: "#pathway-philosophy", label: "Explore the Pathway" }}
+      image={getHeroImage("trainingPathways")}
     />
   );
 }

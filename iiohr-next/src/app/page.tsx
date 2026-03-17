@@ -6,10 +6,12 @@ import { EcosystemAuthoritySection } from "@/components/sections/home/EcosystemA
 import { FollicleIntelligenceSupportSection } from "@/components/sections/home/FollicleIntelligenceSupportSection";
 import { HeroSection } from "@/components/sections/home/HeroSection";
 import { MentorshipSection } from "@/components/sections/home/MentorshipSection";
+import { PathwayTrustBlock } from "@/components/sections/home/PathwayTrustBlock";
 import { ProblemSection } from "@/components/sections/home/ProblemSection";
 import { ProgressionPathwaySection } from "@/components/sections/home/ProgressionPathwaySection";
 import { TrainingPillarsSection } from "@/components/sections/home/TrainingPillarsSection";
 import { TrustSignalsSection } from "@/components/sections/home/TrustSignalsSection";
+import { SectionSpacer } from "@/components/sections/shared/SectionSpacer";
 import { WhyModelSection } from "@/components/sections/home/WhyModelSection";
 import { GlobalHairIntelligenceSection, GLOBAL_NETWORK_NODE_LINKS } from "@/components/ecosystem";
 import { getWebPageJsonLd } from "@/lib/seo";
@@ -29,7 +31,9 @@ export default function HomePage() {
       <DifferenceSection />
       <TrainingPillarsSection />
       <FollicleIntelligenceSupportSection />
+      <SectionSpacer />
       <ProgressionPathwaySection />
+      <PathwayTrustBlock />
       <GlobalHairIntelligenceSection
         variant="iiohr"
         heading="The Global Hair Intelligence System"

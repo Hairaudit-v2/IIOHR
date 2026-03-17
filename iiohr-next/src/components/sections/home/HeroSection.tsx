@@ -1,3 +1,4 @@
+import { getHeroImage } from "@/lib/heroImages";
 import { PageHero } from "@/components/sections/shared/PageHero";
 
 export function HeroSection() {
@@ -8,6 +9,8 @@ export function HeroSection() {
       description="A global education and mentorship platform for hair restoration: clinically grounded training, practical surgical exposure, and standards-based progression for doctors and clinics."
       primaryCta={{ href: "/about", label: "Explore the Institute" }}
       secondaryCta={{ href: "/training-pathways", label: "View Training Pathways" }}
+      image={getHeroImage("home")}
+      imagePriority
     />
   );
 }

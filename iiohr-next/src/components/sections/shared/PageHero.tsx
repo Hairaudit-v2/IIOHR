@@ -1,5 +1,11 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+
+export interface HeroImage {
+  src: string;
+  alt: string;
+}
 
 interface PageHeroProps {
   eyebrow: string;
@@ -7,6 +13,10 @@ interface PageHeroProps {
   description: string;
   primaryCta?: { href: string; label: string };
   secondaryCta?: { href: string; label: string };
+  /** Optional hero image for side panel. Use .img-panel styling. */
+  image?: HeroImage;
+  /** Set true for LCP hero (e.g. homepage) to prioritize loading. */
+  imagePriority?: boolean;
 }
 
 /** Chapter-opener style hero — warm neutral, bronze heading, generous whitespace */
@@ -16,6 +26,8 @@ export function PageHero({
   description,
   primaryCta,
   secondaryCta,
+  image,
+  imagePriority = false,
 }: PageHeroProps) {
   return (
     <section className="border-b border-border-soft bg-background">
@@ -40,8 +52,23 @@ export function PageHero({
               </div>
             )}
           </div>
-          {/* Optional side panel for future image — module spread layout */}
-          <div className="hidden min-h-[200px] rounded border border-border bg-surface-elevated lg:block" aria-hidden />
+          {(
+            <div className="img-panel hidden min-h-[220px] w-full lg:block">
+              {image ? (
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={340}
+                  height={255}
+                  className="h-full w-full object-cover"
+                  priority={imagePriority}
+                  sizes="340px"
+                />
+              ) : (
+                <div className="h-full min-h-[220px] w-full bg-parchment" aria-hidden />
+              )}
+            </div>
+          )}
         </div>
       </div>
     </section>

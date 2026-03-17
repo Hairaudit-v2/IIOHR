@@ -1,11 +1,13 @@
 import { LinkArrow } from "@/components/ui/LinkArrow";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { SplitSection } from "@/components/sections/shared/SplitSection";
 import { siteConfig } from "@/lib/site";
+
+const FOLLICLE_SECTION_IMAGE = { src: "/hero/placeholder.svg", alt: "" };
 
 export function FollicleIntelligenceSupportSection() {
   return (
-    <SectionShell>
+    <SplitSection image={FOLLICLE_SECTION_IMAGE} imagePosition="right">
       <SectionHeading
         eyebrow="Follicle Intelligence"
         title="Ecosystem intelligence that supports surgical development"
@@ -22,6 +24,6 @@ export function FollicleIntelligenceSupportSection() {
           </LinkArrow>
         </div>
       </div>
-    </SectionShell>
+    </SplitSection>
   );
 }
