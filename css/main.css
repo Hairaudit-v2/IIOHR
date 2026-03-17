@@ -740,46 +740,82 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
    Ecosystem section — Global Hair Intelligence System (homepage)
    ========================================================================== */
 .ecosystem-section--ghi .ecosystem-section__container {
-  max-width: 58rem;
+  max-width: 68rem;
 }
 .ecosystem-section--ghi .ecosystem-section__lead {
-  margin-bottom: var(--space-xl);
+  margin-bottom: clamp(var(--space-lg), 2.5vw, var(--space-2xl));
   max-width: 44em;
 }
 .ecosystem-section--ghi .ghi-system {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: var(--space-lg);
-  align-items: stretch;
-  margin-top: var(--space-md);
+  justify-items: center;
+  gap: clamp(var(--space-lg), 2.5vw, var(--space-xl));
+  margin-top: clamp(var(--space-md), 2vw, var(--space-lg));
+  padding: clamp(var(--space-md), 2.8vw, var(--space-xl)) clamp(var(--space-sm), 1.8vw, var(--space-md)) 0;
+  isolation: isolate;
+}
+.ecosystem-section--ghi .ghi-system::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: clamp(-0.65rem, -1vw, -0.35rem);
+  width: min(86vw, 36rem);
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at center, rgba(183, 154, 103, 0.09) 0 26%, rgba(183, 154, 103, 0) 48%),
+    radial-gradient(circle at center, transparent 0 57%, rgba(30, 42, 56, 0.08) 57.2% 57.6%, transparent 57.8% 70%, rgba(30, 42, 56, 0.06) 70.2% 70.5%, transparent 70.8%);
+  pointer-events: none;
+  z-index: -1;
+}
+.ecosystem-section--ghi .ghi-system::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: calc(clamp(12.5rem, 24vw, 15.5rem) + clamp(var(--space-sm), 1.2vw, var(--space-md)));
+  width: 1px;
+  height: clamp(1.15rem, 2vw, 1.75rem);
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, rgba(30, 42, 56, 0.26), rgba(30, 42, 56, 0.08));
+  pointer-events: none;
 }
 .ecosystem-section--ghi .ghi-node {
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
-  background: var(--color-bg-paper);
+  border: 1px solid rgba(30, 42, 56, 0.16);
+  border-radius: 3px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(251, 252, 253, 0.98));
   min-height: 100%;
+  position: relative;
+  z-index: 1;
 }
 .ecosystem-section--ghi .ghi-node--active {
-  padding: var(--space-xl);
-  border-color: var(--color-border-strong);
-  box-shadow: 0 8px 24px rgba(30, 42, 56, 0.06);
+  width: min(100%, 34rem);
+  padding: clamp(var(--space-xl), 3vw, var(--space-2xl)) clamp(var(--space-lg), 2.4vw, var(--space-xl));
+  border-color: rgba(30, 42, 56, 0.34);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(249, 250, 252, 0.98)),
+    linear-gradient(135deg, rgba(183, 154, 103, 0.05), rgba(183, 154, 103, 0));
+  box-shadow: 0 14px 32px rgba(30, 42, 56, 0.08);
   position: relative;
+  text-align: center;
 }
 .ecosystem-section--ghi .ghi-node--active::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
-  bottom: 0;
-  width: 3px;
+  width: clamp(4.5rem, 17%, 6.8rem);
+  height: 2px;
+  transform: translateX(-50%);
   background: var(--color-accent);
-  border-radius: 2px 0 0 2px;
+  border-radius: 0 0 2px 2px;
 }
 .ecosystem-section--ghi .ghi-node__label {
-  margin: 0 0 var(--space-sm);
+  margin: 0 0 0.65rem;
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--color-accent);
 }
@@ -801,35 +837,94 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   color: var(--color-text-muted);
 }
 .ecosystem-section--ghi .ghi-node__text {
-  margin: 0;
+  margin: 0 auto;
   font-size: var(--text-base);
   line-height: var(--line-loose);
   color: var(--color-text-muted);
-  max-width: 34ch;
+  max-width: 38ch;
 }
 .ecosystem-section--ghi .ghi-linked-nodes {
+  width: min(100%, 62rem);
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-sm);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(var(--space-sm), 1.6vw, var(--space-md));
+  padding-top: clamp(1.35rem, 2vw, 1.65rem);
+  align-items: start;
+}
+.ecosystem-section--ghi .ghi-linked-nodes::before {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(to right, rgba(30, 42, 56, 0), rgba(30, 42, 56, 0.2), rgba(30, 42, 56, 0));
+  pointer-events: none;
+}
+.ecosystem-section--ghi .ghi-linked-nodes::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -1.6rem;
+  width: 1px;
+  height: 1.6rem;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, rgba(30, 42, 56, 0.24), rgba(30, 42, 56, 0.06));
+  pointer-events: none;
 }
 .ecosystem-section--ghi a.ghi-node--linked {
   display: block;
-  padding: var(--space-md) var(--space-lg);
+  padding: clamp(var(--space-md), 1.8vw, var(--space-lg));
+  min-height: 100%;
   text-decoration: none;
   color: inherit;
-  transition: border-color var(--transition-base), background-color var(--transition-base);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(251, 252, 253, 0.98));
+  transition: border-color var(--transition-base), background-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+}
+.ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(1),
+.ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(3) {
+  margin-top: clamp(0.45rem, 1vw, 0.8rem);
+}
+.ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(2) {
+  margin-top: 0;
+}
+.ecosystem-section--ghi a.ghi-node--linked::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -0.95rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(30, 42, 56, 0.24);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8);
+}
+.ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(1)::before,
+.ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(3)::before {
+  top: -1.45rem;
+}
+.ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(2)::before {
+  top: -0.95rem;
 }
 .ecosystem-section--ghi a.ghi-node--linked:hover {
-  border-color: var(--color-accent);
-  background: rgba(183, 154, 103, 0.05);
+  border-color: rgba(183, 154, 103, 0.85);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(183, 154, 103, 0.07));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(30, 42, 56, 0.08);
 }
 .ecosystem-section--ghi a.ghi-node--linked:focus-visible {
   outline: 2px solid var(--color-institute);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-color: var(--color-institute);
+  background: rgba(183, 154, 103, 0.08);
 }
 .ecosystem-section--ghi a.ghi-node--linked .ghi-node__title {
-  margin-bottom: 0.35rem;
-  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.25;
 }
 .ecosystem-section--ghi .ecosystem-section__cta-wrap {
   margin: var(--space-xl) 0 0;
@@ -838,9 +933,55 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
 .ecosystem-section--ghi .ecosystem-section__cta-wrap .btn {
   margin: 0;
 }
+@media (max-width: 1100px) {
+  .ecosystem-section--ghi .ecosystem-section__container {
+    max-width: 62rem;
+  }
+  .ecosystem-section--ghi .ghi-linked-nodes {
+    gap: var(--space-sm);
+  }
+}
 @media (max-width: 900px) {
   .ecosystem-section--ghi .ghi-system {
+    padding-top: var(--space-sm);
+    gap: var(--space-lg);
+  }
+  .ecosystem-section--ghi .ghi-system::after {
+    display: none;
+  }
+  .ecosystem-section--ghi .ghi-system {
+    justify-items: stretch;
+  }
+  .ecosystem-section--ghi .ghi-node--active {
+    width: 100%;
+    text-align: left;
+  }
+  .ecosystem-section--ghi .ghi-node__text {
+    margin-left: 0;
+  }
+  .ecosystem-section--ghi .ghi-linked-nodes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+  .ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(1),
+  .ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(3),
+  .ecosystem-section--ghi .ghi-linked-nodes > a.ghi-node--linked:nth-child(2) {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .ecosystem-section--ghi .ghi-system::before {
+    width: min(92vw, 32rem);
+    top: -0.2rem;
+  }
+  .ecosystem-section--ghi .ghi-linked-nodes {
     grid-template-columns: 1fr;
+    padding-top: var(--space-sm);
+  }
+  .ecosystem-section--ghi .ghi-linked-nodes::before,
+  .ecosystem-section--ghi .ghi-linked-nodes::after,
+  .ecosystem-section--ghi a.ghi-node--linked::before {
+    display: none;
   }
 }
 @media (max-width: 600px) {
@@ -852,6 +993,18 @@ a:focus-visible { outline: 2px solid var(--color-institute); outline-offset: 2px
   }
   .ecosystem-section--ghi .ghi-node__title {
     font-size: 1.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .ecosystem-section--ghi .ghi-system {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ecosystem-section--ghi .ghi-node--active {
+    padding: var(--space-md);
+  }
+  .ecosystem-section--ghi .ghi-node__label {
+    font-size: 0.7rem;
   }
 }
 
