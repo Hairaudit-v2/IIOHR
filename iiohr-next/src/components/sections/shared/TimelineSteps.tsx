@@ -1,11 +1,21 @@
+import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+
+export interface TimelineStepItem {
+  label: string;
+  description: string;
+}
 
 interface TimelineStepsProps {
   eyebrow: string;
   title: string;
   description: string;
-  steps: string[];
+  steps: string[] | TimelineStepItem[];
+}
+
+function isStepItem(step: string | TimelineStepItem): step is TimelineStepItem {
+  return typeof step === "object" && step !== null && "label" in step && "description" in step;
 }
 
 export function TimelineSteps({
@@ -14,16 +24,26 @@ export function TimelineSteps({
   description,
   steps,
 }: TimelineStepsProps) {
+  const items = steps.map((step, index) =>
+    isStepItem(step)
+      ? { key: step.label, label: step.label, description: step.description, index: index + 1 }
+      : { key: step, label: step, description: "", index: index + 1 }
+  );
+
   return (
     <SectionShell muted>
       <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-      <ol className="mt-10 grid gap-3 text-sm font-semibold tracking-[0.08em] uppercase sm:grid-cols-2 lg:mt-12 lg:grid-cols-6">
-        {steps.map((step, index) => (
-          <li key={step} className="rounded-md border border-border bg-surface px-4 py-4 shadow-[0_1px_2px_0_rgba(44,42,38,0.04)]">
-            <span className="text-[10px] tracking-[0.14em] text-muted-foreground">
-              {`0${index + 1}`}
-            </span>
-            <p className="mt-2 text-foreground">{step}</p>
+      <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3 xl:grid-cols-6">
+        {items.map(({ key, label, description: desc, index }) => (
+          <li key={key}>
+            <Card interactive marker={`0${index}`} as="div">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.06em] text-foreground">
+                {label}
+              </h3>
+              {desc ? (
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{desc}</p>
+              ) : null}
+            </Card>
           </li>
         ))}
       </ol>

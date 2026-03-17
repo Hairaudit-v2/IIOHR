@@ -30,13 +30,13 @@ export function FeatureGrid({
         {items.map((item) => (
           <Card
             key={item}
-            className={dark ? "border-primary-foreground/20 bg-primary-foreground/5 shadow-none" : ""}
+            className={dark ? "border-section-charcoal-border bg-section-charcoal-foreground/10 shadow-none" : ""}
           >
             <h3 className="text-lg leading-snug font-semibold tracking-tight">{item}</h3>
           </Card>
         ))}
       </div>
-      {footer ? <div className="mt-8 flex flex-wrap gap-6">{footer}</div> : null}
+      {footer ? <div className="mt-10">{footer}</div> : null}
     </SectionShell>
   );
 }

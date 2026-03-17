@@ -1,6 +1,14 @@
 import { TimelineSteps } from "@/components/sections/shared/TimelineSteps";
+import type { TimelineStepItem } from "@/components/sections/shared/TimelineSteps";
 
-const steps = ["Learn", "Observe", "Perform", "Audit", "Improve", "Advance"];
+const steps: TimelineStepItem[] = [
+  { label: "Learn", description: "Theory and clinical foundations." },
+  { label: "Observe", description: "Supervised observation in practice." },
+  { label: "Perform", description: "Hands-on under direct supervision." },
+  { label: "Audit", description: "Outcome review and benchmarking." },
+  { label: "Improve", description: "Refinement and improvement planning." },
+  { label: "Advance", description: "Progression to the next stage." },
+];
 
 export function ProgressionPathwaySection() {
   return (

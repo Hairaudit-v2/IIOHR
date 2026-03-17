@@ -39,6 +39,7 @@ export default function HomePage() {
         heading="The Global Hair Intelligence System"
         description="IIOHR is the education and certification pillar within a connected intelligence ecosystem. Training links directly to surgical audit, analytical feedback, and hair-loss science so surgeon development is measured, supported, and continuously improved."
         size="compact"
+        sectionTone="dark"
         nodeLinks={GLOBAL_NETWORK_NODE_LINKS}
       />
       <EcosystemAuthoritySection />

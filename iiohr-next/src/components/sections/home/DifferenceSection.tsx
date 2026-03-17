@@ -1,5 +1,5 @@
 import { FeatureGrid } from "@/components/sections/shared/FeatureGrid";
-import { LinkArrow } from "@/components/ui/LinkArrow";
+import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export function DifferenceSection() {
   return (
@@ -16,10 +16,12 @@ export function DifferenceSection() {
         "Global perspective anchored to explicit clinical standards",
       ]}
       footer={
-        <>
-          <LinkArrow href="/training-pathways">Explore training pathways</LinkArrow>
-          <LinkArrow href="/practical-fue">Practical FUE training</LinkArrow>
-        </>
+        <SectionCTA
+          variant="light"
+          primary={{ href: "/training-pathways", label: "Explore Pathways" }}
+          secondary={[{ href: "/practical-fue", label: "View Curriculum" }]}
+          tertiary={[{ href: "/about", label: "Learn More" }]}
+        />
       }
     />
   );

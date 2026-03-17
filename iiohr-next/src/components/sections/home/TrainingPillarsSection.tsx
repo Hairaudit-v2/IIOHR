@@ -1,4 +1,5 @@
 import { FeatureGrid } from "@/components/sections/shared/FeatureGrid";
+import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export function TrainingPillarsSection() {
   return (
@@ -14,6 +15,14 @@ export function TrainingPillarsSection() {
         "Follicle Intelligence auditing and outcome feedback",
         "Ongoing clinician-facing mentorship and development",
       ]}
+      footer={
+        <SectionCTA
+          variant="dark"
+          primary={{ href: "/practical-fue", label: "View Curriculum" }}
+          secondary={[{ href: "/training-pathways", label: "Explore Pathways" }]}
+          tertiary={[{ href: "/about", label: "Learn More" }]}
+        />
+      }
     />
   );
 }

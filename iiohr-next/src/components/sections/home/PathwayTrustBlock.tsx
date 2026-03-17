@@ -26,10 +26,12 @@ export function PathwayTrustBlock() {
         title="Progression, exposure, and standards"
         description="The pathway is built on staged progression, supervised practical exposure, and development aligned to clinical standards."
       />
-      <div className="mt-10 grid gap-4 sm:grid-cols-3">
-        {items.map((item) => (
-          <Card key={item.title}>
-            <h3 className="text-base font-semibold tracking-tight">{item.title}</h3>
+      <div className="mt-10 grid gap-5 sm:grid-cols-3">
+        {items.map((item, index) => (
+          <Card key={item.title} interactive marker={index + 1}>
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              {item.title}
+            </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
           </Card>
         ))}

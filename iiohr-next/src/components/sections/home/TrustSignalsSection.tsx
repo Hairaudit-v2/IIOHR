@@ -29,11 +29,15 @@ export function TrustSignalsSection() {
         title="How we uphold quality"
         description="IIOHR’s approach is built on faculty credibility, measurable outcomes, and clear standards so clinician development is accountable, transparent, and globally relevant."
       />
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {signals.map((item) => (
-          <Card key={item.title}>
-            <h3 className="text-base font-semibold tracking-tight">{item.title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+          <Card key={item.title} interactive>
+            <h3 className="text-base font-semibold tracking-tight text-foreground">
+              {item.title}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {item.description}
+            </p>
           </Card>
         ))}
       </div>

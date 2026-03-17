@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { SectionCTA } from "@/components/ui/SectionCTA";
 
 const audienceItems = [
   {
@@ -36,25 +37,30 @@ export function AudienceSection() {
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         {audienceItems.map((item) => (
-          <Card key={item.title}>
-            <h3 className="text-xl font-semibold">{item.title}</h3>
-            <p className="mt-3 text-muted-foreground">{item.description}</p>
+          <Card key={item.title} interactive>
+            <h3 className="text-xl font-semibold tracking-tight text-foreground">
+              {item.title}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {item.description}
+            </p>
           </Card>
         ))}
       </div>
-      <p className="mt-8 text-sm text-muted-foreground">
-        <Link href="/training-pathways" className="font-medium text-foreground underline decoration-heading/40 hover:text-heading hover:decoration-heading">
-          Explore training pathways
-        </Link>
-        {" · "}
-        <Link href="/apply" className="font-medium text-foreground underline decoration-heading/40 hover:text-heading hover:decoration-heading">
-          Apply for training
-        </Link>
-        {" · "}
-        <Link href="/for-clinics" className="font-medium text-foreground underline decoration-heading/40 hover:text-heading hover:decoration-heading">
-          For clinics
-        </Link>
-      </p>
+      <div className="mt-10">
+        <SectionCTA
+          variant="light"
+          primary={{ href: "/apply", label: "Apply Now" }}
+          secondary={[
+            { href: "/training-pathways", label: "Explore Pathways" },
+            { href: "/for-clinics", label: "Enquire About Training" },
+          ]}
+          tertiary={[
+            { href: "/training-pathways", label: "Explore training pathways" },
+            { href: "/about", label: "Learn More" },
+          ]}
+        />
+      </div>
     </SectionShell>
   );
 }

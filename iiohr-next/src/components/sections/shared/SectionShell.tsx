@@ -14,13 +14,15 @@ export function SectionShell({
   className = "",
 }: SectionShellProps) {
   const tone = dark
-    ? "bg-primary text-primary-foreground border-border"
+    ? "bg-section-charcoal text-section-charcoal-foreground border-section-charcoal-border"
     : muted
-      ? "bg-sand/70 text-foreground border-border"
-      : "bg-background text-foreground border-border";
+      ? "bg-section-ivory-alt text-foreground border-border"
+      : "bg-section-ivory text-foreground border-border";
+
+  const borderClass = dark ? "border-section-charcoal-border" : "border-border-soft";
 
   return (
-    <section className={`border-b border-border-soft ${tone} ${className}`} data-section-tone={dark ? "dark" : muted ? "muted" : "default"}>
+    <section className={`border-b ${borderClass} ${tone} ${className}`} data-section-tone={dark ? "dark" : muted ? "muted" : "default"}>
       <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-16 sm:px-5 md:py-20 lg:py-24">{children}</div>
     </section>
   );

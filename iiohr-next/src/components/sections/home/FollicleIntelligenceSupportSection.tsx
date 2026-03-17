@@ -7,7 +7,7 @@ const FOLLICLE_SECTION_IMAGE = { src: "/hero/placeholder.svg", alt: "" };
 
 export function FollicleIntelligenceSupportSection() {
   return (
-    <SplitSection image={FOLLICLE_SECTION_IMAGE} imagePosition="right">
+    <SplitSection image={FOLLICLE_SECTION_IMAGE} imagePosition="right" className="section-ai-accent">
       <SectionHeading
         eyebrow="Follicle Intelligence"
         title="Ecosystem intelligence that supports surgical development"

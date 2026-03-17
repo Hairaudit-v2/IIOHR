@@ -1,32 +1,52 @@
 @import "tailwindcss";
 
 /* ============================================================
-   IIOHR design tokens — training-module inspired
-   Warm ivory, bronze/cognac, editorial, clinically academic
+   IIOHR design tokens — premium academic, 3-layer system
+   Layer 1: deep charcoal (hero, premium sections)
+   Layer 2: warm ivory / off-white (alternating content)
+   Layer 3: refined gold accents (emphasis, CTAs)
+   + restrained AI-tech accent (Follicle Intelligence)
    ============================================================ */
 
 :root {
-  /* Backgrounds — warm ivory / parchment */
-  --background: #f6f3ed;
+  /* Layer 1 — Dark sections (hero, premium blocks) */
+  --section-charcoal: #1c1b19;
+  --section-charcoal-foreground: #f5f3ef;
+  --section-charcoal-muted: rgba(245, 243, 239, 0.75);
+  --section-charcoal-border: rgba(245, 243, 239, 0.2);
+
+  /* Layer 2 — Light sections (warm ivory, not brown-heavy) */
+  --background: #f8f6f2;
   --surface: #fdfcf9;
-  --surface-soft: #efeae2;
-  --surface-elevated: #f9f7f2;
-  /* Section variants — soft sand / beige */
-  --sand: #e8e2d8;
-  --parchment: #f2ede5;
-  /* Type */
-  --foreground: #2c2a26;
-  --muted-foreground: #6b6560;
-  --heading: #5c4a3a;
-  /* Borders — soft beige/taupe */
-  --border: #d8d0c4;
-  --border-soft: #e6e0d6;
-  /* Primary / CTAs — restrained, premium (deep cognac) */
-  --primary: #3d3228;
-  --primary-foreground: #f5f1eb;
-  /* Accents — muted gold, sparingly */
-  --accent: #9a7b52;
-  --accent-muted: #b3986e;
+  --surface-soft: #f0ede8;
+  --surface-elevated: #faf9f6;
+  --section-ivory: #fdfcf9;
+  --section-ivory-alt: #f3f0eb;
+  /* Legacy sand/parchment — lighter, less brown */
+  --sand: #ebe8e2;
+  --parchment: #f5f2ed;
+
+  /* Type — charcoal for clarity, not brown */
+  --foreground: #252320;
+  --muted-foreground: #5c5854;
+  --heading: #252320;
+
+  /* Borders — neutral warm gray */
+  --border: #ddd9d2;
+  --border-soft: #e8e5df;
+
+  /* Primary / CTAs — deep charcoal (buttons, key actions) */
+  --primary: #252320;
+  --primary-foreground: #f5f3ef;
+
+  /* Layer 3 — Refined gold accents */
+  --accent: #a68b5c;
+  --accent-muted: #b89d72;
+  --accent-gold: #b89d72;
+
+  /* AI-tech accent — very restrained (Follicle Intelligence) */
+  --ai-accent: rgba(120, 150, 180, 0.35);
+  --ai-accent-glow: rgba(140, 170, 200, 0.12);
 }
 
 @theme inline {
@@ -45,27 +65,40 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-accent: var(--accent);
   --color-accent-muted: var(--accent-muted);
+  --color-accent-gold: var(--accent-gold);
+  --color-section-charcoal: var(--section-charcoal);
+  --color-section-charcoal-foreground: var(--section-charcoal-foreground);
+  --color-section-charcoal-muted: var(--section-charcoal-muted);
+  --color-section-charcoal-border: var(--section-charcoal-border);
+  --color-section-ivory: var(--section-ivory);
+  --color-section-ivory-alt: var(--section-ivory-alt);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a1814;
-    --surface: #242019;
-    --surface-soft: #2a2620;
-    --surface-elevated: #302c25;
-    --sand: #2e2a24;
-    --parchment: #26231e;
-    --foreground: #e8e4de;
-    --muted-foreground: #a39d94;
-    --heading: #d4c4a8;
-    --border: #3d3830;
-    --border-soft: #35312a;
-    --primary: #d9c9ad;
-    --primary-foreground: #1f1b16;
+    --background: #1c1b19;
+    --surface: #242220;
+    --surface-soft: #2a2826;
+    --surface-elevated: #302e2b;
+    --sand: #2a2826;
+    --parchment: #262422;
+    --foreground: #eae8e4;
+    --muted-foreground: #a09d98;
+    --heading: #eae8e4;
+    --border: #3a3835;
+    --border-soft: #32302d;
+    --primary: #e0dcc8;
+    --primary-foreground: #1c1b19;
     --accent: #c4a876;
-    --accent-muted: #b3986e;
+    --accent-muted: #b89d72;
+    --section-charcoal: #161514;
+    --section-charcoal-foreground: #f0eeea;
+    --section-charcoal-muted: rgba(240, 238, 234, 0.75);
+    --section-charcoal-border: rgba(240, 238, 234, 0.2);
+    --section-ivory: #242220;
+    --section-ivory-alt: #2a2826;
   }
 }
 
@@ -113,18 +146,41 @@ textarea:focus-visible {
   background: color-mix(in oklab, var(--accent) 28%, transparent);
 }
 
-/* Dark section: headings and eyebrows use light text for contrast */
-[data-section-tone="dark"] .text-heading {
-  color: var(--primary-foreground);
+/* Dark section (charcoal): headings and content use light text */
+[data-section-tone="dark"] .text-heading,
+[data-section-tone="dark"] [class*="text-heading"] {
+  color: var(--section-charcoal-foreground);
+}
+[data-section-tone="dark"] .text-muted-foreground {
+  color: var(--section-charcoal-muted);
 }
 [data-section-tone="dark"] [class*="border-heading"] {
-  border-color: rgba(245, 241, 235, 0.4);
-}
-[data-section-tone="dark"] [class*="text-heading"] {
-  color: var(--primary-foreground);
+  border-color: var(--section-charcoal-border);
 }
 [data-section-tone="dark"] .bg-surface {
-  background-color: rgba(245, 241, 235, 0.06);
+  background-color: rgba(245, 243, 239, 0.08);
+}
+
+/* Subtle AI-tech accent (gradient edge) for Follicle Intelligence sections */
+.section-ai-accent {
+  position: relative;
+}
+.section-ai-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--ai-accent) 20%,
+    var(--ai-accent) 80%,
+    transparent 100%
+  );
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 /* Image treatment — warm, integrated, consistent (module-inspired) */

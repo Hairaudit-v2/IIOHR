@@ -17,6 +17,8 @@ export interface GlobalHairIntelligenceSectionProps {
   size?: "hero" | "compact";
   /** Light or dark theme for the network. Default follows light section styling. */
   theme?: GlobalNetworkTheme;
+  /** "light" = ivory background; "dark" = charcoal with light text (homepage premium block). */
+  sectionTone?: "light" | "dark";
   /** Optional id for the section (e.g. for anchor links). */
   id?: string;
   /** Optional className for the section wrapper. */
@@ -39,16 +41,22 @@ export function GlobalHairIntelligenceSection({
   description,
   size = "hero",
   theme = "light",
+  sectionTone = "light",
   id = "global-hair-intelligence-network",
   className = "",
   nodeLinks = GLOBAL_NETWORK_NODE_LINKS,
   diagramSlot,
 }: GlobalHairIntelligenceSectionProps) {
+  const isDark = sectionTone === "dark";
+  const sectionClass = isDark
+    ? "relative z-10 scroll-mt-20 border-b border-section-charcoal-border bg-section-charcoal section-ai-accent"
+    : "relative z-10 scroll-mt-20 border-b border-border-soft bg-section-ivory-alt";
   return (
     <section
       id={id}
-      className={`relative z-10 scroll-mt-20 border-b border-border-soft bg-sand/60 ${className}`}
+      className={`${sectionClass} ${className}`}
       aria-labelledby={`${id}-heading`}
+      data-section-tone={isDark ? "dark" : undefined}
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-14 md:py-20 lg:py-24">
         <SectionHeading
@@ -61,7 +69,7 @@ export function GlobalHairIntelligenceSection({
           {diagramSlot ?? (
             <GlobalHairIntelligenceNetwork
               variant={variant}
-              theme={theme}
+              theme={sectionTone === "dark" ? "dark" : theme}
               size={size}
               title="Global Hair Intelligence Network"
               nodeLinks={nodeLinks}
