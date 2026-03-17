@@ -13,7 +13,7 @@ import { TrainingPillarsSection } from "@/components/sections/home/TrainingPilla
 import { TrustSignalsSection } from "@/components/sections/home/TrustSignalsSection";
 import { SectionSpacer } from "@/components/sections/shared/SectionSpacer";
 import { WhyModelSection } from "@/components/sections/home/WhyModelSection";
-import { GlobalHairIntelligenceSection, GLOBAL_NETWORK_NODE_LINKS } from "@/components/ecosystem";
+import { GlobalHairIntelligenceSection } from "@/components/ecosystem";
 import { getWebPageJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
@@ -29,19 +29,19 @@ export default function HomePage() {
       <HeroSection />
       <ProblemSection />
       <DifferenceSection />
+      <SectionSpacer />
+      <GlobalHairIntelligenceSection
+        variant="iiohr"
+        heading="The Engine Behind the Ecosystem"
+        description="Follicle Intelligence powers a connected system across education, audit, and biological treatment pathways. One engine. System-wide intelligence. Global standardisation."
+        size="hero"
+        sectionTone="dark"
+      />
       <TrainingPillarsSection />
       <FollicleIntelligenceSupportSection />
       <SectionSpacer />
       <ProgressionPathwaySection />
       <PathwayTrustBlock />
-      <GlobalHairIntelligenceSection
-        variant="iiohr"
-        heading="The Global Hair Intelligence System"
-        description="IIOHR is the education and certification pillar within a connected intelligence ecosystem. Training links directly to surgical audit, analytical feedback, and hair-loss science so surgeon development is measured, supported, and continuously improved."
-        size="compact"
-        sectionTone="dark"
-        nodeLinks={GLOBAL_NETWORK_NODE_LINKS}
-      />
       <EcosystemAuthoritySection />
       <WhyModelSection />
       <MentorshipSection />
