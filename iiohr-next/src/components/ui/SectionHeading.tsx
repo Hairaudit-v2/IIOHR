@@ -20,13 +20,13 @@ export function SectionHeading({
   const descriptionWidthClass = align === "center" ? "mx-auto max-w-2xl" : "max-w-3xl";
 
   return (
-    <header className={`space-y-3 ${alignClass}`}>
+    <header className={`space-y-4 ${alignClass}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <HeadingTag className="text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem]">
+      <HeadingTag className="text-heading text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem]">
         {title}
       </HeadingTag>
       {description ? (
-        <p className={`${descriptionWidthClass} text-base leading-relaxed text-muted-foreground md:text-[1.03rem]`}>
+        <p className={`${descriptionWidthClass} max-w-prose text-base leading-relaxed text-muted-foreground md:text-[1.03rem]`}>
           {description}
         </p>
       ) : null}

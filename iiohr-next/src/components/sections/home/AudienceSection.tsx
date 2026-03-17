@@ -43,15 +43,15 @@ export function AudienceSection() {
         ))}
       </div>
       <p className="mt-8 text-sm text-muted-foreground">
-        <Link href="/training-pathways" className="font-medium text-foreground underline hover:text-accent">
+        <Link href="/training-pathways" className="font-medium text-foreground underline decoration-heading/40 hover:text-heading hover:decoration-heading">
           Explore training pathways
         </Link>
         {" · "}
-        <Link href="/apply" className="font-medium text-foreground underline hover:text-accent">
+        <Link href="/apply" className="font-medium text-foreground underline decoration-heading/40 hover:text-heading hover:decoration-heading">
           Apply for training
         </Link>
         {" · "}
-        <Link href="/for-clinics" className="font-medium text-foreground underline hover:text-accent">
+        <Link href="/for-clinics" className="font-medium text-foreground underline decoration-heading/40 hover:text-heading hover:decoration-heading">
           For clinics
         </Link>
       </p>

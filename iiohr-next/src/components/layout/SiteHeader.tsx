@@ -10,7 +10,7 @@ export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/90 bg-background/92 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border-soft bg-background/95 backdrop-blur-sm">
       <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-5">
         <Link
           href="/"
@@ -19,7 +19,7 @@ export function SiteHeader() {
         >
           <span
             aria-hidden="true"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-surface text-[10px] font-semibold tracking-[0.16em]"
+            className="inline-flex h-9 w-9 items-center justify-center rounded border border-heading/25 bg-surface text-[10px] font-semibold tracking-[0.16em] text-heading"
           >
             II
           </span>

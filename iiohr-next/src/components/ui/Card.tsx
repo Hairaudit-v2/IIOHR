@@ -5,10 +5,11 @@ interface CardProps {
   className?: string;
 }
 
+/** Paper-like content panel — training manual style, soft border, minimal shadow */
 export function Card({ children, className = "" }: CardProps) {
   return (
     <article
-      className={`min-w-0 rounded-xl border border-border/95 bg-surface p-6 shadow-[0_14px_30px_-24px_rgba(28,40,54,0.45)] md:p-7 ${className}`}
+      className={`min-w-0 rounded-md border border-border bg-surface p-6 shadow-[0_1px_3px_0_rgba(44,42,38,0.06)] md:p-7 ${className}`}
     >
       {children}
     </article>

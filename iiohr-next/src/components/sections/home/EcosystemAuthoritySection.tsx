@@ -5,7 +5,7 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { ECOSYSTEM_PLATFORMS } from "@/lib/ecosystemAuthority";
 
 const CTA_CLASS =
-  "mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-primary hover:text-accent";
+  "mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-heading hover:text-accent";
 
 export function EcosystemAuthoritySection() {
   return (

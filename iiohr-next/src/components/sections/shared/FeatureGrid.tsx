@@ -30,7 +30,7 @@ export function FeatureGrid({
         {items.map((item) => (
           <Card
             key={item}
-            className={dark ? "border-white/20 bg-white/5 shadow-none" : ""}
+            className={dark ? "border-primary-foreground/20 bg-primary-foreground/5 shadow-none" : ""}
           >
             <h3 className="text-lg leading-snug font-semibold tracking-tight">{item}</h3>
           </Card>

@@ -10,9 +10,9 @@ import { LinkArrow } from "@/components/ui/LinkArrow";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-20 border-t border-border bg-surface">
+    <footer className="mt-20 border-t border-border-soft bg-surface">
       <div className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-5 md:py-14">
-        <div className="rounded-lg border border-border bg-background px-4 py-4 sm:px-5">
+        <div className="rounded-md border border-border bg-background px-4 py-4 sm:px-5">
           <p className="text-[11px] tracking-[0.16em] text-muted-foreground uppercase">
             Part of the Hair Intelligence Ecosystem
           </p>
@@ -23,7 +23,7 @@ export function SiteFooter() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded border border-border/80 px-3 py-2 text-xs text-muted-foreground hover:border-accent hover:text-foreground"
+                className="inline-flex items-center gap-1.5 rounded border border-border px-3 py-2 text-xs text-muted-foreground hover:border-heading/40 hover:text-foreground"
               >
                 <span>{item.label}</span>
                 <span aria-hidden className="text-[10px] opacity-70">↗</span>

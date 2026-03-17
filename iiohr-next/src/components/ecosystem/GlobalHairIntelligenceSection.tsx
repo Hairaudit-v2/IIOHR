@@ -47,7 +47,7 @@ export function GlobalHairIntelligenceSection({
   return (
     <section
       id={id}
-      className={`relative z-10 scroll-mt-20 border-b border-border bg-surface-soft/90 ${className}`}
+      className={`relative z-10 scroll-mt-20 border-b border-border-soft bg-sand/60 ${className}`}
       aria-labelledby={`${id}-heading`}
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-14 md:py-20 lg:py-24">

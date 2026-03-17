@@ -12,11 +12,11 @@ interface ButtonProps {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "border-primary bg-primary text-primary-foreground shadow-[0_8px_20px_-16px_rgba(31,47,64,0.75)] hover:brightness-95",
+    "border-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]",
   secondary:
-    "border-accent/80 bg-surface text-foreground hover:bg-surface-elevated",
+    "border-border bg-surface text-foreground hover:border-heading/40 hover:bg-surface-elevated",
   ghost:
-    "border-border bg-transparent text-muted-foreground hover:border-accent/60 hover:bg-surface-elevated hover:text-foreground",
+    "border-border bg-transparent text-muted-foreground hover:border-accent/50 hover:bg-surface-elevated hover:text-foreground",
 };
 
 export function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {
