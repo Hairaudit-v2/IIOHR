@@ -7,10 +7,14 @@ import { JudgmentOutcomesSection } from "@/components/sections/hair-loss-science
 import { ScienceImportanceSection } from "@/components/sections/hair-loss-science/ScienceImportanceSection";
 import { TrichologyAndDiagnosisSection } from "@/components/sections/hair-loss-science/TrichologyAndDiagnosisSection";
 
+const canonical = "https://iiohr.com/hair-loss-science";
+
 export const metadata: Metadata = {
   title: "Hair Loss Science",
   description:
     "Hair Loss Science at IIOHR develops biological understanding, diagnostic rigor, and treatment-planning judgment to strengthen surgical decision quality.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 export default function HairLossSciencePage() {

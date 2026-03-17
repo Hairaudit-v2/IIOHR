@@ -7,10 +7,14 @@ import { StagedProgressionSection } from "@/components/sections/training-pathway
 import { TrainingPathwaysCtaSection } from "@/components/sections/training-pathways/TrainingPathwaysCtaSection";
 import { TrainingPathwaysHero } from "@/components/sections/training-pathways/TrainingPathwaysHero";
 
+const canonical = "https://iiohr.com/training-pathways";
+
 export const metadata: Metadata = {
   title: "Training Pathways",
   description:
     "IIOHR Training Pathways provide a structured progression system combining practical education, science, audit, and mentorship.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 export default function TrainingPathwaysPage() {

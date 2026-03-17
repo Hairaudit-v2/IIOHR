@@ -4,9 +4,13 @@ import Link from "next/link";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { siteConfig } from "@/lib/site";
 
+const canonical = "https://iiohr.com/privacy-policy";
+
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: `How ${siteConfig.legalName} collects, uses, and protects your personal information.`,
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 const lastUpdated = "2025";

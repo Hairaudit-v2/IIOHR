@@ -4,9 +4,13 @@ import Link from "next/link";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { siteConfig } from "@/lib/site";
 
+const canonical = "https://iiohr.com/terms-of-use";
+
 export const metadata: Metadata = {
   title: "Terms of Use",
   description: `Terms governing use of the ${siteConfig.legalName} website and services.`,
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 const lastUpdated = "2025";

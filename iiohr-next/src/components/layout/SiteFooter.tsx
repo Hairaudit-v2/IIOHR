@@ -14,7 +14,7 @@ export function SiteFooter() {
       <div className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-5 md:py-14">
         <div className="rounded-lg border border-border bg-background px-4 py-4 sm:px-5">
           <p className="text-[11px] tracking-[0.16em] text-muted-foreground uppercase">
-            Global Hair Intelligence Ecosystem
+            Part of the Hair Intelligence Ecosystem
           </p>
           <div className="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-4">
             {ecosystemNavigation.map((item) => (

@@ -1,6 +1,8 @@
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { AudienceSection } from "@/components/sections/home/AudienceSection";
 import { CTASection } from "@/components/sections/home/CTASection";
 import { DifferenceSection } from "@/components/sections/home/DifferenceSection";
+import { EcosystemAuthoritySection } from "@/components/sections/home/EcosystemAuthoritySection";
 import { FollicleIntelligenceSupportSection } from "@/components/sections/home/FollicleIntelligenceSupportSection";
 import { HeroSection } from "@/components/sections/home/HeroSection";
 import { MentorshipSection } from "@/components/sections/home/MentorshipSection";
@@ -10,10 +12,18 @@ import { TrainingPillarsSection } from "@/components/sections/home/TrainingPilla
 import { TrustSignalsSection } from "@/components/sections/home/TrustSignalsSection";
 import { WhyModelSection } from "@/components/sections/home/WhyModelSection";
 import { GlobalHairIntelligenceSection, GLOBAL_NETWORK_NODE_LINKS } from "@/components/ecosystem";
+import { getWebPageJsonLd } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export default function HomePage() {
+  const webPageJsonLd = getWebPageJsonLd({
+    name: "IIOHR — International Institute of Hair Restoration",
+    description: siteConfig.description,
+  });
+
   return (
     <>
+      <JsonLdScript data={webPageJsonLd} />
       <HeroSection />
       <ProblemSection />
       <DifferenceSection />
@@ -27,6 +37,7 @@ export default function HomePage() {
         size="compact"
         nodeLinks={GLOBAL_NETWORK_NODE_LINKS}
       />
+      <EcosystemAuthoritySection />
       <WhyModelSection />
       <MentorshipSection />
       <TrustSignalsSection />

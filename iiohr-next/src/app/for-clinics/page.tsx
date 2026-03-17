@@ -7,10 +7,14 @@ import { ForClinicsHero } from "@/components/sections/for-clinics/ForClinicsHero
 import { InternalTalentBenefitsSection } from "@/components/sections/for-clinics/InternalTalentBenefitsSection";
 import { StructuredDevelopmentNeedSection } from "@/components/sections/for-clinics/StructuredDevelopmentNeedSection";
 
+const canonical = "https://iiohr.com/for-clinics";
+
 export const metadata: Metadata = {
   title: "For Clinics",
   description:
     "IIOHR partners with clinics and medical groups to build structured surgeon development pathways with standards alignment and audit-backed improvement.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 export default function ForClinicsPage() {

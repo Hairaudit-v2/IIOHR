@@ -4,9 +4,13 @@ import Link from "next/link";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { siteConfig } from "@/lib/site";
 
+const canonical = "https://iiohr.com/cookie-policy";
+
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description: `How ${siteConfig.legalName} uses cookies and similar technologies.`,
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 const lastUpdated = "2025";

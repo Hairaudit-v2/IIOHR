@@ -5,10 +5,14 @@ import { ApplyIntroductionSection } from "@/components/sections/apply/ApplyIntro
 import { ApplyNextStepsSection } from "@/components/sections/apply/ApplyNextStepsSection";
 import { ApplicationFormSection } from "@/components/sections/apply/ApplicationFormSection";
 
+const canonical = "https://iiohr.com/apply";
+
 export const metadata: Metadata = {
   title: "Apply",
   description:
     "Submit an application or enquiry to IIOHR for individual or clinic pathway review and admissions guidance.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 export default function ApplyPage() {

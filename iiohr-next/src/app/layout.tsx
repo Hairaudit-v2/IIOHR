@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
+import { getOrganizationJsonLd, getWebSiteJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -16,6 +18,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
   display: "swap",
 });
+
+/** Default OG image for social sharing. Drop final asset at public/og/iiohr-og.jpg (1200×630) when ready. */
+const OG_IMAGE_PATH = "/og/iiohr-og.jpg";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://iiohr.com"),
@@ -35,11 +40,20 @@ export const metadata: Metadata = {
     siteName: siteConfig.legalName,
     title: "IIOHR — International Institute of Hair Restoration",
     description: siteConfig.description,
+    images: [
+      {
+        url: OG_IMAGE_PATH,
+        width: 1200,
+        height: 630,
+        alt: "IIOHR — International Institute of Hair Restoration",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "IIOHR — International Institute of Hair Restoration",
     description: siteConfig.description,
+    images: [OG_IMAGE_PATH],
   },
   robots: {
     index: true,
@@ -52,11 +66,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = getOrganizationJsonLd({
+    name: siteConfig.legalName,
+    alternateName: siteConfig.name,
+    description:
+      "The International Institute of Hair Restoration (IIOHR) is a global education and training institute for hair restoration surgery, offering structured pathways in practical FUE, hair loss science, and surgeon development within the Hair Intelligence ecosystem.",
+  });
+  const webSiteJsonLd = getWebSiteJsonLd({ name: siteConfig.legalName });
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <JsonLdScript data={[organizationJsonLd, webSiteJsonLd]} />
         <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
           <a
             href="#main-content"

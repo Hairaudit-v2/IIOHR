@@ -8,10 +8,14 @@ import { MissionPositioningSection } from "@/components/sections/about/MissionPo
 import { ShortCourseLimitationsSection } from "@/components/sections/about/ShortCourseLimitationsSection";
 import { StandardsDevelopmentSection } from "@/components/sections/about/StandardsDevelopmentSection";
 
+const canonical = "https://iiohr.com/about";
+
 export const metadata: Metadata = {
   title: "About",
   description:
     "Learn why IIOHR exists and how its institute model combines practical training, science, mentorship, and auditing for long-term surgical development.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 export default function AboutPage() {
