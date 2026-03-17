@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f3ef;
+  --surface: #ffffff;
+  --surface-soft: #ece7dd;
+  --surface-elevated: #f8f6f1;
+  --foreground: #1f2933;
+  --muted-foreground: #5f6975;
+  --border: #d4ccbe;
+  --primary: #1f2f40;
+  --primary-foreground: #f4f1ea;
+  --accent: #b79a67;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-surface-elevated: var(--surface-elevated);
   --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #111823;
+    --surface: #172231;
+    --surface-soft: #1b293a;
+    --surface-elevated: #1f2d3f;
+    --foreground: #ecf1f5;
+    --muted-foreground: #c0cbd6;
+    --border: #344a60;
+    --primary: #e8dcc4;
+    --primary-foreground: #1a2535;
+    --accent: #c9ad7a;
   }
+}
+
+* {
+  border-color: var(--border);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  letter-spacing: 0.002em;
+}
+
+a {
+  transition: color 160ms ease;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 50%, transparent);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 28%, transparent);
 }

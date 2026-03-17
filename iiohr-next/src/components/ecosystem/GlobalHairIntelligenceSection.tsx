@@ -1,8 +1,8 @@
-"use client";
-
 import { GlobalHairIntelligenceNetwork } from "@/components/ecosystem/GlobalHairIntelligenceNetwork";
 import type { GlobalNetworkTheme, GlobalNetworkVariant } from "@/components/ecosystem/GlobalHairIntelligenceNetwork";
 import { GLOBAL_NETWORK_NODE_LINKS } from "@/components/ecosystem/constants";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import type { ReactNode } from "react";
 
 export type { GlobalNetworkVariant };
 
@@ -22,7 +22,9 @@ export interface GlobalHairIntelligenceSectionProps {
   /** Optional className for the section wrapper. */
   className?: string;
   /** Override node links (default: canonical ecosystem URLs). */
-  nodeLinks?: Partial<Record<"hli" | "hairaudit" | "fi" | "iiohr", string>>;
+  nodeLinks?: Partial<Record<"iiohr" | "hli" | "hairaudit" | "fi", string>>;
+  /** Optional slot for future shared animated diagram implementation. */
+  diagramSlot?: ReactNode;
 }
 
 /**
@@ -40,36 +42,31 @@ export function GlobalHairIntelligenceSection({
   id = "global-hair-intelligence-network",
   className = "",
   nodeLinks = GLOBAL_NETWORK_NODE_LINKS,
+  diagramSlot,
 }: GlobalHairIntelligenceSectionProps) {
   return (
     <section
       id={id}
-      className={`relative z-10 scroll-mt-20 border-t border-zinc-200 bg-[#F5F3EF] py-12 sm:py-16 md:py-20 ${className}`}
+      className={`relative z-10 scroll-mt-20 border-b border-border bg-surface-soft/90 ${className}`}
       aria-labelledby={`${id}-heading`}
     >
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-        <h2
-          id={`${id}-heading`}
-          className="text-center text-2xl font-semibold tracking-tight text-zinc-900 sm:text-3xl md:text-4xl"
-        >
-          {heading}
-        </h2>
-        <p
-          className="mx-auto mt-4 max-w-xl text-center text-zinc-600 leading-relaxed"
-        >
-          {description}
-        </p>
-        <div className="mx-auto mt-8 min-h-[560px] w-full max-w-[min(1000px,100%)] overflow-visible md:min-h-[680px]">
-          <GlobalHairIntelligenceNetwork
-            variant={variant}
-            highlightNode={variant}
-            interactive
-            theme={theme}
-            showBackground={false}
-            size={size}
-            title="Global Hair Intelligence Network"
-            nodeLinks={nodeLinks}
-          />
+      <div className="mx-auto w-full max-w-6xl px-5 py-14 md:py-20 lg:py-24">
+        <SectionHeading
+          eyebrow="Connected System"
+          title={heading}
+          description={description}
+          align="center"
+        />
+        <div className="mx-auto mt-10 w-full min-w-0 md:mt-12">
+          {diagramSlot ?? (
+            <GlobalHairIntelligenceNetwork
+              variant={variant}
+              theme={theme}
+              size={size}
+              title="Global Hair Intelligence Network"
+              nodeLinks={nodeLinks}
+            />
+          )}
         </div>
       </div>
     </section>

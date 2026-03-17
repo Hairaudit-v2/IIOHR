@@ -10,6 +10,7 @@
     "lint": "npm --prefix iiohr-next run lint"
   },
   "devDependencies": {
-    "serve": "^14.2.4"
+    "serve": "^14.2.4",
+    "tailwindcss": "^4.2.1"
   }
 }
