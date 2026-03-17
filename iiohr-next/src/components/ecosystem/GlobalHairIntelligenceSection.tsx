@@ -44,7 +44,7 @@ export function GlobalHairIntelligenceSection({
   return (
     <section
       id={id}
-      className={`scroll-mt-20 border-t border-zinc-200 bg-[#F5F3EF] py-12 sm:py-16 md:py-20 ${className}`}
+      className={`relative z-10 scroll-mt-20 border-t border-zinc-200 bg-[#F5F3EF] py-12 sm:py-16 md:py-20 ${className}`}
       aria-labelledby={`${id}-heading`}
     >
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
@@ -59,7 +59,7 @@ export function GlobalHairIntelligenceSection({
         >
           {description}
         </p>
-        <div className="mx-auto mt-8 max-w-[min(1000px,100%)]">
+        <div className="mx-auto mt-8 min-h-[560px] w-full max-w-[min(1000px,100%)] overflow-visible md:min-h-[680px]">
           <GlobalHairIntelligenceNetwork
             variant={variant}
             highlightNode={variant}
