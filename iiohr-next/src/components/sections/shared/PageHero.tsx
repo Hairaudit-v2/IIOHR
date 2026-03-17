@@ -40,6 +40,12 @@ export function PageHero({
     ? "border-b border-section-charcoal-border bg-section-charcoal"
     : "border-b border-border-soft bg-section-ivory";
   const imgPanelBg = isDark ? "bg-section-charcoal-foreground/10" : "bg-parchment";
+  /** Only render next/image when we have a valid public path (e.g. /images/... or /hero/...). */
+  const hasValidImage =
+    image?.src &&
+    typeof image.src === "string" &&
+    image.src.startsWith("/") &&
+    !image.src.includes("\\");
 
   return (
     <section className={sectionClass} data-section-tone={isDark ? "dark" : undefined}>
@@ -80,23 +86,21 @@ export function PageHero({
               </div>
             )}
           </div>
-          {(
-            <div className="img-panel relative hidden min-h-[220px] w-full overflow-hidden lg:block">
-              {image ? (
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={340}
-                  height={255}
-                  className="h-full w-full object-cover object-center"
-                  priority={imagePriority}
-                  sizes="340px"
-                />
-              ) : (
-                <div className={`h-full min-h-[220px] w-full ${imgPanelBg}`} aria-hidden />
-              )}
-            </div>
-          )}
+          <div className="img-panel relative hidden min-h-[220px] w-full overflow-hidden rounded-2xl lg:block">
+            {hasValidImage ? (
+              <Image
+                src={image.src}
+                alt={image.alt ?? ""}
+                width={340}
+                height={255}
+                className="h-full w-full object-cover object-center"
+                priority={imagePriority}
+                sizes="340px"
+              />
+            ) : (
+              <div className={`h-full min-h-[220px] w-full ${imgPanelBg}`} aria-hidden />
+            )}
+          </div>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ export const HOME_IMAGES = {
     progression: "/images/hero/hero-hair-progression.jpg",
   },
   science: {
-    follicle: "/images/science/science-follicle-cross-section.jpg",
+    follicle: "/images/science/science-follicle-cross-section.png",
     follicleRender: "/images/science/science-follicle-render.png",
     hairCycle: "/images/science/science-hair-cycle.jpg",
     dna: "/images/science/science-dna-lab.jpg",
