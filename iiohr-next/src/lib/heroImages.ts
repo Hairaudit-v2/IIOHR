@@ -1,7 +1,9 @@
 /**
- * Hero image config per page. Replace paths with final assets when ready.
+ * Hero image config per page. Assets in public/images/ (see public/images/README.md).
  * Recommended: 340×255 px (4:3), clinical/educational, warm-toned.
  */
+
+import { heroEducationImage } from "./homeImages";
 
 export interface HeroImageConfig {
   src: string;
@@ -14,10 +16,7 @@ const PLACEHOLDER: HeroImageConfig = {
 };
 
 export const heroImages = {
-  home: {
-    src: "/hero/placeholder.svg",
-    alt: "IIOHR education and training in hair restoration",
-  },
+  home: heroEducationImage,
   about: {
     src: "/hero/placeholder.svg",
     alt: "International Institute of Hair Restoration",

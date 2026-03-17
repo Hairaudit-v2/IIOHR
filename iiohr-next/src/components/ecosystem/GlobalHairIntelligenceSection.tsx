@@ -58,14 +58,14 @@ export function GlobalHairIntelligenceSection({
       aria-labelledby={`${id}-heading`}
       data-section-tone={isDark ? "dark" : undefined}
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-14 md:py-20 lg:py-24">
+      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-28">
         <SectionHeading
           eyebrow="Connected System"
           title={heading}
           description={description}
           align="center"
         />
-        <div className="mx-auto mt-10 w-full min-w-0 md:mt-12">
+        <div className="mx-auto mt-12 w-full min-w-0 md:mt-14">
           {diagramSlot ?? (
             <GlobalHairIntelligenceNetwork
               variant={variant}

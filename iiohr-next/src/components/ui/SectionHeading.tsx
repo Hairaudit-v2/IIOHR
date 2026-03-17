@@ -17,10 +17,11 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   const alignClass = align === "center" ? "text-center" : "text-left";
   const HeadingTag = as;
-  const descriptionWidthClass = align === "center" ? "mx-auto max-w-2xl" : "max-w-3xl";
+  const descriptionWidthClass =
+    align === "center" ? "mx-auto max-w-2xl" : "max-w-2xl lg:max-w-[40rem]";
 
   return (
-    <header className={`space-y-4 ${alignClass}`}>
+    <header className={`space-y-5 ${alignClass}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       <HeadingTag className="text-heading text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem]">
         {title}

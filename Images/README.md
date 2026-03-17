@@ -21,4 +21,4 @@ Images in this folder are used across the site in a restrained, one-per-section 
 - A9s3zgen_qrrrky_ds8.jpg
 - A956vi8t_qrrrkv_ds8.jpg
 
-To swap an image for a given purpose, replace the filename in the corresponding HTML and update this README.
+To swap an image for a given purpose, replace the file in this folder and in `iiohr-next/public/images/`, then update `iiohr-next/src/lib/homeImages.ts` or `heroImages.ts` and this README.

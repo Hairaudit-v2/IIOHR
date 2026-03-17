@@ -5,6 +5,7 @@ interface SectionShellProps {
   muted?: boolean;
   dark?: boolean;
   className?: string;
+  id?: string;
 }
 
 export function SectionShell({
@@ -12,6 +13,7 @@ export function SectionShell({
   muted = false,
   dark = false,
   className = "",
+  id,
 }: SectionShellProps) {
   const tone = dark
     ? "bg-section-charcoal text-section-charcoal-foreground border-section-charcoal-border"
@@ -22,8 +24,12 @@ export function SectionShell({
   const borderClass = dark ? "border-section-charcoal-border" : "border-border-soft";
 
   return (
-    <section className={`border-b ${borderClass} ${tone} ${className}`} data-section-tone={dark ? "dark" : muted ? "muted" : "default"}>
-      <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-16 sm:px-5 md:py-20 lg:py-24">{children}</div>
+    <section
+      id={id}
+      className={`border-b ${borderClass} ${tone} ${className}`}
+      data-section-tone={dark ? "dark" : muted ? "muted" : "default"}
+    >
+      <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-20 sm:px-5 md:py-24 lg:py-28">{children}</div>
     </section>
   );
 }

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
@@ -35,7 +34,7 @@ export function AudienceSection() {
         title="For doctors and clinics at every stage"
         description="IIOHR supports new entrants, practising surgeons, and clinic teams through one connected pathway—clinician-facing education with clear entry points and progression."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-2">
+      <div className="mt-12 grid gap-6 md:grid-cols-2 lg:mt-14">
         {audienceItems.map((item) => (
           <Card key={item.title} interactive>
             <h3 className="text-xl font-semibold tracking-tight text-foreground">
@@ -47,7 +46,7 @@ export function AudienceSection() {
           </Card>
         ))}
       </div>
-      <div className="mt-10">
+      <div className="mt-12 pt-2">
         <SectionCTA
           variant="light"
           primary={{ href: "/apply", label: "Apply Now" }}

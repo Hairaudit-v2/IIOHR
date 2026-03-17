@@ -43,18 +43,18 @@ export function PageHero({
 
   return (
     <section className={sectionClass} data-section-tone={isDark ? "dark" : undefined}>
-      <div className="mx-auto w-full max-w-6xl px-5 py-16 md:py-20 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-32">
         <div className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)] lg:items-start lg:gap-14">
           <div>
             <Eyebrow>{eyebrow}</Eyebrow>
-            <h1 className="mt-5 max-w-4xl text-heading text-4xl leading-tight font-semibold tracking-tight md:text-5xl lg:text-[2.75rem]">
+            <h1 className="mt-6 max-w-4xl text-heading text-4xl leading-tight font-semibold tracking-tight md:text-5xl lg:text-[2.75rem]">
               {title}
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mt-7 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
               {description}
             </p>
             {(primaryCta || secondaryCta || tertiaryCta) && (
-              <div className="mt-9 flex flex-col gap-4">
+              <div className="mt-10 flex flex-col gap-4">
                 <div className="flex flex-wrap gap-4">
                   {primaryCta ? (
                     <Button href={primaryCta.href} variant={isDark ? "dark" : "primary"}>
@@ -81,14 +81,14 @@ export function PageHero({
             )}
           </div>
           {(
-            <div className="img-panel hidden min-h-[220px] w-full lg:block">
+            <div className="img-panel relative hidden min-h-[220px] w-full overflow-hidden lg:block">
               {image ? (
                 <Image
                   src={image.src}
                   alt={image.alt}
                   width={340}
                   height={255}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-center"
                   priority={imagePriority}
                   sizes="340px"
                 />

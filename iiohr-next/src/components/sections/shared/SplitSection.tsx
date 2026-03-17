@@ -28,26 +28,26 @@ export function SplitSection({
   className = "",
 }: SplitSectionProps) {
   const content = (
-    <div className={image ? "grid gap-10 lg:grid-cols-2 lg:gap-14 lg:items-center" : ""}>
+    <div className={image ? "grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center" : ""}>
       {image && imagePosition === "left" && (
-        <div className="img-panel relative aspect-[4/3] min-h-[200px] overflow-hidden rounded">
+        <div className="img-panel relative aspect-[4/3] min-h-[220px] w-full overflow-hidden">
           <Image
             src={image.src}
             alt={image.alt}
             fill
-            className="object-cover"
+            className="object-cover object-center"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
       )}
       <div className="min-w-0">{children}</div>
       {image && imagePosition === "right" && (
-        <div className="img-panel relative aspect-[4/3] min-h-[200px] overflow-hidden rounded">
+        <div className="img-panel relative aspect-[4/3] min-h-[220px] w-full overflow-hidden">
           <Image
             src={image.src}
             alt={image.alt}
             fill
-            className="object-cover"
+            className="object-cover object-center"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>

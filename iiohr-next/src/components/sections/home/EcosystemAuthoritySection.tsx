@@ -5,18 +5,21 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { ECOSYSTEM_PLATFORMS } from "@/lib/ecosystemAuthority";
 
 const CTA_CLASS =
-  "mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-heading hover:text-accent";
+  "mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-heading transition-colors duration-200 hover:text-accent";
 
 export function EcosystemAuthoritySection() {
   return (
-    <SectionShell>
+    <SectionShell id="ecosystem-platforms">
       <SectionHeading
         eyebrow="Connected System"
         title="The Global Hair Intelligence Ecosystem"
         description="IIOHR sits within a connected multi-platform hair intelligence ecosystem. Each platform has a distinct role in training, measurement, analysis, and patient-centred care—together they form a strategic authority architecture for modern hair restoration."
         align="center"
       />
-      <div className="mt-10 grid min-w-0 gap-4 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4 lg:gap-5">
+      <p className="mx-auto mt-6 max-w-2xl text-center text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+        Four connected platforms
+      </p>
+      <div className="mt-6 grid min-w-0 gap-5 sm:grid-cols-2 lg:mt-8 lg:grid-cols-4 lg:gap-6">
         {ECOSYSTEM_PLATFORMS.map((platform) => {
           const displayName = platform.id === "iiohr" ? "IIOHR" : platform.name;
           const ctaLabel = platform.isInternal ? "Explore IIOHR" : "Visit";
@@ -34,7 +37,7 @@ export function EcosystemAuthoritySection() {
             </>
           );
           return (
-            <Card key={platform.id} className="min-w-0">
+            <Card key={platform.id} interactive className="min-w-0">
               {platform.isInternal ? (
                 <Link href="/" className="block text-foreground no-underline hover:text-foreground">
                   {content}

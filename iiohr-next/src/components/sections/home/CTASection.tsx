@@ -18,7 +18,7 @@ export function CTASection() {
         title="Begin your institute pathway"
         description="Whether you’re entering the field, refining your practice, or building clinic capability, we’ll match you to the right pathway. Apply now or explore pathways below."
       />
-      <div className="mt-10 flex flex-wrap gap-4">
+      <div className="mt-12 flex flex-wrap gap-4">
         <Button href="/apply" variant="dark">
           Apply Now
         </Button>
@@ -29,7 +29,7 @@ export function CTASection() {
           Enquire About Training
         </Button>
       </div>
-      <div className="mt-12 border-t border-section-charcoal-border pt-8">
+      <div className="mt-14 border-t border-section-charcoal-border pt-10">
         <p className="text-xs font-semibold tracking-[0.12em] text-section-charcoal-muted uppercase">
           I am…
         </p>

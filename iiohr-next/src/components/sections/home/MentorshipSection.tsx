@@ -2,7 +2,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { Card } from "@/components/ui/Card";
-import { LinkArrow } from "@/components/ui/LinkArrow";
 
 const mentorshipItems = [
   {
@@ -27,7 +26,7 @@ export function MentorshipSection() {
         title="Practical mentorship across the full pathway"
         description="Clinician-led development: experienced surgeons mentor, review cases, and refine judgment so progression is grounded in real practice, not theory alone."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-12 grid gap-6 md:grid-cols-3 lg:mt-14">
         {mentorshipItems.map((item, index) => (
           <Card key={item.title} interactive marker={index + 1}>
             <h3 className="text-base font-semibold tracking-tight text-foreground">
@@ -39,7 +38,7 @@ export function MentorshipSection() {
           </Card>
         ))}
       </div>
-      <div className="mt-10">
+      <div className="mt-12 pt-2">
         <SectionCTA
           variant="light"
           primary={{ href: "/apply", label: "Apply Now" }}
