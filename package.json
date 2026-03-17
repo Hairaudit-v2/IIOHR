@@ -4,8 +4,10 @@
   "description": "IIOHR — International Institute of Hair Restoration",
   "private": true,
   "scripts": {
-    "start": "serve . -p 3000",
-    "dev": "serve . -p 3000"
+    "dev": "npm --prefix iiohr-next run dev",
+    "build": "npm --prefix iiohr-next run build",
+    "start": "npm --prefix iiohr-next run start",
+    "lint": "npm --prefix iiohr-next run lint"
   },
   "devDependencies": {
     "serve": "^14.2.4"
