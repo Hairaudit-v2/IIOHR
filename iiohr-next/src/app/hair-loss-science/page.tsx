@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BiologyTreatmentPlanningSection } from "@/components/sections/hair-loss-science/BiologyTreatmentPlanningSection";
+import { CausesAndAssessmentSection } from "@/components/sections/hair-loss-science/CausesAndAssessmentSection";
 import { EcosystemScienceSection } from "@/components/sections/hair-loss-science/EcosystemScienceSection";
 import { HairLossScienceCtaSection } from "@/components/sections/hair-loss-science/HairLossScienceCtaSection";
 import { HairLossScienceHero } from "@/components/sections/hair-loss-science/HairLossScienceHero";
@@ -22,6 +23,7 @@ export default function HairLossSciencePage() {
     <>
       <HairLossScienceHero />
       <ScienceImportanceSection />
+      <CausesAndAssessmentSection />
       <TrichologyAndDiagnosisSection />
       <BiologyTreatmentPlanningSection />
       <EcosystemScienceSection />

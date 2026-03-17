@@ -27,7 +27,7 @@ export function TrustSignalsSection() {
       <SectionHeading
         eyebrow="Standards & governance"
         title="How we uphold quality"
-        description="IIOHR’s approach is built on faculty credibility, measurable outcomes, and clear standards so your development is accountable and transparent."
+        description="IIOHR’s approach is built on faculty credibility, measurable outcomes, and clear standards so clinician development is accountable, transparent, and globally relevant."
       />
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {signals.map((item) => (

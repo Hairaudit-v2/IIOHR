@@ -15,7 +15,7 @@ export function CTASection() {
       <SectionHeading
         eyebrow="Next step"
         title="Begin your institute pathway"
-        description="Whether you’re entering the field, refining your practice, or building clinic capability, we’ll match you to the right pathway."
+        description="Whether you’re entering the field, refining your practice, or building clinic capability, we’ll match you to the right pathway. Apply for training or explore pathways below."
       />
       <div className="mt-8 flex flex-wrap gap-3">
         <Link

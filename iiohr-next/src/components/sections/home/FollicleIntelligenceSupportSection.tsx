@@ -8,16 +8,19 @@ export function FollicleIntelligenceSupportSection() {
     <SectionShell>
       <SectionHeading
         eyebrow="Follicle Intelligence"
-        title="Follicle Intelligence support"
-        description="Structured auditing, feedback, benchmarking, and case-based review help surgeons progress with clarity and measurable direction."
+        title="Ecosystem intelligence that supports surgical development"
+        description="Structured auditing, benchmarking, and case-based review connect training to real outcomes so progression is measurable and clinically meaningful."
       />
       <div className="mt-8 max-w-3xl space-y-4 text-muted-foreground">
         <p>
-          Follicle Intelligence links training to outcomes by turning surgical work into actionable review loops. Surgeons can compare performance against benchmarks, identify specific gaps, and focus development where it matters most.
+          Follicle Intelligence links institute training to outcomes by turning surgical work into actionable review loops. Surgeons compare performance against benchmarks, identify specific gaps, and focus development where it matters most—within the same ecosystem that supports audit and quality transparency.
         </p>
-        <LinkArrow href={siteConfig.links.follicleIntelligence}>
-          Explore Follicle Intelligence
-        </LinkArrow>
+        <div className="flex flex-wrap gap-6">
+          <LinkArrow href="/training-pathways">Training pathways</LinkArrow>
+          <LinkArrow href={siteConfig.links.follicleIntelligence} external>
+            Explore Follicle Intelligence
+          </LinkArrow>
+        </div>
       </div>
     </SectionShell>
   );

@@ -26,7 +26,7 @@ export function SupervisedHandsOnSection() {
       <SectionHeading
         eyebrow="Clinical Supervision"
         title="Hands-on development under experienced surgical guidance"
-        description="The training environment prioritizes safe execution, transparent feedback, and progressive responsibility."
+        description="The training environment prioritizes safe execution, transparent feedback, and progressive responsibility. Practical exposure under supervision ensures technique is corrected in real time and that standards, not trial-and-error, guide development."
       />
       <div className="mt-10 grid gap-5 md:grid-cols-3">
         {supervisionBlocks.map((block) => (

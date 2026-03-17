@@ -31,7 +31,7 @@ export function EntrantLevelsSection() {
       <SectionHeading
         eyebrow="Entrant Levels"
         title="Pathway options for different stages of professional entry"
-        description="Programs are adapted by entrant level so development remains relevant, clinically rigorous, and progression-focused."
+        description="Pathways are adapted by entrant level so development remains relevant and clinically rigorous. Whether you are new to the field, already practising, or a clinic building internal talent, structured education clarifies entry points and how different professionals progress from theory to applied practice."
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         {entrantLevels.map((level) => (

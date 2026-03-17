@@ -6,12 +6,12 @@ export function ProblemSection() {
       muted
       eyebrow="Context"
       title="The problem with traditional training"
-      description="Hair restoration training is often too short, too shallow, and too unsupported to build lasting surgical competence."
+      description="Hair restoration training is often too short, too shallow, and too unsupported to build lasting surgical competence and clinical judgment."
       items={[
         "Short and shallow training windows",
-        "Doctors left alone after completion",
-        "Limited outcome feedback loops",
-        "No clear progression pathway",
+        "Doctors left without mentorship after completion",
+        "Limited outcome feedback and audit loops",
+        "No clear progression from observation to independent practice",
       ]}
     />
   );

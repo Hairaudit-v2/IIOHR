@@ -5,9 +5,9 @@ export function HeroSection() {
     <PageHero
       eyebrow="International Institute of Hair Restoration"
       title="Beyond the short course. From technician to surgeon."
-      description="Training, auditing and mentoring for the next generation of hair restoration surgeons."
+      description="A global education and mentorship platform for hair restoration: clinically grounded training, practical surgical exposure, and standards-based progression for doctors and clinics."
       primaryCta={{ href: "/about", label: "Explore the Institute" }}
-      secondaryCta={{ href: "/training-pathways", label: "View Training Pathway" }}
+      secondaryCta={{ href: "/training-pathways", label: "View Training Pathways" }}
     />
   );
 }

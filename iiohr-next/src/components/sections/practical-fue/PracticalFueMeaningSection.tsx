@@ -16,7 +16,7 @@ export function PracticalFueMeaningSection() {
         <SectionHeading
           eyebrow="What Practical FUE Means at IIOHR"
           title="A serious training framework for surgical capability development"
-          description="At IIOHR, Practical FUE means structured operative training with clear supervision, measurable progression, and clinical accountability."
+          description="At IIOHR, Practical FUE means structured operative training with clear supervision, measurable progression, and clinical accountability. Hands-on education is grounded in standards and donor management from first principles—not shortcuts—so technical discipline and planning come before volume."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {meaningPoints.map((point) => (

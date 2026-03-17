@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
@@ -9,6 +10,8 @@ interface FeatureGridProps {
   items: string[];
   muted?: boolean;
   dark?: boolean;
+  /** Optional content below the grid (e.g. contextual internal links). */
+  footer?: ReactNode;
 }
 
 export function FeatureGrid({
@@ -18,6 +21,7 @@ export function FeatureGrid({
   items,
   muted = false,
   dark = false,
+  footer,
 }: FeatureGridProps) {
   return (
     <SectionShell muted={muted} dark={dark}>
@@ -32,6 +36,7 @@ export function FeatureGrid({
           </Card>
         ))}
       </div>
+      {footer ? <div className="mt-8 flex flex-wrap gap-6">{footer}</div> : null}
     </SectionShell>
   );
 }

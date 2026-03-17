@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -9,7 +10,7 @@ export function HairLossScienceCtaSection() {
       <SectionHeading
         eyebrow="Next Step"
         title="Develop surgical capability with deeper scientific grounding"
-        description="Apply to IIOHR or contact the admissions team to discuss a pathway that combines practical progression with robust biological education."
+        description="Apply to IIOHR or contact the admissions team to discuss a pathway that combines practical progression with robust biological education. Science training is integrated with our training pathways and practical FUE programme."
       />
       <div className="mt-8 flex flex-wrap gap-3">
         <Button
@@ -26,6 +27,15 @@ export function HairLossScienceCtaSection() {
           Enquire by Email
         </a>
       </div>
+      <p className="mt-6 text-sm text-primary-foreground/85">
+        <Link href="/training-pathways" className="font-medium underline hover:text-primary-foreground">
+          Training pathways
+        </Link>
+        {" · "}
+        <Link href="/practical-fue" className="font-medium underline hover:text-primary-foreground">
+          Practical FUE
+        </Link>
+      </p>
     </SectionShell>
   );
 }

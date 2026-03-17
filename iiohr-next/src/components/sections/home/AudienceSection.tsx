@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
@@ -31,7 +32,7 @@ export function AudienceSection() {
       <SectionHeading
         eyebrow="Who It Is For"
         title="For doctors and clinics at every stage"
-        description="IIOHR supports learner, practitioner, and clinic-level capability development through one connected pathway."
+        description="IIOHR supports new entrants, practising surgeons, and clinic teams through one connected pathway—clinician-facing education with clear entry points and progression."
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         {audienceItems.map((item) => (
@@ -41,6 +42,19 @@ export function AudienceSection() {
           </Card>
         ))}
       </div>
+      <p className="mt-8 text-sm text-muted-foreground">
+        <Link href="/training-pathways" className="font-medium text-foreground underline hover:text-accent">
+          Explore training pathways
+        </Link>
+        {" · "}
+        <Link href="/apply" className="font-medium text-foreground underline hover:text-accent">
+          Apply for training
+        </Link>
+        {" · "}
+        <Link href="/for-clinics" className="font-medium text-foreground underline hover:text-accent">
+          For clinics
+        </Link>
+      </p>
     </SectionShell>
   );
 }
