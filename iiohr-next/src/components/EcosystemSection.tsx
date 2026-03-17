@@ -46,7 +46,7 @@ export function EcosystemSection({ variant = "light", className = "" }: Ecosyste
           >
             HairAudit (measurement)
           </a>
-          <a href="/follicle-intelligence" className="text-[#5A6169] hover:text-[#B79A67] transition-colors">
+          <a href="https://follicleintelligence.ai" target="_blank" rel="noopener noreferrer" className="text-[#5A6169] hover:text-[#B79A67] transition-colors">
             Follicle Intelligence (analysis)
           </a>
           <a
