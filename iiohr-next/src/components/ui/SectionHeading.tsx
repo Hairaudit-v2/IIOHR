@@ -21,7 +21,7 @@ export function SectionHeading({
     align === "center" ? "mx-auto max-w-2xl" : "max-w-2xl lg:max-w-[40rem]";
 
   return (
-    <header className={`space-y-5 ${alignClass}`}>
+    <header className={`space-y-6 ${alignClass}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       <HeadingTag className="text-heading text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem]">
         {title}

@@ -60,8 +60,8 @@ export function PageHero({
               {description}
             </p>
             {(primaryCta || secondaryCta || tertiaryCta) && (
-              <div className="mt-10 flex flex-col gap-4">
-                <div className="flex flex-wrap gap-4">
+              <div className="mt-10 flex flex-col gap-5">
+                <div className="flex flex-wrap items-center gap-4">
                   {primaryCta ? (
                     <Button href={primaryCta.href} variant={isDark ? "dark" : "primary"}>
                       {primaryCta.label}

@@ -12,9 +12,9 @@ interface CardProps {
 }
 
 const baseStyles =
-  "min-w-0 rounded-lg border border-border bg-surface p-6 shadow-[0_1px_3px_0_rgba(44,42,38,0.06)] md:p-7";
+  "min-w-0 rounded-xl border border-border bg-surface p-6 shadow-[0_1px_3px_0_rgba(44,42,38,0.05),0_1px_2px_0_rgba(44,42,38,0.04)] md:p-7";
 const interactiveStyles =
-  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(44,42,38,0.08),0_1px_3px_rgba(44,42,38,0.04)] hover:border-accent/25";
+  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(44,42,38,0.08),0_2px_4px_rgba(44,42,38,0.04)] hover:border-accent/25";
 
 /** Paper-like content panel. Use `interactive` for hover lift and emphasis; optional `marker` for step/icon. */
 export function Card({

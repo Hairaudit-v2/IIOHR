@@ -93,7 +93,7 @@ export function GlobalHairIntelligenceSection({
           />
         </div>
       ) : null}
-      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-32">
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-28 md:py-32 lg:py-36">
         <SectionHeading
           eyebrow="Connected System"
           title={heading}
@@ -121,7 +121,7 @@ export function GlobalHairIntelligenceSection({
         </div>
 
         <div
-          className={`mx-auto mt-12 w-full min-w-0 md:mt-14 lg:mt-16`}
+          className="mx-auto mt-14 w-full min-w-0 md:mt-16 lg:mt-20"
           aria-label="Ecosystem platforms"
         >
           <p className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground md:mb-8">

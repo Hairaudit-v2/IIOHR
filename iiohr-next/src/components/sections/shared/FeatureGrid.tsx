@@ -26,7 +26,7 @@ export function FeatureGrid({
   return (
     <SectionShell muted={muted} dark={dark}>
       <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-      <div className="mt-12 grid gap-5 md:mt-14 lg:mt-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+      <div className="mt-14 grid gap-6 md:mt-16 lg:mt-20 md:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <Card
             key={item}
@@ -36,7 +36,7 @@ export function FeatureGrid({
           </Card>
         ))}
       </div>
-      {footer ? <div className="mt-12 pt-2">{footer}</div> : null}
+      {footer ? <div className="mt-14 pt-2">{footer}</div> : null}
     </SectionShell>
   );
 }

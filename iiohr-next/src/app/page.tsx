@@ -62,6 +62,7 @@ export default function HomePage() {
         sectionTone="dark"
         labImage={{ src: HOME_IMAGES.ecosystem.dnaLab, alt: ecosystemLabImage.alt }}
       />
+      <SectionSpacer />
       <TrustSignalsSection />
       <AudienceSection />
       <CTASection />

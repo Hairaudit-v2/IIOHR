@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { SectionCTA } from "@/components/ui/SectionCTA";
 
 const segmentLinks = [
   { href: "/apply", label: "New to hair restoration", description: "Apply for training" },
@@ -18,22 +18,20 @@ export function CTASection() {
         title="Begin your institute pathway"
         description="Whether you’re entering the field, refining your practice, or building clinic capability, we’ll match you to the right pathway. Apply now or explore pathways below."
       />
-      <div className="mt-12 flex flex-wrap gap-4">
-        <Button href="/apply" variant="dark">
-          Apply Now
-        </Button>
-        <Button href="/training-pathways" variant="darkSecondary">
-          Explore Pathways
-        </Button>
-        <Button href="/for-clinics" variant="darkSecondary">
-          Enquire About Training
-        </Button>
-      </div>
-      <div className="mt-14 border-t border-section-charcoal-border pt-10">
+      <SectionCTA
+        variant="dark"
+        primary={{ href: "/apply", label: "Apply Now" }}
+        secondary={[
+          { href: "/training-pathways", label: "Explore Pathways" },
+          { href: "/for-clinics", label: "Enquire About Training" },
+        ]}
+        className="mt-12"
+      />
+      <div className="mt-16 border-t border-section-charcoal-border pt-12">
         <p className="text-xs font-semibold tracking-[0.12em] text-section-charcoal-muted uppercase">
           I am…
         </p>
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {segmentLinks.map((item) => (
             <li key={item.label}>
               <Link

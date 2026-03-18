@@ -29,7 +29,7 @@ export function SectionShell({
       className={`border-b ${borderClass} ${tone} ${className}`}
       data-section-tone={dark ? "dark" : muted ? "muted" : "default"}
     >
-      <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-20 sm:px-5 md:py-24 lg:py-28">{children}</div>
+      <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-24 sm:px-5 md:py-28 lg:py-32">{children}</div>
     </section>
   );
 }
