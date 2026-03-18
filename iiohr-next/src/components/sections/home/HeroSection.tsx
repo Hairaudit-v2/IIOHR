@@ -55,22 +55,6 @@ export function HeroSection() {
         aria-hidden
       />
 
-      {/* Optional secondary visual: progression image (side panel, fade-in layer) */}
-      <div
-        className="absolute right-0 top-0 z-[2] hidden h-full w-full max-w-[420px] lg:block lg:max-w-[36%]"
-        aria-hidden
-      >
-        <Image
-          src={HOME_IMAGES.hero.progression}
-          alt=""
-          fill
-          className="object-cover object-left"
-          sizes="(max-width: 1024px) 0px, 42vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-l from-section-charcoal/85 via-section-charcoal/40 to-transparent" aria-hidden />
-      </div>
-
       {/* Content — strong contrast over overlay */}
       <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-32">
         <div className="max-w-2xl">
