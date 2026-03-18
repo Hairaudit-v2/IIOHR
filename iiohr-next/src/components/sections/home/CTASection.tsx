@@ -25,7 +25,7 @@ export function CTASection() {
           { href: "/training-pathways", label: "Explore Pathways" },
           { href: "/for-clinics", label: "Enquire About Training" },
         ]}
-        className="mt-12"
+        className="mt-16"
       />
       <div className="mt-16 border-t border-section-charcoal-border pt-12">
         <p className="text-xs font-semibold tracking-[0.12em] text-section-charcoal-muted uppercase">
@@ -36,7 +36,7 @@ export function CTASection() {
             <li key={item.label}>
               <Link
                 href={item.href}
-                className="block rounded-lg border border-section-charcoal-border bg-section-charcoal-foreground/5 px-4 py-3 text-sm text-section-charcoal-foreground transition-colors hover:bg-section-charcoal-foreground/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
+                className="block rounded-xl border border-section-charcoal-border bg-section-charcoal-foreground/5 px-4 py-3.5 text-sm min-h-[44px] sm:min-h-0 text-section-charcoal-foreground transition-colors hover:bg-section-charcoal-foreground/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
               >
                 <span className="font-medium">{item.label}</span>
                 <span className="mt-1 block text-xs text-section-charcoal-muted">{item.description}</span>

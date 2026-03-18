@@ -19,7 +19,7 @@ export function JudgmentOutcomesSection() {
         title="Why deeper science leads to better surgical judgment"
         description="When surgeons understand biological context and treatment pathways more deeply, decision quality improves before, during, and after surgery."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {judgmentOutcomes.map((item) => (
           <Card key={item}>
             <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>

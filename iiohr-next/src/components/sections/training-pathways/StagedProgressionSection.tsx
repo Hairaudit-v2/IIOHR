@@ -1,5 +1,6 @@
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Card } from "@/components/ui/Card";
 
 const stagedSteps = [
   {
@@ -47,18 +48,15 @@ export function StagedProgressionSection() {
         title="A clear advancement sequence for sustainable capability development"
         description="The pathway is intentionally staged to ensure readiness, safety, and consistency before each next level of responsibility."
       />
-      <ol className="mt-10 grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+      <ol className="mt-14 grid min-w-0 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
         {stagedSteps.map((step, index) => (
-          <li
-            key={step.label}
-            className="min-w-0 rounded-lg border border-border bg-surface p-4 shadow-[0_8px_18px_-16px_rgba(30,42,56,0.4)]"
-          >
+          <Card key={step.label} as="li" interactive marker={`0${index + 1}`}>
             <p className="text-[10px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">
-              {`Stage 0${index + 1}`}
+              Stage
             </p>
-            <h3 className="mt-2 text-sm font-semibold tracking-[0.08em] uppercase">{step.label}</h3>
+            <h3 className="mt-2 text-sm font-semibold tracking-tight">{step.label}</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.description}</p>
-          </li>
+          </Card>
         ))}
       </ol>
     </SectionShell>

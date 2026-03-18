@@ -18,9 +18,9 @@ export function TechnicalDevelopmentSection() {
         title="Core operative competencies developed through deliberate practice"
         description="Practical FUE training is organized into technical modules so progression remains precise, consistent, and clinically grounded. Donor assessment, planning, extraction strategy, graft handling, and recipient management are developed deliberately—so surgical discipline supports long-term outcomes."
       />
-      <ol className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+      <ol className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {skillModules.map((module, index) => (
-          <Card key={module} className="border-white/20 bg-white/5 shadow-none">
+          <Card key={module} dark interactive>
             <p className="text-xs tracking-[0.14em] text-primary-foreground/70 uppercase">
               {`Module ${index + 1}`}
             </p>

@@ -1,5 +1,6 @@
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Card } from "@/components/ui/Card";
 
 const progressionSteps = [
   {
@@ -37,18 +38,15 @@ export function FluencyProgressionSection() {
         title="From controlled repetition to surgical fluency"
         description="Fluency is developed through repeated supervised practice, structured correction, and progressively more complex procedural responsibility."
       />
-      <ol className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <ol className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
         {progressionSteps.map((step, index) => (
-          <li
-            key={step.label}
-            className="rounded-lg border border-border bg-surface p-4 shadow-[0_8px_18px_-16px_rgba(30,42,56,0.4)]"
-          >
+          <Card key={step.label} as="li" interactive marker={`0${index + 1}`}>
             <p className="text-[10px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">
-              {`Stage 0${index + 1}`}
+              Stage
             </p>
-            <h3 className="mt-2 text-sm font-semibold tracking-[0.08em] uppercase">{step.label}</h3>
+            <h3 className="mt-2 text-sm font-semibold tracking-tight">{step.label}</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.description}</p>
-          </li>
+          </Card>
         ))}
       </ol>
     </SectionShell>

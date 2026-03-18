@@ -33,7 +33,7 @@ export function PracticalFueAudienceSection() {
         title="Practical FUE pathways matched to entrant profile and clinical stage"
         description="IIOHR pathways are tailored to baseline experience so progression remains safe, credible, and outcome-oriented."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-2">
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
         {suitedFor.map((item) => (
           <Card key={item.title}>
             <h3 className="text-xl font-semibold">{item.title}</h3>

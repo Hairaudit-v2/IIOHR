@@ -28,7 +28,7 @@ export function ClinicPathwaysSection() {
         title="Partnership models aligned to your clinic’s capability goals"
         description="IIOHR supports clinics across different development contexts, from first-entry training to internal standards consolidation."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {clinicPathways.map((pathway, index) => (
           <Card key={pathway.title}>
             <p className="text-[10px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">

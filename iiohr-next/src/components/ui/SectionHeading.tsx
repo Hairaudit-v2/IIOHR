@@ -21,13 +21,13 @@ export function SectionHeading({
     align === "center" ? "mx-auto max-w-2xl" : "max-w-2xl lg:max-w-[40rem]";
 
   return (
-    <header className={`space-y-6 ${alignClass}`}>
+    <header className={`space-y-8 ${alignClass}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <HeadingTag className="text-heading text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem]">
+      <HeadingTag className="text-heading text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem] [text-wrap:balance]">
         {title}
       </HeadingTag>
       {description ? (
-        <p className={`${descriptionWidthClass} max-w-prose text-base leading-relaxed text-muted-foreground md:text-[1.03rem]`}>
+        <p className={`${descriptionWidthClass} max-w-prose text-base leading-relaxed text-muted-foreground md:text-[1.03rem] [line-height:1.7]`}>
           {description}
         </p>
       ) : null}

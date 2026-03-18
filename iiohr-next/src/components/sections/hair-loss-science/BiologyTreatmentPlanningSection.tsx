@@ -28,9 +28,9 @@ export function BiologyTreatmentPlanningSection() {
         title="Clinical planning improves when biology and treatment logic are integrated"
         description="IIOHR teaches surgeons to connect biological understanding with treatment strategy and surgical execution, reducing fragmented decision-making."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {planningBlocks.map((block) => (
-          <Card key={block.title} className="border-white/20 bg-white/5 shadow-none">
+          <Card key={block.title} dark interactive>
             <h3 className="text-lg font-semibold">{block.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-primary-foreground/85">{block.description}</p>
           </Card>

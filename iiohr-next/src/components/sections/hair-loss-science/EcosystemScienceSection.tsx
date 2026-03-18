@@ -26,7 +26,7 @@ export function EcosystemScienceSection() {
           title="Science education is strengthened by connected ecosystem intelligence"
           description="Hair-loss science training at IIOHR is reinforced through relationship with Hair Longevity Institute and Follicle Intelligence, linking biology, treatment reasoning, and measurable outcomes."
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
           {relationshipCards.map((item) => (
             <Card key={item.title}>
               <h3 className="text-lg font-semibold">{item.title}</h3>

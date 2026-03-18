@@ -28,7 +28,7 @@ export function SupervisedHandsOnSection() {
         title="Hands-on development under experienced surgical guidance"
         description="The training environment prioritizes safe execution, transparent feedback, and progressive responsibility. Practical exposure under supervision ensures technique is corrected in real time and that standards, not trial-and-error, guide development."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {supervisionBlocks.map((block) => (
           <Card key={block.title}>
             <h3 className="text-lg font-semibold">{block.title}</h3>

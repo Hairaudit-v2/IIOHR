@@ -26,7 +26,7 @@ export function MentorshipSection() {
       aria-label="Mentorship"
       data-section-tone="dark"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-28 md:py-32 lg:py-36">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
           <ImageWrapper
             src={HOME_IMAGES.trust.doctor}
@@ -41,14 +41,9 @@ export function MentorshipSection() {
               title="Practical mentorship across the full pathway"
               description="Clinician-led development: experienced surgeons mentor, review cases, and refine judgment so progression is grounded in real practice, not theory alone."
             />
-            <div className="mt-10 grid gap-6 sm:grid-cols-3 lg:mt-12">
+            <div className="mt-16 grid gap-6 sm:grid-cols-3 lg:mt-20">
               {mentorshipItems.map((item, index) => (
-                <Card
-                  key={item.title}
-                  interactive
-                  marker={index + 1}
-                  className="border-section-charcoal-border bg-section-charcoal-foreground/10 shadow-none"
-                >
+                <Card key={item.title} dark interactive marker={index + 1}>
                   <h3 className="text-base font-semibold tracking-tight text-section-charcoal-foreground">
                     {item.title}
                   </h3>
@@ -58,7 +53,7 @@ export function MentorshipSection() {
                 </Card>
               ))}
             </div>
-            <div className="mt-12 pt-2">
+            <div className="mt-16 pt-6">
               <SectionCTA
                 variant="dark"
                 primary={{ href: "/apply", label: "Apply Now" }}

@@ -44,21 +44,21 @@ export function ScienceModulesSection() {
       aria-label="Science modules"
       data-section-tone="dark"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-28 md:py-32 lg:py-36">
         <SectionHeading
           eyebrow="Hair Loss Science"
           title="Four pillars of biological understanding"
           description="Training at IIOHR builds on hormones, follicle biology, the hair cycle, and genetics—so surgical decisions are grounded in science."
           align="center"
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4 lg:gap-8">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-8">
           {modules.map((mod) => (
             <Link
               key={mod.title}
               href="/hair-loss-science"
               className="group block h-full rounded-lg focus-visible:outline focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
             >
-              <Card className="h-full border-section-charcoal-border bg-section-charcoal-foreground/10 shadow-none transition-all group-hover:bg-section-charcoal-foreground/15">
+              <Card dark interactive className="h-full">
                 <ImageWrapper
                   src={mod.src}
                   alt={mod.alt}

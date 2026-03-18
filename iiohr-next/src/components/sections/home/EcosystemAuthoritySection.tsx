@@ -16,10 +16,10 @@ export function EcosystemAuthoritySection() {
         description="IIOHR sits within a connected multi-platform hair intelligence ecosystem. Each platform has a distinct role in training, measurement, analysis, and patient-centred care—together they form a strategic authority architecture for modern hair restoration."
         align="center"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+      <p className="mx-auto mt-10 max-w-2xl text-center text-sm font-semibold uppercase tracking-wider text-muted-foreground">
         Four connected platforms
       </p>
-      <div className="mt-6 grid min-w-0 gap-5 sm:grid-cols-2 lg:mt-8 lg:grid-cols-4 lg:gap-6">
+      <div className="mt-12 grid min-w-0 gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
         {ECOSYSTEM_PLATFORMS.map((platform) => {
           const displayName = platform.id === "iiohr" ? "IIOHR" : platform.name;
           const ctaLabel = platform.isInternal ? "Explore IIOHR" : "Visit";

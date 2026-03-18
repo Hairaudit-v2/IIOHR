@@ -16,7 +16,7 @@ export function FollicleIntelligenceSupportSection() {
         title="Ecosystem intelligence that supports surgical development"
         description="Structured auditing, benchmarking, and case-based review connect training to real outcomes so progression is measurable and clinically meaningful."
       />
-      <div className="mt-10 max-w-2xl space-y-5 text-muted-foreground">
+      <div className="mt-16 max-w-2xl space-y-6 text-muted-foreground section-prose">
         <p className="text-base leading-relaxed">
           Follicle Intelligence links institute training to outcomes by turning surgical work into actionable review loops.
         </p>

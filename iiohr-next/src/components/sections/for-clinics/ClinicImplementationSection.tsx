@@ -25,7 +25,7 @@ export function ClinicImplementationSection() {
         title="What clinic partnerships include"
         description="IIOHR supports clinics with more than training delivery—pathway design, standards alignment, and review integration so internal development is sustainable."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {supports.map((item) => (
           <Card key={item.title}>
             <h3 className="text-lg font-semibold">{item.title}</h3>

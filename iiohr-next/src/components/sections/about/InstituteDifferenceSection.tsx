@@ -33,9 +33,9 @@ export function InstituteDifferenceSection() {
         title="What makes IIOHR different"
         description="IIOHR combines practical training, science, mentorship, and auditing as one integrated development system."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
         {modelComponents.map((item) => (
-          <Card key={item.title} className="border-white/20 bg-white/5 shadow-none">
+          <Card key={item.title} dark interactive>
             <h3 className="text-lg font-semibold">{item.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-primary-foreground/85">{item.description}</p>
           </Card>

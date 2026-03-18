@@ -28,7 +28,7 @@ export function TrichologyAndDiagnosisSection() {
         title="From pattern recognition to clinically defensible diagnosis"
         description="Scientific education at IIOHR focuses on practical diagnostic clarity. Surgeons learn to distinguish biological patterns, identify risk, and link diagnosis to treatment logic."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {modules.map((module) => (
           <Card key={module.title}>
             <h3 className="text-lg font-semibold">{module.title}</h3>

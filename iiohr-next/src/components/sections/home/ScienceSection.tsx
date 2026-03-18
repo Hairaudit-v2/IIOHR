@@ -64,7 +64,7 @@ export function ScienceSection() {
           align="center"
         />
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:gap-8">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20 lg:gap-8">
           {scienceItems.map((item) => (
             <Card
               key={item.key}

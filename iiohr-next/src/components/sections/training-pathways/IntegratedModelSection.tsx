@@ -35,9 +35,9 @@ export function IntegratedModelSection() {
         title="How practical training, theory, audit, and mentorship work together"
         description="IIOHR's system is deliberately interconnected. Each development pillar reinforces the others to accelerate safe, standards-led progression."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
         {integrationBlocks.map((block) => (
-          <Card key={block.title} className="border-white/20 bg-white/5 shadow-none">
+          <Card key={block.title} dark interactive>
             <h3 className="text-lg font-semibold">{block.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">
               {block.description}
@@ -45,7 +45,7 @@ export function IntegratedModelSection() {
           </Card>
         ))}
       </div>
-      <div className="mt-10 border-t border-primary-foreground/20 pt-6">
+      <div className="mt-16 border-t border-primary-foreground/20 pt-8">
         <p className="text-xs tracking-[0.14em] text-primary-foreground/70 uppercase">
           Development Loop
         </p>

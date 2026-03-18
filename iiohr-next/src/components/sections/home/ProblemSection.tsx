@@ -38,7 +38,7 @@ export function ProblemSection() {
             title="The problem with traditional training"
             description="Hair restoration training is often too short, too shallow, and too unsupported to build lasting surgical competence and clinical judgment."
           />
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-14">
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20">
             {problemItems.map((item) => (
               <Card key={item}>
                 <p className="text-sm font-medium leading-snug tracking-tight text-foreground">

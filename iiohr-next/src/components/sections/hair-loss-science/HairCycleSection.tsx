@@ -30,7 +30,7 @@ export function HairCycleSection() {
         title="Growth phases in clinical context"
         description="Surgeons at IIOHR learn to apply hair cycle fundamentals—anagen, catagen, and telogen—to diagnostic and treatment-planning decisions."
       />
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {hairCycleCards.map((card) => (
           <Card key={card.title}>
             <h3 className="text-lg font-semibold">{card.title}</h3>
@@ -38,7 +38,7 @@ export function HairCycleSection() {
           </Card>
         ))}
       </div>
-      <div className="mt-12 max-w-3xl">
+      <div className="mt-16 max-w-3xl section-prose">
         <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
           <Image
             src={hairCycleModuleImage.src}

@@ -18,7 +18,7 @@ export function StructuredDevelopmentNeedSection() {
           title="Clinics need systems, not isolated training events"
           description="IIOHR is positioned as a development partner for clinics that require repeatable surgeon progression, measurable quality controls, and aligned clinical standards."
         />
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
           {pressures.map((item) => (
             <Card key={item}>
               <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>

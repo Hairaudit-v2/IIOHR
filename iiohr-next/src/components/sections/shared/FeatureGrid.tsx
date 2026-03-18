@@ -26,17 +26,14 @@ export function FeatureGrid({
   return (
     <SectionShell muted={muted} dark={dark}>
       <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-      <div className="mt-14 grid gap-6 md:mt-16 lg:mt-20 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-16 grid gap-6 lg:mt-20 md:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
-          <Card
-            key={item}
-            className={dark ? "border-section-charcoal-border bg-section-charcoal-foreground/10 shadow-none" : ""}
-          >
+          <Card key={item} interactive dark={dark}>
             <h3 className="text-lg leading-snug font-semibold tracking-tight">{item}</h3>
           </Card>
         ))}
       </div>
-      {footer ? <div className="mt-14 pt-2">{footer}</div> : null}
+      {footer ? <div className="mt-16 pt-4">{footer}</div> : null}
     </SectionShell>
   );
 }

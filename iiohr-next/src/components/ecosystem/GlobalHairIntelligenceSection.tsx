@@ -105,7 +105,7 @@ export function GlobalHairIntelligenceSection({
             <div
               className={
                 isDark
-                  ? "relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/60 bg-section-charcoal/40 p-5 sm:p-6 md:p-8 shadow-[0_24px_80px_rgba(0,0,0,0.8)] backdrop-blur-sm"
+                  ? "relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/50 bg-gradient-to-b from-section-charcoal-foreground/[0.08] to-section-charcoal/60 p-5 sm:p-6 md:p-8 shadow-[0_24px_64px_rgba(0,0,0,0.5)] backdrop-blur-sm"
                   : ""
               }
             >

@@ -19,7 +19,7 @@ export function SectionShell({
     ? "bg-section-charcoal text-section-charcoal-foreground border-section-charcoal-border"
     : muted
       ? "bg-section-ivory-alt text-foreground border-border"
-      : "bg-section-ivory text-foreground border-border";
+      : "section-ivory-depth text-foreground border-border";
 
   const borderClass = dark ? "border-section-charcoal-border" : "border-border-soft";
 
@@ -29,7 +29,7 @@ export function SectionShell({
       className={`border-b ${borderClass} ${tone} ${className}`}
       data-section-tone={dark ? "dark" : muted ? "muted" : "default"}
     >
-      <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-24 sm:px-5 md:py-28 lg:py-32">{children}</div>
+      <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-28 sm:px-5 md:py-32 lg:py-36">{children}</div>
     </section>
   );
 }

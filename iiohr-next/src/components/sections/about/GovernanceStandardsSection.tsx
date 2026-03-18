@@ -25,7 +25,7 @@ export function GovernanceStandardsSection() {
         title="How we maintain rigour"
         description="Quality is built into the model through assessment, clear standards, and ongoing review—not only at the point of entry."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {items.map((item) => (
           <Card key={item.title}>
             <h3 className="text-lg font-semibold">{item.title}</h3>

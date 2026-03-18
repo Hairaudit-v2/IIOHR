@@ -16,7 +16,7 @@ export function ApplyIntroductionSection() {
         title="A clear and structured application process"
         description="IIOHR intake is designed to match candidates and clinic teams to the most suitable pathway stage. This ensures progression is safe, realistic, and clinically useful."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {introPoints.map((point) => (
           <Card key={point}>
             <p className="text-sm leading-relaxed text-muted-foreground">{point}</p>

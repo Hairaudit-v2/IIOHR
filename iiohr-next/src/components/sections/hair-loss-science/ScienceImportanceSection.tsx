@@ -18,7 +18,7 @@ export function ScienceImportanceSection() {
           title="Hair-loss science is a core part of surgeon development"
           description="IIOHR positions scientific education as a practical clinical tool. Better biological understanding leads to stronger diagnostic logic, better planning, and higher-quality surgical decisions."
         />
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
           {reasons.map((reason) => (
             <Card key={reason}>
               <p className="text-sm leading-relaxed text-muted-foreground">{reason}</p>

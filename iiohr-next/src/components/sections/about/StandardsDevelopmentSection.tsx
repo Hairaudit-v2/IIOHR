@@ -17,7 +17,7 @@ export function StandardsDevelopmentSection() {
         title="Built for long-term surgical quality"
         description="The institute framework is designed to support sustained development over years, not single training events."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
         {standards.map((item) => (
           <Card key={item}>
             <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>

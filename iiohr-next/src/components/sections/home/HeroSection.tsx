@@ -56,16 +56,16 @@ export function HeroSection() {
       />
 
       {/* Content — strong contrast over overlay */}
-      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-32">
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-36">
         <div className="max-w-2xl">
           <Eyebrow>International Institute of Hair Restoration</Eyebrow>
           <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-section-charcoal-foreground md:text-5xl lg:text-[2.75rem]">
             Beyond the short course. From technician to surgeon.
           </h1>
-          <p className="mt-7 max-w-2xl text-base leading-relaxed text-section-charcoal-muted md:text-lg">
+          <p className="mt-9 max-w-2xl text-base leading-relaxed text-section-charcoal-muted md:text-lg [line-height:1.7]">
             A global education and mentorship platform for hair restoration: clinically grounded training, practical surgical exposure, and standards-based progression for doctors and clinics.
           </p>
-          <div className="mt-10 flex flex-col gap-5">
+          <div className="mt-12 flex flex-col gap-6">
             <div className="flex flex-wrap items-center gap-4">
               <Button href="/apply" variant="dark">
                 Apply Now

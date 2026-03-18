@@ -31,7 +31,7 @@ export function EcosystemRelationshipSection() {
           title="How IIOHR connects with the wider intelligence ecosystem"
           description="IIOHR is the education and certification pillar, designed to operate alongside ecosystem platforms that strengthen outcome review, analytics, and biological depth."
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
           {ecosystemRoles.map((item) => (
             <Card key={item.title}>
               <h3 className="text-lg font-semibold">{item.title}</h3>

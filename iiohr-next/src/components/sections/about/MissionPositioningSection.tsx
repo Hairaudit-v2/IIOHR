@@ -28,7 +28,7 @@ export function MissionPositioningSection() {
         title="Why IIOHR exists"
         description="IIOHR was established to create a serious educational framework for surgeon development in hair restoration, with clear standards and explicit progression."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {pillars.map((item) => (
           <Card key={item.title}>
             <h3 className="text-lg font-semibold">{item.title}</h3>

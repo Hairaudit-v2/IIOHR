@@ -28,9 +28,9 @@ export function AuditStandardsMentorshipSection() {
         title="Audit, standards, and mentorship work as one development system"
         description="IIOHR clinic partnerships are designed to strengthen both individual surgeon progression and organizational quality assurance."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {pillars.map((pillar) => (
-          <Card key={pillar.title} className="border-white/20 bg-white/5 shadow-none">
+          <Card key={pillar.title} dark interactive>
             <h3 className="text-lg font-semibold">{pillar.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-primary-foreground/85">{pillar.description}</p>
           </Card>

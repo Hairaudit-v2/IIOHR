@@ -28,7 +28,7 @@ export function InternalTalentBenefitsSection() {
         title="Training internal surgeons creates long-term strategic value"
         description="IIOHR supports clinics that want durable capability growth, not temporary short-course uplift."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {benefits.map((benefit) => (
           <Card key={benefit.title}>
             <h3 className="text-lg font-semibold">{benefit.title}</h3>

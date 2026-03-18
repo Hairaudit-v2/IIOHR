@@ -29,31 +29,30 @@ export default function HomePage() {
   return (
     <>
       <JsonLdScript data={webPageJsonLd} />
-      {/* 1. Hero — hair progression image */}
+      {/* Hero: primary entry, dark full-bleed */}
       <HeroSection />
       <SectionSpacer />
-      {/* 2. Science bridge — DNA image */}
+      {/* Science: bridge + modules (dark), then problem/difference (light) */}
       <ScienceBridgeSection />
       <SectionSpacer />
-      {/* 3. Science modules — hormones, follicle, hair cycle, genetics */}
       <ScienceModulesSection />
       <SectionSpacer />
       <ProblemSection />
       <DifferenceSection />
       <SectionSpacer />
+      {/* Curriculum + pathway (mixed), then ecosystem platforms (light) */}
       <TrainingPillarsSection />
       <FollicleIntelligenceSupportSection />
       <SectionSpacer />
       <ProgressionPathwaySection />
       <PathwayTrustBlock />
       <EcosystemAuthoritySection />
-      {/* 4. Human impact — mirror image */}
+      {/* Outcomes + mentorship (dark with imagery), then centerpiece */}
       <HumanImpactSection />
       <SectionSpacer />
-      {/* 5. Mentorship — doctor image */}
       <MentorshipSection />
       <SectionSpacer />
-      {/* 6. Ecosystem — network + lab DNA visual */}
+      {/* Centerpiece: Global Hair Intelligence Network (dark) */}
       <GlobalHairIntelligenceSection
         variant="iiohr"
         heading="The Engine Behind the Ecosystem"

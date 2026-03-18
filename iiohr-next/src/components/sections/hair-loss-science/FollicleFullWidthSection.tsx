@@ -39,18 +39,15 @@ export function FollicleFullWidthSection() {
           priority
         />
       </div>
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-28 md:py-32 lg:py-36">
         <SectionHeading
           eyebrow="Biology, Treatment, and Surgery"
           title="Clinical planning improves when biology and treatment logic are integrated"
           description="IIOHR teaches surgeons to connect biological understanding with treatment strategy and surgical execution, reducing fragmented decision-making."
         />
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
           {planningBlocks.map((block) => (
-            <Card
-              key={block.title}
-              className="border-section-charcoal-border bg-section-charcoal-foreground/10 shadow-none"
-            >
+            <Card key={block.title} dark interactive>
               <h3 className="text-lg font-semibold text-section-charcoal-foreground">
                 {block.title}
               </h3>

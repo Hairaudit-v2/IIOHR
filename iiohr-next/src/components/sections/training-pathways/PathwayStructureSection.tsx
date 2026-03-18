@@ -25,7 +25,7 @@ export function PathwayStructureSection() {
         title="How progression works in practice"
         description="The pathway is designed so capability builds step by step—from learning and observation through supervised performance and audit—with supervision and review built in from the start. That structure is why progression is predictable and standards-based, not ad hoc."
       />
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {structureItems.map((item) => (
           <Card key={item.title}>
             <h3 className="text-lg font-semibold">{item.title}</h3>

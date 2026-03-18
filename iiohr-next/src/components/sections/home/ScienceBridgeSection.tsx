@@ -10,7 +10,7 @@ export function ScienceBridgeSection() {
       aria-label="Science bridge"
       data-section-tone="dark"
     >
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-28 md:py-32 lg:py-36">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
           <div>
             <SectionHeading
@@ -18,7 +18,7 @@ export function ScienceBridgeSection() {
               title="From biology to better outcomes"
               description="Hair restoration that lasts starts with understanding causes, progression, and the science behind the follicle. IIOHR training grounds surgeons in biology first."
             />
-            <div className="mt-8">
+            <div className="mt-16">
               <Button href="/hair-loss-science" variant="darkSecondary">
                 Explore Hair Loss Science
               </Button>

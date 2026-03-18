@@ -17,7 +17,7 @@ export function ShortCourseLimitationsSection() {
         title="Why traditional short-course models are insufficient"
         description="Hair restoration surgery requires more than isolated technical exposure. Development quality depends on structured progression, supervision, and review continuity."
       />
-      <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
         {limitations.map((item) => (
           <Card key={item}>
             <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>

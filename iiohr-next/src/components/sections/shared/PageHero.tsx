@@ -49,18 +49,18 @@ export function PageHero({
 
   return (
     <section className={sectionClass} data-section-tone={isDark ? "dark" : undefined}>
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-24 lg:py-32">
-        <div className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)] lg:items-start lg:gap-14">
+      <div className="mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-36">
+        <div className="grid gap-12 lg:grid-cols-[1fr_minmax(0,340px)] lg:items-start lg:gap-16">
           <div>
             <Eyebrow>{eyebrow}</Eyebrow>
-            <h1 className="mt-6 max-w-4xl text-heading text-4xl leading-tight font-semibold tracking-tight md:text-5xl lg:text-[2.75rem]">
+            <h1 className="mt-8 max-w-4xl text-heading text-4xl leading-tight font-semibold tracking-tight md:text-5xl lg:text-[2.75rem] [text-wrap:balance]">
               {title}
             </h1>
-            <p className="mt-7 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mt-9 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg [line-height:1.7]">
               {description}
             </p>
             {(primaryCta || secondaryCta || tertiaryCta) && (
-              <div className="mt-10 flex flex-col gap-5">
+              <div className="mt-12 flex flex-col gap-6">
                 <div className="flex flex-wrap items-center gap-4">
                   {primaryCta ? (
                     <Button href={primaryCta.href} variant={isDark ? "dark" : "primary"}>

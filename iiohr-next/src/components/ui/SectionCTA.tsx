@@ -41,7 +41,7 @@ export function SectionCTA({
   if (!hasButtons && !hasTertiary) return null;
 
   return (
-    <div className={`flex flex-col gap-6 ${className}`}>
+    <div className={`flex flex-col gap-8 ${className}`}>
       {hasButtons && (
         <div className={`flex flex-wrap items-center ${buttonGap}`}>
           {primary && (

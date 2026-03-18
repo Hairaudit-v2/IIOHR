@@ -33,7 +33,7 @@ export function CausesAndAssessmentSection() {
         title="From biology to treatment decisions"
         description="Hair loss has multiple causes; androgenic alopecia is the most common. Understanding causes, progression, and the role of genetics, hormones, and inflammation helps surgeons recommend the right interventions—and why clinical assessment before treatment is non-negotiable."
       />
-      <div className="mt-10 grid gap-4 sm:grid-cols-2">
+      <div className="mt-16 grid gap-6 sm:grid-cols-2">
         {causesCards.map((card) => (
           <Card key={card.title}>
             <h3 className="text-lg font-semibold">{card.title}</h3>
