@@ -12,8 +12,8 @@
   /* Layer 1 — Dark sections: deep charcoal, premium and cool-neutral (not brown) */
   --section-charcoal: #17181a;
   --section-charcoal-foreground: #f6f5f3;
-  --section-charcoal-muted: rgba(246, 245, 243, 0.78);
-  --section-charcoal-border: rgba(246, 245, 243, 0.14);
+  --section-charcoal-muted: rgba(246, 245, 243, 0.88);
+  --section-charcoal-border: rgba(246, 245, 243, 0.2);
 
   /* Layer 2 — Light sections: warm ivory / soft neutral (clean, not muddy) */
   --background: #f7f6f4;
@@ -95,8 +95,8 @@
     --accent-muted: #b89d72;
     --section-charcoal: #141518;
     --section-charcoal-foreground: #f0eeeb;
-    --section-charcoal-muted: rgba(240, 238, 235, 0.78);
-    --section-charcoal-border: rgba(240, 238, 235, 0.14);
+    --section-charcoal-muted: rgba(240, 238, 235, 0.88);
+    --section-charcoal-border: rgba(240, 238, 235, 0.2);
     --section-ivory: #1e1f21;
     --section-ivory-alt: #242528;
   }
@@ -164,9 +164,12 @@ textarea:focus-visible {
   background: color-mix(in oklab, var(--accent) 28%, transparent);
 }
 
-/* Dark section (charcoal): headings and content use light text */
+/* Dark section (charcoal): all text must be light for readability */
 [data-section-tone="dark"] .text-heading,
 [data-section-tone="dark"] [class*="text-heading"] {
+  color: var(--section-charcoal-foreground);
+}
+[data-section-tone="dark"] .text-foreground {
   color: var(--section-charcoal-foreground);
 }
 [data-section-tone="dark"] .text-muted-foreground {
@@ -177,6 +180,11 @@ textarea:focus-visible {
 }
 [data-section-tone="dark"] .bg-surface {
   background-color: rgba(246, 245, 243, 0.06);
+}
+/* Ensure paragraphs and list text in dark sections are readable when they inherit or use generic classes */
+[data-section-tone="dark"] p,
+[data-section-tone="dark"] li {
+  color: inherit;
 }
 
 /* Default ivory section: very subtle top-to-bottom depth (no brown) */
