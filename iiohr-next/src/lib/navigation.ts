@@ -7,6 +7,7 @@ export interface NavigationItem {
 export const primaryNavigation: NavigationItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/academy", label: "Academy" },
   { href: "/training-pathways", label: "Training Pathways" },
   { href: "/practical-fue", label: "Practical FUE" },
   { href: "/hair-loss-science", label: "Hair Loss Science" },
@@ -21,6 +22,7 @@ export const utilityNavigation: NavigationItem[] = [
 export const footerNavigation: NavigationItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/academy", label: "Academy" },
   { href: "/training-pathways", label: "Training Pathways" },
   { href: "/practical-fue", label: "Practical FUE" },
   { href: "/hair-loss-science", label: "Hair Loss Science" },

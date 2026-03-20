@@ -1,0 +1,268 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { PageHero } from "@/components/sections/shared/PageHero";
+import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { Card } from "@/components/ui/Card";
+import { SectionCTA } from "@/components/ui/SectionCTA";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+
+const canonical = "https://iiohr.com/academy";
+
+export const metadata: Metadata = {
+  title: "Academy",
+  description:
+    "IIOHR Academy is a structured, standards-led education framework for doctors and clinics, delivered through the IIOHR partner training network.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
+};
+
+const academyModelCards = [
+  {
+    title: "Practical FUE Development",
+    body: "Supervised surgical training focused on technical discipline, safe progression, and repeatable clinical execution.",
+  },
+  {
+    title: "Science and Diagnosis",
+    body: "Biological understanding, trichology, and diagnostic reasoning that strengthen planning and treatment decisions.",
+  },
+  {
+    title: "Standards and Assessment",
+    body: "Structured review, capability checkpoints, and quality-aligned assessment to keep development accountable.",
+  },
+  {
+    title: "Mentorship and Progression",
+    body: "Longitudinal mentor support, case feedback, and staged advancement toward durable independent performance.",
+  },
+] as const;
+
+const programLadder = [
+  {
+    level: "Foundation",
+    focus:
+      "Core principles, supervised basics, and clinical workflow discipline for safe early-stage capability.",
+  },
+  {
+    level: "Intermediate",
+    focus:
+      "Expanded procedural responsibility, stronger planning logic, and reinforced standards in live practice settings.",
+  },
+  {
+    level: "Advanced",
+    focus:
+      "Higher-complexity decision making, refined execution, and measurable consistency under structured review.",
+  },
+  {
+    level: "Immersion",
+    focus:
+      "Intensive supervised exposure with integrated science, practical performance, and progression oversight.",
+  },
+] as const;
+
+const continuousDevelopmentCards = [
+  {
+    title: "Clinical Intelligence",
+    body: "AI-supported insight into surgical patterns, outcomes, and case-level decision-making to support ongoing refinement.",
+  },
+  {
+    title: "Surgical Audit & Benchmarking",
+    body: "Independent assessment and benchmarking of surgical outcomes enable clinicians to track performance and improve over time.",
+  },
+  {
+    title: "Medical & Trichology Insight",
+    body: "Integration of patient-level factors, including systemic health, hormonal influence, and long-term hair loss progression.",
+  },
+  {
+    title: "Ongoing Mentorship",
+    body: "Continued case discussion, guidance, and progression support beyond initial training stages.",
+  },
+] as const;
+
+const clinicianLearning = [
+  "Hairline design",
+  "Extraction",
+  "Implantation",
+  "Graft handling",
+  "Patient assessment",
+  "Complication awareness",
+  "Follow-up standards",
+] as const;
+
+const audiencePathways = [
+  {
+    title: "Individual doctors",
+    description:
+      "For clinicians entering or advancing in hair restoration through staged pathway matching and structured progression support.",
+    links: [
+      { href: "/training-pathways", label: "Training Pathways" },
+      { href: "/practical-fue", label: "Practical FUE" },
+      { href: "/hair-loss-science", label: "Hair Loss Science" },
+      { href: "/apply", label: "Apply" },
+    ],
+  },
+  {
+    title: "Clinics developing internal teams",
+    description:
+      "For clinic owners and medical groups building internal capability with institute-led standards, supervision, and long-term development structure.",
+    links: [
+      { href: "/for-clinics", label: "For Clinics" },
+      { href: "/training-pathways", label: "Training Pathways" },
+      { href: "/apply", label: "Enquire / Apply" },
+    ],
+  },
+] as const;
+
+export default function AcademyPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="IIOHR Academy"
+        title="Structured, standards-led surgical education for doctors and clinics"
+        description="The Academy brings IIOHR training into one clear framework: progression-based education integrating practical FUE development, scientific reasoning, assessment standards, and mentorship through the IIOHR partner training network."
+        primaryCta={{ href: "/apply", label: "Apply or Enquire" }}
+        secondaryCta={{ href: "/training-pathways", label: "Explore Pathways" }}
+      />
+
+      <SectionShell muted>
+        <SectionHeading
+          eyebrow="Why the Academy exists"
+          title="From fragmented short-course exposure to progression-based development"
+          description="Hair restoration capability is not built through isolated teaching events. The Academy exists to provide continuity: staged learning, supervised practice, standards alignment, and structured review so development quality improves over time."
+        />
+      </SectionShell>
+
+      <SectionShell>
+        <SectionHeading
+          eyebrow="Academy model"
+          title="Four integrated pillars of surgeon development"
+          description="Each pillar supports the others so learning, practical execution, and judgment progress together."
+        />
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          {academyModelCards.map((item) => (
+            <Card key={item.title}>
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+            </Card>
+          ))}
+        </div>
+      </SectionShell>
+
+      <SectionShell muted>
+        <SectionHeading
+          eyebrow="Program ladder"
+          title="A simplified staged structure"
+          description="Progression is structured to match readiness, responsibility, and supervised exposure at each stage."
+        />
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          {programLadder.map((item) => (
+            <Card key={item.level}>
+              <p className="text-xs font-semibold tracking-[0.14em] text-accent uppercase">{item.level}</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.focus}</p>
+            </Card>
+          ))}
+        </div>
+      </SectionShell>
+
+      <SectionShell>
+        <SectionHeading
+          eyebrow="Development ecosystem"
+          title="Continuous Clinical Development"
+          description="Training is the starting point. Long-term capability is strengthened through ongoing learning, structured audit, and intelligence-informed review."
+        />
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          {continuousDevelopmentCards.map((item) => (
+            <Card key={item.title}>
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+            </Card>
+          ))}
+        </div>
+        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+          This continuous model creates practical feedback loops that support measurable improvement
+          and sustained clinical excellence over time.
+        </p>
+      </SectionShell>
+
+      <SectionShell>
+        <SectionHeading
+          eyebrow="What clinicians learn"
+          title="Core competencies across planning, execution, and follow-up"
+          description="Training outcomes center on technical proficiency, diagnostic clarity, and standards-aware clinical judgment."
+        />
+        <ul className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {clinicianLearning.map((item) => (
+            <Card as="li" key={item} className="h-full">
+                <p className="text-sm font-medium text-foreground">{item}</p>
+              </Card>
+          ))}
+        </ul>
+      </SectionShell>
+
+      <SectionShell muted>
+        <SectionHeading
+          eyebrow="Why partner-network training works"
+          title="Supervised clinical exposure in real practice contexts"
+          description="Training quality improves when education is delivered with live case context, close supervision, and immediate feedback loops. The IIOHR model connects structured curriculum with supervised practical exposure so progression is clinically grounded rather than theoretical."
+        />
+      </SectionShell>
+
+      <SectionShell>
+        <SectionHeading
+          eyebrow="Partner training network"
+          title="Delivered through approved IIOHR partner clinics"
+          description="Academy delivery occurs through the IIOHR partner training network: approved partner clinics selected for standards alignment, faculty capability, and appropriate supervised exposure environments."
+        />
+        <div className="mt-16">
+          <Card>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Partner-network delivery allows institute-level standards to be applied consistently while
+              maintaining practical relevance in clinical settings. This supports clear supervision
+              structures, capability development continuity, and accountable progression review.
+            </p>
+          </Card>
+        </div>
+      </SectionShell>
+
+      <SectionShell muted>
+        <SectionHeading
+          eyebrow="Pathways by audience"
+          title="Clear next steps for doctors and clinics"
+          description="Choose the entry point that matches your role and development goals."
+        />
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          {audiencePathways.map((group) => (
+            <Card key={group.title}>
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">{group.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{group.description}</p>
+              <ul className="mt-6 space-y-2">
+                {group.links.map((link) => (
+                  <li key={link.href + link.label}>
+                    <Link href={link.href} className="text-sm font-medium text-foreground underline hover:text-accent">
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          ))}
+        </div>
+      </SectionShell>
+
+      <SectionShell dark>
+        <SectionHeading
+          eyebrow="Final step"
+          title="Apply, enquire, or explore the full pathway structure"
+          description="Whether you are applying as an individual doctor or seeking a clinic development pathway, IIOHR will map the right next step."
+        />
+        <SectionCTA
+          variant="dark"
+          primary={{ href: "/apply", label: "Apply" }}
+          secondary={[
+            { href: "/for-clinics", label: "Enquire" },
+            { href: "/training-pathways", label: "Explore Pathways" },
+          ]}
+          className="mt-16"
+        />
+      </SectionShell>
+    </>
+  );
+}
