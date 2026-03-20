@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/sections/shared/PageHero";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { AcademyFrameworkSection } from "@/components/sections/shared/AcademyFrameworkSection";
 import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -247,6 +248,8 @@ export default function AcademyPage() {
         </div>
       </SectionShell>
 
+      <AcademyFrameworkSection />
+
       <SectionShell dark>
         <SectionHeading
           eyebrow="Final step"
@@ -259,7 +262,9 @@ export default function AcademyPage() {
           secondary={[
             { href: "/for-clinics", label: "Enquire" },
             { href: "/training-pathways", label: "Explore Pathways" },
+            { href: "/certification-framework", label: "Certification Framework" },
           ]}
+          tertiary={[{ href: "/admissions", label: "Explore admissions" }]}
           className="mt-16"
         />
       </SectionShell>

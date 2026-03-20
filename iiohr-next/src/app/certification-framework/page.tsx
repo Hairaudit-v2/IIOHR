@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/sections/shared/PageHero";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { AcademyFrameworkSection } from "@/components/sections/shared/AcademyFrameworkSection";
 import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -144,6 +145,8 @@ export default function CertificationFrameworkPage() {
         />
       </SectionShell>
 
+      <AcademyFrameworkSection />
+
       <SectionShell dark>
         <SectionHeading
           eyebrow="Next step"
@@ -157,7 +160,10 @@ export default function CertificationFrameworkPage() {
             { href: "/training-pathways", label: "Training Pathways" },
             { href: "/for-clinics", label: "For Clinics" },
           ]}
-          tertiary={[{ href: "/apply", label: "Apply or Enquire" }]}
+          tertiary={[
+            { href: "/admissions", label: "View admissions process" },
+            { href: "/apply", label: "Apply or Enquire" },
+          ]}
           className="mt-16"
         />
       </SectionShell>

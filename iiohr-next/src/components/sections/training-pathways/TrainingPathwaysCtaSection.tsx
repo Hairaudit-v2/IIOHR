@@ -42,6 +42,10 @@ export function TrainingPathwaysCtaSection() {
         <Link href="/hair-loss-science" className="font-medium underline hover:text-primary-foreground">
           Hair loss science
         </Link>
+        {" · "}
+        <Link href="/certification-framework" className="font-medium underline hover:text-primary-foreground">
+          Certification framework
+        </Link>
       </p>
     </SectionShell>
   );

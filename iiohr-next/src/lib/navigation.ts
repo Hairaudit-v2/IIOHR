@@ -23,6 +23,7 @@ export const footerNavigation: NavigationItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/academy", label: "Academy" },
+  { href: "/certification-framework", label: "Certification Framework" },
   { href: "/training-pathways", label: "Training Pathways" },
   { href: "/practical-fue", label: "Practical FUE" },
   { href: "/hair-loss-science", label: "Hair Loss Science" },

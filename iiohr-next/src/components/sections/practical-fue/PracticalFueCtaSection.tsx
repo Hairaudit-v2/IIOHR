@@ -35,6 +35,10 @@ export function PracticalFueCtaSection() {
         <Link href="/hair-loss-science" className="font-medium underline hover:text-primary-foreground">
           Hair loss science
         </Link>
+        {" · "}
+        <Link href="/admissions" className="font-medium underline hover:text-primary-foreground">
+          Understand readiness and entry
+        </Link>
       </p>
     </SectionShell>
   );

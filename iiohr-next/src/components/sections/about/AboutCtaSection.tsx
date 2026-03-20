@@ -33,6 +33,11 @@ export function AboutCtaSection() {
           For clinics
         </Button>
       </div>
+      <div className="mt-6">
+        <Button href="/admissions" variant="tertiary">
+          Explore admissions
+        </Button>
+      </div>
     </SectionShell>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -26,6 +27,11 @@ export function ForClinicsCtaSection() {
           Submit application (clinic)
         </Button>
       </div>
+      <p className="mt-6 text-sm text-primary-foreground/85">
+        <Link href="/certification-framework" className="font-medium underline hover:text-primary-foreground">
+          View certification framework
+        </Link>
+      </p>
     </SectionShell>
   );
 }
