@@ -5,6 +5,7 @@ import { AcademyFrameworkSection } from "@/components/sections/shared/AcademyFra
 import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getHeroImage } from "@/lib/heroImages";
 
 const canonical = "https://iiohr.com/faculty-and-mentorship";
 
@@ -78,6 +79,7 @@ export default function FacultyAndMentorshipPage() {
         description="At IIOHR, faculty and mentorship are positioned as core components of development quality: guiding progression, supporting reflective practice, and reinforcing consistent standards beyond initial training."
         primaryCta={{ href: "/academy", label: "Explore Academy" }}
         secondaryCta={{ href: "/admissions", label: "View Admissions" }}
+        image={getHeroImage("facultyAndMentorship")}
       />
 
       <SectionShell muted>

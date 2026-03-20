@@ -17,6 +17,10 @@ const PLACEHOLDER: HeroImageConfig = {
 
 export const heroImages = {
   home: hairProgressionImage,
+  academy: {
+    src: "/images/science/science-dna-lab.jpg",
+    alt: "Clinical training and research context supporting structured surgeon development.",
+  },
   about: {
     src: "/hero/placeholder.svg",
     alt: "International Institute of Hair Restoration",
@@ -30,12 +34,16 @@ export const heroImages = {
     alt: "Structured training pathways and progression",
   },
   practicalFue: {
-    src: "/hero/placeholder.svg",
-    alt: "Practical FUE surgical training",
+    src: "/images/science/science-follicle-cross-section.jpg",
+    alt: "Close-up clinical and follicular detail relevant to practical FUE training.",
   },
   forClinics: {
-    src: "/hero/placeholder.svg",
-    alt: "Surgeon development for clinics",
+    src: "/images/trust/trust-doctor-portrait.jpg",
+    alt: "Clinical mentorship and surgeon development environment for clinic teams.",
+  },
+  facultyAndMentorship: {
+    src: "/images/trust/trust-doctor-portrait.jpg",
+    alt: "Faculty-led mentorship and supervised clinical development.",
   },
   apply: {
     src: "/hero/placeholder.svg",

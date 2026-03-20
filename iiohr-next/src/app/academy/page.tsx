@@ -6,6 +6,7 @@ import { AcademyFrameworkSection } from "@/components/sections/shared/AcademyFra
 import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getHeroImage } from "@/lib/heroImages";
 
 const canonical = "https://iiohr.com/academy";
 
@@ -142,6 +143,7 @@ export default function AcademyPage() {
         description="The Academy brings IIOHR training into one clear framework: progression-based education integrating practical FUE development, scientific reasoning, assessment standards, and mentorship through the IIOHR partner training network."
         primaryCta={{ href: "/apply", label: "Apply or Enquire" }}
         secondaryCta={{ href: "/training-pathways", label: "Explore Pathways" }}
+        image={getHeroImage("academy")}
       />
 
       <SectionShell muted>
