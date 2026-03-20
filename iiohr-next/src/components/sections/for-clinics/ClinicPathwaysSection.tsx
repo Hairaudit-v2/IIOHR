@@ -4,19 +4,24 @@ import { Card } from "@/components/ui/Card";
 
 const clinicPathways = [
   {
-    title: "New doctors",
+    title: "First-time capability build",
     description:
-      "Foundational progression for clinicians entering hair restoration with supervised capability development.",
+      "For clinics establishing internal hair restoration development for the first time, with staged entry and supervision foundations.",
   },
   {
-    title: "Existing surgeons needing refinement",
+    title: "Consistency improvement pathway",
     description:
-      "Targeted pathway for improving consistency, decision quality, and outcomes through review-led development.",
+      "For clinics with existing activity that need stronger consistency in planning, execution, and outcome-linked review.",
   },
   {
-    title: "Internal capability building",
+    title: "Internal doctor progression",
     description:
-      "Clinic-level pathway design for creating dependable in-house training and progression systems.",
+      "For clinics developing structured internal progression for doctors across entrant stages and capability milestones.",
+  },
+  {
+    title: "Multi-doctor standards alignment",
+    description:
+      "For larger teams seeking a shared standards framework, governance cadence, and progression logic across multiple clinicians.",
   },
 ];
 
@@ -25,10 +30,10 @@ export function ClinicPathwaysSection() {
     <SectionShell muted>
       <SectionHeading
         eyebrow="Clinic Pathways"
-        title="Partnership models aligned to your clinic’s capability goals"
-        description="IIOHR supports clinics across different development contexts, from first-entry training to internal standards consolidation."
+        title="Pathway models for different clinic maturity contexts"
+        description="Clinic leaders can use these pathway models to self-identify the development approach most aligned to current readiness, team structure, and capability goals."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
         {clinicPathways.map((pathway, index) => (
           <Card key={pathway.title}>
             <p className="text-[10px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">

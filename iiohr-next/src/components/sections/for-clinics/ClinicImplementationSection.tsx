@@ -4,16 +4,29 @@ import { Card } from "@/components/ui/Card";
 
 const supports = [
   {
+    title: "Enquiry and fit",
+    description:
+      "Initial discussion clarifies clinic context, goals, and whether an IIOHR partnership model is the right strategic fit.",
+  },
+  {
+    title: "Readiness review",
+    description:
+      "A readiness review identifies baseline capability, supervision capacity, and governance conditions required for safe staged rollout.",
+  },
+  {
     title: "Pathway design",
-    description: "We work with your clinic to map entry points, progression steps, and review points so development is repeatable.",
+    description:
+      "Entry stages, development milestones, and review points are mapped so progression is practical, structured, and repeatable.",
   },
   {
-    title: "Standards alignment",
-    description: "Training and assessment are aligned with explicit clinical standards to support governance and consistency.",
+    title: "Supervised development",
+    description:
+      "Implementation emphasizes supervised practical progression with standards-led support rather than isolated one-off training events.",
   },
   {
-    title: "Review integration",
-    description: "Audit and case review are built into the pathway so surgeon improvement is measurable and trackable.",
+    title: "Review and progression",
+    description:
+      "Ongoing case review and performance reflection are used to guide next-stage progression and quality consistency over time.",
   },
 ];
 
@@ -22,10 +35,10 @@ export function ClinicImplementationSection() {
     <SectionShell muted>
       <SectionHeading
         eyebrow="Implementation support"
-        title="What clinic partnerships include"
-        description="IIOHR supports clinics with more than training delivery—pathway design, standards alignment, and review integration so internal development is sustainable."
+        title="How implementation works in staged practice"
+        description="Clinic implementation is structured as a phased, standards-led process from fit and readiness through supervised development and progression review."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {supports.map((item) => (
           <Card key={item.title}>
             <h3 className="text-lg font-semibold">{item.title}</h3>

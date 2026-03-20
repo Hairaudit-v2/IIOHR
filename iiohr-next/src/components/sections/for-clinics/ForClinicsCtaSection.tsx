@@ -28,6 +28,10 @@ export function ForClinicsCtaSection() {
         </Button>
       </div>
       <p className="mt-6 text-sm text-primary-foreground/85">
+        <Link href="/admissions" className="font-medium underline hover:text-primary-foreground">
+          Understand readiness and entry
+        </Link>
+        {" · "}
         <Link href="/certification-framework" className="font-medium underline hover:text-primary-foreground">
           View certification framework
         </Link>
