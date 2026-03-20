@@ -6,7 +6,7 @@ import { HOME_IMAGES, dnaBridgeImage } from "@/lib/homeImages";
 export function ScienceBridgeSection() {
   return (
     <section
-      className="relative z-10 border-b border-section-charcoal-border section-dark-gradient"
+      className="relative z-10 section-dark-gradient section-sep-dark"
       aria-label="Science bridge"
       data-section-tone="dark"
     >

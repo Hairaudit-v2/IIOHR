@@ -37,8 +37,8 @@ export function PageHero({
 }: PageHeroProps) {
   const isDark = variant === "dark";
   const sectionClass = isDark
-    ? "border-b border-section-charcoal-border bg-section-charcoal"
-    : "border-b border-border-soft bg-section-ivory";
+    ? "bg-gradient-dark section-sep-dark"
+    : "section-ivory-depth section-sep-light";
   const imgPanelBg = isDark ? "bg-section-charcoal-foreground/10" : "bg-parchment";
   /** Only render next/image when we have a valid public path (e.g. /images/... or /hero/...). */
   const hasValidImage =
@@ -60,7 +60,7 @@ export function PageHero({
               {description}
             </p>
             {(primaryCta || secondaryCta || tertiaryCta) && (
-              <div className="mt-12 flex flex-col gap-6">
+              <div className="mt-14 flex flex-col gap-10">
                 <div className="flex flex-wrap items-center gap-4">
                   {primaryCta ? (
                     <Button href={primaryCta.href} variant={isDark ? "dark" : "primary"}>
@@ -77,11 +77,13 @@ export function PageHero({
                   ) : null}
                 </div>
                 {tertiaryCta ? (
-                  <p className="text-sm">
-                    <Button href={tertiaryCta.href} variant="tertiary">
-                      {tertiaryCta.label}
-                    </Button>
-                  </p>
+                  <div className={isDark ? "pt-1 border-t border-section-charcoal-border/20" : "pt-1 border-t border-border/50"}>
+                    <p className="text-sm">
+                      <Button href={tertiaryCta.href} variant="tertiary">
+                        {tertiaryCta.label}
+                      </Button>
+                    </p>
+                  </div>
                 ) : null}
               </div>
             )}

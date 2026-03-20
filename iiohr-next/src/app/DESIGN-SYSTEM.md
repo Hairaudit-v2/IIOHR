@@ -1,0 +1,136 @@
+# IIOHR Gradient & Glow Design System
+
+Unified visual identity for depth and polish across IIOHR, HairAudit, HLI, and Follicle Intelligence. Clinical + premium; no neon or heavy saturation.
+
+---
+
+## Tokens (CSS variables)
+
+Defined in `globals.css` under `:root`.
+
+### Gradients
+
+| Token | Value | Use |
+|-------|--------|-----|
+| `--gradient-primary` | Soft gold → warm ivory (165deg) | Hero panels, light section depth, feature callouts |
+| `--gradient-dark` | Deep charcoal → near black (180deg) | Dark section backgrounds, hero overlays |
+| `--gradient-accent` | Radial gold glow fade (ellipse, top) | Accent panels, CTA areas, card highlights |
+
+### Glow
+
+| Token | Value | Use |
+|-------|--------|-----|
+| `--glow-soft` | Subtle neutral shadow | Cards, elevated panels, default lift |
+| `--glow-soft-accent` | Soft gold-tinted shadow + ring | Interactive cards, CTAs on light |
+| `--glow-strong` | Gold ring + diffuse glow + depth | **Ecosystem section only** (network cards, hero panel) |
+
+### Surfaces
+
+| Token | Alias | Use |
+|-------|--------|-----|
+| `--surface-light` | `--section-ivory` | Light section backgrounds |
+| `--surface-dark` | `--section-charcoal` | Dark section backgrounds |
+| `--surface-elevated` | (existing) | Lifted panels, cards on light |
+
+---
+
+## Utility classes
+
+### Background gradients
+
+- **`bg-gradient-primary`** — Soft gold → ivory. Use on hero side panels, feature strips, or full-section depth on light pages.
+- **`bg-gradient-dark`** — Charcoal → near black. Use as base for dark sections or overlays.
+- **`bg-gradient-accent`** — Subtle radial gold from top. Overlay on panels or above dark base for accent.
+
+### Surfaces
+
+- **`bg-surface-light`** — Warm ivory (same as section-ivory).
+- **`bg-surface-dark`** — Deep charcoal.
+- **`bg-surface-elevated`** — Slightly lifted neutral panel.
+
+### Glow
+
+- **`glow-soft`** — Default card/panel shadow. Use on `Card`, image panels, or any elevated surface.
+- **`glow-soft-accent`** — Gold-tinted soft glow. Use on primary CTAs or key interactive cards on light sections.
+- **`glow-strong`** — Reserved for ecosystem (Global Hair Intelligence) cards and hero panel.
+
+### Composed
+
+- **`surface-elevated-panel`** — `surface-elevated` + `glow-soft`. One class for “lifted panel” on light.
+- **`surface-dark-panel-glow`** — Dark translucent panel + `glow-strong`. Ecosystem-only dark cards/panels.
+
+---
+
+## Usage examples
+
+### 1. Hero with gradient depth (light page)
+
+```tsx
+<section className="bg-gradient-primary">
+  <div className="mx-auto max-w-6xl px-5 py-24 ...">
+    <PageHero ... />
+  </div>
+</section>
+```
+
+### 2. Dark section with gradient base
+
+```tsx
+<section className="bg-gradient-dark text-section-charcoal-foreground" data-section-tone="dark">
+  {/* content */}
+</section>
+```
+
+### 3. Card with soft glow (light section)
+
+```tsx
+<article className="rounded-xl border border-border bg-surface p-6 glow-soft hover:glow-soft-accent transition-shadow">
+  <h3>...</h3>
+  <p>...</p>
+</article>
+```
+
+### 4. CTA block with accent gradient overlay
+
+```tsx
+<div className="relative rounded-2xl border border-border bg-surface-elevated p-8 glow-soft-accent">
+  <div className="absolute inset-0 rounded-2xl bg-gradient-accent pointer-events-none opacity-60" aria-hidden />
+  <div className="relative">
+    <h2>...</h2>
+    <SectionCTA ... />
+  </div>
+</div>
+```
+
+### 5. Ecosystem-only strong glow (GHN cards)
+
+```tsx
+<div className="ghn-node-card--active ... surface-dark-panel-glow rounded-xl border border-section-charcoal-border ...">
+  {/* Global Hair Intelligence node content */}
+</div>
+```
+
+### 6. Image panel with design-system glow
+
+```tsx
+<div className="img-panel rounded-2xl overflow-hidden glow-soft">
+  <Image ... />
+</div>
+```
+
+---
+
+## Constraints
+
+- **No neon** — Keep gold and blue accents muted (low saturation, opacity).
+- **No heavy saturation** — Gradients and glows should feel ambient, not loud.
+- **glow-strong** — Use only in the ecosystem section (GHN, lab hero) to keep hierarchy clear.
+- **Surfaces** — Prefer `surface-light` / `surface-dark` / `surface-elevated` in new work so HairAudit/HLI/FI can share the same tokens.
+
+---
+
+## Where tokens live
+
+- **Variables:** `iiohr-next/src/app/globals.css` (`:root`).
+- **Utilities:** Same file, under “Gradient & glow utilities”.
+- **Existing sections:** `section-dark-gradient` and `ghn-section-dark` keep current behaviour; new sections can use `bg-gradient-dark` or `bg-gradient-accent` + `var(--section-charcoal)` for consistency.

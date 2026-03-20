@@ -16,17 +16,15 @@ export function SectionShell({
   id,
 }: SectionShellProps) {
   const tone = dark
-    ? "bg-section-charcoal text-section-charcoal-foreground border-section-charcoal-border"
+    ? "section-dark-gradient text-section-charcoal-foreground section-sep-dark"
     : muted
-      ? "bg-section-ivory-alt text-foreground border-border"
-      : "section-ivory-depth text-foreground border-border";
-
-  const borderClass = dark ? "border-section-charcoal-border" : "border-border-soft";
+      ? "section-muted-depth text-foreground section-sep-light"
+      : "section-ivory-depth text-foreground section-sep-light";
 
   return (
     <section
       id={id}
-      className={`border-b ${borderClass} ${tone} ${className}`}
+      className={`${tone} ${className}`}
       data-section-tone={dark ? "dark" : muted ? "muted" : "default"}
     >
       <div className="mx-auto w-full min-w-0 max-w-6xl px-4 py-28 sm:px-5 md:py-32 lg:py-36">{children}</div>

@@ -63,8 +63,10 @@ export function GlobalHairIntelligenceSection({
 }: GlobalHairIntelligenceSectionProps) {
   const isDark = sectionTone === "dark";
   const sectionClass = isDark
-    ? "relative z-10 scroll-mt-24 border-b border-section-charcoal-border ghn-section-dark"
-    : "relative z-10 scroll-mt-20 border-b border-border-soft bg-section-ivory-alt";
+    ? "relative z-10 scroll-mt-24 ghn-section-dark section-sep-dark"
+    : "relative z-10 scroll-mt-20 section-muted-depth section-sep-light";
+  const isHeroCenterpiece = isDark && size === "hero";
+
   return (
     <section
       id={id}
@@ -86,26 +88,36 @@ export function GlobalHairIntelligenceSection({
               sizes="100vw"
             />
           </div>
-          {/* Gradient overlay to match dark section; edges blend, center allows subtle image through */}
           <div
             className="absolute inset-0 bg-gradient-to-b from-section-charcoal/70 via-transparent to-section-charcoal/70"
             aria-hidden
           />
         </div>
       ) : null}
-      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-28 md:py-32 lg:py-36">
-        <SectionHeading
-          eyebrow="Connected System"
-          title={heading}
-          description={description}
-          align="center"
-        />
-        <div className={`mx-auto w-full min-w-0 ${isDark ? "mt-10 md:mt-12" : "mt-12 md:mt-14"}`}>
+      {isHeroCenterpiece ? (
+        <div className="ghn-glow-diffusion" aria-hidden />
+      ) : null}
+      <div
+        className={`relative z-10 mx-auto w-full max-w-6xl px-5 ${
+          isHeroCenterpiece ? "py-32 md:py-40 lg:py-48" : "py-28 md:py-32 lg:py-36"
+        }`}
+      >
+        <div className={isHeroCenterpiece ? "ghn-centerpiece-heading" : undefined}>
+          <SectionHeading
+            eyebrow="Connected System"
+            title={heading}
+            description={description}
+            align="center"
+          />
+        </div>
+        <div
+          className={`mx-auto w-full min-w-0 ${isHeroCenterpiece ? "mt-16 md:mt-20" : isDark ? "mt-10 md:mt-12" : "mt-12 md:mt-14"}`}
+        >
           {diagramSlot ?? (
             <div
               className={
                 isDark
-                  ? "relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/50 bg-gradient-to-b from-section-charcoal-foreground/[0.08] to-section-charcoal/60 p-5 sm:p-6 md:p-8 shadow-[0_24px_64px_rgba(0,0,0,0.5)] backdrop-blur-sm"
+                  ? "ghn-diagram-glow relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/50 bg-gradient-to-b from-section-charcoal-foreground/[0.08] to-section-charcoal/60 p-5 sm:p-6 md:p-8 shadow-[0_24px_64px_rgba(0,0,0,0.5)] backdrop-blur-sm"
                   : ""
               }
             >
@@ -121,13 +133,13 @@ export function GlobalHairIntelligenceSection({
         </div>
 
         <div
-          className="mx-auto mt-14 w-full min-w-0 md:mt-16 lg:mt-20"
+          className={`mx-auto w-full min-w-0 ${isHeroCenterpiece ? "mt-20 md:mt-24 lg:mt-28" : "mt-14 md:mt-16 lg:mt-20"}`}
           aria-label="Ecosystem platforms"
         >
           <p className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground md:mb-8">
             Explore each platform
           </p>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className={`grid gap-4 sm:grid-cols-2 lg:grid-cols-4 ${isDark ? "ghn-platform-cards" : ""}`}>
             {SUPPORTING_PLATFORM_ORDER.map((id) => {
               const platform = ECOSYSTEM_PLATFORMS.find((p) => p.id === id);
               if (!platform) return null;

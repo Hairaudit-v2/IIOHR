@@ -47,6 +47,21 @@
   /* AI-tech accent — very restrained (Follicle Intelligence) */
   --ai-accent: rgba(120, 150, 180, 0.35);
   --ai-accent-glow: rgba(140, 170, 200, 0.12);
+
+  /* ========== Gradient & glow design system (reusable: IIOHR, HairAudit, HLI, FI) ========== */
+  /* Gradients — clinical + premium, no neon/heavy saturation */
+  --gradient-primary: linear-gradient(165deg, rgba(230, 220, 205, 0.4) 0%, rgba(253, 252, 251, 0.95) 45%, var(--section-ivory) 100%);
+  --gradient-dark: linear-gradient(180deg, #1a1b1e 0%, var(--section-charcoal) 30%, #121316 100%);
+  --gradient-accent: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(166, 139, 92, 0.12), transparent 60%);
+
+  /* Glow — subtle by default; strong only in ecosystem */
+  --glow-soft: 0 2px 12px rgba(44, 42, 38, 0.06), 0 1px 4px rgba(44, 42, 38, 0.04);
+  --glow-soft-accent: 0 4px 20px -4px rgba(166, 139, 92, 0.15), 0 0 0 1px rgba(166, 139, 92, 0.08);
+  --glow-strong: 0 0 0 1px rgba(166, 139, 92, 0.12), 0 12px 40px -12px rgba(166, 139, 92, 0.2), 0 8px 24px -8px rgba(0, 0, 0, 0.25);
+
+  /* Surfaces — semantic names for reuse */
+  --surface-light: var(--section-ivory);
+  --surface-dark: var(--section-charcoal);
 }
 
 @theme inline {
@@ -72,6 +87,8 @@
   --color-section-charcoal-border: var(--section-charcoal-border);
   --color-section-ivory: var(--section-ivory);
   --color-section-ivory-alt: var(--section-ivory-alt);
+  --color-surface-light: var(--surface-light);
+  --color-surface-dark: var(--surface-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -99,6 +116,9 @@
     --section-charcoal-border: rgba(240, 238, 235, 0.2);
     --section-ivory: #1e1f21;
     --section-ivory-alt: #242528;
+    /* Gradient & glow — same tokens, work on dark background */
+    --surface-light: var(--section-ivory);
+    --surface-dark: var(--section-charcoal);
   }
 }
 
@@ -187,9 +207,97 @@ textarea:focus-visible {
   color: inherit;
 }
 
-/* Default ivory section: very subtle top-to-bottom depth (no brown) */
+/* Light sections: design-system gradient (soft gold → ivory) */
 .section-ivory-depth {
-  background: linear-gradient(180deg, #fefdfc 0%, var(--section-ivory) 20%, var(--section-ivory) 100%);
+  background: var(--gradient-primary);
+}
+/* Muted light: layered surface with subtle warmth */
+.section-muted-depth {
+  background: linear-gradient(180deg, var(--section-ivory) 0%, var(--section-ivory-alt) 100%);
+}
+/* Section separation by tone (subtle line, not heavy border) */
+.section-sep-light {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.section-sep-dark {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hero: fade-in and gradient behind text (design system) */
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-content-fade-in {
+  animation: hero-fade-in 0.75s ease-out 0.15s forwards;
+  opacity: 0;
+}
+.hero-text-backdrop {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  max-width: 36rem;
+  height: 140%;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 80% 60% at 30% 50%,
+    rgba(166, 139, 92, 0.07) 0%,
+    rgba(100, 125, 150, 0.03) 45%,
+    transparent 70%
+  );
+  z-index: 0;
+}
+
+/* ========== Gradient & glow utilities (design system) ========== */
+/* Background gradients */
+.bg-gradient-primary {
+  background-image: var(--gradient-primary);
+}
+.bg-gradient-dark {
+  background-image: var(--gradient-dark);
+}
+.bg-gradient-accent {
+  background-image: var(--gradient-accent);
+}
+
+/* Surfaces — semantic backgrounds */
+.bg-surface-light {
+  background-color: var(--surface-light);
+}
+.bg-surface-dark {
+  background-color: var(--surface-dark);
+}
+.bg-surface-elevated {
+  background-color: var(--surface-elevated);
+}
+
+/* Glow — apply to cards, panels, highlights */
+.glow-soft {
+  box-shadow: var(--glow-soft);
+}
+.glow-soft-accent {
+  box-shadow: var(--glow-soft-accent);
+}
+.glow-strong {
+  box-shadow: var(--glow-strong);
+}
+/* Combined: elevated panel with soft glow (cards, CTAs) */
+.surface-elevated-panel {
+  background-color: var(--surface-elevated);
+  box-shadow: var(--glow-soft);
+}
+/* Dark section panel with accent glow (ecosystem only) */
+.surface-dark-panel-glow {
+  background-color: color-mix(in oklab, var(--section-charcoal-foreground) 8%, var(--section-charcoal));
+  box-shadow: var(--glow-strong);
 }
 
 /* Subtle AI-tech accent (gradient edge) for Follicle Intelligence sections */
@@ -214,21 +322,21 @@ textarea:focus-visible {
   pointer-events: none;
 }
 
-/* Dark sections: restrained depth (cool top glow, soft gold lower) */
+/* Dark sections: design-system gradient + restrained glow (depth, not flat) */
 .section-dark-gradient {
   background:
     radial-gradient(ellipse 85% 45% at 50% -5%, rgba(100, 125, 150, 0.06), transparent 55%),
-    radial-gradient(ellipse 70% 35% at 85% 105%, rgba(166, 139, 92, 0.04), transparent 50%),
-    var(--section-charcoal);
+    radial-gradient(ellipse 70% 35% at 85% 105%, rgba(166, 139, 92, 0.05), transparent 50%),
+    var(--gradient-dark);
 }
 
-/* Ecosystem (Global Hair Intelligence) — same charcoal base, richer surface treatment */
+/* Ecosystem (Global Hair Intelligence) — design-system gradient + layered glow */
 .ghn-section-dark {
   background:
     radial-gradient(ellipse 90% 60% at 50% -10%, rgba(100, 130, 160, 0.08), transparent 55%),
     radial-gradient(ellipse 70% 50% at 100% 100%, rgba(166, 139, 92, 0.06), transparent 55%),
     radial-gradient(ellipse 60% 40% at 0% 90%, rgba(120, 140, 160, 0.04), transparent 50%),
-    var(--section-charcoal);
+    var(--gradient-dark);
 }
 .ghn-section-dark::before,
 .ghn-section-dark::after {
@@ -246,6 +354,65 @@ textarea:focus-visible {
 .ghn-section-dark::after {
   bottom: 0;
   background: linear-gradient(90deg, transparent, rgba(120, 145, 170, 0.25), transparent);
+}
+
+/* Centerpiece: faint animated light diffusion (enhance, don’t distract) */
+@keyframes ghn-diffusion {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+.ghn-glow-diffusion {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 100% 80% at 50% 40%,
+    rgba(166, 139, 92, 0.06) 0%,
+    rgba(100, 130, 160, 0.03) 40%,
+    transparent 70%
+  );
+  animation: ghn-diffusion 14s ease-in-out infinite;
+}
+
+/* Radial glow behind the network diagram only */
+.ghn-diagram-glow {
+  position: relative;
+}
+.ghn-diagram-glow::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140%;
+  height: 140%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 50%,
+    rgba(166, 139, 92, 0.08) 0%,
+    rgba(100, 125, 150, 0.04) 45%,
+    transparent 65%
+  );
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+/* Centerpiece heading: subtle emphasis (dark section only) */
+.ghn-section-dark .ghn-centerpiece-heading [class*="text-3xl"],
+.ghn-section-dark .ghn-centerpiece-heading h2 {
+  text-shadow: 0 0 40px rgba(166, 139, 92, 0.08);
+  letter-spacing: -0.02em;
+}
+
+/* Supporting platform cards: faint glow edge (dark section only, does not override Card hover) */
+.ghn-section-dark .ghn-platform-cards .rounded-xl {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(246, 245, 243, 0.08);
 }
 
 /* Global Hair Intelligence Network — premium depth, restrained glow */
@@ -347,13 +514,13 @@ textarea:focus-visible {
   font-weight: 600;
 }
 
-/* Image treatment — premium editorial, restrained frame */
+/* Image treatment — premium editorial, restrained frame (uses design-system glow) */
 .img-panel {
   border-radius: 12px;
   border: 1px solid var(--border-soft);
   overflow: hidden;
   background: var(--surface-soft);
-  box-shadow: 0 1px 3px rgba(44, 42, 38, 0.06), 0 1px 2px rgba(44, 42, 38, 0.04);
+  box-shadow: var(--glow-soft);
 }
 .img-panel img {
   width: 100%;

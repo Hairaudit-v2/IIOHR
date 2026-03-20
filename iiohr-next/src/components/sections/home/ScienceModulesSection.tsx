@@ -40,7 +40,7 @@ const modules = [
 export function ScienceModulesSection() {
   return (
     <section
-      className="relative z-10 border-b border-section-charcoal-border section-dark-gradient"
+      className="relative z-10 section-dark-gradient section-sep-dark"
       aria-label="Science modules"
       data-section-tone="dark"
     >

@@ -18,10 +18,11 @@ const baseStyles =
 const lightStyles = "border-border bg-surface";
 const darkStyles =
   "border-section-charcoal-border shadow-[0_2px_12px_rgba(0,0,0,0.2)] bg-gradient-to-b from-section-charcoal-foreground/[0.12] to-section-charcoal-foreground/[0.04]";
+/* Premium interaction: subtle lift, scale 1.02, soft shadow increase, faint glow edge */
 const interactiveStyles =
-  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(44,42,38,0.08),0_2px_4px_rgba(44,42,38,0.04)] hover:border-accent/25";
+  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_10px_28px_-4px_rgba(44,42,38,0.1),0_4px_12px_-2px_rgba(44,42,38,0.06),0_0_0_1px_rgba(166,139,92,0.06)] hover:border-accent/25";
 const interactiveDarkStyles =
-  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/35 hover:shadow-[0_8px_24px_rgba(0,0,0,0.25),0_0_0_1px_rgba(166,139,92,0.2)]";
+  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.35),0_4px_16px_-4px_rgba(0,0,0,0.2),0_0_0_1px_rgba(166,139,92,0.12)] hover:border-accent/35";
 
 /** Paper-like content panel. Use `interactive` for hover lift and emphasis; `dark` for charcoal sections; optional `marker`. */
 export function Card({

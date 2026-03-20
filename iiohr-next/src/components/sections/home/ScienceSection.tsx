@@ -66,11 +66,7 @@ export function ScienceSection() {
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20 lg:gap-8">
           {scienceItems.map((item) => (
-            <Card
-              key={item.key}
-              interactive
-              className="overflow-hidden p-0 transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_8px_24px_rgba(44,42,38,0.12),0_0_0_1px_rgba(166,139,92,0.35),0_0_20px_rgba(166,139,92,0.08)]"
-            >
+            <Card key={item.key} interactive className="overflow-hidden p-0">
               <ImageWrapper
                 src={item.src}
                 alt={item.alt}
