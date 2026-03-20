@@ -47,6 +47,13 @@ export function TrainingPathwaysCtaSection() {
           Certification framework
         </Link>
       </p>
+      <p className="mt-3 text-sm text-primary-foreground/85">
+        Not sure where to start?{" "}
+        <Link href="/admissions" className="font-medium underline hover:text-primary-foreground">
+          Review admissions and readiness
+        </Link>
+        .
+      </p>
     </SectionShell>
   );
 }

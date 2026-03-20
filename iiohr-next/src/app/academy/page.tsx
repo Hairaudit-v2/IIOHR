@@ -112,6 +112,27 @@ const audiencePathways = [
   },
 ] as const;
 
+const doctorJourneySteps = [
+  {
+    step: "1",
+    title: "Review admissions and readiness",
+    href: "/admissions",
+    label: "Explore admissions",
+  },
+  {
+    step: "2",
+    title: "Explore training pathways",
+    href: "/training-pathways",
+    label: "Explore training pathways",
+  },
+  {
+    step: "3",
+    title: "Submit an application",
+    href: "/apply",
+    label: "Apply now",
+  },
+] as const;
+
 export default function AcademyPage() {
   return (
     <>
@@ -246,6 +267,26 @@ export default function AcademyPage() {
             </Card>
           ))}
         </div>
+      </SectionShell>
+
+      <SectionShell>
+        <SectionHeading
+          eyebrow="For individual doctors"
+          title="A clear three-step journey"
+          description="Use this sequence to move from readiness assessment to pathway selection and formal application."
+        />
+        <ol className="mt-14 grid gap-6 md:grid-cols-3">
+          {doctorJourneySteps.map((item) => (
+            <Card as="li" key={item.step} marker={item.step}>
+              <h3 className="text-base font-semibold tracking-tight text-foreground">{item.title}</h3>
+              <p className="mt-4 text-sm">
+                <Link href={item.href} className="font-medium text-foreground underline hover:text-accent">
+                  {item.label}
+                </Link>
+              </p>
+            </Card>
+          ))}
+        </ol>
       </SectionShell>
 
       <AcademyFrameworkSection />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHero } from "@/components/sections/shared/PageHero";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { AcademyFrameworkSection } from "@/components/sections/shared/AcademyFrameworkSection";
@@ -85,6 +86,30 @@ const postAdmissionLinks = [
   { href: "/for-clinics", label: "Clinic Development" },
 ] as const;
 
+const doctorProfiles = [
+  {
+    title: "Early-career doctor entering hair restoration",
+    description:
+      "A foundational entrant profile suited to staged progression, supervision, and practical capability building.",
+    href: "/training-pathways",
+    label: "View pathway structure",
+  },
+  {
+    title: "Transitioning practitioner",
+    description:
+      "A profile moving from theoretical exposure toward practical development with clearer progression milestones.",
+    href: "/academy",
+    label: "Explore academy model",
+  },
+  {
+    title: "Experienced surgeon refining technique",
+    description:
+      "A profile focused on consistency improvement, decision quality refinement, and standards-aware progression.",
+    href: "/practical-fue",
+    label: "Review practical FUE",
+  },
+] as const;
+
 export default function AdmissionsPage() {
   return (
     <>
@@ -123,6 +148,27 @@ export default function AdmissionsPage() {
             <Card key={item.title}>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+            </Card>
+          ))}
+        </div>
+      </SectionShell>
+
+      <SectionShell muted>
+        <SectionHeading
+          eyebrow="Doctor profiles"
+          title="Who this pathway guidance supports"
+          description="These example profiles help individual doctors identify a suitable starting context before application."
+        />
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
+          {doctorProfiles.map((profile) => (
+            <Card key={profile.title}>
+              <h3 className="text-base font-semibold tracking-tight text-foreground">{profile.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{profile.description}</p>
+              <p className="mt-4 text-sm">
+                <Link href={profile.href} className="font-medium text-foreground underline hover:text-accent">
+                  {profile.label}
+                </Link>
+              </p>
             </Card>
           ))}
         </div>
