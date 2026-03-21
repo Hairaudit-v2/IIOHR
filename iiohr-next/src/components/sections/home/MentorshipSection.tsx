@@ -22,14 +22,13 @@ const mentorshipItems = [
 
 export function MentorshipSection() {
   return (
-    <SectionShell aria-label="Mentorship" joinPrevious>
+    <SectionShell continuous aria-label="Mentorship" joinPrevious>
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <ImageWrapper
           src={HOME_IMAGES.trust.doctor}
           alt={heroEducationImage.alt}
           className="aspect-[4/3] min-h-[220px] w-full"
           sizes="(max-width: 1024px) 100vw, 50vw"
-          glowOnHover
         />
         <div>
           <SectionHeading
@@ -39,7 +38,7 @@ export function MentorshipSection() {
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-3 md:mt-12 lg:gap-5">
             {mentorshipItems.map((item, index) => (
-              <Card key={item.title} interactive marker={index + 1} className="md:p-6">
+              <Card key={item.title} quiet interactive marker={index + 1} className="md:p-6">
                 <h3 className="text-sm font-semibold tracking-tight text-heading">{item.title}</h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
               </Card>

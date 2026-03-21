@@ -43,7 +43,7 @@ const modules = [
 /** Single editorial band: why science matters, then the four domains—no repeated hero framing. */
 export function ScienceEducationSection() {
   return (
-    <SectionShell aria-label="Science and biological foundations">
+    <SectionShell continuous aria-label="Science and biological foundations">
       <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
         <div>
           <SectionHeading
@@ -62,11 +62,10 @@ export function ScienceEducationSection() {
           alt={dnaBridgeImage.alt}
           className="aspect-[4/3] min-h-[220px] w-full"
           sizes="(max-width: 1024px) 100vw, 50vw"
-          glowOnHover
         />
       </div>
 
-      <div className="mt-12 border-t border-border/20 pt-10 md:mt-14 md:pt-12">
+      <div className="mt-14 pt-12 md:mt-16 md:pt-14">
         <p className="mx-auto max-w-md text-center text-sm leading-relaxed text-muted-foreground">
           Four domains that ground surgical judgment.
         </p>
@@ -77,7 +76,7 @@ export function ScienceEducationSection() {
               href="/hair-loss-science"
               className="group block h-full rounded-lg focus-visible:outline focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
-              <Card interactive className="h-full">
+              <Card quiet interactive className="h-full">
                 <ImageWrapper
                   src={mod.src}
                   alt={mod.alt}

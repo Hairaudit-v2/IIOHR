@@ -16,7 +16,7 @@ const impactItems = [
 
 export function HumanImpactSection() {
   return (
-    <SectionShell aria-label="Human impact" joinPrevious>
+    <SectionShell continuous aria-label="Human impact" joinPrevious>
       <div className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
         <div className="lg:sticky lg:top-24">
           <ImageWrapper
@@ -24,7 +24,6 @@ export function HumanImpactSection() {
             alt={humanImpactImage.alt}
             className="aspect-[4/3] min-h-[220px] w-full"
             sizes="(max-width: 1024px) 100vw, 50vw"
-            glowOnHover
           />
         </div>
         <div>
@@ -35,7 +34,7 @@ export function HumanImpactSection() {
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:gap-5">
             {impactItems.map((item) => (
-              <Card key={item} interactive>
+              <Card key={item} quiet interactive>
                 <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>
               </Card>
             ))}

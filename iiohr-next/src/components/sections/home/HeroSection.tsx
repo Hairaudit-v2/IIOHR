@@ -29,7 +29,7 @@ export function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[75vh] w-full overflow-hidden section-dark section-flow"
+      className="relative min-h-[75vh] w-full overflow-hidden section-dark-anchor section-flow"
       aria-label="Hero"
       data-section-tone="dark"
     >
@@ -57,7 +57,7 @@ export function HeroSection() {
       />
       {/* Subtle accent gradient behind text area for contrast */}
       <div
-        className="pointer-events-none absolute inset-0 z-[2] bg-gradient-accent opacity-[0.22]"
+        className="pointer-events-none absolute inset-0 z-[2] bg-gradient-accent opacity-[0.16]"
         aria-hidden
         style={{ maskImage: "linear-gradient(to right, black 40%, transparent 85%)" }}
       />
@@ -71,7 +71,7 @@ export function HeroSection() {
             style={{ transform: `translateY(${contentOffsetY}px)` }}
           >
             <div className="hero-content-fade-in">
-            <Eyebrow>International Institute of Hair Restoration</Eyebrow>
+            <Eyebrow variant="dark">International Institute of Hair Restoration</Eyebrow>
             <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-section-charcoal-foreground md:text-5xl lg:text-[2.75rem] [text-wrap:balance]">
               Beyond the short course. From technician to surgeon.
             </h1>

@@ -17,6 +17,7 @@ export function CTASection() {
         eyebrow="Next step"
         title="Begin your institute pathway"
         description="Whether you’re entering the field, refining your practice, or building clinic capability, we’ll match you to the right pathway. Apply now or explore pathways below."
+        eyebrowOnDark
       />
       <SectionCTA
         variant="dark"

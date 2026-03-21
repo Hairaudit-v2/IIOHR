@@ -63,7 +63,7 @@ export function GlobalHairIntelligenceSection({
 }: GlobalHairIntelligenceSectionProps) {
   const isDark = sectionTone === "dark";
   const sectionClass = isDark
-    ? "relative z-10 scroll-mt-24 section-dark section-ecosystem section-flow"
+    ? "relative z-10 scroll-mt-24 section-dark-anchor section-ecosystem section-flow"
     : "relative z-10 scroll-mt-20 section-light-muted section-flow";
   const isHeroCenterpiece = isDark && size === "hero";
 

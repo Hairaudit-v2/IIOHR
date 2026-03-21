@@ -279,6 +279,14 @@ textarea:focus-visible {
     radial-gradient(circle at 80% 100%, color-mix(in srgb, var(--accent-blue) 6%, transparent), transparent 40%),
     linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-secondary) 50%, var(--bg-soft) 100%);
 }
+
+/* Homepage editorial band: one calm cream plane — softer radials, no banded contrast */
+.section-home-editorial {
+  background:
+    radial-gradient(circle at 14% -8%, color-mix(in srgb, var(--gold-primary) 3.5%, transparent), transparent 48%),
+    radial-gradient(circle at 88% 108%, color-mix(in srgb, var(--accent-blue) 2.5%, transparent), transparent 48%),
+    var(--bg-primary);
+}
 /* Light rails: no hard dividers — rhythm from padding + background only */
 .section-flow {
   border-bottom: none;
@@ -290,14 +298,14 @@ textarea:focus-visible {
 .section-sep-dark {
   border-bottom: 1px solid color-mix(in srgb, var(--bg-secondary) 5%, transparent);
 }
-/* Breathing room between blocks (no border, soft wash) */
+/* Breathing room between blocks — near-flat cream handoff (no strong “spacer band”) */
 .section-breathe {
   border: none;
   background: linear-gradient(
     180deg,
-    color-mix(in srgb, var(--section-ivory) 90%, var(--gold-primary) 10%) 0%,
-    var(--section-ivory) 50%,
-    color-mix(in srgb, var(--section-ivory) 94%, var(--accent-blue) 6%) 100%
+    color-mix(in srgb, var(--bg-primary) 88%, var(--bg-secondary) 12%) 0%,
+    var(--bg-primary) 45%,
+    color-mix(in srgb, var(--bg-primary) 92%, var(--bg-secondary) 8%) 100%
   );
 }
 
@@ -412,6 +420,14 @@ textarea:focus-visible {
   background:
     radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 15%, transparent), transparent 40%),
     radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 10%, transparent), transparent 40%),
+    var(--bg-dark);
+}
+
+/* Same premium charcoal material on hero + final CTA (slightly calmer blue whisper) */
+.section-dark-anchor {
+  background:
+    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 11%, transparent), transparent 42%),
+    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 9%, transparent), transparent 42%),
     var(--bg-dark);
 }
 
@@ -624,43 +640,5 @@ textarea:focus-visible {
 /* Hero panel on dark section: subtle border to match charcoal */
 [data-section-tone="dark"] .img-panel {
   border-color: var(--section-charcoal-border);
-  box-shadow: 0 2px 8px var(--shadow-dark-20);
-}
-
-/* Token-based utilities for components (no inline hex/rgba in TSX) */
-.shadow-token-card {
-  box-shadow: var(--shadow-card);
-}
-.shadow-token-card-dark {
-  box-shadow: var(--shadow-card-dark-rest);
-}
-.shadow-token-card-hover-light {
-  box-shadow: var(--shadow-card-hover-light);
-}
-.shadow-token-card-hover-dark {
-  box-shadow: var(--shadow-card-hover-dark);
-}
-.shadow-token-btn-light {
-  box-shadow: var(--shadow-btn-light);
-}
-.shadow-token-btn-dark {
-  box-shadow: var(--shadow-btn-dark);
-}
-.shadow-token-img {
-  box-shadow: var(--shadow-img);
-}
-.shadow-token-img-hover {
-  box-shadow: var(--shadow-img-hover);
-}
-.shadow-token-img-accent-hover {
-  box-shadow: var(--shadow-img-hover-accent);
-}
-.shadow-token-ghn-diagram {
-  box-shadow: var(--shadow-ghn-diagram);
-}
-.shadow-token-mobile-panel {
-  box-shadow: var(--shadow-mobile-panel);
-}
-.mobile-nav-backdrop {
-  background-color: color-mix(in srgb, var(--bg-dark) 35%, transparent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }

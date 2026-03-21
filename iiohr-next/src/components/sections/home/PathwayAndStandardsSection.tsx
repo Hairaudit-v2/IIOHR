@@ -29,7 +29,7 @@ const inPractice = [
 
 export function PathwayAndStandardsSection() {
   return (
-    <SectionShell joinPrevious>
+    <SectionShell continuous joinPrevious>
       <SectionHeading
         eyebrow="Pathway"
         title="Six stages. One thread."
@@ -38,7 +38,7 @@ export function PathwayAndStandardsSection() {
       <ol className="mt-10 grid list-none gap-3 sm:grid-cols-2 md:mt-12 lg:grid-cols-3 xl:grid-cols-6">
         {steps.map((step, index) => (
           <li key={step.label}>
-            <Card interactive marker={`0${index + 1}`} as="div" className="md:p-5">
+            <Card quiet interactive marker={`0${index + 1}`} as="div" className="md:p-5">
               <h3 className="text-[11px] font-semibold tracking-[0.08em] text-heading uppercase">{step.label}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{step.description}</p>
             </Card>
@@ -51,7 +51,7 @@ export function PathwayAndStandardsSection() {
           {inPractice.map((row) => (
             <li
               key={row.title}
-              className="rounded-xl border border-border/80 bg-surface/80 px-4 py-3.5 md:px-5 md:py-4"
+              className="rounded-xl border border-border/35 bg-surface/25 px-4 py-3.5 md:px-5 md:py-4"
             >
               <span className="text-sm font-semibold text-heading">{row.title}</span>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.body}</p>

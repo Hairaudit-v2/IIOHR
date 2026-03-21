@@ -24,15 +24,13 @@ export default function HomePage() {
     <>
       <JsonLdScript data={webPageJsonLd} />
       <HeroSection />
-      <SectionSpacer />
       <ScienceEducationSection />
-      <SectionSpacer />
       <ProblemSection />
       <DifferenceAndCurriculumSection />
       <PathwayAndStandardsSection />
       <HumanImpactSection />
       <MentorshipSection />
-      <SectionSpacer airy />
+      <SectionSpacer airy minimal />
       {/* Single ecosystem centerpiece (platform grid lives here) */}
       <GlobalHairIntelligenceSection
         variant="iiohr"

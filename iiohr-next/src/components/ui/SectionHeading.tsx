@@ -6,6 +6,8 @@ interface SectionHeadingProps {
   description?: string;
   align?: "left" | "center";
   as?: "h1" | "h2";
+  /** Use on `SectionShell dark` / charcoal backgrounds */
+  eyebrowOnDark?: boolean;
 }
 
 export function SectionHeading({
@@ -14,6 +16,7 @@ export function SectionHeading({
   description,
   align = "left",
   as = "h2",
+  eyebrowOnDark = false,
 }: SectionHeadingProps) {
   const alignClass = align === "center" ? "text-center" : "text-left";
   const HeadingTag = as;
@@ -22,7 +25,7 @@ export function SectionHeading({
 
   return (
     <header className={`space-y-8 ${alignClass}`}>
-      {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
+      {eyebrow ? <Eyebrow variant={eyebrowOnDark ? "dark" : "light"}>{eyebrow}</Eyebrow> : null}
       <HeadingTag className="text-heading text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem] [text-wrap:balance]">
         {title}
       </HeadingTag>

@@ -19,18 +19,15 @@ const signals = [
 /** Quiet strip after the ecosystem centerpiece—no second hero moment. */
 export function TrustSignalsSection() {
   return (
-    <SectionShell muted compact>
+    <SectionShell continuous compact>
       <SectionHeading
         eyebrow="Governance"
         title="How we uphold quality"
         description="Credibility, evidence, and standards you can trace."
       />
-      <ul className="mt-8 grid list-none gap-3 sm:grid-cols-3 sm:gap-4 md:mt-9">
+      <ul className="mt-8 grid list-none gap-6 sm:grid-cols-3 sm:gap-8 md:mt-9">
         {signals.map((item) => (
-          <li
-            key={item.title}
-            className="border-b border-border/25 pb-4 last:border-0 last:pb-0 sm:border-0 sm:pb-0"
-          >
+          <li key={item.title} className="sm:pt-0">
             <span className="text-sm font-semibold text-foreground">{item.title}</span>
             <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
           </li>

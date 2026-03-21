@@ -52,7 +52,7 @@ export function PageHero({
       <div className="mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-36">
         <div className="grid gap-12 lg:grid-cols-[1fr_minmax(0,340px)] lg:items-start lg:gap-16">
           <div>
-            <Eyebrow>{eyebrow}</Eyebrow>
+            <Eyebrow variant={isDark ? "dark" : "light"}>{eyebrow}</Eyebrow>
             <h1 className="mt-8 max-w-4xl text-heading text-4xl leading-tight font-semibold tracking-tight md:text-5xl lg:text-[2.75rem] [text-wrap:balance]">
               {title}
             </h1>

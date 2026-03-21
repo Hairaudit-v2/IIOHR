@@ -14,7 +14,7 @@ const pillars = [
 
 export function DifferenceAndCurriculumSection() {
   return (
-    <SectionShell>
+    <SectionShell continuous joinPrevious>
       <SectionHeading
         eyebrow="Model"
         title="The IIOHR difference"
@@ -22,7 +22,7 @@ export function DifferenceAndCurriculumSection() {
       />
       <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-3 lg:gap-5">
         {pillars.map((item) => (
-          <Card key={item} interactive className="md:p-6">
+          <Card key={item} quiet interactive className="md:p-6">
             <p className="text-sm font-semibold leading-snug tracking-tight text-heading">{item}</p>
           </Card>
         ))}
