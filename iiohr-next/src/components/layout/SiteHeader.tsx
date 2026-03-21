@@ -50,7 +50,7 @@ export function SiteHeader() {
                 className={`text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
                   pathname === item.href
                     ? "font-semibold text-foreground"
-                    : "text-foreground/78 hover:text-foreground"
+                    : "text-foreground hover:text-accent"
                 }`}
               >
                 {item.label}

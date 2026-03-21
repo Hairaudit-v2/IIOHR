@@ -59,7 +59,7 @@ export function MobileNav() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setOpen(false)}
-                      className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-2.5 text-sm text-foreground/78 hover:bg-surface hover:text-foreground"
+                      className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-2.5 text-sm text-foreground hover:bg-surface hover:text-accent"
                     >
                       <span>{item.label}</span>
                       <span aria-hidden="true">↗</span>
@@ -72,7 +72,7 @@ export function MobileNav() {
                       className={`flex min-h-[44px] items-center rounded-md px-3 py-2.5 text-sm ${
                         pathname === item.href
                           ? "bg-surface font-semibold text-foreground"
-                          : "text-foreground/78 hover:bg-surface hover:text-foreground"
+                          : "text-foreground hover:bg-surface hover:text-accent"
                       }`}
                     >
                       {item.label}
@@ -89,7 +89,7 @@ export function MobileNav() {
                 <a
                   href={`mailto:${siteConfig.applicationEmail}`}
                   onClick={() => setOpen(false)}
-                  className="flex min-h-[44px] items-center rounded-md border border-border bg-surface px-3 py-2.5 text-sm text-foreground/78 hover:text-foreground"
+                  className="flex min-h-[44px] items-center rounded-md border border-foreground/20 bg-surface px-3 py-2.5 text-sm text-foreground hover:border-accent/40 hover:text-accent"
                 >
                   {siteConfig.applicationEmail}
                 </a>
