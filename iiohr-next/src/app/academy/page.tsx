@@ -140,7 +140,7 @@ export default function AcademyPage() {
       <PageHero
         eyebrow="IIOHR Academy"
         title="Structured, standards-led surgical education for doctors and clinics"
-        description="The Academy brings IIOHR training into one clear framework: progression-based education integrating practical FUE development, scientific reasoning, assessment standards, and mentorship through the IIOHR partner training network."
+        description="Progression-based training in practical FUE, clinical science, and mentored development through the IIOHR partner network."
         primaryCta={{ href: "/apply", label: "Apply or Enquire" }}
         secondaryCta={{ href: "/training-pathways", label: "Explore Pathways" }}
         image={getHeroImage("academy")}
@@ -149,8 +149,8 @@ export default function AcademyPage() {
       <SectionShell muted>
         <SectionHeading
           eyebrow="Why the Academy exists"
-          title="From fragmented short-course exposure to progression-based development"
-          description="Hair restoration capability is not built through isolated teaching events. The Academy exists to provide continuity: staged learning, supervised practice, standards alignment, and structured review so development quality improves over time."
+          title="Development continuity, not isolated training events"
+          description="Surgical capability requires staged learning, supervised practice, and structured review. The Academy provides the continuity that short courses cannot."
         />
       </SectionShell>
 
@@ -158,7 +158,7 @@ export default function AcademyPage() {
         <SectionHeading
           eyebrow="Academy model"
           title="Four integrated pillars of surgeon development"
-          description="Each pillar supports the others so learning, practical execution, and judgment progress together."
+          description="Practical training, scientific grounding, standards alignment, and mentorship work together to produce capable, consistent surgeons."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {academyModelCards.map((item) => (

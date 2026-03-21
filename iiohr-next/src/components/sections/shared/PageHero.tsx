@@ -56,7 +56,11 @@ export function PageHero({
             <h1 className="mt-8 max-w-4xl text-heading text-4xl leading-tight font-semibold tracking-tight md:text-5xl lg:text-[2.75rem] [text-wrap:balance]">
               {title}
             </h1>
-            <p className="mt-9 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg [line-height:1.7]">
+            <p
+              className={`mt-9 max-w-2xl text-base leading-relaxed md:text-lg [line-height:1.7] ${
+                isDark ? "text-muted-foreground" : "text-readable-muted"
+              }`}
+            >
               {description}
             </p>
             {(primaryCta || secondaryCta || tertiaryCta) && (

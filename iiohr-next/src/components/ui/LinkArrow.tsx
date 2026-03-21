@@ -14,7 +14,7 @@ export function LinkArrow({
   className = "",
   external = href.startsWith("http"),
 }: LinkArrowProps) {
-  const classNames = `group inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-heading hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${className}`;
+  const classNames = `group inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-heading underline-offset-[0.28em] decoration-2 decoration-accent/40 underline hover:text-accent hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${className}`;
 
   if (external) {
     return (

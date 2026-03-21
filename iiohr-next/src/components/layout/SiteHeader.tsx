@@ -25,7 +25,7 @@ export function SiteHeader() {
           </span>
           <span className="flex flex-col">
             <span className="text-lg font-semibold tracking-[0.06em]">IIOHR</span>
-            <span className="mt-1 hidden text-[10px] tracking-[0.14em] text-muted-foreground uppercase group-hover:text-foreground md:block">
+            <span className="mt-1 hidden text-[10px] tracking-[0.14em] text-readable-muted uppercase group-hover:text-foreground md:block">
               International Institute of Hair Restoration
             </span>
           </span>
@@ -50,7 +50,7 @@ export function SiteHeader() {
                 className={`text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
                   pathname === item.href
                     ? "font-semibold text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    : "text-foreground/78 hover:text-foreground"
                 }`}
               >
                 {item.label}

@@ -75,8 +75,8 @@ export default function FacultyAndMentorshipPage() {
     <>
       <PageHero
         eyebrow="Faculty and Mentorship"
-        title="Standards-led supervision supporting long-term clinical development"
-        description="At IIOHR, faculty and mentorship are positioned as core components of development quality: guiding progression, supporting reflective practice, and reinforcing consistent standards beyond initial training."
+        title="Standards-led supervision for long-term development"
+        description="Guided progression, reflective practice, and consistent standards through every stage of surgeon development."
         primaryCta={{ href: "/academy", label: "Explore Academy" }}
         secondaryCta={{ href: "/admissions", label: "View Admissions" }}
         image={getHeroImage("facultyAndMentorship")}
@@ -85,8 +85,8 @@ export default function FacultyAndMentorshipPage() {
       <SectionShell muted>
         <SectionHeading
           eyebrow="Why mentorship matters"
-          title="Surgical progression improves with guided oversight and feedback"
-          description="Mentorship supports development through structured supervision, experience-informed reflection, and repeated learning cycles that strengthen clinical maturity."
+          title="Progression through guided oversight and feedback"
+          description="Structured supervision, reflective practice, and repeated learning cycles produce lasting clinical capability."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {mentorshipReasons.map((item) => (
@@ -101,8 +101,8 @@ export default function FacultyAndMentorshipPage() {
       <SectionShell>
         <SectionHeading
           eyebrow="Faculty model"
-          title="An institutional educational and supervisory framework"
-          description="Faculty is positioned as a standards-led layer that supports educational consistency, progression quality, and supervision integrity."
+          title="Institutional framework for educational consistency"
+          description="A standards-led layer ensuring progression quality, supervision integrity, and consistent development outcomes."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {facultyModelCards.map((item) => (

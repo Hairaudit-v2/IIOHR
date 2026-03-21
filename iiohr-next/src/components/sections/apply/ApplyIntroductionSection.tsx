@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/Card";
 import { LinkArrow } from "@/components/ui/LinkArrow";
 
 const introPoints = [
-  "Applications are reviewed for clinical context, current experience level, and development goals.",
-  "Both individual doctors and clinic groups can submit an enquiry through the same intake process.",
-  "A pathway recommendation is provided after initial review and suitability discussion.",
+  "We review your clinical background, experience level, and development goals.",
+  "Individual doctors and clinic teams use the same intake process.",
+  "You receive a pathway recommendation after initial review.",
 ];
 
 export function ApplyIntroductionSection() {
@@ -14,8 +14,8 @@ export function ApplyIntroductionSection() {
     <SectionShell muted>
       <SectionHeading
         eyebrow="Before You Apply"
-        title="A clear and structured application process"
-        description="IIOHR intake is designed to match candidates and clinic teams to the most suitable pathway stage. This ensures progression is safe, realistic, and clinically useful."
+        title="Structured intake process"
+        description="We match you to the right pathway stage based on your background and goals, ensuring safe, realistic progression."
       />
       <div className="mt-8">
         <LinkArrow href="/admissions">Not sure if you are ready? Review admissions criteria</LinkArrow>

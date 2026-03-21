@@ -115,17 +115,17 @@ export default function AdmissionsPage() {
     <>
       <PageHero
         eyebrow="Admissions"
-        title="The entry point into structured academy development"
-        description="IIOHR admissions helps doctors and clinics understand pathway readiness, entrant-level fit, and the most suitable progression route before formal application."
+        title="Find your pathway entry point"
+        description="Review your readiness, identify the right entrant level, and understand your progression route before you apply."
         primaryCta={{ href: "/apply", label: "Apply now" }}
         secondaryCta={{ href: "/academy", label: "Explore Academy" }}
       />
 
       <SectionShell muted>
         <SectionHeading
-          eyebrow="Who the Academy is for"
-          title="A structured route for clinicians and clinics at different stages"
-          description="Admissions supports multiple entry contexts while maintaining standards-led guidance and realistic development sequencing."
+          eyebrow="Who this is for"
+          title="Clinicians and clinics at different development stages"
+          description="Whether you are entering the field, transitioning into practical training, or building clinic capability, admissions guidance helps identify your right entry point."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {audienceGroups.map((item) => (

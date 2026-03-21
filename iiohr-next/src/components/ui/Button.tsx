@@ -16,17 +16,17 @@ const ctaBase =
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "border border-accent bg-accent text-primary hover:bg-accent-muted shadow-token-btn-light focus-visible:ring-offset-background",
+    "border-2 border-accent bg-accent text-primary hover:bg-accent-muted shadow-[var(--shadow-btn-primary)] focus-visible:ring-offset-background",
   secondary:
-    "border border-border bg-surface text-foreground hover:border-accent/40 hover:bg-surface-elevated focus-visible:ring-offset-background",
+    "border-2 border-foreground/18 bg-surface text-foreground hover:border-accent/45 hover:bg-surface-elevated focus-visible:ring-offset-background",
   ghost:
-    "border border-border bg-transparent text-muted-foreground hover:border-accent/50 hover:bg-surface-elevated hover:text-foreground focus-visible:ring-offset-background",
+    "border border-foreground/20 bg-transparent text-foreground/88 hover:border-accent/45 hover:bg-surface/80 hover:text-foreground focus-visible:ring-offset-background",
   tertiary:
-    "border-0 bg-transparent text-foreground shadow-none min-h-0 py-0 text-sm font-semibold text-accent hover:text-accent-muted focus-visible:ring-offset-background",
+    "border-0 bg-transparent text-primary shadow-none min-h-0 py-0 text-sm font-semibold underline decoration-accent/45 underline-offset-[0.2em] decoration-2 hover:text-accent hover:decoration-accent focus-visible:ring-offset-background",
   dark:
-    "border border-accent bg-accent text-primary hover:bg-accent-muted shadow-token-btn-dark focus-visible:ring-offset-section-charcoal",
+    "border-2 border-accent bg-accent text-primary hover:bg-accent-muted shadow-token-btn-dark focus-visible:ring-offset-section-charcoal",
   darkSecondary:
-    "border border-section-charcoal-border bg-transparent text-section-charcoal-foreground hover:bg-section-charcoal-foreground/10 focus-visible:ring-offset-section-charcoal",
+    "border-2 border-section-charcoal-border bg-transparent text-section-charcoal-foreground hover:bg-section-charcoal-foreground/12 hover:border-section-charcoal-border focus-visible:ring-offset-section-charcoal",
 };
 
 export function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {

@@ -30,7 +30,11 @@ export function SectionHeading({
         {title}
       </HeadingTag>
       {description ? (
-        <p className={`${descriptionWidthClass} max-w-prose text-base leading-relaxed text-muted-foreground md:text-[1.03rem] [line-height:1.7]`}>
+        <p
+          className={`${descriptionWidthClass} max-w-prose text-base leading-relaxed md:text-[1.03rem] [line-height:1.7] ${
+            eyebrowOnDark ? "text-muted-foreground" : "text-readable-muted"
+          }`}
+        >
           {description}
         </p>
       ) : null}

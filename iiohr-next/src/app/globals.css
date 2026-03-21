@@ -42,6 +42,10 @@
   --muted-foreground: var(--text-secondary);
   --heading: var(--text-primary);
 
+  /* Supporting copy on cream: darker mix for WCAG-friendly contrast (core --text-secondary hex unchanged) */
+  --readable-muted: color-mix(in srgb, var(--text-primary) 44%, var(--text-secondary) 56%);
+  --readable-subtle: color-mix(in srgb, var(--text-primary) 36%, var(--text-secondary) 64%);
+
   --border: color-mix(in srgb, var(--text-secondary) 16%, var(--bg-soft) 84%);
   --border-soft: color-mix(in srgb, var(--bg-soft) 70%, var(--bg-secondary) 30%);
 
@@ -55,7 +59,7 @@
   /* Dark feature sections (hero, GHN, final CTA) */
   --section-charcoal: var(--bg-dark-soft);
   --section-charcoal-foreground: var(--bg-secondary);
-  --section-charcoal-muted: color-mix(in srgb, var(--bg-secondary) 88%, transparent);
+  --section-charcoal-muted: color-mix(in srgb, var(--bg-secondary) 91%, transparent);
   --section-charcoal-border: color-mix(in srgb, var(--bg-secondary) 22%, transparent);
 
   --focus-ring: color-mix(in srgb, var(--accent-blue) 40%, transparent);
@@ -104,6 +108,11 @@
   --shadow-card-hover-dark: 0 14px 36px -10px var(--shadow-dark-38), 0 6px 18px -8px var(--shadow-dark-22),
     0 0 0 1px var(--shadow-blue-14);
   --shadow-btn-light: 0 1px 3px 0 var(--shadow-text-12);
+  /* Primary CTA on cream: depth + gold edge so button separates from background */
+  --shadow-btn-primary:
+    0 1px 2px var(--shadow-text-06),
+    0 2px 8px -2px var(--shadow-text-08),
+    0 0 0 1px color-mix(in srgb, var(--gold-primary) 52%, transparent);
   --shadow-btn-dark: 0 1px 3px 0 var(--shadow-dark-20);
   --shadow-img: 0 2px 8px var(--shadow-text-08), 0 1px 3px var(--shadow-text-06);
   --shadow-img-hover: 0 12px 32px var(--shadow-text-12), 0 4px 12px var(--shadow-text-08);
@@ -133,6 +142,8 @@
   --color-parchment: var(--parchment);
   --color-foreground: var(--foreground);
   --color-muted-foreground: var(--muted-foreground);
+  --color-readable-muted: var(--readable-muted);
+  --color-readable-subtle: var(--readable-subtle);
   --color-heading: var(--heading);
   --color-border: var(--border);
   --color-border-soft: var(--border-soft);
@@ -262,6 +273,12 @@ textarea:focus-visible {
 [data-section-tone="dark"] p,
 [data-section-tone="dark"] li {
   color: inherit;
+}
+
+/* Light sections: supporting text reads darker on cream (core --text-secondary unchanged) */
+[data-section-tone="default"] .text-muted-foreground,
+[data-section-tone="muted"] .text-muted-foreground {
+  color: var(--readable-muted);
 }
 
 /* Light sections: gold + blue radials over cream (canonical) */

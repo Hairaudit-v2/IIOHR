@@ -47,7 +47,7 @@ export function MobileNav() {
             id="mobile-primary-nav"
             className="absolute right-0 top-full z-50 mt-3 w-[min(90vw,360px)] min-w-0 rounded-lg border border-border bg-background px-4 py-5 shadow-token-mobile-panel"
           >
-            <p className="text-[11px] tracking-[0.14em] text-muted-foreground uppercase">
+            <p className="text-[11px] tracking-[0.14em] text-readable-muted uppercase">
               Primary Navigation
             </p>
             <ul className="mt-4 space-y-1.5">
@@ -59,7 +59,7 @@ export function MobileNav() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setOpen(false)}
-                      className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-2.5 text-sm text-muted-foreground hover:bg-surface hover:text-foreground"
+                      className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-2.5 text-sm text-foreground/78 hover:bg-surface hover:text-foreground"
                     >
                       <span>{item.label}</span>
                       <span aria-hidden="true">↗</span>
@@ -72,7 +72,7 @@ export function MobileNav() {
                       className={`flex min-h-[44px] items-center rounded-md px-3 py-2.5 text-sm ${
                         pathname === item.href
                           ? "bg-surface font-semibold text-foreground"
-                          : "text-muted-foreground hover:bg-surface hover:text-foreground"
+                          : "text-foreground/78 hover:bg-surface hover:text-foreground"
                       }`}
                     >
                       {item.label}
@@ -82,14 +82,14 @@ export function MobileNav() {
               ))}
             </ul>
             <div className="mt-4 border-t border-border pt-4">
-              <p className="text-[11px] tracking-[0.14em] text-muted-foreground uppercase">
+              <p className="text-[11px] tracking-[0.14em] text-readable-muted uppercase">
                 Admissions
               </p>
               <div className="mt-3 space-y-2">
                 <a
                   href={`mailto:${siteConfig.applicationEmail}`}
                   onClick={() => setOpen(false)}
-                  className="flex min-h-[44px] items-center rounded-md border border-border bg-surface px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground"
+                  className="flex min-h-[44px] items-center rounded-md border border-border bg-surface px-3 py-2.5 text-sm text-foreground/78 hover:text-foreground"
                 >
                   {siteConfig.applicationEmail}
                 </a>
@@ -99,7 +99,7 @@ export function MobileNav() {
               <Link
                 href="/apply"
                 onClick={() => setOpen(false)}
-                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-md border border-accent bg-surface-soft px-3 py-2.5 text-sm font-semibold text-foreground"
+                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-md border-2 border-accent bg-accent px-3 py-2.5 text-sm font-semibold text-primary shadow-[var(--shadow-btn-primary)]"
               >
                 Apply for Training
               </Link>

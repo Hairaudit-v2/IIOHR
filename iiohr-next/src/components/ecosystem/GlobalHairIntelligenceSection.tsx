@@ -108,6 +108,7 @@ export function GlobalHairIntelligenceSection({
             title={heading}
             description={description}
             align="center"
+            eyebrowOnDark={isDark}
           />
         </div>
         <div
