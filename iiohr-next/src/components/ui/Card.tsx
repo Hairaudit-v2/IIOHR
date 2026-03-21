@@ -57,8 +57,8 @@ export function Card({
               dark
                 ? "inline-flex h-8 w-8 items-center justify-center rounded-lg border border-section-charcoal-border bg-section-charcoal-foreground/10 text-[11px] font-semibold tracking-wider text-section-charcoal-muted"
                 : quiet
-                  ? "inline-flex h-8 w-8 items-center justify-center rounded-lg border border-accent/22 bg-surface/50 text-[11px] font-semibold tracking-wider text-heading/90"
-                  : "inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-elevated text-[11px] font-semibold tracking-wider text-muted-foreground"
+                  ? "inline-flex h-8 w-8 items-center justify-center rounded-lg border border-foreground/20 bg-surface/50 text-[11px] font-semibold tracking-wider text-foreground/80"
+                  : "inline-flex h-8 w-8 items-center justify-center rounded-lg border border-foreground/20 bg-surface-elevated text-[11px] font-semibold tracking-wider text-foreground/75"
             }
             aria-hidden
           >

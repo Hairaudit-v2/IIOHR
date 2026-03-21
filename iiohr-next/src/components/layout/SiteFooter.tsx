@@ -23,7 +23,7 @@ export function SiteFooter() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded border border-border px-3 py-2 text-xs text-foreground/78 hover:border-accent/35 hover:text-foreground"
+                className="inline-flex items-center gap-1.5 rounded border border-foreground/20 bg-surface px-3 py-2 text-xs text-foreground hover:border-accent/40 hover:bg-surface-elevated"
               >
                 <span>{item.label}</span>
                 <span aria-hidden className="text-[10px] opacity-70">↗</span>
@@ -52,7 +52,7 @@ export function SiteFooter() {
             <ul className="mt-3 space-y-2.5">
               {footerNavigation.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-sm text-foreground/78 hover:text-foreground">
+                  <Link href={item.href} className="text-sm text-foreground hover:text-accent">
                     {item.label}
                   </Link>
                 </li>

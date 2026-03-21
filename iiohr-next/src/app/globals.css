@@ -108,11 +108,11 @@
   --shadow-card-hover-dark: 0 14px 36px -10px var(--shadow-dark-38), 0 6px 18px -8px var(--shadow-dark-22),
     0 0 0 1px var(--shadow-blue-14);
   --shadow-btn-light: 0 1px 3px 0 var(--shadow-text-12);
-  /* Primary CTA on cream: restrained depth + gold hairline (readable, not heavy) */
+  /* Primary CTA: unmistakable contrast — layered shadow + gold ring for depth */
   --shadow-btn-primary:
-    0 1px 2px var(--shadow-text-05),
-    0 1px 4px -1px var(--shadow-text-06),
-    0 0 0 1px color-mix(in srgb, var(--gold-primary) 40%, transparent);
+    0 1px 2px var(--shadow-text-06),
+    0 2px 6px -2px var(--shadow-text-08),
+    0 0 0 1.5px color-mix(in srgb, var(--gold-primary) 55%, transparent);
   --shadow-btn-dark: 0 1px 3px 0 var(--shadow-dark-20);
   --shadow-img: 0 2px 8px var(--shadow-text-08), 0 1px 3px var(--shadow-text-06);
   --shadow-img-hover: 0 12px 32px var(--shadow-text-12), 0 4px 12px var(--shadow-text-08);
@@ -167,6 +167,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* NOTE: We do NOT flip --foreground/--heading here.
+       Light sections MUST keep dark text even in OS dark mode.
+       Only [data-section-tone="dark"] sections use light text via explicit rules above. */
     --background: var(--bg-dark);
     --surface: var(--bg-dark-soft);
     --surface-soft: var(--bg-dark);
@@ -175,9 +178,10 @@
     --section-ivory-alt: var(--bg-dark);
     --sand: var(--surface-soft);
     --parchment: var(--surface);
-    --foreground: var(--bg-secondary);
-    --muted-foreground: color-mix(in srgb, var(--bg-secondary) 65%, var(--text-secondary) 35%);
-    --heading: var(--bg-secondary);
+    /* Keep text colors dark for light surfaces; dark sections use data-section-tone="dark" override */
+    --foreground: var(--text-primary);
+    --muted-foreground: var(--readable-muted);
+    --heading: var(--text-primary);
     --border: color-mix(in srgb, var(--bg-secondary) 12%, var(--bg-dark));
     --border-soft: color-mix(in srgb, var(--bg-secondary) 8%, var(--bg-dark-soft));
     --primary: var(--gold-primary);
@@ -230,9 +234,38 @@ a {
   transition: color 160ms ease;
 }
 
+/* ============================================================
+   STRICT TEXT ENFORCEMENT — Readability is deterministic, not optional
+   ============================================================ */
+
+/* BASE RULES: Light surfaces ALWAYS render dark text (never white/ivory)
+   These are not inside media queries and cannot be overridden by OS dark mode */
+.text-heading,
+[class*="text-heading"] {
+  color: var(--text-primary) !important;
+}
+.text-foreground {
+  color: var(--text-primary) !important;
+}
+.text-muted-foreground {
+  color: var(--readable-muted) !important;
+}
+
+/* DARK SECTIONS ONLY: Override to light text when explicitly marked */
+[data-section-tone="dark"] .text-heading,
+[data-section-tone="dark"] [class*="text-heading"] {
+  color: var(--section-charcoal-foreground) !important;
+}
+[data-section-tone="dark"] .text-foreground {
+  color: var(--section-charcoal-foreground) !important;
+}
+[data-section-tone="dark"] .text-muted-foreground {
+  color: var(--section-charcoal-muted) !important;
+}
+
 /* Inline links: dark readable text + gold underline (hover shifts to accent — not gold body copy) */
 .link-premium {
-  color: var(--foreground);
+  color: var(--text-primary);
   font-weight: 500;
   text-decoration: underline;
   text-decoration-color: color-mix(in srgb, var(--gold-primary) 44%, transparent);
@@ -242,6 +275,12 @@ a {
 .link-premium:hover {
   color: var(--accent);
   text-decoration-color: color-mix(in srgb, var(--gold-primary) 72%, transparent);
+}
+[data-section-tone="dark"] .link-premium {
+  color: var(--section-charcoal-foreground);
+}
+[data-section-tone="dark"] .link-premium:hover {
+  color: var(--gold-primary);
 }
 
 :focus-visible {
@@ -266,17 +305,7 @@ textarea:focus-visible {
   background: color-mix(in srgb, var(--gold-primary) 30%, transparent);
 }
 
-/* Dark section (charcoal): all text must be light for readability */
-[data-section-tone="dark"] .text-heading,
-[data-section-tone="dark"] [class*="text-heading"] {
-  color: var(--section-charcoal-foreground);
-}
-[data-section-tone="dark"] .text-foreground {
-  color: var(--section-charcoal-foreground);
-}
-[data-section-tone="dark"] .text-muted-foreground {
-  color: var(--section-charcoal-muted);
-}
+/* Dark section additional utilities */
 [data-section-tone="dark"] [class*="border-heading"] {
   border-color: var(--section-charcoal-border);
 }
@@ -287,12 +316,6 @@ textarea:focus-visible {
 [data-section-tone="dark"] p,
 [data-section-tone="dark"] li {
   color: inherit;
-}
-
-/* Light sections: supporting text reads darker on cream (core --text-secondary unchanged) */
-[data-section-tone="default"] .text-muted-foreground,
-[data-section-tone="muted"] .text-muted-foreground {
-  color: var(--readable-muted);
 }
 
 /* Light sections: gold + blue radials over cream (canonical) */
