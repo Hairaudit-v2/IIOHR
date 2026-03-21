@@ -18,11 +18,11 @@ const variantStyles: Record<ButtonVariant, string> = {
   primary:
     "border-2 border-accent bg-accent text-primary hover:bg-accent-muted shadow-[var(--shadow-btn-primary)] focus-visible:ring-offset-background",
   secondary:
-    "border-2 border-foreground/18 bg-surface text-foreground hover:border-accent/45 hover:bg-surface-elevated focus-visible:ring-offset-background",
+    "border-2 border-foreground/15 bg-surface text-foreground hover:border-accent/40 hover:bg-surface-elevated focus-visible:ring-offset-background",
   ghost:
-    "border border-foreground/20 bg-transparent text-foreground/88 hover:border-accent/45 hover:bg-surface/80 hover:text-foreground focus-visible:ring-offset-background",
+    "border border-foreground/16 bg-transparent text-foreground/88 hover:border-accent/40 hover:bg-surface/80 hover:text-foreground focus-visible:ring-offset-background",
   tertiary:
-    "border-0 bg-transparent text-primary shadow-none min-h-0 py-0 text-sm font-semibold underline decoration-accent/45 underline-offset-[0.2em] decoration-2 hover:text-accent hover:decoration-accent focus-visible:ring-offset-background",
+    "border-0 bg-transparent shadow-none min-h-0 h-auto px-0 py-0 rounded-none text-sm link-premium focus-visible:ring-offset-background",
   dark:
     "border-2 border-accent bg-accent text-primary hover:bg-accent-muted shadow-token-btn-dark focus-visible:ring-offset-section-charcoal",
   darkSecondary:

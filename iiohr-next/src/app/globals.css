@@ -108,11 +108,11 @@
   --shadow-card-hover-dark: 0 14px 36px -10px var(--shadow-dark-38), 0 6px 18px -8px var(--shadow-dark-22),
     0 0 0 1px var(--shadow-blue-14);
   --shadow-btn-light: 0 1px 3px 0 var(--shadow-text-12);
-  /* Primary CTA on cream: depth + gold edge so button separates from background */
+  /* Primary CTA on cream: restrained depth + gold hairline (readable, not heavy) */
   --shadow-btn-primary:
-    0 1px 2px var(--shadow-text-06),
-    0 2px 8px -2px var(--shadow-text-08),
-    0 0 0 1px color-mix(in srgb, var(--gold-primary) 52%, transparent);
+    0 1px 2px var(--shadow-text-05),
+    0 1px 4px -1px var(--shadow-text-06),
+    0 0 0 1px color-mix(in srgb, var(--gold-primary) 40%, transparent);
   --shadow-btn-dark: 0 1px 3px 0 var(--shadow-dark-20);
   --shadow-img: 0 2px 8px var(--shadow-text-08), 0 1px 3px var(--shadow-text-06);
   --shadow-img-hover: 0 12px 32px var(--shadow-text-12), 0 4px 12px var(--shadow-text-08);
@@ -228,6 +228,20 @@ body {
 
 a {
   transition: color 160ms ease;
+}
+
+/* Inline links: dark readable text + gold underline (hover shifts to accent — not gold body copy) */
+.link-premium {
+  color: var(--foreground);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--gold-primary) 44%, transparent);
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 2px;
+}
+.link-premium:hover {
+  color: var(--accent);
+  text-decoration-color: color-mix(in srgb, var(--gold-primary) 72%, transparent);
 }
 
 :focus-visible {

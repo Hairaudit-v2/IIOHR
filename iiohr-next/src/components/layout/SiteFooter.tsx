@@ -68,7 +68,7 @@ export function SiteFooter() {
               ))}
               <li>
                 Contact:{" "}
-                <a href={`mailto:${siteConfig.email}`} className="hover:text-foreground">
+                <a href={`mailto:${siteConfig.email}`} className="link-premium">
                   {siteConfig.email}
                 </a>
               </li>
@@ -80,7 +80,7 @@ export function SiteFooter() {
           <p>{`© ${new Date().getFullYear()} ${siteConfig.name}. All rights reserved.`}</p>
           <div className="flex flex-wrap items-center gap-4">
             {legalNavigation.map((item) => (
-              <Link key={item.label} href={item.href} className="hover:text-foreground">
+              <Link key={item.label} href={item.href} className="link-premium text-xs">
                 {item.label}
               </Link>
             ))}

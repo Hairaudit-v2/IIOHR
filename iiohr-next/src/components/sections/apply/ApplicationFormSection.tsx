@@ -81,18 +81,12 @@ export function ApplicationFormSection() {
               <p className="mt-2 text-sm leading-relaxed text-readable-muted break-words">
                 We have received your details and will be in touch to discuss your pathway fit. If you have
                 urgent questions, email us at{" "}
-                <a
-                  href={`mailto:${siteConfig.applicationEmail}`}
-                  className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
-                >
+                <a href={`mailto:${siteConfig.applicationEmail}`} className="link-premium">
                   {siteConfig.applicationEmail}
                 </a>
                 .
               </p>
-              <Link
-                href="/training-pathways"
-                className="mt-4 inline-block text-sm font-medium text-foreground underline decoration-accent/50 underline-offset-2 hover:text-accent"
-              >
+              <Link href="/training-pathways" className="link-premium mt-4 inline-block text-sm">
                 Explore training pathways →
               </Link>
             </div>
@@ -106,10 +100,7 @@ export function ApplicationFormSection() {
               <p className="font-medium break-words">{errorMessage}</p>
               <p className="mt-2 text-readable-muted break-words">
                 You can also send your enquiry directly to{" "}
-                <a
-                  href={`mailto:${siteConfig.applicationEmail}`}
-                  className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
-                >
+                <a href={`mailto:${siteConfig.applicationEmail}`} className="link-premium">
                   {siteConfig.applicationEmail}
                 </a>
                 .
@@ -117,7 +108,7 @@ export function ApplicationFormSection() {
               <button
                 type="button"
                 onClick={() => { setStatus("idle"); setErrorMessage(""); }}
-                className="mt-4 text-sm font-medium text-foreground underline decoration-accent/45 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2"
+                className="link-premium mt-4 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2"
               >
                 Try again
               </button>
@@ -132,7 +123,7 @@ export function ApplicationFormSection() {
                 <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
               </div>
 
-              <fieldset className="rounded-xl border-2 border-foreground/18 bg-surface px-5 py-6">
+              <fieldset className="rounded-xl border-2 border-foreground/16 bg-surface px-5 py-6">
                 <legend className="px-1 text-sm font-semibold text-foreground">Enquiry Type</legend>
                 <div className="mt-5 grid gap-3 sm:grid-cols-2">
                   <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-background px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
@@ -325,10 +316,7 @@ export function ApplicationFormSection() {
                   />
                   <span>
                     I have read the{" "}
-                    <Link
-                      href="/privacy-policy"
-                      className="font-medium text-foreground underline decoration-accent/50 underline-offset-2 hover:text-accent"
-                    >
+                    <Link href="/privacy-policy" className="link-premium">
                       Privacy Policy
                     </Link>
                     {" "}and agree to my data being used for pathway review and admissions contact. I consent to
@@ -351,7 +339,7 @@ export function ApplicationFormSection() {
                   </button>
                   <a
                     href={`mailto:${siteConfig.applicationEmail}`}
-                    className="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-foreground/18 bg-surface px-6 py-3 text-sm font-semibold tracking-[0.02em] text-foreground transition-colors hover:border-accent/45 hover:bg-surface-elevated"
+                    className="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-foreground/16 bg-surface px-6 py-3 text-sm font-semibold tracking-[0.02em] text-foreground transition-colors hover:border-accent/40 hover:bg-surface-elevated"
                   >
                     Prefer email enquiry
                   </a>
@@ -363,10 +351,7 @@ export function ApplicationFormSection() {
           {status !== "success" && (
             <p className="mt-6 text-sm text-readable-muted">
               Your information is used only for pathway review and admissions. For direct contact, email{" "}
-              <a
-                className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
-                href={`mailto:${siteConfig.applicationEmail}`}
-              >
+              <a className="link-premium" href={`mailto:${siteConfig.applicationEmail}`}>
                 {siteConfig.applicationEmail}
               </a>
               .
@@ -387,10 +372,7 @@ export function ApplicationFormSection() {
             <h3 className="text-lg font-semibold text-heading">Privacy</h3>
             <p className="mt-4 text-sm leading-relaxed text-readable-muted">
               We use your details only for pathway review and admissions. See our{" "}
-              <Link
-                href="/privacy-policy"
-                className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
-              >
+              <Link href="/privacy-policy" className="link-premium">
                 Privacy Policy
               </Link>
               {" "}for full details.

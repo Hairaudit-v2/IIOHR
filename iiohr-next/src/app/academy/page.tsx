@@ -164,7 +164,7 @@ export default function AcademyPage() {
           {academyModelCards.map((item) => (
             <Card key={item.title}>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
             </Card>
           ))}
         </div>
@@ -180,7 +180,7 @@ export default function AcademyPage() {
           {programLadder.map((item) => (
             <Card key={item.level}>
               <p className="text-xs font-semibold tracking-[0.14em] text-accent uppercase">{item.level}</p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.focus}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.focus}</p>
             </Card>
           ))}
         </div>
@@ -196,11 +196,11 @@ export default function AcademyPage() {
           {continuousDevelopmentCards.map((item) => (
             <Card key={item.title}>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
             </Card>
           ))}
         </div>
-        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-readable-muted">
           This continuous model creates practical feedback loops that support measurable improvement
           and sustained clinical excellence over time.
         </p>
@@ -237,7 +237,7 @@ export default function AcademyPage() {
         />
         <div className="mt-16">
           <Card>
-            <p className="text-sm leading-relaxed text-muted-foreground">
+            <p className="text-sm leading-relaxed text-readable-muted">
               Partner-network delivery allows institute-level standards to be applied consistently while
               maintaining practical relevance in clinical settings. This supports clear supervision
               structures, capability development continuity, and accountable progression review.
@@ -256,11 +256,11 @@ export default function AcademyPage() {
           {audiencePathways.map((group) => (
             <Card key={group.title}>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{group.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{group.description}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{group.description}</p>
               <ul className="mt-6 space-y-2">
                 {group.links.map((link) => (
                   <li key={link.href + link.label}>
-                    <Link href={link.href} className="text-sm font-medium text-foreground underline hover:text-accent">
+                    <Link href={link.href} className="link-premium text-sm">
                       {link.label}
                     </Link>
                   </li>
@@ -282,7 +282,7 @@ export default function AcademyPage() {
             <Card as="li" key={item.step} marker={item.step}>
               <h3 className="text-base font-semibold tracking-tight text-foreground">{item.title}</h3>
               <p className="mt-4 text-sm">
-                <Link href={item.href} className="font-medium text-foreground underline hover:text-accent">
+                <Link href={item.href} className="link-premium font-medium">
                   {item.label}
                 </Link>
               </p>

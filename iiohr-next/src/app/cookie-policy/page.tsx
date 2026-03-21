@@ -27,7 +27,7 @@ function LegalSection({
   return (
     <section id={id} className="scroll-mt-24 border-b border-border/60 pb-10 last:border-0 last:pb-0">
       <h2 className="text-xl font-semibold tracking-tight text-foreground">{title}</h2>
-      <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground">{children}</div>
+      <div className="mt-4 space-y-4 text-sm leading-relaxed text-readable-muted">{children}</div>
     </section>
   );
 }
@@ -40,12 +40,12 @@ export default function CookiePolicyPage() {
           Legal
         </p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">Cookie Policy</h1>
-        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+        <p className="mt-4 text-base leading-relaxed text-readable-muted">
           This policy explains how {siteConfig.legalName} (“IIOHR”) uses cookies and similar
           technologies on our website. By continuing to use the site, you consent to our use of
           cookies as described here.
         </p>
-        <p className="mt-2 text-xs text-muted-foreground">
+        <p className="mt-2 text-xs text-readable-subtle">
           Last updated: {lastUpdated}. Please review this page periodically for changes.
         </p>
 
@@ -79,10 +79,7 @@ export default function CookiePolicyPage() {
           <LegalSection id="contact" title="4. Contact">
             <p>
               For questions about this cookie policy:{" "}
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="font-medium text-foreground underline hover:text-accent"
-              >
+              <a href={`mailto:${siteConfig.email}`} className="link-premium">
                 {siteConfig.email}
               </a>
               .
@@ -93,7 +90,7 @@ export default function CookiePolicyPage() {
         <div className="mt-14 border-t border-border pt-6">
           <Link
             href="/"
-            className="text-sm font-medium text-primary hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2"
+            className="link-premium text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2"
           >
             ← Back to home
           </Link>

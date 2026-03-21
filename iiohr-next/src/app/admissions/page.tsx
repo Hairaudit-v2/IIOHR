@@ -131,7 +131,7 @@ export default function AdmissionsPage() {
           {audienceGroups.map((item) => (
             <Card key={item.title}>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
             </Card>
           ))}
         </div>
@@ -147,7 +147,7 @@ export default function AdmissionsPage() {
           {readinessFactors.map((item) => (
             <Card key={item.title}>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
             </Card>
           ))}
         </div>
@@ -163,9 +163,9 @@ export default function AdmissionsPage() {
           {doctorProfiles.map((profile) => (
             <Card key={profile.title}>
               <h3 className="text-base font-semibold tracking-tight text-foreground">{profile.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{profile.description}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{profile.description}</p>
               <p className="mt-4 text-sm">
-                <Link href={profile.href} className="font-medium text-foreground underline hover:text-accent">
+                <Link href={profile.href} className="link-premium font-medium">
                   {profile.label}
                 </Link>
               </p>
@@ -199,7 +199,7 @@ export default function AdmissionsPage() {
           {admissionsJourney.map((item) => (
             <Card key={item.step} marker={item.step[0]}>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.step}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.detail}</p>
             </Card>
           ))}
         </div>
