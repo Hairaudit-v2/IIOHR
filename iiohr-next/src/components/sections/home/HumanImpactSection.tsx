@@ -31,16 +31,16 @@ export function HumanImpactSection() {
           <SectionHeading
             eyebrow="Outcomes"
             title="Why this model produces better surgeons"
-            description="Better surgeons come from repeated practice, review, and support over time rather than isolated short-course exposure."
+            description="Practice, review, and support over time—instead of a course, then silence."
           />
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:gap-5">
             {impactItems.map((item) => (
               <Card key={item} interactive>
                 <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>
               </Card>
             ))}
           </div>
-          <div className="mt-16 pt-6">
+          <div className="mt-12 pt-2 md:mt-14">
             <SectionCTA
               variant="light"
               primary={{ href: "/apply", label: "Apply Now" }}

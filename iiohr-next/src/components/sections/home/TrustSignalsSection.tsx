@@ -1,43 +1,41 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
-import { Card } from "@/components/ui/Card";
 
 const signals = [
   {
-    title: "Faculty-led training",
-    description: "Delivered by practising surgeons with active teaching responsibility.",
+    title: "Faculty-led",
+    description: "Practising surgeons with real teaching responsibility.",
   },
   {
-    title: "Audit-backed improvement",
-    description: "Benchmarking and review inform priorities—progress is measurable.",
+    title: "Measurable improvement",
+    description: "Audit and benchmarks set priorities—not guesswork.",
   },
   {
-    title: "Standards alignment",
-    description: "Explicit clinical standards support governance and consistent quality.",
+    title: "Explicit standards",
+    description: "Governance and milestones everyone can point to.",
   },
-  {
-    title: "Pathway clarity",
-    description: "Staged milestones and clear entry points for you and your mentors.",
-  },
-];
+] as const;
 
-/** Compact governance strip after ecosystem centerpiece — less vertical peak, same substance. */
+/** Quiet strip after the ecosystem centerpiece—no second hero moment. */
 export function TrustSignalsSection() {
   return (
     <SectionShell muted compact>
       <SectionHeading
-        eyebrow="Standards & governance"
+        eyebrow="Governance"
         title="How we uphold quality"
-        description="Faculty credibility, measurable outcomes, and clear standards—accountable, transparent development."
+        description="Credibility, evidence, and standards you can trace."
       />
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-12 xl:grid-cols-4">
+      <ul className="mt-8 grid list-none gap-3 sm:grid-cols-3 sm:gap-4 md:mt-9">
         {signals.map((item) => (
-          <Card key={item.title} interactive className="md:p-6">
-            <h3 className="text-sm font-semibold tracking-tight text-foreground">{item.title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-          </Card>
+          <li
+            key={item.title}
+            className="border-b border-border/25 pb-4 last:border-0 last:pb-0 sm:border-0 sm:pb-0"
+          >
+            <span className="text-sm font-semibold text-foreground">{item.title}</span>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+          </li>
         ))}
-      </div>
+      </ul>
     </SectionShell>
   );
 }

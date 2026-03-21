@@ -1,5 +1,4 @@
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
-import { AudienceSection } from "@/components/sections/home/AudienceSection";
 import { CTASection } from "@/components/sections/home/CTASection";
 import { DifferenceAndCurriculumSection } from "@/components/sections/home/DifferenceAndCurriculumSection";
 import { HeroSection } from "@/components/sections/home/HeroSection";
@@ -7,8 +6,7 @@ import { HumanImpactSection } from "@/components/sections/home/HumanImpactSectio
 import { MentorshipSection } from "@/components/sections/home/MentorshipSection";
 import { PathwayAndStandardsSection } from "@/components/sections/home/PathwayAndStandardsSection";
 import { ProblemSection } from "@/components/sections/home/ProblemSection";
-import { ScienceBridgeSection } from "@/components/sections/home/ScienceBridgeSection";
-import { ScienceModulesSection } from "@/components/sections/home/ScienceModulesSection";
+import { ScienceEducationSection } from "@/components/sections/home/ScienceEducationSection";
 import { TrustSignalsSection } from "@/components/sections/home/TrustSignalsSection";
 import { SectionSpacer } from "@/components/sections/shared/SectionSpacer";
 import { GlobalHairIntelligenceSection } from "@/components/ecosystem";
@@ -27,29 +25,25 @@ export default function HomePage() {
       <JsonLdScript data={webPageJsonLd} />
       <HeroSection />
       <SectionSpacer />
-      {/* Science: one continuous cream band */}
-      <ScienceBridgeSection />
-      <ScienceModulesSection />
+      <ScienceEducationSection />
       <SectionSpacer />
       <ProblemSection />
       <DifferenceAndCurriculumSection />
       <PathwayAndStandardsSection />
       <HumanImpactSection />
       <MentorshipSection />
-      <SectionSpacer />
+      <SectionSpacer airy />
       {/* Single ecosystem centerpiece (platform grid lives here) */}
       <GlobalHairIntelligenceSection
         variant="iiohr"
         id="ecosystem-platforms"
         heading="The Engine Behind the Ecosystem"
-        description="Follicle Intelligence powers a connected system across education, audit, and biological treatment pathways. One engine. System-wide intelligence. Global standardisation."
+        description="One intelligence layer across education, audit, and treatment pathways—shared standards, measurable feedback, global alignment."
         size="hero"
         sectionTone="dark"
         labImage={{ src: HOME_IMAGES.ecosystem.dnaLab, alt: ecosystemLabImage.alt }}
       />
-      <SectionSpacer />
       <TrustSignalsSection />
-      <AudienceSection />
       <CTASection />
     </>
   );

@@ -8,16 +8,15 @@ import { HOME_IMAGES, heroEducationImage } from "@/lib/homeImages";
 const mentorshipItems = [
   {
     title: "Live feedback",
-    description:
-      "Structured input during supervised practical development so you refine technique in real time.",
+    description: "Structured input while you operate under supervision.",
   },
   {
-    title: "Case review & planning",
-    description: "Structured case review and improvement planning with experienced clinicians.",
+    title: "Case review",
+    description: "Planning and debrief with experienced clinicians.",
   },
   {
-    title: "Ongoing mentorship",
-    description: "Longitudinal support beyond initial training so progression is sustained.",
+    title: "Ongoing support",
+    description: "Mentorship that continues after initial training.",
   },
 ];
 
@@ -35,23 +34,22 @@ export function MentorshipSection() {
         <div>
           <SectionHeading
             eyebrow="Mentorship"
-            title="Practical mentorship across the full pathway"
-            description="Clinician-led development: experienced surgeons mentor, review cases, and refine judgment so progression is grounded in real practice, not theory alone."
+            title="Practical mentorship across the pathway"
+            description="Experienced surgeons mentor, review cases, and sharpen judgment in real clinical context."
           />
-          <div className="mt-16 grid gap-6 sm:grid-cols-3 lg:mt-20">
+          <div className="mt-10 grid gap-4 sm:grid-cols-3 md:mt-12 lg:gap-5">
             {mentorshipItems.map((item, index) => (
-              <Card key={item.title} interactive marker={index + 1}>
-                <h3 className="text-base font-semibold tracking-tight text-heading">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+              <Card key={item.title} interactive marker={index + 1} className="md:p-6">
+                <h3 className="text-sm font-semibold tracking-tight text-heading">{item.title}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
               </Card>
             ))}
           </div>
-          <div className="mt-16 pt-6">
+          <div className="mt-12 pt-2 md:mt-14">
             <SectionCTA
               variant="light"
               primary={{ href: "/apply", label: "Apply Now" }}
               secondary={[{ href: "/training-pathways", label: "Explore Pathways" }]}
-              tertiary={[{ href: "/training-pathways", label: "How the pathway works" }]}
             />
           </div>
         </div>

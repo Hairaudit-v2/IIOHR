@@ -36,9 +36,9 @@ export function ProblemSection() {
           <SectionHeading
             eyebrow="Context"
             title="The problem with traditional training"
-            description="Hair restoration training is often too short, too shallow, and too unsupported to build lasting surgical competence and clinical judgment."
+            description="Too short, too shallow, and too little support to build lasting judgment."
           />
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:gap-5">
             {problemItems.map((item) => (
               <Card key={item}>
                 <p className="text-sm font-medium leading-snug tracking-tight text-foreground">

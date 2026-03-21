@@ -7,55 +7,57 @@ const steps = [
   { label: "Observe", description: "Supervised observation in practice." },
   { label: "Perform", description: "Hands-on under direct supervision." },
   { label: "Audit", description: "Outcome review and benchmarking." },
-  { label: "Improve", description: "Refinement and improvement planning." },
-  { label: "Advance", description: "Progression to the next stage." },
+  { label: "Improve", description: "Refinement and planning." },
+  { label: "Advance", description: "Next stage when ready." },
 ] as const;
 
-const principles = [
+/** Supporting strip: interprets the steps without restating progression/audit jargon. */
+const inPractice = [
   {
-    title: "Staged progression",
-    description:
-      "Clear sequencing from observation through supervised performance, audit, and refinement.",
+    title: "Named readiness",
+    body: "You know what “ready for the next stage” means at each step.",
   },
   {
-    title: "Supervised exposure",
-    description: "Live feedback, structured case review, and mentorship that extends beyond initial training.",
+    title: "Supervision that eases",
+    body: "Hands-on responsibility grows as consistency shows in the data.",
   },
   {
-    title: "Standards-based development",
-    description: "Progress anchored to explicit clinical standards with measurable, benchmarked growth.",
+    title: "Evidence in the room",
+    body: "Mentors and surgeons cite standards and audit—not opinion alone.",
   },
 ] as const;
 
-/** Pathway timeline + “at a glance” principles in one continuous light section. */
 export function PathwayAndStandardsSection() {
   return (
     <SectionShell joinPrevious>
       <SectionHeading
         eyebrow="Pathway"
-        title="From learning and observation to sustained excellence"
-        description="Capability builds through sequenced milestones—then shows up as supervised exposure, accountable audit loops, and development aligned to clinical standards."
+        title="Six stages. One thread."
+        description="From foundations through supervised practice, review, and advancement—so capability accumulates instead of resetting after a course."
       />
-      <ol className="mt-14 grid list-none gap-4 sm:grid-cols-2 md:mt-16 lg:grid-cols-3 xl:grid-cols-6">
+      <ol className="mt-10 grid list-none gap-3 sm:grid-cols-2 md:mt-12 lg:grid-cols-3 xl:grid-cols-6">
         {steps.map((step, index) => (
           <li key={step.label}>
-            <Card interactive marker={`0${index + 1}`} as="div">
-              <h3 className="text-xs font-semibold tracking-[0.06em] text-heading uppercase">{step.label}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.description}</p>
+            <Card interactive marker={`0${index + 1}`} as="div" className="md:p-5">
+              <h3 className="text-[11px] font-semibold tracking-[0.08em] text-heading uppercase">{step.label}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{step.description}</p>
             </Card>
           </li>
         ))}
       </ol>
-      <div className="mt-16 md:mt-20">
-        <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">In practice</p>
-        <div className="mt-8 grid gap-5 sm:grid-cols-3 lg:gap-6">
-          {principles.map((item, index) => (
-            <Card key={item.title} interactive marker={index + 1}>
-              <h3 className="text-base font-semibold tracking-tight text-heading">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-            </Card>
+      <div className="mt-10 border-t border-border/20 pt-8 md:mt-12 md:pt-10">
+        <p className="text-sm text-muted-foreground">How that shows up in the programme</p>
+        <ul className="mt-5 grid list-none gap-3 sm:grid-cols-3 sm:gap-4">
+          {inPractice.map((row) => (
+            <li
+              key={row.title}
+              className="rounded-xl border border-border/80 bg-surface/80 px-4 py-3.5 md:px-5 md:py-4"
+            >
+              <span className="text-sm font-semibold text-heading">{row.title}</span>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.body}</p>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </SectionShell>
   );
