@@ -318,28 +318,60 @@ textarea:focus-visible {
   color: inherit;
 }
 
-/* Light sections: gold + blue radials over cream (canonical) */
+/* ============================================================
+   LIGHT EDITORIAL FAMILY — Cream counterpart to dark anchor system
+   Same design philosophy, inverted surface: cream base + dark text
+   ============================================================ */
+
+/* Base light material — all light sections share this foundation:
+   - Cream base (bg-primary)
+   - Very subtle gold radial (6% — half of dark sections for restraint)
+   - Very subtle blue radial (4% — intelligence whisper, not statement) */
 .section-light,
-.section-ivory-depth {
+.section-ivory-depth,
+.section-home-editorial {
   background:
-    radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--gold-primary) 8%, transparent), transparent 40%),
-    radial-gradient(circle at 80% 100%, color-mix(in srgb, var(--accent-blue) 6%, transparent), transparent 40%),
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--gold-primary) 6%, transparent), transparent 46%),
+    radial-gradient(circle at 82% 100%, color-mix(in srgb, var(--accent-blue) 4%, transparent), transparent 46%),
     var(--bg-primary);
 }
+
+/* Light muted — soft variation with depth:
+   - Same radial accents
+   - Soft vertical gradient for depth (not harsh bands) */
 .section-light-muted,
 .section-muted-depth {
   background:
-    radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--gold-primary) 8%, transparent), transparent 40%),
-    radial-gradient(circle at 80% 100%, color-mix(in srgb, var(--accent-blue) 6%, transparent), transparent 40%),
-    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-secondary) 50%, var(--bg-soft) 100%);
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--gold-primary) 6%, transparent), transparent 46%),
+    radial-gradient(circle at 82% 100%, color-mix(in srgb, var(--accent-blue) 4%, transparent), transparent 46%),
+    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-primary) 50%, var(--bg-soft) 100%);
 }
 
-/* Homepage editorial band: one calm cream plane — softer radials, no banded contrast */
-.section-home-editorial {
+/* Light anchor — editorial sections that need presence:
+   - Slightly stronger gold (8%)
+   - Same blue whisper (4%)
+   - Connected to dark anchor through shared accent philosophy */
+.section-light-anchor {
+  position: relative;
   background:
-    radial-gradient(circle at 14% -8%, color-mix(in srgb, var(--gold-primary) 3.5%, transparent), transparent 48%),
-    radial-gradient(circle at 88% 108%, color-mix(in srgb, var(--accent-blue) 2.5%, transparent), transparent 48%),
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--gold-primary) 8%, transparent), transparent 44%),
+    radial-gradient(circle at 82% 100%, color-mix(in srgb, var(--accent-blue) 4%, transparent), transparent 44%),
     var(--bg-primary);
+}
+.section-light-anchor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent 10%,
+    color-mix(in srgb, var(--gold-primary) 20%, transparent) 50%,
+    transparent 90%
+  );
 }
 /* Light rails: no hard dividers — rhythm from padding + background only */
 .section-flow {
@@ -378,6 +410,8 @@ textarea:focus-visible {
   animation: hero-fade-in 0.75s ease-out 0.15s forwards;
   opacity: 0;
 }
+/* Hero text backdrop — aligned with ecosystem glow philosophy:
+   Restrained gold + blue diffusion, text-readable not decorative */
 .hero-text-backdrop {
   position: absolute;
   left: 0;
@@ -388,10 +422,10 @@ textarea:focus-visible {
   height: 140%;
   pointer-events: none;
   background: radial-gradient(
-    ellipse 80% 60% at 30% 50%,
-    color-mix(in srgb, var(--gold-primary) 12%, transparent) 0%,
-    var(--accent-blue-soft) 45%,
-    transparent 70%
+    ellipse 85% 65% at 28% 50%,
+    color-mix(in srgb, var(--gold-primary) 10%, transparent) 0%,
+    color-mix(in srgb, var(--accent-blue) 8%, transparent) 50%,
+    transparent 72%
   );
   z-index: 0;
 }
@@ -468,24 +502,26 @@ textarea:focus-visible {
   pointer-events: none;
 }
 
-/* Dark sections (hero + final CTA + GHN base) — shared radial stack over charcoal */
-.section-dark,
-.section-dark-gradient {
-  background:
-    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 15%, transparent), transparent 40%),
-    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 10%, transparent), transparent 40%),
-    var(--bg-dark);
-}
+/* ============================================================
+   DARK ANCHOR FAMILY — Hero + Ecosystem + Final CTA
+   Shared charcoal material with ecosystem as the source of truth
+   ============================================================ */
 
-/* Same premium charcoal material on hero + final CTA (slightly calmer blue whisper) */
+/* Base dark material: hero + ecosystem + final CTA all share this foundation */
+.section-dark,
+.section-dark-gradient,
 .section-dark-anchor {
   background:
-    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 11%, transparent), transparent 42%),
-    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 9%, transparent), transparent 42%),
+    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 12%, transparent), transparent 44%),
+    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 10%, transparent), transparent 44%),
     var(--bg-dark);
 }
 
-/* Ecosystem band: same dark surface + inset / ambient intelligence glow (tokens only) */
+/* Ecosystem section — the visual anchor:
+   - Inset blue intelligence glow (14%)
+   - Gold accent border top (28%)
+   - Blue accent border bottom (22%)
+   - Ambient blue exterior glow */
 .section-ecosystem {
   position: relative;
   box-shadow:
@@ -512,6 +548,86 @@ textarea:focus-visible {
   );
 }
 .section-ecosystem::after {
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 5%,
+    color-mix(in srgb, var(--accent-blue) 22%, transparent) 50%,
+    transparent 95%
+  );
+}
+
+/* Hero anchor — same material family as ecosystem, stronger presence for entry point:
+   - Slightly stronger blue glow (16% vs 14%)
+   - Same gold top border
+   - Same blue bottom border */
+.section-hero-anchor {
+  position: relative;
+  background:
+    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 12%, transparent), transparent 44%),
+    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 10%, transparent), transparent 44%),
+    var(--bg-dark);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--bg-secondary) 5%, transparent),
+    inset 0 0 140px -40px color-mix(in srgb, var(--accent-blue) 16%, transparent);
+}
+.section-hero-anchor::before,
+.section-hero-anchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  pointer-events: none;
+  z-index: 5;
+}
+.section-hero-anchor::before {
+  top: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 8%,
+    color-mix(in srgb, var(--gold-primary) 28%, transparent) 50%,
+    transparent 92%
+  );
+}
+.section-hero-anchor::after {
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 5%,
+    color-mix(in srgb, var(--accent-blue) 22%, transparent) 50%,
+    transparent 95%
+  );
+}
+
+/* Final CTA anchor — same material family, calmer treatment:
+   - Matches ecosystem exactly for cohesive end-of-journey feel */
+.section-cta-anchor {
+  position: relative;
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--bg-secondary) 5%, transparent),
+    inset 0 0 120px -40px color-mix(in srgb, var(--accent-blue) 14%, transparent),
+    0 0 100px -30px color-mix(in srgb, var(--accent-blue) 12%, transparent);
+}
+.section-cta-anchor::before,
+.section-cta-anchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  pointer-events: none;
+}
+.section-cta-anchor::before {
+  top: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 8%,
+    color-mix(in srgb, var(--gold-primary) 28%, transparent) 50%,
+    transparent 92%
+  );
+}
+.section-cta-anchor::after {
   bottom: 0;
   background: linear-gradient(
     90deg,

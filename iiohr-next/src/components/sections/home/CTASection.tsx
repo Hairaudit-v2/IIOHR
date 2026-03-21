@@ -12,7 +12,7 @@ const segmentLinks = [
 
 export function CTASection() {
   return (
-    <SectionShell dark>
+    <SectionShell dark className="section-cta-anchor">
       <SectionHeading
         eyebrow="Next step"
         title="Begin your institute pathway"
@@ -41,7 +41,7 @@ export function CTASection() {
             <li key={item.label}>
               <Link
                 href={item.href}
-                className="block rounded-xl border border-section-charcoal-border bg-section-charcoal-foreground/10 px-4 py-3.5 text-sm min-h-[44px] sm:min-h-0 text-section-charcoal-foreground transition-colors hover:bg-section-charcoal-foreground/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
+                className="group block rounded-xl border border-section-charcoal-border/70 bg-section-charcoal-foreground/[0.08] px-4 py-3.5 text-sm min-h-[44px] sm:min-h-0 text-section-charcoal-foreground shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] transition-all duration-200 hover:border-section-charcoal-border hover:bg-section-charcoal-foreground/[0.12] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.3),0_0_0_1px_rgba(198,167,94,0.1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
               >
                 <span className="font-medium">{item.label}</span>
                 <span className="mt-1 block text-xs text-section-charcoal-muted">{item.description}</span>
