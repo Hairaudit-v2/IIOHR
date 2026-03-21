@@ -83,7 +83,7 @@ export default function RootLayout({
         <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
           <a
             href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:rounded focus:bg-surface focus:px-3 focus:py-2 focus:text-sm focus:ring-2 focus:ring-[rgba(108,132,168,0.5)]"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:rounded focus:bg-surface focus:px-3 focus:py-2 focus:text-sm focus:ring-2 focus:ring-intel/50"
           >
             Skip to content
           </a>

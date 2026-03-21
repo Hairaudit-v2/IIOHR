@@ -28,7 +28,7 @@ export function MobileNav() {
       <button
         type="button"
         onClick={() => setOpen((current) => !current)}
-        className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md border border-border bg-surface px-3 py-2 text-sm font-medium text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(108,132,168,0.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md border border-border bg-surface px-3 py-2 text-sm font-medium text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         aria-expanded={open}
         aria-controls="mobile-primary-nav"
         aria-label="Toggle mobile navigation"
@@ -39,13 +39,13 @@ export function MobileNav() {
         <>
           <button
             type="button"
-            className="fixed inset-0 z-40 bg-[#0f1b2d]/35 backdrop-blur-[1px]"
+            className="mobile-nav-backdrop fixed inset-0 z-40 backdrop-blur-[1px]"
             aria-label="Close navigation overlay"
             onClick={() => setOpen(false)}
           />
           <nav
             id="mobile-primary-nav"
-            className="absolute right-0 top-full z-50 mt-3 w-[min(90vw,360px)] min-w-0 rounded-lg border border-border bg-background px-4 py-5 shadow-[0_24px_50px_-30px_rgba(20,34,49,0.7)]"
+            className="absolute right-0 top-full z-50 mt-3 w-[min(90vw,360px)] min-w-0 rounded-lg border border-border bg-background px-4 py-5 shadow-token-mobile-panel"
           >
             <p className="text-[11px] tracking-[0.14em] text-muted-foreground uppercase">
               Primary Navigation

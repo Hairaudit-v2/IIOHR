@@ -7,75 +7,124 @@
    ============================================================ */
 
 :root {
-  /* Layer 1 — Dark sections: cool deep charcoal (no brown cast) */
-  --section-charcoal: #15161a;
-  --section-charcoal-foreground: #f6f5f3;
-  --section-charcoal-muted: rgba(246, 245, 243, 0.88);
-  --section-charcoal-border: rgba(246, 245, 243, 0.2);
+  /* LIGHT SURFACES (dominant) */
+  --bg-primary: #f5f1e8;
+  --bg-secondary: #faf7f1;
+  --bg-soft: #eee8dc;
 
-  /* Focus / system link — subtle blue, never dominant */
-  --focus-ring: rgba(108, 132, 168, 0.42);
-  --focus-ring-dark: rgba(140, 165, 198, 0.5);
+  /* DARK SURFACES (feature only) */
+  --bg-dark: #0f141a;
+  --bg-dark-soft: #151b22;
 
-  /* Layer 2 — Light sections: clean cream (majority of site) */
-  --background: #faf9f6;
-  --surface: #fdfcfb;
-  --surface-soft: #f0eeeb;
-  --surface-elevated: #faf9f7;
-  --section-ivory: #fdfcfb;
-  --section-ivory-alt: #f4f3f0;
-  /* Supporting surfaces — neutral warm, minimal brown */
-  --sand: #e6e4e1;
-  --parchment: #f2f0ed;
+  /* TEXT */
+  --text-primary: #1a1917;
+  --text-secondary: #5b554a;
 
-  /* Type — charcoal for clarity, not brown */
-  --foreground: #252320;
-  --muted-foreground: #5c5854;
-  --heading: #252320;
+  /* GOLD (primary accent) */
+  --gold-primary: #c6a75e;
+  --gold-soft: rgba(198, 167, 94, 0.12);
 
-  /* Borders — neutral warm gray */
-  --border: #ddd9d2;
-  --border-soft: #e8e5df;
+  /* BLUE (intelligence accent) */
+  --accent-blue: #4c6fff;
+  --accent-blue-soft: rgba(76, 111, 255, 0.08);
 
-  /* Primary / CTAs — deep charcoal (buttons, key actions) */
-  --primary: #252320;
-  --primary-foreground: #f5f3ef;
+  /* ========== Semantic aliases (components + Tailwind @theme) — derived only from tokens above ========== */
+  --background: var(--bg-primary);
+  --surface: var(--bg-secondary);
+  --surface-soft: var(--bg-soft);
+  --surface-elevated: color-mix(in srgb, var(--bg-secondary) 92%, var(--bg-primary) 8%);
+  --section-ivory: var(--bg-secondary);
+  --section-ivory-alt: var(--bg-soft);
+  --sand: color-mix(in srgb, var(--bg-soft) 88%, var(--text-secondary) 12%);
+  --parchment: var(--bg-secondary);
 
-  /* Layer 3 — Refined gold accents */
-  --accent: #a68b5c;
-  --accent-muted: #b89d72;
-  --accent-gold: #b89d72;
+  --foreground: var(--text-primary);
+  --muted-foreground: var(--text-secondary);
+  --heading: var(--text-primary);
 
-  /* AI-tech accent — very restrained (Follicle Intelligence) */
-  --ai-accent: rgba(120, 150, 180, 0.35);
-  --ai-accent-glow: rgba(140, 170, 200, 0.12);
+  --border: color-mix(in srgb, var(--text-secondary) 16%, var(--bg-soft) 84%);
+  --border-soft: color-mix(in srgb, var(--bg-soft) 70%, var(--bg-secondary) 30%);
 
-  /* ========== Gradient & glow design system (reusable: IIOHR, HairAudit, HLI, FI) ========== */
-  /* Gradients — clinical + premium, no neon/heavy saturation */
-  /* Light rails — calmer wash; gold only a breath */
-  --gradient-primary: linear-gradient(
-    165deg,
-    rgba(218, 210, 196, 0.2) 0%,
-    rgba(253, 252, 251, 0.97) 48%,
-    var(--section-ivory) 100%
-  );
-  /* Standard dark (hero + final CTA): deep but slightly open vs ecosystem */
-  --gradient-dark: linear-gradient(180deg, #1a1b22 0%, #15161c 42%, #0f1016 100%);
-  /* Ecosystem only — deepest plane + system-linked depth */
-  --gradient-ecosystem: linear-gradient(180deg, #13141b 0%, #0c0d12 48%, #050609 100%);
-  --gradient-accent: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(166, 139, 92, 0.12), transparent 60%);
+  --primary: var(--text-primary);
+  --primary-foreground: var(--bg-secondary);
 
-  /* Glow — subtle by default; strong only in ecosystem */
-  --glow-soft: 0 2px 14px rgba(38, 36, 34, 0.05), 0 1px 4px rgba(38, 36, 34, 0.035);
-  --glow-soft-accent: 0 4px 20px -4px rgba(166, 139, 92, 0.15), 0 0 0 1px rgba(166, 139, 92, 0.08);
-  --glow-strong: 0 0 0 1px rgba(166, 139, 92, 0.12), 0 12px 40px -12px rgba(166, 139, 92, 0.2), 0 8px 24px -8px rgba(0, 0, 0, 0.25);
+  --accent: var(--gold-primary);
+  --accent-muted: color-mix(in srgb, var(--gold-primary) 85%, var(--bg-secondary) 15%);
+  --accent-gold: var(--gold-primary);
 
-  /* Surfaces — semantic names for reuse */
+  /* Dark feature sections (hero, GHN, final CTA) */
+  --section-charcoal: var(--bg-dark-soft);
+  --section-charcoal-foreground: var(--bg-secondary);
+  --section-charcoal-muted: color-mix(in srgb, var(--bg-secondary) 88%, transparent);
+  --section-charcoal-border: color-mix(in srgb, var(--bg-secondary) 22%, transparent);
+
+  --focus-ring: color-mix(in srgb, var(--accent-blue) 40%, transparent);
+  --focus-ring-dark: color-mix(in srgb, var(--accent-blue) 55%, var(--bg-secondary) 45%);
+
+  --ai-accent: color-mix(in srgb, var(--accent-blue) 30%, transparent);
+  --ai-accent-glow: var(--accent-blue-soft);
+
+  --gradient-accent: radial-gradient(ellipse 100% 80% at 50% 0%, var(--gold-soft), transparent 62%);
+
+  /* Shadows — only token-derived mixes */
+  --shadow-depth-28: color-mix(in srgb, var(--bg-dark) 28%, transparent);
+  --shadow-text-04: color-mix(in srgb, var(--text-primary) 4%, transparent);
+  --shadow-text-05: color-mix(in srgb, var(--text-primary) 5%, transparent);
+  --shadow-text-06: color-mix(in srgb, var(--text-primary) 6%, transparent);
+  --shadow-text-08: color-mix(in srgb, var(--text-primary) 8%, transparent);
+  --shadow-text-12: color-mix(in srgb, var(--text-primary) 12%, transparent);
+  --shadow-dark-08: color-mix(in srgb, var(--bg-dark) 8%, transparent);
+  --shadow-dark-15: color-mix(in srgb, var(--bg-dark) 15%, transparent);
+  --shadow-dark-20: color-mix(in srgb, var(--bg-dark) 20%, transparent);
+  --shadow-dark-22: color-mix(in srgb, var(--bg-dark) 22%, transparent);
+  --shadow-dark-25: color-mix(in srgb, var(--bg-dark) 25%, transparent);
+  --shadow-dark-28: color-mix(in srgb, var(--bg-dark) 28%, transparent);
+  --shadow-dark-38: color-mix(in srgb, var(--bg-dark) 38%, transparent);
+  --shadow-dark-40: color-mix(in srgb, var(--bg-dark) 40%, transparent);
+  --shadow-dark-45: color-mix(in srgb, var(--bg-dark) 45%, transparent);
+  --shadow-dark-50: color-mix(in srgb, var(--bg-dark) 50%, transparent);
+  --shadow-dark-55: color-mix(in srgb, var(--bg-dark) 55%, transparent);
+  --shadow-dark-70: color-mix(in srgb, var(--bg-dark) 70%, transparent);
+  --shadow-gold-08: color-mix(in srgb, var(--gold-primary) 8%, transparent);
+  --shadow-gold-40: color-mix(in srgb, var(--gold-primary) 40%, transparent);
+  --shadow-blue-07: color-mix(in srgb, var(--accent-blue) 7%, transparent);
+  --shadow-blue-14: color-mix(in srgb, var(--accent-blue) 14%, transparent);
+
+  --glow-soft: 0 2px 14px color-mix(in srgb, var(--text-primary) 6%, transparent),
+    0 1px 4px var(--shadow-text-04);
+  --glow-soft-accent: 0 4px 20px -4px color-mix(in srgb, var(--gold-primary) 22%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--gold-primary) 10%, transparent);
+  --glow-strong: 0 0 0 1px color-mix(in srgb, var(--gold-primary) 14%, transparent),
+    0 12px 40px -12px color-mix(in srgb, var(--gold-primary) 18%, transparent), 0 8px 24px -8px var(--shadow-depth-28);
+
+  --shadow-card: 0 1px 4px 0 var(--shadow-text-04), 0 2px 10px -2px var(--shadow-text-05);
+  --shadow-card-dark-rest: 0 2px 14px var(--shadow-dark-22);
+  --shadow-card-hover-light: 0 14px 36px -10px var(--shadow-text-08), 0 6px 16px -6px var(--shadow-blue-07),
+    0 0 0 1px var(--shadow-gold-08);
+  --shadow-card-hover-dark: 0 14px 36px -10px var(--shadow-dark-38), 0 6px 18px -8px var(--shadow-dark-22),
+    0 0 0 1px var(--shadow-blue-14);
+  --shadow-btn-light: 0 1px 3px 0 var(--shadow-text-12);
+  --shadow-btn-dark: 0 1px 3px 0 var(--shadow-dark-20);
+  --shadow-img: 0 2px 8px var(--shadow-text-08), 0 1px 3px var(--shadow-text-06);
+  --shadow-img-hover: 0 12px 32px var(--shadow-text-12), 0 4px 12px var(--shadow-text-08);
+  --shadow-img-hover-accent: 0 12px 32px var(--shadow-text-12), 0 0 0 1px var(--shadow-gold-40),
+    0 0 24px color-mix(in srgb, var(--gold-primary) 12%, transparent);
+  --shadow-ghn-platform: 0 2px 16px var(--shadow-dark-28), 0 0 0 1px var(--section-charcoal-border),
+    0 0 40px -12px color-mix(in srgb, var(--accent-blue) 14%, transparent);
+  --shadow-ghn-diagram: 0 24px 64px var(--shadow-dark-50);
+  --shadow-mobile-panel: 0 24px 50px -30px var(--shadow-dark-70);
+  --shadow-node-hover: 0 6px 20px -8px var(--shadow-dark-15), 0 2px 8px var(--shadow-dark-08);
+  --shadow-node-active-1: 0 12px 32px -12px var(--shadow-dark-40), 0 4px 16px -8px var(--shadow-dark-20);
+  --shadow-node-active-2: 0 16px 40px -12px var(--shadow-dark-45), 0 6px 20px -8px var(--shadow-dark-25);
+
   --surface-light: var(--section-ivory);
   --surface-dark: var(--section-charcoal);
 }
 
 @theme inline {
+  /* Shorthand utilities: text-gold, bg-intel/10, ring-intel, etc. */
+  --color-gold: var(--gold-primary);
+  --color-intel: var(--accent-blue);
   --color-background: var(--background);
   --color-surface: var(--surface);
   --color-surface-soft: var(--surface-soft);
@@ -100,34 +149,31 @@
   --color-section-ivory-alt: var(--section-ivory-alt);
   --color-surface-light: var(--surface-light);
   --color-surface-dark: var(--surface-dark);
+  --color-bg-dark: var(--bg-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #17181a;
-    --surface: #1e1f21;
-    --surface-soft: #242528;
-    --surface-elevated: #2a2b2e;
-    --sand: #242528;
-    --parchment: #1e1f21;
-    --foreground: #eae9e6;
-    --muted-foreground: #9c9a96;
-    --heading: #eae9e6;
-    --border: #36373a;
-    --border-soft: #2e2f32;
-    --primary: #e0dcc8;
-    --primary-foreground: #17181a;
-    --accent: #c4a876;
-    --accent-muted: #b89d72;
-    --section-charcoal: #141518;
-    --section-charcoal-foreground: #f0eeeb;
-    --section-charcoal-muted: rgba(240, 238, 235, 0.88);
-    --section-charcoal-border: rgba(240, 238, 235, 0.2);
-    --section-ivory: #1e1f21;
-    --section-ivory-alt: #242528;
-    /* Gradient & glow — same tokens, work on dark background */
+    --background: var(--bg-dark);
+    --surface: var(--bg-dark-soft);
+    --surface-soft: var(--bg-dark);
+    --surface-elevated: color-mix(in srgb, var(--bg-dark-soft) 92%, var(--bg-secondary) 8%);
+    --section-ivory: var(--bg-dark-soft);
+    --section-ivory-alt: var(--bg-dark);
+    --sand: var(--surface-soft);
+    --parchment: var(--surface);
+    --foreground: var(--bg-secondary);
+    --muted-foreground: color-mix(in srgb, var(--bg-secondary) 65%, var(--text-secondary) 35%);
+    --heading: var(--bg-secondary);
+    --border: color-mix(in srgb, var(--bg-secondary) 12%, var(--bg-dark));
+    --border-soft: color-mix(in srgb, var(--bg-secondary) 8%, var(--bg-dark-soft));
+    --primary: var(--gold-primary);
+    --primary-foreground: var(--bg-dark);
+    --accent: var(--gold-primary);
+    --accent-muted: color-mix(in srgb, var(--gold-primary) 80%, var(--bg-secondary) 20%);
+    --accent-gold: var(--gold-primary);
     --surface-light: var(--section-ivory);
     --surface-dark: var(--section-charcoal);
   }
@@ -187,12 +233,12 @@ textarea {
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  border-color: color-mix(in oklab, rgb(120, 145, 175) 38%, var(--border) 62%);
-  box-shadow: 0 0 0 1px color-mix(in oklab, rgb(120, 145, 175) 25%, transparent);
+  border-color: color-mix(in srgb, var(--accent-blue) 35%, var(--border) 65%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent-blue) 22%, transparent);
 }
 
 ::selection {
-  background: color-mix(in oklab, var(--accent) 28%, transparent);
+  background: color-mix(in srgb, var(--gold-primary) 30%, transparent);
 }
 
 /* Dark section (charcoal): all text must be light for readability */
@@ -210,7 +256,7 @@ textarea:focus-visible {
   border-color: var(--section-charcoal-border);
 }
 [data-section-tone="dark"] .bg-surface {
-  background-color: rgba(246, 245, 243, 0.06);
+  background-color: color-mix(in srgb, var(--bg-secondary) 6%, transparent);
 }
 /* Ensure paragraphs and list text in dark sections are readable when they inherit or use generic classes */
 [data-section-tone="dark"] p,
@@ -218,18 +264,20 @@ textarea:focus-visible {
   color: inherit;
 }
 
-/* Light sections: unified cream — minimal blue (ecosystem owns that story) */
+/* Light sections: gold + blue radials over cream (canonical) */
+.section-light,
 .section-ivory-depth {
   background:
-    radial-gradient(ellipse 95% 55% at 50% -12%, rgba(120, 150, 185, 0.022), transparent 60%),
-    radial-gradient(ellipse 85% 42% at 100% 55%, rgba(166, 139, 92, 0.028), transparent 58%),
-    var(--gradient-primary);
+    radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--gold-primary) 8%, transparent), transparent 40%),
+    radial-gradient(circle at 80% 100%, color-mix(in srgb, var(--accent-blue) 6%, transparent), transparent 40%),
+    var(--bg-primary);
 }
-/* Muted light: soft tone shift, flows into ivory */
+.section-light-muted,
 .section-muted-depth {
   background:
-    radial-gradient(ellipse 72% 32% at 0% 82%, rgba(166, 139, 92, 0.022), transparent 54%),
-    linear-gradient(180deg, var(--section-ivory-alt) 0%, var(--section-ivory) 48%, var(--section-ivory-alt) 100%);
+    radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--gold-primary) 8%, transparent), transparent 40%),
+    radial-gradient(circle at 80% 100%, color-mix(in srgb, var(--accent-blue) 6%, transparent), transparent 40%),
+    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-secondary) 50%, var(--bg-soft) 100%);
 }
 /* Light rails: no hard dividers — rhythm from padding + background only */
 .section-flow {
@@ -240,16 +288,16 @@ textarea:focus-visible {
   border-bottom: 1px solid color-mix(in oklab, var(--border) 35%, transparent);
 }
 .section-sep-dark {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid color-mix(in srgb, var(--bg-secondary) 5%, transparent);
 }
 /* Breathing room between blocks (no border, soft wash) */
 .section-breathe {
   border: none;
   background: linear-gradient(
     180deg,
-    color-mix(in oklab, var(--section-ivory) 92%, var(--accent) 8%) 0%,
+    color-mix(in srgb, var(--section-ivory) 90%, var(--gold-primary) 10%) 0%,
     var(--section-ivory) 50%,
-    color-mix(in oklab, var(--section-ivory) 94%, var(--ai-accent-glow) 6%) 100%
+    color-mix(in srgb, var(--section-ivory) 94%, var(--accent-blue) 6%) 100%
   );
 }
 
@@ -279,8 +327,8 @@ textarea:focus-visible {
   pointer-events: none;
   background: radial-gradient(
     ellipse 80% 60% at 30% 50%,
-    rgba(166, 139, 92, 0.07) 0%,
-    rgba(100, 125, 150, 0.03) 45%,
+    color-mix(in srgb, var(--gold-primary) 12%, transparent) 0%,
+    var(--accent-blue-soft) 45%,
     transparent 70%
   );
   z-index: 0;
@@ -289,10 +337,16 @@ textarea:focus-visible {
 /* ========== Gradient & glow utilities (design system) ========== */
 /* Background gradients */
 .bg-gradient-primary {
-  background-image: var(--gradient-primary);
+  background:
+    radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--gold-primary) 8%, transparent), transparent 40%),
+    radial-gradient(circle at 80% 100%, color-mix(in srgb, var(--accent-blue) 6%, transparent), transparent 40%),
+    var(--bg-primary);
 }
 .bg-gradient-dark {
-  background-image: var(--gradient-dark);
+  background:
+    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 15%, transparent), transparent 40%),
+    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 10%, transparent), transparent 40%),
+    var(--bg-dark);
 }
 .bg-gradient-accent {
   background-image: var(--gradient-accent);
@@ -352,29 +406,25 @@ textarea:focus-visible {
   pointer-events: none;
 }
 
-/* Dark sections (hero + final CTA): charcoal, restrained gold, hint of blue */
+/* Dark sections (hero + final CTA + GHN base) — shared radial stack over charcoal */
+.section-dark,
 .section-dark-gradient {
   background:
-    radial-gradient(ellipse 82% 42% at 50% -8%, rgba(95, 125, 160, 0.055), transparent 56%),
-    radial-gradient(ellipse 68% 32% at 85% 102%, rgba(166, 139, 92, 0.04), transparent 52%),
-    var(--gradient-dark);
+    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-blue) 15%, transparent), transparent 40%),
+    radial-gradient(circle at 50% 100%, color-mix(in srgb, var(--gold-primary) 10%, transparent), transparent 40%),
+    var(--bg-dark);
 }
 
-/* Ecosystem — most distinct dark plane: deeper base, stronger system glow (blue + gold, still restrained) */
-.ghn-section-dark {
+/* Ecosystem band: same dark surface + inset / ambient intelligence glow (tokens only) */
+.section-ecosystem {
   position: relative;
-  background:
-    radial-gradient(ellipse 100% 65% at 50% -5%, rgba(88, 118, 158, 0.14), transparent 58%),
-    radial-gradient(ellipse 75% 48% at 100% 100%, rgba(166, 139, 92, 0.075), transparent 56%),
-    radial-gradient(ellipse 55% 38% at 0% 95%, rgba(105, 130, 165, 0.08), transparent 52%),
-    var(--gradient-ecosystem);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.045),
-    inset 0 0 120px -40px rgba(75, 105, 145, 0.12),
-    0 0 100px -30px rgba(60, 95, 140, 0.14);
+    inset 0 1px 0 color-mix(in srgb, var(--bg-secondary) 5%, transparent),
+    inset 0 0 120px -40px color-mix(in srgb, var(--accent-blue) 14%, transparent),
+    0 0 100px -30px color-mix(in srgb, var(--accent-blue) 12%, transparent);
 }
-.ghn-section-dark::before,
-.ghn-section-dark::after {
+.section-ecosystem::before,
+.section-ecosystem::after {
   content: "";
   position: absolute;
   left: 0;
@@ -382,13 +432,23 @@ textarea:focus-visible {
   height: 1px;
   pointer-events: none;
 }
-.ghn-section-dark::before {
+.section-ecosystem::before {
   top: 0;
-  background: linear-gradient(90deg, transparent 8%, rgba(166, 139, 92, 0.28) 50%, transparent 92%);
+  background: linear-gradient(
+    90deg,
+    transparent 8%,
+    color-mix(in srgb, var(--gold-primary) 28%, transparent) 50%,
+    transparent 92%
+  );
 }
-.ghn-section-dark::after {
+.section-ecosystem::after {
   bottom: 0;
-  background: linear-gradient(90deg, transparent 5%, rgba(115, 145, 180, 0.22) 50%, transparent 95%);
+  background: linear-gradient(
+    90deg,
+    transparent 5%,
+    color-mix(in srgb, var(--accent-blue) 22%, transparent) 50%,
+    transparent 95%
+  );
 }
 
 /* Centerpiece: faint animated light diffusion (enhance, don’t distract) */
@@ -408,8 +468,8 @@ textarea:focus-visible {
   pointer-events: none;
   background: radial-gradient(
     ellipse 100% 82% at 50% 38%,
-    rgba(166, 139, 92, 0.065) 0%,
-    rgba(95, 125, 165, 0.055) 38%,
+    color-mix(in srgb, var(--gold-primary) 10%, transparent) 0%,
+    color-mix(in srgb, var(--accent-blue) 10%, transparent) 38%,
     transparent 72%
   );
   animation: ghn-diffusion 14s ease-in-out infinite;
@@ -429,8 +489,8 @@ textarea:focus-visible {
   transform: translate(-50%, -50%);
   background: radial-gradient(
     ellipse 72% 62% at 50% 50%,
-    rgba(166, 139, 92, 0.07) 0%,
-    rgba(92, 122, 165, 0.07) 42%,
+    color-mix(in srgb, var(--gold-primary) 10%, transparent) 0%,
+    color-mix(in srgb, var(--accent-blue) 10%, transparent) 42%,
     transparent 68%
   );
   pointer-events: none;
@@ -438,19 +498,16 @@ textarea:focus-visible {
   border-radius: 50%;
 }
 
-/* Centerpiece heading: subtle emphasis (dark section only) */
-.ghn-section-dark .ghn-centerpiece-heading [class*="text-3xl"],
-.ghn-section-dark .ghn-centerpiece-heading h2 {
-  text-shadow: 0 0 40px rgba(166, 139, 92, 0.08);
+/* Centerpiece heading: subtle emphasis (dark ecosystem section only) */
+.section-ecosystem .ghn-centerpiece-heading [class*="text-3xl"],
+.section-ecosystem .ghn-centerpiece-heading h2 {
+  text-shadow: 0 0 40px color-mix(in srgb, var(--gold-primary) 12%, transparent);
   letter-spacing: -0.02em;
 }
 
 /* Supporting platform cards: ecosystem-linked edge glow (dark GHN only) */
-.ghn-section-dark .ghn-platform-cards .rounded-xl {
-  box-shadow:
-    0 2px 16px rgba(0, 0, 0, 0.28),
-    0 0 0 1px rgba(246, 245, 243, 0.09),
-    0 0 40px -12px rgba(75, 110, 155, 0.12);
+.section-ecosystem .ghn-platform-cards .rounded-xl {
+  box-shadow: var(--shadow-ghn-platform);
 }
 
 /* Global Hair Intelligence Network — premium depth, restrained glow */
@@ -468,7 +525,7 @@ textarea:focus-visible {
   transform: translate(-50%, -50%);
   background: radial-gradient(
     ellipse 80% 70% at 50% 50%,
-    rgba(166, 139, 92, 0.04),
+    color-mix(in srgb, var(--gold-primary) 8%, transparent),
     transparent 65%
   );
   pointer-events: none;
@@ -477,8 +534,8 @@ textarea:focus-visible {
 .ghn-network[data-theme="dark"]::before {
   background: radial-gradient(
     ellipse 85% 75% at 50% 50%,
-    rgba(166, 139, 92, 0.08),
-    rgba(100, 125, 150, 0.04) 45%,
+    color-mix(in srgb, var(--gold-primary) 10%, transparent),
+    color-mix(in srgb, var(--accent-blue) 8%, transparent) 45%,
     transparent 70%
   );
 }
@@ -493,11 +550,10 @@ textarea:focus-visible {
 }
 .ghn-node-card--active {
   border-width: 1.5px;
-  border-color: rgba(166, 139, 92, 0.6);
+  border-color: color-mix(in srgb, var(--gold-primary) 55%, transparent);
   box-shadow:
-    0 0 0 1px rgba(166, 139, 92, 0.15),
-    0 12px 32px -12px rgba(0, 0, 0, 0.4),
-    0 4px 16px -8px rgba(0, 0, 0, 0.2);
+    0 0 0 1px color-mix(in srgb, var(--gold-primary) 18%, transparent),
+    var(--shadow-node-active-1);
 }
 .ghn-node-card--active::before {
   content: "";
@@ -506,7 +562,7 @@ textarea:focus-visible {
   border-radius: inherit;
   background: radial-gradient(
     ellipse 100% 80% at 50% 0%,
-    rgba(166, 139, 92, 0.1),
+    color-mix(in srgb, var(--gold-primary) 14%, transparent),
     transparent 55%
   );
   pointer-events: none;
@@ -515,13 +571,12 @@ textarea:focus-visible {
 .ghn-node-card--active:hover {
   transform: scale(1.02);
   box-shadow:
-    0 0 0 1px rgba(166, 139, 92, 0.25),
-    0 16px 40px -12px rgba(0, 0, 0, 0.45),
-    0 6px 20px -8px rgba(0, 0, 0, 0.25);
+    0 0 0 1px color-mix(in srgb, var(--gold-primary) 28%, transparent),
+    var(--shadow-node-active-2);
 }
 .ghn-node-card:not(.ghn-node-card--active):hover {
-  border-color: rgba(166, 139, 92, 0.35);
-  box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-color: color-mix(in srgb, var(--gold-primary) 32%, transparent);
+  box-shadow: var(--shadow-node-hover);
 }
 
 .ghn-network-title {
@@ -569,5 +624,43 @@ textarea:focus-visible {
 /* Hero panel on dark section: subtle border to match charcoal */
 [data-section-tone="dark"] .img-panel {
   border-color: var(--section-charcoal-border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px var(--shadow-dark-20);
+}
+
+/* Token-based utilities for components (no inline hex/rgba in TSX) */
+.shadow-token-card {
+  box-shadow: var(--shadow-card);
+}
+.shadow-token-card-dark {
+  box-shadow: var(--shadow-card-dark-rest);
+}
+.shadow-token-card-hover-light {
+  box-shadow: var(--shadow-card-hover-light);
+}
+.shadow-token-card-hover-dark {
+  box-shadow: var(--shadow-card-hover-dark);
+}
+.shadow-token-btn-light {
+  box-shadow: var(--shadow-btn-light);
+}
+.shadow-token-btn-dark {
+  box-shadow: var(--shadow-btn-dark);
+}
+.shadow-token-img {
+  box-shadow: var(--shadow-img);
+}
+.shadow-token-img-hover {
+  box-shadow: var(--shadow-img-hover);
+}
+.shadow-token-img-accent-hover {
+  box-shadow: var(--shadow-img-hover-accent);
+}
+.shadow-token-ghn-diagram {
+  box-shadow: var(--shadow-ghn-diagram);
+}
+.shadow-token-mobile-panel {
+  box-shadow: var(--shadow-mobile-panel);
+}
+.mobile-nav-backdrop {
+  background-color: color-mix(in srgb, var(--bg-dark) 35%, transparent);
 }

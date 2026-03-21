@@ -63,8 +63,8 @@ export function GlobalHairIntelligenceSection({
 }: GlobalHairIntelligenceSectionProps) {
   const isDark = sectionTone === "dark";
   const sectionClass = isDark
-    ? "relative z-10 scroll-mt-24 ghn-section-dark section-flow"
-    : "relative z-10 scroll-mt-20 section-muted-depth section-flow";
+    ? "relative z-10 scroll-mt-24 section-dark section-ecosystem section-flow"
+    : "relative z-10 scroll-mt-20 section-light-muted section-flow";
   const isHeroCenterpiece = isDark && size === "hero";
 
   return (
@@ -117,7 +117,7 @@ export function GlobalHairIntelligenceSection({
             <div
               className={
                 isDark
-                  ? "ghn-diagram-glow relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/50 bg-gradient-to-b from-section-charcoal-foreground/[0.08] to-section-charcoal/60 p-5 sm:p-6 md:p-8 shadow-[0_24px_64px_rgba(0,0,0,0.5)] backdrop-blur-sm"
+                  ? "ghn-diagram-glow relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/50 bg-gradient-to-b from-section-charcoal-foreground/[0.08] to-section-charcoal/60 p-5 sm:p-6 md:p-8 shadow-token-ghn-diagram backdrop-blur-sm"
                   : ""
               }
             >
@@ -162,8 +162,8 @@ export function GlobalHairIntelligenceSection({
               const cardClass =
                 "block h-full cursor-pointer rounded-lg no-underline text-foreground hover:text-foreground focus-visible:outline focus-visible:ring-2 focus-visible:ring-offset-2 " +
                 (isDark
-                  ? "focus-visible:ring-[rgba(140,165,198,0.52)] focus-visible:ring-offset-section-charcoal"
-                  : "focus-visible:ring-[rgba(108,132,168,0.45)] focus-visible:ring-offset-background");
+                  ? "focus-visible:ring-intel/50 focus-visible:ring-offset-section-charcoal"
+                  : "focus-visible:ring-intel/45 focus-visible:ring-offset-background");
               return (
                 <Card key={platform.id} interactive className="h-full min-w-0">
                   {platform.isInternal ? (

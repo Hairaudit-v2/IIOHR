@@ -75,7 +75,7 @@ export function ScienceEducationSection() {
             <Link
               key={mod.title}
               href="/hair-loss-science"
-              className="group block h-full rounded-lg focus-visible:outline focus-visible:ring-2 focus-visible:ring-[rgba(108,132,168,0.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="group block h-full rounded-lg focus-visible:outline focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               <Card interactive className="h-full">
                 <ImageWrapper

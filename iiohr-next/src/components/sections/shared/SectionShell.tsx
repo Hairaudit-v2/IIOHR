@@ -29,10 +29,10 @@ export function SectionShell({
       ? "pt-12 pb-28 md:pt-16 md:pb-32 lg:pt-20 lg:pb-36"
       : "py-28 md:py-32 lg:py-36";
   const tone = dark
-    ? "section-dark-gradient text-section-charcoal-foreground section-flow"
+    ? "section-dark text-section-charcoal-foreground section-flow"
     : muted
-      ? "section-muted-depth text-foreground section-flow"
-      : "section-ivory-depth text-foreground section-flow";
+      ? "section-light-muted text-foreground section-flow"
+      : "section-light text-foreground section-flow";
 
   return (
     <section

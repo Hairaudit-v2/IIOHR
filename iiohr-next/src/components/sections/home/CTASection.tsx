@@ -40,7 +40,7 @@ export function CTASection() {
             <li key={item.label}>
               <Link
                 href={item.href}
-                className="block rounded-xl border border-section-charcoal-border bg-section-charcoal-foreground/10 px-4 py-3.5 text-sm min-h-[44px] sm:min-h-0 text-section-charcoal-foreground transition-colors hover:bg-section-charcoal-foreground/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(140,165,198,0.5)] focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
+                className="block rounded-xl border border-section-charcoal-border bg-section-charcoal-foreground/10 px-4 py-3.5 text-sm min-h-[44px] sm:min-h-0 text-section-charcoal-foreground transition-colors hover:bg-section-charcoal-foreground/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
               >
                 <span className="font-medium">{item.label}</span>
                 <span className="mt-1 block text-xs text-section-charcoal-muted">{item.description}</span>

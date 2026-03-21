@@ -29,7 +29,7 @@ export function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[75vh] w-full overflow-hidden bg-gradient-dark section-flow"
+      className="relative min-h-[75vh] w-full overflow-hidden section-dark section-flow"
       aria-label="Hero"
       data-section-tone="dark"
     >

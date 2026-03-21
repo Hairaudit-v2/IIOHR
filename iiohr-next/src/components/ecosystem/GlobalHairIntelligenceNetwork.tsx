@@ -68,8 +68,8 @@ function NodeCard({
     const linkClass =
       "ghn-node-card ghn-node-card--linked group block cursor-pointer rounded-lg no-underline text-foreground hover:text-foreground focus-visible:outline focus-visible:ring-2 focus-visible:ring-offset-2 " +
       (isDark
-        ? "focus-visible:ring-[rgba(140,165,198,0.52)] focus-visible:ring-offset-section-charcoal"
-        : "focus-visible:ring-[rgba(108,132,168,0.45)] focus-visible:ring-offset-background");
+        ? "focus-visible:ring-intel/50 focus-visible:ring-offset-section-charcoal"
+        : "focus-visible:ring-intel/45 focus-visible:ring-offset-background");
     return (
       <div
         className={`ghn-node-card rounded-lg ${active ? "ghn-node-card--active" : ""}`}

@@ -114,7 +114,7 @@ export default function TermsOfUsePage() {
         <div className="mt-14 border-t border-border pt-6">
           <Link
             href="/"
-            className="text-sm font-medium text-primary hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(108,132,168,0.45)] focus-visible:ring-offset-2"
+            className="text-sm font-medium text-primary hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2"
           >
             ← Back to home
           </Link>

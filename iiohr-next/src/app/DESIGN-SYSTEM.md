@@ -8,21 +8,54 @@ Unified visual identity for depth and polish across IIOHR, HairAudit, HLI, and F
 
 Defined in `globals.css` under `:root`.
 
-### Gradients
+### Canonical palette (source of truth)
+
+| Token | Role |
+|-------|------|
+| `--bg-primary` | Dominant page background `#F5F1E8` |
+| `--bg-secondary` | Panels / ivory surfaces `#FAF7F1` |
+| `--bg-soft` | Muted band / alt cream `#EEE8DC` |
+| `--bg-dark` | Feature dark base `#0F141A` |
+| `--bg-dark-soft` | Dark UI / cards on charcoal `#151B22` |
+| `--text-primary` | Body & headings ink `#1A1917` |
+| `--text-secondary` | Muted copy `#5B554A` |
+| `--gold-primary` | Primary accent / CTAs `#C6A75E` |
+| `--gold-soft` | Washes, selection, rails |
+| `--accent-blue` | Intelligence / focus `#4C6FFF` |
+| `--accent-blue-soft` | Light-section blue whisper |
+
+Semantic aliases (`--background`, `--surface`, `--accent`, `--section-charcoal`, etc.) map to these so existing components keep working. Tailwind: `text-gold`, `bg-intel`, `ring-intel/45`, `bg-bg-dark` (via `--color-bg-dark`), etc.
+
+**Strict colour rule:** Raw hex and `rgba()` appear **only** in the canonical `:root` block above (`--gold-soft` / `--accent-blue-soft` use the prescribed rgba forms). Everywhere else use variables, `color-mix` (in CSS), or theme utilities—**no inline hex/rgba in TSX**.
+
+### Section surfaces (canonical)
+
+| Class | Effect |
+|-------|--------|
+| **`section-light`** | Gold + blue radial wash over `--bg-primary` (default light band). Alias: `section-ivory-depth`. |
+| **`section-light-muted`** | Same radials over soft→secondary vertical blend. Alias: `section-muted-depth`. |
+| **`section-dark`** | Shared blue/gold radials over `--bg-dark` (hero, final CTA, GHN base). Alias: `section-dark-gradient`; `bg-gradient-dark` matches this stack. |
+| **`section-ecosystem`** | **Adds** inset/ambient blue glow + gold/blue hairlines on top of a parent that already has **`section-dark`** (Global Hair Intelligence band only). |
+
+### Accent overlay
 
 | Token | Value | Use |
 |-------|--------|-----|
-| `--gradient-primary` | Calm gold wash → ivory (165deg) | Most light sections (`section-ivory-depth`) |
-| `--gradient-dark` | Cool charcoal stack (180deg) | **Hero + final CTA** (`section-dark-gradient`) — deep but slightly open |
-| `--gradient-ecosystem` | Deeper cool charcoal (180deg) | **Global Hair Intelligence only** (`ghn-section-dark`) — most distinct dark |
-| `--gradient-accent` | Radial gold glow fade (ellipse, top) | Hero text panels, accent overlays |
+| `--gradient-accent` | Radial gold glow fade (ellipse, top) | Hero overlay, accent washes (`bg-gradient-accent`) |
+
+### Legacy gradient utilities (aliases)
+
+| Class | Notes |
+|-------|--------|
+| **`bg-gradient-primary`** | Same visual stack as **`section-light`** (radials + `--bg-primary`). Prefer `section-light` on `<section>`. |
+| **`bg-gradient-dark`** | Same as **`section-dark`**. Prefer `section-dark` on `<section>`. |
 
 ### Focus & system link (subtle blue)
 
 | Token | Use |
 |-------|-----|
-| `--focus-ring` | Default `:focus-visible` outline; buttons/links use matching `ring-[rgba(108,132,168,…)]` |
-| `--focus-ring-dark` | Reference for dark-section focus (slightly brighter blue-gray) |
+| `--focus-ring` | From `--accent-blue` (muted); use `ring-intel/45` on buttons where applicable |
+| `--focus-ring-dark` | Brighter mix for dark-section focus offsets |
 
 ### Glow
 
@@ -46,8 +79,9 @@ Defined in `globals.css` under `:root`.
 
 ### Background gradients
 
-- **`bg-gradient-primary`** — Soft gold → ivory. Use on hero side panels, feature strips, or full-section depth on light pages.
-- **`bg-gradient-dark`** — Charcoal → near black. Use as base for dark sections or overlays.
+- **`section-light`** / **`section-light-muted`** — Preferred for full-width light sections.
+- **`section-dark`** — Preferred for hero, GHN (with **`section-ecosystem`**), and final CTA.
+- **`bg-gradient-primary`** / **`bg-gradient-dark`** — Same stacks as `section-light` / `section-dark` when you need a background utility on a non-section wrapper.
 - **`bg-gradient-accent`** — Subtle radial gold from top. Overlay on panels or above dark base for accent.
 
 ### Surfaces
@@ -67,25 +101,42 @@ Defined in `globals.css` under `:root`.
 - **`surface-elevated-panel`** — `surface-elevated` + `glow-soft`. One class for “lifted panel” on light.
 - **`surface-dark-panel-glow`** — Dark translucent panel + `glow-strong`. Ecosystem-only dark cards/panels.
 
+### Shadows (token-derived, use in components)
+
+- **`shadow-token-card`**, **`shadow-token-card-dark`** — `Card` default / dark variant.
+- **`shadow-token-card-hover-light`**, **`shadow-token-card-hover-dark`** — Card hover (with `hover:` in TSX).
+- **`shadow-token-btn-light`**, **`shadow-token-btn-dark`** — Primary / dark buttons.
+- **`shadow-token-img`**, **`shadow-token-img-hover`**, **`shadow-token-img-accent-hover`** — `ImageWrapper`.
+- **`shadow-token-ghn-diagram`**, **`shadow-token-mobile-panel`** — GHN diagram frame, mobile flyout.
+- **`mobile-nav-backdrop`** — Scrim using `color-mix` from `--bg-dark` (no arbitrary hex).
+
 ---
 
 ## Usage examples
 
-### 1. Hero with gradient depth (light page)
+### 1. Light section (canonical)
 
 ```tsx
-<section className="bg-gradient-primary">
+<section className="section-light section-flow">
   <div className="mx-auto max-w-6xl px-5 py-24 ...">
     <PageHero ... />
   </div>
 </section>
 ```
 
-### 2. Dark section with gradient base
+### 2. Dark section with shared surface
 
 ```tsx
-<section className="bg-gradient-dark text-section-charcoal-foreground" data-section-tone="dark">
+<section className="section-dark text-section-charcoal-foreground section-flow" data-section-tone="dark">
   {/* content */}
+</section>
+```
+
+### 2b. Global Hair Intelligence (dark + ecosystem enrichment)
+
+```tsx
+<section className="section-dark section-ecosystem section-flow" data-section-tone="dark">
+  {/* GHN: same dark base as hero + inset glow & hairlines */}
 </section>
 ```
 
@@ -141,5 +192,5 @@ Defined in `globals.css` under `:root`.
 
 - **Variables:** `iiohr-next/src/app/globals.css` (`:root`).
 - **Utilities:** Same file, under “Gradient & glow utilities”.
-- **Dark anchors (IIOHR):** **Hero** (`bg-gradient-dark`) and **final CTA** use `section-dark-gradient` (`--gradient-dark`). **Ecosystem** uses **`ghn-section-dark`** only (`--gradient-ecosystem` + inset/ambient blue glow)—the deepest, most system-linked band. Elsewhere use `section-ivory-depth`, `section-muted-depth`, and `section-flow` (no hard bottom border).
-- **Light flow:** `section-breathe` on `SectionSpacer` adds soft vertical rhythm without a dividing line. Gold: CTAs and sparse borders. Blue: focus rings (`--focus-ring`) and ecosystem glow only—never dominant on cream pages.
+- **Dark anchors (IIOHR):** **Hero**, **final CTA**, and **GHN** share **`section-dark`** (same radial stack over `--bg-dark`). GHN adds **`section-ecosystem`** for inset glow and hairlines. Elsewhere use **`section-light`** / **`section-light-muted`** and `section-flow` (no hard bottom border). Legacy class names `section-ivory-depth`, `section-muted-depth`, and `section-dark-gradient` remain as aliases in CSS.
+- **Light flow:** `section-breathe` on `SectionSpacer` adds soft vertical rhythm without a dividing line. Gold: CTAs and sparse borders. Blue: focus rings (`ring-intel/45`, `--focus-ring`) and ecosystem glow only—never dominant on cream pages.

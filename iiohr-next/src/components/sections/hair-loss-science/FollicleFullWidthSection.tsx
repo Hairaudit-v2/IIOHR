@@ -24,7 +24,7 @@ const planningBlocks = [
 export function FollicleFullWidthSection() {
   return (
     <section
-      className="relative z-10 section-ivory-depth section-flow"
+      className="relative z-10 section-light section-flow"
       aria-label="Follicle and biology"
       data-section-tone="default"
     >

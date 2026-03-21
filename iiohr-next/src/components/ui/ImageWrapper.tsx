@@ -16,11 +16,9 @@ export interface ImageWrapperProps {
 }
 
 const baseWrapper =
-  "relative overflow-hidden rounded-2xl shadow-[0_2px_8px_rgba(44,42,38,0.08),0_1px_3px_rgba(44,42,38,0.06)] transition-[transform,box-shadow,border-color] duration-300 ease-out";
-const hoverWrapper =
-  "hover:scale-[1.03] hover:shadow-[0_12px_32px_rgba(44,42,38,0.12),0_4px_12px_rgba(44,42,38,0.08)]";
-const glowHover =
-  "hover:shadow-[0_12px_32px_rgba(44,42,38,0.12),0_0_0_1px_rgba(166,139,92,0.4),0_0_24px_rgba(166,139,92,0.12)]";
+  "relative overflow-hidden rounded-2xl shadow-token-img transition-[transform,box-shadow,border-color] duration-300 ease-out";
+const hoverWrapper = "hover:scale-[1.03] hover:shadow-[var(--shadow-img-hover)]";
+const glowHover = "hover:shadow-[var(--shadow-img-hover-accent)]";
 
 /**
  * Reusable image wrapper for consistent homepage visuals.
