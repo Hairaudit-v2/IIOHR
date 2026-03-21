@@ -48,7 +48,7 @@ export function PageHero({
     !image.src.includes("\\");
 
   return (
-    <section className={sectionClass} data-section-tone={isDark ? "dark" : undefined}>
+    <section className={sectionClass} data-section-tone={isDark ? "dark" : "default"}>
       <div className="mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-36">
         <div className="grid gap-12 lg:grid-cols-[1fr_minmax(0,340px)] lg:items-start lg:gap-16">
           <div>
@@ -64,8 +64,8 @@ export function PageHero({
               {description}
             </p>
             {(primaryCta || secondaryCta || tertiaryCta) && (
-              <div className="mt-14 flex flex-col gap-10">
-                <div className="flex flex-wrap items-center gap-4">
+              <div className="mt-14 flex flex-col gap-12">
+                <div className="flex flex-wrap items-center gap-5 md:gap-6">
                   {primaryCta ? (
                     <Button href={primaryCta.href} variant={isDark ? "dark" : "primary"}>
                       {primaryCta.label}
@@ -86,7 +86,7 @@ export function PageHero({
                       className={
                         isDark
                           ? "mb-3 h-px max-w-xs bg-gradient-to-r from-section-charcoal-border/35 via-section-charcoal-border/12 to-transparent"
-                          : "mb-3 h-px max-w-xs bg-gradient-to-r from-border/60 via-border/25 to-transparent"
+                          : "mb-3 h-px max-w-xs bg-gradient-to-r from-border/85 via-border/40 to-transparent"
                       }
                       aria-hidden
                     />

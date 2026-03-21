@@ -17,13 +17,13 @@ export function ApplyIntroductionSection() {
         title="Structured intake process"
         description="We match you to the right pathway stage based on your background and goals, ensuring safe, realistic progression."
       />
-      <div className="mt-8">
+      <div className="mt-10">
         <LinkArrow href="/admissions">Not sure if you are ready? Review admissions criteria</LinkArrow>
       </div>
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {introPoints.map((point) => (
           <Card key={point}>
-            <p className="text-sm leading-relaxed text-muted-foreground">{point}</p>
+            <p className="text-sm leading-relaxed text-readable-muted">{point}</p>
           </Card>
         ))}
       </div>

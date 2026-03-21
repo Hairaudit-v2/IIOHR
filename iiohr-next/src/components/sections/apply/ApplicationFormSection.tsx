@@ -57,9 +57,13 @@ export function ApplicationFormSection() {
     }
   }
 
+  const inputClass =
+    "w-full rounded-md border-2 border-foreground/16 bg-background px-3 py-2.5 text-sm text-foreground shadow-sm outline-none transition-[border-color,box-shadow] focus:border-accent/45 focus:ring-2 focus:ring-accent/15 disabled:opacity-70";
+  const labelClass = "text-sm font-medium text-foreground";
+
   return (
     <SectionShell>
-      <div id="application-form" className="grid min-w-0 gap-8 lg:grid-cols-[1.8fr_1fr]">
+      <div id="application-form" className="grid min-w-0 gap-10 lg:grid-cols-[1.8fr_1fr] lg:gap-12">
         <div className="min-w-0">
           <SectionHeading
             eyebrow="Application or Enquiry"
@@ -74,12 +78,12 @@ export function ApplicationFormSection() {
               className="mt-8 rounded-xl border border-border bg-surface p-6 text-foreground break-words"
             >
               <p className="font-semibold text-primary">Thank you for your application.</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground break-words">
+              <p className="mt-2 text-sm leading-relaxed text-readable-muted break-words">
                 We have received your details and will be in touch to discuss your pathway fit. If you have
                 urgent questions, email us at{" "}
                 <a
                   href={`mailto:${siteConfig.applicationEmail}`}
-                  className="font-medium text-foreground underline hover:text-accent"
+                  className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
                 >
                   {siteConfig.applicationEmail}
                 </a>
@@ -87,7 +91,7 @@ export function ApplicationFormSection() {
               </p>
               <Link
                 href="/training-pathways"
-                className="mt-4 inline-block text-sm font-medium text-primary hover:text-accent"
+                className="mt-4 inline-block text-sm font-medium text-foreground underline decoration-accent/50 underline-offset-2 hover:text-accent"
               >
                 Explore training pathways →
               </Link>
@@ -100,11 +104,11 @@ export function ApplicationFormSection() {
               className="mt-8 rounded-xl border border-border bg-surface p-4 text-sm text-foreground break-words"
             >
               <p className="font-medium break-words">{errorMessage}</p>
-              <p className="mt-2 text-muted-foreground break-words">
+              <p className="mt-2 text-readable-muted break-words">
                 You can also send your enquiry directly to{" "}
                 <a
                   href={`mailto:${siteConfig.applicationEmail}`}
-                  className="font-medium text-foreground underline hover:text-accent"
+                  className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
                 >
                   {siteConfig.applicationEmail}
                 </a>
@@ -113,7 +117,7 @@ export function ApplicationFormSection() {
               <button
                 type="button"
                 onClick={() => { setStatus("idle"); setErrorMessage(""); }}
-                className="mt-3 text-sm font-medium underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2"
+                className="mt-4 text-sm font-medium text-foreground underline decoration-accent/45 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2"
               >
                 Try again
               </button>
@@ -121,42 +125,42 @@ export function ApplicationFormSection() {
           )}
 
           {status !== "success" && (
-            <form onSubmit={handleSubmit} className="mt-8 space-y-6" noValidate>
+            <form onSubmit={handleSubmit} className="mt-8 space-y-8" noValidate>
               {/* Honeypot – leave empty; bots often fill it */}
               <div className="absolute -left-[9999px] top-0" aria-hidden="true">
                 <label htmlFor="website">Website</label>
                 <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
               </div>
 
-              <fieldset className="rounded-xl border border-border bg-surface p-5">
-                <legend className="px-1 text-sm font-semibold">Enquiry Type</legend>
-                <div className="mt-4 flex flex-wrap gap-4">
-                  <label className="inline-flex items-center gap-2 text-sm">
+              <fieldset className="rounded-xl border-2 border-foreground/18 bg-surface px-5 py-6">
+                <legend className="px-1 text-sm font-semibold text-foreground">Enquiry Type</legend>
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-background px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
                     <input
                       type="radio"
                       name="enquiryType"
                       value="individual"
                       defaultChecked
-                      className="h-4 w-4 border-border text-primary"
+                      className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
                     />
-                    <span>Individual doctor enquiry</span>
+                    <span className="leading-snug">Individual doctor enquiry</span>
                   </label>
-                  <label className="inline-flex items-center gap-2 text-sm">
+                  <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-background px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
                     <input
                       type="radio"
                       name="enquiryType"
                       value="clinic"
-                      className="h-4 w-4 border-border text-primary"
+                      className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
                     />
-                    <span>Clinic or group enquiry</span>
+                    <span className="leading-snug">Clinic or group enquiry</span>
                   </label>
                 </div>
               </fieldset>
 
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="fullName" className="text-sm font-medium">
-                    Full name <span className="text-muted-foreground">(required)</span>
+              <div className="grid gap-5 md:grid-cols-2 md:gap-6">
+                <div className="space-y-2.5">
+                  <label htmlFor="fullName" className={labelClass}>
+                    Full name <span className="text-readable-muted">(required)</span>
                   </label>
                   <input
                     id="fullName"
@@ -166,12 +170,12 @@ export function ApplicationFormSection() {
                     required
                     aria-required="true"
                     disabled={status === "submitting"}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                    className={inputClass}
                   />
                 </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email <span className="text-muted-foreground">(required)</span>
+                <div className="space-y-2.5">
+                  <label htmlFor="email" className={labelClass}>
+                    Email <span className="text-readable-muted">(required)</span>
                   </label>
                   <input
                     id="email"
@@ -181,11 +185,11 @@ export function ApplicationFormSection() {
                     required
                     aria-required="true"
                     disabled={status === "submitting"}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                    className={inputClass}
                   />
                 </div>
-                <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium">
+                <div className="space-y-2.5">
+                  <label htmlFor="phone" className={labelClass}>
                     Phone
                   </label>
                   <input
@@ -195,12 +199,12 @@ export function ApplicationFormSection() {
                     autoComplete="tel"
                     inputMode="tel"
                     disabled={status === "submitting"}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                    className={inputClass}
                   />
                 </div>
-                <div className="space-y-2">
-                  <label htmlFor="country" className="text-sm font-medium">
-                    Country <span className="text-muted-foreground">(required)</span>
+                <div className="space-y-2.5">
+                  <label htmlFor="country" className={labelClass}>
+                    Country <span className="text-readable-muted">(required)</span>
                   </label>
                   <input
                     id="country"
@@ -210,14 +214,14 @@ export function ApplicationFormSection() {
                     required
                     aria-required="true"
                     disabled={status === "submitting"}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                    className={inputClass}
                   />
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <label htmlFor="medicalBackground" className="text-sm font-medium">
-                  Current medical background <span className="text-muted-foreground">(required)</span>
+              <div className="space-y-2.5">
+                <label htmlFor="medicalBackground" className={labelClass}>
+                  Current medical background <span className="text-readable-muted">(required)</span>
                 </label>
                 <textarea
                   id="medicalBackground"
@@ -226,14 +230,14 @@ export function ApplicationFormSection() {
                   required
                   aria-required="true"
                   disabled={status === "submitting"}
-                  className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                  className={inputClass}
                 />
               </div>
 
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="experienceLevel" className="text-sm font-medium">
-                    Current level of hair restoration experience <span className="text-muted-foreground">(required)</span>
+              <div className="grid gap-5 md:grid-cols-2 md:gap-6">
+                <div className="space-y-2.5">
+                  <label htmlFor="experienceLevel" className={labelClass}>
+                    Current level of hair restoration experience <span className="text-readable-muted">(required)</span>
                   </label>
                   <select
                     id="experienceLevel"
@@ -242,7 +246,7 @@ export function ApplicationFormSection() {
                     aria-required="true"
                     defaultValue=""
                     disabled={status === "submitting"}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                    className={inputClass}
                   >
                     <option value="" disabled>Select experience level</option>
                     <option value="none">No procedural experience yet</option>
@@ -251,9 +255,9 @@ export function ApplicationFormSection() {
                     <option value="experienced">Established surgeon seeking refinement</option>
                   </select>
                 </div>
-                <div className="space-y-2">
-                  <label htmlFor="interestArea" className="text-sm font-medium">
-                    Interest area <span className="text-muted-foreground">(required)</span>
+                <div className="space-y-2.5">
+                  <label htmlFor="interestArea" className={labelClass}>
+                    Interest area <span className="text-readable-muted">(required)</span>
                   </label>
                   <select
                     id="interestArea"
@@ -262,7 +266,7 @@ export function ApplicationFormSection() {
                     aria-required="true"
                     defaultValue=""
                     disabled={status === "submitting"}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                    className={inputClass}
                   >
                     <option value="" disabled>Select interest area</option>
                     <option value="training-pathways">Training Pathways</option>
@@ -273,9 +277,9 @@ export function ApplicationFormSection() {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <label htmlFor="goals" className="text-sm font-medium">
-                  Goals <span className="text-muted-foreground">(required)</span>
+              <div className="space-y-2.5">
+                <label htmlFor="goals" className={labelClass}>
+                  Goals <span className="text-readable-muted">(required)</span>
                 </label>
                 <textarea
                   id="goals"
@@ -284,13 +288,13 @@ export function ApplicationFormSection() {
                   required
                   aria-required="true"
                   disabled={status === "submitting"}
-                  className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                  className={inputClass}
                 />
               </div>
 
-              <div className="space-y-2">
-                <label htmlFor="timeframe" className="text-sm font-medium">
-                  Preferred timeframe <span className="text-muted-foreground">(required)</span>
+              <div className="space-y-2.5">
+                <label htmlFor="timeframe" className={labelClass}>
+                  Preferred timeframe <span className="text-readable-muted">(required)</span>
                 </label>
                 <select
                   id="timeframe"
@@ -299,7 +303,7 @@ export function ApplicationFormSection() {
                   aria-required="true"
                   defaultValue=""
                   disabled={status === "submitting"}
-                  className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm disabled:opacity-70"
+                  className={inputClass}
                 >
                   <option value="" disabled>Select preferred timeframe</option>
                   <option value="immediate">Immediate (0–2 months)</option>
@@ -309,19 +313,22 @@ export function ApplicationFormSection() {
                 </select>
               </div>
 
-              <div className="rounded-xl border border-border bg-surface-soft/50 p-4">
-                <label className="flex cursor-pointer items-start gap-3 text-sm">
+              <div className="rounded-xl border-2 border-border/80 bg-surface-soft/60 p-5 md:p-6">
+                <label className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-foreground">
                   <input
                     type="checkbox"
                     name="consent"
                     required
                     aria-required="true"
                     disabled={status === "submitting"}
-                    className="mt-0.5 h-4 w-4 rounded border-border text-primary"
+                    className="mt-0.5 h-4 w-4 shrink-0 rounded border-2 border-foreground/20 text-primary"
                   />
                   <span>
                     I have read the{" "}
-                    <Link href="/privacy-policy" className="font-medium text-foreground underline hover:text-accent">
+                    <Link
+                      href="/privacy-policy"
+                      className="font-medium text-foreground underline decoration-accent/50 underline-offset-2 hover:text-accent"
+                    >
                       Privacy Policy
                     </Link>
                     {" "}and agree to my data being used for pathway review and admissions contact. I consent to
@@ -330,28 +337,36 @@ export function ApplicationFormSection() {
                 </label>
               </div>
 
-              <div className="flex flex-wrap items-center gap-3 pt-2">
-                <button
-                  type="submit"
-                  disabled={status === "submitting"}
-                  className="inline-flex min-h-10 items-center justify-center rounded-md border border-primary bg-primary px-5 py-2.5 text-sm font-semibold tracking-[0.02em] text-primary-foreground hover:brightness-95 disabled:opacity-70"
-                >
-                  {status === "submitting" ? "Submitting…" : "Submit application"}
-                </button>
-                <a
-                  href={`mailto:${siteConfig.applicationEmail}`}
-                  className="inline-flex min-h-10 items-center justify-center rounded-md border border-accent px-5 py-2.5 text-sm font-semibold tracking-[0.02em] text-foreground hover:bg-surface-soft"
-                >
-                  Prefer email enquiry
-                </a>
+              <div className="border-t border-border/25 pt-8">
+                <p className="mb-4 text-xs font-medium uppercase tracking-[0.1em] text-readable-muted">
+                  Submit or email
+                </p>
+                <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
+                  <button
+                    type="submit"
+                    disabled={status === "submitting"}
+                    className="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-accent bg-accent px-6 py-3 text-sm font-semibold tracking-[0.04em] text-primary shadow-[var(--shadow-btn-primary)] hover:bg-accent-muted disabled:opacity-70"
+                  >
+                    {status === "submitting" ? "Submitting…" : "Submit application"}
+                  </button>
+                  <a
+                    href={`mailto:${siteConfig.applicationEmail}`}
+                    className="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-foreground/18 bg-surface px-6 py-3 text-sm font-semibold tracking-[0.02em] text-foreground transition-colors hover:border-accent/45 hover:bg-surface-elevated"
+                  >
+                    Prefer email enquiry
+                  </a>
+                </div>
               </div>
             </form>
           )}
 
           {status !== "success" && (
-            <p className="mt-4 text-sm text-muted-foreground">
+            <p className="mt-6 text-sm text-readable-muted">
               Your information is used only for pathway review and admissions. For direct contact, email{" "}
-              <a className="font-medium text-foreground hover:text-accent" href={`mailto:${siteConfig.applicationEmail}`}>
+              <a
+                className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
+                href={`mailto:${siteConfig.applicationEmail}`}
+              >
                 {siteConfig.applicationEmail}
               </a>
               .
@@ -359,20 +374,23 @@ export function ApplicationFormSection() {
           )}
         </div>
 
-        <aside className="space-y-4">
+        <aside className="space-y-6">
           <Card>
-            <h3 className="text-lg font-semibold">What happens next</h3>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+            <h3 className="text-lg font-semibold text-heading">What happens next</h3>
+            <ul className="mt-4 space-y-3 text-sm text-readable-muted">
               <li>Institute-led assessment of your profile</li>
               <li>Pathway recommendation matched to your goals</li>
               <li>Direct contact from the admissions team</li>
             </ul>
           </Card>
           <Card>
-            <h3 className="text-lg font-semibold">Privacy</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            <h3 className="text-lg font-semibold text-heading">Privacy</h3>
+            <p className="mt-4 text-sm leading-relaxed text-readable-muted">
               We use your details only for pathway review and admissions. See our{" "}
-              <Link href="/privacy-policy" className="font-medium text-foreground hover:text-accent">
+              <Link
+                href="/privacy-policy"
+                className="font-medium text-foreground underline decoration-accent/45 underline-offset-2 hover:text-accent"
+              >
                 Privacy Policy
               </Link>
               {" "}for full details.

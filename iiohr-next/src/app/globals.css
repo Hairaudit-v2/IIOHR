@@ -43,8 +43,8 @@
   --heading: var(--text-primary);
 
   /* Supporting copy on cream: darker mix for WCAG-friendly contrast (core --text-secondary hex unchanged) */
-  --readable-muted: color-mix(in srgb, var(--text-primary) 44%, var(--text-secondary) 56%);
-  --readable-subtle: color-mix(in srgb, var(--text-primary) 36%, var(--text-secondary) 64%);
+  --readable-muted: color-mix(in srgb, var(--text-primary) 50%, var(--text-secondary) 50%);
+  --readable-subtle: color-mix(in srgb, var(--text-primary) 42%, var(--text-secondary) 58%);
 
   --border: color-mix(in srgb, var(--text-secondary) 16%, var(--bg-soft) 84%);
   --border-soft: color-mix(in srgb, var(--bg-soft) 70%, var(--bg-secondary) 30%);

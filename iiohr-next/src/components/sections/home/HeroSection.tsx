@@ -78,8 +78,8 @@ export function HeroSection() {
             <p className="mt-9 max-w-2xl text-base leading-relaxed text-section-charcoal-muted md:text-lg [line-height:1.7]">
               A global education and mentorship platform for hair restoration: clinically grounded training, practical surgical exposure, and standards-based progression for doctors and clinics.
             </p>
-            <div className="mt-14 flex flex-col gap-10">
-              <div className="flex flex-wrap items-center gap-4">
+            <div className="mt-14 flex flex-col gap-12">
+              <div className="flex flex-wrap items-center gap-5 md:gap-6">
                 <Button href="/apply" variant="dark">
                   Apply Now
                 </Button>
