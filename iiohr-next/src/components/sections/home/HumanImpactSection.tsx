@@ -16,7 +16,7 @@ const impactItems = [
 
 export function HumanImpactSection() {
   return (
-    <SectionShell muted aria-label="Human impact">
+    <SectionShell aria-label="Human impact" joinPrevious>
       <div className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
         <div className="lg:sticky lg:top-24">
           <ImageWrapper

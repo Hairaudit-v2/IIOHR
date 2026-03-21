@@ -40,7 +40,7 @@ const modules = [
 
 export function ScienceModulesSection() {
   return (
-    <SectionShell aria-label="Science modules">
+    <SectionShell aria-label="Science modules" joinPrevious>
       <SectionHeading
         eyebrow="Hair Loss Science"
         title="Four pillars of biological understanding"

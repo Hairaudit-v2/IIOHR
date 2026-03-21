@@ -28,7 +28,7 @@ const audienceItems = [
 
 export function AudienceSection() {
   return (
-    <SectionShell>
+    <SectionShell joinPrevious>
       <SectionHeading
         eyebrow="Who It Is For"
         title="For doctors and clinics at every stage"

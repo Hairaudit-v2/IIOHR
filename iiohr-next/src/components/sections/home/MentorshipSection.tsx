@@ -23,7 +23,7 @@ const mentorshipItems = [
 
 export function MentorshipSection() {
   return (
-    <SectionShell aria-label="Mentorship">
+    <SectionShell aria-label="Mentorship" joinPrevious>
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <ImageWrapper
           src={HOME_IMAGES.trust.doctor}

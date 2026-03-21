@@ -5,39 +5,36 @@ import { Card } from "@/components/ui/Card";
 const signals = [
   {
     title: "Faculty-led training",
-    description: "Programmes are delivered by experienced surgeons with ongoing clinical practice and teaching responsibility.",
+    description: "Delivered by practising surgeons with active teaching responsibility.",
   },
   {
     title: "Audit-backed improvement",
-    description: "Outcome review and benchmarking inform development priorities so progress is measurable, not assumed.",
+    description: "Benchmarking and review inform priorities—progress is measurable.",
   },
   {
-    title: "Clinical standards alignment",
-    description: "Training is anchored to explicit clinical standards to support governance and consistent quality.",
+    title: "Standards alignment",
+    description: "Explicit clinical standards support governance and consistent quality.",
   },
   {
     title: "Pathway clarity",
-    description: "Staged milestones and clear entry points help you and your mentors track readiness for the next step.",
+    description: "Staged milestones and clear entry points for you and your mentors.",
   },
 ];
 
+/** Compact governance strip after ecosystem centerpiece — less vertical peak, same substance. */
 export function TrustSignalsSection() {
   return (
-    <SectionShell muted>
+    <SectionShell muted compact>
       <SectionHeading
         eyebrow="Standards & governance"
         title="How we uphold quality"
-        description="IIOHR’s approach is built on faculty credibility, measurable outcomes, and clear standards so clinician development is accountable, transparent, and globally relevant."
+        description="Faculty credibility, measurable outcomes, and clear standards—accountable, transparent development."
       />
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-12 xl:grid-cols-4">
         {signals.map((item) => (
-          <Card key={item.title} interactive>
-            <h3 className="text-base font-semibold tracking-tight text-foreground">
-              {item.title}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              {item.description}
-            </p>
+          <Card key={item.title} interactive className="md:p-6">
+            <h3 className="text-sm font-semibold tracking-tight text-foreground">{item.title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
           </Card>
         ))}
       </div>

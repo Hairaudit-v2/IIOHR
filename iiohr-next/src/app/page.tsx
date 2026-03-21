@@ -1,18 +1,14 @@
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
 import { AudienceSection } from "@/components/sections/home/AudienceSection";
 import { CTASection } from "@/components/sections/home/CTASection";
-import { DifferenceSection } from "@/components/sections/home/DifferenceSection";
-import { EcosystemAuthoritySection } from "@/components/sections/home/EcosystemAuthoritySection";
-import { FollicleIntelligenceSupportSection } from "@/components/sections/home/FollicleIntelligenceSupportSection";
+import { DifferenceAndCurriculumSection } from "@/components/sections/home/DifferenceAndCurriculumSection";
 import { HeroSection } from "@/components/sections/home/HeroSection";
 import { HumanImpactSection } from "@/components/sections/home/HumanImpactSection";
 import { MentorshipSection } from "@/components/sections/home/MentorshipSection";
-import { PathwayTrustBlock } from "@/components/sections/home/PathwayTrustBlock";
+import { PathwayAndStandardsSection } from "@/components/sections/home/PathwayAndStandardsSection";
 import { ProblemSection } from "@/components/sections/home/ProblemSection";
-import { ProgressionPathwaySection } from "@/components/sections/home/ProgressionPathwaySection";
 import { ScienceBridgeSection } from "@/components/sections/home/ScienceBridgeSection";
 import { ScienceModulesSection } from "@/components/sections/home/ScienceModulesSection";
-import { TrainingPillarsSection } from "@/components/sections/home/TrainingPillarsSection";
 import { TrustSignalsSection } from "@/components/sections/home/TrustSignalsSection";
 import { SectionSpacer } from "@/components/sections/shared/SectionSpacer";
 import { GlobalHairIntelligenceSection } from "@/components/ecosystem";
@@ -29,32 +25,22 @@ export default function HomePage() {
   return (
     <>
       <JsonLdScript data={webPageJsonLd} />
-      {/* Hero: primary entry, dark full-bleed */}
       <HeroSection />
       <SectionSpacer />
-      {/* Science: bridge + modules (cream), then problem/difference (light) */}
+      {/* Science: one continuous cream band */}
       <ScienceBridgeSection />
-      <SectionSpacer />
       <ScienceModulesSection />
       <SectionSpacer />
       <ProblemSection />
-      <DifferenceSection />
-      <SectionSpacer />
-      {/* Curriculum + pathway (mixed), then ecosystem platforms (light) */}
-      <TrainingPillarsSection />
-      <FollicleIntelligenceSupportSection />
-      <SectionSpacer />
-      <ProgressionPathwaySection />
-      <PathwayTrustBlock />
-      <EcosystemAuthoritySection />
-      {/* Outcomes + mentorship (cream with imagery), then centerpiece */}
+      <DifferenceAndCurriculumSection />
+      <PathwayAndStandardsSection />
       <HumanImpactSection />
-      <SectionSpacer />
       <MentorshipSection />
       <SectionSpacer />
-      {/* Centerpiece: Global Hair Intelligence Network (dark) */}
+      {/* Single ecosystem centerpiece (platform grid lives here) */}
       <GlobalHairIntelligenceSection
         variant="iiohr"
+        id="ecosystem-platforms"
         heading="The Engine Behind the Ecosystem"
         description="Follicle Intelligence powers a connected system across education, audit, and biological treatment pathways. One engine. System-wide intelligence. Global standardisation."
         size="hero"
