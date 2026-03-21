@@ -1,6 +1,6 @@
 # IIOHR Gradient & Glow Design System
 
-Unified visual identity for depth and polish across IIOHR, HairAudit, HLI, and Follicle Intelligence. Clinical + premium; no neon or heavy saturation.
+Unified visual identity for depth and polish across IIOHR, HairAudit, HLI, and Follicle Intelligence. **IIOHR:** cream-forward continuity, human + premium; **ecosystem** (GHN) is the darkest, most system-linked plane; gold stays sparing (CTAs, key borders); blue stays a whisper (focus rings, ecosystem glow)—never dominant.
 
 ---
 
@@ -12,9 +12,17 @@ Defined in `globals.css` under `:root`.
 
 | Token | Value | Use |
 |-------|--------|-----|
-| `--gradient-primary` | Soft gold → warm ivory (165deg) | Hero panels, light section depth, feature callouts |
-| `--gradient-dark` | Deep charcoal → near black (180deg) | Dark section backgrounds, hero overlays |
-| `--gradient-accent` | Radial gold glow fade (ellipse, top) | Accent panels, CTA areas, card highlights |
+| `--gradient-primary` | Calm gold wash → ivory (165deg) | Most light sections (`section-ivory-depth`) |
+| `--gradient-dark` | Cool charcoal stack (180deg) | **Hero + final CTA** (`section-dark-gradient`) — deep but slightly open |
+| `--gradient-ecosystem` | Deeper cool charcoal (180deg) | **Global Hair Intelligence only** (`ghn-section-dark`) — most distinct dark |
+| `--gradient-accent` | Radial gold glow fade (ellipse, top) | Hero text panels, accent overlays |
+
+### Focus & system link (subtle blue)
+
+| Token | Use |
+|-------|-----|
+| `--focus-ring` | Default `:focus-visible` outline; buttons/links use matching `ring-[rgba(108,132,168,…)]` |
+| `--focus-ring-dark` | Reference for dark-section focus (slightly brighter blue-gray) |
 
 ### Glow
 
@@ -133,5 +141,5 @@ Defined in `globals.css` under `:root`.
 
 - **Variables:** `iiohr-next/src/app/globals.css` (`:root`).
 - **Utilities:** Same file, under “Gradient & glow utilities”.
-- **Dark anchors (IIOHR):** Use full charcoal (`section-dark-gradient` / `ghn-section-dark`) only for **homepage hero**, **Global Hair Intelligence** (`sectionTone="dark"`), and **homepage closing `CTASection`**. Elsewhere prefer `section-ivory-depth`, `section-muted-depth`, and `section-flow` (no hard bottom border) for a continuous cream base.
-- **Light flow:** `section-breathe` on `SectionSpacer` adds soft vertical rhythm without a dividing line. Gold accents stay on CTAs (`Button` primary); blue is a whisper in ivory and dark radials only.
+- **Dark anchors (IIOHR):** **Hero** (`bg-gradient-dark`) and **final CTA** use `section-dark-gradient` (`--gradient-dark`). **Ecosystem** uses **`ghn-section-dark`** only (`--gradient-ecosystem` + inset/ambient blue glow)—the deepest, most system-linked band. Elsewhere use `section-ivory-depth`, `section-muted-depth`, and `section-flow` (no hard bottom border).
+- **Light flow:** `section-breathe` on `SectionSpacer` adds soft vertical rhythm without a dividing line. Gold: CTAs and sparse borders. Blue: focus rings (`--focus-ring`) and ecosystem glow only—never dominant on cream pages.

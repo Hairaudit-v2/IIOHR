@@ -29,7 +29,7 @@ export function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[75vh] w-full overflow-hidden bg-gradient-dark section-sep-dark"
+      className="relative min-h-[75vh] w-full overflow-hidden bg-gradient-dark section-flow"
       aria-label="Hero"
       data-section-tone="dark"
     >
@@ -52,7 +52,7 @@ export function HeroSection() {
 
       {/* Overlay: depth and readability (gradient system) */}
       <div
-        className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-section-charcoal/92 via-section-charcoal/55 to-section-charcoal/35"
+        className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-section-charcoal/86 via-section-charcoal/50 to-section-charcoal/30"
         aria-hidden
       />
       {/* Subtle accent gradient behind text area for contrast */}
@@ -87,7 +87,11 @@ export function HeroSection() {
                   Explore Pathways
                 </Button>
               </div>
-              <div className="pt-1 border-t border-section-charcoal-border/20">
+              <div className="pt-2">
+                <div
+                  className="mb-3 h-px max-w-xs bg-gradient-to-r from-section-charcoal-border/35 via-section-charcoal-border/15 to-transparent"
+                  aria-hidden
+                />
                 <p className="text-sm">
                   <Button href="/about" variant="tertiary">
                     Learn More

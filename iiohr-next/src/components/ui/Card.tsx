@@ -14,15 +14,15 @@ interface CardProps {
 }
 
 const baseStyles =
-  "min-w-0 rounded-xl border p-6 shadow-[0_1px_3px_0_rgba(44,42,38,0.05),0_1px_2px_0_rgba(44,42,38,0.04)] md:p-7";
-const lightStyles = "border-border bg-surface";
+  "min-w-0 rounded-xl border p-6 shadow-[0_1px_4px_0_rgba(38,36,34,0.04),0_2px_10px_-2px_rgba(38,36,34,0.05)] md:p-7";
+const lightStyles = "border-border/90 bg-surface";
 const darkStyles =
-  "border-section-charcoal-border shadow-[0_2px_12px_rgba(0,0,0,0.2)] bg-gradient-to-b from-section-charcoal-foreground/[0.12] to-section-charcoal-foreground/[0.04]";
-/* Premium interaction: subtle lift, scale 1.02, soft shadow increase, faint glow edge */
+  "border-section-charcoal-border shadow-[0_2px_14px_rgba(0,0,0,0.22)] bg-gradient-to-b from-section-charcoal-foreground/[0.12] to-section-charcoal-foreground/[0.04]";
+/* Subtle lift + soft shadow; gold border whisper + hint of system blue on hover */
 const interactiveStyles =
-  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_10px_28px_-4px_rgba(44,42,38,0.1),0_4px_12px_-2px_rgba(44,42,38,0.06),0_0_0_1px_rgba(166,139,92,0.06)] hover:border-accent/25";
+  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[0_14px_36px_-10px_rgba(38,36,34,0.09),0_6px_16px_-6px_rgba(100,125,155,0.07),0_0_0_1px_rgba(166,139,92,0.07)] hover:border-accent/22";
 const interactiveDarkStyles =
-  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.35),0_4px_16px_-4px_rgba(0,0,0,0.2),0_0_0_1px_rgba(166,139,92,0.12)] hover:border-accent/35";
+  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[0_14px_36px_-10px_rgba(0,0,0,0.38),0_6px_18px_-8px_rgba(0,0,0,0.22),0_0_0_1px_rgba(120,145,175,0.14)] hover:border-accent/32";
 
 /** Paper-like content panel. Use `interactive` for hover lift and emphasis; `dark` for charcoal sections; optional `marker`. */
 export function Card({

@@ -18,7 +18,7 @@ export function SectionShell({
   "aria-label": ariaLabel,
 }: SectionShellProps) {
   const tone = dark
-    ? "section-dark-gradient text-section-charcoal-foreground section-sep-dark"
+    ? "section-dark-gradient text-section-charcoal-foreground section-flow"
     : muted
       ? "section-muted-depth text-foreground section-flow"
       : "section-ivory-depth text-foreground section-flow";

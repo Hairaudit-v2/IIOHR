@@ -77,7 +77,15 @@ export function PageHero({
                   ) : null}
                 </div>
                 {tertiaryCta ? (
-                  <div className={isDark ? "pt-1 border-t border-section-charcoal-border/20" : "pt-1 border-t border-border/50"}>
+                  <div className="pt-2">
+                    <div
+                      className={
+                        isDark
+                          ? "mb-3 h-px max-w-xs bg-gradient-to-r from-section-charcoal-border/35 via-section-charcoal-border/12 to-transparent"
+                          : "mb-3 h-px max-w-xs bg-gradient-to-r from-border/60 via-border/25 to-transparent"
+                      }
+                      aria-hidden
+                    />
                     <p className="text-sm">
                       <Button href={tertiaryCta.href} variant="tertiary">
                         {tertiaryCta.label}

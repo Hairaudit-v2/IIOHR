@@ -43,7 +43,11 @@ export function IntegratedModelSection() {
           </Card>
         ))}
       </div>
-      <div className="mt-16 border-t border-border/80 pt-10">
+      <div className="mt-16 pt-10">
+        <div
+          className="mb-8 h-px max-w-3xl bg-gradient-to-r from-transparent via-border/55 to-transparent"
+          aria-hidden
+        />
         <p className="text-xs tracking-[0.14em] text-muted-foreground uppercase">Development Loop</p>
         <ol className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
           {modelFlow.map((item, index) => (

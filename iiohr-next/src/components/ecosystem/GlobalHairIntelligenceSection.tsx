@@ -63,7 +63,7 @@ export function GlobalHairIntelligenceSection({
 }: GlobalHairIntelligenceSectionProps) {
   const isDark = sectionTone === "dark";
   const sectionClass = isDark
-    ? "relative z-10 scroll-mt-24 ghn-section-dark section-sep-dark"
+    ? "relative z-10 scroll-mt-24 ghn-section-dark section-flow"
     : "relative z-10 scroll-mt-20 section-muted-depth section-flow";
   const isHeroCenterpiece = isDark && size === "hero";
 
@@ -160,8 +160,10 @@ export function GlobalHairIntelligenceSection({
                 </>
               );
               const cardClass =
-                "block h-full no-underline text-foreground hover:text-foreground cursor-pointer rounded-lg focus-visible:outline focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 " +
-                (isDark ? "focus-visible:ring-offset-section-charcoal" : "focus-visible:ring-offset-background");
+                "block h-full cursor-pointer rounded-lg no-underline text-foreground hover:text-foreground focus-visible:outline focus-visible:ring-2 focus-visible:ring-offset-2 " +
+                (isDark
+                  ? "focus-visible:ring-[rgba(140,165,198,0.52)] focus-visible:ring-offset-section-charcoal"
+                  : "focus-visible:ring-[rgba(108,132,168,0.45)] focus-visible:ring-offset-background");
               return (
                 <Card key={platform.id} interactive className="h-full min-w-0">
                   {platform.isInternal ? (

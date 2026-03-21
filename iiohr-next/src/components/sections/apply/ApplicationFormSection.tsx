@@ -113,7 +113,7 @@ export function ApplicationFormSection() {
               <button
                 type="button"
                 onClick={() => { setStatus("idle"); setErrorMessage(""); }}
-                className="mt-3 text-sm font-medium underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                className="mt-3 text-sm font-medium underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(108,132,168,0.45)] focus-visible:ring-offset-2"
               >
                 Try again
               </button>
