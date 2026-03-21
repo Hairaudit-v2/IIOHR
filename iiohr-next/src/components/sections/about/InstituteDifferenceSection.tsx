@@ -27,7 +27,7 @@ const modelComponents = [
 
 export function InstituteDifferenceSection() {
   return (
-    <SectionShell dark>
+    <SectionShell>
       <SectionHeading
         eyebrow="The IIOHR Model"
         title="What makes IIOHR different"
@@ -35,9 +35,9 @@ export function InstituteDifferenceSection() {
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {modelComponents.map((item) => (
-          <Card key={item.title} dark interactive>
-            <h3 className="text-lg font-semibold">{item.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-primary-foreground/85">{item.description}</p>
+          <Card key={item.title} interactive>
+            <h3 className="text-lg font-semibold text-heading">{item.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
           </Card>
         ))}
       </div>

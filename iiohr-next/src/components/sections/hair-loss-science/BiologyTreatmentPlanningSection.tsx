@@ -22,7 +22,7 @@ const planningBlocks = [
 
 export function BiologyTreatmentPlanningSection() {
   return (
-    <SectionShell dark>
+    <SectionShell muted>
       <SectionHeading
         eyebrow="Biology, Treatment, and Surgery"
         title="Clinical planning improves when biology and treatment logic are integrated"
@@ -30,9 +30,9 @@ export function BiologyTreatmentPlanningSection() {
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {planningBlocks.map((block) => (
-          <Card key={block.title} dark interactive>
-            <h3 className="text-lg font-semibold">{block.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-primary-foreground/85">{block.description}</p>
+          <Card key={block.title} interactive>
+            <h3 className="text-lg font-semibold text-heading">{block.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{block.description}</p>
           </Card>
         ))}
       </div>

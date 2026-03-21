@@ -22,7 +22,7 @@ const pillars = [
 
 export function AuditStandardsMentorshipSection() {
   return (
-    <SectionShell dark>
+    <SectionShell>
       <SectionHeading
         eyebrow="Quality Infrastructure"
         title="Audit, standards, and mentorship work as one development system"
@@ -30,9 +30,9 @@ export function AuditStandardsMentorshipSection() {
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {pillars.map((pillar) => (
-          <Card key={pillar.title} dark interactive>
-            <h3 className="text-lg font-semibold">{pillar.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-primary-foreground/85">{pillar.description}</p>
+          <Card key={pillar.title} interactive>
+            <h3 className="text-lg font-semibold text-heading">{pillar.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{pillar.description}</p>
           </Card>
         ))}
       </div>

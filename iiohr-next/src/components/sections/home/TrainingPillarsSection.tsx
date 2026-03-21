@@ -4,7 +4,6 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 export function TrainingPillarsSection() {
   return (
     <FeatureGrid
-      dark
       eyebrow="Curriculum"
       title="Training pillars"
       description="Five integrated elements form the core of the IIOHR pathway: practical exposure, science, audit, and mentorship under one standards-based system."
@@ -17,7 +16,7 @@ export function TrainingPillarsSection() {
       ]}
       footer={
         <SectionCTA
-          variant="dark"
+          variant="light"
           primary={{ href: "/practical-fue", label: "View Curriculum" }}
           secondary={[{ href: "/training-pathways", label: "Explore Pathways" }]}
           tertiary={[{ href: "/about", label: "Learn More" }]}

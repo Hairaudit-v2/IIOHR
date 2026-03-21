@@ -29,7 +29,7 @@ const modelFlow = ["Practical Exposure", "Theory Integration", "Audit Feedback",
 
 export function IntegratedModelSection() {
   return (
-    <SectionShell dark>
+    <SectionShell muted>
       <SectionHeading
         eyebrow="Integrated Development Model"
         title="How practical training, theory, audit, and mentorship work together"
@@ -37,25 +37,21 @@ export function IntegratedModelSection() {
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {integrationBlocks.map((block) => (
-          <Card key={block.title} dark interactive>
-            <h3 className="text-lg font-semibold">{block.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">
-              {block.description}
-            </p>
+          <Card key={block.title} interactive>
+            <h3 className="text-lg font-semibold text-heading">{block.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{block.description}</p>
           </Card>
         ))}
       </div>
-      <div className="mt-16 border-t border-primary-foreground/20 pt-8">
-        <p className="text-xs tracking-[0.14em] text-primary-foreground/70 uppercase">
-          Development Loop
-        </p>
+      <div className="mt-16 border-t border-border/80 pt-10">
+        <p className="text-xs tracking-[0.14em] text-muted-foreground uppercase">Development Loop</p>
         <ol className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
           {modelFlow.map((item, index) => (
             <li
               key={item}
-              className="rounded-md border border-primary-foreground/20 bg-primary-foreground/5 px-3 py-3 text-sm text-primary-foreground/85"
+              className="rounded-md border border-border bg-surface-elevated/80 px-3 py-3 text-sm text-foreground"
             >
-              <span className="mr-2 text-xs tracking-[0.12em] text-primary-foreground/60">{`0${index + 1}`}</span>
+              <span className="mr-2 text-xs tracking-[0.12em] text-muted-foreground">{`0${index + 1}`}</span>
               {item}
             </li>
           ))}

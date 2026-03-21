@@ -32,7 +32,7 @@ export default function HomePage() {
       {/* Hero: primary entry, dark full-bleed */}
       <HeroSection />
       <SectionSpacer />
-      {/* Science: bridge + modules (dark), then problem/difference (light) */}
+      {/* Science: bridge + modules (cream), then problem/difference (light) */}
       <ScienceBridgeSection />
       <SectionSpacer />
       <ScienceModulesSection />
@@ -47,7 +47,7 @@ export default function HomePage() {
       <ProgressionPathwaySection />
       <PathwayTrustBlock />
       <EcosystemAuthoritySection />
-      {/* Outcomes + mentorship (dark with imagery), then centerpiece */}
+      {/* Outcomes + mentorship (cream with imagery), then centerpiece */}
       <HumanImpactSection />
       <SectionSpacer />
       <MentorshipSection />

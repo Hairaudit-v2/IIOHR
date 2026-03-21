@@ -133,4 +133,5 @@ Defined in `globals.css` under `:root`.
 
 - **Variables:** `iiohr-next/src/app/globals.css` (`:root`).
 - **Utilities:** Same file, under “Gradient & glow utilities”.
-- **Existing sections:** `section-dark-gradient` and `ghn-section-dark` keep current behaviour; new sections can use `bg-gradient-dark` or `bg-gradient-accent` + `var(--section-charcoal)` for consistency.
+- **Dark anchors (IIOHR):** Use full charcoal (`section-dark-gradient` / `ghn-section-dark`) only for **homepage hero**, **Global Hair Intelligence** (`sectionTone="dark"`), and **homepage closing `CTASection`**. Elsewhere prefer `section-ivory-depth`, `section-muted-depth`, and `section-flow` (no hard bottom border) for a continuous cream base.
+- **Light flow:** `section-breathe` on `SectionSpacer` adds soft vertical rhythm without a dividing line. Gold accents stay on CTAs (`Button` primary); blue is a whisper in ivory and dark radials only.

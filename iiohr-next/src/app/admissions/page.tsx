@@ -226,14 +226,14 @@ export default function AdmissionsPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell dark>
+      <SectionShell muted>
         <SectionHeading
           eyebrow="Next step"
           title="Apply or explore your pathway options"
           description="Use admissions guidance to choose the most suitable route, then proceed to formal application."
         />
         <SectionCTA
-          variant="dark"
+          variant="light"
           primary={{ href: "/apply", label: "Apply now" }}
           secondary={[
             { href: "/academy", label: "Explore Academy" },

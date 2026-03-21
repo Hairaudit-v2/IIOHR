@@ -147,14 +147,14 @@ export default function CertificationFrameworkPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell dark>
+      <SectionShell muted>
         <SectionHeading
           eyebrow="Next step"
           title="Explore pathways, academy structure, and admissions"
           description="Use the links below to review development pathways, clinic partnership options, and application routes."
         />
         <SectionCTA
-          variant="dark"
+          variant="light"
           primary={{ href: "/academy", label: "Explore Academy" }}
           secondary={[
             { href: "/training-pathways", label: "Training Pathways" },

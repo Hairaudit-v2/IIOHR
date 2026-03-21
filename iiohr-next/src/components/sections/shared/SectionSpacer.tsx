@@ -1,10 +1,10 @@
 /**
- * Subtle visual break between sections. Use sparingly for rhythm.
+ * Vertical rhythm between sections — soft tone wash, no hard divider.
  */
 export function SectionSpacer() {
   return (
-    <div className="section-sep-light bg-surface-light" aria-hidden>
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-5 md:py-14" />
+    <div className="section-breathe" aria-hidden>
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-5 md:py-12" />
     </div>
   );
 }

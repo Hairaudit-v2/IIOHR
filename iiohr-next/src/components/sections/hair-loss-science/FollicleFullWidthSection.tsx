@@ -24,9 +24,9 @@ const planningBlocks = [
 export function FollicleFullWidthSection() {
   return (
     <section
-      className="relative z-10 section-dark-gradient section-sep-dark"
+      className="relative z-10 section-ivory-depth section-flow"
       aria-label="Follicle and biology"
-      data-section-tone="dark"
+      data-section-tone="default"
     >
       {/* Full-width follicle image */}
       <div className="relative aspect-[21/9] w-full min-h-[200px] overflow-hidden md:aspect-[3/1]">
@@ -47,13 +47,9 @@ export function FollicleFullWidthSection() {
         />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {planningBlocks.map((block) => (
-            <Card key={block.title} dark interactive>
-              <h3 className="text-lg font-semibold text-section-charcoal-foreground">
-                {block.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-section-charcoal-muted">
-                {block.description}
-              </p>
+            <Card key={block.title} interactive>
+              <h3 className="text-lg font-semibold text-heading">{block.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{block.description}</p>
             </Card>
           ))}
         </div>

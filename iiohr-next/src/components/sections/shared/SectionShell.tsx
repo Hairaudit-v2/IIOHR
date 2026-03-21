@@ -6,6 +6,7 @@ interface SectionShellProps {
   dark?: boolean;
   className?: string;
   id?: string;
+  "aria-label"?: string;
 }
 
 export function SectionShell({
@@ -14,16 +15,18 @@ export function SectionShell({
   dark = false,
   className = "",
   id,
+  "aria-label": ariaLabel,
 }: SectionShellProps) {
   const tone = dark
     ? "section-dark-gradient text-section-charcoal-foreground section-sep-dark"
     : muted
-      ? "section-muted-depth text-foreground section-sep-light"
-      : "section-ivory-depth text-foreground section-sep-light";
+      ? "section-muted-depth text-foreground section-flow"
+      : "section-ivory-depth text-foreground section-flow";
 
   return (
     <section
       id={id}
+      aria-label={ariaLabel}
       className={`${tone} ${className}`}
       data-section-tone={dark ? "dark" : muted ? "muted" : "default"}
     >

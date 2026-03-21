@@ -155,14 +155,14 @@ export default function FacultyAndMentorshipPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell dark>
+      <SectionShell muted>
         <SectionHeading
           eyebrow="Next step"
           title="Explore pathways, admissions, and application routes"
           description="Review academy structure and pathway progression, then proceed through admissions guidance and application."
         />
         <SectionCTA
-          variant="dark"
+          variant="light"
           primary={{ href: "/academy", label: "Academy" }}
           secondary={[
             { href: "/admissions", label: "Admissions" },

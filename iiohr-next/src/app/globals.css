@@ -9,8 +9,8 @@
    ============================================================ */
 
 :root {
-  /* Layer 1 — Dark sections: deep charcoal, premium and cool-neutral (not brown) */
-  --section-charcoal: #17181a;
+  /* Layer 1 — Dark sections: cool deep charcoal (premium clarity, not brown) */
+  --section-charcoal: #15161a;
   --section-charcoal-foreground: #f6f5f3;
   --section-charcoal-muted: rgba(246, 245, 243, 0.88);
   --section-charcoal-border: rgba(246, 245, 243, 0.2);
@@ -51,7 +51,7 @@
   /* ========== Gradient & glow design system (reusable: IIOHR, HairAudit, HLI, FI) ========== */
   /* Gradients — clinical + premium, no neon/heavy saturation */
   --gradient-primary: linear-gradient(165deg, rgba(230, 220, 205, 0.4) 0%, rgba(253, 252, 251, 0.95) 45%, var(--section-ivory) 100%);
-  --gradient-dark: linear-gradient(180deg, #1a1b1e 0%, var(--section-charcoal) 30%, #121316 100%);
+  --gradient-dark: linear-gradient(180deg, #181920 0%, var(--section-charcoal) 38%, #0e0f12 100%);
   --gradient-accent: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(166, 139, 92, 0.12), transparent 60%);
 
   /* Glow — subtle by default; strong only in ecosystem */
@@ -207,20 +207,39 @@ textarea:focus-visible {
   color: inherit;
 }
 
-/* Light sections: design-system gradient (soft gold → ivory) */
+/* Light sections: continuous cream/ivory base + subtle gold (depth) + whisper blue (intelligence cue) */
 .section-ivory-depth {
-  background: var(--gradient-primary);
+  background:
+    radial-gradient(ellipse 90% 50% at 50% -15%, rgba(120, 150, 185, 0.045), transparent 58%),
+    radial-gradient(ellipse 80% 40% at 100% 50%, rgba(166, 139, 92, 0.04), transparent 55%),
+    var(--gradient-primary);
 }
-/* Muted light: layered surface with subtle warmth */
+/* Muted light: soft tone shift only — flows with ivory, no harsh stripe */
 .section-muted-depth {
-  background: linear-gradient(180deg, var(--section-ivory) 0%, var(--section-ivory-alt) 100%);
+  background:
+    radial-gradient(ellipse 70% 35% at 0% 80%, rgba(166, 139, 92, 0.035), transparent 52%),
+    linear-gradient(180deg, var(--section-ivory-alt) 0%, var(--section-ivory) 48%, var(--section-ivory-alt) 100%);
 }
-/* Section separation by tone (subtle line, not heavy border) */
+/* Light rails: no hard dividers — rhythm from padding + background only */
+.section-flow {
+  border-bottom: none;
+}
+/* Optional: hairline only when a break is truly needed */
 .section-sep-light {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid color-mix(in oklab, var(--border) 35%, transparent);
 }
 .section-sep-dark {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+/* Breathing room between blocks (no border, soft wash) */
+.section-breathe {
+  border: none;
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--section-ivory) 92%, var(--accent) 8%) 0%,
+    var(--section-ivory) 50%,
+    color-mix(in oklab, var(--section-ivory) 94%, var(--ai-accent-glow) 6%) 100%
+  );
 }
 
 /* Hero: fade-in and gradient behind text (design system) */
@@ -322,11 +341,11 @@ textarea:focus-visible {
   pointer-events: none;
 }
 
-/* Dark sections: design-system gradient + restrained glow (depth, not flat) */
+/* Dark sections: cool charcoal + subtle blue (clarity) + gold (premium depth) */
 .section-dark-gradient {
   background:
-    radial-gradient(ellipse 85% 45% at 50% -5%, rgba(100, 125, 150, 0.06), transparent 55%),
-    radial-gradient(ellipse 70% 35% at 85% 105%, rgba(166, 139, 92, 0.05), transparent 50%),
+    radial-gradient(ellipse 85% 45% at 50% -5%, rgba(95, 125, 160, 0.075), transparent 55%),
+    radial-gradient(ellipse 70% 35% at 85% 105%, rgba(166, 139, 92, 0.055), transparent 50%),
     var(--gradient-dark);
 }
 

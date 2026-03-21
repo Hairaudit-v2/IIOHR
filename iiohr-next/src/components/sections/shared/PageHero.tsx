@@ -38,7 +38,7 @@ export function PageHero({
   const isDark = variant === "dark";
   const sectionClass = isDark
     ? "bg-gradient-dark section-sep-dark"
-    : "section-ivory-depth section-sep-light";
+    : "section-ivory-depth section-flow";
   const imgPanelBg = isDark ? "bg-section-charcoal-foreground/10" : "bg-parchment";
   /** Only render next/image when we have a valid public path (e.g. /images/... or /hero/...). */
   const hasValidImage =

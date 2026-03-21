@@ -12,7 +12,7 @@ const skillModules = [
 
 export function TechnicalDevelopmentSection() {
   return (
-    <SectionShell dark>
+    <SectionShell muted>
       <SectionHeading
         eyebrow="Technical Skill Development"
         title="Core operative competencies developed through deliberate practice"
@@ -20,11 +20,9 @@ export function TechnicalDevelopmentSection() {
       />
       <ol className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {skillModules.map((module, index) => (
-          <Card key={module} dark interactive>
-            <p className="text-xs tracking-[0.14em] text-primary-foreground/70 uppercase">
-              {`Module ${index + 1}`}
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-primary-foreground">{module}</p>
+          <Card key={module} interactive>
+            <p className="text-xs tracking-[0.14em] text-muted-foreground uppercase">{`Module ${index + 1}`}</p>
+            <p className="mt-2 text-sm leading-relaxed text-foreground">{module}</p>
           </Card>
         ))}
       </ol>

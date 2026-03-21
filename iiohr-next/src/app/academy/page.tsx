@@ -293,14 +293,14 @@ export default function AcademyPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell dark>
+      <SectionShell muted>
         <SectionHeading
           eyebrow="Final step"
           title="Apply, enquire, or explore the full pathway structure"
           description="Whether you are applying as an individual doctor or seeking a clinic development pathway, IIOHR will map the right next step."
         />
         <SectionCTA
-          variant="dark"
+          variant="light"
           primary={{ href: "/apply", label: "Apply" }}
           secondary={[
             { href: "/for-clinics", label: "Enquire" },
