@@ -1578,3 +1578,19 @@ body {
 [data-section-tone="dark"] .ghn-node-detail {
   color: color-mix(in srgb, var(--gold-primary) 74%, #f8fafc 26%) !important;
 }
+
+/* System fix: keep light-surface tokens light even in OS dark mode.
+   Dark sections already have explicit [data-section-tone="dark"] overrides. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: var(--bg-secondary);
+    --surface-soft: var(--bg-soft);
+    --surface-elevated: color-mix(in srgb, var(--bg-secondary) 92%, var(--bg-primary) 8%);
+    --section-ivory: var(--bg-secondary);
+    --section-ivory-alt: var(--bg-soft);
+    --sand: color-mix(in srgb, var(--bg-soft) 88%, var(--text-secondary) 12%);
+    --parchment: var(--bg-secondary);
+    --border: rgba(15, 23, 42, 0.08);
+    --border-soft: rgba(15, 23, 42, 0.08);
+  }
+}
