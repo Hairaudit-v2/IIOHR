@@ -19,37 +19,41 @@ export function HeroSection() {
           src={HOME_IMAGES.hero.texture}
           alt=""
           fill
-          className="object-cover object-center [filter:saturate(.58)_contrast(1.06)_brightness(.5)]"
+          className="object-cover object-center [filter:saturate(.54)_contrast(1.08)_brightness(.42)]"
           sizes="100vw"
           priority
         />
       </div>
 
-      <div className="pointer-events-none absolute inset-0 z-[1] bg-section-charcoal/76" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 z-[1] bg-section-charcoal/82" aria-hidden />
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 z-[2] h-28 bg-black/26"
+        aria-hidden
+      />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-32 lg:py-36 xl:py-40">
-        <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(340px,420px)] lg:items-end lg:gap-16">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,380px)] lg:items-end lg:gap-14">
           <div className="relative max-w-2xl">
             <div className="hero-content-fade-in">
               <Eyebrow variant="dark">International Institute of Hair Restoration</Eyebrow>
               <div className="section-kicker-rule mt-4" aria-hidden />
-              <h1 className="mt-8 max-w-4xl text-5xl font-semibold leading-[1.01] tracking-[-0.035em] text-section-charcoal-foreground md:text-6xl lg:text-[4rem] [text-wrap:balance]">
+              <h1 className="mt-9 max-w-4xl text-[3.35rem] font-semibold leading-[0.98] tracking-[-0.038em] text-section-charcoal-foreground md:text-[4.3rem] lg:text-[4.95rem] [text-wrap:balance]">
                 Beyond the short course. From technician to surgeon.
               </h1>
               <p className="mt-10 max-w-2xl text-[1.05rem] leading-relaxed text-section-charcoal-muted md:text-[1.14rem] [line-height:1.82]">
                 A global education and mentorship platform for hair restoration: clinically grounded training, practical surgical exposure, and standards-based progression for doctors and clinics.
               </p>
-              <div className="mt-14 flex flex-col gap-12">
+              <div className="mt-10 flex flex-col gap-10">
                 <div className="flex flex-wrap items-center gap-4 md:gap-5">
                   <Button href="/apply" variant="dark">
                     Apply Now
                   </Button>
-                  <Button href="/training-pathways" variant="darkSecondary">
+                  <Button href="/training-pathways" variant="darkSecondary" className="opacity-95">
                     Explore Pathways
                   </Button>
                 </div>
                 <div className="pt-2">
-                  <div className="mb-3 h-px max-w-xs bg-section-charcoal-border/75" aria-hidden />
+                  <div className="mb-2 h-px max-w-xs bg-section-charcoal-border/65" aria-hidden />
                   <p className="text-sm">
                     <Button href="/about" variant="tertiary">
                       Learn More
@@ -66,15 +70,15 @@ export function HeroSection() {
                   src={HOME_IMAGES.hero.detail}
                   alt={heroDetailImage.alt}
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-center [filter:saturate(.82)_contrast(1.02)_brightness(.86)]"
                   sizes="(max-width: 1279px) 38vw, 410px"
                 />
-                <div className="pointer-events-none absolute inset-0 z-[2] bg-black/12" aria-hidden />
+                <div className="pointer-events-none absolute inset-0 z-[2] bg-black/24" aria-hidden />
               </div>
             </div>
-            <div className="mt-4 grid grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] gap-3">
-              <div className="hero-visual-rail h-9" aria-hidden />
-              <div className="hero-visual-rail h-9 opacity-70" aria-hidden />
+            <div className="mt-4 grid grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] gap-3 opacity-55">
+              <div className="hero-visual-rail h-7" aria-hidden />
+              <div className="hero-visual-rail h-7 opacity-60" aria-hidden />
             </div>
           </div>
         </div>
