@@ -11,7 +11,7 @@ const philosophyPoints = [
 
 export function PathwayPhilosophySection() {
   return (
-    <SectionShell muted className="scroll-mt-24">
+    <SectionShell muted joinPrevious className="scroll-mt-24">
       <div id="pathway-philosophy">
         <SectionHeading
           eyebrow="Pathway Philosophy"

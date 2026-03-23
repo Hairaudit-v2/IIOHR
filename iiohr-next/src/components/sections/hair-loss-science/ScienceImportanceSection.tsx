@@ -11,7 +11,7 @@ const reasons = [
 
 export function ScienceImportanceSection() {
   return (
-    <SectionShell muted className="scroll-mt-24">
+    <SectionShell muted joinPrevious className="scroll-mt-24">
       <div id="science-importance">
         <SectionHeading
           eyebrow="Why Science Matters"

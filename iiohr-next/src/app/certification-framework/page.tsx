@@ -74,7 +74,7 @@ export default function CertificationFrameworkPage() {
         secondaryCta={{ href: "/academy", label: "Explore Academy" }}
       />
 
-      <SectionShell muted>
+      <SectionShell muted joinPrevious>
         <SectionHeading
           eyebrow="Why certification matters"
           title="Measured progression requires clear standards and credible evidence"

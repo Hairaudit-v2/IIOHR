@@ -16,8 +16,8 @@ export interface ImageWrapperProps {
 }
 
 const baseWrapper =
-  "group relative overflow-hidden rounded-[14px] border border-border/75 bg-surface-elevated transition-[transform,border-color] duration-300 ease-out";
-const hoverWrapper = "hover:-translate-y-0.5 hover:border-foreground/30";
+  "group relative overflow-hidden rounded-[10px] border border-border bg-surface-elevated transition-[transform,border-color] duration-200 ease-out";
+const hoverWrapper = "hover:-translate-y-px hover:border-foreground/28";
 const glowHover = "hover:shadow-[var(--shadow-img-hover-accent)]";
 
 /**
@@ -38,22 +38,16 @@ export function ImageWrapper({
       className={`${baseWrapper} ${hoverWrapper} ${glowOnHover ? glowHover : ""} ${className}`}
     >
       <div className="relative size-full">
-        <div
-          className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-px bg-gradient-to-r from-transparent via-white/35 to-transparent"
-          aria-hidden
-        />
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-px bg-border/75" aria-hidden />
         <Image
           src={src}
           alt={alt}
           fill
-          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.015] [filter:saturate(.9)_contrast(1.03)_brightness(.95)]"
+          className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-[1.01] [filter:saturate(.94)_contrast(1.03)_brightness(.96)]"
           priority={priority}
           sizes={sizes}
         />
-        <div
-          className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-bg-dark/10 via-transparent to-white/4"
-          aria-hidden
-        />
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-black/0" aria-hidden />
         {children}
       </div>
     </div>

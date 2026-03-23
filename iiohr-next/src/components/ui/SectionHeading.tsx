@@ -24,19 +24,19 @@ export function SectionHeading({
     align === "center" ? "mx-auto max-w-2xl" : "max-w-2xl lg:max-w-[40rem]";
 
   return (
-    <header className={`space-y-9 ${alignClass}`}>
+    <header className={`space-y-8 ${alignClass}`}>
       {eyebrow ? (
-        <div className={align === "center" ? "flex flex-col items-center gap-4" : "space-y-4"}>
+        <div className={align === "center" ? "flex flex-col items-center gap-3.5" : "space-y-3.5"}>
           <Eyebrow variant={eyebrowOnDark ? "dark" : "light"}>{eyebrow}</Eyebrow>
           <div className={`section-kicker-rule ${align === "center" ? "mx-auto" : ""}`} aria-hidden />
         </div>
       ) : null}
-      <HeadingTag className="text-heading text-4xl leading-[1.04] font-semibold tracking-[-0.032em] md:text-[3.15rem] lg:text-[3.55rem] [text-wrap:balance]">
+      <HeadingTag className="text-heading text-4xl leading-[1.05] font-semibold tracking-[-0.03em] md:text-[3.1rem] lg:text-[3.45rem] [text-wrap:balance]">
         {title}
       </HeadingTag>
       {description ? (
         <p
-          className={`${descriptionWidthClass} max-w-prose text-[1.04rem] leading-relaxed md:text-[1.12rem] [line-height:1.8] ${
+          className={`${descriptionWidthClass} max-w-prose text-[1.02rem] leading-relaxed md:text-[1.09rem] [line-height:1.78] ${
             eyebrowOnDark ? "text-muted-foreground" : "text-readable-muted"
           }`}
         >

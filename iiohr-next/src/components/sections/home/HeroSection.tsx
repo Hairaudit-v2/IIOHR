@@ -25,10 +25,7 @@ export function HeroSection() {
         />
       </div>
 
-      <div
-        className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-section-charcoal/84 via-section-charcoal/74 to-section-charcoal/66"
-        aria-hidden
-      />
+      <div className="pointer-events-none absolute inset-0 z-[1] bg-section-charcoal/76" aria-hidden />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-32 lg:py-36 xl:py-40">
         <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(340px,420px)] lg:items-end lg:gap-16">
@@ -43,7 +40,7 @@ export function HeroSection() {
                 A global education and mentorship platform for hair restoration: clinically grounded training, practical surgical exposure, and standards-based progression for doctors and clinics.
               </p>
               <div className="mt-14 flex flex-col gap-12">
-                <div className="flex flex-wrap items-center gap-5 md:gap-6">
+                <div className="flex flex-wrap items-center gap-4 md:gap-5">
                   <Button href="/apply" variant="dark">
                     Apply Now
                   </Button>
@@ -52,10 +49,7 @@ export function HeroSection() {
                   </Button>
                 </div>
                 <div className="pt-2">
-                  <div
-                    className="mb-3 h-px max-w-xs bg-gradient-to-r from-section-charcoal-border/35 via-section-charcoal-border/15 to-transparent"
-                    aria-hidden
-                  />
+                  <div className="mb-3 h-px max-w-xs bg-section-charcoal-border/75" aria-hidden />
                   <p className="text-sm">
                     <Button href="/about" variant="tertiary">
                       Learn More
@@ -75,10 +69,7 @@ export function HeroSection() {
                   className="object-cover object-center"
                   sizes="(max-width: 1279px) 38vw, 410px"
                 />
-                <div
-                  className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-bg-dark/40 via-transparent to-white/4"
-                  aria-hidden
-                />
+                <div className="pointer-events-none absolute inset-0 z-[2] bg-black/12" aria-hidden />
               </div>
             </div>
             <div className="mt-4 grid grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] gap-3">

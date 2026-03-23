@@ -12,26 +12,26 @@ interface ButtonProps {
 
 /** Shared CTA sizing and focus for consistency across sections */
 const ctaBase =
-  "inline-flex min-h-11 items-center justify-center rounded-lg px-6 py-3 text-[13px] font-semibold tracking-[0.04em] transition-[color,background-color,border-color,box-shadow] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2";
+  "btn inline-flex min-h-11 items-center justify-center rounded-md px-5 py-2.5 text-[13px] font-semibold tracking-[0.03em] transition-[color,background-color,border-color] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2";
 
 const variantStyles: Record<ButtonVariant, string> = {
-  /* Primary: maximum contrast — gold fill pops against cream, strong shadow defines elevation */
+  /* Primary on light sections: near-black fill with white text. */
   primary:
-    "border-2 border-gold bg-gold text-primary font-semibold tracking-[0.04em] hover:bg-gold/90 shadow-[var(--shadow-btn-primary)] focus-visible:ring-offset-background",
-  /* Secondary: clear border definition (30% opacity) — readable on cream without competing with primary */
+    "btn-primary border border-slate-900 bg-slate-900 text-white hover:bg-slate-800 focus-visible:ring-offset-background",
+  /* Secondary: neutral outline; supportive action only. */
   secondary:
-    "border-2 border-foreground/30 bg-surface text-foreground font-semibold tracking-[0.03em] hover:border-accent/55 hover:bg-surface-elevated focus-visible:ring-offset-background",
-  /* Ghost: visible border for identification as an actionable element (slightly lighter than secondary) */
+    "btn-secondary border border-foreground/30 bg-surface text-foreground hover:border-foreground/45 hover:bg-surface-elevated focus-visible:ring-offset-background",
+  /* Ghost: low-emphasis alternative action. */
   ghost:
-    "border-2 border-foreground/25 bg-transparent text-foreground font-semibold tracking-[0.03em] hover:border-accent/50 hover:bg-surface/80 focus-visible:ring-offset-background",
+    "btn-ghost border border-foreground/24 bg-transparent text-foreground hover:border-foreground/40 hover:bg-surface/72 focus-visible:ring-offset-background",
   /* Tertiary: clear link appearance — underline provides identification */
   tertiary:
-    "border-0 bg-transparent shadow-none min-h-0 h-auto px-0 py-0 rounded-none text-sm font-semibold link-premium focus-visible:ring-offset-background",
-  /* Dark variants: maintain strong contrast on charcoal */
+    "btn-tertiary border-0 bg-transparent min-h-0 h-auto px-0 py-0 rounded-none text-sm font-semibold link-premium focus-visible:ring-offset-background",
+  /* Dark sections: gold primary action with dark text. */
   dark:
-    "border-2 border-gold bg-gold text-primary font-semibold tracking-[0.04em] hover:bg-gold/90 shadow-token-btn-dark focus-visible:ring-offset-section-charcoal",
+    "btn-dark border border-gold bg-gold text-slate-950 hover:bg-[#b99749] focus-visible:ring-offset-section-charcoal",
   darkSecondary:
-    "border-2 border-section-charcoal-border/80 bg-section-charcoal-foreground/[0.08] text-section-charcoal-foreground font-semibold tracking-[0.03em] hover:bg-section-charcoal-foreground/15 hover:border-section-charcoal-border focus-visible:ring-offset-section-charcoal",
+    "btn-dark-secondary border border-section-charcoal-border bg-section-charcoal-foreground/[0.08] text-section-charcoal-foreground hover:bg-section-charcoal-foreground/14 hover:border-section-charcoal-foreground/30 focus-visible:ring-offset-section-charcoal",
 };
 
 export function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {

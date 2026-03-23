@@ -82,7 +82,7 @@ export default function FacultyAndMentorshipPage() {
         image={getHeroImage("facultyAndMentorship")}
       />
 
-      <SectionShell muted>
+      <SectionShell muted joinPrevious>
         <SectionHeading
           eyebrow="Why mentorship matters"
           title="Progression through guided oversight and feedback"
@@ -153,7 +153,7 @@ export default function FacultyAndMentorshipPage() {
         </div>
       </SectionShell>
 
-      <AcademyFrameworkSection />
+      <AcademyFrameworkSection muted={false} />
 
       <SectionShell anchor>
         <SectionHeading

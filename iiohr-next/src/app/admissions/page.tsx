@@ -121,7 +121,7 @@ export default function AdmissionsPage() {
         secondaryCta={{ href: "/academy", label: "Explore Academy" }}
       />
 
-      <SectionShell muted>
+      <SectionShell muted joinPrevious>
         <SectionHeading
           eyebrow="Who this is for"
           title="Clinicians and clinics at different development stages"
@@ -189,7 +189,7 @@ export default function AdmissionsPage() {
         </ul>
       </SectionShell>
 
-      <SectionShell>
+      <SectionShell muted>
         <SectionHeading
           eyebrow="Admissions journey"
           title="A structured review and pathway-fit process"
@@ -205,7 +205,7 @@ export default function AdmissionsPage() {
         </div>
       </SectionShell>
 
-      <SectionShell muted>
+      <SectionShell>
         <SectionHeading
           eyebrow="Support after admission"
           title="Progression continues beyond intake"

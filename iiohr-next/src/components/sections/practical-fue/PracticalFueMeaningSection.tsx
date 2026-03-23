@@ -11,7 +11,7 @@ const meaningPoints = [
 
 export function PracticalFueMeaningSection() {
   return (
-    <SectionShell muted className="scroll-mt-24">
+    <SectionShell muted joinPrevious className="scroll-mt-24">
       <div id="practical-fue-model">
         <SectionHeading
           eyebrow="What Practical FUE Means at IIOHR"

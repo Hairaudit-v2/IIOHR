@@ -22,7 +22,7 @@ const pillars = [
 
 export function MissionPositioningSection() {
   return (
-    <SectionShell muted>
+    <SectionShell muted joinPrevious>
       <SectionHeading
         eyebrow="Mission and Positioning"
         title="Why IIOHR exists"

@@ -150,7 +150,7 @@ export default function AcademyPage() {
         variant="dark"
       />
 
-      <SectionShell muted>
+      <SectionShell muted joinPrevious>
         <div className="statement-panel px-6 py-8 md:px-8 md:py-10">
           <SectionHeading
             eyebrow="Why the Academy exists"

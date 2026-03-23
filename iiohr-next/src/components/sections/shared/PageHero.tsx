@@ -71,7 +71,7 @@ export function PageHero({
             </p>
             {(primaryCta || secondaryCta || tertiaryCta) && (
               <div className="mt-14 flex flex-col gap-12">
-                <div className="flex flex-wrap items-center gap-5 md:gap-6">
+                <div className="flex flex-wrap items-center gap-4 md:gap-5">
                   {primaryCta ? (
                     <Button href={primaryCta.href} variant={isDark ? "dark" : "primary"}>
                       {primaryCta.label}
@@ -88,14 +88,7 @@ export function PageHero({
                 </div>
                 {tertiaryCta ? (
                   <div className="pt-2">
-                    <div
-                      className={
-                        isDark
-                          ? "mb-3 h-px max-w-xs bg-gradient-to-r from-section-charcoal-border/35 via-section-charcoal-border/12 to-transparent"
-                          : "mb-3 h-px max-w-xs bg-gradient-to-r from-border/85 via-border/40 to-transparent"
-                      }
-                      aria-hidden
-                    />
+                    <div className="mb-3 h-px max-w-xs bg-border/75" aria-hidden />
                     <p className="text-sm">
                       <Button href={tertiaryCta.href} variant="tertiary">
                         {tertiaryCta.label}
@@ -121,10 +114,7 @@ export function PageHero({
                 ) : (
                   <div className={`h-full min-h-[420px] w-full ${imgPanelBg}`} aria-hidden />
                 )}
-                <div
-                  className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-bg-dark/38 via-transparent to-white/4"
-                  aria-hidden
-                />
+                <div className="pointer-events-none absolute inset-0 z-[2] bg-black/10" aria-hidden />
               </div>
             </div>
             <div className="mt-4 grid grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] gap-3">

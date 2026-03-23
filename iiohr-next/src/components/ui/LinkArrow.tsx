@@ -14,7 +14,7 @@ export function LinkArrow({
   className = "",
   external = href.startsWith("http"),
 }: LinkArrowProps) {
-  const classNames = `link-premium group inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${className}`;
+  const classNames = `link-premium group inline-flex items-center gap-1.5 text-sm font-semibold tracking-[0.03em] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background ${className}`;
 
   if (external) {
     return (
@@ -25,7 +25,7 @@ export function LinkArrow({
         className={classNames}
       >
         <span>{children}</span>
-        <span aria-hidden className="transition-transform duration-150 group-hover:translate-x-0.5">
+        <span aria-hidden className="transition-transform duration-150 group-hover:translate-x-px">
           ↗
         </span>
       </a>
@@ -38,7 +38,7 @@ export function LinkArrow({
       className={classNames}
     >
       <span>{children}</span>
-      <span aria-hidden className="transition-transform duration-150 group-hover:translate-x-0.5">
+      <span aria-hidden className="transition-transform duration-150 group-hover:translate-x-px">
         →
       </span>
     </Link>

@@ -30,11 +30,19 @@ const frameworkItems = [
   },
 ] as const;
 
-export function AcademyFrameworkSection() {
+interface AcademyFrameworkSectionProps {
+  muted?: boolean;
+  joinPrevious?: boolean;
+}
+
+export function AcademyFrameworkSection({
+  muted = true,
+  joinPrevious = false,
+}: AcademyFrameworkSectionProps = {}) {
   const [primaryItem, ...supportingItems] = frameworkItems;
 
   return (
-    <SectionShell muted>
+    <SectionShell muted={muted} joinPrevious={joinPrevious}>
       <SectionHeading
         eyebrow="Connected model"
         title="How the IIOHR development model fits together"

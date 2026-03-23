@@ -11,7 +11,7 @@ const pressures = [
 
 export function StructuredDevelopmentNeedSection() {
   return (
-    <SectionShell muted className="scroll-mt-24">
+    <SectionShell muted joinPrevious className="scroll-mt-24">
       <div id="clinic-development-need">
         <SectionHeading
           eyebrow="Why Structured Development Matters"

@@ -11,7 +11,7 @@ const introPoints = [
 
 export function ApplyIntroductionSection() {
   return (
-    <SectionShell muted>
+    <SectionShell muted joinPrevious>
       <SectionHeading
         eyebrow="Before You Apply"
         title="Structured intake process"

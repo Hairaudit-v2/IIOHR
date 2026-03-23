@@ -29,7 +29,7 @@ const modelFlow = ["Practical Exposure", "Theory Integration", "Audit Feedback",
 
 export function IntegratedModelSection() {
   return (
-    <SectionShell muted>
+    <SectionShell>
       <SectionHeading
         eyebrow="Integrated Development Model"
         title="How practical training, theory, audit, and mentorship work together"

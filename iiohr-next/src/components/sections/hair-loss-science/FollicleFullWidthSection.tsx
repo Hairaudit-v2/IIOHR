@@ -27,6 +27,7 @@ export function FollicleFullWidthSection() {
       className="relative z-10 section-light section-flow"
       aria-label="Follicle and biology"
       data-section-tone="light"
+      data-section-alt="true"
     >
       {/* Full-width follicle image */}
       <div className="relative aspect-[21/9] w-full min-h-[200px] overflow-hidden md:aspect-[3/1]">

@@ -27,7 +27,7 @@ const modelComponents = [
 
 export function InstituteDifferenceSection() {
   return (
-    <SectionShell>
+    <SectionShell muted>
       <SectionHeading
         eyebrow="The IIOHR Model"
         title="What makes IIOHR different"

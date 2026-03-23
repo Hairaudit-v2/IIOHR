@@ -20,8 +20,8 @@ interface SectionCTAProps {
   className?: string;
 }
 
-const buttonGap = "gap-x-6 gap-y-4 md:gap-x-7";
-const tertiaryGap = "gap-x-8 gap-y-3";
+const buttonGap = "gap-x-4 gap-y-3 md:gap-x-5";
+const tertiaryGap = "gap-x-6 gap-y-2.5";
 
 /** Reusable CTA cluster: primary + secondary buttons + tertiary links. Use after major sections. */
 export function SectionCTA({
@@ -41,7 +41,7 @@ export function SectionCTA({
   if (!hasButtons && !hasTertiary) return null;
 
   return (
-    <div className={`flex flex-col gap-10 ${className}`}>
+    <div className={`flex flex-col gap-9 ${className}`}>
       {hasButtons && (
         <div className={`flex flex-wrap items-center ${buttonGap}`}>
           {primary && (

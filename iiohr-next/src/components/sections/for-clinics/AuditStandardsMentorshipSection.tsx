@@ -22,7 +22,7 @@ const pillars = [
 
 export function AuditStandardsMentorshipSection() {
   return (
-    <SectionShell>
+    <SectionShell muted>
       <SectionHeading
         eyebrow="Quality Infrastructure"
         title="Audit, standards, and mentorship work as one development system"

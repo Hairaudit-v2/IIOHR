@@ -22,7 +22,7 @@ const modules = [
 
 export function TrichologyAndDiagnosisSection() {
   return (
-    <SectionShell>
+    <SectionShell muted>
       <SectionHeading
         eyebrow="Trichology and Diagnosis"
         title="From pattern recognition to clinically defensible diagnosis"

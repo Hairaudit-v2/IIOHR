@@ -32,7 +32,7 @@ const supports = [
 
 export function ClinicImplementationSection() {
   return (
-    <SectionShell muted>
+    <SectionShell>
       <SectionHeading
         eyebrow="Implementation support"
         title="How implementation works in staged practice"

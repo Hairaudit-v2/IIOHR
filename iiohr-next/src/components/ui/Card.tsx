@@ -16,19 +16,19 @@ interface CardProps {
 }
 
 const baseStyles =
-  "relative min-w-0 overflow-hidden rounded-[14px] border border-border/80 bg-surface p-6 md:p-7";
+  "relative min-w-0 overflow-hidden rounded-[10px] border border-border bg-surface p-6 md:p-7";
 const quietBase =
-  "relative min-w-0 overflow-hidden rounded-[12px] border border-border/55 bg-surface/70 p-5 shadow-none md:p-6 [&_h3]:text-heading [&_h3]:font-semibold";
+  "relative min-w-0 overflow-hidden rounded-[10px] border border-border/80 bg-surface/78 p-5 shadow-none md:p-6 [&_h3]:text-heading [&_h3]:font-semibold";
 const lightStyles =
   "before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-border/60";
 const darkStyles =
   "border-section-charcoal-border/80 bg-section-charcoal-foreground/[0.06] before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-section-charcoal-border";
 const interactiveStyles =
-  "transition-[border-color,background-color,transform] duration-200 ease-out hover:-translate-y-0.5 hover:border-foreground/26 hover:bg-surface-elevated/80";
+  "transition-[border-color,background-color,transform] duration-150 ease-out hover:-translate-y-px hover:border-foreground/28 hover:bg-surface-elevated/85";
 const interactiveDarkStyles =
-  "transition-[border-color,background-color,transform] duration-200 ease-out hover:-translate-y-0.5 hover:border-section-charcoal-border hover:bg-section-charcoal-foreground/[0.1]";
+  "transition-[border-color,background-color,transform] duration-150 ease-out hover:-translate-y-px hover:border-section-charcoal-border hover:bg-section-charcoal-foreground/[0.1]";
 const quietInteractiveStyles =
-  "transition-[border-color,background-color,transform] duration-200 ease-out hover:-translate-y-0.5 hover:border-foreground/30 hover:bg-surface/82";
+  "transition-[border-color,background-color,transform] duration-150 ease-out hover:-translate-y-px hover:border-foreground/32 hover:bg-surface/84";
 
 /** Paper-like content panel. Use `interactive` for hover lift and emphasis; `dark` for charcoal sections; optional `marker`. */
 export function Card({

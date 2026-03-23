@@ -32,6 +32,8 @@ export function SectionShell({
 }: SectionShellProps) {
   const innerPad = compact
     ? "py-16 md:py-20 lg:py-24"
+    : anchor
+      ? "py-26 md:py-30 lg:py-34"
     : joinPrevious
       ? continuous
         ? "pt-12 pb-20 md:pt-16 md:pb-24 lg:pt-20 lg:pb-28"

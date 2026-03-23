@@ -1236,3 +1236,192 @@ body {
 [data-section-tone="dark"] .img-panel {
   box-shadow: none;
 }
+
+/* ============================================================
+   CTA and contrast refinement
+   ============================================================ */
+
+:root {
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --readable-muted: #334155;
+  --readable-subtle: color-mix(in srgb, #334155 88%, #64748b 12%);
+  --section-charcoal-foreground: #f8fafc;
+  --section-charcoal-muted: #cbd5f5;
+  --gold-primary: #c6a85b;
+  --border: rgba(15, 23, 42, 0.08);
+  --border-soft: rgba(15, 23, 42, 0.08);
+  --section-charcoal-border: rgba(255, 255, 255, 0.08);
+}
+
+.section-light,
+.section-light-muted,
+.section-home-editorial,
+.section-ivory-depth,
+.section-muted-depth,
+.section-light-anchor,
+.section-anchor {
+  color: #0f172a;
+}
+
+[data-section-tone="light"] .text-heading,
+[data-section-tone="light"] [class*="text-heading"] {
+  color: #0f172a !important;
+}
+[data-section-tone="light"] .text-muted-foreground,
+[data-section-tone="light"] .text-readable-muted,
+[data-section-tone="light"] .text-readable-subtle,
+[data-section-tone="light"] p,
+[data-section-tone="light"] li {
+  color: #334155;
+}
+
+[data-section-tone="dark"] .text-heading,
+[data-section-tone="dark"] [class*="text-heading"] {
+  color: #f8fafc !important;
+}
+[data-section-tone="dark"] .text-muted-foreground,
+[data-section-tone="dark"] .text-readable-muted,
+[data-section-tone="dark"] .text-readable-subtle,
+[data-section-tone="dark"] p,
+[data-section-tone="dark"] li {
+  color: #cbd5f5;
+}
+
+[data-section-tone="dark"] .text-foreground {
+  color: #f8fafc !important;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+.btn-primary {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background: #1e293b;
+  border-color: #1e293b;
+}
+.btn-dark {
+  background: #c6a85b;
+  border-color: #c6a85b;
+  color: #0f172a;
+}
+.btn-dark:hover {
+  background: #b99749;
+  border-color: #b99749;
+}
+[data-section-tone="anchor"] .btn-primary {
+  background: #c6a85b;
+  border-color: #c6a85b;
+  color: #0f172a;
+}
+[data-section-tone="anchor"] .btn-primary:hover {
+  background: #b99749;
+  border-color: #b99749;
+}
+
+.btn-secondary,
+.btn-ghost,
+.btn-dark-secondary {
+  box-shadow: none !important;
+}
+
+[data-section-tone="light"] .btn-secondary,
+[data-section-tone="light"] .btn-ghost {
+  border-color: rgba(15, 23, 42, 0.26);
+}
+[data-section-tone="dark"] .btn-dark-secondary {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.section-anchor .section-kicker-rule {
+  margin-bottom: 0.25rem;
+}
+.section-anchor .btn-primary,
+.section-anchor .btn-dark {
+  font-weight: 700;
+}
+
+.card,
+.authority-panel,
+.statement-panel,
+.img-panel {
+  box-shadow: none !important;
+}
+
+/* ============================================================
+   Third-pass institutional polish
+   ============================================================ */
+
+:root {
+  --radius-panel: 10px;
+}
+
+.section-flow + .section-flow::before {
+  background: rgba(15, 23, 42, 0.08);
+}
+[data-section-tone="dark"].section-flow + [data-section-tone="dark"].section-flow::before {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.section-kicker-rule {
+  height: 1px;
+  background: rgba(15, 23, 42, 0.24);
+}
+[data-section-tone="dark"] .section-kicker-rule,
+[data-section-tone="anchor"] .section-kicker-rule {
+  background: rgba(248, 250, 252, 0.24);
+}
+
+.authority-panel,
+.statement-panel,
+.img-panel,
+.hero-visual-panel {
+  border-radius: var(--radius-panel);
+  border-width: 1px;
+}
+
+.hero-visual-rail {
+  border-radius: 999px;
+  background: rgba(248, 250, 252, 0.04);
+}
+
+.list-rail {
+  gap: 0.85rem;
+}
+.list-rail-item {
+  border-radius: 0 8px 8px 0;
+  padding: 0.95rem 1rem 0.95rem 1.15rem;
+}
+.list-rail-item::before {
+  width: 0.45rem;
+}
+.list-rail-item h3 {
+  line-height: 1.35;
+}
+.list-rail-item p {
+  line-height: 1.65;
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+.section-anchor .btn-primary,
+.section-anchor .btn-dark {
+  min-width: 11.5rem;
+}
+
+/* Remove duplicate selector side effects from earlier pass */
+[data-section-tone="dark"] .authority-panel {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+[data-section-tone="dark"] .list-rail-item {
+  border-left-color: rgba(255, 255, 255, 0.22);
+}
+[data-section-tone="dark"] .list-rail-item::before {
+  background: rgba(248, 250, 252, 0.56);
+}

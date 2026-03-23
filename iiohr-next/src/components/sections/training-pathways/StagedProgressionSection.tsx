@@ -42,7 +42,7 @@ const stagedSteps = [
 
 export function StagedProgressionSection() {
   return (
-    <SectionShell>
+    <SectionShell muted>
       <SectionHeading
         eyebrow="Staged Progression Model"
         title="A clear advancement sequence for sustainable capability development"

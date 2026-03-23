@@ -28,7 +28,7 @@ export function MobileNav() {
       <button
         type="button"
         onClick={() => setOpen((current) => !current)}
-        className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md border border-border bg-surface px-3 py-2 text-sm font-medium text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        className="inline-flex min-h-[42px] min-w-[42px] items-center justify-center rounded-[6px] border border-border bg-surface px-3 py-2 text-sm font-medium text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         aria-expanded={open}
         aria-controls="mobile-primary-nav"
         aria-label="Toggle mobile navigation"
@@ -45,7 +45,7 @@ export function MobileNav() {
           />
           <nav
             id="mobile-primary-nav"
-            className="absolute right-0 top-full z-50 mt-3 w-[min(90vw,360px)] min-w-0 rounded-lg border border-border bg-background px-4 py-5 shadow-token-mobile-panel"
+            className="absolute right-0 top-full z-50 mt-3 w-[min(90vw,360px)] min-w-0 rounded-[8px] border border-border bg-background px-4 py-5 shadow-none"
           >
             <p className="text-[11px] tracking-[0.14em] text-readable-muted uppercase">
               Primary Navigation
@@ -59,7 +59,7 @@ export function MobileNav() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setOpen(false)}
-                      className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-2.5 text-sm text-foreground hover:bg-surface hover:text-accent"
+                      className="flex min-h-[44px] items-center justify-between rounded-[6px] px-3 py-2.5 text-sm text-foreground hover:bg-surface hover:text-heading"
                     >
                       <span>{item.label}</span>
                       <span aria-hidden="true">↗</span>
@@ -69,10 +69,10 @@ export function MobileNav() {
                       href={item.href}
                       aria-current={pathname === item.href ? "page" : undefined}
                       onClick={() => setOpen(false)}
-                      className={`flex min-h-[44px] items-center rounded-md px-3 py-2.5 text-sm ${
+                      className={`flex min-h-[44px] items-center rounded-[6px] px-3 py-2.5 text-sm ${
                         pathname === item.href
                           ? "bg-surface font-semibold text-foreground"
-                          : "text-foreground hover:bg-surface hover:text-accent"
+                          : "text-foreground hover:bg-surface hover:text-heading"
                       }`}
                     >
                       {item.label}
@@ -89,7 +89,7 @@ export function MobileNav() {
                 <a
                   href={`mailto:${siteConfig.applicationEmail}`}
                   onClick={() => setOpen(false)}
-                  className="flex min-h-[44px] items-center rounded-md border border-foreground/20 bg-surface px-3 py-2.5 text-sm text-foreground hover:border-accent/40 hover:text-accent"
+                  className="flex min-h-[44px] items-center rounded-[6px] border border-foreground/20 bg-surface px-3 py-2.5 text-sm text-foreground hover:border-foreground/35 hover:text-heading"
                 >
                   {siteConfig.applicationEmail}
                 </a>
@@ -99,7 +99,7 @@ export function MobileNav() {
               <Link
                 href="/apply"
                 onClick={() => setOpen(false)}
-                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-md border-2 border-gold bg-gold px-3 py-2.5 text-sm font-semibold text-primary shadow-[var(--shadow-btn-primary)]"
+                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[6px] border border-gold bg-gold px-3 py-2.5 text-sm font-semibold text-primary"
               >
                 Apply for Training
               </Link>
