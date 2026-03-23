@@ -50,7 +50,7 @@ export function Card({
         : interactiveStyles
     : "";
   return (
-    <Tag className={`${rootBase} ${tone} ${hover} ${className}`}>
+    <Tag className={`card ${rootBase} ${tone} ${hover} ${className}`}>
       {marker != null ? (
         <div className="mb-4">
           <span

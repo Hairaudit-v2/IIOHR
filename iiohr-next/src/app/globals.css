@@ -1533,3 +1533,48 @@ body {
   color: #f8fafc !important;
   background: var(--bg-dark-elevated) !important;
 }
+
+/* Deep audit hardening: dark panels/cards always get readable text contrast */
+[data-section-tone="dark"] .card,
+[data-section-tone="dark"] .authority-panel,
+[data-section-tone="dark"] .statement-panel,
+[data-section-tone="dark"] .img-panel,
+[data-section-tone="dark"] .hero-visual-panel,
+[data-section-tone="dark"] .list-rail-item,
+[data-section-tone="dark"] .ghn-node-card .card {
+  color: #d1d5db !important;
+}
+
+[data-section-tone="dark"] .card h1,
+[data-section-tone="dark"] .card h2,
+[data-section-tone="dark"] .card h3,
+[data-section-tone="dark"] .card h4,
+[data-section-tone="dark"] .authority-panel h1,
+[data-section-tone="dark"] .authority-panel h2,
+[data-section-tone="dark"] .authority-panel h3,
+[data-section-tone="dark"] .authority-panel h4,
+[data-section-tone="dark"] .statement-panel h1,
+[data-section-tone="dark"] .statement-panel h2,
+[data-section-tone="dark"] .statement-panel h3,
+[data-section-tone="dark"] .statement-panel h4,
+[data-section-tone="dark"] .list-rail-item h3,
+[data-section-tone="dark"] .ghn-node-card .card h3 {
+  color: #f8fafc !important;
+}
+
+[data-section-tone="dark"] .card p,
+[data-section-tone="dark"] .card li,
+[data-section-tone="dark"] .authority-panel p,
+[data-section-tone="dark"] .statement-panel p,
+[data-section-tone="dark"] .list-rail-item p,
+[data-section-tone="dark"] .ghn-node-card .card p {
+  color: #d1d5db !important;
+}
+
+/* Accent labels/links in dark cards: lighter and readable */
+[data-section-tone="dark"] .text-accent,
+[data-section-tone="dark"] .text-accent-muted,
+[data-section-tone="dark"] .ghn-node-cta,
+[data-section-tone="dark"] .ghn-node-detail {
+  color: color-mix(in srgb, var(--gold-primary) 74%, #f8fafc 26%) !important;
+}
