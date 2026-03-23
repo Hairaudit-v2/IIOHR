@@ -33,10 +33,10 @@ export function TimelineSteps({
   return (
     <SectionShell muted>
       <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-      <ol className="mt-16 grid gap-6 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3 xl:grid-cols-6">
+      <ol className="list-rail mt-16 lg:mt-20">
         {items.map(({ key, label, description: desc, index }) => (
-          <li key={key}>
-            <Card interactive marker={`0${index}`} as="div">
+          <li key={key} className="list-rail-item">
+            <Card interactive marker={`0${index}`} as="div" quiet>
               <h3 className="text-sm font-semibold uppercase tracking-[0.06em] text-foreground">
                 {label}
               </h3>

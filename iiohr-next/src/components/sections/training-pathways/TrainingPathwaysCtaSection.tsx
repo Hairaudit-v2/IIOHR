@@ -9,7 +9,7 @@ const mailtoClass =
 
 export function TrainingPathwaysCtaSection() {
   return (
-    <SectionShell muted>
+    <SectionShell anchor>
       <SectionHeading
         eyebrow="Next step"
         title="Apply or enquire about pathway fit"

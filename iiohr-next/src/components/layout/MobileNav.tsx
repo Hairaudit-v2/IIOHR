@@ -39,7 +39,7 @@ export function MobileNav() {
         <>
           <button
             type="button"
-            className="mobile-nav-backdrop fixed inset-0 z-40 backdrop-blur-[1px]"
+            className="mobile-nav-backdrop fixed inset-0 z-40"
             aria-label="Close navigation overlay"
             onClick={() => setOpen(false)}
           />
@@ -99,7 +99,7 @@ export function MobileNav() {
               <Link
                 href="/apply"
                 onClick={() => setOpen(false)}
-                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-md border-2 border-accent bg-accent px-3 py-2.5 text-sm font-semibold text-primary shadow-[var(--shadow-btn-primary)]"
+                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-md border-2 border-gold bg-gold px-3 py-2.5 text-sm font-semibold text-primary shadow-[var(--shadow-btn-primary)]"
               >
                 Apply for Training
               </Link>

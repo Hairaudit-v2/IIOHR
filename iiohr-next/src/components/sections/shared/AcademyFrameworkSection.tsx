@@ -31,6 +31,8 @@ const frameworkItems = [
 ] as const;
 
 export function AcademyFrameworkSection() {
+  const [primaryItem, ...supportingItems] = frameworkItems;
+
   return (
     <SectionShell muted>
       <SectionHeading
@@ -38,16 +40,32 @@ export function AcademyFrameworkSection() {
         title="How the IIOHR development model fits together"
         description="IIOHR combines structured education, admissions guidance, certification logic, and mentorship into a connected framework designed for sustained clinical development."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-2">
-        {frameworkItems.map((item) => (
-          <Card key={item.href}>
-            <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-            <div className="mt-5">
-              <LinkArrow href={item.href}>Explore {item.title}</LinkArrow>
+      <div className="mt-16 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-start">
+        {primaryItem ? (
+          <Card className="h-full">
+            <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">
+              Core entry point
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold tracking-tight text-foreground md:text-[1.75rem]">
+              {primaryItem.title}
+            </h3>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{primaryItem.description}</p>
+            <div className="mt-6">
+              <LinkArrow href={primaryItem.href}>Explore {primaryItem.title}</LinkArrow>
             </div>
           </Card>
-        ))}
+        ) : null}
+        <ul className="list-rail">
+          {supportingItems.map((item) => (
+            <li key={item.href} className="list-rail-item">
+              <h3 className="text-base font-semibold tracking-tight text-foreground">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+              <div className="mt-4">
+                <LinkArrow href={item.href}>Explore {item.title}</LinkArrow>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </SectionShell>
   );

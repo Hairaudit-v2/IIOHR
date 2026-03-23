@@ -9,7 +9,7 @@ const mailtoClass =
 
 export function ForClinicsCtaSection() {
   return (
-    <SectionShell muted>
+    <SectionShell anchor>
       <SectionHeading
         eyebrow="Partnership enquiry"
         title="Discuss a clinic partnership pathway"

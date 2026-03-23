@@ -8,7 +8,7 @@ const mailtoClass =
 
 export function ApplyCtaSection() {
   return (
-    <SectionShell muted>
+    <SectionShell anchor>
       <SectionHeading
         eyebrow="Ready to Proceed"
         title="Begin your IIOHR application pathway"

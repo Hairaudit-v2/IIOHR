@@ -19,7 +19,7 @@ interface PageHeroProps {
   image?: HeroImage;
   /** Set true for LCP hero (e.g. homepage) to prioritize loading. */
   imagePriority?: boolean;
-  /** "dark" = charcoal hero with light text (homepage); default = light ivory. */
+  /** "dark" = charcoal hero with light text. */
   variant?: "light" | "dark";
 }
 
@@ -33,12 +33,10 @@ export function PageHero({
   tertiaryCta,
   image,
   imagePriority = false,
-  variant = "light",
+  variant = "dark",
 }: PageHeroProps) {
   const isDark = variant === "dark";
-  const sectionClass = isDark
-    ? "section-dark-anchor section-sep-dark"
-    : "section-light-anchor section-flow";
+  const sectionClass = isDark ? "section-dark section-sep-dark" : "section-light section-flow";
   const imgPanelBg = isDark ? "bg-section-charcoal-foreground/10" : "bg-parchment";
   /** Only render next/image when we have a valid public path (e.g. /images/... or /hero/...). */
   const hasValidImage =
@@ -50,22 +48,22 @@ export function PageHero({
   return (
     <section
       className={`relative overflow-hidden ${sectionClass}`}
-      data-section-tone={isDark ? "dark" : "default"}
+      data-section-tone={isDark ? "dark" : "light"}
     >
       <div
         className={`section-grid-overlay ${isDark ? "section-grid-overlay-dark" : "section-grid-overlay-light"}`}
         aria-hidden
       />
-      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-36">
-        <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:items-end lg:gap-16 xl:gap-20">
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-32 lg:py-36">
+        <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(340px,420px)] lg:items-end lg:gap-16 xl:gap-20">
           <div>
             <Eyebrow variant={isDark ? "dark" : "light"}>{eyebrow}</Eyebrow>
             <div className="section-kicker-rule mt-4" aria-hidden />
-            <h1 className="mt-8 max-w-4xl text-heading text-4xl leading-[1.04] font-semibold tracking-[-0.03em] md:text-5xl lg:text-[3.1rem] [text-wrap:balance]">
+            <h1 className="mt-8 max-w-4xl text-heading text-5xl leading-[1.01] font-semibold tracking-[-0.035em] md:text-6xl lg:text-[3.85rem] [text-wrap:balance]">
               {title}
             </h1>
             <p
-              className={`mt-9 max-w-2xl text-base leading-relaxed md:text-[1.07rem] [line-height:1.72] ${
+              className={`mt-10 max-w-2xl text-[1.05rem] leading-relaxed md:text-[1.14rem] [line-height:1.82] ${
                 isDark ? "text-muted-foreground" : "text-readable-muted"
               }`}
             >
@@ -124,7 +122,7 @@ export function PageHero({
                   <div className={`h-full min-h-[420px] w-full ${imgPanelBg}`} aria-hidden />
                 )}
                 <div
-                  className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-bg-dark/54 via-transparent to-white/8"
+                  className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-bg-dark/38 via-transparent to-white/4"
                   aria-hidden
                 />
               </div>

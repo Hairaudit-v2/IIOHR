@@ -174,7 +174,6 @@ export default function AcademyPage() {
                 alt={dnaBridgeImage.alt}
                 className="aspect-[4/3] min-h-[260px] w-full"
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                glowOnHover
               />
             </div>
           </div>
@@ -272,7 +271,6 @@ export default function AcademyPage() {
             alt={ecosystemLabImage.alt}
             className="aspect-[4/3] min-h-[260px] w-full"
             sizes="(max-width: 1024px) 100vw, 42vw"
-            glowOnHover
           />
           <div className="authority-panel px-6 py-6 md:px-7 md:py-7">
             <p className="text-sm leading-relaxed text-readable-muted">
@@ -332,7 +330,7 @@ export default function AcademyPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell muted>
+      <SectionShell anchor>
         <SectionHeading
           eyebrow="Final step"
           title="Apply, enquire, or explore the full pathway structure"

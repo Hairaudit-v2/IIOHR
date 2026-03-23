@@ -34,7 +34,6 @@ export function SplitSection({
         alt={image.alt}
         className="aspect-[4/3] min-h-[220px] w-full"
         sizes="(max-width: 1024px) 100vw, 50vw"
-        glowOnHover
       />
     );
   const content = (

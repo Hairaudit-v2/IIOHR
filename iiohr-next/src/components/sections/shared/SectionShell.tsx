@@ -2,16 +2,16 @@ import type { ReactNode } from "react";
 
 interface SectionShellProps {
   children: ReactNode;
+  /** Alternating light tone flag (subtle contrast within section-light). */
   muted?: boolean;
   dark?: boolean;
-  /**
-   * Homepage / long-form editorial: one calm cream plane (section-home-editorial).
-   * Ignores `muted` when true — use spacing + `joinPrevious` for rhythm, not alternating bands.
-   */
+  /** Accent treatment reserved for CTA / certification sections. */
+  anchor?: boolean;
+  /** Legacy flag kept for compatibility; now only affects spacing density. */
   continuous?: boolean;
-  /** Tighter vertical padding for secondary or stacked strips. */
+  /** Tighter vertical padding for secondary strips. */
   compact?: boolean;
-  /** Less top padding when stacked after another same-tone section (cream continuity). */
+  /** Less top padding for intentionally stacked sections. */
   joinPrevious?: boolean;
   className?: string;
   id?: string;
@@ -22,6 +22,7 @@ export function SectionShell({
   children,
   muted = false,
   dark = false,
+  anchor = false,
   continuous = false,
   compact = false,
   joinPrevious = false,
@@ -30,28 +31,27 @@ export function SectionShell({
   "aria-label": ariaLabel,
 }: SectionShellProps) {
   const innerPad = compact
-    ? "py-14 md:py-16 lg:py-20"
+    ? "py-16 md:py-20 lg:py-24"
     : joinPrevious
       ? continuous
-        ? "pt-8 pb-20 md:pt-10 md:pb-24 lg:pt-12 lg:pb-28"
-        : "pt-12 pb-28 md:pt-16 md:pb-32 lg:pt-20 lg:pb-36"
+        ? "pt-12 pb-20 md:pt-16 md:pb-24 lg:pt-20 lg:pb-28"
+        : "pt-16 pb-24 md:pt-20 md:pb-28 lg:pt-24 lg:pb-32"
       : continuous
-        ? "py-24 md:py-28 lg:py-32"
-        : "py-28 md:py-32 lg:py-36";
+        ? "py-20 md:py-24 lg:py-28"
+        : "py-24 md:py-28 lg:py-32";
   const tone = dark
-    ? "section-dark-anchor text-section-charcoal-foreground section-flow"
-    : continuous
-      ? "section-home-editorial text-foreground section-flow"
-      : muted
-        ? "section-light-muted text-foreground section-flow"
-        : "section-light text-foreground section-flow";
+    ? "section-dark text-section-charcoal-foreground section-flow"
+    : anchor
+      ? "section-anchor text-foreground section-flow"
+      : "section-light text-foreground section-flow";
 
   return (
     <section
       id={id}
       aria-label={ariaLabel}
       className={`relative overflow-hidden ${tone} ${className}`}
-      data-section-tone={dark ? "dark" : muted && !continuous ? "muted" : "default"}
+      data-section-tone={dark ? "dark" : anchor ? "anchor" : "light"}
+      data-section-alt={muted ? "true" : "false"}
     >
       <div
         className={`section-grid-overlay ${dark ? "section-grid-overlay-dark" : "section-grid-overlay-light"}`}

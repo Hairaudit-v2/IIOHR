@@ -17,7 +17,7 @@ const ctaBase =
 const variantStyles: Record<ButtonVariant, string> = {
   /* Primary: maximum contrast — gold fill pops against cream, strong shadow defines elevation */
   primary:
-    "border-2 border-accent bg-accent text-primary font-semibold tracking-[0.04em] hover:bg-accent-muted shadow-[var(--shadow-btn-primary)] focus-visible:ring-offset-background",
+    "border-2 border-gold bg-gold text-primary font-semibold tracking-[0.04em] hover:bg-gold/90 shadow-[var(--shadow-btn-primary)] focus-visible:ring-offset-background",
   /* Secondary: clear border definition (30% opacity) — readable on cream without competing with primary */
   secondary:
     "border-2 border-foreground/30 bg-surface text-foreground font-semibold tracking-[0.03em] hover:border-accent/55 hover:bg-surface-elevated focus-visible:ring-offset-background",
@@ -29,7 +29,7 @@ const variantStyles: Record<ButtonVariant, string> = {
     "border-0 bg-transparent shadow-none min-h-0 h-auto px-0 py-0 rounded-none text-sm font-semibold link-premium focus-visible:ring-offset-background",
   /* Dark variants: maintain strong contrast on charcoal */
   dark:
-    "border-2 border-accent bg-accent text-primary font-semibold tracking-[0.04em] hover:bg-accent-muted shadow-token-btn-dark focus-visible:ring-offset-section-charcoal",
+    "border-2 border-gold bg-gold text-primary font-semibold tracking-[0.04em] hover:bg-gold/90 shadow-token-btn-dark focus-visible:ring-offset-section-charcoal",
   darkSecondary:
     "border-2 border-section-charcoal-border/80 bg-section-charcoal-foreground/[0.08] text-section-charcoal-foreground font-semibold tracking-[0.03em] hover:bg-section-charcoal-foreground/15 hover:border-section-charcoal-border focus-visible:ring-offset-section-charcoal",
 };

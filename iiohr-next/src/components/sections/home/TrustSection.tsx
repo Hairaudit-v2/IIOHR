@@ -50,10 +50,9 @@ export function TrustSection() {
             alt={heroEducationImage.alt}
             className="aspect-[4/3] w-full lg:aspect-[3/4]"
             sizes="(max-width: 1024px) 100vw, 50vw"
-            glowOnHover
           >
             <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-section-charcoal/40 via-transparent to-parchment/30"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-section-charcoal/24 via-transparent to-parchment/14"
               aria-hidden
             />
           </ImageWrapper>

@@ -155,7 +155,7 @@ export default function FacultyAndMentorshipPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell muted>
+      <SectionShell anchor>
         <SectionHeading
           eyebrow="Next step"
           title="Explore pathways, admissions, and application routes"

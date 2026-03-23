@@ -12,15 +12,14 @@ const segmentLinks = [
 
 export function CTASection() {
   return (
-    <SectionShell dark className="section-cta-anchor">
+    <SectionShell anchor>
       <SectionHeading
         eyebrow="Next step"
         title="Begin your institute pathway"
         description="Whether you’re entering the field, refining your practice, or building clinic capability, we’ll match you to the right pathway. Apply now or explore pathways below."
-        eyebrowOnDark
       />
       <SectionCTA
-        variant="dark"
+        variant="light"
         primary={{ href: "/apply", label: "Apply Now" }}
         secondary={[
           { href: "/training-pathways", label: "Explore Pathways" },
@@ -30,10 +29,10 @@ export function CTASection() {
       />
       <div className="mt-16 pt-12">
         <div
-          className="mb-10 h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-section-charcoal-border/45 to-transparent"
+          className="mb-10 h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-border/65 to-transparent"
           aria-hidden
         />
-        <p className="text-xs font-semibold tracking-[0.12em] text-section-charcoal-muted uppercase">
+        <p className="text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
           I am…
         </p>
         <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -41,10 +40,10 @@ export function CTASection() {
             <li key={item.label}>
               <Link
                 href={item.href}
-                className="group block rounded-xl border border-section-charcoal-border/70 bg-section-charcoal-foreground/[0.08] px-4 py-3.5 text-sm min-h-[44px] sm:min-h-0 text-section-charcoal-foreground shadow-[0_2px_8px_-4px_rgba(0,0,0,0.2)] transition-all duration-200 hover:border-section-charcoal-border hover:bg-section-charcoal-foreground/[0.12] hover:shadow-[0_4px_12px_-4px_rgba(0,0,0,0.3),0_0_0_1px_rgba(198,167,94,0.1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2 focus-visible:ring-offset-section-charcoal"
+                className="group block min-h-[44px] rounded-xl border border-border/75 bg-surface/72 px-4 py-3.5 text-sm text-foreground transition-all duration-200 hover:border-foreground/30 hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:min-h-0"
               >
                 <span className="font-medium">{item.label}</span>
-                <span className="mt-1 block text-xs text-section-charcoal-muted">{item.description}</span>
+                <span className="mt-1 block text-xs text-muted-foreground">{item.description}</span>
               </Link>
             </li>
           ))}

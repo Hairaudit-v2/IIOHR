@@ -63,8 +63,8 @@ export function GlobalHairIntelligenceSection({
 }: GlobalHairIntelligenceSectionProps) {
   const isDark = sectionTone === "dark";
   const sectionClass = isDark
-    ? "relative z-10 scroll-mt-24 section-dark-anchor section-ecosystem section-flow"
-    : "relative z-10 scroll-mt-20 section-light-muted section-flow";
+    ? "relative z-10 scroll-mt-24 section-dark section-ecosystem section-flow"
+    : "relative z-10 scroll-mt-20 section-light section-flow";
   const isHeroCenterpiece = isDark && size === "hero";
 
   return (
@@ -72,7 +72,7 @@ export function GlobalHairIntelligenceSection({
       id={id}
       className={`${sectionClass} ${className}`}
       aria-labelledby={`${id}-heading`}
-      data-section-tone={isDark ? "dark" : undefined}
+      data-section-tone={isDark ? "dark" : "light"}
     >
       {isDark && labImage ? (
         <div
@@ -84,12 +84,12 @@ export function GlobalHairIntelligenceSection({
               src={labImage.src}
               alt={labImage.alt}
               fill
-              className="object-cover object-center opacity-[0.12] blur-[4px]"
+              className="object-cover object-center opacity-[0.14]"
               sizes="100vw"
             />
           </div>
           <div
-            className="absolute inset-0 bg-gradient-to-b from-section-charcoal/70 via-transparent to-section-charcoal/70"
+            className="absolute inset-0 bg-gradient-to-b from-section-charcoal/78 via-section-charcoal/44 to-section-charcoal/78"
             aria-hidden
           />
         </div>
@@ -118,7 +118,7 @@ export function GlobalHairIntelligenceSection({
             <div
               className={
                 isDark
-                  ? "ghn-diagram-glow relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/50 bg-gradient-to-b from-section-charcoal-foreground/[0.08] to-section-charcoal/60 p-5 sm:p-6 md:p-8 shadow-token-ghn-diagram backdrop-blur-sm"
+                  ? "ghn-diagram-glow relative mx-auto max-w-5xl rounded-2xl border border-section-charcoal-border/55 bg-gradient-to-b from-section-charcoal-foreground/[0.08] to-section-charcoal/60 p-5 sm:p-6 md:p-8 shadow-token-ghn-diagram"
                   : ""
               }
             >

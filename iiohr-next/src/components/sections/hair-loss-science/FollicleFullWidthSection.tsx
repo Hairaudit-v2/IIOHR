@@ -26,7 +26,7 @@ export function FollicleFullWidthSection() {
     <section
       className="relative z-10 section-light section-flow"
       aria-label="Follicle and biology"
-      data-section-tone="default"
+      data-section-tone="light"
     >
       {/* Full-width follicle image */}
       <div className="relative aspect-[21/9] w-full min-h-[200px] overflow-hidden md:aspect-[3/1]">
@@ -45,13 +45,25 @@ export function FollicleFullWidthSection() {
           title="Clinical planning improves when biology and treatment logic are integrated"
           description="IIOHR teaches surgeons to connect biological understanding with treatment strategy and surgical execution, reducing fragmented decision-making."
         />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {planningBlocks.map((block) => (
-            <Card key={block.title} interactive>
-              <h3 className="text-lg font-semibold text-heading">{block.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{block.description}</p>
-            </Card>
-          ))}
+        <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-start">
+          <Card interactive className="h-full">
+            <h3 className="text-2xl font-semibold text-heading md:text-[1.75rem]">
+              {planningBlocks[0]?.title}
+            </h3>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              {planningBlocks[0]?.description}
+            </p>
+          </Card>
+          <ul className="list-rail">
+            {planningBlocks.slice(1).map((block) => (
+              <li key={block.title} className="list-rail-item">
+                <h3 className="text-lg font-semibold text-heading">{block.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {block.description}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

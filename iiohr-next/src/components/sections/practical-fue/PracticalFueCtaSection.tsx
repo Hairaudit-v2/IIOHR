@@ -9,7 +9,7 @@ const mailtoClass =
 
 export function PracticalFueCtaSection() {
   return (
-    <SectionShell muted>
+    <SectionShell anchor>
       <SectionHeading
         eyebrow="Next Step"
         title="Apply for Practical FUE training"

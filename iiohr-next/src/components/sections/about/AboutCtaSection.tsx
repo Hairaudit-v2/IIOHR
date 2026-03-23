@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 
 export function AboutCtaSection() {
   return (
-    <SectionShell muted>
+    <SectionShell anchor>
       <SectionHeading
         eyebrow="Next step"
         title="Explore pathways or begin your application"

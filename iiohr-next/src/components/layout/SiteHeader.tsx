@@ -10,7 +10,7 @@ export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border-soft bg-background/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-border-soft bg-background">
       <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-5">
         <Link
           href="/"

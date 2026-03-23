@@ -147,7 +147,7 @@ export default function CertificationFrameworkPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell muted>
+      <SectionShell anchor>
         <SectionHeading
           eyebrow="Next step"
           title="Explore pathways, academy structure, and admissions"

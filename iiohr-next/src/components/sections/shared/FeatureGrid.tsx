@@ -23,15 +23,31 @@ export function FeatureGrid({
   dark = false,
   footer,
 }: FeatureGridProps) {
+  const [primaryItem, ...supportingItems] = items;
+
   return (
     <SectionShell muted={muted} dark={dark}>
       <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-      <div className="mt-16 grid gap-6 lg:mt-20 md:grid-cols-2 lg:grid-cols-3">
-        {items.map((item) => (
-          <Card key={item} interactive dark={dark}>
-            <h3 className="text-lg leading-snug font-semibold tracking-tight">{item}</h3>
+      <div className="mt-16 grid gap-10 lg:mt-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-start">
+        {primaryItem ? (
+          <Card interactive dark={dark} className="h-full">
+            <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">
+              Primary focus
+            </p>
+            <h3 className="mt-4 text-2xl leading-tight font-semibold tracking-tight text-heading md:text-[1.75rem]">
+              {primaryItem}
+            </h3>
           </Card>
-        ))}
+        ) : null}
+        {supportingItems.length ? (
+          <ul className="list-rail">
+            {supportingItems.map((item) => (
+              <li key={item} className="list-rail-item">
+                <p className="text-sm leading-relaxed font-medium text-foreground">{item}</p>
+              </li>
+            ))}
+          </ul>
+        ) : null}
       </div>
       {footer ? <div className="mt-16 pt-4">{footer}</div> : null}
     </SectionShell>

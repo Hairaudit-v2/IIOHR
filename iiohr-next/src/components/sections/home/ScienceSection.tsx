@@ -45,13 +45,13 @@ const scienceItems = [
 export function ScienceSection() {
   return (
     <SectionShell muted id="science" className="relative overflow-hidden">
-      {/* Optional background accent: DNA image, low opacity, blurred */}
+      {/* Optional background accent: DNA image, low opacity */}
       <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
         <Image
           src={HOME_IMAGES.science.dna}
           alt=""
           fill
-          className="object-cover object-center opacity-[0.06] blur-[2px]"
+          className="object-cover object-center opacity-[0.05]"
           sizes="100vw"
         />
       </div>
@@ -72,7 +72,6 @@ export function ScienceSection() {
                 alt={item.alt}
                 className="aspect-[4/3] w-full rounded-b-none"
                 sizes="(max-width: 640px) 100vw, 50vw"
-                glowOnHover
               />
               <div className="p-5 md:p-6">
                 <h3 className="text-lg font-semibold tracking-tight text-foreground">

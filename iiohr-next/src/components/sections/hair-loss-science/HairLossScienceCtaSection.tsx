@@ -9,7 +9,7 @@ const mailtoClass =
 
 export function HairLossScienceCtaSection() {
   return (
-    <SectionShell muted>
+    <SectionShell anchor>
       <SectionHeading
         eyebrow="Next Step"
         title="Develop surgical capability with deeper scientific grounding"

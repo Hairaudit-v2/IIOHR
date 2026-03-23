@@ -174,7 +174,7 @@ export default function AdmissionsPage() {
         </div>
       </SectionShell>
 
-      <SectionShell muted>
+      <SectionShell>
         <SectionHeading
           eyebrow="What supports a strong application"
           title="Clear profile context helps admissions guidance"
@@ -226,7 +226,7 @@ export default function AdmissionsPage() {
 
       <AcademyFrameworkSection />
 
-      <SectionShell muted>
+      <SectionShell anchor>
         <SectionHeading
           eyebrow="Next step"
           title="Apply or explore your pathway options"
