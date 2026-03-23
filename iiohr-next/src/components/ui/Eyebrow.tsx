@@ -5,15 +5,15 @@ interface EyebrowProps {
   variant?: "light" | "dark";
 }
 
-/** Small chapter label — neutral border on light sections; soft ivory on dark sections. */
+/** Small chapter label — plain text emphasis (no box treatment). */
 export function Eyebrow({ children, className = "", variant = "light" }: EyebrowProps) {
   const tone =
     variant === "dark"
-      ? "border-section-charcoal-border bg-section-charcoal-foreground/[0.06] text-section-charcoal-muted"
-      : "border-border bg-surface/78 text-heading";
+      ? "text-[#d1d5db]"
+      : "text-heading";
   return (
     <p
-      className={`inline-block border px-3 py-1.5 text-[10px] font-semibold tracking-[0.12em] uppercase md:text-[11px] ${tone} ${className}`}
+      className={`inline-block text-[0.84rem] font-bold tracking-[0.08em] uppercase md:text-[0.9rem] ${tone} ${className}`}
     >
       {children}
     </p>
