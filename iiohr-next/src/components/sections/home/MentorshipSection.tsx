@@ -1,6 +1,5 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionCTA } from "@/components/ui/SectionCTA";
-import { Card } from "@/components/ui/Card";
 import { ImageWrapper } from "@/components/ui/ImageWrapper";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { HOME_IMAGES, heroEducationImage } from "@/lib/homeImages";
@@ -22,7 +21,7 @@ const mentorshipItems = [
 
 export function MentorshipSection() {
   return (
-    <SectionShell continuous muted aria-label="Mentorship" joinPrevious>
+    <SectionShell continuous aria-label="Mentorship" joinPrevious>
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <ImageWrapper
           src={HOME_IMAGES.trust.doctor}
@@ -36,12 +35,12 @@ export function MentorshipSection() {
             title="Practical mentorship across the pathway"
             description="Experienced surgeons mentor, review cases, and sharpen judgment in real clinical context."
           />
-          <div className="mt-10 grid gap-4 sm:grid-cols-3 md:mt-12 lg:gap-5">
-            {mentorshipItems.map((item, index) => (
-              <Card key={item.title} quiet interactive marker={index + 1} className="md:p-6">
+          <div className="list-rail mt-10 md:mt-12">
+            {mentorshipItems.map((item) => (
+              <div key={item.title} className="list-rail-item">
                 <h3 className="text-sm font-semibold tracking-tight text-heading">{item.title}</h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-              </Card>
+              </div>
             ))}
           </div>
           <div className="mt-12 pt-2 md:mt-14">

@@ -4,9 +4,11 @@ import { PageHero } from "@/components/sections/shared/PageHero";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { AcademyFrameworkSection } from "@/components/sections/shared/AcademyFrameworkSection";
 import { Card } from "@/components/ui/Card";
+import { ImageWrapper } from "@/components/ui/ImageWrapper";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getHeroImage } from "@/lib/heroImages";
+import { HOME_IMAGES, dnaBridgeImage, ecosystemLabImage } from "@/lib/homeImages";
 
 const canonical = "https://iiohr.com/academy";
 
@@ -143,30 +145,47 @@ export default function AcademyPage() {
         description="Progression-based training in practical FUE, clinical science, and mentored development through the IIOHR partner network."
         primaryCta={{ href: "/apply", label: "Apply or Enquire" }}
         secondaryCta={{ href: "/training-pathways", label: "Explore Pathways" }}
+        tertiaryCta={{ href: "/admissions", label: "View Admissions" }}
         image={getHeroImage("academy")}
+        variant="dark"
       />
 
       <SectionShell muted>
-        <SectionHeading
-          eyebrow="Why the Academy exists"
-          title="Development continuity, not isolated training events"
-          description="Surgical capability requires staged learning, supervised practice, and structured review. The Academy provides the continuity that short courses cannot."
-        />
+        <div className="statement-panel px-6 py-8 md:px-8 md:py-10">
+          <SectionHeading
+            eyebrow="Why the Academy exists"
+            title="Development continuity, not isolated training events"
+            description="Surgical capability requires staged learning, supervised practice, and structured review. The Academy provides the continuity that short courses cannot."
+          />
+        </div>
       </SectionShell>
 
       <SectionShell>
-        <SectionHeading
-          eyebrow="Academy model"
-          title="Four integrated pillars of surgeon development"
-          description="Practical training, scientific grounding, standards alignment, and mentorship work together to produce capable, consistent surgeons."
-        />
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
-          {academyModelCards.map((item) => (
-            <Card key={item.title}>
-              <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
-            </Card>
-          ))}
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] lg:items-start lg:gap-16">
+          <div className="lg:sticky lg:top-24">
+            <SectionHeading
+              eyebrow="Academy model"
+              title="Four integrated pillars of surgeon development"
+              description="Practical training, scientific grounding, standards alignment, and mentorship work together to produce capable, consistent surgeons."
+            />
+            <div className="mt-10">
+              <ImageWrapper
+                src={HOME_IMAGES.science.dna}
+                alt={dnaBridgeImage.alt}
+                className="aspect-[4/3] min-h-[260px] w-full"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                glowOnHover
+              />
+            </div>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            {academyModelCards.map((item, index) => (
+              <Card key={item.title} interactive marker={`0${index + 1}`}>
+                <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
+              </Card>
+            ))}
+          </div>
         </div>
       </SectionShell>
 
@@ -176,34 +195,43 @@ export default function AcademyPage() {
           title="A simplified staged structure"
           description="Progression is structured to match readiness, responsibility, and supervised exposure at each stage."
         />
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
-          {programLadder.map((item) => (
-            <Card key={item.level}>
+        <div className="authority-panel mt-16 grid gap-0 overflow-hidden md:grid-cols-2">
+          {programLadder.map((item, index) => (
+            <Card
+              key={item.level}
+              className="rounded-none border-0 border-b border-border/35 shadow-none last:border-b-0 md:last:border-b md:[&:nth-last-child(-n+2)]:border-b-0 md:[&:not(:nth-child(odd))]:border-l md:[&:not(:nth-child(odd))]:border-border/35"
+            >
               <p className="text-xs font-semibold tracking-[0.14em] text-accent uppercase">{item.level}</p>
               <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.focus}</p>
+              <div className="mt-6 text-[11px] font-semibold tracking-[0.12em] text-muted-foreground uppercase">
+                Stage 0{index + 1}
+              </div>
             </Card>
           ))}
         </div>
       </SectionShell>
 
-      <SectionShell>
+      <SectionShell dark>
         <SectionHeading
           eyebrow="Development ecosystem"
           title="Continuous Clinical Development"
           description="Training is the starting point. Long-term capability is strengthened through ongoing learning, structured audit, and intelligence-informed review."
+          eyebrowOnDark
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {continuousDevelopmentCards.map((item) => (
-            <Card key={item.title}>
+            <Card key={item.title} dark interactive>
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
             </Card>
           ))}
         </div>
-        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-readable-muted">
-          This continuous model creates practical feedback loops that support measurable improvement
-          and sustained clinical excellence over time.
-        </p>
+        <div className="authority-panel mt-10 px-6 py-5 md:max-w-3xl md:px-7">
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            This continuous model creates practical feedback loops that support measurable
+            improvement and sustained clinical excellence over time.
+          </p>
+        </div>
       </SectionShell>
 
       <SectionShell>
@@ -212,11 +240,14 @@ export default function AcademyPage() {
           title="Core competencies across planning, execution, and follow-up"
           description="Training outcomes center on technical proficiency, diagnostic clarity, and standards-aware clinical judgment."
         />
-        <ul className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="authority-panel mt-16 grid gap-0 overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
           {clinicianLearning.map((item) => (
-            <Card as="li" key={item} className="h-full">
-                <p className="text-sm font-medium text-foreground">{item}</p>
-              </Card>
+            <li
+              key={item}
+              className="border-b border-border/35 px-5 py-5 last:border-b-0 sm:px-6 sm:py-6 lg:[&:nth-last-child(-n+1)]:border-b-0 sm:[&:nth-last-child(-n+1)]:border-b-0 sm:[&:not(:nth-child(odd))]:border-l sm:[&:not(:nth-child(odd))]:border-border/35 lg:[&:not(:nth-child(3n+1))]:border-l lg:[&:not(:nth-child(3n+1))]:border-border/35"
+            >
+              <p className="text-sm font-medium text-foreground">{item}</p>
+            </li>
           ))}
         </ul>
       </SectionShell>
@@ -235,14 +266,22 @@ export default function AcademyPage() {
           title="Delivered through approved IIOHR partner clinics"
           description="Academy delivery occurs through the IIOHR partner training network: approved partner clinics selected for standards alignment, faculty capability, and appropriate supervised exposure environments."
         />
-        <div className="mt-16">
-          <Card>
+        <div className="mt-16 grid gap-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-center lg:gap-16">
+          <ImageWrapper
+            src={HOME_IMAGES.ecosystem.dnaLab}
+            alt={ecosystemLabImage.alt}
+            className="aspect-[4/3] min-h-[260px] w-full"
+            sizes="(max-width: 1024px) 100vw, 42vw"
+            glowOnHover
+          />
+          <div className="authority-panel px-6 py-6 md:px-7 md:py-7">
             <p className="text-sm leading-relaxed text-readable-muted">
-              Partner-network delivery allows institute-level standards to be applied consistently while
-              maintaining practical relevance in clinical settings. This supports clear supervision
-              structures, capability development continuity, and accountable progression review.
+              Partner-network delivery allows institute-level standards to be applied consistently
+              while maintaining practical relevance in clinical settings. This supports clear
+              supervision structures, capability development continuity, and accountable progression
+              review.
             </p>
-          </Card>
+          </div>
         </div>
       </SectionShell>
 

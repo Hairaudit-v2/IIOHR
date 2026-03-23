@@ -1,6 +1,5 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
-import { Card } from "@/components/ui/Card";
 import { ImageWrapper } from "@/components/ui/ImageWrapper";
 import { HOME_IMAGES, heroDetailImage } from "@/lib/homeImages";
 
@@ -37,13 +36,11 @@ export function ProblemSection() {
             title="The problem with traditional training"
             description="Too short, too shallow, and too little support to build lasting judgment."
           />
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:gap-5">
+          <div className="list-rail mt-10 md:mt-12">
             {problemItems.map((item) => (
-              <Card key={item} quiet>
-                <p className="text-sm font-medium leading-snug tracking-tight text-foreground">
-                  {item}
-                </p>
-              </Card>
+              <div key={item} className="list-rail-item">
+                <p className="text-sm font-medium leading-snug tracking-tight text-foreground">{item}</p>
+              </div>
             ))}
           </div>
         </div>

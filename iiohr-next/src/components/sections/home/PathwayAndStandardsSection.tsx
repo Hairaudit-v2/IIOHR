@@ -38,7 +38,7 @@ export function PathwayAndStandardsSection() {
       <ol className="mt-10 grid list-none gap-3 sm:grid-cols-2 md:mt-12 lg:grid-cols-3 xl:grid-cols-6">
         {steps.map((step, index) => (
           <li key={step.label}>
-            <Card quiet interactive marker={`0${index + 1}`} as="div" className="md:p-5">
+            <Card interactive marker={`0${index + 1}`} as="div" className="h-full md:p-5">
               <h3 className="text-[11px] font-semibold tracking-[0.08em] text-heading uppercase">{step.label}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{step.description}</p>
             </Card>
@@ -47,17 +47,14 @@ export function PathwayAndStandardsSection() {
       </ol>
       <div className="mt-10 border-t border-border/20 pt-8 md:mt-12 md:pt-10">
         <p className="text-sm text-muted-foreground">How that shows up in the programme</p>
-        <ul className="mt-5 grid list-none gap-3 sm:grid-cols-3 sm:gap-4">
+        <div className="list-rail mt-5">
           {inPractice.map((row) => (
-            <li
-              key={row.title}
-              className="rounded-xl border border-border/35 bg-surface/25 px-4 py-3.5 md:px-5 md:py-4"
-            >
+            <div key={row.title} className="list-rail-item">
               <span className="text-sm font-semibold text-heading">{row.title}</span>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{row.body}</p>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </SectionShell>
   );

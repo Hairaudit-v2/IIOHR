@@ -14,7 +14,7 @@ const pillars = [
 
 export function DifferenceAndCurriculumSection() {
   return (
-    <SectionShell continuous joinPrevious>
+    <SectionShell continuous muted joinPrevious>
       <SectionHeading
         eyebrow="Model"
         title="The IIOHR difference"
@@ -22,13 +22,7 @@ export function DifferenceAndCurriculumSection() {
       />
       <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-2 lg:gap-5">
         {pillars.map((item, index) => (
-          <Card
-            key={item}
-            interactive
-            quiet={index !== 0}
-            marker={`0${index + 1}`}
-            className={index === 0 ? "sm:col-span-2 md:p-7" : "md:p-6"}
-          >
+          <Card key={item} interactive marker={`0${index + 1}`} className="h-full md:p-6">
             <p className="text-sm font-semibold leading-snug tracking-tight text-heading">{item}</p>
           </Card>
         ))}
