@@ -22,16 +22,16 @@ export const heroImages = {
     alt: "Clinical training and research context supporting structured surgeon development.",
   },
   about: {
-    src: "/hero/placeholder.svg",
-    alt: "International Institute of Hair Restoration",
+    src: "/images/trust/trust-doctor-portrait.jpg",
+    alt: "Clinical faculty presence within an institute-led training environment.",
   },
   hairLossScience: {
-    src: "/hero/placeholder.svg",
-    alt: "Hair loss science and trichology training",
+    src: "/images/hero/follicle thinning.jpg",
+    alt: "Close-up follicular anatomy supporting diagnosis and treatment planning.",
   },
   trainingPathways: {
-    src: "/hero/placeholder.svg",
-    alt: "Structured training pathways and progression",
+    src: "/images/science/science-dna-lab.jpg",
+    alt: "Clinical research environment supporting structured progression and review.",
   },
   practicalFue: {
     src: "/images/science/science-follicle-cross-section.jpg",
@@ -46,8 +46,8 @@ export const heroImages = {
     alt: "Faculty-led mentorship and supervised clinical development.",
   },
   apply: {
-    src: "/hero/placeholder.svg",
-    alt: "Apply for IIOHR training",
+    src: "/images/hero/follicle thinning.jpg",
+    alt: "Clinical and technical detail associated with advanced hair restoration training.",
   },
 } as const;
 

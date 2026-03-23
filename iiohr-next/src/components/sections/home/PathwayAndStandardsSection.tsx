@@ -29,7 +29,7 @@ const inPractice = [
 
 export function PathwayAndStandardsSection() {
   return (
-    <SectionShell continuous joinPrevious>
+    <SectionShell continuous muted joinPrevious>
       <SectionHeading
         eyebrow="Pathway"
         title="Six stages. One thread."

@@ -16,8 +16,8 @@ export interface ImageWrapperProps {
 }
 
 const baseWrapper =
-  "relative overflow-hidden rounded-2xl shadow-token-img transition-[transform,box-shadow,border-color] duration-300 ease-out";
-const hoverWrapper = "hover:scale-[1.03] hover:shadow-[var(--shadow-img-hover)]";
+  "group relative overflow-hidden rounded-[18px] border border-border/70 bg-surface-elevated shadow-[var(--shadow-img)] transition-[transform,box-shadow,border-color] duration-300 ease-out";
+const hoverWrapper = "hover:-translate-y-0.5 hover:scale-[1.015] hover:shadow-[var(--shadow-img-hover)]";
 const glowHover = "hover:shadow-[var(--shadow-img-hover-accent)]";
 
 /**
@@ -38,13 +38,21 @@ export function ImageWrapper({
       className={`${baseWrapper} ${hoverWrapper} ${glowOnHover ? glowHover : ""} ${className}`}
     >
       <div className="relative size-full">
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-px bg-gradient-to-r from-transparent via-white/35 to-transparent"
+          aria-hidden
+        />
         <Image
           src={src}
           alt={alt}
           fill
-          className="object-cover object-center"
+          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.04] [filter:saturate(.72)_contrast(1.04)_brightness(.92)]"
           priority={priority}
           sizes={sizes}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-bg-dark/18 via-transparent to-white/6"
+          aria-hidden
         />
         {children}
       </div>

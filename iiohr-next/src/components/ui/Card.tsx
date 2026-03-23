@@ -15,19 +15,21 @@ interface CardProps {
   as?: "div" | "article" | "li";
 }
 
-const baseStyles = "min-w-0 rounded-xl border p-6 shadow-token-card md:p-7";
+const baseStyles =
+  "relative min-w-0 overflow-hidden rounded-[18px] border p-6 shadow-[var(--shadow-card)] md:p-7";
 const quietBase =
-  "min-w-0 rounded-xl border border-border/45 bg-surface/48 p-5 shadow-none md:p-6 md:p-7 [&_h3]:text-heading [&_h3]:font-semibold";
-const lightStyles = "border-border/90 bg-surface";
+  "relative min-w-0 overflow-hidden rounded-[16px] border border-border/50 bg-surface/55 p-5 shadow-none md:p-6 md:p-7 [&_h3]:text-heading [&_h3]:font-semibold";
+const lightStyles =
+  "border-border/90 bg-gradient-to-b from-surface to-surface-elevated/70 before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/55 before:to-transparent";
 const darkStyles =
-  "border-section-charcoal-border shadow-token-card-dark bg-gradient-to-b from-section-charcoal-foreground/[0.12] to-section-charcoal-foreground/[0.04]";
+  "border-section-charcoal-border shadow-[var(--shadow-card-dark-rest)] bg-gradient-to-b from-section-charcoal-foreground/[0.12] to-section-charcoal-foreground/[0.04] before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/18 before:to-transparent";
 /* Subtle lift + soft shadow; gold border whisper + hint of system blue on hover (tokens via globals) */
 const interactiveStyles =
-  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[var(--shadow-card-hover-light)] hover:border-accent/35";
+  "transition-[transform,box-shadow,border-color,background-color] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover-light)] hover:border-accent/35";
 const interactiveDarkStyles =
-  "transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[var(--shadow-card-hover-dark)] hover:border-accent/32";
+  "transition-[transform,box-shadow,border-color,background-color] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover-dark)] hover:border-accent/32";
 const quietInteractiveStyles =
-  "transition-[border-color,background-color,transform] duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.005] hover:border-accent/40 hover:bg-surface/65";
+  "transition-[border-color,background-color,transform] duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/40 hover:bg-surface/72";
 
 /** Paper-like content panel. Use `interactive` for hover lift and emphasis; `dark` for charcoal sections; optional `marker`. */
 export function Card({

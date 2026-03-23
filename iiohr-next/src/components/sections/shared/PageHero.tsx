@@ -37,8 +37,8 @@ export function PageHero({
 }: PageHeroProps) {
   const isDark = variant === "dark";
   const sectionClass = isDark
-    ? "section-dark section-sep-dark"
-    : "section-light section-flow";
+    ? "section-dark-anchor section-sep-dark"
+    : "section-light-anchor section-flow";
   const imgPanelBg = isDark ? "bg-section-charcoal-foreground/10" : "bg-parchment";
   /** Only render next/image when we have a valid public path (e.g. /images/... or /hero/...). */
   const hasValidImage =
@@ -48,16 +48,24 @@ export function PageHero({
     !image.src.includes("\\");
 
   return (
-    <section className={sectionClass} data-section-tone={isDark ? "dark" : "default"}>
-      <div className="mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-36">
-        <div className="grid gap-12 lg:grid-cols-[1fr_minmax(0,340px)] lg:items-start lg:gap-16">
+    <section
+      className={`relative overflow-hidden ${sectionClass}`}
+      data-section-tone={isDark ? "dark" : "default"}
+    >
+      <div
+        className={`section-grid-overlay ${isDark ? "section-grid-overlay-dark" : "section-grid-overlay-light"}`}
+        aria-hidden
+      />
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-28 lg:py-36">
+        <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:items-end lg:gap-16 xl:gap-20">
           <div>
             <Eyebrow variant={isDark ? "dark" : "light"}>{eyebrow}</Eyebrow>
-            <h1 className="mt-8 max-w-4xl text-heading text-4xl leading-tight font-semibold tracking-tight md:text-5xl lg:text-[2.75rem] [text-wrap:balance]">
+            <div className="section-kicker-rule mt-4" aria-hidden />
+            <h1 className="mt-8 max-w-4xl text-heading text-4xl leading-[1.04] font-semibold tracking-[-0.03em] md:text-5xl lg:text-[3.1rem] [text-wrap:balance]">
               {title}
             </h1>
             <p
-              className={`mt-9 max-w-2xl text-base leading-relaxed md:text-lg [line-height:1.7] ${
+              className={`mt-9 max-w-2xl text-base leading-relaxed md:text-[1.07rem] [line-height:1.72] ${
                 isDark ? "text-muted-foreground" : "text-readable-muted"
               }`}
             >
@@ -100,20 +108,31 @@ export function PageHero({
               </div>
             )}
           </div>
-          <div className="img-panel relative hidden min-h-[220px] w-full overflow-hidden rounded-2xl lg:block">
-            {hasValidImage ? (
-              <Image
-                src={image.src}
-                alt={image.alt ?? ""}
-                width={340}
-                height={255}
-                className="h-full w-full object-cover object-center"
-                priority={imagePriority}
-                sizes="340px"
-              />
-            ) : (
-              <div className={`h-full min-h-[220px] w-full ${imgPanelBg}`} aria-hidden />
-            )}
+          <div className="hidden lg:block">
+            <div className="hero-visual-panel">
+              <div className="relative min-h-[420px] w-full overflow-hidden">
+                {hasValidImage ? (
+                  <Image
+                    src={image.src}
+                    alt={image.alt ?? ""}
+                    fill
+                    className="h-full w-full object-cover object-center"
+                    priority={imagePriority}
+                    sizes="(max-width: 1279px) 40vw, 420px"
+                  />
+                ) : (
+                  <div className={`h-full min-h-[420px] w-full ${imgPanelBg}`} aria-hidden />
+                )}
+                <div
+                  className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-bg-dark/54 via-transparent to-white/8"
+                  aria-hidden
+                />
+              </div>
+            </div>
+            <div className="mt-4 grid grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] gap-3">
+              <div className="hero-visual-rail h-9" aria-hidden />
+              <div className="hero-visual-rail h-9 opacity-70" aria-hidden />
+            </div>
           </div>
         </div>
       </div>

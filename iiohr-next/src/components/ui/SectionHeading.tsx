@@ -25,13 +25,18 @@ export function SectionHeading({
 
   return (
     <header className={`space-y-8 ${alignClass}`}>
-      {eyebrow ? <Eyebrow variant={eyebrowOnDark ? "dark" : "light"}>{eyebrow}</Eyebrow> : null}
-      <HeadingTag className="text-heading text-3xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[2.35rem] [text-wrap:balance]">
+      {eyebrow ? (
+        <div className={align === "center" ? "flex flex-col items-center gap-4" : "space-y-4"}>
+          <Eyebrow variant={eyebrowOnDark ? "dark" : "light"}>{eyebrow}</Eyebrow>
+          <div className={`section-kicker-rule ${align === "center" ? "mx-auto" : ""}`} aria-hidden />
+        </div>
+      ) : null}
+      <HeadingTag className="text-heading text-3xl leading-[1.08] font-semibold tracking-[-0.03em] md:text-[2.5rem] lg:text-[2.85rem] [text-wrap:balance]">
         {title}
       </HeadingTag>
       {description ? (
         <p
-          className={`${descriptionWidthClass} max-w-prose text-base leading-relaxed md:text-[1.03rem] [line-height:1.7] ${
+          className={`${descriptionWidthClass} max-w-prose text-base leading-relaxed md:text-[1.05rem] [line-height:1.72] ${
             eyebrowOnDark ? "text-muted-foreground" : "text-readable-muted"
           }`}
         >

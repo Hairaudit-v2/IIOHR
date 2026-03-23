@@ -102,11 +102,11 @@
     0 12px 40px -12px color-mix(in srgb, var(--gold-primary) 18%, transparent), 0 8px 24px -8px var(--shadow-depth-28);
 
   --shadow-card: 0 1px 4px 0 var(--shadow-text-04), 0 2px 10px -2px var(--shadow-text-05);
-  --shadow-card-dark-rest: 0 2px 14px var(--shadow-dark-22);
-  --shadow-card-hover-light: 0 14px 36px -10px var(--shadow-text-08), 0 6px 16px -6px var(--shadow-blue-07),
-    0 0 0 1px var(--shadow-gold-08);
-  --shadow-card-hover-dark: 0 14px 36px -10px var(--shadow-dark-38), 0 6px 18px -8px var(--shadow-dark-22),
-    0 0 0 1px var(--shadow-blue-14);
+  --shadow-card-dark-rest: 0 10px 28px -16px var(--shadow-dark-45), 0 1px 0 color-mix(in srgb, var(--bg-secondary) 8%, transparent);
+  --shadow-card-hover-light: 0 18px 42px -18px var(--shadow-text-12), 0 8px 20px -10px var(--shadow-blue-07),
+    0 0 0 1px color-mix(in srgb, var(--gold-primary) 20%, transparent);
+  --shadow-card-hover-dark: 0 20px 46px -18px var(--shadow-dark-50), 0 8px 22px -10px var(--shadow-dark-25),
+    0 0 0 1px color-mix(in srgb, var(--accent-blue) 18%, transparent);
   --shadow-btn-light: 0 1px 3px 0 var(--shadow-text-12);
   /* Primary CTA: maximum contrast — strong shadow stack + prominent gold ring */
   --shadow-btn-primary:
@@ -114,9 +114,9 @@
     0 4px 12px -4px var(--shadow-text-12),
     0 0 0 2px color-mix(in srgb, var(--gold-primary) 65%, transparent);
   --shadow-btn-dark: 0 1px 3px 0 var(--shadow-dark-20);
-  --shadow-img: 0 2px 8px var(--shadow-text-08), 0 1px 3px var(--shadow-text-06);
-  --shadow-img-hover: 0 12px 32px var(--shadow-text-12), 0 4px 12px var(--shadow-text-08);
-  --shadow-img-hover-accent: 0 12px 32px var(--shadow-text-12), 0 0 0 1px var(--shadow-gold-40),
+  --shadow-img: 0 10px 28px -18px var(--shadow-text-12), 0 2px 10px var(--shadow-text-06);
+  --shadow-img-hover: 0 18px 40px -18px var(--shadow-text-12), 0 8px 18px -12px var(--shadow-text-08);
+  --shadow-img-hover-accent: 0 18px 40px -18px var(--shadow-text-12), 0 0 0 1px var(--shadow-gold-40),
     0 0 24px color-mix(in srgb, var(--gold-primary) 12%, transparent);
   --shadow-ghn-platform: 0 2px 16px var(--shadow-dark-28), 0 0 0 1px var(--section-charcoal-border),
     0 0 40px -12px color-mix(in srgb, var(--accent-blue) 14%, transparent);
@@ -125,6 +125,9 @@
   --shadow-node-hover: 0 6px 20px -8px var(--shadow-dark-15), 0 2px 8px var(--shadow-dark-08);
   --shadow-node-active-1: 0 12px 32px -12px var(--shadow-dark-40), 0 4px 16px -8px var(--shadow-dark-20);
   --shadow-node-active-2: 0 16px 40px -12px var(--shadow-dark-45), 0 6px 20px -8px var(--shadow-dark-25);
+
+  --section-grid-light: color-mix(in srgb, var(--text-primary) 4%, transparent);
+  --section-grid-dark: color-mix(in srgb, var(--bg-secondary) 7%, transparent);
 
   --surface-light: var(--section-ivory);
   --surface-dark: var(--section-charcoal);
@@ -423,8 +426,8 @@ textarea:focus-visible {
   pointer-events: none;
   background: radial-gradient(
     ellipse 85% 65% at 28% 50%,
-    color-mix(in srgb, var(--gold-primary) 10%, transparent) 0%,
-    color-mix(in srgb, var(--accent-blue) 8%, transparent) 50%,
+    color-mix(in srgb, var(--gold-primary) 12%, transparent) 0%,
+    color-mix(in srgb, var(--accent-blue) 10%, transparent) 50%,
     transparent 72%
   );
   z-index: 0;
@@ -457,6 +460,152 @@ textarea:focus-visible {
 }
 .bg-surface-elevated {
   background-color: var(--surface-elevated);
+}
+
+/* Structured overlays — restrained grid hints and section depth */
+.section-grid-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  mask-image: linear-gradient(180deg, transparent, black 10%, black 90%, transparent);
+}
+.section-grid-overlay-light {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 12%, transparent), transparent 22%, transparent 78%, color-mix(in srgb, var(--bg-soft) 18%, transparent)),
+    linear-gradient(90deg, var(--section-grid-light) 1px, transparent 1px),
+    linear-gradient(0deg, var(--section-grid-light) 1px, transparent 1px);
+  background-size: auto, 160px 160px, 160px 160px;
+  opacity: 0.34;
+}
+.section-grid-overlay-dark {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 8%, transparent), transparent 20%, transparent 80%, color-mix(in srgb, var(--accent-blue) 6%, transparent)),
+    linear-gradient(90deg, var(--section-grid-dark) 1px, transparent 1px),
+    linear-gradient(0deg, var(--section-grid-dark) 1px, transparent 1px);
+  background-size: auto, 140px 140px, 140px 140px;
+  opacity: 0.4;
+}
+
+.section-kicker-rule {
+  height: 1px;
+  width: min(11rem, 100%);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--gold-primary) 34%, transparent) 0%,
+    color-mix(in srgb, var(--text-primary) 10%, transparent) 48%,
+    transparent 100%
+  );
+}
+[data-section-tone="dark"] .section-kicker-rule {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--gold-primary) 40%, transparent) 0%,
+    color-mix(in srgb, var(--bg-secondary) 18%, transparent) 48%,
+    transparent 100%
+  );
+}
+
+.authority-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--text-primary) 10%, var(--bg-secondary) 90%);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 96%, var(--bg-primary) 4%), color-mix(in srgb, var(--bg-soft) 68%, var(--bg-secondary) 32%)),
+    var(--surface-elevated);
+  box-shadow: 0 18px 34px -26px var(--shadow-text-12), inset 0 1px 0 color-mix(in srgb, var(--bg-secondary) 80%, transparent);
+}
+.authority-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--text-primary) 4%, transparent) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in srgb, var(--text-primary) 4%, transparent) 1px, transparent 1px);
+  background-size: 120px 120px;
+  opacity: 0.24;
+  pointer-events: none;
+}
+[data-section-tone="dark"] .authority-panel {
+  border-color: color-mix(in srgb, var(--bg-secondary) 18%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 10%, transparent), color-mix(in srgb, var(--bg-secondary) 4%, transparent)),
+    color-mix(in srgb, var(--section-charcoal) 92%, var(--bg-secondary) 8%);
+  box-shadow: 0 24px 50px -30px var(--shadow-dark-70), inset 0 1px 0 color-mix(in srgb, var(--bg-secondary) 10%, transparent);
+}
+[data-section-tone="dark"] .authority-panel::before {
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--bg-secondary) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in srgb, var(--bg-secondary) 5%, transparent) 1px, transparent 1px);
+  opacity: 0.22;
+}
+
+.statement-panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid color-mix(in srgb, var(--gold-primary) 22%, transparent);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--gold-primary) 10%, var(--bg-secondary) 90%), color-mix(in srgb, var(--bg-primary) 88%, var(--bg-soft) 12%));
+  box-shadow: 0 24px 48px -34px var(--shadow-text-12);
+}
+.statement-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bg-secondary) 35%, transparent), transparent 35%);
+  pointer-events: none;
+}
+
+.hero-visual-panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid color-mix(in srgb, var(--bg-secondary) 18%, transparent);
+  background: color-mix(in srgb, var(--bg-dark) 84%, var(--bg-secondary) 16%);
+  box-shadow: 0 30px 60px -34px var(--shadow-dark-70), 0 0 0 1px color-mix(in srgb, var(--gold-primary) 12%, transparent);
+}
+.hero-visual-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 6%, transparent), transparent 26%, color-mix(in srgb, var(--bg-dark) 48%, transparent)),
+    linear-gradient(90deg, color-mix(in srgb, var(--bg-secondary) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in srgb, var(--bg-secondary) 4%, transparent) 1px, transparent 1px);
+  background-size: auto, 110px 110px, 110px 110px;
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-visual-panel img {
+  filter: saturate(0.62) contrast(1.02) brightness(0.8);
+}
+
+.hero-visual-rail {
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--bg-secondary) 12%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--gold-primary) 8%, transparent), color-mix(in srgb, var(--bg-secondary) 8%, transparent));
+}
+
+.list-rail {
+  display: grid;
+  gap: 0.9rem;
+}
+.list-rail-item {
+  position: relative;
+  padding: 1rem 1rem 1rem 1.25rem;
+  border-left: 1px solid color-mix(in srgb, var(--gold-primary) 30%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--gold-primary) 5%, transparent), transparent 78%);
+}
+.list-rail-item::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 1.2rem;
+  width: 0.5rem;
+  height: 1px;
+  background: color-mix(in srgb, var(--gold-primary) 55%, transparent);
 }
 
 /* Glow — apply to cards, panels, highlights */
@@ -795,20 +944,26 @@ textarea:focus-visible {
 
 /* Image treatment — premium editorial, restrained frame (uses design-system glow) */
 .img-panel {
-  border-radius: 12px;
-  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--text-primary) 10%, var(--bg-secondary) 90%);
   overflow: hidden;
-  background: var(--surface-soft);
-  box-shadow: var(--glow-soft);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 96%, var(--bg-primary) 4%), color-mix(in srgb, var(--bg-soft) 68%, var(--bg-secondary) 32%)),
+    var(--surface-soft);
+  box-shadow: var(--shadow-img);
 }
 .img-panel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: saturate(0.72) contrast(1.03) brightness(0.92);
 }
 /* Hero panel on dark section: subtle border to match charcoal */
 [data-section-tone="dark"] .img-panel {
   border-color: var(--section-charcoal-border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 8%, transparent), color-mix(in srgb, var(--bg-secondary) 2%, transparent)),
+    color-mix(in srgb, var(--section-charcoal) 92%, var(--bg-secondary) 8%);
+  box-shadow: 0 24px 50px -30px var(--shadow-dark-70);
 }

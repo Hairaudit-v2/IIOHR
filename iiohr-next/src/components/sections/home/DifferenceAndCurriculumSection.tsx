@@ -20,14 +20,20 @@ export function DifferenceAndCurriculumSection() {
         title="The IIOHR difference"
         description="Surgery, science, audit, and mentorship in one standards-led pathway—not a short course with theory bolted on."
       />
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-3 lg:gap-5">
-        {pillars.map((item) => (
-          <Card key={item} quiet interactive className="md:p-6">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-2 lg:gap-5">
+        {pillars.map((item, index) => (
+          <Card
+            key={item}
+            interactive
+            quiet={index !== 0}
+            marker={`0${index + 1}`}
+            className={index === 0 ? "sm:col-span-2 md:p-7" : "md:p-6"}
+          >
             <p className="text-sm font-semibold leading-snug tracking-tight text-heading">{item}</p>
           </Card>
         ))}
       </div>
-      <div className="mt-12 md:mt-14">
+      <div className="authority-panel mt-12 px-6 py-6 md:mt-14 md:px-7 md:py-7">
         <SectionCTA
           variant="light"
           primary={{ href: "/training-pathways", label: "Explore Pathways" }}

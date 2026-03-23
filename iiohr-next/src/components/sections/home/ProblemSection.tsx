@@ -2,7 +2,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { Card } from "@/components/ui/Card";
 import { ImageWrapper } from "@/components/ui/ImageWrapper";
-import { HOME_IMAGES, humanImpactImage } from "@/lib/homeImages";
+import { HOME_IMAGES, heroDetailImage } from "@/lib/homeImages";
 
 const problemItems = [
   "Short and shallow training windows",
@@ -13,18 +13,18 @@ const problemItems = [
 
 export function ProblemSection() {
   return (
-    <SectionShell continuous joinPrevious id="problem">
+    <SectionShell continuous muted joinPrevious id="problem">
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
         {/* Image left (stacked first on mobile) */}
         <div className="relative order-2 min-h-[220px] lg:order-1">
           <ImageWrapper
-            src={HOME_IMAGES.human.mirror}
-            alt={humanImpactImage.alt}
+            src={HOME_IMAGES.hero.detail}
+            alt={heroDetailImage.alt}
             className="aspect-[4/3] w-full"
             sizes="(max-width: 1024px) 100vw, 50vw"
           >
             <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-accent/12 via-transparent to-transparent"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg-dark/20 via-transparent to-transparent"
               aria-hidden
             />
           </ImageWrapper>

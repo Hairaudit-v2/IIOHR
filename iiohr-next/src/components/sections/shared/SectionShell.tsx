@@ -50,10 +50,16 @@ export function SectionShell({
     <section
       id={id}
       aria-label={ariaLabel}
-      className={`${tone} ${className}`}
+      className={`relative overflow-hidden ${tone} ${className}`}
       data-section-tone={dark ? "dark" : muted && !continuous ? "muted" : "default"}
     >
-      <div className={`mx-auto w-full min-w-0 max-w-6xl px-4 sm:px-5 ${innerPad}`}>{children}</div>
+      <div
+        className={`section-grid-overlay ${dark ? "section-grid-overlay-dark" : "section-grid-overlay-light"}`}
+        aria-hidden
+      />
+      <div className={`relative z-10 mx-auto w-full min-w-0 max-w-6xl px-4 sm:px-5 ${innerPad}`}>
+        {children}
+      </div>
     </section>
   );
 }

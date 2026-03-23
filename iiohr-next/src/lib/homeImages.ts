@@ -8,6 +8,7 @@ export const HOME_IMAGES = {
   hero: {
     texture: "/images/hero/hero-hair-texture.jpg",
     progression: "/images/hero/hero-hair-progression.jpg",
+    detail: "/images/hero/follicle thinning.jpg",
   },
   science: {
     follicle: "/images/science/science-follicle-cross-section.png",
@@ -36,8 +37,9 @@ export interface SectionImage {
 /** Alt text for each image (single source of truth for a11y). */
 const HOME_IMAGE_ALTS = {
   hero: {
-    texture: "Hair texture and scalp detail.",
-    progression: "Hair progression and pattern in context of restoration planning.",
+    texture: "Clinical environment and technical infrastructure supporting hair restoration training.",
+    progression: "Technical laboratory environment supporting standards-led training and research.",
+    detail: "Close-up follicular anatomy and scalp structure relevant to hair restoration planning.",
   },
   science: {
     follicle: "Follicle structure and scalp biology.",
@@ -62,6 +64,12 @@ const HOME_IMAGE_ALTS = {
 export const hairProgressionImage: SectionImage = {
   src: HOME_IMAGES.hero.progression,
   alt: HOME_IMAGE_ALTS.hero.progression,
+};
+
+/** Hero detail — close-up technical follicle visual. */
+export const heroDetailImage: SectionImage = {
+  src: HOME_IMAGES.hero.detail,
+  alt: HOME_IMAGE_ALTS.hero.detail,
 };
 
 /** Science bridge — DNA / research. */
