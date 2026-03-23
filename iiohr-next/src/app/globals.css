@@ -1494,14 +1494,6 @@ body {
   color: #d1d5db !important;
 }
 
-[data-section-tone="dark"] .text-xs,
-[data-section-tone="dark"] .text-[11px],
-[data-section-tone="dark"] [class*="tracking-[0.1"],
-[data-section-tone="dark"] [class*="tracking-[0.12"],
-[data-section-tone="dark"] [class*="tracking-[0.14"] {
-  color: #9ca3af;
-}
-
 /* Dark borders: visible and consistent */
 [data-section-tone="dark"] .border-border,
 [data-section-tone="dark"] .border,

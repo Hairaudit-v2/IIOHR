@@ -16,9 +16,9 @@ interface CardProps {
 }
 
 const baseStyles =
-  "relative min-w-0 overflow-hidden rounded-[10px] border border-border bg-surface p-6 md:p-7";
+  "relative min-w-0 overflow-hidden rounded-[10px] border border-border bg-surface p-6 text-foreground md:p-7 [&_h3]:text-heading [&_p]:text-muted-foreground";
 const quietBase =
-  "relative min-w-0 overflow-hidden rounded-[10px] border border-border/80 bg-surface/78 p-5 shadow-none md:p-6 [&_h3]:text-heading [&_h3]:font-semibold";
+  "relative min-w-0 overflow-hidden rounded-[10px] border border-border/80 bg-surface/78 p-5 text-foreground shadow-none md:p-6 [&_h3]:text-heading [&_h3]:font-semibold [&_p]:text-muted-foreground";
 const lightStyles =
   "before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-border/60";
 const darkStyles =
