@@ -22,11 +22,11 @@ const quietBase =
 const lightStyles =
   "before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-border/60";
 const darkStyles =
-  "border-section-charcoal-border/80 bg-section-charcoal-foreground/[0.06] before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-section-charcoal-border";
+  "border-[rgba(255,255,255,0.12)] bg-[var(--bg-dark-panel)] before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-[rgba(255,255,255,0.12)]";
 const interactiveStyles =
   "transition-[border-color,background-color,transform] duration-150 ease-out hover:-translate-y-px hover:border-foreground/28 hover:bg-surface-elevated/85";
 const interactiveDarkStyles =
-  "transition-[border-color,background-color,transform] duration-150 ease-out hover:-translate-y-px hover:border-section-charcoal-border hover:bg-section-charcoal-foreground/[0.1]";
+  "transition-[border-color,background-color,transform] duration-150 ease-out hover:-translate-y-px hover:border-[rgba(255,255,255,0.14)] hover:bg-[var(--bg-dark-elevated)]";
 const quietInteractiveStyles =
   "transition-[border-color,background-color,transform] duration-150 ease-out hover:-translate-y-px hover:border-foreground/32 hover:bg-surface/84";
 
@@ -56,7 +56,7 @@ export function Card({
           <span
             className={
               dark
-                ? "inline-flex h-8 w-8 items-center justify-center rounded-md border border-section-charcoal-border bg-section-charcoal-foreground/10 text-[11px] font-semibold tracking-wider text-section-charcoal-muted"
+                ? "inline-flex h-8 w-8 items-center justify-center rounded-md border border-[rgba(255,255,255,0.12)] bg-[var(--bg-dark-elevated)] text-[11px] font-semibold tracking-wider text-[#9ca3af]"
                 : quiet
                   ? "inline-flex h-8 w-8 items-center justify-center rounded-md border border-foreground/22 bg-surface/50 text-[11px] font-semibold tracking-wider text-foreground"
                   : "inline-flex h-8 w-8 items-center justify-center rounded-md border border-foreground/22 bg-surface-elevated text-[11px] font-semibold tracking-wider text-foreground"

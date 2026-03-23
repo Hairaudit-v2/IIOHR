@@ -31,7 +31,7 @@ const variantStyles: Record<ButtonVariant, string> = {
   dark:
     "btn-dark border border-gold bg-gold text-slate-950 hover:bg-[#b99749] focus-visible:ring-offset-section-charcoal",
   darkSecondary:
-    "btn-dark-secondary border border-section-charcoal-border bg-section-charcoal-foreground/[0.08] text-section-charcoal-foreground hover:bg-section-charcoal-foreground/14 hover:border-section-charcoal-foreground/30 focus-visible:ring-offset-section-charcoal",
+    "btn-dark-secondary border border-[rgba(255,255,255,0.14)] bg-[var(--bg-dark-elevated)] text-[#f8fafc] hover:bg-[var(--bg-dark-panel)] hover:border-[rgba(255,255,255,0.14)] focus-visible:ring-offset-section-charcoal",
 };
 
 export function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {

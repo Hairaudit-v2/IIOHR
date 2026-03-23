@@ -1425,3 +1425,119 @@ body {
 [data-section-tone="dark"] .list-rail-item::before {
   background: rgba(248, 250, 252, 0.56);
 }
+
+/* ============================================================
+   Global dark-mode contrast correction
+   ============================================================ */
+
+:root {
+  --bg-dark-base: #0b0f14;
+  --bg-dark-elevated: #121821;
+  --bg-dark-panel: #161d27;
+}
+
+/* Map existing dark tokens to strict hierarchy */
+:root {
+  --bg-dark: var(--bg-dark-base);
+  --bg-dark-soft: var(--bg-dark-elevated);
+  --section-charcoal: var(--bg-dark-base);
+  --surface-dark: var(--bg-dark-base);
+  --surface-elevated: color-mix(in srgb, var(--bg-secondary) 92%, var(--bg-primary) 8%);
+  --section-charcoal-foreground: #f8fafc;
+  --section-charcoal-muted: #9ca3af;
+  --section-charcoal-border: rgba(255, 255, 255, 0.12);
+}
+
+/* Dark sections: flat base tone, no decorative blending */
+.section-dark,
+.section-dark-anchor,
+.section-dark-gradient,
+.section-hero-anchor,
+.section-ecosystem {
+  background: var(--bg-dark-base) !important;
+}
+
+/* Dark sub-surfaces and containers use elevated tone */
+[data-section-tone="dark"] .bg-surface,
+[data-section-tone="dark"] .bg-surface-elevated,
+[data-section-tone="dark"] .authority-panel,
+[data-section-tone="dark"] .statement-panel,
+[data-section-tone="dark"] .img-panel,
+[data-section-tone="dark"] .hero-visual-panel {
+  background: var(--bg-dark-elevated) !important;
+}
+
+/* Card/panel layer: explicit panel tone for separation */
+[data-section-tone="dark"] .card,
+[data-section-tone="dark"] .list-rail-item,
+[data-section-tone="dark"] [class*="bg-section-charcoal-foreground/"],
+[data-section-tone="dark"] [class*="bg-white/"] {
+  background-color: var(--bg-dark-panel) !important;
+}
+
+/* Dark text contrast hierarchy */
+[data-section-tone="dark"] .text-heading,
+[data-section-tone="dark"] [class*="text-heading"],
+[data-section-tone="dark"] .text-foreground,
+[data-section-tone="dark"] h1,
+[data-section-tone="dark"] h2,
+[data-section-tone="dark"] h3,
+[data-section-tone="dark"] h4 {
+  color: #f8fafc !important;
+}
+
+[data-section-tone="dark"] p,
+[data-section-tone="dark"] li,
+[data-section-tone="dark"] .text-muted-foreground,
+[data-section-tone="dark"] .text-readable-muted,
+[data-section-tone="dark"] .text-readable-subtle {
+  color: #d1d5db !important;
+}
+
+[data-section-tone="dark"] .text-xs,
+[data-section-tone="dark"] .text-[11px],
+[data-section-tone="dark"] [class*="tracking-[0.1"],
+[data-section-tone="dark"] [class*="tracking-[0.12"],
+[data-section-tone="dark"] [class*="tracking-[0.14"] {
+  color: #9ca3af;
+}
+
+/* Dark borders: visible and consistent */
+[data-section-tone="dark"] .border-border,
+[data-section-tone="dark"] .border,
+[data-section-tone="dark"] .card,
+[data-section-tone="dark"] .authority-panel,
+[data-section-tone="dark"] .statement-panel,
+[data-section-tone="dark"] .img-panel,
+[data-section-tone="dark"] .hero-visual-panel,
+[data-section-tone="dark"] .list-rail-item,
+[data-section-tone="dark"] [class*="border-white/"] {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Section edge separation without heavy dividers */
+[data-section-tone="dark"].section-flow + [data-section-tone="dark"].section-flow::before {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* CTA visibility on dark */
+[data-section-tone="dark"] .btn-dark,
+[data-section-tone="dark"] .btn-primary,
+[data-section-tone="dark"] .section-anchor .btn-primary {
+  background: var(--gold-primary) !important;
+  border-color: var(--gold-primary) !important;
+  color: #0b0f14 !important;
+}
+[data-section-tone="dark"] .btn-dark:hover,
+[data-section-tone="dark"] .btn-primary:hover,
+[data-section-tone="dark"] .section-anchor .btn-primary:hover {
+  background: #b99749 !important;
+  border-color: #b99749 !important;
+}
+[data-section-tone="dark"] .btn-dark-secondary,
+[data-section-tone="dark"] .btn-secondary,
+[data-section-tone="dark"] .btn-ghost {
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  color: #f8fafc !important;
+  background: var(--bg-dark-elevated) !important;
+}
