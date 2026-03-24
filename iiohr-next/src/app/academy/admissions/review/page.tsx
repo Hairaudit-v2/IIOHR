@@ -71,7 +71,15 @@ export default async function AdmissionsReviewPage() {
       ) : null}
 
       {!userId ? (
-        <p className="mt-6">Sign in to use this page.</p>
+        <p className="mt-6">
+          <Link
+            href={`/login?redirectTo=${encodeURIComponent("/academy/admissions/review")}`}
+            className="link-premium font-medium"
+          >
+            Sign in
+          </Link>{" "}
+          to use this page.
+        </p>
       ) : !canAccess ? (
         <p className="mt-6">Your account does not have the admin role.</p>
       ) : rows.length === 0 ? (

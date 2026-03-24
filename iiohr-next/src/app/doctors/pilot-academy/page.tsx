@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
   PILOT_DOCTOR_MODULE_ID,
@@ -110,6 +111,16 @@ export default async function DoctorPilotAcademyPage({
         <p>
           <strong>Session:</strong> {signedIn ? `user ${userId}` : "not signed in"}
         </p>
+        {!signedIn ? (
+          <p>
+            <Link
+              href={`/login?redirectTo=${encodeURIComponent("/doctors/pilot-academy")}`}
+              className="link-premium font-medium"
+            >
+              Sign in
+            </Link>
+          </p>
+        ) : null}
       </section>
 
       {signedIn ? (

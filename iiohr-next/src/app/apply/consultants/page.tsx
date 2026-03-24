@@ -51,7 +51,13 @@ export default async function ApplyConsultantsPage({
 
       {!user ? (
         <p className="mt-8 rounded border border-border p-4 text-[var(--text-secondary)]">
-          You need to be signed in to apply. Use your site account session (Supabase auth).
+          You need to be signed in to apply.{" "}
+          <Link
+            href={`/login?redirectTo=${encodeURIComponent("/apply/consultants")}`}
+            className="link-premium font-medium"
+          >
+            Sign in
+          </Link>
         </p>
       ) : (
         <form className="mt-8 space-y-8">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import type { FacultyReviewQueueItem } from "@/lib/academy/services/academy-service-contracts";
 import { createFacultyReviewService } from "@/lib/academy/services/faculty-review-persistence";
@@ -51,7 +52,15 @@ export default async function FacultyReviewPilotPage() {
       ) : null}
 
       {!userId ? (
-        <p className="mt-6">Sign in to use this page.</p>
+        <p className="mt-6">
+          <Link
+            href={`/login?redirectTo=${encodeURIComponent("/doctors/faculty-review-pilot")}`}
+            className="link-premium font-medium"
+          >
+            Sign in
+          </Link>{" "}
+          to use this page.
+        </p>
       ) : !canAccess ? (
         <p className="mt-6">Your account does not have faculty or admin role.</p>
       ) : queue.length === 0 ? (
