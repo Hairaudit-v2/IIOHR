@@ -91,12 +91,18 @@ export default async function DoctorPilotAcademyPage({
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12 text-sm text-foreground">
+    <main
+      className="section-light section-flow w-full min-h-[50vh] text-sm text-foreground"
+      data-section-tone="light"
+    >
+      <div className="mx-auto max-w-3xl px-6 py-12">
       <h1 className="text-lg font-medium">Academy pilot (doctors)</h1>
-      <p className="mt-2 text-secondary-foreground">
+      <p className="mt-2 text-readable-muted">
         Server actions + RLS. Requires{" "}
-        <code className="rounded bg-muted px-1">NEXT_PUBLIC_SUPABASE_*</code> and a seeded{" "}
-        <code className="rounded bg-muted px-1">program_enrollments</code> row for the signed-in user.
+        <code className="rounded bg-[var(--bg-soft)] px-1 font-mono text-[0.85em]">NEXT_PUBLIC_SUPABASE_*</code> and a
+        seeded{" "}
+        <code className="rounded bg-[var(--bg-soft)] px-1 font-mono text-[0.85em]">program_enrollments</code> row for the
+        signed-in user.
       </p>
 
       {configError ? (
@@ -105,7 +111,9 @@ export default async function DoctorPilotAcademyPage({
         </p>
       ) : null}
 
-      {flash ? <p className="mt-6 rounded border border-border bg-muted/30 p-3">{flash}</p> : null}
+      {flash ? (
+        <p className="mt-6 rounded-lg border border-border bg-[var(--bg-soft)] p-3 text-foreground">{flash}</p>
+      ) : null}
 
       <section className="mt-8 space-y-2">
         <p>
@@ -128,7 +136,7 @@ export default async function DoctorPilotAcademyPage({
           <form action={pilotMarkLessonAndRefreshAction}>
             <button
               type="submit"
-              className="rounded border border-border bg-background px-3 py-2 text-foreground hover:bg-muted/40"
+              className="rounded border border-border bg-[var(--bg-secondary)] px-3 py-2 text-foreground hover:bg-[var(--bg-soft)]"
             >
               Mark pilot lesson complete + refresh module
             </button>
@@ -136,7 +144,7 @@ export default async function DoctorPilotAcademyPage({
           <form action={pilotSubmitAssessmentAttemptAction}>
             <button
               type="submit"
-              className="rounded border border-border bg-background px-3 py-2 text-foreground hover:bg-muted/40"
+              className="rounded border border-border bg-[var(--bg-secondary)] px-3 py-2 text-foreground hover:bg-[var(--bg-soft)]"
             >
               Submit pilot assessment attempt
             </button>
@@ -147,24 +155,27 @@ export default async function DoctorPilotAcademyPage({
       {progressJson ? (
         <section className="mt-10">
           <h2 className="font-medium">Module progress (pilot module)</h2>
-          <pre className="mt-2 overflow-x-auto rounded border border-border bg-muted/20 p-3 text-xs">{progressJson}</pre>
+          <pre className="mt-2 overflow-x-auto rounded-lg border border-border bg-[var(--bg-secondary)] p-3 text-xs text-foreground">
+            {progressJson}
+          </pre>
         </section>
       ) : null}
 
       {eligibilityJson ? (
         <section className="mt-6">
           <h2 className="font-medium">Eligibility read model</h2>
-          <pre className="mt-2 overflow-x-auto rounded border border-border bg-muted/20 p-3 text-xs">
+          <pre className="mt-2 overflow-x-auto rounded-lg border border-border bg-[var(--bg-secondary)] p-3 text-xs text-foreground">
             {eligibilityJson}
           </pre>
         </section>
       ) : signedIn ? (
-        <p className="mt-10 text-secondary-foreground">No pilot enrollment — snapshot unavailable.</p>
+        <p className="mt-10 text-readable-muted">No pilot enrollment — snapshot unavailable.</p>
       ) : null}
 
-      <p className="mt-10 text-xs text-secondary-foreground">
+      <p className="mt-10 text-xs text-readable-muted">
         Faculty review sync: prefer narrow SECURITY DEFINER RPC — see docs/academy-faculty-review-architecture.md
       </p>
+      </div>
     </main>
   );
 }

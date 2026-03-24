@@ -2,11 +2,15 @@ import { AcademyPanel } from "@/components/academy/shared/AcademyPanel";
 
 interface PatientCommunicationExamplesProps {
   examples: Array<{ id: string; title: string; example: string; rationale: string }>;
+  title?: string;
 }
 
-export function PatientCommunicationExamples({ examples }: PatientCommunicationExamplesProps) {
+export function PatientCommunicationExamples({
+  examples,
+  title = "Patient communication examples",
+}: PatientCommunicationExamplesProps) {
   return (
-    <AcademyPanel title="Patient Communication Examples">
+    <AcademyPanel title={title}>
       <div className="space-y-4">
         {examples.map((item) => (
           <div key={item.id}>

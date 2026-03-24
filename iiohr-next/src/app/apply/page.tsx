@@ -20,8 +20,11 @@ export default function ApplyPage() {
   return (
     <>
       <ApplyHero />
-      <section className="border-b border-border bg-muted/20 px-6 py-6 text-center text-sm text-foreground">
-        <p className="text-[var(--text-secondary)]">
+      <section
+        className="section-light-muted section-flow border-b border-border px-6 py-6 text-center text-sm text-foreground"
+        data-section-tone="light"
+      >
+        <p className="text-readable-muted">
           Academy stream applications (signed-in users):{" "}
           <Link href="/apply/doctors" className="link-premium font-medium">
             Doctors

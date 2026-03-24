@@ -37,7 +37,7 @@ export async function resolvePostLoginRedirect(
   }
 
   if (roleSet.has("faculty")) {
-    return "/doctors/faculty-review-pilot";
+    return "/academy/faculty-review?stream=doctors";
   }
 
   return "/apply";

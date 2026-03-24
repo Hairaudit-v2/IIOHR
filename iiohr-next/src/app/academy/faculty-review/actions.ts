@@ -12,6 +12,14 @@ function parseOutcome(raw: string | null): FacultyReviewOutcome {
   throw new Error("Invalid outcome");
 }
 
+function safeRevalidatePath(raw: unknown) {
+  if (typeof raw !== "string" || !raw.startsWith("/academy/faculty-review")) {
+    revalidatePath("/academy/faculty-review");
+    return;
+  }
+  revalidatePath(raw);
+}
+
 export async function facultyClaimAttemptAction(formData: FormData) {
   const supabase = await createSupabaseServerClient();
   const {
@@ -26,7 +34,7 @@ export async function facultyClaimAttemptAction(formData: FormData) {
   }
   const faculty = createFacultyReviewService(supabase);
   await faculty.claimAttempt({ assessmentAttemptId: attemptId, reviewerUserId: user.id });
-  revalidatePath("/doctors/faculty-review-pilot");
+  safeRevalidatePath(formData.get("returnPath"));
 }
 
 export async function facultyFinalizeAttemptAction(formData: FormData) {
@@ -53,5 +61,5 @@ export async function facultyFinalizeAttemptAction(formData: FormData) {
     notes: typeof notes === "string" ? notes : null,
     rubricSummary: typeof rubric === "string" ? rubric : null,
   });
-  revalidatePath("/doctors/faculty-review-pilot");
+  safeRevalidatePath(formData.get("returnPath"));
 }

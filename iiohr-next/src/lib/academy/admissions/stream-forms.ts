@@ -1,4 +1,5 @@
 import type { AcademyStreamSlug } from "@/lib/academy/constants";
+import { admissionsCommunicationsConsent } from "@/lib/academy/admissions/applicant-fields";
 
 /** `application_answers.question_key` values — namespaced per stream. */
 export const doctorApplicationQuestionKeys = [
@@ -38,6 +39,7 @@ export const admissionsConsentDefinitions: Record<
       body:
         "I understand this program does not replace independent medical licensure or institutional supervision, and I will practise within my lawful scope.",
     },
+    { ...admissionsCommunicationsConsent },
   ],
   consultants: [
     {
@@ -54,6 +56,7 @@ export const admissionsConsentDefinitions: Record<
       body:
         "I understand the consultant stream supports coordination and education within scope-of-practice boundaries and does not grant independent diagnostic authority.",
     },
+    { ...admissionsCommunicationsConsent },
   ],
 };
 
@@ -63,15 +66,15 @@ export const streamFormLabels: Record<
 > = {
   doctors: {
     "doctor:clinical_role": {
-      label: "Clinical role",
+      label: "Current clinical role",
       placeholder: "e.g. GP, dermatologist, surgical trainee",
     },
     "doctor:license_jurisdiction": {
-      label: "Primary license jurisdiction",
-      placeholder: "Country / state or region",
+      label: "Licensure jurisdiction",
+      placeholder: "Country / state or region where you are licensed to practise",
     },
     "doctor:learning_goals": {
-      label: "Learning goals for this program",
+      label: "Learning goals",
       type: "textarea",
       placeholder: "What you aim to achieve in the next 12–24 months",
     },
@@ -109,4 +112,9 @@ export function formFieldNameForQuestion(questionKey: string): string {
 /** Stable checkbox names for consents (dots/colons → underscores). */
 export function consentFieldName(consentKey: string): string {
   return `c_${consentKey.replace(/[^a-zA-Z0-9]/g, "_")}`;
+}
+
+export function consentLabelForKey(stream: AcademyStreamSlug, consentKey: string): string {
+  const hit = admissionsConsentDefinitions[stream].find((c) => c.consentKey === consentKey);
+  return hit?.label ?? consentKey;
 }

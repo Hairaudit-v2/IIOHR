@@ -70,6 +70,11 @@ export function getProgramAssessments(programSlug: string) {
   return requireProgramBundle(programSlug)?.assessments ?? [];
 }
 
+export function getAssessmentsByIds(programSlug: string, assessmentIds: string[]) {
+  const ids = new Set(assessmentIds);
+  return getProgramAssessments(programSlug).filter((a) => ids.has(a.id));
+}
+
 export function getProgramAssessmentItems(programSlug: string) {
   return requireProgramBundle(programSlug)?.assessmentItems ?? [];
 }
@@ -154,6 +159,11 @@ export function getPracticalTasksForModule(programSlug: string, moduleId: string
   return getProgramPracticalTasks(programSlug).filter((task) => task.moduleId === moduleId);
 }
 
+export function getPracticalTasksByIds(programSlug: string, taskIds: string[]) {
+  const ids = new Set(taskIds);
+  return getProgramPracticalTasks(programSlug).filter((task) => ids.has(task.id));
+}
+
 export function getReferencesByIds(programSlug: string, referenceIds: string[]) {
   const ids = new Set(referenceIds);
   return getProgramReferences(programSlug).filter((reference) => ids.has(reference.id));
@@ -177,4 +187,15 @@ export function getFacultyNotesByIds(programSlug: string, facultyNoteIds: string
 export function getCompetenciesByIds(programSlug: string, competencyIds: string[]) {
   const ids = new Set(competencyIds);
   return getProgramCompetencies(programSlug).filter((competency) => ids.has(competency.id));
+}
+
+/** Resolve assessment title for faculty queue / diagnostics (any bundled program). */
+export function getAssessmentTitleById(assessmentId: string): string | null {
+  for (const bundle of getProgramBundles()) {
+    const found = bundle.assessments.find((a) => a.id === assessmentId);
+    if (found) {
+      return found.title;
+    }
+  }
+  return null;
 }

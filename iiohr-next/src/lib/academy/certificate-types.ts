@@ -35,4 +35,7 @@ export interface AcademyEligibilityReadModel {
   certificateBlockedByFacultyGate: boolean;
   certificateEligible: boolean;
   summary: CertificateEligibilitySummary;
+  /** Content level used for eligibility, weighted score, and faculty gating scope (null when not enrolled). */
+  eligibilityScopeLevelSlug: string | null;
+  eligibilityScopeLevelTitle: string | null;
 }

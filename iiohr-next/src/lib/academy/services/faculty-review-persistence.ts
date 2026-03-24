@@ -138,12 +138,17 @@ export function createFacultyReviewService(supabase: SupabaseClient): FacultyRev
 export function computeFacultyGateMetrics(params: {
   programSlug: string;
   attempts: AssessmentAttemptRow[];
+  /** When set, only these assessment ids are considered for faculty gating (level/module scope). */
+  scopedAssessmentIds?: Set<string> | null;
 }): {
   hasFacultyRevisionRequested: boolean;
   hasFacultyRejectedAttempt: boolean;
   certificateBlockedByFacultyGate: boolean;
 } {
-  const assessments = getProgramAssessments(params.programSlug).filter((a) => a.facultyReviewRequired);
+  let assessments = getProgramAssessments(params.programSlug).filter((a) => a.facultyReviewRequired);
+  if (params.scopedAssessmentIds && params.scopedAssessmentIds.size > 0) {
+    assessments = assessments.filter((a) => params.scopedAssessmentIds!.has(a.id));
+  }
   let hasFacultyRevisionRequested = false;
   let hasFacultyRejectedAttempt = false;
   let certificateBlockedByFacultyGate = false;

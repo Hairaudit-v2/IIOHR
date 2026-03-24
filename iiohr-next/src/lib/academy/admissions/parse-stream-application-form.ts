@@ -1,4 +1,5 @@
 import type { AcademyStreamSlug } from "@/lib/academy/constants";
+import { applicantApplicationQuestionKeys } from "@/lib/academy/admissions/applicant-fields";
 import {
   admissionsConsentDefinitions,
   consultantApplicationQuestionKeys,
@@ -21,12 +22,13 @@ export function formDataToSubmitApplicationInput(
   formData: FormData
 ): SubmitApplicationInput {
   const targetStreamSlug = parseStream(formData);
-  const keys =
+  const streamKeys =
     targetStreamSlug === "doctors"
       ? doctorApplicationQuestionKeys
       : consultantApplicationQuestionKeys;
 
-  const answers = keys.map((question_key) => {
+  const allKeys = [...applicantApplicationQuestionKeys, ...streamKeys] as const;
+  const answers = allKeys.map((question_key) => {
     const field = formFieldNameForQuestion(question_key);
     const val = formData.get(field);
     const str = typeof val === "string" ? val.trim() : "";
@@ -50,9 +52,14 @@ export function formDataToSubmitApplicationInput(
   const targetProgramSlug =
     typeof programRaw === "string" && programRaw.trim().length > 0 ? programRaw.trim() : null;
 
+  const appIdRaw = formData.get("applicationId");
+  const applicationId =
+    typeof appIdRaw === "string" && appIdRaw.trim().length > 0 ? appIdRaw.trim() : null;
+
   return {
     userId,
     targetStreamSlug,
+    applicationId,
     targetProgramSlug,
     answers,
     consents,

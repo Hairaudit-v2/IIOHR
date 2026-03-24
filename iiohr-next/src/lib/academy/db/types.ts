@@ -44,8 +44,10 @@ export type DbApplicationStatus =
   | "draft"
   | "submitted"
   | "under_review"
+  | "needs_more_information"
   | "accepted"
   | "rejected"
+  | "declined"
   | "waitlisted"
   | "withdrawn";
 
@@ -188,6 +190,20 @@ export interface ApplicationRow {
   submitted_at: string | null;
   created_at: string;
   updated_at: string;
+  internal_notes: string | null;
+  applicant_message: string | null;
+}
+
+export interface ApplicationAdmissionsEventRow {
+  id: string;
+  application_id: string;
+  from_status: DbApplicationStatus | null;
+  to_status: DbApplicationStatus;
+  actor_user_id: string | null;
+  internal_note: string | null;
+  applicant_message: string | null;
+  answers_snapshot: Record<string, unknown> | null;
+  created_at: string;
 }
 
 export interface ApplicationAnswerRow {

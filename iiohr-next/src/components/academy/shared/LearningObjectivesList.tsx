@@ -2,11 +2,12 @@ import { AcademyPanel } from "@/components/academy/shared/AcademyPanel";
 
 interface LearningObjectivesListProps {
   objectives: string[];
+  title?: string;
 }
 
-export function LearningObjectivesList({ objectives }: LearningObjectivesListProps) {
+export function LearningObjectivesList({ objectives, title = "Learning objectives" }: LearningObjectivesListProps) {
   return (
-    <AcademyPanel title="Learning Objectives">
+    <AcademyPanel title={title}>
       <ol className="space-y-2">
         {objectives.map((objective, index) => (
           <li key={objective}>

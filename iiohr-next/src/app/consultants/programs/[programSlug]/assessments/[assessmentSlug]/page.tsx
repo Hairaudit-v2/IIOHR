@@ -6,6 +6,7 @@ import { CommunicationRoleplayTask } from "@/components/academy/shared/Communica
 import { ComplianceStatementPanel } from "@/components/academy/shared/ComplianceStatementPanel";
 import { DocumentationTaskEditor } from "@/components/academy/shared/DocumentationTaskEditor";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { ConsultantScopeStrip } from "@/components/academy/consultant/ConsultantScopeStrip";
 import { getAssessmentPageViewModel } from "@/lib/academy/view-models/assessment";
 
 export default async function ConsultantAssessmentPage({
@@ -26,14 +27,30 @@ export default async function ConsultantAssessmentPage({
     viewModel.assessment.assessmentType === "consultation-note-task" ||
     viewModel.assessment.assessmentType === "capstone";
 
+  const mergedCompliance = [...viewModel.complianceNotices];
+  const seen = new Set(mergedCompliance.map((n) => n.id));
+  for (const n of viewModel.programComplianceNotices) {
+    if (!seen.has(n.id)) {
+      mergedCompliance.push(n);
+      seen.add(n.id);
+    }
+  }
+
   return (
     <>
       <SectionShell>
-        <AssessmentHeader
-          title={viewModel.assessment.title}
-          passMark={viewModel.assessment.passMark}
-          retryLimit={viewModel.assessment.retryLimit}
-        />
+        <ConsultantScopeStrip notices={viewModel.programComplianceNotices} />
+        <div className="mt-8">
+          <AssessmentHeader
+            title={viewModel.assessment.title}
+            passMark={viewModel.assessment.passMark}
+            retryLimit={viewModel.assessment.retryLimit}
+          />
+        </div>
+        <p className="mt-4 max-w-2xl text-sm text-readable-muted">
+          This assessment tests consultation-support judgement within scope: education, documentation, and escalation
+          — not independent diagnosis or treatment decisions.
+        </p>
       </SectionShell>
       <SectionShell muted>
         <AssessmentInstructionPanel
@@ -52,7 +69,11 @@ export default async function ConsultantAssessmentPage({
         )}
       </SectionShell>
       <SectionShell>
-        <ComplianceStatementPanel notices={viewModel.complianceNotices} />
+        <ComplianceStatementPanel
+          notices={mergedCompliance}
+          title="Interpret results in light of scope and clinic protocol"
+          tone="safety"
+        />
       </SectionShell>
     </>
   );

@@ -7,12 +7,14 @@ import type { CertificateEligibilityService } from "@/lib/academy/services/acade
 import {
   getAssessmentsForModule,
   getLessonsForModule,
-  getProgramAssessments,
-  getProgramCompetencies,
   getProgramLessons,
-  getProgramLevels,
-  getProgramModules,
 } from "@/lib/academy/content-loader";
+import {
+  buildLevelEligibilityScope,
+  buildModuleEligibilityScope,
+  getLessonsInScope,
+  resolveEligibilityLevel,
+} from "@/lib/academy/level-eligibility-scope";
 import { computeFacultyGateMetrics } from "@/lib/academy/services/faculty-review-persistence";
 import { getCertificateEligibilitySummary } from "@/lib/academy/services/certificate-service";
 import { isAssessmentPassed } from "@/lib/academy/services/assessment-service";
@@ -71,6 +73,7 @@ export function createCertificateEligibilityService(
       programSlug: string;
       streamSlug: AcademyStreamSlug;
       moduleId?: string;
+      levelSlug?: string;
     }): Promise<AcademyEligibilityReadModel> {
       const { data: enrollment, error: enrErr } = await supabase
         .from("program_enrollments")
@@ -100,6 +103,8 @@ export function createCertificateEligibilityService(
             },
             competencyStatuses: {},
           },
+          eligibilityScopeLevelSlug: null,
+          eligibilityScopeLevelTitle: null,
         };
       }
 
@@ -142,36 +147,45 @@ export function createCertificateEligibilityService(
         competencyEvidence = ((evRows ?? []) as CompetencyEvidenceRow[]).map(toOperationalCompetencyEvidence);
       }
 
-      const level = getProgramLevels(params.programSlug)[0];
-      const modules = getProgramModules(params.programSlug);
-      const assessments = getProgramAssessments(params.programSlug);
-      const competencies = getProgramCompetencies(params.programSlug);
-
-      if (!level) {
-        throw new Error("Program has no levels in content bundle");
+      const moduleId = params.moduleId;
+      let scope = moduleId ? buildModuleEligibilityScope(params.programSlug, moduleId) : null;
+      if (!moduleId) {
+        const level = resolveEligibilityLevel(params.programSlug, params.levelSlug);
+        if (params.levelSlug && !level) {
+          throw new Error(`Unknown level slug for program: ${params.levelSlug}`);
+        }
+        scope = level ? buildLevelEligibilityScope(params.programSlug, level) : null;
       }
+
+      if (!scope) {
+        throw new Error("Program has no levels or module not found in content bundle");
+      }
+
+      const { level, assessments: scopedAssessments, competencies: scopedCompetencies, modules: scopedModules } =
+        scope;
 
       const summary = getCertificateEligibilitySummary({
         level,
-        modules,
-        assessments,
+        modules: scopedModules,
+        assessments: scopedAssessments,
         attempts: operationalAttempts,
-        competencies,
+        competencies: scopedCompetencies,
         competencyRecords,
         competencyEvidence,
         lessonCompletions: [],
       });
 
-      const facultyReviewPending = attempts.some((a) =>
+      const scopedAttemptRows = attempts.filter((row) => scope.assessmentIdSet.has(row.assessment_id));
+      const facultyReviewPending = scopedAttemptRows.some((a) =>
         ["pending", "in_review"].includes(a.faculty_review_status)
       );
 
       const facultyGate = computeFacultyGateMetrics({
         programSlug: params.programSlug,
         attempts,
+        scopedAssessmentIds: scope.assessmentIdSet,
       });
 
-      const moduleId = params.moduleId;
       let lessonCompletionPercent = 0;
       let requiredAssessmentCompletionPercent = 0;
 
@@ -213,8 +227,8 @@ export function createCertificateEligibilityService(
           );
         }
       } else {
-        const allLessons = getProgramLessons(params.programSlug);
-        const lessonIds = new Set(allLessons.map((l) => l.id));
+        const scopedLessons = getLessonsInScope(params.programSlug, scope);
+        const lessonIds = new Set(scopedLessons.map((l) => l.id));
         let done = new Set<string>();
         if (lessonIds.size > 0) {
           const { data: lcRows } = await supabase
@@ -225,15 +239,15 @@ export function createCertificateEligibilityService(
           done = new Set((lcRows ?? []).map((r) => r.lesson_id as string));
         }
         lessonCompletionPercent =
-          allLessons.length === 0
+          scopedLessons.length === 0
             ? 100
-            : Math.round((done.size / allLessons.length) * 100);
+            : Math.round((done.size / scopedLessons.length) * 100);
 
-        if (assessments.length === 0) {
+        if (scopedAssessments.length === 0) {
           requiredAssessmentCompletionPercent = 100;
         } else {
           let passedCount = 0;
-          for (const a of assessments) {
+          for (const a of scopedAssessments) {
             const forAssessment = attempts.filter((row) => row.assessment_id === a.id);
             const latest = forAssessment.sort((x, y) => y.retry_index - x.retry_index)[0];
             if (!latest) {
@@ -244,7 +258,9 @@ export function createCertificateEligibilityService(
               passedCount += 1;
             }
           }
-          requiredAssessmentCompletionPercent = Math.round((passedCount / assessments.length) * 100);
+          requiredAssessmentCompletionPercent = Math.round(
+            (passedCount / scopedAssessments.length) * 100
+          );
         }
       }
 
@@ -259,6 +275,8 @@ export function createCertificateEligibilityService(
         certificateBlockedByFacultyGate: facultyGate.certificateBlockedByFacultyGate,
         certificateEligible: summary.isEligible,
         summary,
+        eligibilityScopeLevelSlug: level.slug,
+        eligibilityScopeLevelTitle: level.title,
       };
     },
   };

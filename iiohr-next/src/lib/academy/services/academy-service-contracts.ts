@@ -6,6 +6,7 @@
 import type { AcademyStreamSlug } from "@/lib/academy/constants";
 import type { AcademyEligibilityReadModel } from "@/lib/academy/certificate-types";
 import type {
+  ApplicationAdmissionsEventRow,
   ApplicationAnswerRow,
   ApplicationConsentRow,
   ApplicationRow,
@@ -115,12 +116,19 @@ export interface CertificateEligibilityService {
     streamSlug: AcademyStreamSlug;
     /** When set, lesson/assessment % fields are scoped to this module. */
     moduleId?: string;
+    /**
+     * Award/progression unit for certificate summary, weighted score, competencies, and faculty gate.
+     * When omitted, the first level by sequence is used (doctor single-level programs; consultant defaults to foundation).
+     */
+    levelSlug?: string;
   }): Promise<AcademyEligibilityReadModel>;
 }
 
 export interface SubmitApplicationInput {
   userId: string;
   targetStreamSlug: AcademyStreamSlug;
+  /** When set, must be owned draft or needs_more_information for this user. */
+  applicationId?: string | null;
   targetProgramSlug?: string | null;
   answers: Array<Pick<ApplicationAnswerRow, "question_key" | "answer">>;
   consents: Array<
@@ -132,6 +140,23 @@ export interface SubmitApplicationInput {
 export interface ApplicationReviewRow extends ApplicationRow {
   answers: ApplicationAnswerRow[];
   consents: ApplicationConsentRow[];
+  admissions_events: ApplicationAdmissionsEventRow[];
+}
+
+export interface AdmissionsAdminTransitionInput {
+  applicationId: string;
+  toStatus:
+    | "submitted"
+    | "under_review"
+    | "needs_more_information"
+    | "declined"
+    | "waitlisted"
+    | "rejected";
+  internalNote?: string | null;
+  /** Shown to applicant when moving to needs_more_information. */
+  applicantMessage?: string | null;
+  /** Captured when requesting more information (question_key → answer). */
+  answersSnapshot?: Record<string, unknown> | null;
 }
 
 export interface AdmissionsService {
@@ -142,11 +167,25 @@ export interface AdmissionsService {
     application: ApplicationRow;
     enrollment: ProgramEnrollmentRow;
   }>;
-  /** Admin: set terminal state (RLS: admin or applicant; applicant should not call this in UI). */
-  rejectApplication(applicationId: string): Promise<ApplicationRow>;
-  markUnderReview(applicationId: string): Promise<ApplicationRow>;
-  /** Admin queue: submitted and in-review applications, newest first. */
-  listApplicationsForReview(): Promise<ApplicationReviewRow[]>;
+  /** Admin: decline (uses declined status when supported). */
+  declineApplication(applicationId: string, internalNote?: string | null): Promise<ApplicationRow>;
+  markUnderReview(applicationId: string, internalNote?: string | null): Promise<ApplicationRow>;
+  requestMoreInformation(
+    applicationId: string,
+    applicantMessage: string,
+    internalNote?: string | null
+  ): Promise<ApplicationRow>;
+  /** Generic admin transition + audit row (not for acceptance). */
+  adminTransition(input: AdmissionsAdminTransitionInput): Promise<ApplicationRow>;
+  updateInternalNotes(applicationId: string, internalNotes: string): Promise<ApplicationRow>;
+  /** Applicant withdraw from draft or in-flight pipeline states. */
+  withdrawApplication(
+    applicationId: string,
+    userId: string,
+    applicantEmailOverride?: string | null
+  ): Promise<ApplicationRow>;
+  /** Admin queue: in-flight pipeline; set includeTerminal for outcomes archive. */
+  listApplicationsForReview(params?: { includeTerminal?: boolean }): Promise<ApplicationReviewRow[]>;
 }
 
 export interface CertificateIssuanceService {

@@ -6,6 +6,10 @@ import {
   getProgramAssessmentBySlug,
   getProgramStream,
 } from "@/lib/academy/content-loader";
+import {
+  orderComplianceNoticesForDisplay,
+  resolveComplianceNoticeIdsForAssessment,
+} from "@/lib/academy/assessment-compliance-notices";
 import { assessmentPageLayout } from "@/lib/academy/layouts/page-layouts";
 
 export function getAssessmentPageViewModel(programSlug: string, assessmentSlug: string) {
@@ -17,13 +21,20 @@ export function getAssessmentPageViewModel(programSlug: string, assessmentSlug: 
     return null;
   }
 
+  const items = getAssessmentItemsForAssessment(programSlug, assessment.id);
+  const noticeIds = resolveComplianceNoticeIdsForAssessment(programSlug, assessment, items);
+  const complianceNotices = orderComplianceNoticesForDisplay(
+    getComplianceNoticesByIds(programSlug, noticeIds)
+  );
+
   return {
     stream,
     program,
     assessment,
-    items: getAssessmentItemsForAssessment(programSlug, assessment.id),
+    items,
     competencies: getCompetenciesByIds(programSlug, assessment.competencyIds),
-    complianceNotices: getComplianceNoticesByIds(programSlug, assessment.mandatoryDomainTags.includes("ethics-scope") ? program.complianceNoticeIds : []),
+    complianceNotices,
+    programComplianceNotices: getComplianceNoticesByIds(programSlug, program.complianceNoticeIds),
     layout: assessmentPageLayout,
   };
 }

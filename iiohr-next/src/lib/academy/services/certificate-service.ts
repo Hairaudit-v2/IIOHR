@@ -96,7 +96,7 @@ export function getCertificateEligibilitySummary(params: {
     ...unmetCompetencies.map((competency) => `Competency not yet achieved: ${competency.title}`),
   ];
 
-  if (weightedScore < 80) {
+  if (assessments.length > 0 && weightedScore < 80) {
     unmetRequirements.unshift(`${level.title} requires a weighted score of at least 80 percent.`);
   }
 
