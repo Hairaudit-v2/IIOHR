@@ -18,6 +18,42 @@
     "reviewPurpose": "documentation moderation"
   },
   {
+    "id": "consultants_note_volume1_week1_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_01_role_modern_hair_restoration",
+    "title": "Volume 1 Week 1 — faculty delivery",
+    "note": "Source: IIOHR Consultant & Nurse Teaching Manual Volume 1 (Week 1). Encourage discussion of how commercial pressure can distort early patient communication. Compare patient journeys in high-trust versus high-pressure clinics. Use the manual practice activity: journey map from first enquiry to follow-up with five failure points and corrective actions.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 1 alignment"
+  },
+  {
+    "id": "consultants_note_volume1_week2_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_06_ethics_consent_scope_of_practice",
+    "title": "Volume 1 Week 2 — faculty delivery",
+    "note": "Source: Teaching Manual Volume 1 (Week 2: scope, ethics, professional responsibility). Use role-play: learners hear unsafe phrases aloud and rewrite them in calmer, bounded language. Classify phrases as within scope, borderline, or outside scope.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 1 alignment"
+  },
+  {
+    "id": "consultants_note_volume1_week3_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_02_foundations_hair_scalp_science",
+    "title": "Volume 1 Week 3 — faculty delivery",
+    "note": "Source: Teaching Manual Volume 1 (Week 3). Pair science with photographs or diagrams in live teaching. Emphasise translation into plain language, not jargon memorisation. Optional: collect a 300-word model answer for the thinning-despite-hairs exercise.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 1 alignment"
+  },
+  {
+    "id": "consultants_note_volume1_week4_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_03_common_hair_loss_presentations",
+    "title": "Volume 1 Week 4 — faculty delivery",
+    "note": "Source: Teaching Manual Volume 1 (Week 4). Use ambiguous cases, not only obvious patterns. Normalise disciplined uncertainty and appropriate escalation. Six-case worksheet: pattern, red flags, routine vs urgent review, one patient-facing sentence for next step.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 1 alignment"
+  },
+  {
     "id": "consultants_note_capstone_review",
     "parentType": "assessment",
     "parentId": "consultants_assessment_15_final_competency_assessment",

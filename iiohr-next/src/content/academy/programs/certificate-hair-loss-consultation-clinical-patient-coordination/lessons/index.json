@@ -8,16 +8,17 @@
     "title": "Role and Scope in Modern Hair Restoration Clinics",
     "sequence": 1,
     "status": "draft",
-    "estimatedStudyMinutes": 45,
-    "overview": "Introduces the consultant and nurse role as a structured support function within a doctor-led clinical pathway.",
+    "estimatedStudyMinutes": 75,
+    "overview": "Drawn from Teaching Manual Volume 1 (Week 1): positions the consultant and nurse as clinical-support professionals in a coordinated, doctor-led hair restoration pathway—not as a sales front end. You will connect the modern clinic, role boundaries, the end-to-end patient journey, and what excellence means when trust and safety are the outcomes.",
     "learningObjectives": [
-      "Define the consultant and nurse support role",
-      "Explain scope-safe responsibilities",
-      "Describe the pre-doctor patient journey"
+      "Explain why first-contact staff materially affect safety, trust, and efficiency before the doctor encounter",
+      "Contrast coordinated, handover-ready care with fragmented or pressure-led pathways",
+      "List consultant/nurse support tasks (inform, screen, document, escalate) versus doctor-led diagnosis, suitability, and consent",
+      "Map the typical patient journey and identify communication or process failure points and appropriate corrective actions"
     ],
     "body": {
       "format": "richText",
-      "content": "This lesson establishes the consultant academy approach: patient-facing staff should improve structure, trust, safety, and documentation without overstepping into diagnosis or medical decision-making."
+      "content": "Teaching Manual Volume 1, Week 1 purpose: move from marketing-minded first-contact habits to a clinical support mindset that protects patients, builds durable trust, and strengthens the doctor-led pathway.\n\nThe first-contact team is not decorative. In contemporary hair restoration, coordinators and nurses structure the pre-doctor journey, reduce anxiety, limit misunderstanding, and ensure the treating clinician receives accurate, neutral information. Weak first contact fragments care, increases confusion, and leaves patients feeling sold to rather than supported.\n\nThink of the clinic as an integrated system. Administration, coordinators, nurses, and doctors have distinct duties, but the patient should experience one coherent pathway. Information must flow cleanly between roles. Within your organisation’s protocols, you may educate generally, gather structured history, screen against agreed criteria, document objectively, and escalate concerns; you do not replace medical assessment, prescribing, or informed consent.\n\nPatients routinely conflate roles. State yours plainly: you help structure the visit, explain process, capture concerns and history for the doctor, and answer non-clinical or general questions only as authorised. You do not independently diagnose hair loss, confirm suitability for surgery, promise outcomes, or substitute for the doctor’s clinical decision-making.\n\nMap the typical journey: enquiry, screening or triage contact, consultation preparation, clinician encounter, decision support, treatment-day coordination, and follow-up. At each stage, ask where trust can fail (vague promises, missed red flags, rushed booking) and what corrective behaviour looks like.\n\nConsultation excellence in this program means coordination, empathy, accuracy, ethical restraint, and seamless handover—not persuading someone to book. Practice activity (Volume 1): sketch a patient-journey map from first enquiry through follow-up; mark at least five points where clarity, safety, or trust could fail and note the corrective action you would take within scope."
     },
     "patientCommunicationExamples": [
       {
@@ -25,27 +26,57 @@
         "title": "Scope-safe opening language",
         "example": "My role is to help structure your consultation, explain the process clearly, and ensure the doctor receives accurate information.",
         "rationale": "Frames support clearly without implying clinical authority."
+      },
+      {
+        "id": "pc_01b",
+        "title": "Redirecting diagnosis or guarantee requests",
+        "example": "I hear that you want a clear answer today. I am not able to diagnose or confirm a treatment plan—that is for your doctor after they review you. I can make sure your concerns and history are captured completely so nothing important is missed.",
+        "rationale": "Validates the patient, restates boundaries, and preserves doctor-led decision-making."
+      },
+      {
+        "id": "pc_01c",
+        "title": "Integrated pathway wording",
+        "example": "Our team works in steps so you have one consistent pathway: I focus on preparation and documentation, then the doctor focuses on medical assessment and options. That way your decisions are based on a full clinical review.",
+        "rationale": "Reinforces coordinated care without overstating non-doctor authority."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_01",
-        "title": "No diagnosis",
-        "note": "Consultants and nurses in this pathway do not diagnose hair loss conditions independently."
+        "title": "No independent diagnosis",
+        "note": "Consultants and nurses do not diagnose hair loss conditions or scalp disease independently. Use neutral observation and documentation; clinical interpretation belongs to the doctor."
+      },
+      {
+        "id": "rb_01b",
+        "title": "Support is not a substitute for the clinician",
+        "note": "Efficiency gains from structured support must never collapse into false clinical authority. Booking pressure, premature suitability statements, and consent shortcuts are out of scope."
       }
     ],
     "keyTakeaways": [
-      "Support roles improve safety when they are clearly bounded.",
-      "Education should reduce confusion, not replace doctor judgement.",
-      "Standardisation matters more than personal sales style."
+      "First-contact work is a safety and trust lever, not only an administrative layer.",
+      "Patients experience one clinic; your job is to connect roles through clear handover, not to close a sale.",
+      "Excellence is measured by accurate preparation, ethical restraint, and doctor-ready documentation.",
+      "Volume 1 Week 1 maps directly onto this module; ethics and professional responsibility are deepened later in the dedicated Ethics and Scope module (Level 2), aligned with Volume 1 Week 2."
     ],
-    "redFlags": ["Claims of diagnosis by non-doctors", "Pressure-led consultation behaviour"],
+    "redFlags": [
+      "Non-doctor staff implying or stating a diagnosis",
+      "Guarantees of density, outcome, or suitability before doctor review",
+      "Pressure-led booking or consent before clinician assessment",
+      "Fragmented information so the doctor receives an incomplete or biased picture",
+      "Dismissive handling of patient anxiety or questions"
+    ],
     "escalationTriggers": [
       {
         "id": "et_01",
         "title": "Scope breach risk",
-        "trigger": "Patient requests diagnostic certainty or treatment decision from non-doctor staff.",
-        "action": "Escalate to the responsible doctor or regulated clinician."
+        "trigger": "Patient requests diagnostic certainty, suitability confirmation, or treatment decisions from non-doctor staff.",
+        "action": "Escalate to the responsible doctor or regulated clinician; document the request neutrally."
+      },
+      {
+        "id": "et_01b",
+        "title": "Expectations locked in before clinical review",
+        "trigger": "Patient has been given strong outcome or treatment promises elsewhere in the pathway, or believes a decision is already final.",
+        "action": "Do not reinforce the promise. Clarify process, ensure accurate handover, and involve the clinician or senior lead per protocol."
       }
     ],
     "evidenceTier": {
@@ -53,7 +84,7 @@
       "summaryNote": "Role clarity is primarily standards-led and governance-based.",
       "notes": []
     },
-    "facultyNoteIds": ["consultants_note_scope_language"],
+    "facultyNoteIds": ["consultants_note_scope_language", "consultants_note_volume1_week1_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority"
@@ -94,16 +125,17 @@
     "title": "Foundational Hair and Scalp Literacy",
     "sequence": 2,
     "status": "draft",
-    "estimatedStudyMinutes": 50,
-    "overview": "Provides core terminology and biological concepts needed for credible patient education and reliable documentation.",
+    "estimatedStudyMinutes": 85,
+    "overview": "Aligned with Teaching Manual Volume 1 (Week 3: hair and scalp science foundations). Builds follicle- and cycle-level literacy, density versus calibre concepts, and pattern vocabulary so you can educate in plain language, document neutrally, and hand over to the doctor without diagnostic overreach. Ethics, scope, and consent are deepened in the Level 2 Ethics and Scope module (Volume 1 Week 2 themes).",
     "learningObjectives": [
-      "Use basic hair and scalp terminology correctly",
-      "Explain hair cycle concepts in accessible language",
-      "Recognise the limits of non-doctor interpretation"
+      "Describe hair follicle structure and the growth cycle (anagen, catagen, telogen) in patient-friendly terms",
+      "Contrast hair density and hair calibre and explain why apparent thinning can occur while hairs are still shed normally",
+      "Recognise common non-scarring alopecia pattern descriptions at an educational literacy level without assigning a diagnosis",
+      "Translate scientific concepts into calm, bounded communication and neutral documentation for clinician review"
     ],
     "body": {
       "format": "richText",
-      "content": "Learners are introduced to scalp anatomy, hair cycle language, and clinic-relevant biological concepts so they can support communication and handover with greater accuracy."
+      "content": "Volume 1 Week 3 establishes science literacy as a communication and safety tool, not a licence to diagnose. The follicular unit groups hairs as they emerge from the scalp; understanding this helps you describe what you see and what the patient reports without turning observation into disease labels.\n\nHair cycles through active growth (anagen), transition (catagen), and resting/shedding (telogen). Patients often misread normal shedding as catastrophic loss. Your role is to use general cycle language to reduce panic where appropriate, while never dismissing symptoms that may need medical assessment—escalate when history or examination context is concerning or outside your protocol.\n\nDensity (hairs per area) and calibre (thickness of each hair) are distinct. Miniaturisation and reduced calibre can produce visible thinning even when daily shed counts seem high. Explain these ideas descriptively: the doctor determines what the pattern means clinically.\n\nAt literacy level, be able to name common pattern categories you may hear in clinic (for example androgenetic-pattern hair loss, telogen effluvium after a trigger, patchy hair loss) only as context for documentation and handover—not as a label you confirm for the patient. Always frame as something the clinician will assess.\n\nPatient education should prioritise clarity over jargon. If you use a technical term, follow with plain language. Practice activity (Volume 1): in three short sentences, explain to a lay patient why they might notice thinning even though they still see hairs on the pillow—then add one line you would place in a doctor handover note using neutral wording only."
     },
     "patientCommunicationExamples": [
       {
@@ -111,27 +143,55 @@
         "title": "Accessible biological explanation",
         "example": "Hair growth follows a cycle, so part of the consultation is understanding how your current pattern fits into that broader picture.",
         "rationale": "Explains concepts without implying diagnosis."
+      },
+      {
+        "id": "pc_02b",
+        "title": "Density versus calibre",
+        "example": "Two things affect how full the hair looks: how many hairs are in an area, and how thick each hair is. The doctor will assess your pattern properly; my job is to make sure we describe what you are seeing and feeling accurately for that review.",
+        "rationale": "Educates without closing a clinical interpretation."
+      },
+      {
+        "id": "pc_02c",
+        "title": "When shedding sounds frightening",
+        "example": "Shedding can be part of how the cycle works, but it can also be a signal that needs medical context. I will note what you are experiencing and the time course so the doctor can interpret it—not guess today on my own.",
+        "rationale": "Balances reassurance with honest escalation."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_02",
         "title": "Interpretation boundary",
-        "note": "Biological literacy supports communication, but diagnostic interpretation remains with the doctor."
+        "note": "Biological literacy supports communication and documentation; diagnostic interpretation, trichoscopy conclusions, and treatment decisions belong to the doctor."
+      },
+      {
+        "id": "rb_02b",
+        "title": "Do not explain away red flags",
+        "note": "Science vocabulary must not be used to minimise symptoms that require clinician review (rapid change, pain, scarring, systemic symptoms)."
       }
     ],
     "keyTakeaways": [
-      "Clinical language improves trust.",
-      "Biological literacy supports better patient education.",
-      "Knowledge should strengthen, not blur, role boundaries."
+      "Science literacy makes handover precise and patient conversations calmer.",
+      "Separate education from diagnosis: you describe and document; the clinician interprets.",
+      "Density, calibre, and cycle language explain common patient questions within scope when used carefully.",
+      "Volume 1 Week 3 content maps to this module; Volume 1 Week 2 ethics and scope themes are covered in the Ethics and Scope module."
     ],
-    "redFlags": ["Using biology to overstate certainty", "Mislabeling concerning scalp findings as routine"],
+    "redFlags": [
+      "Using biology to imply a confirmed diagnosis or guaranteed prognosis",
+      "Dismissing rapid loss, scalp pain, inflammation, or scarring as stress or normal cycle without escalation",
+      "Teaching at a level that steers the patient toward a treatment choice"
+    ],
     "escalationTriggers": [
       {
         "id": "et_02",
         "title": "Unexpected finding",
         "trigger": "Observed scalp changes fall outside routine appearance or clinic protocol expectations.",
         "action": "Escalate for clinician review and avoid reassurance beyond scope."
+      },
+      {
+        "id": "et_02b",
+        "title": "Patient needs personalised interpretation",
+        "trigger": "The patient asks what their pattern means for treatment or medication.",
+        "action": "Document the question and route to the doctor; do not personalise medical advice."
       }
     ],
     "evidenceTier": {
@@ -139,7 +199,7 @@
       "summaryNote": "Foundational biological literacy is supported by standard clinical education sources.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume1_week3_faculty"],
     "complianceNoticeIds": ["notice_consultants_competency_scope"],
     "referenceIds": ["consultants_reference_02"],
     "resourceIds": [],
@@ -151,6 +211,12 @@
         "id": "complete_02_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_02_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       }
     ],
@@ -171,16 +237,17 @@
     "title": "Common Presentations Without Diagnostic Overreach",
     "sequence": 3,
     "status": "draft",
-    "estimatedStudyMinutes": 50,
-    "overview": "Teaches presentation language, red flag awareness, and the distinction between noticing patterns and diagnosing disease.",
+    "estimatedStudyMinutes": 85,
+    "overview": "Aligned with Teaching Manual Volume 1 (Week 4: common hair loss presentations and red flags). You learn descriptive pattern literacy, how to stay non-diagnostic in language, when to escalate urgently versus routine review, and how to sit with uncertainty while preserving patient safety and trust.",
     "learningObjectives": [
-      "Describe common clinic presentations clearly",
-      "Separate recognition from diagnosis",
-      "Escalate unusual or high-risk presentations"
+      "Describe common presentation patterns using neutral, handover-ready language",
+      "Identify red-flag features and contexts that should trigger escalation rather than reassurance",
+      "Distinguish routine clinician review from situations that need more urgent attention per protocol",
+      "Use disciplined uncertainty in patient-facing communication while documenting accurately for the doctor"
     ],
     "body": {
       "format": "richText",
-      "content": "This lesson focuses on presentation literacy: what staff may reasonably observe, how to document it, and when caution or escalation is required."
+      "content": "Volume 1 Week 4 trains pattern recognition as a safety skill, not as private diagnostic authority. In clinic you will see recurring stories: gradual thinning in a characteristic pattern, diffuse shedding after illness or stress, well-circumscribed patches, and hair loss with significant psychosocial burden. Your task is to notice and describe what the patient reports and what is visible within your role, then hand over without naming a disease as fact.\n\nAndrogenetic-pattern hair loss is commonly discussed in educational materials as progressive, patterned thinning. Telogen effluvium is often associated temporally with triggers such as illness, surgery, postpartum change, or severe stress—patients may describe sudden shed. Alopecia areata may present as discrete patches. Traction-related loss may relate to hairstyling practice. These names are literacy anchors only; confirming any diagnosis is clinician-led.\n\nRed flags include rapid progression, painful or inflamed scalp, scarring or shiny bare areas, systemic symptoms, infection concern, children with patchy loss, and any presentation that does not match what your pathway expects. When uncertain, choose the safer path: neutral documentation, no false reassurance, and escalation according to clinic protocol.\n\nHair loss is not only cosmetic; distress can be severe. Acknowledge emotion without collapsing into guarantees. Pair empathy with process: the doctor will assess medical meaning and options.\n\nPractice activity (Volume 1): take six brief scenarios (include at least two ambiguous ones). For each, list observed pattern language, red flags if any, whether next step is routine or urgent review, and one patient-facing sentence that preserves uncertainty appropriately."
     },
     "patientCommunicationExamples": [
       {
@@ -188,27 +255,57 @@
         "title": "Presentation-focused wording",
         "example": "I can document the pattern we are seeing and make sure the doctor reviews it in context.",
         "rationale": "Keeps communication within scope."
+      },
+      {
+        "id": "pc_03b",
+        "title": "Uncertainty without abandoning the patient",
+        "example": "From what you describe, there are a few possibilities, and it would not be safe for me to guess which one applies. I am going to capture your story clearly so the doctor can examine you and explain what they think is going on.",
+        "rationale": "Models honest limits and routes to clinician authority."
+      },
+      {
+        "id": "pc_03c",
+        "title": "Escalation when symptoms sound inflammatory or rapid",
+        "example": "Because this changed quickly and you mention soreness, I want the clinical team to see you promptly. I will note the timeline and symptoms exactly as you told me.",
+        "rationale": "Signals appropriate urgency without diagnosing."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_03",
         "title": "Pattern recognition is not diagnosis",
-        "note": "Even common patterns should not be presented as confirmed diagnoses by non-doctor staff."
+        "note": "Even common patterns must not be presented as confirmed disease labels by non-doctor staff."
+      },
+      {
+        "id": "rb_03b",
+        "title": "Do not rank differentials for the patient",
+        "note": "Listing competing diagnoses or implying one is more likely crosses into clinical reasoning; document observations and let the clinician differentiate."
       }
     ],
     "keyTakeaways": [
-      "Observation should be accurate and neutral.",
-      "Escalation matters when presentations appear atypical.",
-      "Patients should not be given false certainty."
+      "Descriptive accuracy plus escalation judgment is the core competency.",
+      "Ambiguity is normal; unsafe certainty is not.",
+      "Psychosocial impact matters and should be reflected in handover without you becoming the therapist or prescriber.",
+      "Volume 1 Week 4 maps to this module; ethics and boundary language from Volume 1 Week 2 are consolidated in the Ethics and Scope module."
     ],
-    "redFlags": ["Patchy or inflamed appearance", "Rapid change with concerning history"],
+    "redFlags": [
+      "Rapid change, pain, marked inflammation, or suspected infection",
+      "Scarring or shiny atrophic scalp areas",
+      "Patchy loss in a child, or loss with systemic symptoms",
+      "Patient reporting prior misleading diagnosis or unsafe advice",
+      "Pressure to reassure or name a condition to close a booking"
+    ],
     "escalationTriggers": [
       {
         "id": "et_03",
         "title": "Atypical pattern",
         "trigger": "Presentation does not fit expected routine pathways or appears clinically concerning.",
         "action": "Record accurately and escalate promptly."
+      },
+      {
+        "id": "et_03b",
+        "title": "Ambiguous but worrisome",
+        "trigger": "You cannot categorise the presentation confidently, but features or trajectory create unease.",
+        "action": "Escalate for clinician review; document what is unknown as well as what is observed."
       }
     ],
     "evidenceTier": {
@@ -216,7 +313,7 @@
       "summaryNote": "Presentation literacy is supported by clinical pattern-recognition teaching and escalation protocols.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume1_week4_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_escalation_duty"
@@ -231,6 +328,12 @@
         "id": "complete_03_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_03_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       }
     ],
@@ -414,16 +517,17 @@
     "title": "Ethics, Consent Support, and Scope of Practice Fundamentals",
     "sequence": 6,
     "status": "draft",
-    "estimatedStudyMinutes": 55,
-    "overview": "Frames ethics and scope as core patient safety disciplines and clarifies the boundary between support and regulated consent.",
+    "estimatedStudyMinutes": 80,
+    "overview": "Drawn from Teaching Manual Volume 1 (Week 2: scope, ethics, and professional responsibility). This module sits in Level 2 in the LMS while foundation modules 1–3 align with Volume 1 Weeks 1, 3, and 4—complete those first for context. Here you anchor legal-ethical scope, professional boundaries, consent support versus clinical consent, privacy, advertising integrity, and how to refuse unsafe instructions.",
     "learningObjectives": [
-      "Explain ethics and scope principles clearly",
-      "Differentiate consent support from clinical consent",
-      "Handle pressure-led scenarios safely"
+      "Define scope of practice for consultant/nurse clinical support and contrast it with medical licensure and doctor-led decisions",
+      "Apply ethical principles (autonomy, non-maleficence, beneficence, justice) to everyday language and workflow choices",
+      "Differentiate consent support—clarifying process and questions—from obtaining or validating clinical consent",
+      "Recognise confidentiality duties, honest representation in marketing, and the duty to escalate when asked to work outside scope"
     ],
     "body": {
       "format": "richText",
-      "content": "This lesson reinforces that consultant confidence must always be secondary to role clarity, patient safety, and appropriate clinical escalation."
+      "content": "Volume 1 Week 2 states the non-negotiable rule: you are not a doctor in this pathway. Your value is preparation, education within boundaries, structured information gathering, safe escalation, and respectful coordination. Medical diagnosis, prescribing, invasive procedures, and final informed consent for treatment belong to the appropriately licensed clinician.\n\nEthics is not abstract. Autonomy means patients receive truthful information and space to decide without manipulation. Non-maleficence requires you to avoid harm from overconfidence, omission, or pressure. Beneficence means actively supporting safe next steps. Justice means fair access and not exploiting vulnerability.\n\nConsent support can include repeating general pathway information, confirming the patient has had opportunity to ask questions, and documenting questions for the doctor. It must not include telling the patient what they should consent to, minimising risks, or rushing signatures.\n\nAdvertising and social content must not misrepresent qualifications, imply independent clinical authority, or guarantee results. Patient information is confidential; disclose only on lawful, protocol-driven grounds.\n\nWhen a colleague or manager instructs you to diagnose, guarantee density, or push booking ahead of clinical review, pause and escalate through governance channels. Practice activity (Volume 1): collect five phrases that would be unsafe if said by non-doctor staff; rewrite each into calm, scope-safe language and classify each original as within scope, borderline, or outside scope."
     },
     "patientCommunicationExamples": [
       {
@@ -431,27 +535,57 @@
         "title": "Consent support boundary",
         "example": "I can help explain the pathway and document your questions, but the doctor must address treatment decisions and consent.",
         "rationale": "Separates educational support from clinical responsibility."
+      },
+      {
+        "id": "pc_06b",
+        "title": "Refusing to confirm suitability",
+        "example": "I cannot tell you if you are definitely suitable—that decision belongs to your doctor after they assess you medically. I can help you prepare so that assessment is complete and fair.",
+        "rationale": "Protects patient and clinician from premature certainty."
+      },
+      {
+        "id": "pc_06c",
+        "title": "Responding to urgency or discount pressure",
+        "example": "I understand the offer feels time-pressured. Clinical decisions here are not meant to be rushed. I will stop any discussion that pushes you to decide before you have seen the doctor.",
+        "rationale": "Ethical practice over commercial tempo."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_06",
         "title": "Consent is regulated",
-        "note": "Support staff may reinforce understanding but do not replace the doctor’s consent process."
+        "note": "Support staff may reinforce understanding of process but do not replace the doctor-led consent conversation for treatment."
+      },
+      {
+        "id": "rb_06b",
+        "title": "No substitution for medical licensure",
+        "note": "This program does not grant diagnostic or prescribing rights. Stay within employer policy and statutory limits for your role and title."
       }
     ],
     "keyTakeaways": [
-      "Scope before confidence is a safety rule.",
-      "Ethics applies to language, behaviour, and documentation.",
-      "Mandatory pass domains protect the integrity of the pathway."
+      "Scope before confidence: clarity protects patients more than charisma.",
+      "Ethics lives in words, timing, documentation, and what you refuse to do.",
+      "Consent support educates and facilitates questions; it does not close clinical decisions.",
+      "Volume 1 Week 2 is mapped to this Level 2 module; foundation modules carry Weeks 1, 3, and 4."
     ],
-    "redFlags": ["Overpromising outcomes", "Implying clinical authority during consent discussions"],
+    "redFlags": [
+      "Staff guaranteeing outcomes, density, or suitability",
+      "Consent or payment pressure before clinician review",
+      "Misrepresentation of qualifications in marketing or conversation",
+      "Sharing identifiable patient information outside lawful pathways",
+      "Instructions from others to work outside scope without governance follow-up"
+    ],
     "escalationTriggers": [
       {
         "id": "et_06",
         "title": "Ethical uncertainty",
         "trigger": "A patient asks for reassurance or permission beyond the learner’s scope.",
         "action": "Escalate to the doctor and document the concern."
+      },
+      {
+        "id": "et_06b",
+        "title": "Organisational pressure conflict",
+        "trigger": "You are directed to act in ways that breach scope, consent standards, or truthfulness.",
+        "action": "Stop the unsafe act, document, and escalate to clinical lead, governance, or safeguarding route per policy."
       }
     ],
     "evidenceTier": {
@@ -459,7 +593,7 @@
       "summaryNote": "Governance, ethics, and scope boundaries are standards-led requirements.",
       "notes": []
     },
-    "facultyNoteIds": ["consultants_note_scope_language"],
+    "facultyNoteIds": ["consultants_note_scope_language", "consultants_note_volume1_week2_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority",

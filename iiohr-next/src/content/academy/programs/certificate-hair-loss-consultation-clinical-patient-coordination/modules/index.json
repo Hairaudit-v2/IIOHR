@@ -9,12 +9,13 @@
     "shortTitle": "Role in Modern Hair Restoration",
     "sequence": 1,
     "status": "draft",
-    "estimatedStudyMinutes": 90,
-    "moduleOverview": "Introduces the consultant academy ethos, role boundaries, patient journey responsibilities, and the distinction between support, triage, and diagnosis.",
+    "estimatedStudyMinutes": 100,
+    "moduleOverview": "Teaching Manual Volume 1, Week 1: the modern hair restoration clinic as a coordinated system; the consultant and nurse as clinical-support professionals who inform, structure, document, and escalate within a doctor-led pathway. Emphasises patient safety, trust, accurate handover, and why excellence is integration—not conversion pressure.",
     "learningOutcomes": [
-      "Define the role of patient-facing support professionals in the hair restoration pathway",
-      "Explain why scope-safe working protects patients and clinics",
-      "Describe how consultant and nurse roles support doctor efficiency"
+      "Explain how first-contact roles influence safety, trust, and efficiency before the doctor encounter",
+      "Map the patient journey and identify failure points where communication or process breaks down",
+      "Differentiate support tasks from diagnosis, suitability decisions, and informed consent",
+      "Relate role clarity to sustainable reputation and lower medico-legal risk for the organisation"
     ],
     "competencyIds": ["consultants_competency_01_role_scope_foundations"],
     "unlockRules": [],
@@ -26,7 +27,7 @@
         "mandatoryDomainTags": ["ethics-scope"]
       }
     ],
-    "facultyNoteIds": ["consultants_note_scope_language"],
+    "facultyNoteIds": ["consultants_note_scope_language", "consultants_note_volume1_week1_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority"
@@ -48,12 +49,13 @@
     "shortTitle": "Hair and Scalp Science",
     "sequence": 2,
     "status": "draft",
-    "estimatedStudyMinutes": 100,
-    "moduleOverview": "Builds practical biological literacy so staff can communicate accurately, recognise normal versus concerning findings, and support safer handover.",
+    "estimatedStudyMinutes": 115,
+    "moduleOverview": "Teaching Manual Volume 1, Week 3: hair follicle and cycle foundations, density versus calibre, and pattern vocabulary for plain-language education and neutral documentation. Positions science literacy as supporting trust and handover—not as a substitute for medical interpretation. Ethics and scope themes from Volume 1 Week 2 are taught in the Level 2 Ethics and Scope module.",
     "learningOutcomes": [
-      "Use core hair and scalp terminology accurately",
-      "Describe hair cycle concepts relevant to patient education",
-      "Recognise why biological literacy matters to handover quality"
+      "Describe follicle structure and the hair growth cycle in accessible patient language",
+      "Explain density and calibre differences and why thinning can coexist with visible shedding",
+      "Use educational pattern categories only as handover context, never as independent diagnosis",
+      "Produce doctor-ready notes that separate observation from clinical interpretation"
     ],
     "competencyIds": ["consultants_competency_02_hair_scalp_literacy"],
     "unlockRules": [
@@ -72,7 +74,7 @@
         "mandatoryDomainTags": ["knowledge"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume1_week3_faculty"],
     "complianceNoticeIds": ["notice_consultants_competency_scope"],
     "lessonIds": ["consultants_lesson_02_foundations_hair_scalp_science"],
     "assessmentIds": ["consultants_assessment_02_foundations_hair_scalp_science"],
@@ -91,12 +93,13 @@
     "shortTitle": "Common Presentations",
     "sequence": 3,
     "status": "draft",
-    "estimatedStudyMinutes": 100,
-    "moduleOverview": "Introduces common presentation patterns and the language needed to document and escalate without stepping into diagnostic claims.",
+    "estimatedStudyMinutes": 115,
+    "moduleOverview": "Teaching Manual Volume 1, Week 4: common hair loss presentations, red flags, psychosocial impact, and disciplined uncertainty. Trains descriptive pattern literacy and escalation judgment while keeping all clinical conclusions with the doctor. Cross-links to Ethics and Scope (Volume 1 Week 2) for boundary language under pressure.",
     "learningOutcomes": [
-      "Describe common presentation patterns using professional language",
-      "Separate presentation recognition from diagnosis",
-      "Identify findings that require escalation"
+      "Describe common presentations using neutral, professional language suitable for handover",
+      "Identify red-flag contexts that require escalation rather than reassurance",
+      "Differentiate routine clinician review from higher-urgency pathways per protocol",
+      "Support patients emotionally without offering diagnostic or treatment certainty"
     ],
     "competencyIds": ["consultants_competency_03_presentation_literacy"],
     "unlockRules": [
@@ -115,7 +118,7 @@
         "mandatoryDomainTags": ["red-flags"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume1_week4_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_escalation_duty"
@@ -229,12 +232,13 @@
     "shortTitle": "Ethics and Scope",
     "sequence": 6,
     "status": "draft",
-    "estimatedStudyMinutes": 110,
-    "moduleOverview": "Frames ethics, role boundaries, scope-safe communication, and consent support as core safety disciplines rather than optional professionalism.",
+    "estimatedStudyMinutes": 125,
+    "moduleOverview": "Teaching Manual Volume 1, Week 2 (delivered here in Level 2): legal-ethical scope, professional boundaries, autonomy and non-maleficence in daily practice, consent support versus clinical consent, confidentiality, honest marketing, and refusing unsafe instructions. Foundation modules 1–3 already covered Volume 1 Weeks 1, 3, and 4 in LMS order—this module deepens the ethical spine of the consultant/nurse role.",
     "learningOutcomes": [
-      "Explain scope before confidence as a working principle",
-      "Differentiate consent support from obtaining clinical consent",
-      "Respond appropriately to ethical pressure points"
+      "State scope limits for non-doctor staff and why they protect patients and clinicians",
+      "Apply core ethical principles to language, timing, documentation, and escalation",
+      "Separate consent support from doctor-led informed consent for treatment",
+      "Identify and escalate conflicts between commercial pressure and safe practice"
     ],
     "competencyIds": ["consultants_competency_06_ethics_scope_consent_support"],
     "unlockRules": [],
@@ -246,7 +250,7 @@
         "mandatoryDomainTags": ["ethics-scope"]
       }
     ],
-    "facultyNoteIds": ["consultants_note_scope_language"],
+    "facultyNoteIds": ["consultants_note_scope_language", "consultants_note_volume1_week2_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority",

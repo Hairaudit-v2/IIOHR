@@ -6,13 +6,13 @@
     "slug": "role-scope-foundations",
     "title": "Role and Scope Foundations",
     "domain": "scope-awareness",
-    "description": "Operate within the defined support role and explain why scope boundaries protect patients and clinicians.",
+    "description": "Operate within the consultant/nurse support role (inform, screen, document, escalate) and explain how Volume 1 Week 1-style role clarity protects patients, trust, and doctor handover.",
     "sequence": 1,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_01",
-        "description": "Pass the role and scope assessment",
+        "description": "Pass the role and scope assessment aligned with modern clinic coordination and non-diagnostic boundaries",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -26,13 +26,13 @@
     "slug": "hair-scalp-literacy",
     "title": "Hair and Scalp Literacy",
     "domain": "clinical-literacy",
-    "description": "Use appropriate clinical language when discussing hair, scalp, and normal versus abnormal presentations.",
+    "description": "Use Volume 1 Week 3-level hair and scalp literacy—cycle, density, calibre, pattern vocabulary—for plain-language education and neutral handover without independent diagnosis.",
     "sequence": 2,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_02",
-        "description": "Complete the hair and scalp science assessment",
+        "description": "Complete the hair and scalp science assessment testing literacy, not diagnostic authority",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -46,13 +46,13 @@
     "slug": "presentation-literacy",
     "title": "Common Presentation Literacy",
     "domain": "clinical-literacy",
-    "description": "Recognise common presentation patterns without overstepping into diagnosis.",
+    "description": "Recognise common presentation patterns and red-flag contexts (Volume 1 Week 4) using descriptive, scope-safe language and correct escalation—not diagnostic closure.",
     "sequence": 3,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_03",
-        "description": "Pass presentation recognition items",
+        "description": "Pass presentation recognition items emphasising observation, red flags, and escalation",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -106,13 +106,13 @@
     "slug": "ethics-scope-consent-support",
     "title": "Ethics, Scope, and Consent Support",
     "domain": "ethical-practice",
-    "description": "Handle ethical tension, scope limits, and consent support responsibilities safely.",
+    "description": "Handle ethical tension, statutory scope limits, consent support versus clinical consent, confidentiality, and marketing honesty safely (Volume 1 Week 2 themes).",
     "sequence": 6,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_06",
-        "description": "Pass ethics and scope assessment items",
+        "description": "Pass ethics and scope assessment items on boundaries, consent support, and refusal of unsafe practice",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
