@@ -35,6 +35,8 @@ export default async function ApplyConsultantsPage({
   } = await supabase.auth.getUser();
 
   const latestApp = user ? await getLatestApplicationForUserStream(supabase, user.id, "consultants") : null;
+  const timelineEntries =
+    user && latestApp ? await loadApplicantAdmissionsTimeline(supabase, latestApp.id) : [];
 
   let initialAnswers: Record<string, string> = {};
   if (user) {
@@ -104,7 +106,12 @@ export default async function ApplyConsultantsPage({
           <>
             {latestApp ? (
               <div className="mt-8">
-                <ApplicantApplicationStatusPanel stream="consultants" app={latestApp} applyPath="/apply/consultants" />
+                <ApplicantApplicationStatusPanel
+                  stream="consultants"
+                  app={latestApp}
+                  applyPath="/apply/consultants"
+                  timelineEntries={timelineEntries}
+                />
               </div>
             ) : null}
 

@@ -1,6 +1,7 @@
 import { ApplicantApplicationStatusPanel } from "@/components/academy/admissions/ApplicantApplicationStatusPanel";
 import { ProgressSummaryCard } from "@/components/academy/shared/ProgressSummaryCard";
 import { getLatestApplicationForUserStream } from "@/lib/academy/admissions/application-queries";
+import { loadApplicantAdmissionsTimeline } from "@/lib/academy/admissions/applicant-timeline";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -13,6 +14,8 @@ export default async function ConsultantsDashboardPage() {
     data: { user },
   } = await supabase.auth.getUser();
   const latestApp = user ? await getLatestApplicationForUserStream(supabase, user.id, "consultants") : null;
+  const timelineEntries =
+    user && latestApp ? await loadApplicantAdmissionsTimeline(supabase, latestApp.id) : [];
 
   return (
     <SectionShell>
@@ -28,6 +31,7 @@ export default async function ConsultantsDashboardPage() {
             app={latestApp}
             applyPath="/apply/consultants"
             variant="compact"
+            timelineEntries={timelineEntries}
           />
         </div>
       ) : null}
