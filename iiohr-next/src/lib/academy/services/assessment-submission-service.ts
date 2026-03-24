@@ -93,6 +93,7 @@ export function createAssessmentSubmissionService(
         faculty_review_status: dbFacultyStatus,
         responses: input.responses as Record<string, unknown>,
         grader_user_id: null as string | null,
+        assessment_pass_mark_snapshot: assessment.passMark,
       };
 
       const { data, error } = await supabase

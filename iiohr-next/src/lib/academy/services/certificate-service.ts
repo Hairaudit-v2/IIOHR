@@ -11,6 +11,30 @@ import type { CertificateEligibilitySummary } from "@/lib/academy/certificate-ty
 import { isAssessmentPassed } from "@/lib/academy/services/assessment-service";
 import { isCompetencyAchieved } from "@/lib/academy/services/competency-service";
 
+function formatFailedAssessmentRequirement(
+  assessment: AcademyAssessment,
+  latestAttempt: AssessmentAttempt | undefined
+): string {
+  if (!latestAttempt) {
+    return `Assessment not yet attempted: ${assessment.title}`;
+  }
+  if (assessment.facultyReviewRequired) {
+    if (latestAttempt.facultyReviewStatus === "pending" || latestAttempt.facultyReviewStatus === "in-review") {
+      return `Awaiting faculty review: ${assessment.title}`;
+    }
+    if (latestAttempt.facultyReviewStatus === "revision-required") {
+      return `Faculty requested revision (resubmit required): ${assessment.title}`;
+    }
+    if (latestAttempt.facultyReviewStatus === "rejected") {
+      return `Assessment rejected by faculty: ${assessment.title}`;
+    }
+    if (latestAttempt.facultyReviewStatus === "approved" && !isAssessmentPassed(assessment, latestAttempt)) {
+      return `Score below pass mark after faculty approval: ${assessment.title}`;
+    }
+  }
+  return `Assessment not yet passed: ${assessment.title}`;
+}
+
 export function getWeightedScore(
   assessments: AcademyAssessment[],
   attempts: AssessmentAttempt[]
@@ -63,7 +87,12 @@ export function getCertificateEligibilitySummary(params: {
   });
 
   const unmetRequirements = [
-    ...failedAssessments.map((assessment) => `Assessment not yet passed: ${assessment.title}`),
+    ...failedAssessments.map((assessment) => {
+      const latestAttempt = attempts
+        .filter((attempt) => attempt.assessmentId === assessment.id)
+        .sort((a, b) => b.retryIndex - a.retryIndex)[0];
+      return formatFailedAssessmentRequirement(assessment, latestAttempt);
+    }),
     ...unmetCompetencies.map((competency) => `Competency not yet achieved: ${competency.title}`),
   ];
 

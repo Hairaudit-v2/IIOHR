@@ -87,17 +87,23 @@ export interface FacultyReviewQueueItem {
   enrollment: ProgramEnrollmentRow;
 }
 
+/** Matches RPC `academy_faculty_finalize_attempt` outcome parameter. */
+export type FacultyReviewOutcome = "approved" | "revision_required" | "rejected";
+
 export interface FacultyReviewService {
   listPendingForReviewer(params: {
     reviewerUserId: string;
     streamSlug?: AcademyStreamSlug;
   }): Promise<FacultyReviewQueueItem[]>;
-  recordDecision(input: {
+  /** SECURITY DEFINER RPC `academy_faculty_claim_attempt`: pending → in_review. */
+  claimAttempt(params: { assessmentAttemptId: string; reviewerUserId: string }): Promise<void>;
+  /** SECURITY DEFINER RPC `academy_faculty_finalize_attempt`: row + sync attempt status / passed. */
+  finalizeAttempt(params: {
     assessmentAttemptId: string;
     reviewerUserId: string;
-    status: FacultyReviewRow["status"];
-    rubricSummary?: string | null;
+    outcome: FacultyReviewOutcome;
     notes?: string | null;
+    rubricSummary?: string | null;
   }): Promise<FacultyReviewRow>;
 }
 

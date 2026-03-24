@@ -91,6 +91,7 @@ export const facultyReviewStatuses = [
   "in-review",
   "approved",
   "revision-required",
+  "rejected",
 ] as const;
 export type FacultyReviewStatus = (typeof facultyReviewStatuses)[number];
 

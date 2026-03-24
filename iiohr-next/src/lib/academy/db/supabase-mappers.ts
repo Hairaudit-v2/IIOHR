@@ -9,6 +9,7 @@ export function dbFacultyReviewStatusToUi(db: DbFacultyReviewStatus): FacultyRev
     in_review: "in-review",
     approved: "approved",
     revision_required: "revision-required",
+    rejected: "rejected",
   };
   return map[db];
 }
@@ -20,6 +21,7 @@ export function uiFacultyReviewStatusToDb(ui: FacultyReviewStatus): DbFacultyRev
     "in-review": "in_review",
     approved: "approved",
     "revision-required": "revision_required",
+    rejected: "rejected",
   };
   return map[ui];
 }

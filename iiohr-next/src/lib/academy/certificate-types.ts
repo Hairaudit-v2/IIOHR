@@ -25,7 +25,14 @@ export interface AcademyEligibilityReadModel {
   lessonCompletionPercent: number;
   /** Required module assessments passed / total (module-scoped when moduleId set). */
   requiredAssessmentCompletionPercent: number;
+  /** Any attempt still in pending or in_review (faculty queue). */
   facultyReviewPending: boolean;
+  /** Latest attempt for a faculty-gated assessment is revision_required (learner should resubmit). */
+  hasFacultyRevisionRequested: boolean;
+  /** Latest attempt for a faculty-gated assessment was rejected. */
+  hasFacultyRejectedAttempt: boolean;
+  /** Certificate blocked until faculty-approved (or not required) for all gated assessments. */
+  certificateBlockedByFacultyGate: boolean;
   certificateEligible: boolean;
   summary: CertificateEligibilitySummary;
 }

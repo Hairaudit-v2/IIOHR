@@ -20,7 +20,8 @@ export type DbFacultyReviewStatus =
   | "pending"
   | "in_review"
   | "approved"
-  | "revision_required";
+  | "revision_required"
+  | "rejected";
 
 /** Postgres `public.competency_status` */
 export type DbCompetencyStatus =
@@ -129,6 +130,8 @@ export interface AssessmentAttemptRow {
   responses: Record<string, unknown>;
   grader_user_id: string | null;
   created_at: string;
+  /** Pass mark from content at submit time; required for faculty approval RPC. */
+  assessment_pass_mark_snapshot?: number | null;
 }
 
 export interface CompetencyRecordRow {

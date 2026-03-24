@@ -13,6 +13,7 @@ import {
   getProgramLevels,
   getProgramModules,
 } from "@/lib/academy/content-loader";
+import { computeFacultyGateMetrics } from "@/lib/academy/services/faculty-review-persistence";
 import { getCertificateEligibilitySummary } from "@/lib/academy/services/certificate-service";
 import { isAssessmentPassed } from "@/lib/academy/services/assessment-service";
 import type { AssessmentAttempt } from "@/lib/academy/operational-types";
@@ -84,6 +85,9 @@ export function createCertificateEligibilityService(
           lessonCompletionPercent: 0,
           requiredAssessmentCompletionPercent: 0,
           facultyReviewPending: false,
+          hasFacultyRevisionRequested: false,
+          hasFacultyRejectedAttempt: false,
+          certificateBlockedByFacultyGate: false,
           certificateEligible: false,
           summary: {
             isEligible: false,
@@ -161,6 +165,11 @@ export function createCertificateEligibilityService(
       const facultyReviewPending = attempts.some((a) =>
         ["pending", "in_review"].includes(a.faculty_review_status)
       );
+
+      const facultyGate = computeFacultyGateMetrics({
+        programSlug: params.programSlug,
+        attempts,
+      });
 
       const moduleId = params.moduleId;
       let lessonCompletionPercent = 0;
@@ -245,6 +254,9 @@ export function createCertificateEligibilityService(
         lessonCompletionPercent,
         requiredAssessmentCompletionPercent,
         facultyReviewPending,
+        hasFacultyRevisionRequested: facultyGate.hasFacultyRevisionRequested,
+        hasFacultyRejectedAttempt: facultyGate.hasFacultyRejectedAttempt,
+        certificateBlockedByFacultyGate: facultyGate.certificateBlockedByFacultyGate,
         certificateEligible: summary.isEligible,
         summary,
       };
