@@ -1,0 +1,22 @@
+{
+  "id": "stream_doctors",
+  "slug": "doctors",
+  "title": "Doctor Education",
+  "shortTitle": "Doctors",
+  "status": "draft",
+  "audiences": ["doctor", "surgeon", "physician"],
+  "positioning": "Structured postgraduate education for doctors developing competency in trichology, hair loss medicine, and hair restoration practice.",
+  "guidingPrinciples": [
+    "standards before autonomy",
+    "evidence before opinion",
+    "patient safety before technical ambition"
+  ],
+  "complianceNoticeIds": [
+    "notice_doctors_medical_scope",
+    "notice_doctors_surgical_training"
+  ],
+  "programIds": [
+    "program_pgcert_clinical_trichology_hair_restoration_medicine"
+  ],
+  "brandProfiles": ["iiohr", "hli", "iiiohr"]
+}

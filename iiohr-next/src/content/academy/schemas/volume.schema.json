@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/volume.schema.json",
+  "title": "AcademyVolume",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programSlug",
+    "volumeNumber",
+    "slug",
+    "title",
+    "subtitle",
+    "status",
+    "brandProfiles",
+    "audience",
+    "moduleOrder"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programSlug": { "type": "string" },
+    "volumeNumber": { "type": "integer", "minimum": 1 },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "brandProfiles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["doctors", "surgeons", "physicians"]
+      }
+    },
+    "moduleOrder": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

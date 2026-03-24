@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/downloadable-resource.schema.json",
+  "title": "DownloadableResource",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "parentType",
+    "parentId",
+    "title",
+    "resourceType",
+    "fileName",
+    "fileUrl",
+    "version",
+    "access",
+    "description"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "parentType": {
+      "type": "string",
+      "enum": ["stream", "program", "level", "section", "module", "lesson", "assessment", "case-study", "practical-task", "competency"]
+    },
+    "parentId": { "type": "string" },
+    "title": { "type": "string" },
+    "resourceType": {
+      "type": "string",
+      "enum": [
+        "pdf-summary",
+        "atlas",
+        "worksheet",
+        "reading-list",
+        "manual",
+        "image-atlas",
+        "checklist"
+      ]
+    },
+    "fileName": { "type": "string" },
+    "fileUrl": { "type": "string" },
+    "version": { "type": "string" },
+    "access": {
+      "type": "string",
+      "enum": ["public", "enrolled-only"]
+    },
+    "description": { "type": "string" }
+  }
+}

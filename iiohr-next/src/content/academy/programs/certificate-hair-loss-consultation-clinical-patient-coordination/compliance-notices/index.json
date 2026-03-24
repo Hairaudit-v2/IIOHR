@@ -1,0 +1,42 @@
+[
+  {
+    "id": "notice_consultants_competency_scope",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "noticeType": "scope-of-practice",
+    "title": "Competency in support, education, and care coordination",
+    "body": "This program develops competency in consultation support, patient education, documentation, and care coordination within a doctor-led service model.",
+    "severity": "info",
+    "appliesTo": ["program", "level", "module", "lesson"],
+    "displayMode": "inline"
+  },
+  {
+    "id": "notice_consultants_no_diagnostic_authority",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "noticeType": "diagnostic-boundary",
+    "title": "No independent diagnostic authority is granted",
+    "body": "Completion of this pathway does not grant independent diagnostic authority. Learners are trained to triage, document, educate, and escalate appropriately rather than diagnose.",
+    "severity": "critical",
+    "appliesTo": ["program", "module", "lesson", "assessment"],
+    "displayMode": "banner"
+  },
+  {
+    "id": "notice_consultants_no_surgical_training",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "noticeType": "surgical-training-boundary",
+    "title": "Program does not replace regulated surgical training",
+    "body": "The consultant academy does not replace regulated surgical training, procedural credentialing, or medical licensure. It is designed for safer patient-facing support roles.",
+    "severity": "critical",
+    "appliesTo": ["program", "module", "lesson", "assessment"],
+    "displayMode": "sidebar"
+  },
+  {
+    "id": "notice_consultants_escalation_duty",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "noticeType": "escalation-boundary",
+    "title": "Red flags and escalation are mandatory safety duties",
+    "body": "Where red flags, unusual findings, or risk indicators are present, the correct action is escalation to the responsible doctor or regulated clinician according to clinic protocol.",
+    "severity": "caution",
+    "appliesTo": ["module", "lesson", "assessment", "case-study", "practical-task"],
+    "displayMode": "inline"
+  }
+]

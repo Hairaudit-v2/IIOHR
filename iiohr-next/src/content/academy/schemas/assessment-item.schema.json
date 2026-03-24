@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/assessment-item.schema.json",
+  "title": "AssessmentItem",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "assessmentId",
+    "type",
+    "prompt",
+    "options",
+    "correctAnswer",
+    "modelAnswer",
+    "rationale",
+    "scoringRubric",
+    "evidenceTier",
+    "facultyReviewRequired",
+    "domainTags",
+    "imageAssetUrl"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "assessmentId": { "type": "string" },
+    "type": { "type": "string" },
+    "prompt": { "type": "string" },
+    "options": { "type": "array", "items": { "type": "object" } },
+    "correctAnswer": { "type": "object" },
+    "modelAnswer": { "type": "string" },
+    "rationale": { "type": "string" },
+    "scoringRubric": { "type": "object" },
+    "evidenceTier": { "type": "string", "enum": ["A", "B", "C", "consensus"] },
+    "facultyReviewRequired": { "type": "boolean" },
+    "domainTags": { "type": "array", "items": { "type": "string" } },
+    "imageAssetUrl": { "type": ["string", "null"] }
+  }
+}

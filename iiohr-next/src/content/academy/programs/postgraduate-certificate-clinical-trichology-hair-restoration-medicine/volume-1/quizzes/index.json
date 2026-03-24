@@ -1,0 +1,158 @@
+[
+  {
+    "id": "quiz_vol1_mod1",
+    "slug": "foundations-introduction-knowledge-check",
+    "moduleId": "module_foundations_intro",
+    "parentType": "module",
+    "parentId": "module_foundations_intro",
+    "title": "Module Knowledge Check: Introduction to Clinical Trichology",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol1_mod1_item_01",
+        "type": "mcq",
+        "stem": "[Placeholder question stem for module 1 MCQ]",
+        "options": [
+          { "id": "a", "label": "[Placeholder option A]" },
+          { "id": "b", "label": "[Placeholder option B]" },
+          { "id": "c", "label": "[Placeholder option C]" }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "[Placeholder rationale for module 1 MCQ]",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol1_mod1_item_02",
+        "type": "short-answer",
+        "stem": "[Placeholder short-answer stem for module 1]",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "[Placeholder sample answer for module 1 short-answer]"
+        },
+        "rationale": "[Placeholder rationale for module 1 short-answer]",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol1_mod2",
+    "slug": "follicle-biology-and-scalp-science-knowledge-check",
+    "moduleId": "module_follicle_biology_scalp_science",
+    "parentType": "module",
+    "parentId": "module_follicle_biology_scalp_science",
+    "title": "Module Knowledge Check: Hair Follicle Biology and Scalp Science",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol1_mod2_item_01",
+        "type": "image-interpretation",
+        "stem": "[Placeholder image-interpretation stem for module 2]",
+        "options": [
+          { "id": "a", "label": "[Placeholder option A]" },
+          { "id": "b", "label": "[Placeholder option B]" },
+          { "id": "c", "label": "[Placeholder option C]" }
+        ],
+        "correctAnswer": { "optionIds": ["b"] },
+        "rationale": "[Placeholder rationale for module 2 image item]",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol1_mod2_item_02",
+        "type": "case-reasoning",
+        "stem": "[Placeholder case-reasoning stem for module 2]",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "[Placeholder sample answer for module 2 case reasoning]"
+        },
+        "rationale": "[Placeholder rationale for module 2 case reasoning]",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol1_mod3",
+    "slug": "molecular-and-hormonal-regulation-knowledge-check",
+    "moduleId": "module_molecular_hormonal_regulation",
+    "parentType": "module",
+    "parentId": "module_molecular_hormonal_regulation",
+    "title": "Module Knowledge Check: Molecular and Hormonal Regulation of Hair Growth",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol1_mod3_item_01",
+        "type": "mcq",
+        "stem": "[Placeholder question stem for module 3 MCQ]",
+        "options": [
+          { "id": "a", "label": "[Placeholder option A]" },
+          { "id": "b", "label": "[Placeholder option B]" },
+          { "id": "c", "label": "[Placeholder option C]" }
+        ],
+        "correctAnswer": { "optionIds": ["c"] },
+        "rationale": "[Placeholder rationale for module 3 MCQ]",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol1_mod3_item_02",
+        "type": "short-answer",
+        "stem": "[Placeholder short-answer stem for module 3]",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "[Placeholder sample answer for module 3 short-answer]"
+        },
+        "rationale": "[Placeholder rationale for module 3 short-answer]",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol1_mod4",
+    "slug": "consultation-and-history-taking-knowledge-check",
+    "moduleId": "module_clinical_consultation_history_taking",
+    "parentType": "module",
+    "parentId": "module_clinical_consultation_history_taking",
+    "title": "Module Knowledge Check: Clinical Consultation and Hair Loss History-Taking",
+    "status": "draft",
+    "passMark": 75,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol1_mod4_item_01",
+        "type": "mcq",
+        "stem": "[Placeholder question stem for module 4 MCQ]",
+        "options": [
+          { "id": "a", "label": "[Placeholder option A]" },
+          { "id": "b", "label": "[Placeholder option B]" },
+          { "id": "c", "label": "[Placeholder option C]" }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "[Placeholder rationale for module 4 MCQ]",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol1_mod4_item_02",
+        "type": "case-reasoning",
+        "stem": "[Placeholder case-reasoning stem for module 4]",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "[Placeholder sample answer for module 4 case reasoning]"
+        },
+        "rationale": "[Placeholder rationale for module 4 case reasoning]",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": true
+      }
+    ]
+  }
+]

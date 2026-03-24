@@ -1,0 +1,22 @@
+[
+  {
+    "id": "notice_doctors_medical_scope",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "noticeType": "licensure-boundary",
+    "title": "Medical licensure remains external to this academy program",
+    "body": "Doctor education within the academy assumes appropriately qualified medical professionals and does not replace any external licensing or regulatory requirements.",
+    "severity": "info",
+    "appliesTo": ["program", "level", "module"],
+    "displayMode": "inline"
+  },
+  {
+    "id": "notice_doctors_surgical_training",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "noticeType": "surgical-training-boundary",
+    "title": "Academic education does not replace supervised procedural training",
+    "body": "Completion of academic doctor modules does not in itself confer independent procedural competence without appropriate supervised training, governance, and clinical credentialing.",
+    "severity": "caution",
+    "appliesTo": ["program", "module", "assessment"],
+    "displayMode": "sidebar"
+  }
+]

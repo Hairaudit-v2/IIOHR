@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/program-module.schema.json",
+  "title": "AcademyProgramModule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "moduleNumber",
+    "title",
+    "slug",
+    "volumeNumber",
+    "sectionId",
+    "sectionTitle",
+    "overview",
+    "learningOutcomes",
+    "competencies",
+    "estimatedStudyMinutes",
+    "unlockOrder",
+    "assessmentType"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "moduleNumber": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string" },
+    "slug": { "type": "string" },
+    "volumeNumber": { "type": "integer", "minimum": 1 },
+    "sectionId": { "type": "string" },
+    "sectionTitle": { "type": "string" },
+    "overview": { "type": "string" },
+    "learningOutcomes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "competencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "estimatedStudyMinutes": { "type": "integer", "minimum": 1 },
+    "unlockOrder": { "type": "integer", "minimum": 1 },
+    "assessmentType": {
+      "type": "string",
+      "enum": [
+        "mixed-knowledge-check",
+        "image-interpretation-intensive",
+        "case-reasoning-intensive",
+        "research-appraisal",
+        "capstone-case-review",
+        "final-certification-board"
+      ]
+    }
+  }
+}

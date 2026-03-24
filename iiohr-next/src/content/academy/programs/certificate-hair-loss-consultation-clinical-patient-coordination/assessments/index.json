@@ -1,0 +1,422 @@
+[
+  {
+    "id": "consultants_assessment_01_role_modern_hair_restoration",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_01_role_modern_hair_restoration",
+    "slug": "role-modern-hair-restoration-assessment",
+    "title": "Role and Scope Assessment",
+    "assessmentType": "weekly-quiz",
+    "status": "draft",
+    "instructions": "Complete the introductory scope and role knowledge check.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 5,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["ethics-scope"],
+    "competencyIds": ["consultants_competency_01_role_scope_foundations"],
+    "itemIds": ["consultants_item_01"],
+    "submissionRules": {
+      "allowDraftSave": false,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["ethics-scope"]
+    }
+  },
+  {
+    "id": "consultants_assessment_02_foundations_hair_scalp_science",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_02_foundations_hair_scalp_science",
+    "slug": "hair-scalp-science-assessment",
+    "title": "Hair and Scalp Science Assessment",
+    "assessmentType": "weekly-quiz",
+    "status": "draft",
+    "instructions": "Complete the knowledge check on core hair and scalp literacy.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 5,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["knowledge"],
+    "competencyIds": ["consultants_competency_02_hair_scalp_literacy"],
+    "itemIds": ["consultants_item_02"],
+    "submissionRules": {
+      "allowDraftSave": false,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["knowledge"]
+    }
+  },
+  {
+    "id": "consultants_assessment_03_common_hair_loss_presentations",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_03_common_hair_loss_presentations",
+    "slug": "common-presentations-assessment",
+    "title": "Common Presentations Assessment",
+    "assessmentType": "image-interpretation",
+    "status": "draft",
+    "instructions": "Interpret presentation scenarios using scope-safe language and escalation logic.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 5,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["red-flags"],
+    "competencyIds": ["consultants_competency_03_presentation_literacy"],
+    "itemIds": ["consultants_item_03"],
+    "submissionRules": {
+      "allowDraftSave": false,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["red-flags"]
+    }
+  },
+  {
+    "id": "consultants_assessment_04_consultation_structure_information_gathering",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_04_consultation_structure_information_gathering",
+    "slug": "consultation-structure-assessment",
+    "title": "Consultation Structure Assessment",
+    "assessmentType": "documentation-exercise",
+    "status": "draft",
+    "instructions": "Complete the information-gathering and consultation structure exercise.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 6,
+    "facultyReviewRequired": true,
+    "mandatoryDomainTags": ["documentation", "communication"],
+    "competencyIds": ["consultants_competency_04_structured_information_gathering"],
+    "itemIds": ["consultants_item_04"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online", "text"],
+      "facultyReviewRequired": true
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": true,
+      "mandatoryDomainTags": ["documentation", "communication"]
+    }
+  },
+  {
+    "id": "consultants_assessment_05_candidate_screening_suitability_support",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_05_candidate_screening_suitability_support",
+    "slug": "candidate-screening-assessment",
+    "title": "Candidate Screening Assessment",
+    "assessmentType": "case-triage-task",
+    "status": "draft",
+    "instructions": "Review the screening case and identify safe next steps and escalation points.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 6,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["red-flags", "escalation"],
+    "competencyIds": ["consultants_competency_05_candidate_screening_support"],
+    "itemIds": ["consultants_item_05"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["red-flags", "escalation"]
+    }
+  },
+  {
+    "id": "consultants_assessment_06_ethics_consent_scope_of_practice",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_06_ethics_consent_scope_of_practice",
+    "slug": "ethics-scope-assessment",
+    "title": "Ethics, Consent Support, and Scope Assessment",
+    "assessmentType": "ethical-judgement-task",
+    "status": "draft",
+    "instructions": "Respond to ethics and scope scenarios. Mandatory pass applies.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 8,
+    "facultyReviewRequired": true,
+    "mandatoryDomainTags": ["ethics-scope"],
+    "competencyIds": ["consultants_competency_06_ethics_scope_consent_support"],
+    "itemIds": ["consultants_item_06"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online", "text"],
+      "facultyReviewRequired": true
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": true,
+      "mandatoryDomainTags": ["ethics-scope"]
+    }
+  },
+  {
+    "id": "consultants_assessment_07_communication_excellence_trust_based_consultation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_07_communication_excellence_trust_based_consultation",
+    "slug": "communication-excellence-assessment",
+    "title": "Communication Excellence Assessment",
+    "assessmentType": "communication-scenario",
+    "status": "draft",
+    "instructions": "Complete the communication scenario using trust-based and scope-safe language.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 8,
+    "facultyReviewRequired": true,
+    "mandatoryDomainTags": ["communication", "ethics-scope"],
+    "competencyIds": ["consultants_competency_07_patient_communication"],
+    "itemIds": ["consultants_item_07"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online", "text"],
+      "facultyReviewRequired": true
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": true,
+      "mandatoryDomainTags": ["communication", "ethics-scope"]
+    }
+  },
+  {
+    "id": "consultants_assessment_08_non_surgical_treatment_education",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_08_non_surgical_treatment_education",
+    "slug": "non-surgical-treatment-education-assessment",
+    "title": "Non-Surgical Treatment Education Assessment",
+    "assessmentType": "short-answer",
+    "status": "draft",
+    "instructions": "Answer treatment education prompts using safe and realistic language.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 5,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["communication"],
+    "competencyIds": ["consultants_competency_08_non_surgical_education"],
+    "itemIds": ["consultants_item_08"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["communication"]
+    }
+  },
+  {
+    "id": "consultants_assessment_09_surgical_education_for_non_doctors",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_09_surgical_education_for_non_doctors",
+    "slug": "surgical-education-assessment",
+    "title": "Surgical Education for Non-Doctors Assessment",
+    "assessmentType": "short-answer",
+    "status": "draft",
+    "instructions": "Respond to pathway education prompts while preserving clinician authority boundaries.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 5,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["ethics-scope", "communication"],
+    "competencyIds": ["consultants_competency_09_surgical_pathway_education"],
+    "itemIds": ["consultants_item_09"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["ethics-scope", "communication"]
+    }
+  },
+  {
+    "id": "consultants_assessment_10_clinical_photography_documentation_handover",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_10_clinical_photography_documentation_handover",
+    "slug": "documentation-handover-assessment",
+    "title": "Documentation and Handover Assessment",
+    "assessmentType": "consultation-note-task",
+    "status": "draft",
+    "instructions": "Produce a documentation and handover response suitable for doctor review.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 8,
+    "facultyReviewRequired": true,
+    "mandatoryDomainTags": ["documentation"],
+    "competencyIds": ["consultants_competency_10_documentation_handover"],
+    "itemIds": ["consultants_item_10"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online", "text"],
+      "facultyReviewRequired": true
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": true,
+      "mandatoryDomainTags": ["documentation"]
+    }
+  },
+  {
+    "id": "consultants_assessment_11_pre_operative_coordination_preparation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_11_pre_operative_coordination_preparation",
+    "slug": "pre-operative-coordination-assessment",
+    "title": "Pre-Operative Coordination Assessment",
+    "assessmentType": "documentation-exercise",
+    "status": "draft",
+    "instructions": "Review a preparation workflow and identify the correct coordination actions.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 5,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["care-coordination"],
+    "competencyIds": ["consultants_competency_11_preoperative_coordination"],
+    "itemIds": ["consultants_item_11"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["care-coordination"]
+    }
+  },
+  {
+    "id": "consultants_assessment_12_post_operative_support_follow_up_escalation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_12_post_operative_support_follow_up_escalation",
+    "slug": "post-operative-escalation-assessment",
+    "title": "Post-Operative Support and Escalation Assessment",
+    "assessmentType": "case-triage-task",
+    "status": "draft",
+    "instructions": "Respond to follow-up scenarios and identify when escalation is mandatory.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 7,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["red-flags", "escalation"],
+    "competencyIds": ["consultants_competency_12_follow_up_escalation"],
+    "itemIds": ["consultants_item_12"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["red-flags", "escalation"]
+    }
+  },
+  {
+    "id": "consultants_assessment_13_difficult_consultations_high_risk_scenarios",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_13_difficult_consultations_high_risk_scenarios",
+    "slug": "high-risk-scenarios-assessment",
+    "title": "High-Risk Scenarios Assessment",
+    "assessmentType": "communication-scenario",
+    "status": "draft",
+    "instructions": "Respond to a difficult consultation scenario using ethical and escalation-safe communication.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 8,
+    "facultyReviewRequired": true,
+    "mandatoryDomainTags": ["ethics-scope", "communication", "escalation"],
+    "competencyIds": ["consultants_competency_13_high_risk_scenario_management"],
+    "itemIds": ["consultants_item_13"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online", "text"],
+      "facultyReviewRequired": true
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": true,
+      "mandatoryDomainTags": ["ethics-scope", "communication", "escalation"]
+    }
+  },
+  {
+    "id": "consultants_assessment_14_quality_assurance_audit_clinic_standards",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_14_quality_assurance_audit_clinic_standards",
+    "slug": "quality-audit-assessment",
+    "title": "Quality Assurance and Audit Assessment",
+    "assessmentType": "short-answer",
+    "status": "draft",
+    "instructions": "Respond to operational quality and audit prompts.",
+    "passMark": 80,
+    "retryLimit": 2,
+    "weighting": 5,
+    "facultyReviewRequired": false,
+    "mandatoryDomainTags": ["documentation", "care-coordination"],
+    "competencyIds": ["consultants_competency_14_quality_assurance_audit"],
+    "itemIds": ["consultants_item_14"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online"],
+      "facultyReviewRequired": false
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": false,
+      "mandatoryDomainTags": ["documentation", "care-coordination"]
+    }
+  },
+  {
+    "id": "consultants_assessment_15_final_competency_assessment",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_15_final_competency_assessment",
+    "slug": "final-competency-capstone-assessment",
+    "title": "Final Competency Capstone Assessment",
+    "assessmentType": "capstone",
+    "status": "draft",
+    "instructions": "Complete the full consultation pathway capstone. Minimum 80 percent overall pass and mandatory domain passes apply.",
+    "passMark": 80,
+    "retryLimit": 1,
+    "weighting": 14,
+    "facultyReviewRequired": true,
+    "mandatoryDomainTags": ["ethics-scope", "red-flags", "escalation", "documentation", "communication"],
+    "competencyIds": ["consultants_competency_15_capstone_consultation_pathway"],
+    "itemIds": ["consultants_item_15"],
+    "submissionRules": {
+      "allowDraftSave": true,
+      "acceptedFormats": ["online", "text"],
+      "facultyReviewRequired": true
+    },
+    "completionRules": {
+      "passMarkRequired": true,
+      "facultyApprovalRequired": true,
+      "mandatoryDomainTags": ["ethics-scope", "red-flags", "escalation", "documentation", "communication"]
+    }
+  }
+]

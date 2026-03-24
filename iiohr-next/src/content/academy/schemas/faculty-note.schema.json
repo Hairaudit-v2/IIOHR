@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/faculty-note.schema.json",
+  "title": "FacultyNote",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "parentType", "parentId", "title", "note", "visibility", "reviewPurpose"],
+  "properties": {
+    "id": { "type": "string" },
+    "parentType": { "type": "string" },
+    "parentId": { "type": "string" },
+    "title": { "type": "string" },
+    "note": { "type": "string" },
+    "visibility": { "type": "string", "enum": ["faculty-only", "learner-visible"] },
+    "reviewPurpose": { "type": "string" }
+  }
+}

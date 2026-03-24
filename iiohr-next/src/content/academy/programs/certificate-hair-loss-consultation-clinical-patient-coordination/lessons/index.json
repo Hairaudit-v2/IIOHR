@@ -1,0 +1,1207 @@
+[
+  {
+    "id": "consultants_lesson_01_role_modern_hair_restoration",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_01_role_modern_hair_restoration",
+    "slug": "role-and-scope-in-modern-hair-restoration-clinics",
+    "title": "Role and Scope in Modern Hair Restoration Clinics",
+    "sequence": 1,
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "overview": "Introduces the consultant and nurse role as a structured support function within a doctor-led clinical pathway.",
+    "learningObjectives": [
+      "Define the consultant and nurse support role",
+      "Explain scope-safe responsibilities",
+      "Describe the pre-doctor patient journey"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "This lesson establishes the consultant academy approach: patient-facing staff should improve structure, trust, safety, and documentation without overstepping into diagnosis or medical decision-making."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_01",
+        "title": "Scope-safe opening language",
+        "example": "My role is to help structure your consultation, explain the process clearly, and ensure the doctor receives accurate information.",
+        "rationale": "Frames support clearly without implying clinical authority."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_01",
+        "title": "No diagnosis",
+        "note": "Consultants and nurses in this pathway do not diagnose hair loss conditions independently."
+      }
+    ],
+    "keyTakeaways": [
+      "Support roles improve safety when they are clearly bounded.",
+      "Education should reduce confusion, not replace doctor judgement.",
+      "Standardisation matters more than personal sales style."
+    ],
+    "redFlags": ["Claims of diagnosis by non-doctors", "Pressure-led consultation behaviour"],
+    "escalationTriggers": [
+      {
+        "id": "et_01",
+        "title": "Scope breach risk",
+        "trigger": "Patient requests diagnostic certainty or treatment decision from non-doctor staff.",
+        "action": "Escalate to the responsible doctor or regulated clinician."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Role clarity is primarily standards-led and governance-based.",
+      "notes": []
+    },
+    "facultyNoteIds": ["consultants_note_scope_language"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority"
+    ],
+    "referenceIds": ["consultants_reference_01"],
+    "resourceIds": ["consultants_resource_01"],
+    "assessmentIds": ["consultants_assessment_01_role_modern_hair_restoration"],
+    "caseStudyIds": ["consultants_case_01_role_modern_hair_restoration"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_01_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_01_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_02_foundations_hair_scalp_science",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_02_foundations_hair_scalp_science",
+    "slug": "foundational-hair-and-scalp-literacy",
+    "title": "Foundational Hair and Scalp Literacy",
+    "sequence": 2,
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "overview": "Provides core terminology and biological concepts needed for credible patient education and reliable documentation.",
+    "learningObjectives": [
+      "Use basic hair and scalp terminology correctly",
+      "Explain hair cycle concepts in accessible language",
+      "Recognise the limits of non-doctor interpretation"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Learners are introduced to scalp anatomy, hair cycle language, and clinic-relevant biological concepts so they can support communication and handover with greater accuracy."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_02",
+        "title": "Accessible biological explanation",
+        "example": "Hair growth follows a cycle, so part of the consultation is understanding how your current pattern fits into that broader picture.",
+        "rationale": "Explains concepts without implying diagnosis."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_02",
+        "title": "Interpretation boundary",
+        "note": "Biological literacy supports communication, but diagnostic interpretation remains with the doctor."
+      }
+    ],
+    "keyTakeaways": [
+      "Clinical language improves trust.",
+      "Biological literacy supports better patient education.",
+      "Knowledge should strengthen, not blur, role boundaries."
+    ],
+    "redFlags": ["Using biology to overstate certainty", "Mislabeling concerning scalp findings as routine"],
+    "escalationTriggers": [
+      {
+        "id": "et_02",
+        "title": "Unexpected finding",
+        "trigger": "Observed scalp changes fall outside routine appearance or clinic protocol expectations.",
+        "action": "Escalate for clinician review and avoid reassurance beyond scope."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Foundational biological literacy is supported by standard clinical education sources.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "referenceIds": ["consultants_reference_02"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_02_foundations_hair_scalp_science"],
+    "caseStudyIds": ["consultants_case_02_foundations_hair_scalp_science"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_02_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_03_common_hair_loss_presentations",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_03_common_hair_loss_presentations",
+    "slug": "common-presentations-without-diagnostic-overreach",
+    "title": "Common Presentations Without Diagnostic Overreach",
+    "sequence": 3,
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "overview": "Teaches presentation language, red flag awareness, and the distinction between noticing patterns and diagnosing disease.",
+    "learningObjectives": [
+      "Describe common clinic presentations clearly",
+      "Separate recognition from diagnosis",
+      "Escalate unusual or high-risk presentations"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "This lesson focuses on presentation literacy: what staff may reasonably observe, how to document it, and when caution or escalation is required."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_03",
+        "title": "Presentation-focused wording",
+        "example": "I can document the pattern we are seeing and make sure the doctor reviews it in context.",
+        "rationale": "Keeps communication within scope."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_03",
+        "title": "Pattern recognition is not diagnosis",
+        "note": "Even common patterns should not be presented as confirmed diagnoses by non-doctor staff."
+      }
+    ],
+    "keyTakeaways": [
+      "Observation should be accurate and neutral.",
+      "Escalation matters when presentations appear atypical.",
+      "Patients should not be given false certainty."
+    ],
+    "redFlags": ["Patchy or inflamed appearance", "Rapid change with concerning history"],
+    "escalationTriggers": [
+      {
+        "id": "et_03",
+        "title": "Atypical pattern",
+        "trigger": "Presentation does not fit expected routine pathways or appears clinically concerning.",
+        "action": "Record accurately and escalate promptly."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Presentation literacy is supported by clinical pattern-recognition teaching and escalation protocols.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "referenceIds": ["consultants_reference_03"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_03_common_hair_loss_presentations"],
+    "caseStudyIds": ["consultants_case_03_common_hair_loss_presentations"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_03_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_04_consultation_structure_information_gathering",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_04_consultation_structure_information_gathering",
+    "slug": "standardised-consultation-structure-and-history-capture",
+    "title": "Standardised Consultation Structure and History Capture",
+    "sequence": 4,
+    "status": "draft",
+    "estimatedStudyMinutes": 60,
+    "overview": "Shows how to structure information gathering so that patient conversations become consistent, useful, and easy to hand over.",
+    "learningObjectives": [
+      "Use a repeatable consultation sequence",
+      "Capture clinically relevant information without leading the patient",
+      "Prepare information for doctor review"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The lesson presents a standard consultation sequence covering presenting concern, history, expectations, red flags, and documentation for doctor review."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_04",
+        "title": "Neutral information-gathering prompt",
+        "example": "I am going to ask a series of standard questions so the doctor receives a complete and consistent picture.",
+        "rationale": "Explains structure while avoiding a sales tone."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_04",
+        "title": "No leading conclusions",
+        "note": "Questions should gather information, not steer patients toward a treatment decision."
+      }
+    ],
+    "keyTakeaways": [
+      "Structure supports safety and efficiency.",
+      "Consistency improves handover quality.",
+      "Neutral questioning protects trust."
+    ],
+    "redFlags": ["Missing key history details", "Suggestive questioning that implies suitability"],
+    "escalationTriggers": [
+      {
+        "id": "et_04",
+        "title": "Significant unresolved concern",
+        "trigger": "Patient reports symptoms or history elements outside routine consultation support.",
+        "action": "Stop speculation, document clearly, and escalate."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Structured history-taking is a standards-led support competency.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "referenceIds": ["consultants_reference_04"],
+    "resourceIds": ["consultants_resource_02"],
+    "assessmentIds": ["consultants_assessment_04_consultation_structure_information_gathering"],
+    "caseStudyIds": ["consultants_case_04_consultation_structure_information_gathering"],
+    "practicalTaskIds": ["consultants_task_04_consultation_structure_information_gathering"],
+    "completionRules": [
+      {
+        "id": "complete_04_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_04_task",
+        "type": "submit-linked-task",
+        "description": "Submit the linked practical task.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_05_candidate_screening_suitability_support",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "moduleId": "consultants_module_05_candidate_screening_suitability_support",
+    "slug": "candidate-screening-support-and-suitability-boundaries",
+    "title": "Candidate Screening Support and Suitability Boundaries",
+    "sequence": 5,
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "overview": "Focuses on pre-doctor screening support, readiness checks, and recognising when suitability concerns need escalation.",
+    "learningObjectives": [
+      "Gather suitability-relevant information safely",
+      "Recognise screening concerns requiring escalation",
+      "Avoid suitability statements beyond scope"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Screening support should improve doctor efficiency and patient safety by surfacing relevant information early while avoiding overconfident statements about candidacy."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_05",
+        "title": "Suitability boundary language",
+        "example": "I can help document your history and preparation, but a suitability decision must come from the treating doctor.",
+        "rationale": "Reinforces role clarity."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_05",
+        "title": "Suitability is doctor-led",
+        "note": "Non-doctor staff may support screening but should not present candidacy as confirmed."
+      }
+    ],
+    "keyTakeaways": [
+      "Triage support is not diagnosis.",
+      "Readiness and suitability are not the same thing.",
+      "Escalation should be explicit and documented."
+    ],
+    "redFlags": ["Unclear medical history", "Signs of unrealistic expectations or risk"],
+    "escalationTriggers": [
+      {
+        "id": "et_05",
+        "title": "Suitability concern",
+        "trigger": "History or behaviour raises concern about safety, stability, or expectation mismatch.",
+        "action": "Escalate to the doctor and avoid reassuring claims."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Screening support relies on clear protocols and escalation pathways.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "referenceIds": ["consultants_reference_05"],
+    "resourceIds": ["consultants_resource_03"],
+    "assessmentIds": ["consultants_assessment_05_candidate_screening_suitability_support"],
+    "caseStudyIds": ["consultants_case_05_candidate_screening_suitability_support"],
+    "practicalTaskIds": ["consultants_task_05_candidate_screening_suitability_support"],
+    "completionRules": [
+      {
+        "id": "complete_05_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_06_ethics_consent_scope_of_practice",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_06_ethics_consent_scope_of_practice",
+    "slug": "ethics-consent-support-and-scope-of-practice-fundamentals",
+    "title": "Ethics, Consent Support, and Scope of Practice Fundamentals",
+    "sequence": 6,
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "overview": "Frames ethics and scope as core patient safety disciplines and clarifies the boundary between support and regulated consent.",
+    "learningObjectives": [
+      "Explain ethics and scope principles clearly",
+      "Differentiate consent support from clinical consent",
+      "Handle pressure-led scenarios safely"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "This lesson reinforces that consultant confidence must always be secondary to role clarity, patient safety, and appropriate clinical escalation."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_06",
+        "title": "Consent support boundary",
+        "example": "I can help explain the pathway and document your questions, but the doctor must address treatment decisions and consent.",
+        "rationale": "Separates educational support from clinical responsibility."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_06",
+        "title": "Consent is regulated",
+        "note": "Support staff may reinforce understanding but do not replace the doctor’s consent process."
+      }
+    ],
+    "keyTakeaways": [
+      "Scope before confidence is a safety rule.",
+      "Ethics applies to language, behaviour, and documentation.",
+      "Mandatory pass domains protect the integrity of the pathway."
+    ],
+    "redFlags": ["Overpromising outcomes", "Implying clinical authority during consent discussions"],
+    "escalationTriggers": [
+      {
+        "id": "et_06",
+        "title": "Ethical uncertainty",
+        "trigger": "A patient asks for reassurance or permission beyond the learner’s scope.",
+        "action": "Escalate to the doctor and document the concern."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Governance, ethics, and scope boundaries are standards-led requirements.",
+      "notes": []
+    },
+    "facultyNoteIds": ["consultants_note_scope_language"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_no_surgical_training"
+    ],
+    "referenceIds": ["consultants_reference_06"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_06_ethics_consent_scope_of_practice"],
+    "caseStudyIds": ["consultants_case_06_ethics_consent_scope_of_practice"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_06_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_07_communication_excellence_trust_based_consultation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_07_communication_excellence_trust_based_consultation",
+    "slug": "trust-based-communication-in-consultation-support",
+    "title": "Trust-Based Communication in Consultation Support",
+    "sequence": 7,
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "overview": "Develops professional communication habits that favour trust, realism, and patient understanding over conversion pressure.",
+    "learningObjectives": [
+      "Use clear, ethical consultation language",
+      "Respond to emotion without losing structure",
+      "Communicate with realism rather than persuasion"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Communication quality is treated here as a standards discipline. The goal is not personality-driven persuasion but clinically credible, trust-preserving interaction."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_07",
+        "title": "Expectation-setting language",
+        "example": "It is important that the doctor reviews your case fully before any recommendation is made, so we keep the process safe and accurate.",
+        "rationale": "Reinforces trust and clinical governance."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_07",
+        "title": "No conversion pressure",
+        "note": "Communication should educate and support rather than push a treatment outcome."
+      }
+    ],
+    "keyTakeaways": [
+      "Trust is stronger than conversion pressure.",
+      "Good communication still respects boundaries.",
+      "Patients notice consistency and realism."
+    ],
+    "redFlags": ["Urgency tactics", "Dismissive handling of hesitation"],
+    "escalationTriggers": [
+      {
+        "id": "et_07",
+        "title": "Distress or expectation mismatch",
+        "trigger": "The patient shows distress, unrealistic expectations, or misunderstanding that requires clinician input.",
+        "action": "Pause escalation pressure and involve the appropriate doctor or senior clinician."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Communication standards are closely tied to clinic safety and trust policy.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "referenceIds": ["consultants_reference_07"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_07_communication_excellence_trust_based_consultation"],
+    "caseStudyIds": ["consultants_case_07_communication_excellence_trust_based_consultation"],
+    "practicalTaskIds": ["consultants_task_07_communication_excellence_trust_based_consultation"],
+    "completionRules": [
+      {
+        "id": "complete_07_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_08_non_surgical_treatment_education",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_08_non_surgical_treatment_education",
+    "slug": "non-surgical-treatment-education-within-scope",
+    "title": "Non-Surgical Treatment Education Within Scope",
+    "sequence": 8,
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "overview": "Shows how to educate patients on non-surgical pathway categories without slipping into prescribing or misleading recommendation language.",
+    "learningObjectives": [
+      "Describe non-surgical pathway categories accurately",
+      "Set expectation boundaries appropriately",
+      "Know when patient questions require clinician review"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Education is framed as explanation rather than prescribing. The lesson emphasises safe wording, realistic expectation management, and escalation when detailed clinical questions arise."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_08",
+        "title": "Treatment education boundary",
+        "example": "I can explain the types of options patients may hear about, but any recommendation needs to come from the clinician managing your case.",
+        "rationale": "Maintains a non-prescribing boundary."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_08",
+        "title": "Education is not prescription",
+        "note": "Learners should not advise or prescribe treatment outside approved clinic protocol and scope."
+      }
+    ],
+    "keyTakeaways": [
+      "Education must remain accurate and bounded.",
+      "Expectation setting is safer than overpromising.",
+      "Clinical recommendation belongs with the treating clinician."
+    ],
+    "redFlags": ["Presenting treatment as guaranteed", "Answering prescribing questions beyond scope"],
+    "escalationTriggers": [
+      {
+        "id": "et_08",
+        "title": "Specific treatment decision request",
+        "trigger": "Patient requests recommendation, dosing, or personalised treatment certainty.",
+        "action": "Escalate to the doctor or regulated prescriber."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Educational support is driven by protocol, communication standards, and scope safety.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_no_surgical_training"
+    ],
+    "referenceIds": ["consultants_reference_08"],
+    "resourceIds": ["consultants_resource_04"],
+    "assessmentIds": ["consultants_assessment_08_non_surgical_treatment_education"],
+    "caseStudyIds": ["consultants_case_08_non_surgical_treatment_education"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_08_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_09_surgical_education_for_non_doctors",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_09_surgical_education_for_non_doctors",
+    "slug": "surgical-pathway-education-for-non-doctor-teams",
+    "title": "Surgical Pathway Education for Non-Doctor Teams",
+    "sequence": 9,
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "overview": "Introduces the surgical pathway from a patient education and coordination perspective without granting any procedural or diagnostic authority.",
+    "learningObjectives": [
+      "Explain the broad surgical journey to patients",
+      "Set governance and clinician review expectations",
+      "Recognise when detailed clinical questions require escalation"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "This lesson gives learners a pathway-level view of surgery so they can communicate process, preparation, and follow-up expectations safely without drifting into surgical advising."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_09",
+        "title": "Pathway-level surgical wording",
+        "example": "I can explain how the pathway is typically structured, but procedure planning and clinical suitability must come from the doctor.",
+        "rationale": "Maintains separation between education and clinical authority."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_09",
+        "title": "No procedural authority",
+        "note": "Learners should not present themselves as able to assess or plan surgery independently."
+      }
+    ],
+    "keyTakeaways": [
+      "Process education can be helpful without overreach.",
+      "Patients need consistent pathway information.",
+      "Clinical planning belongs with the doctor."
+    ],
+    "redFlags": ["Stating likely graft numbers", "Discussing procedural suitability as confirmed"],
+    "escalationTriggers": [
+      {
+        "id": "et_09",
+        "title": "Planning question",
+        "trigger": "Patient asks for personalised planning detail or surgical decision-making.",
+        "action": "Escalate to the treating doctor."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Surgical pathway education is governed by role boundaries and patient communication standards.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_no_surgical_training"
+    ],
+    "referenceIds": ["consultants_reference_09"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_09_surgical_education_for_non_doctors"],
+    "caseStudyIds": ["consultants_case_09_surgical_education_for_non_doctors"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_09_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_10_clinical_photography_documentation_handover",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "moduleId": "consultants_module_10_clinical_photography_documentation_handover",
+    "slug": "clinical-photography-documentation-and-handover-standards",
+    "title": "Clinical Photography, Documentation, and Handover Standards",
+    "sequence": 10,
+    "status": "draft",
+    "estimatedStudyMinutes": 60,
+    "overview": "Builds disciplined documentation habits that improve handover quality and reduce ambiguity in clinic workflows.",
+    "learningObjectives": [
+      "Explain why documentation quality matters clinically",
+      "Prepare structured handover summaries",
+      "Use standardised photography and note-taking expectations"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Structured images and notes make the doctor’s review more efficient and create a safer, more auditable patient pathway. The lesson centres on neutrality, completeness, and consistency."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_10",
+        "title": "Documentation framing language",
+        "example": "We use standard photography and notes so the clinical team can review your case accurately and consistently.",
+        "rationale": "Explains process quality without sounding commercial."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_10",
+        "title": "Documentation should stay neutral",
+        "note": "Notes and images should not contain unsupported interpretation or persuasive language."
+      }
+    ],
+    "keyTakeaways": [
+      "Neutral documentation protects patients and clinicians.",
+      "Good handover improves doctor efficiency.",
+      "Templates help standardise quality."
+    ],
+    "redFlags": ["Incomplete handover notes", "Image capture that obscures review quality"],
+    "escalationTriggers": [
+      {
+        "id": "et_10",
+        "title": "Documentation concern",
+        "trigger": "Documentation is incomplete or a finding appears to require urgent review.",
+        "action": "Escalate before the pathway progresses."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Documentation standards are protocol-led and operationally safety critical.",
+      "notes": []
+    },
+    "facultyNoteIds": ["consultants_note_documentation_standard"],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "referenceIds": ["consultants_reference_10"],
+    "resourceIds": ["consultants_resource_05"],
+    "assessmentIds": ["consultants_assessment_10_clinical_photography_documentation_handover"],
+    "caseStudyIds": ["consultants_case_10_clinical_photography_documentation_handover"],
+    "practicalTaskIds": ["consultants_task_10_clinical_photography_documentation_handover"],
+    "completionRules": [
+      {
+        "id": "complete_10_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_10_task",
+        "type": "submit-linked-task",
+        "description": "Submit the documentation exercise.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_11_pre_operative_coordination_preparation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_11_pre_operative_coordination_preparation",
+    "slug": "pre-operative-coordination-and-preparation-workflows",
+    "title": "Pre-Operative Coordination and Preparation Workflows",
+    "sequence": 11,
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "overview": "Covers readiness checks, pre-op communication, and workflow discipline for coordinated care.",
+    "learningObjectives": [
+      "Use pre-op coordination templates consistently",
+      "Recognise missing readiness information",
+      "Communicate preparation requirements clearly"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The lesson focuses on checklist discipline, patient preparation communication, and escalation when readiness information is incomplete or unclear."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_11",
+        "title": "Preparation wording",
+        "example": "I am going to walk you through the standard preparation steps so the clinical team has the information they need before your review.",
+        "rationale": "Reinforces structured preparation."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_11",
+        "title": "Preparation is not clearance",
+        "note": "Preparation support should not be described as clinical clearance or final approval."
+      }
+    ],
+    "keyTakeaways": [
+      "Coordination quality affects safety.",
+      "Checklist discipline reduces omissions.",
+      "Escalation is preferable to assumption."
+    ],
+    "redFlags": ["Missing critical preparation information", "Patient misunderstanding of next steps"],
+    "escalationTriggers": [
+      {
+        "id": "et_11",
+        "title": "Preparation gap",
+        "trigger": "Important information, forms, or readiness details are incomplete.",
+        "action": "Escalate according to clinic protocol before further progression."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Coordination quality is protocol- and standards-driven.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "referenceIds": ["consultants_reference_11"],
+    "resourceIds": ["consultants_resource_06"],
+    "assessmentIds": ["consultants_assessment_11_pre_operative_coordination_preparation"],
+    "caseStudyIds": ["consultants_case_11_pre_operative_coordination_preparation"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_11_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_12_post_operative_support_follow_up_escalation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_12_post_operative_support_follow_up_escalation",
+    "slug": "post-operative-support-follow-up-and-red-flag-escalation",
+    "title": "Post-Operative Support, Follow-Up, and Red Flag Escalation",
+    "sequence": 12,
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "overview": "Focuses on reassuring patients appropriately while recognising when follow-up concerns require urgent escalation.",
+    "learningObjectives": [
+      "Support routine follow-up professionally",
+      "Recognise post-op red flags",
+      "Escalate concerns without delay"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Post-operative support can build trust and improve continuity, but only when staff are explicit about what is routine and what needs clinician review."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_12",
+        "title": "Bounded reassurance",
+        "example": "I can help document what you are noticing and make sure the clinical team reviews it promptly.",
+        "rationale": "Reassures without dismissing risk."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_12",
+        "title": "Do not minimise red flags",
+        "note": "Reassurance should never override escalation protocol when concerns are outside routine expectations."
+      }
+    ],
+    "keyTakeaways": [
+      "Escalation is part of good follow-up care.",
+      "Routine support still requires accurate documentation.",
+      "Patients should know when the doctor is being involved."
+    ],
+    "redFlags": ["Unexpected pain, bleeding, or signs of complication", "Patient reports worsening concerns outside expected pathway"],
+    "escalationTriggers": [
+      {
+        "id": "et_12",
+        "title": "Post-op concern",
+        "trigger": "Follow-up information suggests the patient may be outside routine recovery expectations.",
+        "action": "Escalate according to clinic protocol immediately."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Escalation protocol is a mandatory safety control.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_escalation_duty"],
+    "referenceIds": ["consultants_reference_12"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_12_post_operative_support_follow_up_escalation"],
+    "caseStudyIds": ["consultants_case_12_post_operative_support_follow_up_escalation"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_12_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_13_difficult_consultations_high_risk_scenarios",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_13_difficult_consultations_high_risk_scenarios",
+    "slug": "difficult-consultations-high-risk-scenarios-and-ethical-pressure",
+    "title": "Difficult Consultations, High-Risk Scenarios, and Ethical Pressure",
+    "sequence": 13,
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "overview": "Addresses vulnerable patients, unrealistic expectations, emotional distress, and pressure-selling risks in the clinic environment.",
+    "learningObjectives": [
+      "Recognise high-risk communication scenarios",
+      "Respond ethically to pressure and vulnerability",
+      "Escalate concerns before harm or mistrust develops"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The lesson treats difficult consultations as a safety domain requiring emotional discipline, ethics, and escalation readiness rather than personality-driven improvisation."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_13",
+        "title": "High-risk pause language",
+        "example": "I want to make sure your concerns are reviewed properly, so I am going to involve the clinical team before we go any further.",
+        "rationale": "Signals care and control without pressure."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_13",
+        "title": "No pressure-led selling",
+        "note": "High-risk or vulnerable scenarios require de-escalation, not conversion tactics."
+      }
+    ],
+    "keyTakeaways": [
+      "Trust can be lost quickly in pressured consultations.",
+      "Escalation protects both patients and staff.",
+      "Standardised responses reduce ethical drift."
+    ],
+    "redFlags": ["Vulnerability, coercion, or unrealistic urgency", "High emotional volatility or repeated reassurance seeking"],
+    "escalationTriggers": [
+      {
+        "id": "et_13",
+        "title": "Vulnerability concern",
+        "trigger": "Patient behaviour or history suggests significant vulnerability, distress, or expectation mismatch.",
+        "action": "Escalate promptly and document the concern clearly."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Difficult consultation handling is governed by ethics, policy, and escalation protocol.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "referenceIds": ["consultants_reference_13"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_13_difficult_consultations_high_risk_scenarios"],
+    "caseStudyIds": ["consultants_case_13_difficult_consultations_high_risk_scenarios"],
+    "practicalTaskIds": ["consultants_task_13_difficult_consultations_high_risk_scenarios"],
+    "completionRules": [
+      {
+        "id": "complete_13_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_14_quality_assurance_audit_clinic_standards",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_14_quality_assurance_audit_clinic_standards",
+    "slug": "quality-assurance-audit-and-clinic-standards-practice",
+    "title": "Quality Assurance, Audit, and Clinic Standards Practice",
+    "sequence": 14,
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "overview": "Shows how standardisation, template discipline, and audit readiness support a credible clinical service model.",
+    "learningObjectives": [
+      "Explain why standardisation improves the patient journey",
+      "Use basic audit language appropriately",
+      "Connect documentation quality to clinic standards"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The lesson positions consultant and nurse teams as operational guardians of consistency, template adherence, and quality feedback loops within clinic systems."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_14",
+        "title": "Standards-led explanation",
+        "example": "We use standard documentation and review processes so that care is consistent and clinically accountable.",
+        "rationale": "Communicates professionalism and institutional credibility."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_14",
+        "title": "Audit is supportive, not punitive",
+        "note": "Quality assurance should be presented as part of safer patient care and continuous improvement."
+      }
+    ],
+    "keyTakeaways": [
+      "Standardisation improves safety and trust.",
+      "Audit-ready records support better governance.",
+      "Operational credibility depends on consistency."
+    ],
+    "redFlags": ["Inconsistent templates", "Missing traceable records in patient pathways"],
+    "escalationTriggers": [
+      {
+        "id": "et_14",
+        "title": "Standards gap",
+        "trigger": "Quality or documentation issues risk affecting patient care or governance.",
+        "action": "Escalate through clinic QA pathways."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "QA and audit disciplines are primarily standards and governance driven.",
+      "notes": []
+    },
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "referenceIds": ["consultants_reference_14"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_14_quality_assurance_audit_clinic_standards"],
+    "caseStudyIds": ["consultants_case_14_quality_assurance_audit_clinic_standards"],
+    "practicalTaskIds": [],
+    "completionRules": [
+      {
+        "id": "complete_14_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  },
+  {
+    "id": "consultants_lesson_15_final_competency_assessment",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "moduleId": "consultants_module_15_final_competency_assessment",
+    "slug": "capstone-consultation-pathway-integration",
+    "title": "Capstone Consultation Pathway Integration",
+    "sequence": 15,
+    "status": "draft",
+    "estimatedStudyMinutes": 70,
+    "overview": "Prepares learners for a full-pathway capstone spanning consultation support, documentation, triage, escalation, and coordinated care.",
+    "learningObjectives": [
+      "Integrate all prior consultant academy competencies",
+      "Prepare for faculty-reviewed capstone assessment",
+      "Understand the final award requirements"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The capstone lesson brings together the full patient pathway and the rules that govern successful completion: 80 percent overall pass, mandatory ethics and escalation performance, and required faculty-reviewed tasks."
+    },
+    "patientCommunicationExamples": [
+      {
+        "id": "pc_15",
+        "title": "Pathway integration language",
+        "example": "Our role is to help your pathway stay clear, safe, and well coordinated while ensuring the clinical team reviews the right information at the right time.",
+        "rationale": "Summarises the consultant academy ethos."
+      }
+    ],
+    "roleBoundaryNotes": [
+      {
+        "id": "rb_15",
+        "title": "Integrated competence still respects scope",
+        "note": "Even at diploma level, the learner remains a support professional working within role boundaries."
+      }
+    ],
+    "keyTakeaways": [
+      "Capstone performance is competency-led.",
+      "Mandatory safety domains cannot be offset by high scores elsewhere.",
+      "Faculty review remains part of final award integrity."
+    ],
+    "redFlags": ["Passing total score while failing mandatory safety domains", "Integrated task responses that drift beyond scope"],
+    "escalationTriggers": [
+      {
+        "id": "et_15",
+        "title": "Capstone safety failure",
+        "trigger": "Learner demonstrates unsafe handling of ethics, red flags, or escalation.",
+        "action": "Block progression and route to remediation or faculty review."
+      }
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "The capstone integrates standards-led educational and governance requirements.",
+      "notes": []
+    },
+    "facultyNoteIds": ["consultants_note_capstone_review"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "referenceIds": ["consultants_reference_15"],
+    "resourceIds": [],
+    "assessmentIds": ["consultants_assessment_15_final_competency_assessment"],
+    "caseStudyIds": ["consultants_case_15_final_competency_assessment"],
+    "practicalTaskIds": ["consultants_task_15_final_competency_assessment"],
+    "completionRules": [
+      {
+        "id": "complete_15_view",
+        "type": "view",
+        "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_15_task",
+        "type": "faculty-approval",
+        "description": "Receive faculty approval on the capstone pathway task.",
+        "required": true
+      }
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showEscalationPanel": true,
+      "showFacultyNotes": false,
+      "showCompliancePanel": true
+    }
+  }
+]

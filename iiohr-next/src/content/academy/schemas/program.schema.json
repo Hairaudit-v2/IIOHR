@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/program.schema.json",
+  "title": "AcademyProgram",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "streamSlug",
+    "slug",
+    "title",
+    "workingTitle",
+    "awardType",
+    "status",
+    "overview",
+    "whoItsFor",
+    "whyItMatters",
+    "deliveryModel",
+    "certificationSummary",
+    "clinicLicensingSummary",
+    "faqSummary",
+    "applyCta",
+    "duration",
+    "levelIds",
+    "sectionIds",
+    "moduleIds",
+    "competencyIds",
+    "complianceNoticeIds"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "streamSlug": { "type": "string", "enum": ["doctors", "consultants"] },
+    "title": { "type": "string" },
+    "slug": { "type": "string" },
+    "workingTitle": { "type": "string" },
+    "awardType": {
+      "type": "string",
+      "enum": ["certificate", "advanced-certificate", "diploma", "postgraduate-certificate"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "overview": { "type": "string" },
+    "whoItsFor": { "type": "array", "items": { "type": "string" } },
+    "whyItMatters": { "type": "array", "items": { "type": "string" } },
+    "deliveryModel": { "type": "array", "items": { "type": "string" } },
+    "certificationSummary": { "type": "array", "items": { "type": "string" } },
+    "clinicLicensingSummary": { "type": "array", "items": { "type": "string" } },
+    "faqSummary": { "type": "array", "items": { "type": "string" } },
+    "applyCta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["href", "label"],
+      "properties": {
+        "href": { "type": "string" },
+        "label": { "type": "string" }
+      }
+    },
+    "duration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["deliveryWindowMonths", "estimatedStudyHours", "pacingModel"],
+      "properties": {
+        "deliveryWindowMonths": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "estimatedStudyHours": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "pacingModel": { "type": "string" }
+      }
+    },
+    "levelIds": { "type": "array", "items": { "type": "string" } },
+    "sectionIds": { "type": "array", "items": { "type": "string" } },
+    "moduleIds": { "type": "array", "items": { "type": "string" } },
+    "competencyIds": { "type": "array", "items": { "type": "string" } },
+    "complianceNoticeIds": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/completion.schema.json",
+  "title": "AcademyCompletionSchema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "progressCalculation",
+    "moduleCompletionRules",
+    "assessmentCompletionRules",
+    "capstoneRequirement",
+    "certificateEligibility",
+    "distinctionEligibility"
+  ],
+  "properties": {
+    "progressCalculation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lessonWeight", "assessmentWeight", "capstoneWeight"],
+      "properties": {
+        "lessonWeight": { "type": "number", "minimum": 0 },
+        "assessmentWeight": { "type": "number", "minimum": 0 },
+        "capstoneWeight": { "type": "number", "minimum": 0 }
+      }
+    },
+    "moduleCompletionRules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "assessmentCompletionRules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "capstoneRequirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["moduleSlug", "assessmentType", "facultyReviewRequired"],
+      "properties": {
+        "moduleSlug": { "type": "string" },
+        "assessmentType": {
+          "type": "string",
+          "enum": [
+            "mixed-knowledge-check",
+            "image-interpretation-intensive",
+            "case-reasoning-intensive",
+            "research-appraisal",
+            "capstone-case-review",
+            "final-certification-board"
+          ]
+        },
+        "facultyReviewRequired": { "type": "boolean" }
+      }
+    },
+    "certificateEligibility": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "distinctionEligibility": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

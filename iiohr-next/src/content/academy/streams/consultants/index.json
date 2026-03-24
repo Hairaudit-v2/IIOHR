@@ -1,0 +1,31 @@
+{
+  "id": "stream_consultants",
+  "slug": "consultants",
+  "title": "Consultant and Nurse Education",
+  "shortTitle": "Consultants",
+  "status": "draft",
+  "audiences": [
+    "consultant",
+    "nurse",
+    "patient-coordinator",
+    "treatment-coordinator",
+    "senior-patient-facing-staff"
+  ],
+  "positioning": "Institute-grade education for consultant, nurse, and coordination teams working in hair restoration within clear scope-of-practice boundaries.",
+  "guidingPrinciples": [
+    "scope before confidence",
+    "education over selling",
+    "triage over diagnosis",
+    "trust over conversion",
+    "standardisation over personality"
+  ],
+  "complianceNoticeIds": [
+    "notice_consultants_competency_scope",
+    "notice_consultants_no_diagnostic_authority",
+    "notice_consultants_no_surgical_training"
+  ],
+  "programIds": [
+    "program_certificate_consultation_patient_coordination"
+  ],
+  "brandProfiles": ["iiohr"]
+}

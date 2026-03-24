@@ -1,0 +1,74 @@
+[
+  {
+    "id": "consultants_resource_01",
+    "parentType": "module",
+    "parentId": "consultants_module_01_role_modern_hair_restoration",
+    "title": "Role Boundary Summary",
+    "resourceType": "pdf-summary",
+    "fileName": "role-boundary-summary.pdf",
+    "fileUrl": "/academy/resources/consultants/role-boundary-summary.pdf",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Summary sheet covering support-role scope and escalation boundaries."
+  },
+  {
+    "id": "consultants_resource_02",
+    "parentType": "module",
+    "parentId": "consultants_module_04_consultation_structure_information_gathering",
+    "title": "Consultation Structure Template",
+    "resourceType": "template",
+    "fileName": "consultation-structure-template.docx",
+    "fileUrl": "/academy/resources/consultants/consultation-structure-template.docx",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Structured information-gathering template for clinic use."
+  },
+  {
+    "id": "consultants_resource_03",
+    "parentType": "module",
+    "parentId": "consultants_module_05_candidate_screening_suitability_support",
+    "title": "Screening Red Flag Checklist",
+    "resourceType": "checklist",
+    "fileName": "screening-red-flag-checklist.pdf",
+    "fileUrl": "/academy/resources/consultants/screening-red-flag-checklist.pdf",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Red flag and escalation checklist for candidate screening support."
+  },
+  {
+    "id": "consultants_resource_04",
+    "parentType": "module",
+    "parentId": "consultants_module_08_non_surgical_treatment_education",
+    "title": "Patient Education Talking Points",
+    "resourceType": "worksheet",
+    "fileName": "patient-education-talking-points.pdf",
+    "fileUrl": "/academy/resources/consultants/patient-education-talking-points.pdf",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Scope-safe language prompts for treatment education conversations."
+  },
+  {
+    "id": "consultants_resource_05",
+    "parentType": "module",
+    "parentId": "consultants_module_10_clinical_photography_documentation_handover",
+    "title": "Handover Note Template",
+    "resourceType": "template",
+    "fileName": "handover-note-template.docx",
+    "fileUrl": "/academy/resources/consultants/handover-note-template.docx",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Doctor handover template aligned to academy documentation standards."
+  },
+  {
+    "id": "consultants_resource_06",
+    "parentType": "module",
+    "parentId": "consultants_module_11_pre_operative_coordination_preparation",
+    "title": "Pre-Operative Preparation Checklist",
+    "resourceType": "checklist",
+    "fileName": "pre-operative-preparation-checklist.pdf",
+    "fileUrl": "/academy/resources/consultants/pre-operative-preparation-checklist.pdf",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Checklist supporting pre-operative coordination and readiness workflows."
+  }
+]

@@ -1,0 +1,661 @@
+[
+  {
+    "id": "consultants_module_01_role_modern_hair_restoration",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "sectionId": "section_consultants_level_1_foundation",
+    "slug": "role-of-the-consultant-nurse-in-modern-hair-restoration",
+    "title": "The Role of the Consultant and Nurse in Modern Hair Restoration",
+    "shortTitle": "Role in Modern Hair Restoration",
+    "sequence": 1,
+    "status": "draft",
+    "estimatedStudyMinutes": 90,
+    "moduleOverview": "Introduces the consultant academy ethos, role boundaries, patient journey responsibilities, and the distinction between support, triage, and diagnosis.",
+    "learningOutcomes": [
+      "Define the role of patient-facing support professionals in the hair restoration pathway",
+      "Explain why scope-safe working protects patients and clinics",
+      "Describe how consultant and nurse roles support doctor efficiency"
+    ],
+    "competencyIds": ["consultants_competency_01_role_scope_foundations"],
+    "unlockRules": [],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_01",
+        "description": "Module completion requires the linked assessment pass.",
+        "requiredAssessmentIds": ["consultants_assessment_01_role_modern_hair_restoration"],
+        "mandatoryDomainTags": ["ethics-scope"]
+      }
+    ],
+    "facultyNoteIds": ["consultants_note_scope_language"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority"
+    ],
+    "lessonIds": ["consultants_lesson_01_role_modern_hair_restoration"],
+    "assessmentIds": ["consultants_assessment_01_role_modern_hair_restoration"],
+    "caseStudyIds": ["consultants_case_01_role_modern_hair_restoration"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_01"],
+    "resourceIds": ["consultants_resource_01"]
+  },
+  {
+    "id": "consultants_module_02_foundations_hair_scalp_science",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "sectionId": "section_consultants_level_1_foundation",
+    "slug": "foundations-of-hair-and-scalp-science",
+    "title": "Foundations of Hair and Scalp Science",
+    "shortTitle": "Hair and Scalp Science",
+    "sequence": 2,
+    "status": "draft",
+    "estimatedStudyMinutes": 100,
+    "moduleOverview": "Builds practical biological literacy so staff can communicate accurately, recognise normal versus concerning findings, and support safer handover.",
+    "learningOutcomes": [
+      "Use core hair and scalp terminology accurately",
+      "Describe hair cycle concepts relevant to patient education",
+      "Recognise why biological literacy matters to handover quality"
+    ],
+    "competencyIds": ["consultants_competency_02_hair_scalp_literacy"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_02",
+        "description": "Complete module 1 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_01_role_modern_hair_restoration"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_02",
+        "description": "Complete the linked knowledge check.",
+        "requiredAssessmentIds": ["consultants_assessment_02_foundations_hair_scalp_science"],
+        "mandatoryDomainTags": ["knowledge"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "lessonIds": ["consultants_lesson_02_foundations_hair_scalp_science"],
+    "assessmentIds": ["consultants_assessment_02_foundations_hair_scalp_science"],
+    "caseStudyIds": ["consultants_case_02_foundations_hair_scalp_science"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_02"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_03_common_hair_loss_presentations",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "sectionId": "section_consultants_level_1_foundation",
+    "slug": "common-hair-loss-presentations-seen-in-clinic",
+    "title": "Common Hair Loss Presentations Seen in Clinic",
+    "shortTitle": "Common Presentations",
+    "sequence": 3,
+    "status": "draft",
+    "estimatedStudyMinutes": 100,
+    "moduleOverview": "Introduces common presentation patterns and the language needed to document and escalate without stepping into diagnostic claims.",
+    "learningOutcomes": [
+      "Describe common presentation patterns using professional language",
+      "Separate presentation recognition from diagnosis",
+      "Identify findings that require escalation"
+    ],
+    "competencyIds": ["consultants_competency_03_presentation_literacy"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_03",
+        "description": "Complete module 2 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_02_foundations_hair_scalp_science"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_03",
+        "description": "Pass the linked image and scenario assessment.",
+        "requiredAssessmentIds": ["consultants_assessment_03_common_hair_loss_presentations"],
+        "mandatoryDomainTags": ["red-flags"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "lessonIds": ["consultants_lesson_03_common_hair_loss_presentations"],
+    "assessmentIds": ["consultants_assessment_03_common_hair_loss_presentations"],
+    "caseStudyIds": ["consultants_case_03_common_hair_loss_presentations"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_03"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_04_consultation_structure_information_gathering",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "sectionId": "section_consultants_level_1_foundation",
+    "slug": "consultation-structure-and-clinical-information-gathering",
+    "title": "Consultation Structure and Clinical Information Gathering",
+    "shortTitle": "Consultation Structure",
+    "sequence": 4,
+    "status": "draft",
+    "estimatedStudyMinutes": 120,
+    "moduleOverview": "Focuses on structured history capture, communication discipline, and reliable pre-doctor information gathering.",
+    "learningOutcomes": [
+      "Use a standard consultation sequence",
+      "Capture information in a clinically useful format",
+      "Avoid suggestive or sales-led questioning"
+    ],
+    "competencyIds": ["consultants_competency_04_structured_information_gathering"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_04",
+        "description": "Complete module 3 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_03_common_hair_loss_presentations"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_04",
+        "description": "Pass the assessment and submit the linked practical task.",
+        "requiredAssessmentIds": ["consultants_assessment_04_consultation_structure_information_gathering"],
+        "mandatoryDomainTags": ["documentation", "communication"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority"
+    ],
+    "lessonIds": ["consultants_lesson_04_consultation_structure_information_gathering"],
+    "assessmentIds": ["consultants_assessment_04_consultation_structure_information_gathering"],
+    "caseStudyIds": ["consultants_case_04_consultation_structure_information_gathering"],
+    "practicalTaskIds": ["consultants_task_04_consultation_structure_information_gathering"],
+    "referenceIds": ["consultants_reference_04"],
+    "resourceIds": ["consultants_resource_02"]
+  },
+  {
+    "id": "consultants_module_05_candidate_screening_suitability_support",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "sectionId": "section_consultants_level_1_foundation",
+    "slug": "candidate-screening-and-suitability-support",
+    "title": "Candidate Screening and Suitability Support",
+    "shortTitle": "Screening and Suitability",
+    "sequence": 5,
+    "status": "draft",
+    "estimatedStudyMinutes": 120,
+    "moduleOverview": "Teaches the screening support role, candidate readiness prompts, and escalation boundaries when suitability concerns arise.",
+    "learningOutcomes": [
+      "Identify information relevant to doctor-led suitability review",
+      "Recognise screening red flags requiring escalation",
+      "Use scope-safe language when discussing suitability"
+    ],
+    "competencyIds": ["consultants_competency_05_candidate_screening_support"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_05",
+        "description": "Complete module 4 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_04_consultation_structure_information_gathering"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_05",
+        "description": "Pass screening support items with mandatory red-flag performance.",
+        "requiredAssessmentIds": ["consultants_assessment_05_candidate_screening_suitability_support"],
+        "mandatoryDomainTags": ["red-flags", "escalation"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "lessonIds": ["consultants_lesson_05_candidate_screening_suitability_support"],
+    "assessmentIds": ["consultants_assessment_05_candidate_screening_suitability_support"],
+    "caseStudyIds": ["consultants_case_05_candidate_screening_suitability_support"],
+    "practicalTaskIds": ["consultants_task_05_candidate_screening_suitability_support"],
+    "referenceIds": ["consultants_reference_05"],
+    "resourceIds": ["consultants_resource_03"]
+  },
+  {
+    "id": "consultants_module_06_ethics_consent_scope_of_practice",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "sectionId": "section_consultants_level_2_advanced",
+    "slug": "ethics-consent-support-and-scope-of-practice",
+    "title": "Ethics, Consent Support, and Scope of Practice",
+    "shortTitle": "Ethics and Scope",
+    "sequence": 6,
+    "status": "draft",
+    "estimatedStudyMinutes": 110,
+    "moduleOverview": "Frames ethics, role boundaries, scope-safe communication, and consent support as core safety disciplines rather than optional professionalism.",
+    "learningOutcomes": [
+      "Explain scope before confidence as a working principle",
+      "Differentiate consent support from obtaining clinical consent",
+      "Respond appropriately to ethical pressure points"
+    ],
+    "competencyIds": ["consultants_competency_06_ethics_scope_consent_support"],
+    "unlockRules": [],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_06",
+        "description": "Mandatory pass required on ethics and scope domains.",
+        "requiredAssessmentIds": ["consultants_assessment_06_ethics_consent_scope_of_practice"],
+        "mandatoryDomainTags": ["ethics-scope"]
+      }
+    ],
+    "facultyNoteIds": ["consultants_note_scope_language"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_no_surgical_training"
+    ],
+    "lessonIds": ["consultants_lesson_06_ethics_consent_scope_of_practice"],
+    "assessmentIds": ["consultants_assessment_06_ethics_consent_scope_of_practice"],
+    "caseStudyIds": ["consultants_case_06_ethics_consent_scope_of_practice"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_06"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_07_communication_excellence_trust_based_consultation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "sectionId": "section_consultants_level_2_advanced",
+    "slug": "communication-excellence-and-trust-based-consultation",
+    "title": "Communication Excellence and Trust-Based Consultation",
+    "shortTitle": "Trust-Based Communication",
+    "sequence": 7,
+    "status": "draft",
+    "estimatedStudyMinutes": 110,
+    "moduleOverview": "Builds communication habits that prioritise trust, realism, professionalism, and emotional intelligence over conversion-driven behaviour.",
+    "learningOutcomes": [
+      "Use communication that is clear, ethical, and scope-safe",
+      "De-escalate pressure while preserving trust",
+      "Support patient understanding without overpromising"
+    ],
+    "competencyIds": ["consultants_competency_07_patient_communication"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_07",
+        "description": "Complete module 6 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_06_ethics_consent_scope_of_practice"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_07",
+        "description": "Communication scenario and practical task are both required.",
+        "requiredAssessmentIds": ["consultants_assessment_07_communication_excellence_trust_based_consultation"],
+        "mandatoryDomainTags": ["communication", "ethics-scope"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority"
+    ],
+    "lessonIds": ["consultants_lesson_07_communication_excellence_trust_based_consultation"],
+    "assessmentIds": ["consultants_assessment_07_communication_excellence_trust_based_consultation"],
+    "caseStudyIds": ["consultants_case_07_communication_excellence_trust_based_consultation"],
+    "practicalTaskIds": ["consultants_task_07_communication_excellence_trust_based_consultation"],
+    "referenceIds": ["consultants_reference_07"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_08_non_surgical_treatment_education",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "sectionId": "section_consultants_level_2_advanced",
+    "slug": "non-surgical-treatment-education",
+    "title": "Non-Surgical Treatment Education",
+    "shortTitle": "Non-Surgical Education",
+    "sequence": 8,
+    "status": "draft",
+    "estimatedStudyMinutes": 95,
+    "moduleOverview": "Covers how non-doctor staff can educate patients on non-surgical pathway concepts accurately and within a non-prescribing role.",
+    "learningOutcomes": [
+      "Explain common non-surgical pathway categories safely",
+      "Distinguish education from recommendation or prescribing",
+      "Use realistic expectation-setting language"
+    ],
+    "competencyIds": ["consultants_competency_08_non_surgical_education"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_08",
+        "description": "Complete module 7 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_07_communication_excellence_trust_based_consultation"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_08",
+        "description": "Pass treatment education assessment.",
+        "requiredAssessmentIds": ["consultants_assessment_08_non_surgical_treatment_education"],
+        "mandatoryDomainTags": ["communication"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_no_surgical_training"
+    ],
+    "lessonIds": ["consultants_lesson_08_non_surgical_treatment_education"],
+    "assessmentIds": ["consultants_assessment_08_non_surgical_treatment_education"],
+    "caseStudyIds": ["consultants_case_08_non_surgical_treatment_education"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_08"],
+    "resourceIds": ["consultants_resource_04"]
+  },
+  {
+    "id": "consultants_module_09_surgical_education_for_non_doctors",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "sectionId": "section_consultants_level_2_advanced",
+    "slug": "surgical-education-for-non-doctors",
+    "title": "Surgical Education for Non-Doctors",
+    "shortTitle": "Surgical Education",
+    "sequence": 9,
+    "status": "draft",
+    "estimatedStudyMinutes": 100,
+    "moduleOverview": "Explains how to educate patients about the surgical pathway while remaining firmly within non-diagnostic, non-surgical professional boundaries.",
+    "learningOutcomes": [
+      "Describe the surgical patient journey at a high level",
+      "Use language that does not imply procedural authority",
+      "Identify when patient questions require doctor review"
+    ],
+    "competencyIds": ["consultants_competency_09_surgical_pathway_education"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_09",
+        "description": "Complete module 8 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_08_non_surgical_treatment_education"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_09",
+        "description": "Pass surgical pathway education assessment.",
+        "requiredAssessmentIds": ["consultants_assessment_09_surgical_education_for_non_doctors"],
+        "mandatoryDomainTags": ["ethics-scope", "communication"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_no_surgical_training"
+    ],
+    "lessonIds": ["consultants_lesson_09_surgical_education_for_non_doctors"],
+    "assessmentIds": ["consultants_assessment_09_surgical_education_for_non_doctors"],
+    "caseStudyIds": ["consultants_case_09_surgical_education_for_non_doctors"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_09"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_10_clinical_photography_documentation_handover",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "sectionId": "section_consultants_level_2_advanced",
+    "slug": "clinical-photography-documentation-and-doctor-handover",
+    "title": "Clinical Photography, Documentation, and Doctor Handover",
+    "shortTitle": "Documentation and Handover",
+    "sequence": 10,
+    "status": "draft",
+    "estimatedStudyMinutes": 120,
+    "moduleOverview": "Focuses on image capture standards, documentation discipline, and structured handover that improves doctor efficiency and patient safety.",
+    "learningOutcomes": [
+      "Capture documentation in a standardised and neutral manner",
+      "Prepare concise handover summaries for doctors",
+      "Recognise when documentation quality affects safety"
+    ],
+    "competencyIds": ["consultants_competency_10_documentation_handover"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_10",
+        "description": "Complete module 9 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_09_surgical_education_for_non_doctors"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_10",
+        "description": "Pass documentation assessment and submit a faculty-reviewed handover task.",
+        "requiredAssessmentIds": ["consultants_assessment_10_clinical_photography_documentation_handover"],
+        "mandatoryDomainTags": ["documentation"]
+      }
+    ],
+    "facultyNoteIds": ["consultants_note_documentation_standard"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_escalation_duty"
+    ],
+    "lessonIds": ["consultants_lesson_10_clinical_photography_documentation_handover"],
+    "assessmentIds": ["consultants_assessment_10_clinical_photography_documentation_handover"],
+    "caseStudyIds": ["consultants_case_10_clinical_photography_documentation_handover"],
+    "practicalTaskIds": ["consultants_task_10_clinical_photography_documentation_handover"],
+    "referenceIds": ["consultants_reference_10"],
+    "resourceIds": ["consultants_resource_05"]
+  },
+  {
+    "id": "consultants_module_11_pre_operative_coordination_preparation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "sectionId": "section_consultants_level_3_leadership",
+    "slug": "pre-operative-coordination-and-patient-preparation",
+    "title": "Pre-Operative Coordination and Patient Preparation",
+    "shortTitle": "Pre-Operative Coordination",
+    "sequence": 11,
+    "status": "draft",
+    "estimatedStudyMinutes": 100,
+    "moduleOverview": "Builds operational confidence in preparing patients for doctor-led procedures through checklist discipline, documentation, and readiness coordination.",
+    "learningOutcomes": [
+      "Coordinate pre-operative preparation using structured workflows",
+      "Identify missing information that needs escalation",
+      "Communicate preparation steps clearly and safely"
+    ],
+    "competencyIds": ["consultants_competency_11_preoperative_coordination"],
+    "unlockRules": [],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_11",
+        "description": "Pass coordination assessment.",
+        "requiredAssessmentIds": ["consultants_assessment_11_pre_operative_coordination_preparation"],
+        "mandatoryDomainTags": ["care-coordination"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "lessonIds": ["consultants_lesson_11_pre_operative_coordination_preparation"],
+    "assessmentIds": ["consultants_assessment_11_pre_operative_coordination_preparation"],
+    "caseStudyIds": ["consultants_case_11_pre_operative_coordination_preparation"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_11"],
+    "resourceIds": ["consultants_resource_06"]
+  },
+  {
+    "id": "consultants_module_12_post_operative_support_follow_up_escalation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "sectionId": "section_consultants_level_3_leadership",
+    "slug": "post-operative-support-follow-up-and-escalation",
+    "title": "Post-Operative Support, Follow-Up, and Escalation",
+    "shortTitle": "Post-Operative Support",
+    "sequence": 12,
+    "status": "draft",
+    "estimatedStudyMinutes": 100,
+    "moduleOverview": "Addresses follow-up standards, patient reassurance, documentation, and timely escalation when recovery pathways deviate from expectation.",
+    "learningOutcomes": [
+      "Distinguish routine follow-up from escalation scenarios",
+      "Document post-operative concerns accurately",
+      "Use reassurance language without minimising red flags"
+    ],
+    "competencyIds": ["consultants_competency_12_follow_up_escalation"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_12",
+        "description": "Complete module 11 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_11_pre_operative_coordination_preparation"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_12",
+        "description": "Pass escalation-focused assessment items.",
+        "requiredAssessmentIds": ["consultants_assessment_12_post_operative_support_follow_up_escalation"],
+        "mandatoryDomainTags": ["red-flags", "escalation"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_escalation_duty"],
+    "lessonIds": ["consultants_lesson_12_post_operative_support_follow_up_escalation"],
+    "assessmentIds": ["consultants_assessment_12_post_operative_support_follow_up_escalation"],
+    "caseStudyIds": ["consultants_case_12_post_operative_support_follow_up_escalation"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_12"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_13_difficult_consultations_high_risk_scenarios",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "sectionId": "section_consultants_level_3_leadership",
+    "slug": "difficult-consultations-and-high-risk-scenarios",
+    "title": "Difficult Consultations and High-Risk Scenarios",
+    "shortTitle": "High-Risk Scenarios",
+    "sequence": 13,
+    "status": "draft",
+    "estimatedStudyMinutes": 110,
+    "moduleOverview": "Equips learners to handle vulnerable, pressured, unrealistic, or high-risk consultation situations with ethical consistency and escalation discipline.",
+    "learningOutcomes": [
+      "Recognise pressure-selling and vulnerability risks",
+      "Respond ethically to unrealistic expectations",
+      "Escalate high-risk cases without delay"
+    ],
+    "competencyIds": ["consultants_competency_13_high_risk_scenario_management"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_13",
+        "description": "Complete module 12 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_12_post_operative_support_follow_up_escalation"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_13",
+        "description": "Communication and ethics performance must both pass.",
+        "requiredAssessmentIds": ["consultants_assessment_13_difficult_consultations_high_risk_scenarios"],
+        "mandatoryDomainTags": ["ethics-scope", "communication", "escalation"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "lessonIds": ["consultants_lesson_13_difficult_consultations_high_risk_scenarios"],
+    "assessmentIds": ["consultants_assessment_13_difficult_consultations_high_risk_scenarios"],
+    "caseStudyIds": ["consultants_case_13_difficult_consultations_high_risk_scenarios"],
+    "practicalTaskIds": ["consultants_task_13_difficult_consultations_high_risk_scenarios"],
+    "referenceIds": ["consultants_reference_13"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_14_quality_assurance_audit_clinic_standards",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "sectionId": "section_consultants_level_3_leadership",
+    "slug": "quality-assurance-audit-and-clinic-standards",
+    "title": "Quality Assurance, Audit, and Clinic Standards",
+    "shortTitle": "Quality and Audit",
+    "sequence": 14,
+    "status": "draft",
+    "estimatedStudyMinutes": 90,
+    "moduleOverview": "Introduces standards review, audit thinking, template discipline, and the operational leadership role of consultant and nurse teams.",
+    "learningOutcomes": [
+      "Explain why standardisation improves safety and trust",
+      "Use audit language in a clinic support context",
+      "Recognise the role of documentation quality in QA"
+    ],
+    "competencyIds": ["consultants_competency_14_quality_assurance_audit"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_14",
+        "description": "Complete module 13 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_13_difficult_consultations_high_risk_scenarios"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_14",
+        "description": "Pass the quality standards assessment.",
+        "requiredAssessmentIds": ["consultants_assessment_14_quality_assurance_audit_clinic_standards"],
+        "mandatoryDomainTags": ["documentation", "care-coordination"]
+      }
+    ],
+    "facultyNoteIds": [],
+    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "lessonIds": ["consultants_lesson_14_quality_assurance_audit_clinic_standards"],
+    "assessmentIds": ["consultants_assessment_14_quality_assurance_audit_clinic_standards"],
+    "caseStudyIds": ["consultants_case_14_quality_assurance_audit_clinic_standards"],
+    "practicalTaskIds": [],
+    "referenceIds": ["consultants_reference_14"],
+    "resourceIds": []
+  },
+  {
+    "id": "consultants_module_15_final_competency_assessment",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "sectionId": "section_consultants_level_3_leadership",
+    "slug": "final-competency-assessment",
+    "title": "Final Competency Assessment",
+    "shortTitle": "Final Competency Assessment",
+    "sequence": 15,
+    "status": "draft",
+    "estimatedStudyMinutes": 150,
+    "moduleOverview": "Capstone module assessing the full consultation-support pathway from first contact through handover, safety recognition, and coordinated care.",
+    "learningOutcomes": [
+      "Integrate communication, documentation, triage, and escalation skills",
+      "Demonstrate standards-led decision support across the patient journey",
+      "Complete a faculty-reviewed capstone safely and professionally"
+    ],
+    "competencyIds": ["consultants_competency_15_capstone_consultation_pathway"],
+    "unlockRules": [
+      {
+        "id": "unlock_module_15",
+        "description": "Complete module 14 first.",
+        "dependsOnType": "module",
+        "dependsOnId": "consultants_module_14_quality_assurance_audit_clinic_standards"
+      }
+    ],
+    "assessmentRules": [
+      {
+        "id": "assessment_rule_module_15",
+        "description": "Capstone pass, faculty review, and competency confirmation are all required.",
+        "requiredAssessmentIds": ["consultants_assessment_15_final_competency_assessment"],
+        "mandatoryDomainTags": ["ethics-scope", "red-flags", "escalation", "documentation", "communication"]
+      }
+    ],
+    "facultyNoteIds": ["consultants_note_capstone_review"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
+    "lessonIds": ["consultants_lesson_15_final_competency_assessment"],
+    "assessmentIds": ["consultants_assessment_15_final_competency_assessment"],
+    "caseStudyIds": ["consultants_case_15_final_competency_assessment"],
+    "practicalTaskIds": ["consultants_task_15_final_competency_assessment"],
+    "referenceIds": ["consultants_reference_15"],
+    "resourceIds": []
+  }
+]

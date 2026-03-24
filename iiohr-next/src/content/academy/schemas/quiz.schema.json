@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/quiz.schema.json",
+  "title": "AcademyQuiz",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "moduleId",
+    "parentType",
+    "parentId",
+    "title",
+    "status",
+    "passMark",
+    "retries",
+    "items"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "moduleId": { "type": "string" },
+    "parentType": {
+      "type": "string",
+      "enum": ["volume", "module", "lesson"]
+    },
+    "parentId": { "type": "string" },
+    "title": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "passMark": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "retries": { "type": "integer", "minimum": 0 },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type",
+          "stem",
+          "options",
+          "correctAnswer",
+          "rationale",
+          "evidenceTier",
+          "facultyReviewRequired"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": [
+              "mcq",
+              "image-interpretation",
+              "short-answer",
+              "case-reasoning"
+            ]
+          },
+          "stem": { "type": "string" },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "label"],
+              "properties": {
+                "id": { "type": "string" },
+                "label": { "type": "string" }
+              }
+            }
+          },
+          "correctAnswer": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "optionIds": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "freeTextSample": { "type": "string" }
+            }
+          },
+          "rationale": { "type": "string" },
+          "evidenceTier": {
+            "type": "string",
+            "enum": ["A", "B", "C", "consensus"]
+          },
+          "facultyReviewRequired": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

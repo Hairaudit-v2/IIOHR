@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/module.schema.json",
+  "title": "AcademyModule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "levelId",
+    "sectionId",
+    "slug",
+    "title",
+    "shortTitle",
+    "sequence",
+    "status",
+    "estimatedStudyMinutes",
+    "moduleOverview",
+    "learningOutcomes",
+    "competencyIds",
+    "unlockRules",
+    "assessmentRules",
+    "facultyNoteIds",
+    "complianceNoticeIds",
+    "lessonIds",
+    "assessmentIds",
+    "caseStudyIds",
+    "practicalTaskIds",
+    "referenceIds",
+    "resourceIds"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "levelId": { "type": "string" },
+    "sectionId": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "shortTitle": { "type": "string" },
+    "sequence": { "type": "integer", "minimum": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "estimatedStudyMinutes": { "type": "integer", "minimum": 1 },
+    "moduleOverview": { "type": "string" },
+    "learningOutcomes": { "type": "array", "items": { "type": "string" } },
+    "competencyIds": { "type": "array", "items": { "type": "string" } },
+    "unlockRules": { "type": "array", "items": { "type": "object" } },
+    "assessmentRules": { "type": "array", "items": { "type": "object" } },
+    "facultyNoteIds": { "type": "array", "items": { "type": "string" } },
+    "complianceNoticeIds": { "type": "array", "items": { "type": "string" } },
+    "lessonIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "assessmentIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "caseStudyIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "practicalTaskIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "resourceIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "referenceIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

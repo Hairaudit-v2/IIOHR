@@ -1,0 +1,17 @@
+{
+  "id": "volume_1_foundations_of_clinical_trichology",
+  "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+  "volumeNumber": 1,
+  "slug": "foundations-of-clinical-trichology",
+  "title": "Foundations of Clinical Trichology",
+  "subtitle": "Volume 1",
+  "status": "draft",
+  "brandProfiles": ["iiohr", "hli", "iiiohr"],
+  "audience": ["doctors", "surgeons", "physicians"],
+  "moduleOrder": [
+    "module_foundations_intro",
+    "module_follicle_biology_scalp_science",
+    "module_molecular_hormonal_regulation",
+    "module_clinical_consultation_history_taking"
+  ]
+}

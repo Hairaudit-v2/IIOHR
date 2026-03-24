@@ -1,0 +1,85 @@
+[
+  {
+    "id": "section_volume_1_foundations",
+    "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+    "volumeNumber": 1,
+    "title": "Foundations of Clinical Trichology",
+    "slug": "foundations-of-clinical-trichology",
+    "status": "draft",
+    "summary": "Foundation section for introductory trichology, follicular science, endocrine regulation, and structured consultation.",
+    "moduleOrder": [
+      "module_01_introduction_to_clinical_trichology_and_hair_restoration_medicine",
+      "module_02_hair_follicle_biology_and_scalp_science",
+      "module_03_molecular_and_hormonal_regulation_of_hair_growth",
+      "module_04_clinical_consultation_and_hair_loss_history_taking"
+    ]
+  },
+  {
+    "id": "section_volume_2_diagnostic_trichology",
+    "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+    "volumeNumber": 2,
+    "title": "Diagnostic Trichology and Pattern Hair Loss Medicine",
+    "slug": "diagnostic-trichology-and-pattern-hair-loss-medicine",
+    "status": "draft",
+    "summary": "Diagnostic section for structured examination, trichoscopy, investigation planning, and patterned hair loss medicine.",
+    "moduleOrder": [
+      "module_05_clinical_examination_of_hair_and_scalp",
+      "module_06_trichoscopy_foundations_to_advanced_interpretation",
+      "module_07_laboratory_investigations_endocrine_workup_and_biopsy_logic",
+      "module_08_androgenetic_alopecia_in_males",
+      "module_09_female_pattern_hair_loss_and_hormonal_hair_loss_in_women"
+    ]
+  },
+  {
+    "id": "section_volume_3_diffuse_shedding_scalp_disease",
+    "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+    "volumeNumber": 3,
+    "title": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "slug": "diffuse-shedding-cicatricial-alopecia-and-scalp-disease",
+    "status": "draft",
+    "summary": "Clinical hair and scalp medicine section for diffuse shedding disorders, alopecia subtypes, cicatricial processes, and scalp disease.",
+    "moduleOrder": [
+      "module_10_telogen_effluvium_and_diffuse_shedding_disorders",
+      "module_11_alopecia_areata_and_immune_mediated_hair_loss",
+      "module_12_hair_shaft_disorders_and_breakage_syndromes",
+      "module_13_principles_of_cicatricial_alopecia",
+      "module_14_lymphocytic_cicatricial_alopecias",
+      "module_15_neutrophilic_and_mixed_cicatricial_alopecias",
+      "module_16_inflammatory_and_infectious_scalp_disorders"
+    ]
+  },
+  {
+    "id": "section_volume_4_therapeutics_regenerative_surgery_foundations",
+    "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+    "volumeNumber": 4,
+    "title": "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery",
+    "slug": "therapeutics-regenerative-medicine-and-foundations-of-hair-restoration-surgery",
+    "status": "draft",
+    "summary": "Treatment section covering medical, nutritional, regenerative, and foundational surgical decision-making.",
+    "moduleOrder": [
+      "module_17_medical_management_of_hair_loss",
+      "module_18_nutritional_lifestyle_and_systemic_support",
+      "module_19_regenerative_medicine_in_trichology",
+      "module_20_principles_of_hair_transplantation",
+      "module_21_advanced_fue_science"
+    ]
+  },
+  {
+    "id": "section_volume_5_advanced_surgical_integration_certification",
+    "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+    "volumeNumber": 5,
+    "title": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "slug": "advanced-surgical-integration-professional-practice-research-and-certification",
+    "status": "draft",
+    "summary": "Advanced section for specialised techniques, donor concepts, ethics, research literacy, capstone integration, and certification.",
+    "moduleOrder": [
+      "module_22_long_hair_fue_and_unshaven_techniques",
+      "module_23_partial_transection_and_regenerative_donor_concepts",
+      "module_24_surgical_recovery_optimisation_and_complication_management",
+      "module_25_consultation_mastery_ethics_and_psychological_care",
+      "module_26_research_literacy_and_evidence_appraisal",
+      "module_27_capstone_case_review_and_clinical_integration",
+      "module_28_final_assessment_and_certification"
+    ]
+  }
+]

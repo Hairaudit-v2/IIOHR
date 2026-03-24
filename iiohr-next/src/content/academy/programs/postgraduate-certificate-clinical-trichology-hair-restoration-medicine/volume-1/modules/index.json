@@ -1,0 +1,194 @@
+[
+  {
+    "id": "module_foundations_intro",
+    "volumeId": "volume_1_foundations_of_clinical_trichology",
+    "moduleNumber": 1,
+    "slug": "introduction-to-clinical-trichology-and-hair-restoration-medicine",
+    "title": "Introduction to Clinical Trichology and Hair Restoration Medicine",
+    "shortTitle": "Introduction to Clinical Trichology",
+    "status": "draft",
+    "estimatedStudyMinutes": 180,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "[Placeholder: academic overview for module 1]",
+      "clinicalContext": "[Placeholder: clinical context for module 1]",
+      "competencies": [
+        "[Placeholder competency: define the scope of clinical trichology]",
+        "[Placeholder competency: relate trichology to broader hair restoration medicine]"
+      ],
+      "learningObjectives": [
+        "[Placeholder objective: define the academic scope of the module]",
+        "[Placeholder objective: identify the doctor-facing role of evidence-led trichology]"
+      ],
+      "keyTakeaways": [
+        "[Placeholder takeaway: trichology sits within a broader clinical decision framework]",
+        "[Placeholder takeaway: standards-led reasoning precedes procedural decision-making]"
+      ],
+      "redFlags": [
+        "[Placeholder red flag: oversimplifying hair loss into cosmetic pattern recognition alone]"
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Foundational evidence framing",
+          "tier": "consensus",
+          "note": "[Placeholder evidence note for module 1]"
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol1_mod1_01",
+      "lesson_vol1_mod1_02",
+      "lesson_vol1_mod1_03",
+      "lesson_vol1_mod1_04"
+    ],
+    "quizIds": ["quiz_vol1_mod1"],
+    "casePromptIds": ["case_vol1_mod1_a"],
+    "downloadableResourceIds": ["resource_module_vol1_mod1_summary"],
+    "referenceIds": ["reference_module_vol1_mod1_01"]
+  },
+  {
+    "id": "module_follicle_biology_scalp_science",
+    "volumeId": "volume_1_foundations_of_clinical_trichology",
+    "moduleNumber": 2,
+    "slug": "hair-follicle-biology-and-scalp-science",
+    "title": "Hair Follicle Biology and Scalp Science",
+    "shortTitle": "Hair Follicle Biology and Scalp Science",
+    "status": "draft",
+    "estimatedStudyMinutes": 210,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "[Placeholder: academic overview for module 2]",
+      "clinicalContext": "[Placeholder: clinical context for module 2]",
+      "competencies": [
+        "[Placeholder competency: describe follicular anatomy at clinical depth]",
+        "[Placeholder competency: relate scalp biology to diagnosis and planning]"
+      ],
+      "learningObjectives": [
+        "[Placeholder objective: identify essential follicular structures]",
+        "[Placeholder objective: connect scalp science to clinically relevant interpretation]"
+      ],
+      "keyTakeaways": [
+        "[Placeholder takeaway: biological literacy underpins diagnostic accuracy]",
+        "[Placeholder takeaway: scalp context influences interpretation, not just follicular morphology]"
+      ],
+      "redFlags": [
+        "[Placeholder red flag: interpreting scalp disease without adequate biological context]"
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Biological evidence framing",
+          "tier": "B",
+          "note": "[Placeholder evidence note for module 2]"
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol1_mod2_01",
+      "lesson_vol1_mod2_02",
+      "lesson_vol1_mod2_03",
+      "lesson_vol1_mod2_04"
+    ],
+    "quizIds": ["quiz_vol1_mod2"],
+    "casePromptIds": ["case_vol1_mod2_a"],
+    "downloadableResourceIds": ["resource_module_vol1_mod2_summary"],
+    "referenceIds": ["reference_module_vol1_mod2_01"]
+  },
+  {
+    "id": "module_molecular_hormonal_regulation",
+    "volumeId": "volume_1_foundations_of_clinical_trichology",
+    "moduleNumber": 3,
+    "slug": "molecular-and-hormonal-regulation-of-hair-growth",
+    "title": "Molecular and Hormonal Regulation of Hair Growth",
+    "shortTitle": "Molecular and Hormonal Regulation",
+    "status": "draft",
+    "estimatedStudyMinutes": 210,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "[Placeholder: academic overview for module 3]",
+      "clinicalContext": "[Placeholder: clinical context for module 3]",
+      "competencies": [
+        "[Placeholder competency: interpret molecular influences on hair cycling]",
+        "[Placeholder competency: relate hormonal regulation to clinical reasoning]"
+      ],
+      "learningObjectives": [
+        "[Placeholder objective: identify core signaling and endocrine drivers]",
+        "[Placeholder objective: connect pathophysiology to consultation and treatment planning]"
+      ],
+      "keyTakeaways": [
+        "[Placeholder takeaway: endocrine and molecular signals should be interpreted in context]",
+        "[Placeholder takeaway: mechanistic knowledge must support, not replace, clinical reasoning]"
+      ],
+      "redFlags": [
+        "[Placeholder red flag: over-attributing hair loss to a single hormonal variable]"
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Mechanistic evidence framing",
+          "tier": "B",
+          "note": "[Placeholder evidence note for module 3]"
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol1_mod3_01",
+      "lesson_vol1_mod3_02",
+      "lesson_vol1_mod3_03",
+      "lesson_vol1_mod3_04"
+    ],
+    "quizIds": ["quiz_vol1_mod3"],
+    "casePromptIds": ["case_vol1_mod3_a"],
+    "downloadableResourceIds": ["resource_module_vol1_mod3_summary"],
+    "referenceIds": ["reference_module_vol1_mod3_01"]
+  },
+  {
+    "id": "module_clinical_consultation_history_taking",
+    "volumeId": "volume_1_foundations_of_clinical_trichology",
+    "moduleNumber": 4,
+    "slug": "clinical-consultation-and-hair-loss-history-taking",
+    "title": "Clinical Consultation and Hair Loss History-Taking",
+    "shortTitle": "Clinical Consultation and History-Taking",
+    "status": "draft",
+    "estimatedStudyMinutes": 180,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "[Placeholder: academic overview for module 4]",
+      "clinicalContext": "[Placeholder: clinical context for module 4]",
+      "competencies": [
+        "[Placeholder competency: conduct a structured hair loss consultation]",
+        "[Placeholder competency: identify red flags and escalation points]"
+      ],
+      "learningObjectives": [
+        "[Placeholder objective: structure a doctor-facing consultation sequence]",
+        "[Placeholder objective: integrate history-taking with early clinical triage]"
+      ],
+      "keyTakeaways": [
+        "[Placeholder takeaway: consultation quality shapes downstream diagnostic quality]",
+        "[Placeholder takeaway: red-flag recognition should be explicit and reproducible]"
+      ],
+      "redFlags": [
+        "[Placeholder red flag: failing to distinguish routine shedding concerns from urgent pathology]"
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Consultation evidence framing",
+          "tier": "consensus",
+          "note": "[Placeholder evidence note for module 4]"
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol1_mod4_01",
+      "lesson_vol1_mod4_02",
+      "lesson_vol1_mod4_03",
+      "lesson_vol1_mod4_04"
+    ],
+    "quizIds": ["quiz_vol1_mod4"],
+    "casePromptIds": ["case_vol1_mod4_a"],
+    "downloadableResourceIds": ["resource_module_vol1_mod4_summary"],
+    "referenceIds": ["reference_module_vol1_mod4_01"]
+  }
+]

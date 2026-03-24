@@ -1,0 +1,27 @@
+[
+  {
+    "id": "level_doctors_postgraduate_certificate",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "slug": "postgraduate-certificate",
+    "title": "Postgraduate Certificate",
+    "awardLabel": "Postgraduate Certificate",
+    "sequence": 1,
+    "status": "draft",
+    "overview": "Doctor-facing postgraduate pathway covering scientific, diagnostic, and therapeutic foundations in hair restoration medicine.",
+    "entryRequirements": [
+      "Doctor, surgeon, or physician audience fit",
+      "Appropriate medical background for postgraduate clinical study"
+    ],
+    "progressionRules": [
+      "Completion remains subject to assessment and faculty review requirements"
+    ],
+    "completionRules": [
+      "Complete required modules and assessments in good academic standing"
+    ],
+    "sectionIds": ["section_doctors_volume_1"],
+    "moduleIds": [],
+    "competencyIds": [],
+    "certificateTemplateKey": "doctor-pgcert-certificate",
+    "badgeTemplateKey": "doctor-pgcert-badge"
+  }
+]

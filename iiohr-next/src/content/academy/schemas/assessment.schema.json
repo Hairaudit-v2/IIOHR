@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/assessment.schema.json",
+  "title": "AcademyAssessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "levelId",
+    "moduleId",
+    "slug",
+    "title",
+    "assessmentType",
+    "status",
+    "instructions",
+    "passMark",
+    "retryLimit",
+    "weighting",
+    "facultyReviewRequired",
+    "mandatoryDomainTags",
+    "competencyIds",
+    "itemIds",
+    "submissionRules",
+    "completionRules"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "levelId": { "type": "string" },
+    "moduleId": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "assessmentType": {
+      "type": "string",
+      "enum": [
+        "weekly-quiz",
+        "short-answer",
+        "image-interpretation",
+        "documentation-exercise",
+        "consultation-note-task",
+        "case-triage-task",
+        "ethical-judgement-task",
+        "communication-scenario",
+        "capstone"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "instructions": { "type": "string" },
+    "passMark": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "retryLimit": { "type": "integer", "minimum": 0 },
+    "weighting": { "type": "integer", "minimum": 1 },
+    "facultyReviewRequired": { "type": "boolean" },
+    "mandatoryDomainTags": { "type": "array", "items": { "type": "string" } },
+    "competencyIds": { "type": "array", "items": { "type": "string" } },
+    "itemIds": { "type": "array", "items": { "type": "string" } },
+    "submissionRules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowDraftSave", "acceptedFormats", "facultyReviewRequired"],
+      "properties": {
+        "allowDraftSave": { "type": "boolean" },
+        "acceptedFormats": { "type": "array", "items": { "type": "string" } },
+        "facultyReviewRequired": { "type": "boolean" }
+      }
+    },
+    "completionRules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passMarkRequired", "facultyApprovalRequired", "mandatoryDomainTags"],
+      "properties": {
+        "passMarkRequired": { "type": "boolean" },
+        "facultyApprovalRequired": { "type": "boolean" },
+        "mandatoryDomainTags": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

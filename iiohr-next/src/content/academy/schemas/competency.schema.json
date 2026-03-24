@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/competency.schema.json",
+  "title": "Competency",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "levelId",
+    "slug",
+    "title",
+    "domain",
+    "description",
+    "sequence",
+    "requiredForAward",
+    "evidenceRequirements",
+    "mustBeFacultyVerified"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "levelId": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "domain": { "type": "string" },
+    "description": { "type": "string" },
+    "sequence": { "type": "integer", "minimum": 1 },
+    "requiredForAward": { "type": "boolean" },
+    "evidenceRequirements": { "type": "array", "items": { "type": "object" } },
+    "mustBeFacultyVerified": { "type": "boolean" }
+  }
+}

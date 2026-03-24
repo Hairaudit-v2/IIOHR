@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/case-study.schema.json",
+  "title": "CaseStudy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "moduleId",
+    "slug",
+    "title",
+    "status",
+    "scenarioSummary",
+    "patientContext",
+    "redFlags",
+    "discussionPrompts",
+    "expectedEscalationPath",
+    "linkedCompetencyIds",
+    "facultyNoteIds",
+    "referenceIds"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "moduleId": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "review", "approved", "published", "archived"] },
+    "scenarioSummary": { "type": "string" },
+    "patientContext": { "type": "string" },
+    "redFlags": { "type": "array", "items": { "type": "string" } },
+    "discussionPrompts": { "type": "array", "items": { "type": "string" } },
+    "expectedEscalationPath": { "type": "string" },
+    "linkedCompetencyIds": { "type": "array", "items": { "type": "string" } },
+    "facultyNoteIds": { "type": "array", "items": { "type": "string" } },
+    "referenceIds": { "type": "array", "items": { "type": "string" } }
+  }
+}

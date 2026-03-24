@@ -1,0 +1,35 @@
+{
+  "progressCalculation": {
+    "lessonWeight": 0.5,
+    "assessmentWeight": 0.35,
+    "capstoneWeight": 0.15
+  },
+  "moduleCompletionRules": [
+    "All required lessons within the module must meet their completion rules.",
+    "Any linked module assessment must reach the configured pass mark before the module is marked complete.",
+    "Modules with faculty-reviewed responses remain in progress until the review state is resolved."
+  ],
+  "assessmentCompletionRules": [
+    "MCQ and image-interpretation items are auto-scored where answer keys are present.",
+    "Short-answer and case-reasoning items can require faculty review before final grading.",
+    "A failed assessment may be retried only within the configured retry allowance."
+  ],
+  "capstoneRequirement": {
+    "moduleSlug": "capstone-case-review-and-clinical-integration",
+    "assessmentType": "capstone-case-review",
+    "facultyReviewRequired": true
+  },
+  "certificateEligibility": [
+    "All 28 modules complete",
+    "All required assessments passed",
+    "Capstone case review passed with faculty approval",
+    "Final assessment and certification module passed",
+    "No unresolved academic integrity or faculty moderation flags"
+  ],
+  "distinctionEligibility": [
+    "Certificate eligibility achieved in full",
+    "Overall assessed average at or above 85 percent",
+    "Capstone and final certification assessments passed on the first permitted sitting",
+    "No unresolved faculty concerns on short-answer or case-based work"
+  ]
+}

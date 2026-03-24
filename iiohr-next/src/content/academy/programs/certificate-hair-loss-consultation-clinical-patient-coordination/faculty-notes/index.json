@@ -1,0 +1,29 @@
+[
+  {
+    "id": "consultants_note_scope_language",
+    "parentType": "program",
+    "parentId": "program_certificate_consultation_patient_coordination",
+    "title": "Scope-safe language standard",
+    "note": "Faculty should reinforce the distinction between triage support, patient education, and diagnosis at every stage of delivery.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "scope calibration"
+  },
+  {
+    "id": "consultants_note_documentation_standard",
+    "parentType": "module",
+    "parentId": "consultants_module_10_clinical_photography_documentation_handover",
+    "title": "Documentation quality threshold",
+    "note": "Documentation tasks should be assessed against completeness, neutrality, and handover usefulness rather than sales style or personality.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "documentation moderation"
+  },
+  {
+    "id": "consultants_note_capstone_review",
+    "parentType": "assessment",
+    "parentId": "consultants_assessment_15_final_competency_assessment",
+    "title": "Capstone moderation note",
+    "note": "Capstone review should confirm integrated use of scope, escalation, communication, and documentation principles before final award recommendation.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "capstone moderation"
+  }
+]

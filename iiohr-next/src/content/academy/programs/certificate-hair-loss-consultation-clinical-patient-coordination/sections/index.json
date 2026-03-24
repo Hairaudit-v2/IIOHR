@@ -1,0 +1,53 @@
+[
+  {
+    "id": "section_consultants_level_1_foundation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "slug": "foundation-practice",
+    "title": "Foundation Practice",
+    "sequence": 1,
+    "status": "draft",
+    "overview": "Foundation section covering role literacy, hair science, consultation structure, and suitability support.",
+    "moduleIds": [
+      "consultants_module_01_role_modern_hair_restoration",
+      "consultants_module_02_foundations_hair_scalp_science",
+      "consultants_module_03_common_hair_loss_presentations",
+      "consultants_module_04_consultation_structure_information_gathering",
+      "consultants_module_05_candidate_screening_suitability_support"
+    ]
+  },
+  {
+    "id": "section_consultants_level_2_advanced",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "slug": "advanced-consultation-practice",
+    "title": "Advanced Consultation Practice",
+    "sequence": 2,
+    "status": "draft",
+    "overview": "Advanced section covering ethics, trust-based communication, treatment education, and handover quality.",
+    "moduleIds": [
+      "consultants_module_06_ethics_consent_scope_of_practice",
+      "consultants_module_07_communication_excellence_trust_based_consultation",
+      "consultants_module_08_non_surgical_treatment_education",
+      "consultants_module_09_surgical_education_for_non_doctors",
+      "consultants_module_10_clinical_photography_documentation_handover"
+    ]
+  },
+  {
+    "id": "section_consultants_level_3_leadership",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "slug": "leadership-and-clinical-coordination",
+    "title": "Leadership and Clinical Coordination",
+    "sequence": 3,
+    "status": "draft",
+    "overview": "Leadership section covering coordinated care, escalation, difficult consultations, audit, and capstone integration.",
+    "moduleIds": [
+      "consultants_module_11_pre_operative_coordination_preparation",
+      "consultants_module_12_post_operative_support_follow_up_escalation",
+      "consultants_module_13_difficult_consultations_high_risk_scenarios",
+      "consultants_module_14_quality_assurance_audit_clinic_standards",
+      "consultants_module_15_final_competency_assessment"
+    ]
+  }
+]

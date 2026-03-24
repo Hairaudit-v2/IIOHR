@@ -1,0 +1,25 @@
+{
+  "id": "assessment_blueprint_postgraduate_certificate_clinical_trichology",
+  "title": "Assessment Blueprint: Postgraduate Certificate in Clinical Trichology and Hair Restoration Medicine",
+  "assessmentTypes": [
+    "mcq",
+    "image-interpretation",
+    "short-answer",
+    "case-reasoning"
+  ],
+  "passMarks": {
+    "default": 70,
+    "capstone": 75,
+    "finalBoard": 80
+  },
+  "retries": {
+    "standard": 2,
+    "capstone": 1,
+    "finalBoard": 1
+  },
+  "facultyReview": {
+    "requiredFor": ["short-answer", "case-reasoning"],
+    "capstoneRequired": true,
+    "finalBoardRequired": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+  "title": "Postgraduate Certificate in Clinical Trichology and Hair Restoration Medicine",
+  "slug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+  "awardType": "postgraduate-certificate",
+  "status": "draft",
+  "description": "Structured postgraduate doctor education in clinical trichology, hair loss medicine, regenerative medicine, and hair restoration surgery.",
+  "targetAudience": ["doctors", "surgeons", "physicians"],
+  "prerequisites": [
+    "Primary medical qualification or equivalent physician-level training",
+    "Current or intended clinical involvement in hair loss medicine, trichology, dermatology, aesthetic medicine, or hair restoration surgery",
+    "Commitment to evidence-led postgraduate study and faculty-reviewed assessment"
+  ],
+  "duration": {
+    "deliveryWindowMonths": null,
+    "estimatedStudyHours": null,
+    "pacingModel": "cohort-flexible postgraduate online delivery"
+  },
+  "outcomes": [
+    "Develop physician-level competence in structured trichology and hair loss assessment",
+    "Interpret follicular biology, endocrine drivers, and scalp disease within a clinical reasoning framework",
+    "Construct evidence-aware therapeutic and regenerative management plans",
+    "Understand candidacy, planning, and foundational science relevant to hair restoration surgery",
+    "Complete capstone case review and final certification assessment under academic governance"
+  ],
+  "certificationRules": {
+    "minimumModuleCompletions": 28,
+    "capstoneModuleSlug": "capstone-case-review-and-clinical-integration",
+    "finalAssessmentModuleSlug": "final-assessment-and-certification",
+    "certificateEligibilityRule": "All required modules, assessments, capstone review, and final faculty checks must be completed in good academic standing.",
+    "distinctionEligibilityRule": "Distinction requires certificate eligibility plus performance at or above the distinction threshold across assessed work without unresolved faculty concerns.",
+    "facultyReviewRequired": true
+  },
+  "sectionOrder": [
+    "section_volume_1_foundations",
+    "section_volume_2_diagnostic_trichology",
+    "section_volume_3_diffuse_shedding_scalp_disease",
+    "section_volume_4_therapeutics_regenerative_surgery_foundations",
+    "section_volume_5_advanced_surgical_integration_certification"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/reference.schema.json",
+  "title": "AcademyReference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "parentType",
+    "parentId",
+    "citation",
+    "sourceType",
+    "year",
+    "url",
+    "notes",
+    "evidenceTier"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "parentType": {
+      "type": "string",
+      "enum": ["stream", "program", "level", "section", "module", "lesson", "assessment", "case-study", "practical-task", "competency"]
+    },
+    "parentId": { "type": "string" },
+    "citation": { "type": "string" },
+    "sourceType": {
+      "type": "string",
+      "enum": [
+        "guideline",
+        "systematic-review",
+        "trial",
+        "review",
+        "textbook",
+        "consensus"
+      ]
+    },
+    "year": { "type": "integer", "minimum": 1900 },
+    "url": { "type": "string", "format": "uri" },
+    "notes": { "type": "string" },
+    "evidenceTier": {
+      "type": "string",
+      "enum": ["A", "B", "C", "consensus"]
+    }
+  }
+}

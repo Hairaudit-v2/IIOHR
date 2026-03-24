@@ -1,0 +1,302 @@
+[
+  {
+    "id": "consultants_competency_01_role_scope_foundations",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "slug": "role-scope-foundations",
+    "title": "Role and Scope Foundations",
+    "domain": "scope-awareness",
+    "description": "Operate within the defined support role and explain why scope boundaries protect patients and clinicians.",
+    "sequence": 1,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_01",
+        "description": "Pass the role and scope assessment",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_02_hair_scalp_literacy",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "slug": "hair-scalp-literacy",
+    "title": "Hair and Scalp Literacy",
+    "domain": "clinical-literacy",
+    "description": "Use appropriate clinical language when discussing hair, scalp, and normal versus abnormal presentations.",
+    "sequence": 2,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_02",
+        "description": "Complete the hair and scalp science assessment",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_03_presentation_literacy",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "slug": "presentation-literacy",
+    "title": "Common Presentation Literacy",
+    "domain": "clinical-literacy",
+    "description": "Recognise common presentation patterns without overstepping into diagnosis.",
+    "sequence": 3,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_03",
+        "description": "Pass presentation recognition items",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_04_structured_information_gathering",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "slug": "structured-information-gathering",
+    "title": "Structured Information Gathering",
+    "domain": "consultation-structure",
+    "description": "Gather information in a standardised, reproducible, doctor-supportive format.",
+    "sequence": 4,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_04",
+        "description": "Submit a structured consultation task",
+        "evidenceType": "practical-task",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": true
+  },
+  {
+    "id": "consultants_competency_05_candidate_screening_support",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_foundation_certificate",
+    "slug": "candidate-screening-support",
+    "title": "Candidate Screening Support",
+    "domain": "escalation-safety",
+    "description": "Support screening through consistent data capture, red flag awareness, and correct escalation.",
+    "sequence": 5,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_05",
+        "description": "Pass triage support questions",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_06_ethics_scope_consent_support",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "slug": "ethics-scope-consent-support",
+    "title": "Ethics, Scope, and Consent Support",
+    "domain": "ethical-practice",
+    "description": "Handle ethical tension, scope limits, and consent support responsibilities safely.",
+    "sequence": 6,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_06",
+        "description": "Pass ethics and scope assessment items",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": true
+  },
+  {
+    "id": "consultants_competency_07_patient_communication",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "slug": "patient-communication",
+    "title": "Patient Communication",
+    "domain": "patient-communication",
+    "description": "Use trust-based, non-misleading, and clinically literate communication with patients.",
+    "sequence": 7,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_07",
+        "description": "Submit a faculty-reviewed communication scenario",
+        "evidenceType": "practical-task",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": true
+  },
+  {
+    "id": "consultants_competency_08_non_surgical_education",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "slug": "non-surgical-education",
+    "title": "Non-Surgical Treatment Education",
+    "domain": "patient-communication",
+    "description": "Explain non-surgical pathways accurately without overpromising or prescribing outside scope.",
+    "sequence": 8,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_08",
+        "description": "Pass treatment education questions",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_09_surgical_pathway_education",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "slug": "surgical-pathway-education",
+    "title": "Surgical Pathway Education",
+    "domain": "patient-communication",
+    "description": "Describe the surgical pathway and patient journey without overstating outcomes or clinical authority.",
+    "sequence": 9,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_09",
+        "description": "Pass surgical education support items",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_10_documentation_handover",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_advanced_certificate",
+    "slug": "documentation-handover",
+    "title": "Documentation and Doctor Handover",
+    "domain": "documentation-handover",
+    "description": "Capture clear clinical documentation and structured handover notes for the treating doctor.",
+    "sequence": 10,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_10",
+        "description": "Submit a faculty-reviewed documentation task",
+        "evidenceType": "practical-task",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": true
+  },
+  {
+    "id": "consultants_competency_11_preoperative_coordination",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "slug": "preoperative-coordination",
+    "title": "Pre-Operative Coordination",
+    "domain": "care-coordination",
+    "description": "Coordinate preparation tasks, documentation, and patient readiness checks in a standards-led way.",
+    "sequence": 11,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_11",
+        "description": "Complete pre-op coordination assessment",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_12_follow_up_escalation",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "slug": "follow-up-escalation",
+    "title": "Post-Operative Follow-Up and Escalation",
+    "domain": "escalation-safety",
+    "description": "Recognise when routine follow-up becomes a doctor-review or escalation scenario.",
+    "sequence": 12,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_12",
+        "description": "Pass escalation-focused assessment items",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_13_high_risk_scenario_management",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "slug": "high-risk-scenario-management",
+    "title": "High-Risk Scenario Management",
+    "domain": "ethical-practice",
+    "description": "Respond safely to difficult consultations, pressure selling risks, and vulnerable patient scenarios.",
+    "sequence": 13,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_13",
+        "description": "Submit a faculty-reviewed difficult consultation response",
+        "evidenceType": "practical-task",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": true
+  },
+  {
+    "id": "consultants_competency_14_quality_assurance_audit",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "slug": "quality-assurance-audit",
+    "title": "Quality Assurance and Audit",
+    "domain": "leadership-quality",
+    "description": "Use standards, templates, and audit logic to support quality improvement at clinic level.",
+    "sequence": 14,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_14",
+        "description": "Pass the quality standards assessment",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "consultants_competency_15_capstone_consultation_pathway",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "levelId": "level_consultants_diploma",
+    "slug": "capstone-consultation-pathway",
+    "title": "Capstone Consultation Pathway",
+    "domain": "care-coordination",
+    "description": "Demonstrate integrated competence across the consultation, triage, documentation, communication, escalation, and handover pathway.",
+    "sequence": 15,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_15",
+        "description": "Pass the capstone pathway assessment and faculty review",
+        "evidenceType": "faculty-review",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": true
+  }
+]

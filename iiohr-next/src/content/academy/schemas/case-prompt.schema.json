@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/case-prompt.schema.json",
+  "title": "AcademyCasePrompt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "moduleId",
+    "parentType",
+    "parentId",
+    "title",
+    "status",
+    "clinicalScenario",
+    "discussionPrompts",
+    "moderatorNotes",
+    "linkedCompetencies",
+    "evidenceTier"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string" },
+    "moduleId": { "type": "string" },
+    "parentType": {
+      "type": "string",
+      "enum": ["volume", "module", "lesson"]
+    },
+    "parentId": { "type": "string" },
+    "title": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "clinicalScenario": { "type": "string" },
+    "discussionPrompts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "moderatorNotes": { "type": "string" },
+    "linkedCompetencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evidenceTier": {
+      "type": "string",
+      "enum": ["A", "B", "C", "consensus"]
+    }
+  }
+}

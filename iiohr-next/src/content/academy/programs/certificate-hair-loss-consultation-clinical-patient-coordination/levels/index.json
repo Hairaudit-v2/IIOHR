@@ -1,0 +1,118 @@
+[
+  {
+    "id": "level_consultants_foundation_certificate",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "slug": "foundation-certificate-hair-loss-consultation",
+    "title": "Level 1: Foundation Certificate in Hair Loss Consultation",
+    "awardLabel": "Foundation Certificate",
+    "sequence": 1,
+    "status": "draft",
+    "overview": "Foundation learning in role boundaries, hair and scalp literacy, structured consultation, and candidate screening support.",
+    "entryRequirements": [
+      "Suitable for consultant, nurse, and coordinator roles in hair restoration",
+      "No independent diagnostic authority is assumed"
+    ],
+    "progressionRules": [
+      "Level 1 must be completed before progression to Level 2",
+      "Mandatory pass applies to ethics-scope and escalation domains"
+    ],
+    "completionRules": [
+      "Complete modules 1 to 5",
+      "Achieve all mapped Level 1 competencies",
+      "Meet the program minimum pass threshold"
+    ],
+    "sectionIds": ["section_consultants_level_1_foundation"],
+    "moduleIds": [
+      "consultants_module_01_role_modern_hair_restoration",
+      "consultants_module_02_foundations_hair_scalp_science",
+      "consultants_module_03_common_hair_loss_presentations",
+      "consultants_module_04_consultation_structure_information_gathering",
+      "consultants_module_05_candidate_screening_suitability_support"
+    ],
+    "competencyIds": [
+      "consultants_competency_01_role_scope_foundations",
+      "consultants_competency_02_hair_scalp_literacy",
+      "consultants_competency_03_presentation_literacy",
+      "consultants_competency_04_structured_information_gathering",
+      "consultants_competency_05_candidate_screening_support"
+    ],
+    "certificateTemplateKey": "consultants-level-1-certificate",
+    "badgeTemplateKey": "consultants-level-1-badge"
+  },
+  {
+    "id": "level_consultants_advanced_certificate",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "slug": "advanced-certificate-hair-restoration-consultation-patient-coordination",
+    "title": "Level 2: Advanced Certificate in Hair Restoration Consultation and Patient Coordination",
+    "awardLabel": "Advanced Certificate",
+    "sequence": 2,
+    "status": "draft",
+    "overview": "Advanced learning in ethics, communication, treatment education, documentation, and coordinated handover.",
+    "entryRequirements": [
+      "Level 1 completion or equivalent internal pathway approval"
+    ],
+    "progressionRules": [
+      "Level 2 builds on Level 1 competency evidence",
+      "Faculty-reviewed documentation tasks must be approved"
+    ],
+    "completionRules": [
+      "Complete modules 6 to 10",
+      "Pass ethics-scope and red-flag domains without exemption"
+    ],
+    "sectionIds": ["section_consultants_level_2_advanced"],
+    "moduleIds": [
+      "consultants_module_06_ethics_consent_scope_of_practice",
+      "consultants_module_07_communication_excellence_trust_based_consultation",
+      "consultants_module_08_non_surgical_treatment_education",
+      "consultants_module_09_surgical_education_for_non_doctors",
+      "consultants_module_10_clinical_photography_documentation_handover"
+    ],
+    "competencyIds": [
+      "consultants_competency_06_ethics_scope_consent_support",
+      "consultants_competency_07_patient_communication",
+      "consultants_competency_08_non_surgical_education",
+      "consultants_competency_09_surgical_pathway_education",
+      "consultants_competency_10_documentation_handover"
+    ],
+    "certificateTemplateKey": "consultants-level-2-certificate",
+    "badgeTemplateKey": "consultants-level-2-badge"
+  },
+  {
+    "id": "level_consultants_diploma",
+    "programId": "program_certificate_consultation_patient_coordination",
+    "slug": "diploma-hair-restoration-consultation-leadership-clinical-coordination",
+    "title": "Level 3: Diploma in Hair Restoration Consultation Leadership and Clinical Coordination",
+    "awardLabel": "Diploma",
+    "sequence": 3,
+    "status": "draft",
+    "overview": "Leadership-level training in pre-op coordination, post-op escalation, difficult consultations, quality standards, and full pathway capstone assessment.",
+    "entryRequirements": [
+      "Successful completion of lower consultant academy levels"
+    ],
+    "progressionRules": [
+      "Final level requires capstone faculty review and competency confirmation"
+    ],
+    "completionRules": [
+      "Complete modules 11 to 15",
+      "Pass final capstone and all mandatory escalation domains",
+      "Achieve all Level 3 competencies"
+    ],
+    "sectionIds": ["section_consultants_level_3_leadership"],
+    "moduleIds": [
+      "consultants_module_11_pre_operative_coordination_preparation",
+      "consultants_module_12_post_operative_support_follow_up_escalation",
+      "consultants_module_13_difficult_consultations_high_risk_scenarios",
+      "consultants_module_14_quality_assurance_audit_clinic_standards",
+      "consultants_module_15_final_competency_assessment"
+    ],
+    "competencyIds": [
+      "consultants_competency_11_preoperative_coordination",
+      "consultants_competency_12_follow_up_escalation",
+      "consultants_competency_13_high_risk_scenario_management",
+      "consultants_competency_14_quality_assurance_audit",
+      "consultants_competency_15_capstone_consultation_pathway"
+    ],
+    "certificateTemplateKey": "consultants-level-3-diploma",
+    "badgeTemplateKey": "consultants-level-3-badge"
+  }
+]

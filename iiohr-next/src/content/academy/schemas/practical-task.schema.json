@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/practical-task.schema.json",
+  "title": "PracticalTask",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "moduleId",
+    "slug",
+    "title",
+    "taskType",
+    "status",
+    "instructions",
+    "submissionFormat",
+    "facultyReviewRequired",
+    "rubric",
+    "linkedCompetencyIds",
+    "linkedComplianceNoticeIds"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "moduleId": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "taskType": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "review", "approved", "published", "archived"] },
+    "instructions": { "type": "string" },
+    "submissionFormat": { "type": "array", "items": { "type": "string" } },
+    "facultyReviewRequired": { "type": "boolean" },
+    "rubric": { "type": "array", "items": { "type": "object" } },
+    "linkedCompetencyIds": { "type": "array", "items": { "type": "string" } },
+    "linkedComplianceNoticeIds": { "type": "array", "items": { "type": "string" } }
+  }
+}

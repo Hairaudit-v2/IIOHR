@@ -1,0 +1,22 @@
+{
+  "lessonNumber": 1,
+  "lessonTitle": "[Placeholder lesson title]",
+  "lessonSlug": "[placeholder-lesson-slug]",
+  "moduleSlug": "[parent-module-slug]",
+  "lessonObjectives": [
+    "[Placeholder lesson objective 1]",
+    "[Placeholder lesson objective 2]"
+  ],
+  "keyTakeaways": [
+    "[Placeholder key takeaway 1]",
+    "[Placeholder key takeaway 2]"
+  ],
+  "redFlags": [
+    "[Placeholder red flag 1]"
+  ],
+  "evidenceTier": "B",
+  "downloadableResourceType": "pdf-summary",
+  "quizLinkage": "[assessment-slug-or-null]",
+  "caseLinkage": "[case-slug-or-null]",
+  "completionRules": ["required-reading", "assessment-pass"]
+}

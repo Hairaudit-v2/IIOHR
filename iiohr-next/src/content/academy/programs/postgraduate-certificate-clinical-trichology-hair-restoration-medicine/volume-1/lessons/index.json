@@ -1,0 +1,706 @@
+[
+  {
+    "id": "lesson_vol1_mod1_01",
+    "moduleId": "module_foundations_intro",
+    "lessonNumber": 1,
+    "slug": "scope-and-definition-of-clinical-trichology",
+    "title": "Scope and Definition of Clinical Trichology",
+    "status": "draft",
+    "estimatedStudyMinutes": 25,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: define the scope of clinical trichology]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod1_01]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod1_01]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod1_01]"
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_01]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod1_01",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_01]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_01]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod1_01_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod1_01"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod1_02",
+    "moduleId": "module_foundations_intro",
+    "lessonNumber": 2,
+    "slug": "discipline-boundaries-and-interfaces",
+    "title": "Discipline Boundaries and Interfaces",
+    "status": "draft",
+    "estimatedStudyMinutes": 25,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: distinguish trichology from adjacent disciplines]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod1_02]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod1_02]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod1_02]"
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_02]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod1_02",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_02]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_02]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod1_02_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod1_02"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod1_03",
+    "moduleId": "module_foundations_intro",
+    "lessonNumber": 3,
+    "slug": "doctor-roles-within-hair-restoration-medicine",
+    "title": "Doctor Roles Within Hair Restoration Medicine",
+    "status": "draft",
+    "estimatedStudyMinutes": 25,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "[Placeholder objective: define doctor-facing roles within the pathway]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod1_03]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod1_03]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod1_03]"
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_03]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod1_03",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_03]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_03]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod1_03_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod1_03"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod1_04",
+    "moduleId": "module_foundations_intro",
+    "lessonNumber": 4,
+    "slug": "evidence-principles-and-standards-led-practice",
+    "title": "Evidence Principles and Standards-Led Practice",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "review-seminar",
+    "learningObjectives": [
+      "[Placeholder objective: apply evidence principles to introductory trichology]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod1_04]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod1_04]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod1_04]"
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_04]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod1_04",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_04]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_04]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod1_04_summary"],
+    "quizId": "quiz_vol1_mod1",
+    "casePromptIds": ["case_vol1_mod1_a"],
+    "referenceIds": ["reference_lesson_vol1_mod1_04"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod2_01",
+    "moduleId": "module_follicle_biology_scalp_science",
+    "lessonNumber": 1,
+    "slug": "follicular-unit-anatomy",
+    "title": "Follicular Unit Anatomy",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: identify key follicular structures]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod2_01]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod2_01]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod2_01]"
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_01]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod2_01",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_01]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_01]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod2_01_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod2_01"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod2_02",
+    "moduleId": "module_follicle_biology_scalp_science",
+    "lessonNumber": 2,
+    "slug": "hair-cycle-biology",
+    "title": "Hair Cycle Biology",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: describe clinically relevant hair cycle phases]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod2_02]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod2_02]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod2_02]"
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_02]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod2_02",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_02]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_02]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod2_02_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod2_02"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod2_03",
+    "moduleId": "module_follicle_biology_scalp_science",
+    "lessonNumber": 3,
+    "slug": "scalp-environment-and-barrier-science",
+    "title": "Scalp Environment and Barrier Science",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "[Placeholder objective: relate scalp environment to interpretation and care]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod2_03]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod2_03]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod2_03]"
+    ],
+    "evidenceTier": {
+      "overall": "C",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_03]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod2_03",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_03]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_03]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod2_03_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod2_03"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod2_04",
+    "moduleId": "module_follicle_biology_scalp_science",
+    "lessonNumber": 4,
+    "slug": "follicular-unit-microanatomy-in-clinical-practice",
+    "title": "Follicular Unit Microanatomy in Clinical Practice",
+    "status": "draft",
+    "estimatedStudyMinutes": 35,
+    "lessonType": "review-seminar",
+    "learningObjectives": [
+      "[Placeholder objective: integrate microanatomy with clinical interpretation]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod2_04]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod2_04]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod2_04]"
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_04]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod2_04",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_04]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_04]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod2_04_summary"],
+    "quizId": "quiz_vol1_mod2",
+    "casePromptIds": ["case_vol1_mod2_a"],
+    "referenceIds": ["reference_lesson_vol1_mod2_04"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod3_01",
+    "moduleId": "module_molecular_hormonal_regulation",
+    "lessonNumber": 1,
+    "slug": "molecular-signaling-pathways-in-hair-cycling",
+    "title": "Molecular Signaling Pathways in Hair Cycling",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: identify core signaling pathways in hair cycling]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod3_01]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod3_01]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod3_01]"
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_01]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod3_01",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_01]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_01]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod3_01_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod3_01"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod3_02",
+    "moduleId": "module_molecular_hormonal_regulation",
+    "lessonNumber": 2,
+    "slug": "androgen-biology-and-follicular-response",
+    "title": "Androgen Biology and Follicular Response",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: relate androgen biology to follicular response]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod3_02]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod3_02]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod3_02]"
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_02]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod3_02",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_02]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_02]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod3_02_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod3_02"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod3_03",
+    "moduleId": "module_molecular_hormonal_regulation",
+    "lessonNumber": 3,
+    "slug": "inflammatory-and-immune-mediators",
+    "title": "Inflammatory and Immune Mediators",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "[Placeholder objective: recognise inflammatory and immune modifiers]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod3_03]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod3_03]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod3_03]"
+    ],
+    "evidenceTier": {
+      "overall": "C",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_03]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod3_03",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_03]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_03]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod3_03_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod3_03"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod3_04",
+    "moduleId": "module_molecular_hormonal_regulation",
+    "lessonNumber": 4,
+    "slug": "systemic-and-metabolic-modifiers",
+    "title": "Systemic and Metabolic Modifiers",
+    "status": "draft",
+    "estimatedStudyMinutes": 35,
+    "lessonType": "review-seminar",
+    "learningObjectives": [
+      "[Placeholder objective: integrate systemic modifiers into clinical reasoning]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod3_04]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod3_04]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod3_04]"
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_04]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod3_04",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_04]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_04]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod3_04_summary"],
+    "quizId": "quiz_vol1_mod3",
+    "casePromptIds": ["case_vol1_mod3_a"],
+    "referenceIds": ["reference_lesson_vol1_mod3_04"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod4_01",
+    "moduleId": "module_clinical_consultation_history_taking",
+    "lessonNumber": 1,
+    "slug": "consultation-framework-for-hair-loss-practice",
+    "title": "Consultation Framework for Hair Loss Practice",
+    "status": "draft",
+    "estimatedStudyMinutes": 25,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: structure the consultation opening and agenda]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod4_01]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod4_01]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod4_01]"
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_01]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod4_01",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_01]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_01]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod4_01_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod4_01"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod4_02",
+    "moduleId": "module_clinical_consultation_history_taking",
+    "lessonNumber": 2,
+    "slug": "structured-hair-loss-history-taking",
+    "title": "Structured Hair Loss History-Taking",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "[Placeholder objective: structure a comprehensive history-taking sequence]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod4_02]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod4_02]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod4_02]"
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_02]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod4_02",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_02]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_02]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod4_02_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod4_02"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod4_03",
+    "moduleId": "module_clinical_consultation_history_taking",
+    "lessonNumber": 3,
+    "slug": "red-flag-recognition-and-escalation",
+    "title": "Red-Flag Recognition and Escalation",
+    "status": "draft",
+    "estimatedStudyMinutes": 25,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "[Placeholder objective: identify escalation triggers and red flags]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod4_03]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod4_03]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod4_03]"
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_03]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod4_03",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_03]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_03]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod4_03_summary"],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": ["reference_lesson_vol1_mod4_03"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol1_mod4_04",
+    "moduleId": "module_clinical_consultation_history_taking",
+    "lessonNumber": 4,
+    "slug": "initial-clinical-reasoning-and-triage",
+    "title": "Initial Clinical Reasoning and Triage",
+    "status": "draft",
+    "estimatedStudyMinutes": 30,
+    "lessonType": "review-seminar",
+    "learningObjectives": [
+      "[Placeholder objective: integrate consultation data into triage reasoning]"
+    ],
+    "body": {
+      "format": "richText",
+      "content": "[Placeholder rich text body for lesson_vol1_mod4_04]"
+    },
+    "keyTakeaways": [
+      "[Placeholder takeaway for lesson_vol1_mod4_04]"
+    ],
+    "redFlags": [
+      "[Placeholder red flag for lesson_vol1_mod4_04]"
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_04]"
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_vol1_mod4_04",
+        "title": "Clinical Reasoning",
+        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_04]",
+        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_04]"
+      }
+    ],
+    "downloadableResourceIds": ["resource_lesson_vol1_mod4_04_summary"],
+    "quizId": "quiz_vol1_mod4",
+    "casePromptIds": ["case_vol1_mod4_a"],
+    "referenceIds": ["reference_lesson_vol1_mod4_04"],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  }
+]

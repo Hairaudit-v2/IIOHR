@@ -1,0 +1,96 @@
+{
+  "id": "program_certificate_consultation_patient_coordination",
+  "streamSlug": "consultants",
+  "slug": "certificate-hair-loss-consultation-clinical-patient-coordination",
+  "title": "IIOHR Certificate in Hair Loss Consultation and Clinical Patient Coordination",
+  "workingTitle": "IIOHR Certificate in Hair Loss Consultation & Clinical Patient Coordination",
+  "awardType": "certificate",
+  "status": "draft",
+  "overview": "A structured consultant and nurse academy pathway focused on safer consultation support, ethical patient communication, documentation, triage support, and coordinated care in hair restoration.",
+  "whoItsFor": [
+    "Consultants and nurse educators working in hair restoration clinics",
+    "Patient coordinators and treatment coordinators supporting doctor-led pathways",
+    "Senior patient-facing staff who require structured clinical literacy within a clear scope of practice"
+  ],
+  "whyItMatters": [
+    "Professionalises the front line of the patient journey",
+    "Improves patient safety, trust, and doctor handover quality",
+    "Creates a scalable clinic-facing education and licensing foundation"
+  ],
+  "deliveryModel": [
+    "Standards-led online curriculum with modular progression",
+    "Mixed auto-graded and faculty-reviewed assessment",
+    "Competency-led completion with certificate, badge, and transcript outputs"
+  ],
+  "certificationSummary": [
+    "The pathway supports a Certificate of Completion, Competency Record, and Digital Badge",
+    "Final award eligibility is based on competency achievement, assessment thresholds, and mandatory safety domain passes"
+  ],
+  "clinicLicensingSummary": [
+    "Program architecture is designed to support future clinic licensing dashboards and staff enrolment at scale",
+    "Manager and educator oversight can be added on top of the same shared operational layer"
+  ],
+  "faqSummary": [
+    "The program develops competency in consultation support, patient education, and care coordination",
+    "It does not grant independent diagnostic authority or replace regulated surgical training"
+  ],
+  "applyCta": {
+    "href": "/consultants/programs/certificate-hair-loss-consultation-clinical-patient-coordination",
+    "label": "Explore Consultant Program"
+  },
+  "duration": {
+    "deliveryWindowMonths": 9,
+    "estimatedStudyHours": 120,
+    "pacingModel": "level-based online delivery with flexible clinic scheduling"
+  },
+  "levelIds": [
+    "level_consultants_foundation_certificate",
+    "level_consultants_advanced_certificate",
+    "level_consultants_diploma"
+  ],
+  "sectionIds": [
+    "section_consultants_level_1_foundation",
+    "section_consultants_level_2_advanced",
+    "section_consultants_level_3_leadership"
+  ],
+  "moduleIds": [
+    "consultants_module_01_role_modern_hair_restoration",
+    "consultants_module_02_foundations_hair_scalp_science",
+    "consultants_module_03_common_hair_loss_presentations",
+    "consultants_module_04_consultation_structure_information_gathering",
+    "consultants_module_05_candidate_screening_suitability_support",
+    "consultants_module_06_ethics_consent_scope_of_practice",
+    "consultants_module_07_communication_excellence_trust_based_consultation",
+    "consultants_module_08_non_surgical_treatment_education",
+    "consultants_module_09_surgical_education_for_non_doctors",
+    "consultants_module_10_clinical_photography_documentation_handover",
+    "consultants_module_11_pre_operative_coordination_preparation",
+    "consultants_module_12_post_operative_support_follow_up_escalation",
+    "consultants_module_13_difficult_consultations_high_risk_scenarios",
+    "consultants_module_14_quality_assurance_audit_clinic_standards",
+    "consultants_module_15_final_competency_assessment"
+  ],
+  "competencyIds": [
+    "consultants_competency_01_role_scope_foundations",
+    "consultants_competency_02_hair_scalp_literacy",
+    "consultants_competency_03_presentation_literacy",
+    "consultants_competency_04_structured_information_gathering",
+    "consultants_competency_05_candidate_screening_support",
+    "consultants_competency_06_ethics_scope_consent_support",
+    "consultants_competency_07_patient_communication",
+    "consultants_competency_08_non_surgical_education",
+    "consultants_competency_09_surgical_pathway_education",
+    "consultants_competency_10_documentation_handover",
+    "consultants_competency_11_preoperative_coordination",
+    "consultants_competency_12_follow_up_escalation",
+    "consultants_competency_13_high_risk_scenario_management",
+    "consultants_competency_14_quality_assurance_audit",
+    "consultants_competency_15_capstone_consultation_pathway"
+  ],
+  "complianceNoticeIds": [
+    "notice_consultants_competency_scope",
+    "notice_consultants_no_diagnostic_authority",
+    "notice_consultants_no_surgical_training",
+    "notice_consultants_escalation_duty"
+  ]
+}

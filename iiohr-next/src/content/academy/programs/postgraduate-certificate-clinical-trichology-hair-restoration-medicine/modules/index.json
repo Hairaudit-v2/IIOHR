@@ -1,0 +1,590 @@
+[
+  {
+    "id": "module_01_introduction_to_clinical_trichology_and_hair_restoration_medicine",
+    "moduleNumber": 1,
+    "title": "Introduction to Clinical Trichology and Hair Restoration Medicine",
+    "slug": "introduction-to-clinical-trichology-and-hair-restoration-medicine",
+    "volumeNumber": 1,
+    "sectionId": "section_volume_1_foundations",
+    "sectionTitle": "Foundations of Clinical Trichology",
+    "overview": "[Placeholder overview for Module 01]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 01]",
+      "[Placeholder learning outcome 2 for Module 01]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 01]",
+      "[Placeholder competency 2 for Module 01]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 1,
+    "assessmentType": "mixed-knowledge-check"
+  },
+  {
+    "id": "module_02_hair_follicle_biology_and_scalp_science",
+    "moduleNumber": 2,
+    "title": "Hair Follicle Biology and Scalp Science",
+    "slug": "hair-follicle-biology-and-scalp-science",
+    "volumeNumber": 1,
+    "sectionId": "section_volume_1_foundations",
+    "sectionTitle": "Foundations of Clinical Trichology",
+    "overview": "[Placeholder overview for Module 02]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 02]",
+      "[Placeholder learning outcome 2 for Module 02]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 02]",
+      "[Placeholder competency 2 for Module 02]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 2,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_03_molecular_and_hormonal_regulation_of_hair_growth",
+    "moduleNumber": 3,
+    "title": "Molecular and Hormonal Regulation of Hair Growth",
+    "slug": "molecular-and-hormonal-regulation-of-hair-growth",
+    "volumeNumber": 1,
+    "sectionId": "section_volume_1_foundations",
+    "sectionTitle": "Foundations of Clinical Trichology",
+    "overview": "[Placeholder overview for Module 03]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 03]",
+      "[Placeholder learning outcome 2 for Module 03]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 03]",
+      "[Placeholder competency 2 for Module 03]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 3,
+    "assessmentType": "mixed-knowledge-check"
+  },
+  {
+    "id": "module_04_clinical_consultation_and_hair_loss_history_taking",
+    "moduleNumber": 4,
+    "title": "Clinical Consultation and Hair Loss History-Taking",
+    "slug": "clinical-consultation-and-hair-loss-history-taking",
+    "volumeNumber": 1,
+    "sectionId": "section_volume_1_foundations",
+    "sectionTitle": "Foundations of Clinical Trichology",
+    "overview": "[Placeholder overview for Module 04]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 04]",
+      "[Placeholder learning outcome 2 for Module 04]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 04]",
+      "[Placeholder competency 2 for Module 04]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 4,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_05_clinical_examination_of_hair_and_scalp",
+    "moduleNumber": 5,
+    "title": "Clinical Examination of Hair and Scalp",
+    "slug": "clinical-examination-of-hair-and-scalp",
+    "volumeNumber": 2,
+    "sectionId": "section_volume_2_diagnostic_trichology",
+    "sectionTitle": "Diagnostic Trichology and Pattern Hair Loss Medicine",
+    "overview": "[Placeholder overview for Module 05]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 05]",
+      "[Placeholder learning outcome 2 for Module 05]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 05]",
+      "[Placeholder competency 2 for Module 05]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 5,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_06_trichoscopy_foundations_to_advanced_interpretation",
+    "moduleNumber": 6,
+    "title": "Trichoscopy: Foundations to Advanced Interpretation",
+    "slug": "trichoscopy-foundations-to-advanced-interpretation",
+    "volumeNumber": 2,
+    "sectionId": "section_volume_2_diagnostic_trichology",
+    "sectionTitle": "Diagnostic Trichology and Pattern Hair Loss Medicine",
+    "overview": "[Placeholder overview for Module 06]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 06]",
+      "[Placeholder learning outcome 2 for Module 06]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 06]",
+      "[Placeholder competency 2 for Module 06]"
+    ],
+    "estimatedStudyMinutes": 240,
+    "unlockOrder": 6,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_07_laboratory_investigations_endocrine_workup_and_biopsy_logic",
+    "moduleNumber": 7,
+    "title": "Laboratory Investigations, Endocrine Workup, and Biopsy Logic",
+    "slug": "laboratory-investigations-endocrine-workup-and-biopsy-logic",
+    "volumeNumber": 2,
+    "sectionId": "section_volume_2_diagnostic_trichology",
+    "sectionTitle": "Diagnostic Trichology and Pattern Hair Loss Medicine",
+    "overview": "[Placeholder overview for Module 07]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 07]",
+      "[Placeholder learning outcome 2 for Module 07]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 07]",
+      "[Placeholder competency 2 for Module 07]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 7,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_08_androgenetic_alopecia_in_males",
+    "moduleNumber": 8,
+    "title": "Androgenetic Alopecia in Males",
+    "slug": "androgenetic-alopecia-in-males",
+    "volumeNumber": 2,
+    "sectionId": "section_volume_2_diagnostic_trichology",
+    "sectionTitle": "Diagnostic Trichology and Pattern Hair Loss Medicine",
+    "overview": "[Placeholder overview for Module 08]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 08]",
+      "[Placeholder learning outcome 2 for Module 08]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 08]",
+      "[Placeholder competency 2 for Module 08]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 8,
+    "assessmentType": "mixed-knowledge-check"
+  },
+  {
+    "id": "module_09_female_pattern_hair_loss_and_hormonal_hair_loss_in_women",
+    "moduleNumber": 9,
+    "title": "Female Pattern Hair Loss and Hormonal Hair Loss in Women",
+    "slug": "female-pattern-hair-loss-and-hormonal-hair-loss-in-women",
+    "volumeNumber": 2,
+    "sectionId": "section_volume_2_diagnostic_trichology",
+    "sectionTitle": "Diagnostic Trichology and Pattern Hair Loss Medicine",
+    "overview": "[Placeholder overview for Module 09]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 09]",
+      "[Placeholder learning outcome 2 for Module 09]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 09]",
+      "[Placeholder competency 2 for Module 09]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 9,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_10_telogen_effluvium_and_diffuse_shedding_disorders",
+    "moduleNumber": 10,
+    "title": "Telogen Effluvium and Diffuse Shedding Disorders",
+    "slug": "telogen-effluvium-and-diffuse-shedding-disorders",
+    "volumeNumber": 3,
+    "sectionId": "section_volume_3_diffuse_shedding_scalp_disease",
+    "sectionTitle": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "overview": "[Placeholder overview for Module 10]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 10]",
+      "[Placeholder learning outcome 2 for Module 10]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 10]",
+      "[Placeholder competency 2 for Module 10]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 10,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_11_alopecia_areata_and_immune_mediated_hair_loss",
+    "moduleNumber": 11,
+    "title": "Alopecia Areata and Immune-Mediated Hair Loss",
+    "slug": "alopecia-areata-and-immune-mediated-hair-loss",
+    "volumeNumber": 3,
+    "sectionId": "section_volume_3_diffuse_shedding_scalp_disease",
+    "sectionTitle": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "overview": "[Placeholder overview for Module 11]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 11]",
+      "[Placeholder learning outcome 2 for Module 11]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 11]",
+      "[Placeholder competency 2 for Module 11]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 11,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_12_hair_shaft_disorders_and_breakage_syndromes",
+    "moduleNumber": 12,
+    "title": "Hair Shaft Disorders and Breakage Syndromes",
+    "slug": "hair-shaft-disorders-and-breakage-syndromes",
+    "volumeNumber": 3,
+    "sectionId": "section_volume_3_diffuse_shedding_scalp_disease",
+    "sectionTitle": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "overview": "[Placeholder overview for Module 12]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 12]",
+      "[Placeholder learning outcome 2 for Module 12]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 12]",
+      "[Placeholder competency 2 for Module 12]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 12,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_13_principles_of_cicatricial_alopecia",
+    "moduleNumber": 13,
+    "title": "Principles of Cicatricial Alopecia",
+    "slug": "principles-of-cicatricial-alopecia",
+    "volumeNumber": 3,
+    "sectionId": "section_volume_3_diffuse_shedding_scalp_disease",
+    "sectionTitle": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "overview": "[Placeholder overview for Module 13]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 13]",
+      "[Placeholder learning outcome 2 for Module 13]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 13]",
+      "[Placeholder competency 2 for Module 13]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 13,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_14_lymphocytic_cicatricial_alopecias",
+    "moduleNumber": 14,
+    "title": "Lymphocytic Cicatricial Alopecias",
+    "slug": "lymphocytic-cicatricial-alopecias",
+    "volumeNumber": 3,
+    "sectionId": "section_volume_3_diffuse_shedding_scalp_disease",
+    "sectionTitle": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "overview": "[Placeholder overview for Module 14]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 14]",
+      "[Placeholder learning outcome 2 for Module 14]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 14]",
+      "[Placeholder competency 2 for Module 14]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 14,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_15_neutrophilic_and_mixed_cicatricial_alopecias",
+    "moduleNumber": 15,
+    "title": "Neutrophilic and Mixed Cicatricial Alopecias",
+    "slug": "neutrophilic-and-mixed-cicatricial-alopecias",
+    "volumeNumber": 3,
+    "sectionId": "section_volume_3_diffuse_shedding_scalp_disease",
+    "sectionTitle": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "overview": "[Placeholder overview for Module 15]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 15]",
+      "[Placeholder learning outcome 2 for Module 15]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 15]",
+      "[Placeholder competency 2 for Module 15]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 15,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_16_inflammatory_and_infectious_scalp_disorders",
+    "moduleNumber": 16,
+    "title": "Inflammatory and Infectious Scalp Disorders",
+    "slug": "inflammatory-and-infectious-scalp-disorders",
+    "volumeNumber": 3,
+    "sectionId": "section_volume_3_diffuse_shedding_scalp_disease",
+    "sectionTitle": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+    "overview": "[Placeholder overview for Module 16]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 16]",
+      "[Placeholder learning outcome 2 for Module 16]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 16]",
+      "[Placeholder competency 2 for Module 16]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 16,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_17_medical_management_of_hair_loss",
+    "moduleNumber": 17,
+    "title": "Medical Management of Hair Loss",
+    "slug": "medical-management-of-hair-loss",
+    "volumeNumber": 4,
+    "sectionId": "section_volume_4_therapeutics_regenerative_surgery_foundations",
+    "sectionTitle": "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery",
+    "overview": "[Placeholder overview for Module 17]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 17]",
+      "[Placeholder learning outcome 2 for Module 17]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 17]",
+      "[Placeholder competency 2 for Module 17]"
+    ],
+    "estimatedStudyMinutes": 240,
+    "unlockOrder": 17,
+    "assessmentType": "mixed-knowledge-check"
+  },
+  {
+    "id": "module_18_nutritional_lifestyle_and_systemic_support",
+    "moduleNumber": 18,
+    "title": "Nutritional, Lifestyle, and Systemic Support",
+    "slug": "nutritional-lifestyle-and-systemic-support",
+    "volumeNumber": 4,
+    "sectionId": "section_volume_4_therapeutics_regenerative_surgery_foundations",
+    "sectionTitle": "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery",
+    "overview": "[Placeholder overview for Module 18]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 18]",
+      "[Placeholder learning outcome 2 for Module 18]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 18]",
+      "[Placeholder competency 2 for Module 18]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 18,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_19_regenerative_medicine_in_trichology",
+    "moduleNumber": 19,
+    "title": "Regenerative Medicine in Trichology",
+    "slug": "regenerative-medicine-in-trichology",
+    "volumeNumber": 4,
+    "sectionId": "section_volume_4_therapeutics_regenerative_surgery_foundations",
+    "sectionTitle": "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery",
+    "overview": "[Placeholder overview for Module 19]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 19]",
+      "[Placeholder learning outcome 2 for Module 19]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 19]",
+      "[Placeholder competency 2 for Module 19]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 19,
+    "assessmentType": "mixed-knowledge-check"
+  },
+  {
+    "id": "module_20_principles_of_hair_transplantation",
+    "moduleNumber": 20,
+    "title": "Principles of Hair Transplantation",
+    "slug": "principles-of-hair-transplantation",
+    "volumeNumber": 4,
+    "sectionId": "section_volume_4_therapeutics_regenerative_surgery_foundations",
+    "sectionTitle": "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery",
+    "overview": "[Placeholder overview for Module 20]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 20]",
+      "[Placeholder learning outcome 2 for Module 20]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 20]",
+      "[Placeholder competency 2 for Module 20]"
+    ],
+    "estimatedStudyMinutes": 240,
+    "unlockOrder": 20,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_21_advanced_fue_science",
+    "moduleNumber": 21,
+    "title": "Advanced FUE Science",
+    "slug": "advanced-fue-science",
+    "volumeNumber": 4,
+    "sectionId": "section_volume_4_therapeutics_regenerative_surgery_foundations",
+    "sectionTitle": "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery",
+    "overview": "[Placeholder overview for Module 21]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 21]",
+      "[Placeholder learning outcome 2 for Module 21]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 21]",
+      "[Placeholder competency 2 for Module 21]"
+    ],
+    "estimatedStudyMinutes": 240,
+    "unlockOrder": 21,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_22_long_hair_fue_and_unshaven_techniques",
+    "moduleNumber": 22,
+    "title": "Long Hair FUE and Unshaven Techniques",
+    "slug": "long-hair-fue-and-unshaven-techniques",
+    "volumeNumber": 5,
+    "sectionId": "section_volume_5_advanced_surgical_integration_certification",
+    "sectionTitle": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "overview": "[Placeholder overview for Module 22]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 22]",
+      "[Placeholder learning outcome 2 for Module 22]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 22]",
+      "[Placeholder competency 2 for Module 22]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 22,
+    "assessmentType": "image-interpretation-intensive"
+  },
+  {
+    "id": "module_23_partial_transection_and_regenerative_donor_concepts",
+    "moduleNumber": 23,
+    "title": "Partial Transection and Regenerative Donor Concepts",
+    "slug": "partial-transection-and-regenerative-donor-concepts",
+    "volumeNumber": 5,
+    "sectionId": "section_volume_5_advanced_surgical_integration_certification",
+    "sectionTitle": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "overview": "[Placeholder overview for Module 23]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 23]",
+      "[Placeholder learning outcome 2 for Module 23]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 23]",
+      "[Placeholder competency 2 for Module 23]"
+    ],
+    "estimatedStudyMinutes": 210,
+    "unlockOrder": 23,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_24_surgical_recovery_optimisation_and_complication_management",
+    "moduleNumber": 24,
+    "title": "Surgical Recovery, Optimisation, and Complication Management",
+    "slug": "surgical-recovery-optimisation-and-complication-management",
+    "volumeNumber": 5,
+    "sectionId": "section_volume_5_advanced_surgical_integration_certification",
+    "sectionTitle": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "overview": "[Placeholder overview for Module 24]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 24]",
+      "[Placeholder learning outcome 2 for Module 24]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 24]",
+      "[Placeholder competency 2 for Module 24]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 24,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_25_consultation_mastery_ethics_and_psychological_care",
+    "moduleNumber": 25,
+    "title": "Consultation Mastery, Ethics, and Psychological Care",
+    "slug": "consultation-mastery-ethics-and-psychological-care",
+    "volumeNumber": 5,
+    "sectionId": "section_volume_5_advanced_surgical_integration_certification",
+    "sectionTitle": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "overview": "[Placeholder overview for Module 25]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 25]",
+      "[Placeholder learning outcome 2 for Module 25]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 25]",
+      "[Placeholder competency 2 for Module 25]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 25,
+    "assessmentType": "case-reasoning-intensive"
+  },
+  {
+    "id": "module_26_research_literacy_and_evidence_appraisal",
+    "moduleNumber": 26,
+    "title": "Research Literacy and Evidence Appraisal",
+    "slug": "research-literacy-and-evidence-appraisal",
+    "volumeNumber": 5,
+    "sectionId": "section_volume_5_advanced_surgical_integration_certification",
+    "sectionTitle": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "overview": "[Placeholder overview for Module 26]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 26]",
+      "[Placeholder learning outcome 2 for Module 26]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 26]",
+      "[Placeholder competency 2 for Module 26]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 26,
+    "assessmentType": "research-appraisal"
+  },
+  {
+    "id": "module_27_capstone_case_review_and_clinical_integration",
+    "moduleNumber": 27,
+    "title": "Capstone Case Review and Clinical Integration",
+    "slug": "capstone-case-review-and-clinical-integration",
+    "volumeNumber": 5,
+    "sectionId": "section_volume_5_advanced_surgical_integration_certification",
+    "sectionTitle": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "overview": "[Placeholder overview for Module 27]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 27]",
+      "[Placeholder learning outcome 2 for Module 27]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 27]",
+      "[Placeholder competency 2 for Module 27]"
+    ],
+    "estimatedStudyMinutes": 240,
+    "unlockOrder": 27,
+    "assessmentType": "capstone-case-review"
+  },
+  {
+    "id": "module_28_final_assessment_and_certification",
+    "moduleNumber": 28,
+    "title": "Final Assessment and Certification",
+    "slug": "final-assessment-and-certification",
+    "volumeNumber": 5,
+    "sectionId": "section_volume_5_advanced_surgical_integration_certification",
+    "sectionTitle": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+    "overview": "[Placeholder overview for Module 28]",
+    "learningOutcomes": [
+      "[Placeholder learning outcome 1 for Module 28]",
+      "[Placeholder learning outcome 2 for Module 28]"
+    ],
+    "competencies": [
+      "[Placeholder competency 1 for Module 28]",
+      "[Placeholder competency 2 for Module 28]"
+    ],
+    "estimatedStudyMinutes": 180,
+    "unlockOrder": 28,
+    "assessmentType": "final-certification-board"
+  }
+]

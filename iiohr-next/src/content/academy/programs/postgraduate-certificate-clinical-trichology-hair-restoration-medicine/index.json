@@ -1,0 +1,54 @@
+{
+  "id": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+  "streamSlug": "doctors",
+  "slug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+  "title": "Postgraduate Certificate in Clinical Trichology and Hair Restoration Medicine",
+  "workingTitle": "Postgraduate Certificate in Clinical Trichology and Hair Restoration Medicine",
+  "awardType": "postgraduate-certificate",
+  "status": "draft",
+  "overview": "Structured doctor education in clinical trichology, diagnostic reasoning, therapeutics, and surgical foundations within an academic IIOHR framework.",
+  "whoItsFor": [
+    "Doctors entering or advancing in hair restoration medicine",
+    "Physicians seeking structured clinical trichology education",
+    "Surgeons requiring evidence-led academic grounding"
+  ],
+  "whyItMatters": [
+    "Creates a consistent standards-led route into the specialty",
+    "Supports safer clinical reasoning and case selection",
+    "Links academic training to faculty oversight and certification"
+  ],
+  "deliveryModel": [
+    "Online structured curriculum",
+    "Faculty-reviewed assessment",
+    "Progression-led certification pathway"
+  ],
+  "certificationSummary": [
+    "Certificate eligibility requires completion of required modules and assessments",
+    "Faculty review remains part of final certification governance"
+  ],
+  "clinicLicensingSummary": [
+    "Doctor stream is designed to sit within wider clinic and faculty ecosystems",
+    "Future clinic-facing reporting can be layered onto the shared academy core"
+  ],
+  "faqSummary": [
+    "Program routes remain separate from consultant education",
+    "Curriculum remains clinically and academically framed"
+  ],
+  "applyCta": {
+    "href": "/apply",
+    "label": "Apply for Doctor Training"
+  },
+  "duration": {
+    "deliveryWindowMonths": null,
+    "estimatedStudyHours": null,
+    "pacingModel": "cohort-flexible postgraduate online delivery"
+  },
+  "levelIds": ["level_doctors_postgraduate_certificate"],
+  "sectionIds": ["section_doctors_volume_1"],
+  "moduleIds": [],
+  "competencyIds": [],
+  "complianceNoticeIds": [
+    "notice_doctors_medical_scope",
+    "notice_doctors_surgical_training"
+  ]
+}

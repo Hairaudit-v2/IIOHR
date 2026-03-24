@@ -1,0 +1,78 @@
+[
+  {
+    "id": "case_vol1_mod1_a",
+    "slug": "introductory-scope-and-boundaries-case",
+    "moduleId": "module_foundations_intro",
+    "parentType": "module",
+    "parentId": "module_foundations_intro",
+    "title": "Case Discussion Prompt: Scope, Boundaries, and Clinical Framing",
+    "status": "draft",
+    "clinicalScenario": "[Placeholder scenario summary for module 1 case prompt]",
+    "discussionPrompts": [
+      "[Placeholder prompt 1 for module 1 case discussion]",
+      "[Placeholder prompt 2 for module 1 case discussion]"
+    ],
+    "moderatorNotes": "[Placeholder faculty moderation note for module 1 case discussion]",
+    "linkedCompetencies": [
+      "[Placeholder competency link for module 1 case discussion]"
+    ],
+    "evidenceTier": "consensus"
+  },
+  {
+    "id": "case_vol1_mod2_a",
+    "slug": "follicle-biology-and-scalp-interpretation-case",
+    "moduleId": "module_follicle_biology_scalp_science",
+    "parentType": "module",
+    "parentId": "module_follicle_biology_scalp_science",
+    "title": "Case Discussion Prompt: Follicle Biology and Scalp Interpretation",
+    "status": "draft",
+    "clinicalScenario": "[Placeholder scenario summary for module 2 case prompt]",
+    "discussionPrompts": [
+      "[Placeholder prompt 1 for module 2 case discussion]",
+      "[Placeholder prompt 2 for module 2 case discussion]"
+    ],
+    "moderatorNotes": "[Placeholder faculty moderation note for module 2 case discussion]",
+    "linkedCompetencies": [
+      "[Placeholder competency link for module 2 case discussion]"
+    ],
+    "evidenceTier": "B"
+  },
+  {
+    "id": "case_vol1_mod3_a",
+    "slug": "molecular-hormonal-pattern-recognition-case",
+    "moduleId": "module_molecular_hormonal_regulation",
+    "parentType": "module",
+    "parentId": "module_molecular_hormonal_regulation",
+    "title": "Case Discussion Prompt: Molecular and Hormonal Pattern Recognition",
+    "status": "draft",
+    "clinicalScenario": "[Placeholder scenario summary for module 3 case prompt]",
+    "discussionPrompts": [
+      "[Placeholder prompt 1 for module 3 case discussion]",
+      "[Placeholder prompt 2 for module 3 case discussion]"
+    ],
+    "moderatorNotes": "[Placeholder faculty moderation note for module 3 case discussion]",
+    "linkedCompetencies": [
+      "[Placeholder competency link for module 3 case discussion]"
+    ],
+    "evidenceTier": "B"
+  },
+  {
+    "id": "case_vol1_mod4_a",
+    "slug": "consultation-history-and-triage-case",
+    "moduleId": "module_clinical_consultation_history_taking",
+    "parentType": "module",
+    "parentId": "module_clinical_consultation_history_taking",
+    "title": "Case Discussion Prompt: Consultation, History, and Triage",
+    "status": "draft",
+    "clinicalScenario": "[Placeholder scenario summary for module 4 case prompt]",
+    "discussionPrompts": [
+      "[Placeholder prompt 1 for module 4 case discussion]",
+      "[Placeholder prompt 2 for module 4 case discussion]"
+    ],
+    "moderatorNotes": "[Placeholder faculty moderation note for module 4 case discussion]",
+    "linkedCompetencies": [
+      "[Placeholder competency link for module 4 case discussion]"
+    ],
+    "evidenceTier": "consensus"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/section.schema.json",
+  "title": "AcademySection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "levelId",
+    "slug",
+    "title",
+    "sequence",
+    "status",
+    "overview",
+    "moduleIds"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "levelId": { "type": "string" },
+    "title": { "type": "string" },
+    "slug": { "type": "string" },
+    "sequence": { "type": "integer", "minimum": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "overview": { "type": "string" },
+    "moduleIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

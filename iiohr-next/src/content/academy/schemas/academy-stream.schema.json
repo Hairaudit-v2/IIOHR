@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/academy-stream.schema.json",
+  "title": "AcademyStream",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "shortTitle",
+    "status",
+    "audiences",
+    "positioning",
+    "guidingPrinciples",
+    "complianceNoticeIds",
+    "programIds",
+    "brandProfiles"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string", "enum": ["doctors", "consultants"] },
+    "title": { "type": "string" },
+    "shortTitle": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "review", "approved", "published", "archived"] },
+    "audiences": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "doctor",
+          "surgeon",
+          "physician",
+          "consultant",
+          "nurse",
+          "patient-coordinator",
+          "treatment-coordinator",
+          "clinic-manager",
+          "senior-patient-facing-staff"
+        ]
+      }
+    },
+    "positioning": { "type": "string" },
+    "guidingPrinciples": { "type": "array", "items": { "type": "string" } },
+    "complianceNoticeIds": { "type": "array", "items": { "type": "string" } },
+    "programIds": { "type": "array", "items": { "type": "string" } },
+    "brandProfiles": { "type": "array", "items": { "type": "string" } }
+  }
+}

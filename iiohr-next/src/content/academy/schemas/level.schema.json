@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/level.schema.json",
+  "title": "AcademyLevel",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "slug",
+    "title",
+    "awardLabel",
+    "sequence",
+    "status",
+    "overview",
+    "entryRequirements",
+    "progressionRules",
+    "completionRules",
+    "sectionIds",
+    "moduleIds",
+    "competencyIds",
+    "certificateTemplateKey",
+    "badgeTemplateKey"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "awardLabel": { "type": "string" },
+    "sequence": { "type": "integer", "minimum": 1 },
+    "status": { "type": "string", "enum": ["draft", "review", "approved", "published", "archived"] },
+    "overview": { "type": "string" },
+    "entryRequirements": { "type": "array", "items": { "type": "string" } },
+    "progressionRules": { "type": "array", "items": { "type": "string" } },
+    "completionRules": { "type": "array", "items": { "type": "string" } },
+    "sectionIds": { "type": "array", "items": { "type": "string" } },
+    "moduleIds": { "type": "array", "items": { "type": "string" } },
+    "competencyIds": { "type": "array", "items": { "type": "string" } },
+    "certificateTemplateKey": { "type": "string" },
+    "badgeTemplateKey": { "type": "string" }
+  }
+}

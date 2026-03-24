@@ -1,0 +1,53 @@
+{
+  "statuses": ["draft", "review", "approved", "published", "archived"],
+  "stages": [
+    {
+      "id": "program-setup",
+      "title": "Program setup",
+      "ownerRole": "Academic admin",
+      "action": "Create the program shell, section order, module catalog, and source-material manifest."
+    },
+    {
+      "id": "content-ingestion",
+      "title": "Content ingestion",
+      "ownerRole": "Content coordinator",
+      "action": "Enter source-material metadata, create lesson shells, map references, and attach downloadable resource placeholders."
+    },
+    {
+      "id": "faculty-authoring",
+      "title": "Faculty authoring",
+      "ownerRole": "Faculty author",
+      "action": "Populate lesson objectives, key takeaways, red flags, evidence tiers, and case prompts."
+    },
+    {
+      "id": "assessment-build",
+      "title": "Assessment build",
+      "ownerRole": "Assessment lead",
+      "action": "Create MCQs, image interpretation items, short answers, and case reasoning tasks with pass marks and retry rules."
+    },
+    {
+      "id": "academic-review",
+      "title": "Academic review",
+      "ownerRole": "Faculty reviewer",
+      "action": "Review scientific accuracy, clinical tone, evidence integrity, and alignment with the academic blueprint."
+    },
+    {
+      "id": "governance-signoff",
+      "title": "Governance sign-off",
+      "ownerRole": "Program director",
+      "action": "Approve publication readiness, certificate rules, and faculty review requirements."
+    },
+    {
+      "id": "publish",
+      "title": "Publish",
+      "ownerRole": "Platform administrator",
+      "action": "Publish the approved version into the doctor portal and lock the released curriculum version."
+    },
+    {
+      "id": "post-publication-maintenance",
+      "title": "Post-publication maintenance",
+      "ownerRole": "Academic admin",
+      "action": "Issue corrections, create new version drafts, and preserve learner records against the published release."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/lesson-template.schema.json",
+  "title": "AcademyLessonTemplate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lessonNumber",
+    "lessonTitle",
+    "lessonSlug",
+    "moduleSlug",
+    "lessonObjectives",
+    "keyTakeaways",
+    "redFlags",
+    "evidenceTier",
+    "downloadableResourceType",
+    "quizLinkage",
+    "caseLinkage",
+    "completionRules"
+  ],
+  "properties": {
+    "lessonNumber": { "type": "integer", "minimum": 1 },
+    "lessonTitle": { "type": "string" },
+    "lessonSlug": { "type": "string" },
+    "moduleSlug": { "type": "string" },
+    "lessonObjectives": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "keyTakeaways": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "redFlags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evidenceTier": {
+      "type": "string",
+      "enum": ["A", "B", "C", "consensus"]
+    },
+    "downloadableResourceType": {
+      "type": "string",
+      "enum": [
+        "pdf-summary",
+        "atlas",
+        "worksheet",
+        "reading-list",
+        "manual",
+        "image-atlas",
+        "checklist"
+      ]
+    },
+    "quizLinkage": {
+      "type": ["string", "null"]
+    },
+    "caseLinkage": {
+      "type": ["string", "null"]
+    },
+    "completionRules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "mark-complete",
+          "required-reading",
+          "assessment-pass",
+          "faculty-reviewed"
+        ]
+      }
+    }
+  }
+}

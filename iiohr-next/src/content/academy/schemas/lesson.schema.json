@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iiohr.com/schemas/academy/lesson.schema.json",
+  "title": "AcademyLesson",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "programId",
+    "levelId",
+    "moduleId",
+    "slug",
+    "title",
+    "sequence",
+    "status",
+    "estimatedStudyMinutes",
+    "overview",
+    "learningObjectives",
+    "body",
+    "patientCommunicationExamples",
+    "roleBoundaryNotes",
+    "keyTakeaways",
+    "redFlags",
+    "escalationTriggers",
+    "evidenceTier",
+    "facultyNoteIds",
+    "complianceNoticeIds",
+    "referenceIds",
+    "resourceIds",
+    "assessmentIds",
+    "caseStudyIds",
+    "practicalTaskIds",
+    "completionRules",
+    "displayFlags"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "programId": { "type": "string" },
+    "levelId": { "type": "string" },
+    "moduleId": { "type": "string" },
+    "sequence": { "type": "integer", "minimum": 1 },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "approved", "published", "archived"]
+    },
+    "estimatedStudyMinutes": { "type": "integer", "minimum": 1 },
+    "overview": { "type": "string" },
+    "learningObjectives": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "body": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "content"],
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["richText"]
+        },
+        "content": { "type": "string" }
+      }
+    },
+    "patientCommunicationExamples": { "type": "array", "items": { "type": "object" } },
+    "roleBoundaryNotes": { "type": "array", "items": { "type": "object" } },
+    "keyTakeaways": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "redFlags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "escalationTriggers": { "type": "array", "items": { "type": "object" } },
+    "evidenceTier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overall", "summaryNote", "notes"],
+      "properties": {
+        "overall": {
+          "type": "string",
+          "enum": ["A", "B", "C", "consensus"]
+        },
+        "summaryNote": { "type": "string" },
+        "notes": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "facultyNoteIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "complianceNoticeIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "resourceIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "assessmentIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "caseStudyIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "practicalTaskIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "referenceIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "completionRules": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "displayFlags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "showEvidencePanel",
+        "showRedFlagsPanel",
+        "showEscalationPanel",
+        "showFacultyNotes",
+        "showCompliancePanel"
+      ],
+      "properties": {
+        "showEvidencePanel": { "type": "boolean" },
+        "showRedFlagsPanel": { "type": "boolean" },
+        "showEscalationPanel": { "type": "boolean" },
+        "showFacultyNotes": { "type": "boolean" },
+        "showCompliancePanel": { "type": "boolean" }
+      }
+    }
+  }
+}
