@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ApplyCtaSection } from "@/components/sections/apply/ApplyCtaSection";
 import { ApplyHero } from "@/components/sections/apply/ApplyHero";
 import { ApplyIntroductionSection } from "@/components/sections/apply/ApplyIntroductionSection";
@@ -19,6 +20,18 @@ export default function ApplyPage() {
   return (
     <>
       <ApplyHero />
+      <section className="border-b border-border bg-muted/20 px-6 py-6 text-center text-sm text-foreground">
+        <p className="text-[var(--text-secondary)]">
+          Academy stream applications (signed-in users):{" "}
+          <Link href="/apply/doctors" className="link-premium font-medium">
+            Doctors
+          </Link>
+          {" · "}
+          <Link href="/apply/consultants" className="link-premium font-medium">
+            Consultants
+          </Link>
+        </p>
+      </section>
       <ApplyIntroductionSection />
       <ApplicationFormSection />
       <ApplyNextStepsSection />

@@ -128,14 +128,25 @@ export interface SubmitApplicationInput {
   >;
 }
 
+/** Application plus nested rows for admissions review UI. */
+export interface ApplicationReviewRow extends ApplicationRow {
+  answers: ApplicationAnswerRow[];
+  consents: ApplicationConsentRow[];
+}
+
 export interface AdmissionsService {
   saveDraftApplication(input: SubmitApplicationInput): Promise<ApplicationRow>;
   submitApplication(applicationId: string, userId: string): Promise<ApplicationRow>;
-  /** Admin: accept → create membership + enrollment (use admin client or RPC with elevated privileges). */
+  /** Admin: accept → stream membership + program enrollment via SECURITY DEFINER RPC. */
   acceptApplication(applicationId: string): Promise<{
     application: ApplicationRow;
     enrollment: ProgramEnrollmentRow;
   }>;
+  /** Admin: set terminal state (RLS: admin or applicant; applicant should not call this in UI). */
+  rejectApplication(applicationId: string): Promise<ApplicationRow>;
+  markUnderReview(applicationId: string): Promise<ApplicationRow>;
+  /** Admin queue: submitted and in-review applications, newest first. */
+  listApplicationsForReview(): Promise<ApplicationReviewRow[]>;
 }
 
 export interface CertificateIssuanceService {
