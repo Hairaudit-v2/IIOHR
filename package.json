@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "IIOHR — International Institute of Hair Restoration",
   "private": true,
+  "workspaces": [
+    "iiohr-next"
+  ],
   "scripts": {
     "dev": "npm --prefix iiohr-next run dev",
     "build": "npm --prefix iiohr-next run build",
