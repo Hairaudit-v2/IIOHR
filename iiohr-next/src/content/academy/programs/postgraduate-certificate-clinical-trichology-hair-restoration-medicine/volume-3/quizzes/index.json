@@ -1,0 +1,338 @@
+[
+  {
+    "id": "quiz_vol3_mod10",
+    "slug": "telogen-effluvium-knowledge-check",
+    "moduleId": "module_vol3_telogen_effluvium_diffuse_shedding",
+    "parentType": "module",
+    "parentId": "module_vol3_telogen_effluvium_diffuse_shedding",
+    "title": "Module Knowledge Check: Telogen Effluvium and Diffuse Shedding Disorders",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol3_mod10_item_01",
+        "type": "mcq",
+        "stem": "A woman reports heavy shedding starting three months after major surgery. Which finding on examination most strongly argues for an overlap with androgenetic-pattern loss rather than uncomplicated acute telogen effluvium alone?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Central part widening with mixed terminal and miniaturised hairs in pattern zones compared with a stable occipital comparator"
+          },
+          {
+            "id": "b",
+            "label": "Uniform-calibre short broken hairs along the frontal margin without club roots"
+          },
+          {
+            "id": "c",
+            "label": "Complete sparing of all patterned zones with entirely normal calibre throughout"
+          }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Volume 3 Module 10 stresses that TE often coexists with patterned miniaturisation; diameter diversity and pattern distribution support AGA/FPHL overlap. Uniform broken hairs suggest shaft/traction issues; global normality is uncommon when the patient reports marked subjective loss.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol3_mod10_item_02",
+        "type": "short-answer",
+        "stem": "Chronic shedding has persisted twelve months after a plausible trigger; basic labs were once normal. Outline how you refine the differential, what you repeat or add in investigation, and when you escalate to trichoscopy or dermatology.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Revisit history for new triggers, medications, and evolving symptoms; re-examine for pattern change, patchy loss, inflammation, or scarring clues. Broaden differentials to include female pattern overlap, diffuse alopecia areata, thyroid or iron issues in context, and inflammatory scalp disease. Repeat or extend investigations guided by new findings rather than identical panels. Use comparative trichoscopy when diagnosis is uncertain. Refer to dermatology or specialist trichology if scarring, patchy immune-mediated patterns, diagnostic uncertainty after reasonable review, or patient distress warrants."
+        },
+        "rationale": "Module 10 frames chronic TE as exclusion-based and phenotype-led; escalation follows examination and course, not calendar reassurance alone.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol3_mod11",
+    "slug": "alopecia-areata-knowledge-check",
+    "moduleId": "module_vol3_alopecia_areata_immune_mediated",
+    "parentType": "module",
+    "parentId": "module_vol3_alopecia_areata_immune_mediated",
+    "title": "Module Knowledge Check: Alopecia Areata and Immune-Mediated Hair Loss",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol3_mod11_item_01",
+        "type": "mcq",
+        "stem": "Which feature best supports alopecia areata over uncomplicated telogen effluvium when hair loss is described as diffuse?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Exclamation-mark or tapering broken hairs, patchy structural clues on examination or trichoscopy, or rapid patch emergence alongside shedding"
+          },
+          {
+            "id": "b",
+            "label": "Delayed onset of shedding strictly three months after a single febrile illness with preserved pattern and no patchy zones"
+          },
+          {
+            "id": "c",
+            "label": "Painful pustules and tufted follicular units across the vertex"
+          }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Diffuse AA can mimic TE; exclamation hairs, patchy change, and immune-mediated trichoscopic clues support AA. Classic post-febrile TE timing supports TE. Pustules and tufting point to neutrophilic scarring folliculitis, not AA.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol3_mod11_item_02",
+        "type": "short-answer",
+        "stem": "A child presents with patchy hair loss and scale. How do you triage tinea capitis versus alopecia areata before starting potent topical corticosteroids?",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Take exposure and contact history, examine for cervical lymphadenopathy, inflammatory kerion, or black-dot pattern, and follow local practice for fungal testing when suspicion is meaningful. Avoid immunosuppressive topical therapy until reasonable exclusion of tinea where scarring or kerion risk exists. Explain uncertainty to caregivers, document decisions, and arrange prompt paediatric dermatology if diagnosis remains unclear or the child is systemically unwell."
+        },
+        "rationale": "Module 11 emphasises differentiating AA from tinea and other patchy mimics; fungal disease can scar and worsens if mis-treated as AA.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol3_mod12",
+    "slug": "hair-shaft-breakage-knowledge-check",
+    "moduleId": "module_vol3_hair_shaft_breakage_syndromes",
+    "parentType": "module",
+    "parentId": "module_vol3_hair_shaft_breakage_syndromes",
+    "title": "Module Knowledge Check: Hair Shaft Disorders and Breakage Syndromes",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol3_mod12_item_01",
+        "type": "mcq",
+        "stem": "Which bedside pattern most strongly suggests shaft breakage rather than telogen effluvium as the main mechanism?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Short fractured hairs of varying length, often localised to styled or chemically stressed margins, with club telogen bulbs uncommon in the sample"
+          },
+          {
+            "id": "b",
+            "label": "Diffuse shedding of full-length hairs with depigmented club roots two to three months after surgery"
+          },
+          {
+            "id": "c",
+            "label": "Progressive central part widening with increased diameter diversity on trichoscopy in pattern zones"
+          }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Module 12 centres on separating breakage from shedding: fractured shafts localise to mechanical or chemical stress. Club shedding supports TE. Pattern miniaturisation supports AGA overlap rather than pure breakage.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol3_mod12_item_02",
+        "type": "short-answer",
+        "stem": "A patient with tight braiding and vertex tenderness has thinning over the crown. How do you distinguish traction alopecia from early central centrifugal cicatricial alopecia (CCCA) in your assessment plan?",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Map loss to tension lines versus crown-centred centrifugal pattern; document symptoms, scale, and perifollicular changes; examine for loss of ostia or scarring clues on magnification or trichoscopy. Take a collaborative history of styling, chemical relaxers, and duration. Explain that overlap can exist; when CCCA is suspected, prioritise early dermatology referral and biopsy if diagnosis will change management. Avoid blaming; pair behaviour change discussion with medical assessment."
+        },
+        "rationale": "Module 12 requires sensitive distinction between traction and CCCA—both occur in overlapping populations and both carry scarring risk if missed.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol3_mod13",
+    "slug": "cicatricial-principles-knowledge-check",
+    "moduleId": "module_vol3_principles_cicatricial_alopecia",
+    "parentType": "module",
+    "parentId": "module_vol3_principles_cicatricial_alopecia",
+    "title": "Module Knowledge Check: Principles of Cicatricial Alopecia",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol3_mod13_item_01",
+        "type": "mcq",
+        "stem": "In suspected active cicatricial alopecia, which principle best reflects postgraduate management discipline?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Prioritise early biopsy at an informative active margin and specialist-led anti-inflammatory treatment before cosmetic hair restoration discussions"
+          },
+          {
+            "id": "b",
+            "label": "Defer biopsy until cosmeceutical scalp serums have been trialled for six months"
+          },
+          {
+            "id": "c",
+            "label": "Offer hair transplant promptly to restore density while inflammation is still symptomatic"
+          }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Module 13 stresses urgency, correct biopsy targeting, and disease control before surgery. Delay for cosmetics or transplant during activity risks irreversible loss and poor outcomes.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol3_mod13_item_02",
+        "type": "case-reasoning",
+        "stem": "A patient has a slowly expanding smooth patch with reduced follicular openings and mild burning. Trichoscopy suggests scar-white areas at the margin. Outline your biopsy decision, preferred site philosophy, and what you communicate to pathology.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Biopsy is indicated because scarring alopecia is suspected and diagnosis directs therapy. Site the active symptomatic edge where follicles are still present rather than only the burnt-out centre. Send a concise clinical letter: time course, symptoms, suspected lymphocytic versus neutrophilic categories, prior treatments, trichoscopic summary, and whether horizontal or vertical sections are preferred locally. Invite clinicopathological correlation."
+        },
+        "rationale": "Mirrors Volume 2–style biopsy logic applied to cicatricial urgency in Module 13.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol3_mod14",
+    "slug": "lymphocytic-cicatricial-knowledge-check",
+    "moduleId": "module_vol3_lymphocytic_cicatricial_alopecias",
+    "parentType": "module",
+    "parentId": "module_vol3_lymphocytic_cicatricial_alopecias",
+    "title": "Module Knowledge Check: Lymphocytic Cicatricial Alopecias",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol3_mod14_item_01",
+        "type": "mcq",
+        "stem": "Which combination most strongly raises frontal fibrosing alopecia over uncomplicated female pattern hair loss?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Progressive band-like frontal hairline recession with eyebrow thinning and perifollicular scale or symptoms at the hairline"
+          },
+          {
+            "id": "b",
+            "label": "Isolated central part widening with preserved frontal hairline and eyebrows and patterned miniaturisation without hairline band recession"
+          },
+          {
+            "id": "c",
+            "label": "Painful boggy plaque with purulent drainage and occipital lymphadenopathy"
+          }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Module 14 highlights FFA band recession and eyebrow involvement. Classic FPHL preserves frontal fringe relative to pattern. Boggy purulent plaque suggests infectious or neutrophilic disease.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol3_mod14_item_02",
+        "type": "short-answer",
+        "stem": "A woman of African descent has crown-centred thinning with tenderness and itching. Outline how you evaluate CCCA versus traction, what features prompt biopsy or urgent dermatology, and how you discuss styling without blame.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Assess centrifugal crown pattern, symptoms, scale, and ostia loss; review long-term traction and chemical history as cofactors, not sole causes. Biopsy or early dermatology referral if scarring is suspected, diagnosis uncertain, or therapy response is poor. Discuss styling collaboratively: reduce high-tension styles and chemical overlap while starting or expediting medical anti-inflammatory care. Document clear escalation offers."
+        },
+        "rationale": "Module 14 expects nuanced CCCA assessment and culturally safe counselling.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol3_mod15",
+    "slug": "neutrophilic-cicatricial-knowledge-check",
+    "moduleId": "module_vol3_neutrophilic_mixed_cicatricial",
+    "parentType": "module",
+    "parentId": "module_vol3_neutrophilic_mixed_cicatricial",
+    "title": "Module Knowledge Check: Neutrophilic and Mixed Cicatricial Alopecias",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol3_mod15_item_01",
+        "type": "mcq",
+        "stem": "Which clinical picture best fits folliculitis decalvans rather than simple superficial bacterial folliculitis?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Chronic pustules with crusting, tufted follicular units, and progressive scarring alopecia"
+          },
+          {
+            "id": "b",
+            "label": "Transient small pustules around hairs resolving fully without tufting or ostia loss after brief topical antiseptic"
+          },
+          {
+            "id": "c",
+            "label": "Non-inflammatory patterned miniaturisation without pustulation"
+          }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Module 15 emphasises tufting, chronicity, and scarring in folliculitis decalvans. Self-limited superficial folliculitis lacks destructive tufting. Pattern loss without pustules is not this entity.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol3_mod15_item_02",
+        "type": "short-answer",
+        "stem": "A patient with dissecting cellulitis of the scalp reports subjective improvement after antibiotics, but examination still shows nodules and sinus tracts. How do you frame next steps and expectations?",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Explain that dissecting cellulitis is relapsing and structurally destructive; subjective improvement does not equal disease control. Arrange dermatology-led multimodal care, document activity with examination findings, and discuss long-term suppression, possible culture when infection is suspected, and adjuncts such as procedural management only in stable specialist-selected cases. Address pain, odour, and psychosocial impact explicitly."
+        },
+        "rationale": "Module 15 stresses longitudinal neutrophilic disease and the gap between symptom relief and structural control.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol3_mod16",
+    "slug": "scalp-inflammation-infection-knowledge-check",
+    "moduleId": "module_vol3_inflammatory_infectious_scalp",
+    "parentType": "module",
+    "parentId": "module_vol3_inflammatory_infectious_scalp",
+    "title": "Module Knowledge Check: Inflammatory and Infectious Scalp Disorders",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol3_mod16_item_01",
+        "type": "mcq",
+        "stem": "Which approach best reflects management of suspected inflammatory tinea capitis (including kerion) in relation to scarring risk?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Treat promptly with guideline-appropriate systemic antifungal therapy and avoid steroid-only regimens that mask infection"
+          },
+          {
+            "id": "b",
+            "label": "Use only cosmetic anti-dandruff shampoo as definitive therapy for six weeks before reassessment"
+          },
+          {
+            "id": "c",
+            "label": "Assume alopecia areata and start intralesional corticosteroid without fungal consideration"
+          }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Module 16 highlights scarring risk and need for systemic antifungal coverage in tinea capitis; steroid monotherapy and AA mislabelling are hazardous.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol3_mod16_item_02",
+        "type": "short-answer",
+        "stem": "A patient with chronic scalp itch has used multiple leave-on oils and salon treatments; erythema and scale fluctuate. How do you structure history-taking, differentiate seborrhoeic overlap from contact dermatitis, and decide on patch testing referral?",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Take a chronological product and procedure audit: dyes, relaxers, essential oils, medicated shampoos, and frequency. Examine distribution, scale type, and secondary excoriation. Consider seborrhoeic dermatitis versus psoriasis versus allergic contact dermatitis; simplify to a bland regimen and targeted anti-inflammatory therapy as appropriate. Refer for patch testing if severe, recurrent, or persistent contact dermatitis is suspected after withdrawal trials, or if safety-critical allergens (e.g. dye) are implicated."
+        },
+        "rationale": "Module 16 integrates inflammatory scalp disease with hair practice—audit, differentiation, and referral discipline.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  }
+]

@@ -18,7 +18,7 @@
     "completionRules": [
       "Complete required modules and assessments in good academic standing"
     ],
-    "sectionIds": ["section_doctors_volume_1", "section_doctors_volume_2"],
+    "sectionIds": ["section_doctors_volume_1", "section_doctors_volume_2", "section_doctors_volume_3"],
     "moduleIds": [],
     "competencyIds": [
       "doctors_vol1_comp_introduction_scope",
@@ -29,7 +29,14 @@
       "doctors_vol2_comp_trichoscopy",
       "doctors_vol2_comp_investigations_biopsy",
       "doctors_vol2_comp_male_aga",
-      "doctors_vol2_comp_female_pattern"
+      "doctors_vol2_comp_female_pattern",
+      "doctors_vol3_comp_telogen_diffuse_shedding",
+      "doctors_vol3_comp_alopecia_areata",
+      "doctors_vol3_comp_shaft_breakage",
+      "doctors_vol3_comp_cicatricial_principles",
+      "doctors_vol3_comp_lymphocytic_cicatricial",
+      "doctors_vol3_comp_neutrophilic_cicatricial",
+      "doctors_vol3_comp_scalp_inflammatory_infectious"
     ],
     "certificateTemplateKey": "doctor-pgcert-certificate",
     "badgeTemplateKey": "doctor-pgcert-badge"

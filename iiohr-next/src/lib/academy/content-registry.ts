@@ -33,6 +33,13 @@ import legacyQuizzesVol2Json from "@/content/academy/programs/postgraduate-certi
 import legacyReferencesVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/references/index.json";
 import legacyResourcesVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/resources/index.json";
 import legacyVolume2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/index.json";
+import legacyCasePromptsVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/case-prompts/index.json";
+import legacyLessonsVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/lessons/index.json";
+import legacyModulesVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/modules/index.json";
+import legacyQuizzesVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/quizzes/index.json";
+import legacyReferencesVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/references/index.json";
+import legacyResourcesVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/resources/index.json";
+import legacyVolume3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/index.json";
 import type { AcademyAssessment, AssessmentItem } from "@/lib/academy/assessment-types";
 import type { ScopeSafeCopyBlock } from "@/lib/academy/compliance-types";
 import type {
@@ -130,6 +137,26 @@ const DOCTOR_VOL2_MODULE_FACULTY_NOTES: Record<string, string[]> = {
   module_diagnostic_laboratory_biopsy_logic: ["doctors_note_vol2_mod7"],
   module_diagnostic_male_aga: ["doctors_note_vol2_mod8"],
   module_diagnostic_female_pattern_hormonal: ["doctors_note_vol2_mod9"],
+};
+
+const DOCTOR_VOL3_MODULE_COMPETENCIES: Record<string, string[]> = {
+  module_vol3_telogen_effluvium_diffuse_shedding: ["doctors_vol3_comp_telogen_diffuse_shedding"],
+  module_vol3_alopecia_areata_immune_mediated: ["doctors_vol3_comp_alopecia_areata"],
+  module_vol3_hair_shaft_breakage_syndromes: ["doctors_vol3_comp_shaft_breakage"],
+  module_vol3_principles_cicatricial_alopecia: ["doctors_vol3_comp_cicatricial_principles"],
+  module_vol3_lymphocytic_cicatricial_alopecias: ["doctors_vol3_comp_lymphocytic_cicatricial"],
+  module_vol3_neutrophilic_mixed_cicatricial: ["doctors_vol3_comp_neutrophilic_cicatricial"],
+  module_vol3_inflammatory_infectious_scalp: ["doctors_vol3_comp_scalp_inflammatory_infectious"],
+};
+
+const DOCTOR_VOL3_MODULE_FACULTY_NOTES: Record<string, string[]> = {
+  module_vol3_telogen_effluvium_diffuse_shedding: ["doctors_note_vol3_mod10"],
+  module_vol3_alopecia_areata_immune_mediated: ["doctors_note_vol3_mod11"],
+  module_vol3_hair_shaft_breakage_syndromes: ["doctors_note_vol3_mod12"],
+  module_vol3_principles_cicatricial_alopecia: ["doctors_note_vol3_mod13"],
+  module_vol3_lymphocytic_cicatricial_alopecias: ["doctors_note_vol3_mod14"],
+  module_vol3_neutrophilic_mixed_cicatricial: ["doctors_note_vol3_mod15"],
+  module_vol3_inflammatory_infectious_scalp: ["doctors_note_vol3_mod16"],
 };
 
 type LegacyLesson = {
@@ -476,6 +503,7 @@ function createDoctorBundle(): ProgramBundle {
   const levelId = levels[0]?.id ?? "level_doctors_postgraduate_certificate";
   const legacyVolume = legacyVolumeJson as DoctorVolumeMeta;
   const legacyVolume2 = legacyVolume2Json as DoctorVolumeMeta;
+  const legacyVolume3 = legacyVolume3Json as DoctorVolumeMeta;
 
   const vol1 = buildDoctorVolumeRuntime({
     program,
@@ -517,29 +545,61 @@ function createDoctorBundle(): ProgramBundle {
     assessmentVolumeLabel: "Volume 2 — Diagnostic Trichology and Pattern Hair Loss Medicine",
   });
 
-  const mergedAssessments = [...vol1.assessments, ...vol2.assessments].map((assessment, index, arr) => ({
-    ...assessment,
-    weighting: index === arr.length - 1 ? 10 : 5,
-  }));
+  const vol3 = buildDoctorVolumeRuntime({
+    program,
+    levelId,
+    complianceNotices,
+    sectionId: "section_doctors_volume_3",
+    sectionSequence: 3,
+    volumeMeta: legacyVolume3,
+    sectionOverview:
+      "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease (Volume 3): telogen effluvium and diffuse shedding; alopecia areata; hair shaft and breakage disorders; principles and subtypes of cicatricial alopecia; neutrophilic scarring folliculitis; and inflammatory and infectious scalp disease—aligned to the academy Volume 3 teaching manual.",
+    legacyModules: legacyModulesVol3Json as LegacyModule[],
+    legacyLessons: legacyLessonsVol3Json as LegacyLesson[],
+    legacyQuizzes: legacyQuizzesVol3Json as LegacyQuiz[],
+    legacyCasePrompts: legacyCasePromptsVol3Json as LegacyCasePrompt[],
+    references: legacyReferencesVol3Json as AcademyReference[],
+    resources: legacyResourcesVol3Json as DownloadableResource[],
+    moduleCompetencies: DOCTOR_VOL3_MODULE_COMPETENCIES,
+    moduleFacultyNotes: DOCTOR_VOL3_MODULE_FACULTY_NOTES,
+    assessmentVolumeLabel: "Volume 3 — Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+  });
 
-  const references = [...(legacyReferencesJson as AcademyReference[]), ...(legacyReferencesVol2Json as AcademyReference[])];
-  const resources = [...(legacyResourcesJson as DownloadableResource[]), ...(legacyResourcesVol2Json as DownloadableResource[])];
+  // Certificate weighted score: last assessment in the merged array gets weight 10; others 5.
+  // When adding Volume 4+, revisit this rule so the final quiz is not arbitrarily “most important.”
+  const mergedAssessments = [...vol1.assessments, ...vol2.assessments, ...vol3.assessments].map(
+    (assessment, index, arr) => ({
+      ...assessment,
+      weighting: index === arr.length - 1 ? 10 : 5,
+    })
+  );
+
+  const references = [
+    ...(legacyReferencesJson as AcademyReference[]),
+    ...(legacyReferencesVol2Json as AcademyReference[]),
+    ...(legacyReferencesVol3Json as AcademyReference[]),
+  ];
+  const resources = [
+    ...(legacyResourcesJson as DownloadableResource[]),
+    ...(legacyResourcesVol2Json as DownloadableResource[]),
+    ...(legacyResourcesVol3Json as DownloadableResource[]),
+  ];
 
   return {
     stream,
     program: {
       ...program,
-      sectionIds: [vol1.section.id, vol2.section.id],
-      moduleIds: [...vol1.modules, ...vol2.modules].map((module) => module.id),
+      sectionIds: [vol1.section.id, vol2.section.id, vol3.section.id],
+      moduleIds: [...vol1.modules, ...vol2.modules, ...vol3.modules].map((module) => module.id),
       competencyIds: competencies.map((c) => c.id),
     },
     levels,
-    sections: [vol1.section, vol2.section],
-    modules: [...vol1.modules, ...vol2.modules],
-    lessons: [...vol1.lessons, ...vol2.lessons],
+    sections: [vol1.section, vol2.section, vol3.section],
+    modules: [...vol1.modules, ...vol2.modules, ...vol3.modules],
+    lessons: [...vol1.lessons, ...vol2.lessons, ...vol3.lessons],
     assessments: mergedAssessments,
-    assessmentItems: [...vol1.assessmentItems, ...vol2.assessmentItems],
-    caseStudies: [...vol1.caseStudies, ...vol2.caseStudies],
+    assessmentItems: [...vol1.assessmentItems, ...vol2.assessmentItems, ...vol3.assessmentItems],
+    caseStudies: [...vol1.caseStudies, ...vol2.caseStudies, ...vol3.caseStudies],
     practicalTasks: [],
     competencies,
     facultyNotes,

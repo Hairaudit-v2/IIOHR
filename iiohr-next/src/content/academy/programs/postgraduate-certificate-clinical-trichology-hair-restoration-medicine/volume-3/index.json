@@ -1,0 +1,20 @@
+{
+  "id": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+  "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+  "volumeNumber": 3,
+  "slug": "diffuse-shedding-cicatricial-alopecia-and-scalp-disease",
+  "title": "Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
+  "subtitle": "Volume 3",
+  "status": "draft",
+  "brandProfiles": ["iiohr", "hli", "iiiohr"],
+  "audience": ["doctors", "surgeons", "physicians"],
+  "moduleOrder": [
+    "module_vol3_telogen_effluvium_diffuse_shedding",
+    "module_vol3_alopecia_areata_immune_mediated",
+    "module_vol3_hair_shaft_breakage_syndromes",
+    "module_vol3_principles_cicatricial_alopecia",
+    "module_vol3_lymphocytic_cicatricial_alopecias",
+    "module_vol3_neutrophilic_mixed_cicatricial",
+    "module_vol3_inflammatory_infectious_scalp"
+  ]
+}

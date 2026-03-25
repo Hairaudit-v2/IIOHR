@@ -178,5 +178,145 @@
       }
     ],
     "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol3_comp_telogen_diffuse_shedding",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-3-telogen-effluvium-diffuse-shedding",
+    "title": "Telogen effluvium and diffuse shedding disorders",
+    "domain": "clinical-literacy",
+    "description": "Differentiate acute and chronic telogen effluvium from anagen shedding and patterned loss; map triggers and timelines; integrate trichoscopy and proportionate investigation; counsel natural history and referral boundaries, per Volume 3 — Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease.",
+    "sequence": 10,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol3_m10_assessment",
+        "description": "Pass the Module 10 knowledge check on shedding biology, overlap disorders, and investigation discipline",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol3_comp_alopecia_areata",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-3-alopecia-areata-immune-mediated",
+    "title": "Alopecia areata and immune-mediated hair loss",
+    "domain": "clinical-literacy",
+    "description": "Recognise AA phenotypes including diffuse and ophiasis patterns; use trichoscopy supportively; differentiate tinea, traction, trichotillomania, and cicatricial mimics; outline evidence-aware management framing without overclaiming emerging therapies, per Volume 3.",
+    "sequence": 11,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol3_m11_assessment",
+        "description": "Pass the Module 11 alopecia areata knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol3_comp_shaft_breakage",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-3-hair-shaft-breakage",
+    "title": "Hair shaft disorders and breakage syndromes",
+    "domain": "clinical-literacy",
+    "description": "Separate shedding from shaft breakage; address weathering, traction, cosmetic injury, and trichotillomania with appropriate referral; avoid mis-investigation when follicles are structurally intact, per Volume 3.",
+    "sequence": 12,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol3_m12_assessment",
+        "description": "Pass the Module 12 shaft and breakage knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol3_comp_cicatricial_principles",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-3-cicatricial-principles",
+    "title": "Principles of cicatricial alopecia",
+    "domain": "clinical-literacy",
+    "description": "Classify scarring alopecia patterns; recognise clinical and trichoscopic urgency; apply biopsy site philosophy and pathology communication; prioritise disease control before restorative discussion, per Volume 3.",
+    "sequence": 13,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol3_m13_assessment",
+        "description": "Pass the Module 13 cicatricial principles knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol3_comp_lymphocytic_cicatricial",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-3-lymphocytic-cicatricial",
+    "title": "Lymphocytic cicatricial alopecias",
+    "domain": "clinical-literacy",
+    "description": "Differentiate LPP, FFA, DLE, and CCCA phenotypes; use trichoscopy and biopsy appropriately; co-manage with dermatology; discuss traction and cultural context without blame; align therapy framing to specialist pathways, per Volume 3.",
+    "sequence": 14,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol3_m14_assessment",
+        "description": "Pass the Module 14 lymphocytic cicatricial knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol3_comp_neutrophilic_cicatricial",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-3-neutrophilic-cicatricial",
+    "title": "Neutrophilic and mixed cicatricial alopecias",
+    "domain": "clinical-literacy",
+    "description": "Recognise folliculitis decalvans and dissecting cellulitis; interpret tufting and destructive folliculitis as urgency signals; outline longitudinal multidisciplinary principles without substituting local specialist protocols, per Volume 3.",
+    "sequence": 15,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol3_m15_assessment",
+        "description": "Pass the Module 15 neutrophilic cicatricial knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol3_comp_scalp_inflammatory_infectious",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-3-inflammatory-infectious-scalp",
+    "title": "Inflammatory and infectious scalp disorders",
+    "domain": "clinical-literacy",
+    "description": "Manage seborrhoeic dermatitis and scalp psoriasis in hair consultations; evaluate contact and irritant disease; suspect and treat tinea capitis with scarring awareness; integrate scalp surface control with primary alopecia diagnosis, per Volume 3.",
+    "sequence": 16,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol3_m16_assessment",
+        "description": "Pass the Module 16 inflammatory and infectious scalp knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
   }
 ]

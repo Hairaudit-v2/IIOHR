@@ -97,5 +97,77 @@
     "note": "Source: Manual Module 9 (sections 9.1–9.8). Drill hyperandrogenism screens without over-testing every FPHL patient. Reproductive safety: contraception reliability and teratogenic meds. Surgery caution in diffuse patterns; prioritise stabilisation and compassionate language for chronic disease.",
     "visibility": "faculty-only",
     "reviewPurpose": "Module 9 moderation"
+  },
+  {
+    "id": "doctors_note_vol3_manual_source",
+    "parentType": "program",
+    "parentId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "title": "Volume 3 primary teaching text",
+    "note": "Doctor Volume 3 learner content is aligned to the academy manual Volume 3 — Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease (HLI | IIIOHR). Faculty moderation should verify phenotype-led escalation for scarring and infection, cautious framing of immune-modulating therapies, and referral documentation when primary physicians defer biopsy or specialist care.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 3 curriculum alignment"
+  },
+  {
+    "id": "doctors_note_vol3_mod10",
+    "parentType": "module",
+    "parentId": "module_vol3_telogen_effluvium_diffuse_shedding",
+    "title": "Module 10 — faculty delivery notes",
+    "note": "Source: Manual Module 10 (diffuse shedding). Workshop: timeline reconstruction on a whiteboard; separate club-shed from broken shafts. Drill mixed AGA plus TE cases with comparative trichoscopy. Red-flag review: patchy loss, pain, inflammation—do not anchor on TE.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 10 moderation"
+  },
+  {
+    "id": "doctors_note_vol3_mod11",
+    "parentType": "module",
+    "parentId": "module_vol3_alopecia_areata_immune_mediated",
+    "title": "Module 11 — faculty delivery notes",
+    "note": "Source: Manual Module 11 (alopecia areata). Image-based differentials: tinea, traction, trichotillomania. Discuss JAK inhibitors as jurisdiction- and phenotype-dependent; prohibit marketing certainty. Address psychosocial burden and support pathways.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 11 moderation"
+  },
+  {
+    "id": "doctors_note_vol3_mod12",
+    "parentType": "module",
+    "parentId": "module_vol3_hair_shaft_breakage_syndromes",
+    "title": "Module 12 — faculty delivery notes",
+    "note": "Source: Manual Module 12 (shaft and breakage). Live exam: collect hairs and classify. Cultural sensitivity for styling practices; pair traction counselling with medical assessment for CCCA overlap when suspected.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 12 moderation"
+  },
+  {
+    "id": "doctors_note_vol3_mod13",
+    "parentType": "module",
+    "parentId": "module_vol3_principles_cicatricial_alopecia",
+    "title": "Module 13 — faculty delivery notes",
+    "note": "Source: Manual Module 13 (cicatricial principles). Emphasise urgency and biopsy margin selection. Role-play pathology handoff letters. Transplant timing only after specialist-led quiescence—document.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 13 moderation"
+  },
+  {
+    "id": "doctors_note_vol3_mod14",
+    "parentType": "module",
+    "parentId": "module_vol3_lymphocytic_cicatricial_alopecias",
+    "title": "Module 14 — faculty delivery notes",
+    "note": "Source: Manual Module 14 (lymphocytic scarring). FFA versus FPHL drills with hairline and eyebrow clues. CCCA versus traction: avoid blame; prioritise anti-inflammatory care. DLE: systemic review triggers.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 14 moderation"
+  },
+  {
+    "id": "doctors_note_vol3_mod15",
+    "parentType": "module",
+    "parentId": "module_vol3_neutrophilic_mixed_cicatricial",
+    "title": "Module 15 — faculty delivery notes",
+    "note": "Source: Manual Module 15 (neutrophilic scarring). Show tufting and sinus photography. Stress that antibiotics alone may miss destructive inflammation. Multidisciplinary messaging for dissecting cellulitis.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 15 moderation"
+  },
+  {
+    "id": "doctors_note_vol3_mod16",
+    "parentType": "module",
+    "parentId": "module_vol3_inflammatory_infectious_scalp",
+    "title": "Module 16 — faculty delivery notes",
+    "note": "Source: Manual Module 16 (inflammatory and infectious scalp). Product audit exercise. Tinea kerion and scarring risk—time-to-treatment narratives. Reassess primary alopecia labels after inflammation control.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 16 moderation"
   }
 ]

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "case_vol3_mod10_a",
+    "slug": "vol3-mod10-case",
+    "moduleId": "module_vol3_telogen_effluvium_diffuse_shedding",
+    "parentType": "module",
+    "parentId": "module_vol3_telogen_effluvium_diffuse_shedding",
+    "title": "Case Discussion: Shedding, Overlap, and Escalation",
+    "status": "draft",
+    "clinicalScenario": "A 34-year-old woman reports six months of increased daily hair fall and a wider central part. Twelve months ago she had iron deficiency treated with oral replacement; TSH was normal then. She is convinced it is ‘only telogen effluvium’ and wants a hair transplant referral. On examination the central scalp shows part widening; she describes no scalp pain. She has not had trichoscopy.",
+    "discussionPrompts": [
+      "How do you reconstruct the timeline for acute versus chronic shedding and when do you revisit labs or add trichoscopy?",
+      "What examination or trichoscopic findings would shift you from uncomplicated TE toward female pattern overlap, diffuse alopecia areata, or inflammatory scalp disease?",
+      "How do you counsel on transplant timing when the working diagnosis and stability are not yet established?"
+    ],
+    "moderatorNotes": "Faculty: use Module 10 objectives—trigger mapping, chronic TE as exclusion, mixed AGA/TE, and proportionate investigation. Stress documentation if the patient declines further assessment.",
+    "linkedCompetencies": ["doctors_vol3_comp_telogen_diffuse_shedding"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Rubber-stamping ‘chronic TE’ without pattern reassessment",
+      "Proceeding to surgery referral without trichoscopy or stability discussion",
+      "Ignoring symptoms or patchy change if they emerge on directed exam"
+    ]
+  },
+  {
+    "id": "case_vol3_mod11_a",
+    "slug": "vol3-mod11-case",
+    "moduleId": "module_vol3_alopecia_areata_immune_mediated",
+    "parentType": "module",
+    "parentId": "module_vol3_alopecia_areata_immune_mediated",
+    "title": "Case Discussion: Patchy Loss, AA, and Mimics",
+    "status": "draft",
+    "clinicalScenario": "A 9-year-old child develops several round patches of hair loss over four weeks. The scalp shows mild scale; a school nurse suggested ringworm. The parent requests ‘strong steroid cream’ today. There is no lymphadenopathy on quick exam.",
+    "discussionPrompts": [
+      "How do you triage tinea capitis versus alopecia areata before immunosuppressive topical treatment?",
+      "What history and examination features increase urgency for fungal testing or oral antifungal therapy?",
+      "How do you explain uncertainty and follow-up to caregivers without either false reassurance or alarm?"
+    ],
+    "moderatorNotes": "Faculty: Module 11 differential emphasis—tinea, traction, trichotillomania. Reinforce scarring risk of untreated inflammatory tinea and medico-legal prudence around steroids.",
+    "linkedCompetencies": ["doctors_vol3_comp_alopecia_areata"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Intralesional or potent steroid before reasonable exclusion of tinea when suspicion exists",
+      "Missing kerion or systemic symptoms that change urgency",
+      "Dismissing parental concern without a clear plan"
+    ]
+  },
+  {
+    "id": "case_vol3_mod12_a",
+    "slug": "vol3-mod12-case",
+    "moduleId": "module_vol3_hair_shaft_breakage_syndromes",
+    "parentType": "module",
+    "parentId": "module_vol3_hair_shaft_breakage_syndromes",
+    "title": "Case Discussion: Breakage Versus Shedding",
+    "status": "draft",
+    "clinicalScenario": "A 22-year-old woman says her hair is ‘falling out in clumps’ after recent highlights and daily heat styling. She brings hairs that are mostly short and frayed at variable lengths. She has already started high-dose biotin and wants ‘full hormone bloods’.",
+    "discussionPrompts": [
+      "How do you demonstrate shedding versus breakage at the bedside and adjust your investigation list?",
+      "What styling and chemical history questions change management more than endocrine panels?",
+      "When would you still broaden the differential beyond pure cosmetic injury?"
+    ],
+    "moderatorNotes": "Faculty: Module 12—mechanical weathering, traction, and trichotillomania as needed; compassionate language.",
+    "linkedCompetencies": ["doctors_vol3_comp_shaft_breakage"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Ordering extensive endocrine workup without shaft-focused examination",
+      "Missing traction or compulsive hair pulling patterns",
+      "Promising supplement cures without removing insult"
+    ]
+  },
+  {
+    "id": "case_vol3_mod13_a",
+    "slug": "vol3-mod13-case",
+    "moduleId": "module_vol3_principles_cicatricial_alopecia",
+    "parentType": "module",
+    "parentId": "module_vol3_principles_cicatricial_alopecia",
+    "title": "Case Discussion: When ‘Thinning’ Is Scarring",
+    "status": "draft",
+    "clinicalScenario": "A 41-year-old woman reports six months of progressive crown thinning with burning and tenderness. She has used anti-dandruff shampoo without benefit. The crown skin looks slightly smooth and you struggle to see follicular openings in a focused patch. She asks only for minoxidil and a PRP package.",
+    "discussionPrompts": [
+      "What features in this vignette push cicatricial alopecia to the top of the differential?",
+      "How do you explain biopsy rationale and timing without alarming the patient?",
+      "Why is cosmeceutical or regenerative packaging inappropriate as first-line here?"
+    ],
+    "moderatorNotes": "Faculty: Module 13 urgency, ostia loss, biopsy margin philosophy, and transplant contraindication during activity.",
+    "linkedCompetencies": ["doctors_vol3_comp_cicatricial_principles"],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Selling cosmetic procedures while active scarring is plausible",
+      "Deferring biopsy indefinitely",
+      "Attributing symptoms solely to sensitisation without structural exam"
+    ]
+  },
+  {
+    "id": "case_vol3_mod14_a",
+    "slug": "vol3-mod14-case",
+    "moduleId": "module_vol3_lymphocytic_cicatricial_alopecias",
+    "parentType": "module",
+    "parentId": "module_vol3_lymphocytic_cicatricial_alopecias",
+    "title": "Case Discussion: FFA Versus Pattern Loss",
+    "status": "draft",
+    "clinicalScenario": "A 58-year-old woman notes recession of the frontal hairline over two years and thinning of the lateral eyebrows. She was told she has ‘genetic thinning’. She denies scalp symptoms but on close inspection there is perifollicular scale at the hairline.",
+    "discussionPrompts": [
+      "Which clinical clues favour frontal fibrosing alopecia over uncomplicated female pattern hair loss?",
+      "What role do trichoscopy and biopsy play when the picture is ambiguous?",
+      "How do you set expectations for stabilisation-focused therapy versus density restoration?"
+    ],
+    "moderatorNotes": "Faculty: Module 14 FFA phenotype, differential from FPHL, specialist-led therapy framing.",
+    "linkedCompetencies": ["doctors_vol3_comp_lymphocytic_cicatricial"],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Hairline surgery or aggressive cosmetic camouflage without inflammatory assessment",
+      "Ignoring eyebrow change",
+      "Dismissing scale at the band without examination"
+    ]
+  },
+  {
+    "id": "case_vol3_mod15_a",
+    "slug": "vol3-mod15-case",
+    "moduleId": "module_vol3_neutrophilic_mixed_cicatricial",
+    "parentType": "module",
+    "parentId": "module_vol3_neutrophilic_mixed_cicatricial",
+    "title": "Case Discussion: Pustules, Tufting, and Chronic Folliculitis",
+    "status": "draft",
+    "clinicalScenario": "A 31-year-old man has recurrent painful pustules on the vertex for nine months. He has completed three antibiotic courses with brief improvement each time. You note tufted follicular units and small areas of bare skin between clusters.",
+    "discussionPrompts": [
+      "Why is this presentation unlikely to be self-limited superficial folliculitis alone?",
+      "What principles guide specialist referral and longitudinal care in neutrophilic scarring disease?",
+      "How do you document activity when the patient reports ‘it feels better’ but structural signs persist?"
+    ],
+    "moderatorNotes": "Faculty: Module 15 folliculitis decalvans / dissecting spectrum—tufting as red flag, avoid antibiotic-only cycling without specialist plan.",
+    "linkedCompetencies": ["doctors_vol3_comp_neutrophilic_cicatricial"],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Repeated antibiotics without dermatology-led inflammatory strategy",
+      "Ignoring tufting as cosmetic only",
+      "Underestimating psychosocial impact of odour and drainage"
+    ]
+  },
+  {
+    "id": "case_vol3_mod16_a",
+    "slug": "vol3-mod16-case",
+    "moduleId": "module_vol3_inflammatory_infectious_scalp",
+    "parentType": "module",
+    "parentId": "module_vol3_inflammatory_infectious_scalp",
+    "title": "Case Discussion: Inflamed Scalp and Diagnostic Clarity",
+    "status": "draft",
+    "clinicalScenario": "A 28-year-old woman has itchy, scaly scalp and increased hair shedding for two months. She uses heavy oils every night and a fragranced leave-on serum from social media. She believes she has ‘scalp psoriasis like her cousin’ but has no plaques elsewhere.",
+    "discussionPrompts": [
+      "How do you differentiate seborrhoeic dermatitis, allergic contact dermatitis, and early psoriasis in this context?",
+      "What is your structured product-withdrawal and reassessment plan before fixing a primary alopecia label?",
+      "When would you refer for patch testing or dermatology review?"
+    ],
+    "moderatorNotes": "Faculty: Module 16 integration—surface inflammation confounds hair-loss diagnosis; evidence-aware product audit.",
+    "linkedCompetencies": ["doctors_vol3_comp_scalp_inflammatory_infectious"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Diagnosing androgenetic alopecia while active uncontrolled dermatitis persists",
+      "Encouraging more occlusive oils on inflamed scalp",
+      "Missing tinea if focal alopecia or nodes develop later"
+    ]
+  }
+]

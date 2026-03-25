@@ -1,0 +1,296 @@
+[
+  {
+    "id": "module_vol3_telogen_effluvium_diffuse_shedding",
+    "volumeId": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+    "moduleNumber": 10,
+    "slug": "telogen-effluvium-and-diffuse-shedding-disorders",
+    "title": "Telogen Effluvium and Diffuse Shedding Disorders",
+    "shortTitle": "Telogen effluvium",
+    "status": "draft",
+    "estimatedStudyMinutes": 200,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Diffuse shedding is one of the most common reasons patients seek hair consultation. The clinician’s task is not simply to label telogen effluvium, but to decide whether shedding is acute or chronic, whether a trigger is identifiable, whether patterned loss is present in the background, and whether loss is consistent with history, examination, and trichoscopy. Content aligns to Volume 3 Module 10 of the academy manual.",
+      "clinicalContext": "Differentiate acute TE, chronic TE, anagen shedding, and diffuse patterned loss; map trigger timelines; avoid over- and under-investigation with targeted laboratories; integrate overlap with AGA/FPHL.",
+      "learningObjectives": [
+        "Differentiate acute telogen effluvium, chronic telogen effluvium, anagen shedding, and diffuse patterned loss.",
+        "Construct a trigger timeline using illness, surgery, childbirth, stress, nutritional change, and medication exposure.",
+        "Recognise overlap between telogen effluvium and androgenetic alopecia in male and female patients.",
+        "Use trichoscopy and laboratory testing proportionately."
+      ],
+      "keyTakeaways": [
+        "Patients present after the follicular shift—timeline is central.",
+        "Chronic TE is overused as a label; consider mixed and alternate diagnoses.",
+        "Red flags (patchy loss, inflammation, pain, scarring clues) push beyond simple TE."
+      ],
+      "redFlags": [
+        "Patchy loss, visible inflammation, scalp pain, pustules, scarring, eyebrow or body-hair change, or severe miniaturisation on trichoscopy—do not anchor on TE alone."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Volume 3 framing",
+          "tier": "consensus",
+          "note": "Shedding biology is well described; investigation intensity follows phenotype. Emerging therapies for other conditions must not be conflated with TE management without indication."
+        }
+      ]
+    },
+    "lessonIds": ["lesson_vol3_mod10_01", "lesson_vol3_mod10_02", "lesson_vol3_mod10_03", "lesson_vol3_mod10_04"],
+    "quizIds": ["quiz_vol3_mod10"],
+    "casePromptIds": ["case_vol3_mod10_a"],
+    "downloadableResourceIds": ["resource_module_vol3_mod10_summary"],
+    "referenceIds": ["reference_module_vol3_mod10_01"]
+  },
+  {
+    "id": "module_vol3_alopecia_areata_immune_mediated",
+    "volumeId": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+    "moduleNumber": 11,
+    "slug": "alopecia-areata-and-immune-mediated-hair-loss",
+    "title": "Alopecia Areata and Immune-Mediated Hair Loss",
+    "shortTitle": "Alopecia areata",
+    "status": "draft",
+    "estimatedStudyMinutes": 210,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Alopecia areata is immune-mediated with a wide spectrum from small patches to total loss. Physicians must recognise ophiasis, diffuse and incognita forms, and involvement of eyebrows and lashes. Content aligns to Volume 3 Module 11.",
+      "clinicalContext": "Use trichoscopy to support diagnosis and activity; differentiate from tinea, traction, trichotillomania, and early cicatricial disease; build a practical treatment framework with shared decision-making and jurisdiction-appropriate options.",
+      "learningObjectives": [
+        "Recognise major AA phenotypes and prognostic implications.",
+        "Use trichoscopy to support diagnosis and monitor activity.",
+        "Differentiate AA from tinea capitis, traction alopecia, trichotillomania, and cicatricial mimics.",
+        "Outline a practical treatment framework from limited to extensive disease."
+      ],
+      "keyTakeaways": [
+        "AA is not only cosmetic—chronic, relapsing, and systemic autoimmune context matter.",
+        "Diffuse AA can mimic TE until trichoscopy and history refine the picture.",
+        "Newer immune-modulating options require risk–benefit framing, not marketing certainty."
+      ],
+      "redFlags": [
+        "Rapidly progressive extensive loss, nail change, severe distress, or paediatric progression—escalate follow-up and co-management per local pathways."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Therapy landscape",
+          "tier": "B",
+          "note": "Topical, intralesional, and systemic approaches vary by guideline and access; position JAK inhibitors and other advances as context-dependent with appropriate counselling."
+        }
+      ]
+    },
+    "lessonIds": ["lesson_vol3_mod11_01", "lesson_vol3_mod11_02", "lesson_vol3_mod11_03", "lesson_vol3_mod11_04"],
+    "quizIds": ["quiz_vol3_mod11"],
+    "casePromptIds": ["case_vol3_mod11_a"],
+    "downloadableResourceIds": ["resource_module_vol3_mod11_summary"],
+    "referenceIds": ["reference_module_vol3_mod11_01"]
+  },
+  {
+    "id": "module_vol3_hair_shaft_breakage_syndromes",
+    "volumeId": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+    "moduleNumber": 12,
+    "slug": "hair-shaft-disorders-and-breakage-syndromes",
+    "title": "Hair Shaft Disorders and Breakage Syndromes",
+    "shortTitle": "Shaft and breakage",
+    "status": "draft",
+    "estimatedStudyMinutes": 180,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Not all apparent hair loss is follicular alopecia. Breakage reduces length and cosmetic density while follicles may remain intact. Doctors must separate breakage from shedding to avoid mis-investigation and missed grooming, traction, or compulsive causes. Content aligns to Volume 3 Module 12.",
+      "clinicalContext": "Categories include congenital fragility, weathering, traction, trichotillomania, and inflammation-associated breakage; trichoscopy reveals fractured shafts and patterns; management removes insults and sets length-regrowth expectations.",
+      "learningObjectives": [
+        "Distinguish whole-hair shedding from shaft breakage at the bedside.",
+        "Classify major acquired and congenital breakage contexts relevant to practice.",
+        "Use examination and trichoscopy to localise cosmetic or traction stress.",
+        "Manage with habit change, inflammation control, and appropriate psychological referral."
+      ],
+      "keyTakeaways": [
+        "Patients say ‘thinning’ for both shedding and breakage.",
+        "Breakage often maps to styled or chemically stressed zones.",
+        "Trichotillomania requires non-judgmental referral pathways."
+      ],
+      "redFlags": [
+        "Attributing all complaints to TE or AGA without shaft examination."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Evidence",
+          "tier": "consensus",
+          "note": "Mechanical and cosmetic injury are clinical diagnoses supported by pattern and history; rare syndromes may need genetics or specialist referral."
+        }
+      ]
+    },
+    "lessonIds": ["lesson_vol3_mod12_01", "lesson_vol3_mod12_02", "lesson_vol3_mod12_03", "lesson_vol3_mod12_04"],
+    "quizIds": ["quiz_vol3_mod12"],
+    "casePromptIds": ["case_vol3_mod12_a"],
+    "downloadableResourceIds": ["resource_module_vol3_mod12_summary"],
+    "referenceIds": ["reference_module_vol3_mod12_01"]
+  },
+  {
+    "id": "module_vol3_principles_cicatricial_alopecia",
+    "volumeId": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+    "moduleNumber": 13,
+    "slug": "principles-of-cicatricial-alopecia",
+    "title": "Principles of Cicatricial Alopecia",
+    "shortTitle": "Cicatricial principles",
+    "status": "draft",
+    "estimatedStudyMinutes": 190,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Cicatricial alopecias destroy follicular architecture; delay converts treatable inflammation into irreversible loss. Every advanced trichology trainee must distinguish active scarring from non-scarring alopecia and act with urgency. Content aligns to Volume 3 Module 13.",
+      "clinicalContext": "Classify lymphocytic, neutrophilic, mixed, and nonspecific end-stage patterns; recognise ostia loss, symptoms, and biopsy site selection at active margins; management prioritises arresting activity before cosmetic or surgical goals.",
+      "learningObjectives": [
+        "Outline the pathological classification of cicatricial alopecia and its clinical utility.",
+        "Identify examination and trichoscopic clues of scarring activity.",
+        "Apply biopsy logic with correct site and clinical information to pathology.",
+        "Counsel that density restoration follows disease control, not before it."
+      ],
+      "keyTakeaways": [
+        "Pain, scale, pustules, and ostia loss are not ‘stress hair loss’.",
+        "Biopsy is often early, not a last resort after silent progression.",
+        "Transplant timing requires durable quiescence."
+      ],
+      "redFlags": [
+        "Months of empiric cosmeceutical treatment while inflammatory scarring advances."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Medico-legal prudence",
+          "tier": "consensus",
+          "note": "Document escalation offers, biopsy discussion, and referral when scarring is suspected—local dermatology pathways govern definitive therapy."
+        }
+      ]
+    },
+    "lessonIds": ["lesson_vol3_mod13_01", "lesson_vol3_mod13_02", "lesson_vol3_mod13_03", "lesson_vol3_mod13_04"],
+    "quizIds": ["quiz_vol3_mod13"],
+    "casePromptIds": ["case_vol3_mod13_a"],
+    "downloadableResourceIds": ["resource_module_vol3_mod13_summary"],
+    "referenceIds": ["reference_module_vol3_mod13_01"]
+  },
+  {
+    "id": "module_vol3_lymphocytic_cicatricial_alopecias",
+    "volumeId": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+    "moduleNumber": 14,
+    "slug": "lymphocytic-cicatricial-alopecias",
+    "title": "Lymphocytic Cicatricial Alopecias",
+    "shortTitle": "Lymphocytic scarring",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Major lymphocytic scarring disorders—lichen planopilaris, frontal fibrosing alopecia, discoid lupus, CCCA—require early recognition, monitoring, and anti-inflammatory treatment before irreversible spread. Content aligns to Volume 3 Module 14.",
+      "clinicalContext": "Phenotype-specific features, trichoscopy, biopsy at active margins, serial documentation; differentiate FFA from patterned or traction mimics; address CCCA with sensitive discussion of grooming and cultural context.",
+      "learningObjectives": [
+        "Describe clinical and trichoscopic features of LPP, FFA, DLE, and CCCA.",
+        "Plan biopsy and escalation aligned to activity.",
+        "Prioritise disease control and stability before restorative discussion.",
+        "Integrate multidisciplinary care where appropriate."
+      ],
+      "keyTakeaways": [
+        "Eyebrow loss and hairline quality in FFA are key discriminators.",
+        "CCCA centrifugal pattern overlaps with FPHL—symptoms and exam matter.",
+        "DLE carries systemic lupus context in some patients—broader review when indicated."
+      ],
+      "redFlags": [
+        "Treating progressive scarring hairlines as benign AGA without inflammatory assessment."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Therapy",
+          "tier": "B",
+          "note": "Anti-inflammatory regimens are specialist-led and guideline-dependent; this module teaches recognition and referral timing, not protocol substitution."
+        }
+      ]
+    },
+    "lessonIds": ["lesson_vol3_mod14_01", "lesson_vol3_mod14_02", "lesson_vol3_mod14_03", "lesson_vol3_mod14_04"],
+    "quizIds": ["quiz_vol3_mod14"],
+    "casePromptIds": ["case_vol3_mod14_a"],
+    "downloadableResourceIds": ["resource_module_vol3_mod14_summary"],
+    "referenceIds": ["reference_module_vol3_mod14_01"]
+  },
+  {
+    "id": "module_vol3_neutrophilic_mixed_cicatricial",
+    "volumeId": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+    "moduleNumber": 15,
+    "slug": "neutrophilic-and-mixed-cicatricial-alopecias",
+    "title": "Neutrophilic and Mixed Cicatricial Alopecias",
+    "shortTitle": "Neutrophilic scarring",
+    "status": "draft",
+    "estimatedStudyMinutes": 200,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Neutrophilic disorders such as folliculitis decalvans and dissecting cellulitis present with pustules, crusting, pain, tufting, and destructive scarring—often after prolonged mislabelling as simple folliculitis. Content aligns to Volume 3 Module 15.",
+      "clinicalContext": "Assess microbial contribution without reducing disease to cosmetic infection; recognise occlusion syndrome overlap; plan longitudinal anti-inflammatory and sometimes multidisciplinary care; serial exam trumps subjective ‘feeling better’ alone.",
+      "learningObjectives": [
+        "Recognise folliculitis decalvans and dissecting cellulitis phenotypes.",
+        "Interpret tufting, pustules, and drainage as urgency signals.",
+        "Outline principles of infection control, inflammation control, and follow-up.",
+        "Identify when multidisciplinary or surgical adjuncts enter longitudinal care."
+      ],
+      "keyTakeaways": [
+        "Surface improvement does not always equal disease control.",
+        "Tufting and pustules are destructive scarring allies—document and escalate.",
+        "Psychosocial burden is often high—validate and coordinate care."
+      ],
+      "redFlags": [
+        "Repeated antibiotics without examination for progressive scarring or tract formation."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Evidence",
+          "tier": "B",
+          "note": "Management combines antimicrobial and anti-inflammatory strategies per specialist protocols; avoid promising cure from single-modality cosmeceutical care."
+        }
+      ]
+    },
+    "lessonIds": ["lesson_vol3_mod15_01", "lesson_vol3_mod15_02", "lesson_vol3_mod15_03", "lesson_vol3_mod15_04"],
+    "quizIds": ["quiz_vol3_mod15"],
+    "casePromptIds": ["case_vol3_mod15_a"],
+    "downloadableResourceIds": ["resource_module_vol3_mod15_summary"],
+    "referenceIds": ["reference_module_vol3_mod15_01"]
+  },
+  {
+    "id": "module_vol3_inflammatory_infectious_scalp",
+    "volumeId": "volume_3_diffuse_shedding_cicatricial_scalp_disease",
+    "moduleNumber": 16,
+    "slug": "inflammatory-and-infectious-scalp-disorders",
+    "title": "Inflammatory and Infectious Scalp Disorders",
+    "shortTitle": "Scalp inflammation & infection",
+    "status": "draft",
+    "estimatedStudyMinutes": 200,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Common scalp disorders worsen shedding, mimic alopecia, disrupt adherence, and confound examination. Volume 3 closes by integrating seborrhoeic dermatitis, psoriasis, contact disease, and tinea capitis into hair medicine—not as afterthoughts. Content aligns to Volume 3 Module 16.",
+      "clinicalContext": "Differentiate seborrhoeic overlap from psoriasis; identify contact triggers; suspect tinea with focal loss, scale, and nodes; simplify topicals when barrier is broken; reassess primary alopecia diagnosis as inflammation settles.",
+      "learningObjectives": [
+        "Manage seborrhoeic dermatitis and scalp psoriasis in the hair-loss consultation.",
+        "Evaluate contact and irritant dermatitis from products and procedures.",
+        "Recognise tinea capitis presentations and scarring risk when delayed.",
+        "Build a barrier-first plan that supports long-term hair outcomes."
+      ],
+      "keyTakeaways": [
+        "Scalp comfort and inflammation control are part of hair outcomes.",
+        "Tinea in adults is easy to miss—maintain index of suspicion.",
+        "Product audit is diagnostic and therapeutic."
+      ],
+      "redFlags": [
+        "Progressive focal patchy loss with scale in children or endemic exposure without fungal consideration."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Antifungal and topical therapy",
+          "tier": "consensus",
+          "note": "Follow local antimicrobial stewardship; inflammatory end of tinea can scar—time matters."
+        }
+      ]
+    },
+    "lessonIds": ["lesson_vol3_mod16_01", "lesson_vol3_mod16_02", "lesson_vol3_mod16_03", "lesson_vol3_mod16_04"],
+    "quizIds": ["quiz_vol3_mod16"],
+    "casePromptIds": ["case_vol3_mod16_a"],
+    "downloadableResourceIds": ["resource_module_vol3_mod16_summary"],
+    "referenceIds": ["reference_module_vol3_mod16_01"]
+  }
+]
