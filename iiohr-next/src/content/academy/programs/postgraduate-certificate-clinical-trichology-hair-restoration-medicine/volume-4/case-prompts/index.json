@@ -1,0 +1,127 @@
+[
+  {
+    "id": "case_vol4_mod17_a",
+    "slug": "vol4-mod17-case",
+    "moduleId": "module_vol4_medical_management_of_hair_loss",
+    "parentType": "module",
+    "parentId": "module_vol4_medical_management_of_hair_loss",
+    "title": "Case Discussion: Treatment Ladder Discipline",
+    "status": "draft",
+    "clinicalScenario": "A 36-year-old man with progressive bitemporal thinning requests a 'transplant plan now' because he wants results this year. He has been inconsistent with topical minoxidil due to scalp irritation and has started an online 'supplement stack'. His history includes a recent change in medication and he reports no scalp pain. You have not yet used trichoscopy or standardised photography.",
+    "discussionPrompts": [
+      "What diagnostic and activity questions should you resolve before designing the medical ladder and giving any surgical timing advice?",
+      "How would you sequence topical/oral minoxidil and DHT inhibition with clear expectation-setting for shedding and timelines?",
+      "What monitoring and failure-analysis steps would you implement before escalating therapy or considering surgery?"
+    ],
+    "moderatorNotes": "Faculty: emphasise Module 17 goals/activity discipline, adherence and side-effect checks, and evidence-tier honest counselling. Avoid turning 'want transplant now' into rushed decision-making.",
+    "linkedCompetencies": [
+      "doctors_vol4_comp_medical_management"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Proceeding to surgical planning without securing diagnosis quality, tempo, and adherence strategy.",
+      "Escalating treatment while ignoring minoxidil intolerance and behavioural adherence barriers.",
+      "Using marketing-driven supplementation as a substitute for evidence-tier therapy and monitoring."
+    ]
+  },
+  {
+    "id": "case_vol4_mod18_a",
+    "slug": "vol4-mod18-case",
+    "moduleId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "parentType": "module",
+    "parentId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "title": "Case Discussion: Systemic Drivers and Proportional Care",
+    "status": "draft",
+    "clinicalScenario": "A 29-year-old woman presents with 5 months of progressive diffuse shedding and fatigue. She reports reduced protein intake after a recent weight-loss plan, heavy menstrual bleeding, and poor sleep. She wants 'a complete vitamin pack' and insists her ferritin must be low because her hair is falling. You have not yet documented a timeline with triggers or done a focused inflammatory and haematologic interpretation.",
+    "discussionPrompts": [
+      "How do you apply the systemic lens to decide which internal drivers are most plausible in this vignette?",
+      "What would you prioritise in investigations and interpretation before recommending supplements?",
+      "How do you build a longitudinal adherence plan that sets expectations for latency in improvement?"
+    ],
+    "moderatorNotes": "Faculty: emphasise Module 18 mechanism-aware systemic support, proportional investigation, and evidence-tier honesty in supplement counselling.",
+    "linkedCompetencies": [
+      "doctors_vol4_comp_nutritional_lifestyle_support"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Treating ferritin as an isolated numeric target without inflammatory/symptom context.",
+      "Overmedicalising with indiscriminate supplement stacks without a coherent driver rationale.",
+      "Escalating hair treatments while ignoring sleep, diet, and follow-through barriers."
+    ]
+  },
+  {
+    "id": "case_vol4_mod19_a",
+    "slug": "vol4-mod19-case",
+    "moduleId": "module_vol4_regenerative_medicine_in_trichology",
+    "parentType": "module",
+    "parentId": "module_vol4_regenerative_medicine_in_trichology",
+    "title": "Case Discussion: Regenerative Therapy Positioning",
+    "status": "draft",
+    "clinicalScenario": "A 44-year-old man with early-moderate androgenetic alopecia is interested in 'exosome injections' because social media claims they are more advanced than PRP. He has been inconsistent with medical therapy. He asks for a stand-alone regenerative plan to avoid tablets. You have not yet documented baseline photos or trichoscopic findings.",
+    "discussionPrompts": [
+      "How do you counsel the evidence-tier difference between PRP and exosomes without dismissing the patient?",
+      "Where does regenerative medicine sit in the therapy ladder for this case, and what must be secured first (diagnosis, disease control, expectations)?",
+      "What governance steps would you require so outcomes are auditable and comparable across sessions?"
+    ],
+    "moderatorNotes": "Faculty: emphasise Module 19 evidence-tier positioning, adjunction rather than replacement of disease control, and governance/documentation discipline.",
+    "linkedCompetencies": [
+      "doctors_vol4_comp_regenerative_medicine"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Presenting exosomes as evidence-equivalent to established therapy.",
+      "Replacing disease control with regenerative procedures alone when medical adherence is inconsistent.",
+      "Continuing regenerative sessions without baseline tracking and protocol transparency."
+    ]
+  },
+  {
+    "id": "case_vol4_mod20_a",
+    "slug": "vol4-mod20-case",
+    "moduleId": "module_vol4_principles_of_hair_transplantation",
+    "parentType": "module",
+    "parentId": "module_vol4_principles_of_hair_transplantation",
+    "title": "Case Discussion: Candidacy and Long-Term Forecasting",
+    "status": "draft",
+    "clinicalScenario": "A 52-year-old woman requests hair transplantation for progressive crown thinning. She reports burning when styling and intermittent scalp tenderness. She has seen a clinician for 'pattern loss' and was offered minoxidil, but she has not had structured inflammatory assessment or objective documentation. She wants surgery in the next two months and is not open to further diagnostic workup.",
+    "discussionPrompts": [
+      "Which candidacy features and risk domains require careful assessment before any transplant planning in this case?",
+      "How would you frame the biopsy/quiescence requirement if inflammatory or scarring causes are plausible?",
+      "What long-term planning elements must be included to set realistic expectations and protect donor and recipient outcomes?"
+    ],
+    "moderatorNotes": "Faculty: stress Module 20 candidacy discipline and long-view counselling, especially around active inflammation and scarring risk. Teach refusal-to-proceed documentation when appropriate.",
+    "linkedCompetencies": [
+      "doctors_vol4_comp_hair_transplantation"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Proceeding to transplant while inflammatory risk is plausible or diagnosis is not secured.",
+      "Ignoring symptoms that compete with a simple pattern-loss label.",
+      "Treating surgery as a cure rather than a component of ongoing management."
+    ]
+  },
+  {
+    "id": "case_vol4_mod21_a",
+    "slug": "vol4-mod21-case",
+    "moduleId": "module_vol4_advanced_fue_science",
+    "parentType": "module",
+    "parentId": "module_vol4_advanced_fue_science",
+    "title": "Case Discussion: Donor Governance and Naturalness Strategy",
+    "status": "draft",
+    "clinicalScenario": "A 33-year-old man has tight curls and a thick donor scalp. He requests a very dense hairline in a single session. During consultation, he insists that transection risk can be 'fixed in implantation' and he wants maximum immediate yield despite limited donor reserve assessment. You have not yet documented donor distribution reasoning or workflow governance details.",
+    "discussionPrompts": [
+      "How do you educate the patient on multifactor transection risk and why earlier tissue handling cannot be rescued later?",
+      "What donor governance principles do you apply to prevent visible depletion and protect future sessions?",
+      "How do you frame density strategy and naturalness restraint as an allocation decision tied to long-term planning?"
+    ],
+    "moderatorNotes": "Faculty: emphasise Module 21 precision tissue handling, donor distribution/overharvesting prevention, and density allocation logic with candid long-view counselling.",
+    "linkedCompetencies": [
+      "doctors_vol4_comp_advanced_fue_science"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Counselling that ignores donor economics and future depletion risk.",
+      "Belief that implantation quality can compensate for earlier workflow stewardship errors.",
+      "Design decisions driven by maximum density requests rather than allocation logic and naturalness restraint."
+    ]
+  }
+]

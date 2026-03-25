@@ -1,0 +1,268 @@
+[
+  {
+    "id": "module_vol4_medical_management_of_hair_loss",
+    "volumeId": "volume_4_therapeutics_regenerative_surgery_foundations",
+    "moduleNumber": 17,
+    "slug": "medical-management-of-hair-loss",
+    "title": "Medical Management of Hair Loss",
+    "shortTitle": "Medical management",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Medical management is the backbone of most hair-loss pathways. Even when surgery is possible later, medical therapy often determines stability, donor protection, recipient optimisation, and long-term maintenance.",
+      "clinicalContext": "Doctors must tailor therapy to phenotype, sex, age, comorbidity, reproductive context, adherence likelihood, and risk tolerance. Teach evidence-tier positioning and safe monitoring rather than protocol-only prescribing.",
+      "learningObjectives": [
+        "Use topical and oral minoxidil appropriately with expectation-setting and safety monitoring.",
+        "Apply 5-alpha reductase inhibitors appropriately and counsel on adverse effects and limitations.",
+        "Frame anti-androgen strategies in women with reproductive, endocrine, and medico-legal caution.",
+        "Sequence combination therapy logically and perform failure analysis using objective monitoring."
+      ],
+      "keyTakeaways": [
+        "Treatment goal and activity guide therapy selection.",
+        "Oral minoxidil is off-label and safety-governed.",
+        "DHT inhibition is core in male pattern loss; women need careful framing.",
+        "Combination therapy requires disciplined sequencing and monitoring."
+      ],
+      "redFlags": [
+        "Escalating treatment without checking adherence, side effects, and diagnosis fit.",
+        "Replacing evidence-tier disease control with off-label or emerging options without governance."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Core routine vs off-label",
+          "tier": "B",
+          "note": "Teach established routine options separately from off-label strategies; counselling and monitoring are part of academic defensibility."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol4_mod17_01",
+      "lesson_vol4_mod17_02",
+      "lesson_vol4_mod17_03",
+      "lesson_vol4_mod17_04"
+    ],
+    "quizIds": [
+      "quiz_vol4_mod17"
+    ],
+    "casePromptIds": [
+      "case_vol4_mod17_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol4_mod17_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol4_mod17_01"
+    ]
+  },
+  {
+    "id": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "volumeId": "volume_4_therapeutics_regenerative_surgery_foundations",
+    "moduleNumber": 18,
+    "slug": "nutritional-lifestyle-and-systemic-support",
+    "title": "Nutritional, Lifestyle, and Systemic Support",
+    "shortTitle": "Systemic support",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Hair medicine is weakened when systemic contributors are treated as peripheral. This module teaches how to address internal drivers without collapsing into supplement marketing or indiscriminate testing.",
+      "clinicalContext": "Adopt a systemic lens: identify whether the hair disorder is being accelerated, amplified, or perpetuated by correctable internal factors, then translate that into proportionate investigation and longitudinal counselling.",
+      "learningObjectives": [
+        "Apply the systemic lens to identify plausible correctable drivers in diffuse shedding and poor hair quality.",
+        "Interpret iron status in context (ferritin, inflammation, and symptoms) to decide on deficiency correction.",
+        "Address micronutrient adequacy and translate stress/sleep into mechanism-aware counselling.",
+        "Strengthen adherence and behavioural follow-through with simplified regimens and realistic timelines."
+      ],
+      "keyTakeaways": [
+        "Correct proven deficiency and address modifiable drivers.",
+        "Translate stress into mechanisms rather than vague blame.",
+        "Avoid expensive testing and marketing-driven supplement stacking.",
+        "Adherence support often outperforms additional medications."
+      ],
+      "redFlags": [
+        "Overmedicalising with reflexive broad testing.",
+        "Fixating on numeric targets (e.g., ferritin) without clinical context.",
+        "Escalating therapy without addressing follow-through barriers."
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol4_mod18_01",
+      "lesson_vol4_mod18_02",
+      "lesson_vol4_mod18_03",
+      "lesson_vol4_mod18_04"
+    ],
+    "quizIds": [
+      "quiz_vol4_mod18"
+    ],
+    "casePromptIds": [
+      "case_vol4_mod18_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol4_mod18_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol4_mod18_01"
+    ]
+  },
+  {
+    "id": "module_vol4_regenerative_medicine_in_trichology",
+    "volumeId": "volume_4_therapeutics_regenerative_surgery_foundations",
+    "moduleNumber": 19,
+    "slug": "regenerative-medicine-in-trichology",
+    "title": "Regenerative Medicine in Trichology",
+    "shortTitle": "Regenerative medicine",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Regenerative medicine is exciting but easily overstated. Doctors learn to distinguish biological rationale from proven effect and to position supportive evidence without marketing excess.",
+      "clinicalContext": "Teach evidence-tier thinking: established routine-practice options like PRP (with protocol variability) vs emerging modalities like exosomes. Require governance through documentation and outcome tracking.",
+      "learningObjectives": [
+        "Position regenerative therapies as adjuncts and explain evidence-tier differences safely.",
+        "Counsel on PRP variability and set realistic expectations.",
+        "Teach cautious positioning for exosomes and other emerging therapies.",
+        "Integrate regenerative medicine into a longitudinal plan with governance and documentation."
+      ],
+      "keyTakeaways": [
+        "Evidence-tier clarity prevents overclaiming.",
+        "PRP is variably standardised and should be audited.",
+        "Exosomes are emerging; governance and realistic expectations matter.",
+        "Integrate regenerative medicine into recipient and peri-operative planning."
+      ],
+      "redFlags": [
+        "Presenting emerging modalities as evidence-equivalent.",
+        "Proceeding without baseline tracking and protocol transparency."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "PRP above exosomes",
+          "tier": "B",
+          "note": "Current teaching positions PRP above exosomes in routine establishment; exosomes remain emerging with heterogeneous evidence."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol4_mod19_01",
+      "lesson_vol4_mod19_02",
+      "lesson_vol4_mod19_03",
+      "lesson_vol4_mod19_04"
+    ],
+    "quizIds": [
+      "quiz_vol4_mod19"
+    ],
+    "casePromptIds": [
+      "case_vol4_mod19_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol4_mod19_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol4_mod19_01"
+    ]
+  },
+  {
+    "id": "module_vol4_principles_of_hair_transplantation",
+    "volumeId": "volume_4_therapeutics_regenerative_surgery_foundations",
+    "moduleNumber": 20,
+    "slug": "principles-of-hair-transplantation",
+    "title": "Principles of Hair Transplantation",
+    "shortTitle": "Transplant foundations",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Hair transplantation should be taught as part of hair medicine. The educational focus is realistic forecasting, donor preservation, recipient planning, and ethical patient selection.",
+      "clinicalContext": "Decide candidacy by diagnosis security, disease pattern understanding, expectations, and donor reserve. In scarring alopecia, surgery requires sustained quiescence and specialist-led stability assessment.",
+      "learningObjectives": [
+        "Apply surgical candidacy discipline based on stability, diagnosis, and future loss forecasting.",
+        "Assess donor reserves as finite biologic resources rather than graft-only calculations.",
+        "Plan recipient design for naturalness restraint and progression awareness.",
+        "Counsel on FUT vs FUE trade-offs without technique ideology and plan for shock loss and long-term sessions."
+      ],
+      "keyTakeaways": [
+        "Surgery is not a cure: it is a component of lifelong management.",
+        "Donor assessment protects future options.",
+        "Recipient design needs restraint and naturalness.",
+        "Shock loss and ongoing progression must be counselled."
+      ],
+      "redFlags": [
+        "Planning surgery in active inflammatory or plausible scarring disease.",
+        "Overpromising density results without long-view forecasting."
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol4_mod20_01",
+      "lesson_vol4_mod20_02",
+      "lesson_vol4_mod20_03",
+      "lesson_vol4_mod20_04"
+    ],
+    "quizIds": [
+      "quiz_vol4_mod20"
+    ],
+    "casePromptIds": [
+      "case_vol4_mod20_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol4_mod20_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol4_mod20_01"
+    ]
+  },
+  {
+    "id": "module_vol4_advanced_fue_science",
+    "volumeId": "volume_4_therapeutics_regenerative_surgery_foundations",
+    "moduleNumber": 21,
+    "slug": "advanced-fue-science",
+    "title": "Advanced FUE Science",
+    "shortTitle": "Advanced FUE science",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Advanced FUE science is a tissue-handling discipline across transection mechanics, graft survival logic, donor distribution governance, and aesthetic allocation strategy.",
+      "clinicalContext": "Teach advanced FUE reasoning as adaptive precision: punch dynamics depend on patient anatomy, graft survival depends on workflow governance, and density strategy is allocation-based rather than maximum-density ideology.",
+      "learningObjectives": [
+        "Explain transection risk determinants and how decisions adapt by hair/scalp variables.",
+        "Manage donor distribution and prevent overharvesting / visible depletion.",
+        "Apply graft handling survival logic across extraction, holding, and implantation workflow.",
+        "Plan density strategy and frame naturalness restraint and advanced-technique bridge safely."
+      ],
+      "keyTakeaways": [
+        "Transection risk is multifactorial and technique must adapt.",
+        "Donor governance prevents ethical and technical failure.",
+        "Workflow stewardship cannot be rescued by later implantation.",
+        "Density allocation requires naturalness restraint."
+      ],
+      "redFlags": [
+        "Assuming implantation can fix earlier workflow errors.",
+        "Overharvesting donor for immediate yield without future planning.",
+        "Ignoring density allocation and progression restraint."
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol4_mod21_01",
+      "lesson_vol4_mod21_02",
+      "lesson_vol4_mod21_03",
+      "lesson_vol4_mod21_04"
+    ],
+    "quizIds": [
+      "quiz_vol4_mod21"
+    ],
+    "casePromptIds": [
+      "case_vol4_mod21_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol4_mod21_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol4_mod21_01"
+    ]
+  }
+]

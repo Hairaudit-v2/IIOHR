@@ -1,0 +1,1094 @@
+[
+  {
+    "id": "lesson_vol4_mod17_01",
+    "moduleId": "module_vol4_medical_management_of_hair_loss",
+    "lessonNumber": 1,
+    "slug": "treatment-philosophy-goals-and-activity",
+    "title": "Treatment Philosophy: Goals, Activity, and Evidence Positioning",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Select medical therapy by clarifying disease process, activity, and progression speed.",
+      "Match treatment goals to therapy design (arrest shedding, slow miniaturisation, disease control, surgical support, and long-term maintenance)."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The first question in medical management is not 'which product should I use?' but 'what is the disease process, how active is it, and what is the realistic treatment goal?'. A sophisticated therapeutic plan begins with diagnosis quality, tempo, and an explicit goal (for example: arresting shedding, slowing miniaturisation pressure, thickening existing hairs, controlling inflammatory activity, supporting surgical planning, or long-term maintenance).\n\nPatients improve when therapy aligns to the mechanism. Doctors should learn to position each intervention within a therapeutic ladder and adjust that ladder when the clinical picture evolves, rather than layering treatments indiscriminately.\n\nEvidence tier thinking is the academic backbone of this module: topical minoxidil and finasteride occupy routine-practice positions, while low-dose oral minoxidil sits in an off-label teaching space that requires deliberate counselling and monitoring."
+    },
+    "keyTakeaways": [
+      "Therapy selection starts with disease process, activity, and an explicit treatment goal.",
+      "Goals can be diagnostic, stabilising, disease-control, surgical-support, or long-term maintenance.",
+      "Evidence-tier positioning reduces overmedicalising and prevents marketing-driven choices."
+    ],
+    "redFlags": [
+      "Picking therapies without reassessing disease activity or patient goals.",
+      "Intensifying treatment because progress 'feels slow' without checking adherence, side effects, and diagnostic fit."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 4 Module 17, section 17.1: Treatment Philosophy: Goals, Activity, and Evidence Positioning."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod17_01",
+        "title": "Clinical reasoning",
+        "prompt": "A patient is sure they need oral therapy because they have 'male pattern thinning', but your assessment suggests diagnosis uncertainty and slow tempo. What questions should you ask before choosing a treatment ladder?",
+        "teachingPoint": "Reconstruct diagnosis quality and tempo, then define the treatment goal (stabilise, disease control, surgical support, or maintenance) before choosing and sequencing interventions."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod17_01_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod17_01"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod17_02",
+    "moduleId": "module_vol4_medical_management_of_hair_loss",
+    "lessonNumber": 2,
+    "slug": "topical-and-low-dose-oral-minoxidil",
+    "title": "Topical Minoxidil and Low-Dose Oral Minoxidil",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Explain how topical minoxidil supports calibre maintenance and why early shedding can occur.",
+      "Counsel on low-dose oral minoxidil as off-label therapy, including selection, adverse effects, and monitoring priorities."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Topical minoxidil remains a core treatment for male and female patterned hair loss, with a strong evidence base in daily practice. Its practical value is prolonging anagen signalling and reducing miniaturisation pressure over time. Limitations are clinically real: irritation, residue, altered hair texture, inconvenience, and long-term adherence challenges.\n\nDoctors should set expectations about gradual onset and the possibility of early shedding that may occur as follicles cycle. Treating the barrier (vehicle intolerance and irritant symptoms) and simplifying application supports continuation.\n\nLow-dose oral minoxidil is increasingly discussed because it can improve adherence and bypass topical intolerance. It must be taught as off-label: deliberate counselling, cardiovascular and fluid-retention screening, and safety-focused monitoring. Oral minoxidil is often a patient-centered choice as much as a pharmacologic one; it is not automatically 'stronger' for every individual."
+    },
+    "keyTakeaways": [
+      "Topical minoxidil works in routine practice, but adherence and irritation determine success.",
+      "Early shedding can happen with minoxidil cycling changes; expectation-setting prevents premature discontinuation.",
+      "Oral low-dose minoxidil is off-label and requires deliberate risk counselling and screening."
+    ],
+    "redFlags": [
+      "Continuing therapy changes without addressing topical barrier irritation or adherence barriers.",
+      "Prescribing off-label oral minoxidil without reviewing cardiovascular history, oedema tendency, and counselling for side effects."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 17, section 17.2-17.3: Topical Minoxidil and Low-Dose Oral Minoxidil.",
+      "notes": [
+        {
+          "label": "Safety framing",
+          "tier": "B",
+          "note": "Oral low-dose minoxidil is off-label; teach selection, monitoring, and counselling rather than protocol-heavy prescribing."
+        }
+      ]
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod17_02",
+        "title": "Clinical reasoning",
+        "prompt": "A woman stops topical minoxidil because her scalp is irritated and she forgets doses. She asks about switching to oral minoxidil. What is your decision logic?",
+        "teachingPoint": "Treat oral minoxidil as an off-label, risk-assessed adherence strategy: screen safety, counsel realistically, and set monitoring expectations rather than assuming 'more is better'."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod17_02_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod17_02"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod17_03",
+    "moduleId": "module_vol4_medical_management_of_hair_loss",
+    "lessonNumber": 3,
+    "slug": "finasteride-dutasteride-and-anti-androgen-strategies",
+    "title": "Finasteride, Dutasteride, and Anti-Androgen Strategies in Women",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Use 5-alpha reductase inhibitors appropriately for male pattern hair loss and selected female patients.",
+      "Frame anti-androgen strategies for women with reproductive, endocrine, and medico-legal caution."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "5-alpha reductase inhibition remains central to medical management of male pattern hair loss because it addresses the androgen-driven component of miniaturisation directly. Finasteride is the best-established routine option. Dutasteride may be considered in selected patients where stronger DHT suppression is clinically appropriate and jurisdictional prescribing norms allow.\n\nCounselling must include benefits and limitations, the ongoing need for treatment, and potential adverse effects. Failure analysis should test practical factors (dose adherence), disease context (duration and severity), expectation calibration, and the coexistence of non-AGA drivers.\n\nIn women, anti-androgen strategies require additional caution: reproductive safety, contraindication clarity, and careful monitoring expectations. The goal is evidence-aware therapy, not risky 'trial and see' prescribing."
+    },
+    "keyTakeaways": [
+      "5-alpha reductase inhibitors target the androgen-driven mechanism in male pattern loss.",
+      "Failure analysis should separate non-response from non-adherence and incorrect diagnosis.",
+      "Anti-androgen therapy in women demands reproductive and medico-legal framing."
+    ],
+    "redFlags": [
+      "Anti-androgen prescribing without reproductive counselling and contraindication checks.",
+      "Ignoring non-AGA drivers (for example, diffuse AA, inflammatory scalp disease, or thyroid/iron issues) when response disappoints."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 4 Module 17, section 17.4-17.5: Finasteride, Dutasteride, and Anti-Androgen Strategies in Women."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod17_03",
+        "title": "Clinical reasoning",
+        "prompt": "A man requests escalation to a stronger DHT blocker after three months because 'hair is still falling'. How do you decide whether to change the ladder?",
+        "teachingPoint": "Check adherence, expected timelines, and diagnosis fit first; change therapy based on clinically meaningful progress and tolerability rather than calendar frustration."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod17_03_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod17_03"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod17_04",
+    "moduleId": "module_vol4_medical_management_of_hair_loss",
+    "lessonNumber": 4,
+    "slug": "combination-logic-and-monitoring-failure-analysis",
+    "title": "Combination Therapy Logic and Monitoring / Failure Analysis",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Sequence combination therapy by aligning each intervention to a specific therapeutic goal.",
+      "Use clinical monitoring to distinguish lack of improvement from non-adherence, overlapping disease, or unrealistic density expectations."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Most high-level hair practice is combination medicine. A patient may need one intervention to control miniaturisation, another to support calibre, another to treat scalp health, and another to support long-term maintenance. The discipline is in combining intelligently and sequencing therapies based on disease activity and patient tolerance.\n\nDoctors should learn red flags for mis-titration: do not intensify because progress feels slow until the diagnosis quality is confirmed, adherence is checked, side effects are reviewed, and overlapping disease is considered.\n\nMonitoring is clinical and governance-focused. Standardised photography and, where appropriate, trichoscopy help assess calibre change and shedding patterns. Reassess diagnosis if shedding worsens, inflammation appears, or density drops unexpectedly. Failure analysis should separate non-response from insufficient adherence and from expectations that exceed realistic timelines."
+    },
+    "keyTakeaways": [
+      "Combine therapies only when each has a clear purpose and is sequenced for a specific goal.",
+      "Before escalating, check diagnosis fit, adherence, side effects, and overlapping disease.",
+      "Use objective monitoring (photography/trichoscopy) and realistic timelines to guide decisions."
+    ],
+    "redFlags": [
+      "Intensifying treatment while ignoring adherence or side effect problems.",
+      "Letting symptom-based improvement replace objective monitoring of structural change."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 17, section 17.6-17.7: Combination Therapy Logic and Monitoring / Failure Analysis.",
+      "notes": [
+        {
+          "label": "Monitoring discipline",
+          "tier": "B",
+          "note": "Teach governance: objective monitoring prevents arbitrary ladder changes and improves academic defensibility."
+        }
+      ]
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod17_04",
+        "title": "Clinical reasoning",
+        "prompt": "At six months, a patient 'feels better' but photography suggests continued density decline. What are your next reasoning steps for failure analysis?",
+        "teachingPoint": "Triangulate: assess adherence, revisit diagnosis and overlap, interpret side effects, and use photography/trichoscopy trends to guide whether to refine, de-escalate, or refer."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod17_04_summary"
+    ],
+    "quizId": "quiz_vol4_mod17",
+    "casePromptIds": [
+      "case_vol4_mod17_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol4_mod17_04"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod18_01",
+    "moduleId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "lessonNumber": 1,
+    "slug": "the-systemic-lens",
+    "title": "The Systemic Lens: Correctable Internal Drivers",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Apply a systematic lens to decide whether hair disorder is being accelerated, amplified, or perpetuated by correctable internal factors.",
+      "Translate internal contributors into patient-specific management emphasis without collapsing into indiscriminate supplement marketing."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Hair medicine is weakened when systemic contributors are treated as peripheral. Module 18 teaches a doctor-level question: is the hair disorder being accelerated, amplified, or perpetuated by a correctable internal factor? The internal drivers may involve iron depletion, thyroid dysfunction, dietary restriction or protein insufficiency, menstrual blood loss context, insulin resistance, chronic inflammation, sleep disruption, and psychophysiological stress.\n\nThis module is intentionally not a supplement lecture. It focuses on clinical prioritisation, proportional investigation, and translating 'systemic' into mechanism-aware counselling.\n\nThe academic goal is to create treatment emphasis plans that strengthen outcomes without overmedicalising every case or promising hair growth from unproven stacks."
+    },
+    "keyTakeaways": [
+      "Start with a doctor-level question: which correctable internal factors are accelerating the hair disorder?",
+      "Investigate and counsel proportionately based on symptoms, context, and evidence tier.",
+      "Avoid substituting supplement marketing for coherent clinical reasoning."
+    ],
+    "redFlags": [
+      "Treating systemic issues as optional when the history suggests acceleration or perpetuation.",
+      "Ordering broad panels reflexively without clinical cues and translating results into meaningless supplement advice."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 4 Module 18, section 18.1: The Systemic Lens: Correctable Internal Drivers."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod18_01",
+        "title": "Clinical reasoning",
+        "prompt": "A patient with diffuse shedding wants 'full bloods and every vitamin'. Their symptoms suggest recent fatigue and dietary restriction. What is your structured approach before choosing investigations and supplements?",
+        "teachingPoint": "Use the systemic lens to prioritise likely drivers, interpret labs with clinical context, and only correct proven deficiencies; then reframe adherence and timelines realistically."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod18_01_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod18_01"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod18_02",
+    "moduleId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "lessonNumber": 2,
+    "slug": "iron-ferritin-and-haematologic-logic",
+    "title": "Iron, Ferritin, and Haematologic Logic",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Interpret iron status beyond isolated ferritin values in the context of symptoms, inflammation, and pattern/tempo.",
+      "Recognise common real-world iron contributors (menstrual blood loss, restrictive diets, malabsorption patterns)."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Iron depletion remains a common contributor to shedding and chronic poor hair quality, particularly in menstruating women and in patients with restrictive diets or malabsorptive tendencies. A doctor-level approach looks beyond a single ferritin number.\n\nDoctors should interpret iron status alongside symptoms, haemoglobin context, inflammatory background, and the hair-loss phenotype. The aim is to identify whether a correctable iron driver is plausible, then address it with clinically appropriate care rather than generic supplement stacking.\n\nThis lesson should train you to connect systemic correction to plausible mechanisms for shedding improvement and hair-quality resilience."
+    },
+    "keyTakeaways": [
+      "Ferritin must be interpreted clinically; inflammation can confound isolated numbers.",
+      "Match iron considerations to phenotype, symptoms, and patient context.",
+      "Correct proven deficiency rather than escalating supplements without a coherent rationale."
+    ],
+    "redFlags": [
+      "Treating ferritin like a stand-alone target and ignoring clinical context.",
+      "Missing systemic symptoms or comorbidities that warrant broader medical coordination."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 18, section 18.2: Iron, Ferritin, and Haematologic Logic.",
+      "notes": [
+        {
+          "label": "Interpretation discipline",
+          "tier": "B",
+          "note": "Teach clinical context: ferritin values require interpretation with inflammation and symptoms, not numeric fixation."
+        }
+      ]
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod18_02",
+        "title": "Clinical reasoning",
+        "prompt": "A patient has a borderline ferritin with inflammatory symptoms and diffuse shedding. What do you do with the information instead of jumping to supplementation?",
+        "teachingPoint": "Reconcile ferritin with inflammatory context and clinical picture, consider whether deficiency is plausible, and prioritise a coherent deficiency-correction plan with follow-up."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod18_02_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod18_02"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod18_03",
+    "moduleId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "lessonNumber": 3,
+    "slug": "micronutrients-stress-sleep-and-micronutrient-fairness",
+    "title": "Micronutrients, Stress, and Neuroendocrine Burden",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Decide when to investigate micronutrients and when to focus on nutritional adequacy.",
+      "Translate stress and sleep disruption into mechanism-aware counselling rather than vague blame."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Not every patient needs extensive micronutrient testing. Selected deficiencies or suboptimal intake may influence shedding, fragility, and response to therapy, but protein adequacy and nutritional diversity often matter more than expensive supplement stacks with weak evidence.\n\nStress is also frequently overused as a generic explanation. In serious practice, stress must be translated into concrete mechanisms: sleep disruption, neuroendocrine stress load, diet change, cortisol-linked behavioural patterns, inflammatory worsening, and sometimes compulsive hair/scalp manipulation. This makes management specific and credible.\n\nThe doctor teaches a balanced, evidence-aware approach: correct genuine deficiencies, address modifiable behaviours, and avoid dismissive or unsubstantiated statements."
+    },
+    "keyTakeaways": [
+      "Correct proven deficiencies and prioritise protein/nutritional diversity over generic stacking.",
+      "Translate stress into mechanisms (sleep, diet, neuroendocrine burden, inflammatory influence).",
+      "Maintain evidence-tier honesty in counselling and investigation decisions."
+    ],
+    "redFlags": [
+      "Buying into 'more supplements equals better hair' without clinical rationale.",
+      "Using stress as a vague explanation without checking modifiable drivers."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 18, section 18.3-18.4: Micronutrients, Stress, and Neuroendocrine Burden."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod18_03",
+        "title": "Clinical reasoning",
+        "prompt": "A patient is convinced their shedding is due to stress and asks for a large micronutrient list. What do you do with their request in a doctor framework?",
+        "teachingPoint": "Assess plausible mechanisms, focus on adherence to nutritional basics and proven deficiency correction, and counsel with specificity rather than dismissing symptoms or promising hair growth from unproven stacks."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod18_03_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod18_03"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod18_04",
+    "moduleId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "lessonNumber": 4,
+    "slug": "adherence-behavioural-medicine-and-longitudinal-support",
+    "title": "Adherence, Behavioural Medicine, and Longitudinal Support",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Use behavioural and adherence principles to strengthen longitudinal follow-through in hair medicine.",
+      "Support patients through latency periods when improvement is not immediate."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Some of the best results in hair medicine come not from adding more medications but from improving follow-through. Patients need simplified, realistic regimens, clear timelines, and support through the period when improvement is not yet obvious.\n\nThis module teaches a doctor-level approach to adherence: reduce complexity where possible, align therapy intensity with patient capacity, and document barriers and solutions.\n\nThe academic output is a longitudinal support framework that strengthens continuation and reduces unnecessary switching driven by anxiety or calendar-based expectations."
+    },
+    "keyTakeaways": [
+      "Adherence is often the strongest determinant of real-world success.",
+      "Simplify regimens and set realistic timelines for improvement latency.",
+      "Use longitudinal support and documentation to reduce anxiety-driven changes."
+    ],
+    "redFlags": [
+      "Escalating therapy without addressing adherence barriers and misunderstanding of timelines.",
+      "Treating patient follow-through as optional rather than a clinical governance responsibility."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 4 Module 18, section 18.5: Adherence, Behavioural Medicine, and Longitudinal Support."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod18_04",
+        "title": "Clinical reasoning",
+        "prompt": "A patient reports no response at three months but admits missing applications and inconsistent supplements. How do you frame next steps and avoid unnecessary therapy escalation?",
+        "teachingPoint": "Separate 'no response' into adherence, expectations, and phenotype fit; then adjust the regimen complexity and monitoring plan before escalating therapy."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod18_04_summary"
+    ],
+    "quizId": "quiz_vol4_mod18",
+    "casePromptIds": [
+      "case_vol4_mod18_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol4_mod18_04"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod19_01",
+    "moduleId": "module_vol4_regenerative_medicine_in_trichology",
+    "lessonNumber": 1,
+    "slug": "regenerative-medicine-as-concept",
+    "title": "Regenerative Medicine as a Concept: Rationale vs Effect",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Distinguish biological rationale for regeneration from proven clinical effect.",
+      "Position regenerative strategies as adjunct/optimisation tools unless evidence justifies otherwise."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Regenerative medicine occupies one of the most exciting yet most easily overstated spaces in hair restoration. Doctors need a framework that is both open to innovation and disciplined by evidence.\n\nThis module distinguishes biological rationale from proven effect, and supportive evidence from marketing excess. The doctor learns to present regenerative strategies as adjunctive or optimisation tools within broader therapeutic plans, because the academic defensibility of the treatment pathway matters as much as the procedure itself.\n\nThe teaching discipline is evidence-tier clarity: established therapies and routine-practice modalities are not the same category as evolving consensus or investigational techniques. That clarity protects patients from unrealistic expectations and protects clinical credibility from shifting narratives."
+    },
+    "keyTakeaways": [
+      "Regenerative strategies are taught as adjuncts unless evidence for stand-alone use is sufficiently robust.",
+      "Always separate rationale (why it might work) from effect (what consistently happens).",
+      "Evidence-tier clarity prevents marketing-driven overclaiming."
+    ],
+    "redFlags": [
+      "Presenting emerging regenerative modalities as evidence-equivalent to long-established therapies.",
+      "Treating regenerative medicine as the primary therapy without aligning to disease control and stabilisation."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 19, section 19.1: Regenerative Medicine as a Concept: Rationale vs Effect."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod19_01",
+        "title": "Clinical reasoning",
+        "prompt": "A patient asks you to replace evidence-based medical therapy with an emerging regenerative modality. How do you respond academically and clinically?",
+        "teachingPoint": "Explain evidence tier differences, define the likely role as adjunct/optimisation, and re-anchor the plan to disease activity and goals before adding regenerative treatments."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod19_01_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod19_01"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod19_02",
+    "moduleId": "module_vol4_regenerative_medicine_in_trichology",
+    "lessonNumber": 2,
+    "slug": "platelet-rich-plasma-and-expectations",
+    "title": "Platelet-Rich Plasma (PRP): Expectations and Standardisation",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Explain why PRP outcomes vary and why protocol standardisation remains imperfect.",
+      "Position PRP as an adjunct/bridge/optimisation modality with evidence-aware expectations."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "PRP remains the most established regenerative procedure in routine hair practice. It has supportive evidence in androgenetic alopecia, but outcomes vary by preparation method, platelet concentration, activation approach, injection technique, treatment interval, and patient selection.\n\nPRP should therefore be taught as useful and increasingly evidence-supported, but not as perfectly standardised therapy. The clinical expectations should focus on calibre support, shedding reduction, and density support rather than miraculous reversal of advanced loss.\n\nBecause PRP standardisation differs across systems and clinics, credible practice requires photographic and trichoscopic tracking and the ability to audit what was done and what changed."
+    },
+    "keyTakeaways": [
+      "PRP is established but variably standardised; outcomes depend on protocol and selection.",
+      "Set realistic expectations: calibre support and density support, not guaranteed reversal.",
+      "Use baseline and tracking to support clinical auditability."
+    ],
+    "redFlags": [
+      "Overpromising outcomes without clarifying protocol variability.",
+      "Using PRP as a substitute for medical disease control or stabilisation."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 19, section 19.2: Platelet-Rich Plasma (PRP): Expectations and Standardisation.",
+      "notes": [
+        {
+          "label": "Outcome governance",
+          "tier": "B",
+          "note": "Teach that PRP is not perfectly standardised; expect variability and track outcomes using photos/trichoscopy."
+        }
+      ]
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod19_02",
+        "title": "Clinical reasoning",
+        "prompt": "A clinic offers PRP as a guaranteed density restoration service. What academic corrections should you make to counsel the patient safely?",
+        "teachingPoint": "Clarify PRP variability, set evidence-tier realistic expectations, and align PRP role to adjunct/optimisation within the broader treatment plan."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod19_02_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod19_02"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod19_03",
+    "moduleId": "module_vol4_regenerative_medicine_in_trichology",
+    "lessonNumber": 3,
+    "slug": "microneedling-and-exosomes-positioning",
+    "title": "Microneedling and Exosome Therapies: Emerging vs Adjunct",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Position microneedling as stand-alone or combination therapy by mechanism and practice reality.",
+      "Teach cautious positioning of exosomes as emerging regenerative medicine, not universal standard of care."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Microneedling may act as both a stand-alone stimulus and a facilitator of combination treatment. Academically, it matters because it sits at the interface between procedural stimulation and biological signalling. Clinically, microneedling is often best positioned as a combination modality rather than a high-impact stand-alone intervention.\n\nExosome-based therapies are promising but still belong in the category of emerging regenerative medicine. Product heterogeneity, source variability, manufacturing quality, regulatory status, and limited long-term comparative evidence justify a cautious and academically transparent approach.\n\nDoctors should avoid presenting exosomes as evidence-equivalent to long-established therapies. Evidence-tier teaching currently positions PRP above exosomes in routine clinical establishment, while still acknowledging that exosomes may be highly promising."
+    },
+    "keyTakeaways": [
+      "Microneedling is often best taught as a combination modality, not a guaranteed standalone replacement.",
+      "Exosomes are emerging: teach governance and avoid evidence-equivalent marketing language.",
+      "Cautious positioning protects both patients and clinical credibility."
+    ],
+    "redFlags": [
+      "Presenting exosomes as universal standard of care.",
+      "Skipping evidence-tier counselling and outcome tracking for variably standardised modalities."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 19, section 19.3-19.4: Microneedling and Exosome Therapies: Emerging vs Adjunct.",
+      "notes": [
+        {
+          "label": "Evidence-tier honesty",
+          "tier": "B",
+          "note": "Teach emerging modalities cautiously; exosomes remain investigational/emerging and should not be presented as evidence-equivalent to PRP."
+        }
+      ]
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod19_03",
+        "title": "Clinical reasoning",
+        "prompt": "A patient wants exosome injections because they were told they are equivalent to PRP. How do you counsel the evidence difference and likely role in a therapy ladder?",
+        "teachingPoint": "Explain evidence-tier positioning and variability, and present exosomes as emerging with careful selection, documentation, and expectations that align to evidence tier."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod19_03_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod19_03"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod19_04",
+    "moduleId": "module_vol4_regenerative_medicine_in_trichology",
+    "lessonNumber": 4,
+    "slug": "integration-and-governance-tracking",
+    "title": "Signature Integration and Governance / Outcome Tracking",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Integrate regenerative medicine into a longitudinal therapeutic framework (recipient optimisation, donor support, peri-operative and recovery support).",
+      "Teach governance: documentation, baseline tracking, protocol transparency, and audit-ready reporting."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Within the HLI/IIIOHR teaching model, regenerative medicine is integrated into follicular longevity strategy: pre-treatment recipient optimisation, donor support, peri-operative enhancement, and post-procedural recovery support.\n\nBecause regenerative therapies are variably standardised, serious practice requires stronger documentation than anecdotal practice. Doctors should track baseline density and calibre, shedding patterns, the treatment protocol used, and interval outcomes consistently.\n\nThe end-of-module governance message is that high-quality outcomes depend on both biological rationale and the reliability of clinical execution and documentation. This is how doctors maintain academic defensibility and reduce the risk of repeating misleading narratives."
+    },
+    "keyTakeaways": [
+      "Regenerative medicine integrates into a longitudinal plan, not isolated 'procedure shopping'.",
+      "Governance and documentation are essential because protocols vary.",
+      "Track outcomes consistently with baseline and interval assessment."
+    ],
+    "redFlags": [
+      "Accepting anecdotal outcome stories without protocol transparency or tracking.",
+      "Failing to document baseline and interval findings for auditability."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 19, section 19.5-19.6: Signature Integration and Governance / Outcome Tracking."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod19_04",
+        "title": "Clinical reasoning",
+        "prompt": "A patient reports 'PRP worked' because shedding decreased for two weeks, but you have no photos or protocol details. How do you frame next steps?",
+        "teachingPoint": "Re-anchor to governance: confirm protocol and baseline, track objective changes (calibre/density), and discuss evidence-tier expectations and variability before continuing or escalating regenerative plans."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod19_04_summary"
+    ],
+    "quizId": "quiz_vol4_mod19",
+    "casePromptIds": [
+      "case_vol4_mod19_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol4_mod19_04"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod20_01",
+    "moduleId": "module_vol4_principles_of_hair_transplantation",
+    "lessonNumber": 1,
+    "slug": "surgical-candidacy-and-risk-scoping",
+    "title": "Surgical Candidacy: Diagnosis Security and Future-Loss Planning",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Decide when surgery is appropriate based on diagnosis certainty, disease stability, expectations, and donor quality.",
+      "Identify key cautions: unstable loss, active inflammatory disease, unrealistic hairline goals, and poor donor reserve."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Hair transplantation must be taught as part of hair medicine, not as a separate cosmetic trade. The best surgical outcomes begin with correct diagnosis, realistic forecasting of future loss, donor preservation, recipient planning, and ethical patient selection.\n\nNot every patient with hair loss is a transplant candidate. Major cautions include unstable loss, active inflammatory disease, unrealistic age-appropriate hairline goals, and poor donor reserve. Women require especially thoughtful selection because diffuse thinning may affect donor safety and aesthetic payoff.\n\nScarring alopecia requires sustained quiescence before restorative surgery is even considered. The doctor must frame surgery within long-term disease management, not as a quick stand-alone fix."
+    },
+    "keyTakeaways": [
+      "Surgical decision-making starts with diagnosis security, stability, donor reserve, and future-loss forecasting.",
+      "Active inflammatory disease and unstable loss are major contraindication domains.",
+      "Scarring alopecia requires sustained quiescence before restorative surgery."
+    ],
+    "redFlags": [
+      "Planning transplant during active marginal inflammation or plausible scarring activity.",
+      "Agreeing to unrealistic hairline lowering goals without stabilisation and long-term counselling."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 20, section 20.1: Surgical Candidacy: Diagnosis Security and Future-Loss Planning."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod20_01",
+        "title": "Clinical reasoning",
+        "prompt": "A patient with suspected scarring activity asks for a transplant now because they feel they look worse. How do you structure the candidacy decision?",
+        "teachingPoint": "Re-anchor to stability and risk: prioritise disease control and sustained quiescence before restorative decisions; document offers of referral and decline-to-proceed rationale when needed."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod20_01_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod20_01"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod20_02",
+    "moduleId": "module_vol4_principles_of_hair_transplantation",
+    "lessonNumber": 2,
+    "slug": "donor-assessment-as-finite-resource",
+    "title": "Donor Assessment as a Finite Biologic Resource",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Assess donor characteristics beyond graft counts (density, calibre, miniaturisation, follicular unit composition, and distribution).",
+      "Plan extraction and future work to avoid simplistic 'immediate graft maximise' traps."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The donor area should be treated as a finite biologic resource. Density, calibre, follicular-unit composition, miniaturisation status, and relevant scalp properties all matter. Curl and contrast also influence design and expectations. Future extraction needs must be factored into planning.\n\nSerious planning avoids the simplistic trap of focusing only on immediate graft count. Overharvesting is both a technical and an ethical failure because it can compromise future restoration options.\n\nDoctors trained in this module assess donor quality for both current and future therapeutic sessions, aligning design to plausible long-term progression."
+    },
+    "keyTakeaways": [
+      "Treat donor tissue as finite: density, calibre, composition, and miniaturisation matter.",
+      "Avoid planning based only on immediate graft count.",
+      "Reserve donor boundaries for future sessions to protect long-term options."
+    ],
+    "redFlags": [
+      "Counselling that ignores future extraction and donor economics.",
+      "A plan that leaves the patient with no realistic future restorative pathway."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 20, section 20.2: Donor Assessment as a Finite Biologic Resource.",
+      "notes": [
+        {
+          "label": "Ethics and economics",
+          "tier": "B",
+          "note": "Teach donor preservation as a long-term ethical decision, not just a technical calculation."
+        }
+      ]
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod20_02",
+        "title": "Clinical reasoning",
+        "prompt": "A patient wants very high yield extraction in their first session. What donor information would you check before accepting or declining?",
+        "teachingPoint": "Check density, calibre, miniaturisation, and distribution; build a conservative long-term reserve plan rather than aiming solely for maximal immediate yield."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod20_02_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod20_02"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod20_03",
+    "moduleId": "module_vol4_principles_of_hair_transplantation",
+    "lessonNumber": 3,
+    "slug": "recipient-design-and-technique-tradeoffs",
+    "title": "Recipient Planning and FUT vs FUE Trade-offs",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Design recipients as a medical-aesthetic decision shaped by progression, face structure, and patient psychology.",
+      "Explain FUT vs FUE trade-offs by candidate suitability, recovery, and donor management rather than technique ideology."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Recipient design is a medical-aesthetic decision. It is shaped by age, ethnicity, facial structure, likely future loss, donor limitations, and patient psychology. Naturalness requires restraint: hairline lowering that ignores progression can create long-term surgical debt.\n\nBoth FUT and FUE remain legitimate surgical methods. The educational goal is not ideological loyalty to one technique, but understanding trade-offs in scarring patterns, extraction dynamics, donor management, total yield strategy, recovery, and candidate suitability.\n\nDoctors must counsel patients using honest trade-off language. Technique selection should serve the patient and the long-term plan, not an extraction narrative alone."
+    },
+    "keyTakeaways": [
+      "Recipient design must account for future progression and naturalness restraint.",
+      "FUT vs FUE selection is about trade-offs and candidate suitability, not ideology.",
+      "Medical-aesthetic counselling reduces long-term discord and disappointment."
+    ],
+    "redFlags": [
+      "Designing hairlines without explicitly planning for progression.",
+      "Selecting a technique without discussing donor management and candidate suitability."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 20, section 20.3-20.4: Recipient Planning and FUT vs FUE Trade-offs."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod20_03",
+        "title": "Clinical reasoning",
+        "prompt": "A young patient wants an aggressive hairline lowering plan. What counselling and design constraints do you apply before proceeding?",
+        "teachingPoint": "Reconcile design with likely progression and donor reserve; use honest restraint language and long-term forecasting to set expectations and protect future outcomes."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod20_03_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod20_03"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod20_04",
+    "moduleId": "module_vol4_principles_of_hair_transplantation",
+    "lessonNumber": 4,
+    "slug": "shock-loss-timing-and-long-term-planning",
+    "title": "Shock Loss, Timing, and Long-Term Surgical Planning",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Counsel that transplanted hair is one component of a lifelong plan.",
+      "Explain shock loss, the risk of continued miniaturisation, and how timing affects long-term results."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Patients must be counselled that transplanted hair is only one part of a lifelong plan. Native hair may continue to miniaturise. Shock loss can occur. Future sessions may be limited by donor economics.\n\nThe mature transplant thinker plans for the next decade, not just the next six months. Doctors should use long-view counselling that frames surgery as a component of broader medical and maintenance planning.\n\nThis lesson includes a clinical pearl: a hair transplant is not the treatment for androgenetic alopecia; it is one component of a broader management strategy."
+    },
+    "keyTakeaways": [
+      "Transplant outcomes depend on the lifelong plan: ongoing native miniaturisation and shock loss risk.",
+      "Planning horizon is years, not months.",
+      "Surgery is a component, not a standalone cure."
+    ],
+    "redFlags": [
+      "Counselling that frames transplant as a cure or ignores shock loss risk.",
+      "Failing to plan for potential future sessions based on donor economics and progression."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 20, section 20.5: Shock Loss, Timing, and Long-Term Surgical Planning."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod20_04",
+        "title": "Clinical reasoning",
+        "prompt": "At three months post-op, a patient experiences increased shedding. What explanation and next steps do you frame?",
+        "teachingPoint": "Discuss shock loss as a known timeline phenomenon, connect it to ongoing disease control and monitoring, and avoid promising recovery guarantees without reassessing objective findings and adherence."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod20_04_summary"
+    ],
+    "quizId": "quiz_vol4_mod20",
+    "casePromptIds": [
+      "case_vol4_mod20_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol4_mod20_04"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod21_01",
+    "moduleId": "module_vol4_advanced_fue_science",
+    "lessonNumber": 1,
+    "slug": "punch-dynamics-and-transection-mechanics",
+    "title": "Punch Dynamics and Transection Mechanics",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Explain why transection risk varies (curl pattern, skin thickness, exit angle, punch diameter, sharpness profile, and depth control).",
+      "Teach decision-making changes by hair type and scalp type rather than a single mechanical recipe."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Advanced FUE science sits at the intersection of surgical anatomy, instrumentation, skin biomechanics, graft preservation, and aesthetic planning. It should be taught to doctors as a precision tissue-handling discipline rather than a purely mechanical extraction exercise.\n\nTransection risk is influenced by curl pattern, skin thickness, fibrosis, exit angle, punch diameter, sharpness profile, and operator technique. Teaching therefore focuses on why transection happens and how clinical decisions change by hair type and scalp type.\n\nThe doctor-level message is that technical competence improves outcomes, but governance of decision-making matters: a single punch choice cannot be universal across different scalp types and follicular morphologies."
+    },
+    "keyTakeaways": [
+      "Transection risk is multifactorial: hair curl, scalp thickness, fibrosis, exit angle, and instrument profile.",
+      "Decision-making must be adapted to hair type and scalp type.",
+      "Precision tissue handling is a disciplined reasoning practice."
+    ],
+    "redFlags": [
+      "Using identical punch depth/angle settings across different scalp types without adaptation.",
+      "Ignoring factors that predict transection risk and then attributing poor outcomes to 'bad luck'."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 21, section 21.1: Punch Dynamics and Transection Mechanics."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod21_01",
+        "title": "Clinical reasoning",
+        "prompt": "A patient has very tight curls and a thick, fibrotic donor scalp. How would you adapt your transection risk thinking before extraction?",
+        "teachingPoint": "Reassess predicted transection risks based on curl/scalp variables, adjust technique decisions accordingly, and document your rationale for governance."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod21_01_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod21_01"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod21_02",
+    "moduleId": "module_vol4_advanced_fue_science",
+    "lessonNumber": 2,
+    "slug": "donor-distribution-and-overharvesting-prevention",
+    "title": "Donor Distribution and Overharvesting Prevention",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Manage donor distribution with safe extraction boundaries and realistic future work.",
+      "Prevent visible moth-eaten depletion through distributed extraction and an honest approach to donor economics."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Good donor management depends on distributed extraction and avoidance of visible moth-eaten depletion. Respect for safe donor boundaries is non-negotiable. Overharvesting is both technical and ethical: it can be avoided when planning reserves enough tissue for future work and when extraction is distributed rather than concentrated.\n\nDoctors should learn donor boundaries as a governance concept. It is not simply about extraction efficiency today; it is about protecting biologic resource for later sessions.\n\nThis lesson trains you to see donor planning as long-view surgical responsibility."
+    },
+    "keyTakeaways": [
+      "Distribute extraction to respect safe donor boundaries and preserve future options.",
+      "Overharvesting is an ethical failure that harms long-term outcomes.",
+      "Donor management is governance, not just efficiency."
+    ],
+    "redFlags": [
+      "Extraction that prioritises immediate yield over future donor reserve.",
+      "Design decisions that ignore patient economics and realistic future session constraints."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 21, section 21.2: Donor Distribution and Overharvesting Prevention."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod21_02",
+        "title": "Clinical reasoning",
+        "prompt": "A patient wants maximum yield in session one. What donor management principles do you apply to protect against future depletion?",
+        "teachingPoint": "Prioritise distributed extraction and reserve safe donor boundaries for future sessions; counsel realistically about what can and cannot be achieved long-term."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod21_02_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod21_02"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod21_03",
+    "moduleId": "module_vol4_advanced_fue_science",
+    "lessonNumber": 3,
+    "slug": "graft-handling-and-survival-logic",
+    "title": "Graft Handling and Survival Logic",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Explain graft survival determinants: dehydration avoidance, holding solution quality, out-of-body time, temperature control, and atraumatic implantation.",
+      "Teach the limitation that implantation cannot rescue earlier poor graft stewardship."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Graft survival is influenced by workflow details. Dehydration avoidance, holding solution quality, out-of-body time, temperature control, and atraumatic implantation are core determinants.\n\nDoctors should learn a governance discipline: excellent implantation cannot rescue poor graft stewardship earlier in the workflow. Teaching must connect actions to likely biological outcomes and train surgeons to protect graft viability from the moment of extraction.\n\nThe aim is a consistent tissue-handling chain that reduces variability and improves outcomes for each patient."
+    },
+    "keyTakeaways": [
+      "Protect graft viability across the whole workflow: dehydration avoidance, holding quality, out-of-body time, temperature control.",
+      "Atraumatic implantation matters, but earlier stewardship cannot be 'fixed later'.",
+      "Workflow governance reduces variability."
+    ],
+    "redFlags": [
+      "Attributing graft failure to implantation technique when extraction and holding steps were poor.",
+      "Poor temperature/out-of-body control without documenting workflow constraints."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 21, section 21.3: Graft Handling and Survival Logic."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod21_03",
+        "title": "Clinical reasoning",
+        "prompt": "If out-of-body time increases due to staffing, what is your responsibility as a doctor before proceeding with implantation?",
+        "teachingPoint": "Reassess readiness and workflow conditions, protect graft stewardship, and document how staffing/constraints impact viability so you can adjust planning safely."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod21_03_summary"
+    ],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [
+      "reference_lesson_vol4_mod21_03"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol4_mod21_04",
+    "moduleId": "module_vol4_advanced_fue_science",
+    "lessonNumber": 4,
+    "slug": "density-strategy-and-bridge-to-advanced-techniques",
+    "title": "Density Strategy, Naturalness, and Bridge to Advanced Techniques",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Allocate density strategically: hairline density, frontal framing, mid-scalp blending, and crown economy.",
+      "Explain why advanced academy techniques should follow foundational understanding."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Density planning must be anatomically and aesthetically intelligent. Hairline density, frontal framing, mid-scalp blending, and crown economy require allocation logic rather than simple 'maximum density' ideology.\n\nThis module also bridges into later advanced academy topics such as long hair FUE, unshaven strategies, regenerative donor optimisation, and partial transection concepts. Those advanced topics should be taught after you already understand extraction mechanics, donor economics, and graft biology.\n\nBy the end of Volume 4, the learner should be able to position therapeutic and surgical decisions within a disciplined evidence-aware framework and understand why technical precision and governance matter."
+    },
+    "keyTakeaways": [
+      "Density strategy is allocation logic, not maximum density ideology.",
+      "Naturalness requires restraint and future progression awareness.",
+      "Advanced academy techniques should be taught only after foundational tissue-handling and donor economics are understood."
+    ],
+    "redFlags": [
+      "Designing a transplant plan solely for short-term maximum density.",
+      "Skipping foundational understanding and jumping to advanced techniques without governance discipline."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 4 Module 21, section 21.4-21.5: Density Strategy, Naturalness, and Bridge to Advanced Techniques."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol4_mod21_04",
+        "title": "Clinical reasoning",
+        "prompt": "A patient requests a very dense hairline immediately. How do you frame density allocation and naturalness restraint using a surgical reasoning lens?",
+        "teachingPoint": "Use anatomical allocation logic and long-term progression framing; counsel realistically about naturalness, donor economics, and future session constraints."
+      }
+    ],
+    "downloadableResourceIds": [
+      "resource_lesson_vol4_mod21_04_summary"
+    ],
+    "quizId": "quiz_vol4_mod21",
+    "casePromptIds": [
+      "case_vol4_mod21_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol4_mod21_04"
+    ],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  }
+]

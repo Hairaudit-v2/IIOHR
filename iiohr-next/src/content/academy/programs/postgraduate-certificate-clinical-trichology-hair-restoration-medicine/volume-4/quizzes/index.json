@@ -1,0 +1,262 @@
+[
+  {
+    "id": "quiz_vol4_mod17",
+    "slug": "medical-management-knowledge-check",
+    "moduleId": "module_vol4_medical_management_of_hair_loss",
+    "parentType": "module",
+    "parentId": "module_vol4_medical_management_of_hair_loss",
+    "title": "Module Knowledge Check: Medical Management of Hair Loss",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol4_mod17_item_01",
+        "type": "mcq",
+        "stem": "Which statement best reflects postgraduate diagnostic discipline in medical management of hair loss?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Define disease process and activity first, then select and sequence therapies to match the treatment goal and evidence tier."
+          },
+          {
+            "id": "b",
+            "label": "Choose the most aggressive medication immediately because 'earlier is always better' for density recovery."
+          },
+          {
+            "id": "c",
+            "label": "Escalate therapy whenever shedding continues for two months, regardless of adherence or diagnosis certainty."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 17 emphasises activity-driven treatment goals and disciplined evidence positioning; escalation must follow diagnosis quality, adherence, and objective monitoring.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol4_mod17_item_02",
+        "type": "short-answer",
+        "stem": "A patient wants to switch from topical minoxidil to low-dose oral minoxidil. Outline the safety screening, counselling topics, and monitoring approach you would expect from the doctor.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Screen cardiovascular history, fluid retention and oedema tendency, and interacting clinical factors. Counsel on off-label status, potential side effects (for example, cardiovascular effects and hypertrichosis), and realistic timelines (gradual improvement and possible early shedding). Plan safety-focused monitoring rather than assuming a single universal protocol; document decision-making and review adherence and tolerability."
+        },
+        "rationale": "Module 17 teaches that oral minoxidil is off-label and must be handled with selection, counselling, and safety-governed monitoring.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol4_mod18",
+    "slug": "systemic-support-knowledge-check",
+    "moduleId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "parentType": "module",
+    "parentId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "title": "Module Knowledge Check: Nutritional, Lifestyle, and Systemic Support",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol4_mod18_item_01",
+        "type": "mcq",
+        "stem": "Which approach best matches doctor-level systemic support for diffuse shedding?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Use a systemic lens: identify likely correctable drivers, interpret labs with clinical context, and correct proven deficiencies proportionately."
+          },
+          {
+            "id": "b",
+            "label": "Order extensive micronutrient panels for every diffuse shedding patient and treat results with broad supplement stacks."
+          },
+          {
+            "id": "c",
+            "label": "Assume stress is the cause in all cases and focus only on reassurance."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 18 teaches evidence-aware clinical prioritisation, correct deficiency correction, and mechanism-specific counselling rather than reflex panels or generic reassurance.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol4_mod18_item_02",
+        "type": "short-answer",
+        "stem": "Outline how you interpret ferritin in context and how you would decide whether to treat iron deficiency rather than escalating supplements blindly.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Interpret ferritin alongside inflammatory context, symptoms, and related haemotologic information (including haemoglobin and clinical background). Decide whether deficiency is plausible based on phenotype and patient drivers such as menstrual blood loss, diet, or malabsorption. If deficiency is supported, coordinate deficiency correction with appropriate medical pathways and reassess response. Avoid numeric fixation; document rationale and expectations for timelines."
+        },
+        "rationale": "Module 18 emphasises ferritin interpretation with clinical context and disciplined deficiency correction rather than isolated numeric targets.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol4_mod19",
+    "slug": "regenerative-medicine-knowledge-check",
+    "moduleId": "module_vol4_regenerative_medicine_in_trichology",
+    "parentType": "module",
+    "parentId": "module_vol4_regenerative_medicine_in_trichology",
+    "title": "Module Knowledge Check: Regenerative Medicine in Trichology",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol4_mod19_item_01",
+        "type": "mcq",
+        "stem": "Which statement best reflects evidence-aware positioning of regenerative therapies?",
+        "options": [
+          {
+            "id": "a",
+            "label": "PRP has supportive evidence but is variably standardised; present it as an adjunct with realistic expectations and track outcomes."
+          },
+          {
+            "id": "b",
+            "label": "Exosomes should be treated as evidence-equivalent to established therapies in routine practice today."
+          },
+          {
+            "id": "c",
+            "label": "Regenerative procedures should replace disease control because evidence tier differences do not matter for counselling."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 19 teaches PRP as the most established regenerative procedure with variability and adjunct positioning; exosomes remain emerging with cautious evidence-tier framing.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol4_mod19_item_02",
+        "type": "short-answer",
+        "stem": "Outline the governance steps you would require before and after a patient chooses a regenerative modality (including what to document and how to track outcomes).",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Document baseline density and calibre, shedding patterns, and relevant symptoms; capture standardised clinical photography and trichoscopic findings where available. Record the regenerative protocol used (preparation method, activation approach, injection/technique details, intervals). Set evidence-tier expectations (adjunct/optimisation role) and track outcomes at planned intervals to assess calibre/density changes rather than short-lived symptom relief. Use documentation for auditability and counsel within the correct evidence tier."
+        },
+        "rationale": "Module 19 emphasises documentation and audit-ready tracking because regenerative protocols are variably standardised.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol4_mod20",
+    "slug": "hair-transplantation-knowledge-check",
+    "moduleId": "module_vol4_principles_of_hair_transplantation",
+    "parentType": "module",
+    "parentId": "module_vol4_principles_of_hair_transplantation",
+    "title": "Module Knowledge Check: Principles of Hair Transplantation",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol4_mod20_item_01",
+        "type": "mcq",
+        "stem": "Which choice best reflects postgraduate surgical candidacy discipline?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Proceed only when diagnosis is secure, expected future loss is factored, expectations are realistic, donor reserve is acceptable, and inflammatory disease is quiescent where relevant."
+          },
+          {
+            "id": "b",
+            "label": "Offer transplant whenever the patient requests it, because surgical planning can compensate for unstable loss."
+          },
+          {
+            "id": "c",
+            "label": "Proceed with transplant during active scarring alopecia to achieve faster density restoration."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 20 stresses candidacy discipline, quiescence in scarring disease, and future-loss forecasting before surgery.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol4_mod20_item_02",
+        "type": "short-answer",
+        "stem": "Outline what you would counsel a patient about long-term planning (including shock loss and ongoing disease progression) before consenting to surgery.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Counsel that transplant is one component of lifelong management: native hair can continue to miniaturise, shock loss can occur, and future sessions may depend on donor economics. Explain that results are influenced by disease control, adherence to maintenance, and long-term planning rather than a single procedure outcome. Use realistic expectation language and connect next steps to monitoring and potential future sessions."
+        },
+        "rationale": "Module 20 includes long-view counselling and warns against treating transplant as a cure, including shock loss and ongoing progression.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol4_mod21",
+    "slug": "advanced-fue-science-knowledge-check",
+    "moduleId": "module_vol4_advanced_fue_science",
+    "parentType": "module",
+    "parentId": "module_vol4_advanced_fue_science",
+    "title": "Module Knowledge Check: Advanced FUE Science",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol4_mod21_item_01",
+        "type": "mcq",
+        "stem": "Which statement best reflects doctor-level understanding of transection risk in advanced FUE?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Transection risk depends on multiple variables (curl pattern, scalp thickness, fibrosis, exit angle, punch diameter, sharpness, and depth control), so technique decisions must adapt to patient anatomy."
+          },
+          {
+            "id": "b",
+            "label": "Transection risk is fixed when the punch diameter is chosen; other biomechanical variables do not meaningfully change outcomes."
+          },
+          {
+            "id": "c",
+            "label": "If implantation is excellent, transection risk before extraction does not matter for graft survival."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 21 emphasises multifactor transection risk and adaptive decisions based on hair/scalp variables; graft viability depends on workflow stewardship rather than a single step.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol4_mod21_item_02",
+        "type": "short-answer",
+        "stem": "Describe how you would explain density strategy and naturalness restraint to a patient requesting maximum immediate density, and what you would document for governance.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Explain density allocation by anatomy: hairline density/frontal framing, mid-scalp blending, and crown economy, emphasising restraint and naturalness rather than maximum density ideology. Tie counselling to future progression and donor economics, clarify realistic session planning, and document the design rationale and governance items (e.g., donor reserve considerations and expected long-term constraints)."
+        },
+        "rationale": "Module 21 teaches allocation logic and governance in density strategy, bridging to advanced techniques only after foundational understanding.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  }
+]

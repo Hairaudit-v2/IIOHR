@@ -1,0 +1,26 @@
+{
+  "id": "volume_4_therapeutics_regenerative_surgery_foundations",
+  "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+  "volumeNumber": 4,
+  "slug": "therapeutics-regenerative-medicine-and-foundations-of-hair-restoration-surgery",
+  "title": "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery",
+  "subtitle": "Volume 4",
+  "status": "draft",
+  "brandProfiles": [
+    "iiohr",
+    "hli",
+    "iiiohr"
+  ],
+  "audience": [
+    "doctors",
+    "surgeons",
+    "physicians"
+  ],
+  "moduleOrder": [
+    "module_vol4_medical_management_of_hair_loss",
+    "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "module_vol4_regenerative_medicine_in_trichology",
+    "module_vol4_principles_of_hair_transplantation",
+    "module_vol4_advanced_fue_science"
+  ]
+}
