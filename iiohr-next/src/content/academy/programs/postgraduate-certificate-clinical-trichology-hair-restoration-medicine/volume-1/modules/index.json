@@ -11,37 +11,39 @@
     "academicLevel": "postgraduate-certificate",
     "stream": "core",
     "overview": {
-      "summary": "[Placeholder: academic overview for module 1]",
-      "clinicalContext": "[Placeholder: clinical context for module 1]",
+      "summary": "Modern clinical trichology sits at the intersection of dermatology, endocrinology, pathology, cosmetic medicine, and hair restoration surgery. A doctor-level program must move beyond product-led or simplified pattern recognition and instead train physicians to reason clinically, stratify risk, recognise disease activity, and design longitudinal management plans. This module follows Volume 1 of the Foundations manual.",
+      "clinicalContext": "The competent physician identifies whether the patient has physiologic shedding, patterned miniaturisation, inflammatory disease, scarring alopecia, shaft fragility, or systemic disease manifesting through the hair and scalp—because missing early inflammatory or cicatricial disease can cause permanent loss. Hair restoration surgery is a downstream decision within broader disease management, not a substitute for medical judgment.",
       "competencies": [
-        "[Placeholder competency: define the scope of clinical trichology]",
-        "[Placeholder competency: relate trichology to broader hair restoration medicine]"
+        "Define the scope of physician-led trichology versus non-medical hair practice.",
+        "Explain relationships among clinical trichology, dermatology, endocrinology, pathology, and transplantation.",
+        "Apply academy evidence tiers when discussing treatments, especially regenerative and emerging interventions.",
+        "Describe ethical, professional, and medico-legal principles governing hair medicine."
       ],
       "learningObjectives": [
-        "[Placeholder objective: define the academic scope of the module]",
-        "[Placeholder objective: identify the doctor-facing role of evidence-led trichology]"
+        "Define the scope of physician-led trichology and how it differs from non-medical hair practice.",
+        "Explain the relationship between clinical trichology, dermatology, endocrinology, pathology, and transplantation.",
+        "Apply evidence tiers when discussing treatments, especially regenerative and emerging interventions.",
+        "Describe the ethical, professional, and medico-legal principles that govern hair medicine."
       ],
       "keyTakeaways": [
-        "[Placeholder takeaway: trichology sits within a broader clinical decision framework]",
-        "[Placeholder takeaway: standards-led reasoning precedes procedural decision-making]"
+        "Clinical trichology is applied hair and scalp medicine: the first task is the dominant pathological process, modifiers, and time-course—not immediate treatment selection.",
+        "Dermatology remains the reference for inflammatory scalp disease and clinicopathologic correlation; trichology deepens hair-specific competence without replacing dermatology training.",
+        "Transplantation requires medical judgment first; surgery taught as sequencing within longitudinal care.",
+        "Evidence tiers (1–4 in the manual) map to established care, evolving consensus, emerging adjuncts, and investigational concepts—avoid conflating plausibility with proven efficacy."
       ],
       "redFlags": [
-        "[Placeholder red flag: oversimplifying hair loss into cosmetic pattern recognition alone]"
+        "Pain, burning, perifollicular scale, pustulation, or loss of follicular openings should raise suspicion beyond reassurance-only patterned hair loss.",
+        "Rapid diffuse shedding with systemic symptoms, patchy loss with inflammation, or suspected scarring disease warrants escalation per local pathways."
       ],
       "evidenceTierNotes": [
         {
-          "label": "Foundational evidence framing",
+          "label": "Evidence framing for Volume 1",
           "tier": "consensus",
-          "note": "[Placeholder evidence note for module 1]"
+          "note": "Teaching uses four manual tiers: Tier 1 established practice (e.g. topical minoxidil, finasteride in appropriate male AGA); Tier 2 evolving consensus (e.g. low-dose oral minoxidil, selected anti-androgen pathways in women); Tier 3 emerging adjuncts (e.g. variable PRP protocols); Tier 4 investigational or academy-signature concepts (e.g. exosome therapy; partial transection concepts)—always label tier in patient discussions."
         }
       ]
     },
-    "lessonIds": [
-      "lesson_vol1_mod1_01",
-      "lesson_vol1_mod1_02",
-      "lesson_vol1_mod1_03",
-      "lesson_vol1_mod1_04"
-    ],
+    "lessonIds": ["lesson_vol1_mod1_01", "lesson_vol1_mod1_02", "lesson_vol1_mod1_03", "lesson_vol1_mod1_04"],
     "quizIds": ["quiz_vol1_mod1"],
     "casePromptIds": ["case_vol1_mod1_a"],
     "downloadableResourceIds": ["resource_module_vol1_mod1_summary"],
@@ -59,37 +61,39 @@
     "academicLevel": "postgraduate-certificate",
     "stream": "core",
     "overview": {
-      "summary": "[Placeholder: academic overview for module 2]",
-      "clinicalContext": "[Placeholder: clinical context for module 2]",
+      "summary": "Strong hair medicine rests on follicular architecture, signalling behaviour, and the scalp microenvironment. Every treatment choice, disease interpretation, and surgical plan assumes this biology. Content aligns to Volume 1 Module 2 of the Foundations manual.",
+      "clinicalContext": "Non-scarring alopecia usually preserves architecture needed for potential regrowth; cicatricial alopecia destroys stem-cell niches and is often irreversible—early diagnosis changes prognosis. Ethnic hair variation influences shaft properties, breakage, and procedural mechanics including FUE planning.",
       "competencies": [
-        "[Placeholder competency: describe follicular anatomy at clinical depth]",
-        "[Placeholder competency: relate scalp biology to diagnosis and planning]"
+        "Describe follicle anatomy and embryologic development relevant to clinical practice.",
+        "Explain the dermal papilla, bulge region, and stem-cell niches.",
+        "Relate hair cycling to AGA, telogen effluvium, and scarring alopecias.",
+        "Discuss ethnic variation, shaft properties, and scalp environmental factors."
       ],
       "learningObjectives": [
-        "[Placeholder objective: identify essential follicular structures]",
-        "[Placeholder objective: connect scalp science to clinically relevant interpretation]"
+        "Describe the anatomy and embryologic development of the follicle and scalp.",
+        "Explain the functional significance of the dermal papilla, bulge region, and stem-cell niches.",
+        "Relate hair cycling biology to clinical disorders such as AGA, telogen effluvium, and scarring alopecias.",
+        "Discuss ethnic hair variation, shaft properties, and scalp microenvironmental factors relevant to diagnosis and treatment."
       ],
       "keyTakeaways": [
-        "[Placeholder takeaway: biological literacy underpins diagnostic accuracy]",
-        "[Placeholder takeaway: scalp context influences interpretation, not just follicular morphology]"
+        "Follicle development depends on epithelial–mesenchymal signalling (Wnt, Shh, BMP modulation, FGF networks); mature cycling still depends on this dialogue.",
+        "The dermal papilla regulates anagen initiation and shaft calibre; the bulge is a key epithelial stem-cell niche—destroyed in many cicatricial processes.",
+        "Cycle phases (anagen, catagen, telogen, exogen; kenogen as empty interval) explain shedding versus miniaturisation patterns clinically.",
+        "Scalp barrier, sebum, microbiome, grooming, and UV exposure modulate inflammation and treatment response."
       ],
       "redFlags": [
-        "[Placeholder red flag: interpreting scalp disease without adequate biological context]"
+        "Interpreting visible hair loss without considering whether the process is scarring versus non-scarring.",
+        "Ignoring ethnic hair form when counselling on breakage, traction risk, or procedural feasibility."
       ],
       "evidenceTierNotes": [
         {
-          "label": "Biological evidence framing",
+          "label": "Biological and clinical correlation",
           "tier": "B",
-          "note": "[Placeholder evidence note for module 2]"
+          "note": "Core anatomy and cycling are established; nuanced regenerative claims in industry materials often exceed evidence—anchor teaching in morphology and time-course."
         }
       ]
     },
-    "lessonIds": [
-      "lesson_vol1_mod2_01",
-      "lesson_vol1_mod2_02",
-      "lesson_vol1_mod2_03",
-      "lesson_vol1_mod2_04"
-    ],
+    "lessonIds": ["lesson_vol1_mod2_01", "lesson_vol1_mod2_02", "lesson_vol1_mod2_03", "lesson_vol1_mod2_04"],
     "quizIds": ["quiz_vol1_mod2"],
     "casePromptIds": ["case_vol1_mod2_a"],
     "downloadableResourceIds": ["resource_module_vol1_mod2_summary"],
@@ -107,37 +111,39 @@
     "academicLevel": "postgraduate-certificate",
     "stream": "core",
     "overview": {
-      "summary": "[Placeholder: academic overview for module 3]",
-      "clinicalContext": "[Placeholder: clinical context for module 3]",
+      "summary": "Hair growth reflects interlocking signalling systems—not a single hormone. Understanding androgen action, Wnt/beta-catenin, prostaglandins, growth mediators, microinflammation, and sex-specific endocrinology supports accurate counselling, treatment sequencing, and defensible boundaries around adjunctive or investigational options. Aligned to Volume 1 Module 3.",
+      "clinicalContext": "Male pattern loss often occurs with normal circulating androgens acting on susceptible follicles; female pattern loss is more heterogeneous (PCOS, thyroid, reproductive transitions, and mixed contributors). Regenerative modalities may concentrate growth factors but outcomes vary by preparation, protocol, and disease context.",
       "competencies": [
-        "[Placeholder competency: interpret molecular influences on hair cycling]",
-        "[Placeholder competency: relate hormonal regulation to clinical reasoning]"
+        "Explain androgen signalling in patterned hair loss.",
+        "Describe Wnt/beta-catenin, prostaglandins, and growth mediators in cycling and miniaturisation.",
+        "Discuss microinflammation, fibrosis, and aging as modifiers.",
+        "Apply molecular framing to treatment sequencing and patient education without overclaiming."
       ],
       "learningObjectives": [
-        "[Placeholder objective: identify core signaling and endocrine drivers]",
-        "[Placeholder objective: connect pathophysiology to consultation and treatment planning]"
+        "Explain how androgen signalling contributes to patterned hair loss.",
+        "Describe the role of Wnt/beta-catenin, prostaglandins, and growth mediators in cycling and miniaturisation.",
+        "Discuss microinflammation, fibrosis, and aging as modifiers of follicular performance.",
+        "Apply this molecular framework to treatment sequencing and patient education."
       ],
       "keyTakeaways": [
-        "[Placeholder takeaway: endocrine and molecular signals should be interpreted in context]",
-        "[Placeholder takeaway: mechanistic knowledge must support, not replace, clinical reasoning]"
+        "DHT–androgen receptor signalling drives miniaturisation in genetically susceptible regions; local sensitivity often matters more than serum androgen excess alone.",
+        "AGA is polygenic; age of clinical activation varies—genes influence timing as well as risk.",
+        "PGD2 and related pathways illustrate that AGA is a broader signalling shift than DHT alone.",
+        "Minoxidil supports follicular activity; anti-androgens reduce DHT exposure—neither rewires every miniaturisation mechanism; adjuncts sit in evidence tiers 2–3 with variable data."
       ],
       "redFlags": [
-        "[Placeholder red flag: over-attributing hair loss to a single hormonal variable]"
+        "Attributing all female hair loss to a single hormone without structured endocrine and reproductive history.",
+        "Presenting investigational or device-based adjuncts as equivalent to core medical therapy for advanced patterned disease."
       ],
       "evidenceTierNotes": [
         {
-          "label": "Mechanistic evidence framing",
+          "label": "Therapy claims discipline",
           "tier": "B",
-          "note": "[Placeholder evidence note for module 3]"
+          "note": "Anchor drug discussions to established indications and guidelines where they exist; label PRP, devices, and exosome-class therapies with appropriate uncertainty and heterogeneity."
         }
       ]
     },
-    "lessonIds": [
-      "lesson_vol1_mod3_01",
-      "lesson_vol1_mod3_02",
-      "lesson_vol1_mod3_03",
-      "lesson_vol1_mod3_04"
-    ],
+    "lessonIds": ["lesson_vol1_mod3_01", "lesson_vol1_mod3_02", "lesson_vol1_mod3_03", "lesson_vol1_mod3_04"],
     "quizIds": ["quiz_vol1_mod3"],
     "casePromptIds": ["case_vol1_mod3_a"],
     "downloadableResourceIds": ["resource_module_vol1_mod3_summary"],
@@ -155,37 +161,39 @@
     "academicLevel": "postgraduate-certificate",
     "stream": "core",
     "overview": {
-      "summary": "[Placeholder: academic overview for module 4]",
-      "clinicalContext": "[Placeholder: clinical context for module 4]",
+      "summary": "Advanced hair medicine requires a structured, hypothesis-driven consultation. The history narrows diagnosis, surfaces modifiers, exposes red flags, and defines the examination and investigation plan—before treatment discussion. This module implements Volume 1 Module 4 of the Foundations manual.",
+      "clinicalContext": "Patients conflate shedding, density loss, breakage, and patchy loss under the same lay phrases. Time-course (acute versus insidious), scalp symptoms (itch, pain, burning), and gynaecologic/endocrine context in women are not optional detail—they change differentials, urgency, and documentation obligations.",
       "competencies": [
-        "[Placeholder competency: conduct a structured hair loss consultation]",
-        "[Placeholder competency: identify red flags and escalation points]"
+        "Use a structured consultation framework for common hair presentations.",
+        "Differentiate shedding, thinning, breakage, and focal loss from history.",
+        "Recognise clues to endocrine, inflammatory, nutritional, and iatrogenic contributors.",
+        "Document findings for longitudinal care and medico-legal clarity, including appropriate uncertainty."
       ],
       "learningObjectives": [
-        "[Placeholder objective: structure a doctor-facing consultation sequence]",
-        "[Placeholder objective: integrate history-taking with early clinical triage]"
+        "Use a structured consultation framework for common hair presentations.",
+        "Differentiate shedding, thinning, breakage, and focal loss through history alone.",
+        "Recognise historical clues to endocrine, inflammatory, nutritional, and iatrogenic contributors.",
+        "Document findings in a way that supports longitudinal management and medico-legal clarity."
       ],
       "keyTakeaways": [
-        "[Placeholder takeaway: consultation quality shapes downstream diagnostic quality]",
-        "[Placeholder takeaway: red-flag recognition should be explicit and reproducible]"
+        "Translate the presenting complaint into one of: shedding, decreased density, breakage, or visible patches/scarring.",
+        "Onset and tempo distinguish telogen effluvium triggers from slow patterned miniaturisation; symptoms raise inflammatory and cicatricial suspicion.",
+        "Female consultations require menstrual, fertility, contraceptive, hyperandrogenism, thyroid, and menopausal review as core—not add-on—data.",
+        "Document burden and prior failed therapies; calibrate expectations before new plans; state uncertainty supportively when examination is pending."
       ],
       "redFlags": [
-        "[Placeholder red flag: failing to distinguish routine shedding concerns from urgent pathology]"
+        "Scalp pain or burning, eyebrow or body hair loss, rapidly enlarging patches, pustules, crusting, autoimmune disease, systemic symptoms, or traction/scarring histories warrant higher suspicion and often expedited workup or referral.",
+        "Psychological distress is real but must not alone drive invasive or irreversible decisions without clinical indication."
       ],
       "evidenceTierNotes": [
         {
-          "label": "Consultation evidence framing",
+          "label": "Consultation standards",
           "tier": "consensus",
-          "note": "[Placeholder evidence note for module 4]"
+          "note": "Structured history-taking and red-flag awareness align with mainstream clinical reasoning; investigations should follow local guidelines and scope of practice."
         }
       ]
     },
-    "lessonIds": [
-      "lesson_vol1_mod4_01",
-      "lesson_vol1_mod4_02",
-      "lesson_vol1_mod4_03",
-      "lesson_vol1_mod4_04"
-    ],
+    "lessonIds": ["lesson_vol1_mod4_01", "lesson_vol1_mod4_02", "lesson_vol1_mod4_03", "lesson_vol1_mod4_04"],
     "quizIds": ["quiz_vol1_mod4"],
     "casePromptIds": ["case_vol1_mod4_a"],
     "downloadableResourceIds": ["resource_module_vol1_mod4_summary"],

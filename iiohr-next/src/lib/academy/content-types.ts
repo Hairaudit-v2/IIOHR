@@ -57,6 +57,8 @@ export interface DisplayFlags {
   showEscalationPanel: boolean;
   showFacultyNotes: boolean;
   showCompliancePanel: boolean;
+  /** When true, render clinical reasoning prompts/boxes if present (doctor Volume 1 legacy lessons). */
+  showClinicalReasoning?: boolean;
 }
 
 export interface PatientCommunicationExample {
@@ -185,6 +187,13 @@ export interface AcademyModule {
   resourceIds: string[];
 }
 
+export interface ClinicalReasoningBox {
+  id: string;
+  title: string;
+  prompt: string;
+  teachingPoint: string;
+}
+
 export interface AcademyLesson {
   id: string;
   programId: string;
@@ -200,6 +209,7 @@ export interface AcademyLesson {
   body: RichTextBlock;
   patientCommunicationExamples: PatientCommunicationExample[];
   roleBoundaryNotes: RoleBoundaryNote[];
+  clinicalReasoningBoxes?: ClinicalReasoningBox[];
   keyTakeaways: string[];
   redFlags: string[];
   escalationTriggers: EscalationTrigger[];

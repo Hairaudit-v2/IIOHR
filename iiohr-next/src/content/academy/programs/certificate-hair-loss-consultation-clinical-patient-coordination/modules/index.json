@@ -128,7 +128,7 @@
     "caseStudyIds": ["consultants_case_03_common_hair_loss_presentations"],
     "practicalTaskIds": [],
     "referenceIds": ["consultants_reference_03"],
-    "resourceIds": []
+    "resourceIds": ["consultants_resource_08"]
   },
   {
     "id": "consultants_module_04_consultation_structure_information_gathering",
@@ -140,12 +140,13 @@
     "shortTitle": "Consultation Structure",
     "sequence": 4,
     "status": "draft",
-    "estimatedStudyMinutes": 120,
-    "moduleOverview": "Focuses on structured history capture, communication discipline, and reliable pre-doctor information gathering.",
+    "estimatedStudyMinutes": 135,
+    "moduleOverview": "Teaching Manual Volume 2, Week 5: consultation structure and history taking as applied practice—beginning, middle, and end; professional opening; clinically useful history; listening for goals, fears, and assumptions; and notes that support doctor handover and quality review. Safety and trust improve when structure precedes solution-selling.",
     "learningOutcomes": [
-      "Use a standard consultation sequence",
-      "Capture information in a clinically useful format",
-      "Avoid suggestive or sales-led questioning"
+      "Run a bounded, repeatable consultation arc that orients the patient and protects role clarity",
+      "Capture history that reflects onset, progression, context, and caution points without leading",
+      "Record underlying concerns that affect expectations and clinician preparation",
+      "Produce factual, handover-ready documentation rather than promotional summaries"
     ],
     "competencyIds": ["consultants_competency_04_structured_information_gathering"],
     "unlockRules": [
@@ -164,7 +165,7 @@
         "mandatoryDomainTags": ["documentation", "communication"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week5_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority"
@@ -186,12 +187,13 @@
     "shortTitle": "Screening and Suitability",
     "sequence": 5,
     "status": "draft",
-    "estimatedStudyMinutes": 120,
-    "moduleOverview": "Teaches the screening support role, candidate readiness prompts, and escalation boundaries when suitability concerns arise.",
+    "estimatedStudyMinutes": 130,
+    "moduleOverview": "Teaching Manual Volume 2, Week 6: screening and suitability support—straightforward versus cautionary versus high-priority flows, documenting caution flags, donor humility, emotional and behavioural signals, and professional deferral. Links directly to patient safety, auditability, and intelligent doctor handover.",
     "learningOutcomes": [
-      "Identify information relevant to doctor-led suitability review",
-      "Recognise screening red flags requiring escalation",
-      "Use scope-safe language when discussing suitability"
+      "Classify cases at support level for workflow risk and document rationale without diagnostic claims",
+      "Surface suitability concern themes for clinician review, including expectations and emotional drivers",
+      "Avoid premature feasibility, graft, or outcome talk before appropriate review",
+      "Escalate or defer calmly when commercial tempo conflicts with caution"
     ],
     "competencyIds": ["consultants_competency_05_candidate_screening_support"],
     "unlockRules": [
@@ -210,7 +212,7 @@
         "mandatoryDomainTags": ["red-flags", "escalation"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week6_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_escalation_duty"
@@ -220,7 +222,7 @@
     "caseStudyIds": ["consultants_case_05_candidate_screening_suitability_support"],
     "practicalTaskIds": ["consultants_task_05_candidate_screening_suitability_support"],
     "referenceIds": ["consultants_reference_05"],
-    "resourceIds": ["consultants_resource_03"]
+    "resourceIds": ["consultants_resource_03", "consultants_resource_08"]
   },
   {
     "id": "consultants_module_06_ethics_consent_scope_of_practice",
@@ -273,12 +275,13 @@
     "shortTitle": "Trust-Based Communication",
     "sequence": 7,
     "status": "draft",
-    "estimatedStudyMinutes": 110,
-    "moduleOverview": "Builds communication habits that prioritise trust, realism, professionalism, and emotional intelligence over conversion-driven behaviour.",
+    "estimatedStudyMinutes": 125,
+    "moduleOverview": "Teaching Manual Volume 2, Week 7: communication mastery and expectation management—language as a safety tool, emotional drivers, realism without negativity, risky phrase replacement, and ethical objection handling. Supports consent quality, trust when limits exist, and consistent documentation of patient understanding gaps.",
     "learningOutcomes": [
-      "Use communication that is clear, ethical, and scope-safe",
-      "De-escalate pressure while preserving trust",
-      "Support patient understanding without overpromising"
+      "Align tone and content with scope-safe, evidence-honest clinic standards",
+      "Name and respond to emotional subtext without making clinical promises",
+      "Set expectations using measured wording that avoids absolute guarantees",
+      "Handle hesitation and objections without pressure tactics"
     ],
     "competencyIds": ["consultants_competency_07_patient_communication"],
     "unlockRules": [
@@ -297,7 +300,7 @@
         "mandatoryDomainTags": ["communication", "ethics-scope"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week7_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority"
@@ -319,12 +322,13 @@
     "shortTitle": "Non-Surgical Education",
     "sequence": 8,
     "status": "draft",
-    "estimatedStudyMinutes": 95,
-    "moduleOverview": "Covers how non-doctor staff can educate patients on non-surgical pathway concepts accurately and within a non-prescribing role.",
+    "estimatedStudyMinutes": 115,
+    "moduleOverview": "Teaching Manual Volume 2, Week 8 (non-surgical and pathway focus in this module): responsible treatment education—pathway sequencing, non-surgical categories, medication awareness without prescribing, and care framed as collaboration not transaction. Surgical overview content from the same manual week continues in Surgical Pathway Education (module 9).",
     "learningOutcomes": [
-      "Explain common non-surgical pathway categories safely",
-      "Distinguish education from recommendation or prescribing",
-      "Use realistic expectation-setting language"
+      "Explain non-surgical options with honest timelines, maintenance, and evidence boundaries",
+      "Separate education from prescribing and from doctor-led treatment choice",
+      "Present staged pathways (support, review delay, combination) without defaulting to surgery hype",
+      "Escalate when questions need prescriber or surgeon authority"
     ],
     "competencyIds": ["consultants_competency_08_non_surgical_education"],
     "unlockRules": [
@@ -343,7 +347,7 @@
         "mandatoryDomainTags": ["communication"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week8_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_no_surgical_training"
@@ -365,12 +369,13 @@
     "shortTitle": "Surgical Education",
     "sequence": 9,
     "status": "draft",
-    "estimatedStudyMinutes": 100,
-    "moduleOverview": "Explains how to educate patients about the surgical pathway while remaining firmly within non-diagnostic, non-surgical professional boundaries.",
+    "estimatedStudyMinutes": 120,
+    "moduleOverview": "Mature bridge after non-surgical education (Volume 2 Week 8) and before documentation and handover (Volume 3 Week 9): you explain the surgical pathway as staged process, logistics, and expectation hygiene—never as independent planning, suitability, graft mathematics, or anaesthetic/medical advice. Patients should reach the doctor with clearer questions, not premature decisions.",
     "learningOutcomes": [
-      "Describe the surgical patient journey at a high level",
-      "Use language that does not imply procedural authority",
-      "Identify when patient questions require doctor review"
+      "Describe typical pathway stages (e.g. assessment, planning, procedure day, early recovery themes) using general, patient-friendly language aligned to clinic SOP",
+      "Separate process education from clinical authority: defer graft design, technique choice, medical fitness, and consent to the treating team",
+      "Recognise escalation triggers when patients request confirmation, comparison shopping framed as clinical verdicts, or consent/booking pressure before doctor review",
+      "Prepare neutral documentation hooks so handover and Volume 3 evidence work are not undermined by front-line overreach"
     ],
     "competencyIds": ["consultants_competency_09_surgical_pathway_education"],
     "unlockRules": [
@@ -389,10 +394,12 @@
         "mandatoryDomainTags": ["ethics-scope", "communication"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_surgical_pathway_bridge_faculty"],
     "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority",
-      "notice_consultants_no_surgical_training"
+      "notice_consultants_no_surgical_training",
+      "notice_consultants_escalation_duty"
     ],
     "lessonIds": ["consultants_lesson_09_surgical_education_for_non_doctors"],
     "assessmentIds": ["consultants_assessment_09_surgical_education_for_non_doctors"],
@@ -411,12 +418,13 @@
     "shortTitle": "Documentation and Handover",
     "sequence": 10,
     "status": "draft",
-    "estimatedStudyMinutes": 120,
-    "moduleOverview": "Focuses on image capture standards, documentation discipline, and structured handover that improves doctor efficiency and patient safety.",
+    "estimatedStudyMinutes": 140,
+    "moduleOverview": "Teaching Manual Volume 3, Week 9: clinical photography, objective documentation, doctor handover, and evidence integrity—turning encounters into repeatable, auditable case files that reduce clinician load and ambiguity.",
     "learningOutcomes": [
-      "Capture documentation in a standardised and neutral manner",
-      "Prepare concise handover summaries for doctors",
-      "Recognise when documentation quality affects safety"
+      "Apply standard photographic discipline and honest scalp visibility for clinical review",
+      "Write neutral notes that separate report, observation, goals, and open questions",
+      "Produce concise handovers with aligned images and focused doctor questions",
+      "Detect and correct common integrity failures (missing angles, vague labels, mismatch, informal chat as record)"
     ],
     "competencyIds": ["consultants_competency_10_documentation_handover"],
     "unlockRules": [
@@ -435,7 +443,7 @@
         "mandatoryDomainTags": ["documentation"]
       }
     ],
-    "facultyNoteIds": ["consultants_note_documentation_standard"],
+    "facultyNoteIds": ["consultants_note_documentation_standard", "consultants_note_volume3_week9_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_escalation_duty"
@@ -457,12 +465,13 @@
     "shortTitle": "Pre-Operative Coordination",
     "sequence": 11,
     "status": "draft",
-    "estimatedStudyMinutes": 100,
-    "moduleOverview": "Builds operational confidence in preparing patients for doctor-led procedures through checklist discipline, documentation, and readiness coordination.",
+    "estimatedStudyMinutes": 120,
+    "moduleOverview": "Teaching Manual Volume 3, Week 10: pre-operative coordination—sequenced instructions, checklist discipline, anxiety versus clinical uncertainty, proactive confirmation, and documentation of late concerns so treatment teams are not surprised.",
     "learningOutcomes": [
-      "Coordinate pre-operative preparation using structured workflows",
-      "Identify missing information that needs escalation",
-      "Communicate preparation steps clearly and safely"
+      "Run readiness workflows that reduce cancellations and day-of friction",
+      "Escalate gaps, disclosures, or misunderstandings before treatment day",
+      "Communicate preparation calmly without implying medical clearance",
+      "Align with clinic reminder cadence and escalation prompts (SOP-dependent)"
     ],
     "competencyIds": ["consultants_competency_11_preoperative_coordination"],
     "unlockRules": [],
@@ -474,8 +483,12 @@
         "mandatoryDomainTags": ["care-coordination"]
       }
     ],
-    "facultyNoteIds": [],
-    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "facultyNoteIds": ["consultants_note_volume3_week10_faculty"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
     "lessonIds": ["consultants_lesson_11_pre_operative_coordination_preparation"],
     "assessmentIds": ["consultants_assessment_11_pre_operative_coordination_preparation"],
     "caseStudyIds": ["consultants_case_11_pre_operative_coordination_preparation"],
@@ -493,12 +506,13 @@
     "shortTitle": "Post-Operative Support",
     "sequence": 12,
     "status": "draft",
-    "estimatedStudyMinutes": 100,
-    "moduleOverview": "Addresses follow-up standards, patient reassurance, documentation, and timely escalation when recovery pathways deviate from expectation.",
+    "estimatedStudyMinutes": 120,
+    "moduleOverview": "Teaching Manual Volume 3, Week 11 (follow-up strand): routine recovery reassurance, continuity, documented interactions, and early escalation when recovery may diverge—separating emotional distress from clinical urgency where training demands.",
     "learningOutcomes": [
-      "Distinguish routine follow-up from escalation scenarios",
-      "Document post-operative concerns accurately",
-      "Use reassurance language without minimising red flags"
+      "Support follow-up with structured contact expectations and thorough documentation",
+      "Escalate when symptoms, tempo, or uncertainty exceed routine support boundaries",
+      "Avoid diagnosing or closing clinical concerns from the front line",
+      "Prepare for difficult and dissatisfaction conversations in the next module"
     ],
     "competencyIds": ["consultants_competency_12_follow_up_escalation"],
     "unlockRules": [
@@ -517,14 +531,17 @@
         "mandatoryDomainTags": ["red-flags", "escalation"]
       }
     ],
-    "facultyNoteIds": [],
-    "complianceNoticeIds": ["notice_consultants_escalation_duty"],
+    "facultyNoteIds": ["consultants_note_volume3_week11_postop_faculty"],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
     "lessonIds": ["consultants_lesson_12_post_operative_support_follow_up_escalation"],
     "assessmentIds": ["consultants_assessment_12_post_operative_support_follow_up_escalation"],
     "caseStudyIds": ["consultants_case_12_post_operative_support_follow_up_escalation"],
     "practicalTaskIds": [],
     "referenceIds": ["consultants_reference_12"],
-    "resourceIds": []
+    "resourceIds": ["consultants_resource_07", "consultants_resource_08"]
   },
   {
     "id": "consultants_module_13_difficult_consultations_high_risk_scenarios",
@@ -536,12 +553,13 @@
     "shortTitle": "High-Risk Scenarios",
     "sequence": 13,
     "status": "draft",
-    "estimatedStudyMinutes": 110,
-    "moduleOverview": "Equips learners to handle vulnerable, pressured, unrealistic, or high-risk consultation situations with ethical consistency and escalation discipline.",
+    "estimatedStudyMinutes": 130,
+    "moduleOverview": "Teaching Manual Volume 3, Week 11 (difficult cases strand) plus high-risk recovery judgement: dissatisfaction, distress, complaint risk, and ethical pressure—handled without minimisation, argument, or outcome promises; escalation as professionalism.",
     "learningOutcomes": [
-      "Recognise pressure-selling and vulnerability risks",
-      "Respond ethically to unrealistic expectations",
-      "Escalate high-risk cases without delay"
+      "De-escalate ethically while routing clinical and governance review",
+      "Document difficult interactions with factual precision",
+      "Identify vulnerability, coercion, and complication concern patterns",
+      "Protect trust and safety under commercial or interpersonal pressure"
     ],
     "competencyIds": ["consultants_competency_13_high_risk_scenario_management"],
     "unlockRules": [
@@ -560,7 +578,7 @@
         "mandatoryDomainTags": ["ethics-scope", "communication", "escalation"]
       }
     ],
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume3_week11_difficult_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_escalation_duty"
@@ -570,7 +588,7 @@
     "caseStudyIds": ["consultants_case_13_difficult_consultations_high_risk_scenarios"],
     "practicalTaskIds": ["consultants_task_13_difficult_consultations_high_risk_scenarios"],
     "referenceIds": ["consultants_reference_13"],
-    "resourceIds": []
+    "resourceIds": ["consultants_resource_08"]
   },
   {
     "id": "consultants_module_14_quality_assurance_audit_clinic_standards",
@@ -582,12 +600,13 @@
     "shortTitle": "Quality and Audit",
     "sequence": 14,
     "status": "draft",
-    "estimatedStudyMinutes": 90,
-    "moduleOverview": "Introduces standards review, audit thinking, template discipline, and the operational leadership role of consultant and nurse teams.",
+    "estimatedStudyMinutes": 110,
+    "moduleOverview": "Teaching Manual Volume 3, Week 12 (systems and QA): consultation systems, audit loops, continuous improvement, and leadership behaviours that raise standards without formal title—linking records, templates, and communication to governance.",
     "learningOutcomes": [
-      "Explain why standardisation improves safety and trust",
-      "Use audit language in a clinic support context",
-      "Recognise the role of documentation quality in QA"
+      "Describe system features that reduce harmful variation",
+      "Apply audit thinking to notes, photos, language, and escalation patterns",
+      "Champion standard tools and ethical escalation culture",
+      "Route systemic issues through proper quality improvement channels"
     ],
     "competencyIds": ["consultants_competency_14_quality_assurance_audit"],
     "unlockRules": [
@@ -606,14 +625,18 @@
         "mandatoryDomainTags": ["documentation", "care-coordination"]
       }
     ],
-    "facultyNoteIds": [],
-    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "facultyNoteIds": ["consultants_note_volume3_week12_qa_faculty"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
     "lessonIds": ["consultants_lesson_14_quality_assurance_audit_clinic_standards"],
     "assessmentIds": ["consultants_assessment_14_quality_assurance_audit_clinic_standards"],
     "caseStudyIds": ["consultants_case_14_quality_assurance_audit_clinic_standards"],
     "practicalTaskIds": [],
     "referenceIds": ["consultants_reference_14"],
-    "resourceIds": []
+    "resourceIds": ["consultants_resource_09"]
   },
   {
     "id": "consultants_module_15_final_competency_assessment",
@@ -625,12 +648,13 @@
     "shortTitle": "Final Competency Assessment",
     "sequence": 15,
     "status": "draft",
-    "estimatedStudyMinutes": 150,
-    "moduleOverview": "Capstone module assessing the full consultation-support pathway from first contact through handover, safety recognition, and coordinated care.",
+    "estimatedStudyMinutes": 165,
+    "moduleOverview": "Teaching Manual Volume 3, Week 12 (final integration): capstone simulating real clinic flow—intake, concerns, communication, handover, escalation judgement—with faculty review against mandatory safety domains and professional coherence across the certificate.",
     "learningOutcomes": [
-      "Integrate communication, documentation, triage, and escalation skills",
-      "Demonstrate standards-led decision support across the patient journey",
-      "Complete a faculty-reviewed capstone safely and professionally"
+      "Demonstrate integrated applied judgement across the full support pathway",
+      "Justify documentation and escalation choices with scope-safe reasoning",
+      "Meet programme pass and mandatory domain requirements",
+      "Show mature communication that is usable in practice, not memorised filler"
     ],
     "competencyIds": ["consultants_competency_15_capstone_consultation_pathway"],
     "unlockRules": [
@@ -649,7 +673,7 @@
         "mandatoryDomainTags": ["ethics-scope", "red-flags", "escalation", "documentation", "communication"]
       }
     ],
-    "facultyNoteIds": ["consultants_note_capstone_review"],
+    "facultyNoteIds": ["consultants_note_capstone_review", "consultants_note_volume3_week12_capstone_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority",

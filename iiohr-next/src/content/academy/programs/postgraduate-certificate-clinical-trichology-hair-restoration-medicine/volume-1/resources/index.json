@@ -7,10 +7,10 @@
     "title": "Module Summary: Introduction to Clinical Trichology",
     "resourceType": "pdf-summary",
     "fileName": "volume-1-module-1-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder short description for module 1 summary]"
+    "description": "Condensed module summary: physician-led scope, dermatology/transplant interfaces, responsibilities, evidence tiers (1–4), ethics, and red flags — derived from Volume 1 manual Module 1. PDF distributed to enrolled learners when released."
   },
   {
     "id": "resource_module_vol1_mod2_summary",
@@ -20,10 +20,10 @@
     "title": "Module Summary: Hair Follicle Biology and Scalp Science",
     "resourceType": "pdf-summary",
     "fileName": "volume-1-module-2-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder short description for module 2 summary]"
+    "description": "Condensed module summary: embryology, follicle anatomy, bulge/stem niches, cycling, shaft, scalp environment, ethnic variation, aging — from Volume 1 manual Module 2. PDF distributed when released."
   },
   {
     "id": "resource_module_vol1_mod3_summary",
@@ -33,10 +33,10 @@
     "title": "Module Summary: Molecular and Hormonal Regulation",
     "resourceType": "pdf-summary",
     "fileName": "volume-1-module-3-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder short description for module 3 summary]"
+    "description": "Condensed module summary: androgen biology, Wnt/prostaglandins, growth mediators, microinflammation, female heterogeneity, treatment logic — from Volume 1 manual Module 3. PDF distributed when released."
   },
   {
     "id": "resource_module_vol1_mod4_summary",
@@ -46,10 +46,10 @@
     "title": "Module Summary: Consultation and History-Taking",
     "resourceType": "pdf-summary",
     "fileName": "volume-1-module-4-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder short description for module 4 summary]"
+    "description": "Condensed module summary: complaint translation, tempo/pattern, female endocrine history, triggers, red flags, psychosocial context, structured template, documentation — from Volume 1 manual Module 4. PDF distributed when released."
   },
   {
     "id": "resource_lesson_vol1_mod1_01_summary",
@@ -59,10 +59,10 @@
     "title": "Lesson Summary: Scope and Definition of Clinical Trichology",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod1-01-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod1_01]"
+    "description": "Lesson digest: scope of clinical trichology, process classification, longitudinal care framing (manual 1.1, 1.3)."
   },
   {
     "id": "resource_lesson_vol1_mod1_02_summary",
@@ -72,10 +72,10 @@
     "title": "Lesson Summary: Discipline Boundaries and Interfaces",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod1-02-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod1_02]"
+    "description": "Lesson digest: dermatology reference standards vs hair surgery; downstream sequencing (manual 1.2)."
   },
   {
     "id": "resource_lesson_vol1_mod1_03_summary",
@@ -85,10 +85,10 @@
     "title": "Lesson Summary: Doctor Roles Within Hair Restoration Medicine",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod1-03-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod1_03]"
+    "description": "Lesson digest: physician responsibilities; ethics, consent, marketing boundaries (manual 1.3, 1.5 preview)."
   },
   {
     "id": "resource_lesson_vol1_mod1_04_summary",
@@ -98,10 +98,10 @@
     "title": "Lesson Summary: Evidence Principles and Standards-Led Practice",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod1-04-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod1_04]"
+    "description": "Lesson digest: evidence tiers 1–4; ethics, consent, red-flag referral list (manual 1.4–1.5)."
   },
   {
     "id": "resource_lesson_vol1_mod2_01_summary",
@@ -111,10 +111,10 @@
     "title": "Lesson Summary: Follicular Unit Anatomy",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod2-01-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod2_01]"
+    "description": "Lesson digest: embryology signals; infundibulum, isthmus, bulge, bulb; dermal papilla (manual 2.1–2.2)."
   },
   {
     "id": "resource_lesson_vol1_mod2_02_summary",
@@ -124,10 +124,10 @@
     "title": "Lesson Summary: Hair Cycle Biology",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod2-02-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod2_02]"
+    "description": "Lesson digest: anagen, catagen, telogen, exogen, kenogen; clinical correlates (manual 2.5)."
   },
   {
     "id": "resource_lesson_vol1_mod2_03_summary",
@@ -137,10 +137,10 @@
     "title": "Lesson Summary: Scalp Environment and Barrier Science",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod2-03-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod2_03]"
+    "description": "Lesson digest: shaft layers; scalp barrier, microbiome, mechanical exposures; breakage vs alopecia (manual 2.4, 2.6)."
   },
   {
     "id": "resource_lesson_vol1_mod2_04_summary",
@@ -150,10 +150,10 @@
     "title": "Lesson Summary: Follicular Unit Microanatomy in Clinical Practice",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod2-04-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod2_04]"
+    "description": "Lesson digest: bulge/stem niche and scarring; ethnic variation; aging biology (manual 2.3, 2.7–2.8)."
   },
   {
     "id": "resource_lesson_vol1_mod3_01_summary",
@@ -163,10 +163,10 @@
     "title": "Lesson Summary: Molecular Signaling Pathways in Hair Cycling",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod3-01-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod3_01]"
+    "description": "Lesson digest: Wnt/beta-catenin; prostaglandin balance in AGA signalling (manual 3.3–3.4)."
   },
   {
     "id": "resource_lesson_vol1_mod3_02_summary",
@@ -176,10 +176,10 @@
     "title": "Lesson Summary: Androgen Biology and Follicular Response",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod3-02-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod3_02]"
+    "description": "Lesson digest: DHT pathway, receptor genetics, age of activation (manual 3.1–3.2)."
   },
   {
     "id": "resource_lesson_vol1_mod3_03_summary",
@@ -189,10 +189,10 @@
     "title": "Lesson Summary: Inflammatory and Immune Mediators",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod3-03-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod3_03]"
+    "description": "Lesson digest: perifollicular microinflammation, fibrosis, scalp symptoms (manual 3.6)."
   },
   {
     "id": "resource_lesson_vol1_mod3_04_summary",
@@ -202,10 +202,10 @@
     "title": "Lesson Summary: Systemic and Metabolic Modifiers",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod3-04-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod3_04]"
+    "description": "Lesson digest: female endocrine heterogeneity; treatment sequencing logic (manual 3.7–3.8)."
   },
   {
     "id": "resource_lesson_vol1_mod4_01_summary",
@@ -215,10 +215,10 @@
     "title": "Lesson Summary: Consultation Framework for Hair Loss Practice",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod4-01-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod4_01]"
+    "description": "Lesson digest: complaint categories; structured consultation domains (manual 4.1, 4.8)."
   },
   {
     "id": "resource_lesson_vol1_mod4_02_summary",
@@ -228,10 +228,10 @@
     "title": "Lesson Summary: Structured Hair Loss History-Taking",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod4-02-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod4_02]"
+    "description": "Lesson digest: tempo, pattern, female history, family, drugs, triggers (manual 4.2–4.6)."
   },
   {
     "id": "resource_lesson_vol1_mod4_03_summary",
@@ -241,10 +241,10 @@
     "title": "Lesson Summary: Red-Flag Recognition and Escalation",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod4-03-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod4_03]"
+    "description": "Lesson digest: red-flag history; psychosocial burden vs clinical standards (manual 4.6–4.7)."
   },
   {
     "id": "resource_lesson_vol1_mod4_04_summary",
@@ -254,9 +254,9 @@
     "title": "Lesson Summary: Initial Clinical Reasoning and Triage",
     "resourceType": "pdf-summary",
     "fileName": "lesson-vol1-mod4-04-summary.pdf",
-    "fileUrl": "[placeholder-url]",
+    "fileUrl": "",
     "version": "v1",
     "access": "enrolled-only",
-    "description": "[Placeholder summary description for lesson_vol1_mod4_04]"
+    "description": "Lesson digest: history-first differentials; documentation of uncertainty; triage (manual 4.8–4.9)."
   }
 ]

@@ -7,10 +7,17 @@
     "title": "Structured Consultation Note Task",
     "taskType": "documentation",
     "status": "draft",
-    "instructions": "Produce a neutral consultation support note using the academy structure.",
+    "instructions": "Produce a neutral first-consultation support note aligned with Volume 2 Week 5: opening context, structured history, visual/reported concerns, treatment history, red flags or caution points, stated goals and underlying worries, and explicit doctor handover questions—no diagnostic labels, no good-candidate language unless policy explicitly allows, no sales-style closing.",
     "submissionFormat": ["text"],
     "facultyReviewRequired": true,
-    "rubric": [{ "id": "r1", "label": "Structure and neutrality", "weight": 10, "guidance": "Assess structure, clarity, and scope-safe wording." }],
+    "rubric": [
+      {
+        "id": "r1",
+        "label": "Structure, neutrality, and handover usefulness",
+        "weight": 10,
+        "guidance": "Assess Volume 2 Week 5 arc: headings, factual tone, goals versus fears, caution flags, and questions the clinician needs—not length for its own sake."
+      }
+    ],
     "linkedCompetencyIds": ["consultants_competency_04_structured_information_gathering"],
     "linkedComplianceNoticeIds": ["notice_consultants_competency_scope"]
   },
@@ -22,10 +29,17 @@
     "title": "Screening Escalation Task",
     "taskType": "case-triage",
     "status": "draft",
-    "instructions": "Document a screening scenario and identify the escalation trigger and next action.",
+    "instructions": "Document a screening scenario (real or realistic) per Volume 2 Week 6: classify as straightforward, cautionary, or high-priority for doctor review; state the escalation trigger in neutral language; list the next operational and clinical actions; explicitly avoid suitability confirmation or treatment promises.",
     "submissionFormat": ["text"],
     "facultyReviewRequired": false,
-    "rubric": [{ "id": "r2", "label": "Triage and escalation logic", "weight": 10, "guidance": "Assess safety, documentation quality, and escalation timing." }],
+    "rubric": [
+      {
+        "id": "r2",
+        "label": "Triage logic and documentation",
+        "weight": 10,
+        "guidance": "Assess classification rationale, gap handling, escalation timing, and absence of candidacy claims from non-doctor staff."
+      }
+    ],
     "linkedCompetencyIds": ["consultants_competency_05_candidate_screening_support"],
     "linkedComplianceNoticeIds": ["notice_consultants_escalation_duty"]
   },
@@ -37,10 +51,17 @@
     "title": "Trust-Based Communication Roleplay",
     "taskType": "communication",
     "status": "draft",
-    "instructions": "Draft or roleplay a trust-based response to a hesitant patient while preserving role boundaries.",
+    "instructions": "Draft a response to a hesitant patient demanding certainty before clinician review (Volume 2 Week 7): validate emotion, use measured expectation language, refuse absolute guarantees and graft or outcome promises, explain why doctor-led review matters, and offer to document concerns for handover.",
     "submissionFormat": ["text"],
     "facultyReviewRequired": true,
-    "rubric": [{ "id": "r3", "label": "Communication quality", "weight": 10, "guidance": "Assess empathy, realism, and scope-safe wording." }],
+    "rubric": [
+      {
+        "id": "r3",
+        "label": "Trust without false certainty",
+        "weight": 10,
+        "guidance": "Assess empathy, restraint, scope-safe wording, and clear preservation of doctor authority."
+      }
+    ],
     "linkedCompetencyIds": ["consultants_competency_07_patient_communication"],
     "linkedComplianceNoticeIds": ["notice_consultants_competency_scope"]
   },
@@ -52,10 +73,17 @@
     "title": "Doctor Handover Note Task",
     "taskType": "handover",
     "status": "draft",
-    "instructions": "Prepare a complete handover note using standard headings and neutral language.",
+    "instructions": "Prepare a doctor-ready handover after a completed consultation (Volume 3 Week 9): objective narrative; described photographic evidence (standard views, consistency—no diagnostic labels); red flags or caution points; patient goals and worries; focused questions for the treating clinician. Keep it short enough to use in practice; avoid promotional adjectives and fact-dumping.",
     "submissionFormat": ["text"],
     "facultyReviewRequired": true,
-    "rubric": [{ "id": "r4", "label": "Handover usefulness", "weight": 10, "guidance": "Assess whether the note is complete, neutral, and clinically useful." }],
+    "rubric": [
+      {
+        "id": "r4",
+        "label": "Handover quality and evidence alignment",
+        "weight": 10,
+        "guidance": "Assess neutrality, structure, evidence integrity, doctor-focused questions, and scope-safe language consistent with the linked assessment and faculty documentation note."
+      }
+    ],
     "linkedCompetencyIds": ["consultants_competency_10_documentation_handover"],
     "linkedComplianceNoticeIds": ["notice_consultants_competency_scope"]
   },
@@ -67,10 +95,17 @@
     "title": "High-Risk Consultation Response Task",
     "taskType": "roleplay",
     "status": "draft",
-    "instructions": "Respond to a vulnerable high-risk consultation scenario with safe communication and escalation planning.",
+    "instructions": "Respond to a high-risk consultation scenario (Volume 3 Week 11 difficult strand): visible distress, dissatisfaction, or complaint pressure. Use non-defensive, boundary-safe language; refuse outcome guarantees; offer neutral documentation; state escalation to clinician or manager per protocol when complaint risk, complication concern, or severe distress applies.",
     "submissionFormat": ["text"],
     "facultyReviewRequired": true,
-    "rubric": [{ "id": "r5", "label": "Ethical response quality", "weight": 10, "guidance": "Assess ethics, de-escalation, and protection from pressure." }],
+    "rubric": [
+      {
+        "id": "r5",
+        "label": "Ethics, escalation, and communication maturity",
+        "weight": 10,
+        "guidance": "Assess minimisation avoidance, scope clarity, realistic escalation plan, and protection from pressure selling."
+      }
+    ],
     "linkedCompetencyIds": ["consultants_competency_13_high_risk_scenario_management"],
     "linkedComplianceNoticeIds": ["notice_consultants_escalation_duty"]
   },
@@ -82,10 +117,17 @@
     "title": "Full Pathway Capstone Task",
     "taskType": "reflection",
     "status": "draft",
-    "instructions": "Complete the final integrated consultation-support capstone with structured rationale at each decision point.",
+    "instructions": "Complete the integrated capstone narrative (Volume 3 Week 12): thread first contact through documentation/handover, coordination touchpoints, follow-up judgement, one difficult interaction choice, and brief QA reflection—justify escalation versus watchful waiting at each fork in scope-safe, non-diagnostic language.",
     "submissionFormat": ["text"],
     "facultyReviewRequired": true,
-    "rubric": [{ "id": "r6", "label": "Integrated competency", "weight": 20, "guidance": "Assess communication, documentation, escalation, scope, and coordination together." }],
+    "rubric": [
+      {
+        "id": "r6",
+        "label": "Integrated competency",
+        "weight": 20,
+        "guidance": "Assess communication, documentation, escalation, coordination, and scope together; reject responses that smuggle clinical authority into support roles."
+      }
+    ],
     "linkedCompetencyIds": ["consultants_competency_15_capstone_consultation_pathway"],
     "linkedComplianceNoticeIds": [
       "notice_consultants_competency_scope",

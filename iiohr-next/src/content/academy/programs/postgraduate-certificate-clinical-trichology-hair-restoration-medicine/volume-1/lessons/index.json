@@ -9,34 +9,42 @@
     "estimatedStudyMinutes": 25,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: define the scope of clinical trichology]"
+      "Classify hair loss presentations into physiologic shedding, patterned miniaturisation, inflammatory disease, scarring alopecia, shaft disorders, and systemic manifestations.",
+      "Explain why early recognition of inflammatory or cicatricial disease changes prognosis."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod1_01]"
+      "content": "Clinical trichology is best understood as applied hair and scalp medicine. In physician-led practice the task is not simply to label hair loss but to determine whether the patient has a physiologic shedding state, patterned miniaturisation, an inflammatory process, a scarring alopecia, a shaft fragility disorder, or systemic disease manifesting through the hair and scalp. Missing early inflammatory or cicatricial disease can cause permanent loss because follicular architecture may be destroyed.\n\nThe field also requires longitudinal thinking: a patient with androgenetic alopecia is managed across disease stage, donor stability, age-related progression, reproductive context, psychosocial burden, and the sequencing of medical, adjunctive, and surgical options over years—not single-visit product selection.\n\nClinical reasoning focus: a competent clinician does not jump from patterned thinning to treatment. The first task is to identify the dominant pathological process, modifying factors, and the time-course of change."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod1_01]"
+      "Trichology at doctor level is differential diagnosis and longitudinal planning, not cosmetic pattern labelling alone.",
+      "Time-course and process category (shedding vs miniaturisation vs inflammation vs scarring) drive urgency and investigation.",
+      "Surgical and regenerative options are interpreted within this framework later in the program."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod1_01]"
+      "Treating patterned AGA without screening for symptoms or signs of scarring or inflammatory scalp disease.",
+      "Offering irreversible procedures when the diagnosis or activity of disease is not yet established."
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_01]"
+      "summaryNote": "Framed from Volume 1 Module 1 (manual sections 1.1, 1.3): scope of physician-led trichology and responsibilities."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod1_01",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_01]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_01]"
+        "id": "reasoning_lesson_vol1_mod1_01",
+        "title": "Clinical reasoning",
+        "prompt": "A patient reports gradual crown thinning only. What must you establish before discussing hair transplant candidacy?",
+        "teachingPoint": "Confirm chronicity, scalp symptoms, rapid change, and examination findings that exclude active inflammatory or cicatricial disease; transplantation is downstream once diagnosis and stability are clear."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod1_01_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod1_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod1_01"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod1_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -53,34 +61,41 @@
     "estimatedStudyMinutes": 25,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: distinguish trichology from adjacent disciplines]"
+      "Contrast dermatology reference standards with hair-restoration procedural training.",
+      "State why surgery without medical judgment produces poor long-term outcomes."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod1_02]"
+      "content": "Dermatology remains the reference specialty for inflammatory scalp disease, complex alopecias, interface dermatitis, and clinicopathologic correlation. A doctor-level trichology curriculum does not replace dermatology training; it should bring physicians closer to dermatology-grade competence within hair and scalp disease through morphology, trichoscopy, investigations, differentials, biopsy logic, treatment escalation, and referral boundaries.\n\nHair transplantation is a procedural discipline layered on medical hair science. Surgical skill without medical judgment leads to poor selection, unstable disease treated too early, and unrealistic density expectations. Transplantation should therefore be taught as a downstream decision within broader disease management.\n\nYour local licensure, scope, and referral networks still govern what you may perform independently; this program provides postgraduate education, not specialty recognition."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod1_02]"
+      "Dermatology anchors inflammatory, cicatricial, and complex diagnostic work; trichology extends focused hair medicine within that ecosystem.",
+      "Surgery depends on diagnosis, stability, donor biology, and patient expectations—never on technical ability alone."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod1_02]"
+      "Minimising inflammatory or scarring disease as a cosmetic variant of androgenetic alopecia.",
+      "Performing or recommending surgery outside your credentialed procedural scope."
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_02]"
+      "summaryNote": "Volume 1 sections 1.2–1.3: interfaces with dermatology and transplantation."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod1_02",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_02]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_02]"
+        "id": "reasoning_lesson_vol1_mod1_02",
+        "title": "Clinical reasoning",
+        "prompt": "When should biopsy or urgent dermatology review be considered in hair loss practice?",
+        "teachingPoint": "When history or examination suggests scarring, uncertain diagnosis, treatment-resistant inflammation, or rapid progression—local pathways apply."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod1_02_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod1_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod1_02"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod1_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -97,34 +112,42 @@
     "estimatedStudyMinutes": 25,
     "lessonType": "clinical-application",
     "learningObjectives": [
-      "[Placeholder objective: define doctor-facing roles within the pathway]"
+      "List physician responsibilities from initial assessment through counselling, investigation, and surgery appropriateness.",
+      "Apply ethical boundaries in vulnerable cosmetic populations."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod1_03]"
+      "content": "The manual summarises physician responsibilities in hair medicine: recognise when hair loss is benign, self-limited, progressive, inflammatory, or scarring; formulate a differential based on onset, distribution, symptoms, and examination; use investigations selectively rather than reflexively; interpret trichoscopy and know when biopsy is required; explain realistic outcomes, timeframes, maintenance, and adverse effects; identify when surgery is inappropriate or premature; and maintain ethical boundaries where psychological distress and commercial pressure intersect.\n\nHair loss is often medically benign yet psychologically profound. That combination increases the risk of overpromising and blurred boundaries between evidence-based medicine and marketing. The physician should obtain genuine informed consent, document uncertainty, distinguish maintenance from cure, and avoid claims that outrun the data."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod1_03]"
+      "Investigation follows clinical indication, not anxiety alone; every test should change management.",
+      "Expectation counselling includes maintenance for chronic conditions and honest limits of any modality.",
+      "Ethical practice includes refusing or delaying intervention when diagnosis, stability, or capacity are inadequate."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod1_03]"
+      "Ordering large non-directed panels without a clinical question.",
+      "Using distress or commercial targets to justify procedures that lack clinical indication."
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_03]"
+      "summaryNote": "Volume 1 section 1.3: physician responsibilities; section 1.5 preview on ethics."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod1_03",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_03]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_03]"
+        "id": "reasoning_lesson_vol1_mod1_03",
+        "title": "Clinical reasoning",
+        "prompt": "A patient demands surgery in one visit after brief thinning history. How do you respond clinically?",
+        "teachingPoint": "Complete structured history and examination, document differential and uncertainty, explain need for stability and diagnosis before irreversible steps, and record the conversation."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod1_03_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod1_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod1_03"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod1_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -141,34 +164,44 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "review-seminar",
     "learningObjectives": [
-      "[Placeholder objective: apply evidence principles to introductory trichology]"
+      "Apply the manual four-tier evidence model to common drug, device, and regenerative discussions.",
+      "Integrate ethics, consent, and red-flag referral thresholds from Module 1."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod1_04]"
+      "content": "Volume 1 defines four evidence tiers for academy teaching. Tier 1: established or widely accepted medical practice (examples include topical minoxidil, finasteride in appropriate male AGA, and standard diagnostic workup). Tier 2: consensus-based or evolving practice (examples include low-dose oral minoxidil and selected anti-androgen pathways in women). Tier 3: emerging adjunctive practice with heterogeneous evidence (examples include PRP protocols with variable preparation and selected device-based adjuncts). Tier 4: investigational or academy-signature concepts that are biologically plausible but not guideline-standard (examples include exosome-based therapy and partial transection with regenerative donor concepts).\n\nEthics, consent, and scope: protect patients from aspirational marketing framed as certainty. Red flags requiring caution or referral include pain, burning, perifollicular scale, pustulation, loss of follicular openings, rapid diffuse shedding with systemic symptoms, patchy loss with inflammation, and suspected scarring disease—these raise the threshold for reassurance-only management.\n\nThis program reinforces diagnostic reasoning over memorisation and evidence-tier awareness without replacing local licensure or supervised procedural training."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod1_04]"
+      "Label interventions with the appropriate tier in teaching and in patient-facing language.",
+      "Tier 4 plausibility is not efficacy; separate mechanism stories from outcomes data.",
+      "Red-flag symptoms and signs mandate escalation pathways, not cosmetic reassurance alone."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod1_04]"
+      "Presenting Tier 3–4 interventions as first-line substitutes for established medical therapy without indication and consent nuance.",
+      "Ignoring mucocutaneous or systemic red flags to retain a patient in a sales pathway."
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod1_04]"
+      "summaryNote": "Volume 1 sections 1.4–1.5: evidence tiers, ethics, consent, red flags."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod1_04",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod1_04]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod1_04]"
+        "id": "reasoning_lesson_vol1_mod1_04",
+        "title": "Clinical reasoning",
+        "prompt": "How should you discuss PRP with a patient who believes it is proven to regrow hair?",
+        "teachingPoint": "Acknowledge biological rationale and trial heterogeneity; place PRP in Tier 2–3 depending on context; compare with established therapies and evidence; document uncertainty and maintenance."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod1_04_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod1_04_summary"
+    ],
     "quizId": "quiz_vol1_mod1",
-    "casePromptIds": ["case_vol1_mod1_a"],
-    "referenceIds": ["reference_lesson_vol1_mod1_04"],
+    "casePromptIds": [
+      "case_vol1_mod1_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol1_mod1_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -185,34 +218,42 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: identify key follicular structures]"
+      "Outline embryologic signalling relevant to mature follicle behaviour.",
+      "Describe infundibulum, isthmus, bulge, and bulb regions and the roles of dermal papilla and root sheaths."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod2_01]"
+      "content": "Hair follicles develop through reciprocal signalling between epidermal keratinocytes and mesenchyme. Placode formation, downgrowth, dermal condensate organisation, and morphogenesis depend on Wnt, Sonic hedgehog, BMP modulation, and fibroblast growth factor networks. Clinicians should remember that mature cycling still relies on epithelial–mesenchymal communication.\n\nThe mature follicle includes the infundibulum (ostium to sebaceous duct), isthmus (to arrector pili insertion, containing the bulge), and lower follicle (stem, suprabulbar region, bulb). Matrix keratinocytes proliferate around the dermal papilla to produce the fibre and inner root sheath. The outer root sheath is contiguous with the epidermis and harbours progenitor populations. The inner root sheath shapes the growing shaft. The dermal papilla acts as a signalling centre regulating anagen initiation, shaft calibre, and cycling—not passive support."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod2_01]"
+      "Embryologic pathways recap in adult repair and cycling concepts used later in regenerative discussions.",
+      "Anatomic regions anchor trichoscopy and biopsy correlation in later modules.",
+      "Dermal papilla signalling explains why miniaturisation is an active signalling problem, not only hair count."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod2_01]"
+      "Teaching surgery without reference to follicle angulation and fragility of the lower follicle.",
+      "Assuming all visible hairs reflect equally viable bulbs without examination context."
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_01]"
+      "summaryNote": "Volume 1 sections 2.1–2.2: embryology and follicle anatomy."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod2_01",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_01]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_01]"
+        "id": "reasoning_lesson_vol1_mod2_01",
+        "title": "Clinical reasoning",
+        "prompt": "Why does bulge destruction change prognosis in alopecia?",
+        "teachingPoint": "The bulge houses epithelial stem-cell niches; their loss in cicatricial disease limits regenerative capacity—hence urgency when scarring is suspected."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod2_01_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod2_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod2_01"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod2_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -229,34 +270,42 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: describe clinically relevant hair cycle phases]"
+      "Define anagen, catagen, telogen, exogen, and kenogen in clinical terms.",
+      "Relate cycle shifts to AGA, telogen effluvium, and visible thinning."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod2_02]"
+      "content": "The classical cycle includes anagen, catagen, telogen, and exogen; kenogen describes the interval between club hair shedding and emergence of a new visible fibre. Scalp anagen may last years, permitting long hair growth. Catagen is brief involution with apoptosis-driven regression. Telogen is a relative resting state with club hair. Exogen is active fibre release. Clinical disorders often reflect shifts in the proportion of follicles in each state, shortened anagen (AGA), expanded telogen shedding (telogen effluvium), or delayed visible regrowth (kenogen importance in patterned thinning perception)."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod2_02]"
+      "Shedding complaints require timeline correlation with telogen shift triggers.",
+      "Miniaturisation reflects anagen shortening and calibre change, not only shedding counts.",
+      "Kenogen explains some disconnect between patient perception and simple shed hair counts."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod2_02]"
+      "Diagnosing chronic AGA from acute telogen shed count alone without history and examination.",
+      "Ignoring postpartum or trigger history when evaluating diffuse shed."
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_02]"
+      "summaryNote": "Volume 1 section 2.5: hair cycle biology and clinical correlates."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod2_02",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_02]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_02]"
+        "id": "reasoning_lesson_vol1_mod2_02",
+        "title": "Clinical reasoning",
+        "prompt": "A patient notes increased daily hair fall 10 weeks after high fever. What cycle logic applies?",
+        "teachingPoint": "Classic delayed telogen shift after systemic stress; correlate with tempo, examination, and red flags; reassure only if examination and history support benign effluvium."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod2_02_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod2_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod2_02"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod2_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -273,34 +322,42 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "clinical-application",
     "learningObjectives": [
-      "[Placeholder objective: relate scalp environment to interpretation and care]"
+      "Describe scalp barrier, sebum, microbiome, and mechanical exposures relevant to inflammation and treatment adherence.",
+      "Link shaft architecture (cuticle, cortex, medulla) to breakage versus true alopecia."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod2_03]"
+      "content": "The shaft consists of cuticle, cortex, and sometimes medulla; the cortex determines tensile strength, curl behaviour, and perceived density. The scalp is a specialised unit: high follicular density, rich vasculature, sebaceous activity, microbiome, and mechanical exposure from grooming, UV, traction, chemicals, and occlusion. Barrier function, sebum, Malassezia dynamics, inflammation, and perfusion influence medical and procedural success.\n\nClinicians must separate true reduction in follicle number or calibre from shaft breakage due to grooming or structural fragility—history and examination (and sometimes microscopy) clarify the branch."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod2_03]"
+      "Scalp inflammation can coexist with patterned loss and may alter therapy choices.",
+      "Breakage-predominant complaints need different counselling than miniaturisation-predominant thinning.",
+      "Environmental factors affect topical penetration, irritation, and patient adherence."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod2_03]"
+      "Mislabelling traction or cosmetic breakage as androgenetic alopecia without history.",
+      "Dismissing patient-reported burning or scale as cosmetic when inflammatory disease is possible."
     ],
     "evidenceTier": {
       "overall": "C",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_03]"
+      "summaryNote": "Volume 1 sections 2.4 and 2.6: shaft architecture and scalp environment."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod2_03",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_03]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_03]"
+        "id": "reasoning_lesson_vol1_mod2_03",
+        "title": "Clinical reasoning",
+        "prompt": "When should you suspect breakage rather than alopecia as the main driver?",
+        "teachingPoint": "Variable shaft length, trichorrhexis, history of chemical/heat styling, and spared scalp hair density with damaged distal hair suggest breakage—adapt examination and advice accordingly."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod2_03_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod2_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod2_03"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod2_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -317,34 +374,44 @@
     "estimatedStudyMinutes": 35,
     "lessonType": "review-seminar",
     "learningObjectives": [
-      "[Placeholder objective: integrate microanatomy with clinical interpretation]"
+      "Contrast non-scarring and cicatricial alopecia using stem-niche concepts.",
+      "Apply ethnic variation and aging biology to counselling and procedural risk discussion."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod2_04]"
+      "content": "The bulge region is a key epithelial stem-cell niche participating in cycling, wound response, and regeneration. In scarring alopecias, destruction of this region contributes to irreversible loss—early diagnosis changes prognosis. Non-scarring alopecia usually preserves architecture needed for potential regrowth.\n\nEthnic variation: straight, wavy, tightly curled, and coiled hair differ in cross-sectional shape, emergence angle, breakage pattern, sebum distribution, and grooming stress. Afro-textured hair may show increased fragility and curved subcutaneous follicles—relevant to traction-related disorders, central centrifugal cicatricial alopecia, and FUE punch dynamics.\n\nAging alters stem-cell signalling, fibroblast behaviour, pigmentation, perifollicular matrix, and anagen re-entry efficiency—clinically perceived as reduced density, slower regrowth, lower calibre, and interaction with genetic AGA timing."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod2_04]"
+      "Cicatricial disease is an architectural emergency until excluded.",
+      "Ethnic hair form informs breakage, traction risk, and surgical mechanics—avoid stereotyping outside evidence-linked clinical points.",
+      "Aging modifies expectations for regrowth velocity and treatment response."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod2_04]"
+      "Offering cosmetic camouflage or surgery without identifying active cicatricial inflammation.",
+      "Ignoring traction history in patients with tightly coiled hair patterns."
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod2_04]"
+      "summaryNote": "Volume 1 sections 2.3, 2.7, 2.8: bulge, ethnic variation, aging."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod2_04",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod2_04]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod2_04]"
+        "id": "reasoning_lesson_vol1_mod2_04",
+        "title": "Clinical reasoning",
+        "prompt": "A patient has vertex burning and loss of follicular ostia on examination. What biological principle drives urgency?",
+        "teachingPoint": "Possible cicatricial process with niche destruction—requires examination documentation, often biopsy or specialist referral, not reassurance as AGA alone."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod2_04_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod2_04_summary"
+    ],
     "quizId": "quiz_vol1_mod2",
-    "casePromptIds": ["case_vol1_mod2_a"],
-    "referenceIds": ["reference_lesson_vol1_mod2_04"],
+    "casePromptIds": [
+      "case_vol1_mod2_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol1_mod2_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -356,39 +423,47 @@
     "moduleId": "module_molecular_hormonal_regulation",
     "lessonNumber": 1,
     "slug": "molecular-signaling-pathways-in-hair-cycling",
-    "title": "Molecular Signaling Pathways in Hair Cycling",
+    "title": "Molecular Signalling Pathways in Hair Cycling",
     "status": "draft",
     "estimatedStudyMinutes": 30,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: identify core signaling pathways in hair cycling]"
+      "Describe Wnt/beta-catenin contribution to development, stem-cell activation, and anagen initiation.",
+      "Outline prostaglandin balance concepts relevant to AGA biology."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod3_01]"
+      "content": "Wnt/beta-catenin signalling is central to follicle development, stem-cell activation, and anagen initiation. Suppression of this pathway is linked to impaired regenerative activity and miniaturisation. Many regenerative or investigational approaches aim, directly or indirectly, to support pathways associated with anagen re-entry—claims must stay proportionate to evidence tier.\n\nProstaglandin balance influences follicle state. Prostaglandin D2 has been implicated in inhibitory signalling in patterned loss, while other prostaglandins may support growth. This reinforces that AGA reflects a broader signalling environment change, not only excess DHT."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod3_01]"
+      "Wnt pathway framing explains why some investigational therapies target cycling control—not cosmetic rebranding.",
+      "Prostaglandin biology supports multi-pathway models for miniaturisation."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod3_01]"
+      "Translating pathway science into guaranteed patient outcomes.",
+      "Recommending investigational or Tier 4 interventions from mechanism alone without proportionate evidence and consent.",
+      "Ignoring changing scalp symptoms alongside patterned loss—examination still anchors safety."
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_01]"
+      "summaryNote": "Volume 1 sections 3.3–3.4: Wnt and prostaglandins."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod3_01",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_01]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_01]"
+        "id": "reasoning_lesson_vol1_mod3_01",
+        "title": "Clinical reasoning",
+        "prompt": "Why is AGA not fully explained as too much DHT alone?",
+        "teachingPoint": "Local receptor biology, microinflammation, prostaglandin balance, and other mediators modulate follicle phenotype; treatment must address clinical phenotype and evidence, not a single molecule story."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod3_01_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod3_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod3_01"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod3_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -405,34 +480,43 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: relate androgen biology to follicular response]"
+      "Explain DHT generation, androgen receptor binding, and clinical miniaturisation.",
+      "Discuss polygenic risk and variable age of clinical activation."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod3_02]"
+      "content": "Androgens do not affect all follicles equally. In genetically susceptible scalp regions, testosterone converts to DHT via 5-alpha reductase isoenzymes; DHT binds the androgen receptor with higher affinity than testosterone, altering gene expression and driving progressive anagen shortening and miniaturisation.\n\nMany patients have normal circulating androgens yet develop patterned loss because local sensitivity, receptor biology, and regional programming matter more than serum excess alone. AGA is polygenic; variants near the androgen receptor locus and other loci influence risk, timing, and pattern. Susceptible follicles may activate clinically at different ages despite similar family history—genes influence when sensitivity becomes relevant, not only whether loss occurs."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod3_02]"
+      "Serum androgens are not a standalone rule-out for female hair loss workup.",
+      "Male pattern loss commonly reflects normal male androgen milieu on susceptible follicles.",
+      "Counselling should include realistic timelines and maintenance expectations for anti-androgen pathways."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod3_02]"
+      "Dismissing female hair loss without endocrine and reproductive review when clinically indicated.",
+      "Using normal serum androgens alone to close the workup in women with hyperandrogenism features or atypical patterns.",
+      "Ignoring unusually rapid or asymmetric progression that should trigger examination for inflammatory or scarring overlap."
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_02]"
+      "summaryNote": "Volume 1 sections 3.1–3.2: androgen biology and genetics framing."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod3_02",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_02]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_02]"
+        "id": "reasoning_lesson_vol1_mod3_02",
+        "title": "Clinical reasoning",
+        "prompt": "A young woman has progressive mid-frontal thinning with irregular menses and acne. What does molecular teaching imply?",
+        "teachingPoint": "Female pattern heterogeneity includes hyperandrogenism; investigate and manage endocrine contributors alongside hair-specific therapy—pattern alone is insufficient closure."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod3_02_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod3_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod3_02"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod3_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -449,34 +533,42 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "clinical-application",
     "learningObjectives": [
-      "[Placeholder objective: recognise inflammatory and immune modifiers]"
+      "Define perifollicular microinflammation and fibrosis as modifiers in patterned loss.",
+      "Link clinical scalp symptoms to examination priorities."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod3_03]"
+      "content": "Perifollicular microinflammation is increasingly recognised in patterned hair loss and may contribute to fibrosis and declining follicular performance. Some patients report discomfort, itch, or burning with erythema or scale—this should prompt careful scalp examination and may influence therapy (for example anti-inflammatory scalp care when clinically present) alongside core treatments.\n\nThis module does not equate microinflammation with autoimmune alopecia areata; instead it reinforces assessing the scalp itself, not only the hair pattern."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod3_03]"
+      "Symptoms shift the differential toward inflammatory and cicatricial considerations.",
+      "Microinflammation concepts explain heterogeneous progression rates in AGA."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod3_03]"
+      "Attributing all scalp itch to dryness without considering inflammatory dermatoses.",
+      "Labelling patterned loss as purely androgenetic when scale, erythema, pain, or burning suggest active scalp disease.",
+      "Proceeding to elective surgery while uncontrolled scalp inflammation or uncertain diagnosis remains."
     ],
     "evidenceTier": {
       "overall": "C",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_03]"
+      "summaryNote": "Volume 1 section 3.6: microinflammation and fibrosis."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod3_03",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_03]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_03]"
+        "id": "reasoning_lesson_vol1_mod3_03",
+        "title": "Clinical reasoning",
+        "prompt": "A patient with patterned loss describes burning and tight scale. How does this change management thinking?",
+        "teachingPoint": "Escalate examination; consider seborrhoeic, psoriasiform, or primary cicatricial differentials; treat visible inflammation; avoid surgery until activity is clarified."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod3_03_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod3_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod3_03"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod3_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -493,34 +585,44 @@
     "estimatedStudyMinutes": 35,
     "lessonType": "review-seminar",
     "learningObjectives": [
-      "[Placeholder objective: integrate systemic modifiers into clinical reasoning]"
+      "Outline sex-specific endocrine influences on female hair loss.",
+      "Apply treatment logic from molecular biology without overclaiming for adjuncts."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod3_04]"
+      "content": "Male patterned loss usually reflects normal androgen physiology on susceptible follicles. Female pattern hair loss is more heterogeneous: some patients have no overt endocrine disease; others have PCOS, insulin resistance, thyroid disease, perimenopausal change, or mixed contributors—female hair loss must be taught as broader hormonal and systemic medicine, not a mirror image of male AGA.\n\nTreatment logic from the manual: minoxidil supports anagen extension and activity but does not directly correct androgen signalling; finasteride and dutasteride modify DHT but do not reverse every element of miniaturisation; anti-inflammatory scalp care matters when inflammation is present; regenerative therapies may function best as adjuncts in viable follicles rather than replacements for core medical therapy in advanced patterned disease."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod3_04]"
+      "Female thinning requires structured gynaecologic/endocrine history (expanded in Module 4).",
+      "Sequencing: establish diagnosis and activity, optimise medical therapy, then consider adjuncts or surgery with transparent evidence tiers."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod3_04]"
+      "Replacing guideline medical therapy in advanced AGA with unproven adjuncts as sole treatment.",
+      "Stopping core medical therapy without structured review while active miniaturisation or inflammation continues.",
+      "Sequencing surgery before diagnosis, disease stability, and medical optimisation are reasonably established."
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod3_04]"
+      "summaryNote": "Volume 1 sections 3.7–3.8: sex-specific influences and treatment logic."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod3_04",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod3_04]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod3_04]"
+        "id": "reasoning_lesson_vol1_mod3_04",
+        "title": "Clinical reasoning",
+        "prompt": "When is PRP best framed as adjunctive rather than primary therapy?",
+        "teachingPoint": "When miniaturisation is advanced, inflammation uncontrolled, or diagnosis uncertain—adjuncts add to a foundation of evidence-based medical management in viable follicles, not substitute for it."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod3_04_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod3_04_summary"
+    ],
     "quizId": "quiz_vol1_mod3",
-    "casePromptIds": ["case_vol1_mod3_a"],
-    "referenceIds": ["reference_lesson_vol1_mod3_04"],
+    "casePromptIds": [
+      "case_vol1_mod3_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol1_mod3_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -537,34 +639,42 @@
     "estimatedStudyMinutes": 25,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: structure the consultation opening and agenda]"
+      "Translate lay complaints into shedding, density loss, breakage, or patchy/scarring categories.",
+      "Use the manual structured domains table to plan the consult arc."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod4_01]"
+      "content": "Doctors advance when the consultation is structured, efficient, and hypothesis-driven. The history must narrow diagnosis, reveal modifiers, identify red flags, and set examination and investigation plans before treatment selling.\n\nPatients may use the same words for different problems. The first task is to translate subjective language into categories: shedding, decreased density, breakage, or visible alopecic patches/scars. The manual provides a structured template across presenting complaint, onset and tempo, pattern and symptoms, systemic/endocrine history, triggers and exposures, and prior interventions—each domain exists because it changes the branch of the differential."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod4_01]"
+      "Complaint classification precedes trichoscopy, biopsy, or treatment promises.",
+      "A template prevents skipped domains under time pressure.",
+      "Documentation starts during the opening minutes, not after a decision is made."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod4_01]"
+      "Closing history before translating the complaint type.",
+      "Letting product discussion precede basic tempo and symptom review."
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_01]"
+      "summaryNote": "Volume 1 sections 4.1 and 4.8: complaint definition and structured template."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod4_01",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_01]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_01]"
+        "id": "reasoning_lesson_vol1_mod4_01",
+        "title": "Clinical reasoning",
+        "prompt": "Patient says my hair is falling out. What is your first clarification question cluster?",
+        "teachingPoint": "Shedding versus visible thinning versus breakage versus patches; tempo; scalp symptoms; prior events—then examination."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod4_01_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod4_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod4_01"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod4_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -581,34 +691,42 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "core-lesson",
     "learningObjectives": [
-      "[Placeholder objective: structure a comprehensive history-taking sequence]"
+      "Elicit onset, tempo, pattern, and symptom clues to inflammatory or scarring disease.",
+      "Take mandatory female reproductive and endocrine history for diffuse thinning."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod4_02]"
+      "content": "Time-course is a powerful tool: acute shedding over six to twelve weeks suggests telogen effluvium or a trigger state; slow progressive thinning over years suggests patterned miniaturisation. Itch, pain, tenderness, or burning raise suspicion for inflammatory scalp disease. Stepwise progression, asymmetry, or eyebrow loss can substantially change differentials.\n\nIn women, explore menstrual regularity, dysmenorrhoea, fertility history, postpartum state, contraceptive changes, acne, hirsutism, weight change, galactorrhoea, menopausal transition, and thyroid symptoms—these are central to interpreting diffuse thinning and patterned loss, not optional.\n\nFamily history should include maternal and paternal relatives with age of onset, pattern, and severity, remembering that family history informs risk but not inevitability or rate.\n\nDrug history includes agents associated with shedding or pattern change (retinoids, anticoagulants, anticonvulsants, antidepressants, weight-loss agents, hormonal therapies, anabolics) and abrupt cessation of supportive treatments. Hair-specific history covers minoxidil, anti-androgens, PRP, devices, prior surgery, and adverse reactions.\n\nNutrition and triggers: rapid weight loss, restrictive eating, low protein, febrile illness, major stress, surgery, anaemia, malabsorption, chronic inflammation, thyroid dysfunction—distinguish plausible triggers from unsupported patient assumptions."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod4_02]"
+      "Tempo plus symptoms partition telogen effluvium, AGA/FPHL, inflammatory, and scarring pathways.",
+      "Female endocrine and reproductive review is mandatory baseline, not add-on.",
+      "Medication and supplement history includes withdrawal effects."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod4_02]"
+      "Skipping menstrual or androgen excess screening in young women with thinning.",
+      "Accepting family history as diagnosis without independent assessment."
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_02]"
+      "summaryNote": "Volume 1 sections 4.2–4.6: tempo, female history, family, drugs, triggers."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod4_02",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_02]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_02]"
+        "id": "reasoning_lesson_vol1_mod4_02",
+        "title": "Clinical reasoning",
+        "prompt": "Diffuse shedding 3 months postpartum—what historical features still require documentation?",
+        "teachingPoint": "Scalp symptoms, atypical patterns, thyroid history, anaemia symptoms, medication changes, and red flags—postpartum is common but not a blanket exemption from structured review."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod4_02_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod4_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod4_02"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod4_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -625,34 +743,42 @@
     "estimatedStudyMinutes": 25,
     "lessonType": "clinical-application",
     "learningObjectives": [
-      "[Placeholder objective: identify escalation triggers and red flags]"
+      "List red-flag historical elements from the manual and link to escalation pathways.",
+      "Balance empathy for psychosocial burden with safe pacing of irreversible options."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod4_03]"
+      "content": "Red flag history elements include scalp pain or burning, eyebrow loss, loss of body hair, rapidly enlarging patches, pustules, crusting, autoimmune disease, systemic symptoms, or traction or scarring process histories—these raise suspicion and often change urgency of workup.\n\nPsychosocial impact matters: document duration, burden, functional impact, and prior treatment disappointment. Patients who have cycled through many therapies may need expectation recalibration before new plans. Psychological burden should be taken seriously without allowing distress alone to force inappropriate or irreversible intervention.\n\nEscalation should follow local pathways: dermatology, biopsy, laboratory investigation, or multidisciplinary care as indicated."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod4_03]"
+      "Red flags trump reassurance-only patterned hair loss pathways.",
+      "Distress warrants compassion and documentation, not bypassing clinical standards.",
+      "Traction and cosmetic practice histories are part of scarring risk assessment."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod4_03]"
+      "Reassuring patients with pain, pustules, or rapid patch expansion without examination escalation.",
+      "Scheduling surgery under psychological pressure without clinical indication."
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_03]"
+      "summaryNote": "Volume 1 sections 4.6–4.7: red flags and psychosocial context."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod4_03",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_03]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_03]"
+        "id": "reasoning_lesson_vol1_mod4_03",
+        "title": "Clinical reasoning",
+        "prompt": "Patient has eyebrow thinning and scalp burning. What is your default posture?",
+        "teachingPoint": "Treat as higher-risk inflammatory or autoimmune differential until examined and investigated; document clearly and expedite appropriate referral or workup."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod4_03_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod4_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": ["reference_lesson_vol1_mod4_03"],
+    "referenceIds": [
+      "reference_lesson_vol1_mod4_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -669,34 +795,45 @@
     "estimatedStudyMinutes": 30,
     "lessonType": "review-seminar",
     "learningObjectives": [
-      "[Placeholder objective: integrate consultation data into triage reasoning]"
+      "Differentiate likely telogen effluvium, male AGA, female pattern hair loss, and early cicatricial alopecia using history alone (before examination).",
+      "Document uncertainty supportively while maintaining medico-legal clarity."
     ],
     "body": {
       "format": "richText",
-      "content": "[Placeholder rich text body for lesson_vol1_mod4_04]"
+      "content": "End-of-module assessment themes from the manual: differentiate using history alone likely telogen effluvium, male AGA, female pattern hair loss, and early cicatricial alopecia; explain why scalp symptoms materially alter the differential; list minimum endocrine and reproductive history in female diffuse thinning; describe documenting uncertainty without undermining trust—use transparent language: what is known, what examination will test, and what timelines apply.\n\nTriage is not final diagnosis; it is safe prioritisation. When history conflicts or red flags appear, widen the net before committing to cosmetic or surgical plans."
     },
     "keyTakeaways": [
-      "[Placeholder takeaway for lesson_vol1_mod4_04]"
+      "History-first differentials guide examination focus and urgency.",
+      "Symptoms push the clinician toward inflammatory, infectious, or cicatricial branches.",
+      "Uncertainty statements paired with next steps preserve trust and governance."
     ],
     "redFlags": [
-      "[Placeholder red flag for lesson_vol1_mod4_04]"
+      "Stating a definitive diagnosis from history alone when examination and investigations are still pending—use a working impression with a clear verification plan.",
+      "Closing without documenting salient negatives, planned examination or tests, and follow-up timing.",
+      "Letting urgency for treatment or surgery compress triage when symptoms suggest inflammatory, infectious, or scarring disease."
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "[Placeholder evidence framing for lesson_vol1_mod4_04]"
+      "summaryNote": "Volume 1 sections 4.8–4.9: template consolidation and assessment prompts."
     },
     "clinicalReasoningBoxes": [
       {
-        "id": "reasoning_vol1_mod4_04",
-        "title": "Clinical Reasoning",
-        "prompt": "[Placeholder reasoning prompt for lesson_vol1_mod4_04]",
-        "teachingPoint": "[Placeholder teaching point for lesson_vol1_mod4_04]"
+        "id": "reasoning_lesson_vol1_mod4_04",
+        "title": "Clinical reasoning",
+        "prompt": "How do you document uncertainty after a first consult?",
+        "teachingPoint": "Record presenting category hypotheses, red flags absent or present, planned examination and tests, patient understanding, and follow-up interval—avoid false precision."
       }
     ],
-    "downloadableResourceIds": ["resource_lesson_vol1_mod4_04_summary"],
+    "downloadableResourceIds": [
+      "resource_lesson_vol1_mod4_04_summary"
+    ],
     "quizId": "quiz_vol1_mod4",
-    "casePromptIds": ["case_vol1_mod4_a"],
-    "referenceIds": ["reference_lesson_vol1_mod4_04"],
+    "casePromptIds": [
+      "case_vol1_mod4_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol1_mod4_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,

@@ -46,7 +46,12 @@
   "levelIds": ["level_doctors_postgraduate_certificate"],
   "sectionIds": ["section_doctors_volume_1"],
   "moduleIds": [],
-  "competencyIds": [],
+  "competencyIds": [
+    "doctors_vol1_comp_introduction_scope",
+    "doctors_vol1_comp_follicle_biology",
+    "doctors_vol1_comp_molecular_hormonal",
+    "doctors_vol1_comp_consultation_history"
+  ],
   "complianceNoticeIds": [
     "notice_doctors_medical_scope",
     "notice_doctors_surgical_training"

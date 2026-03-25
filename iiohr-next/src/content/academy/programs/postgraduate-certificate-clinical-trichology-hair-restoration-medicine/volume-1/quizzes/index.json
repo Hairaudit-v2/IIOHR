@@ -13,26 +13,26 @@
       {
         "id": "quiz_vol1_mod1_item_01",
         "type": "mcq",
-        "stem": "[Placeholder question stem for module 1 MCQ]",
+        "stem": "According to the Volume 1 manual evidence tiers, which example best fits Tier 1 (established or widely accepted medical practice)?",
         "options": [
-          { "id": "a", "label": "[Placeholder option A]" },
-          { "id": "b", "label": "[Placeholder option B]" },
-          { "id": "c", "label": "[Placeholder option C]" }
+          { "id": "a", "label": "Topical minoxidil and standard diagnostic workup in appropriate contexts" },
+          { "id": "b", "label": "Exosome-based therapy marketed for hair regrowth" },
+          { "id": "c", "label": "Variable PRP protocols without standardised preparation" }
         ],
         "correctAnswer": { "optionIds": ["a"] },
-        "rationale": "[Placeholder rationale for module 1 MCQ]",
+        "rationale": "The manual places topical minoxidil and standard diagnostic workup in Tier 1. Exosome therapy is cited as Tier 4 investigational; PRP sits in Tier 3 emerging adjunctive practice with heterogeneity.",
         "evidenceTier": "consensus",
         "facultyReviewRequired": false
       },
       {
         "id": "quiz_vol1_mod1_item_02",
         "type": "short-answer",
-        "stem": "[Placeholder short-answer stem for module 1]",
+        "stem": "List four red-flag features from the manual that should raise the threshold for reassurance-only management in hair loss, and state one ethical risk the manual associates with hair medicine consultations.",
         "options": [],
         "correctAnswer": {
-          "freeTextSample": "[Placeholder sample answer for module 1 short-answer]"
+          "freeTextSample": "Red flags include pain, burning, perifollicular scale, pustulation, loss of follicular openings, rapid diffuse shedding with systemic symptoms, patchy loss with inflammation, and suspected scarring disease. Ethical risk: overpromising or blurring evidence-based care with aspirational marketing in a psychologically vulnerable cosmetic context—informed consent, documenting uncertainty, and avoiding claims beyond data are required."
         },
-        "rationale": "[Placeholder rationale for module 1 short-answer]",
+        "rationale": "Aligned to Volume 1 Module 1 sections 1.4–1.5; assesses recall of escalation thresholds and ethics framing.",
         "evidenceTier": "consensus",
         "facultyReviewRequired": true
       }
@@ -51,27 +51,27 @@
     "items": [
       {
         "id": "quiz_vol1_mod2_item_01",
-        "type": "image-interpretation",
-        "stem": "[Placeholder image-interpretation stem for module 2]",
+        "type": "mcq",
+        "stem": "Destruction of the epithelial stem-cell niche centred on the bulge region in cicatricial alopecia primarily explains which clinical consequence?",
         "options": [
-          { "id": "a", "label": "[Placeholder option A]" },
-          { "id": "b", "label": "[Placeholder option B]" },
-          { "id": "c", "label": "[Placeholder option C]" }
+          { "id": "a", "label": "Reversible telogen shedding without architectural change" },
+          { "id": "b", "label": "Irreversible loss of regenerative capacity due to follicle architecture destruction" },
+          { "id": "c", "label": "Pure shaft breakage without follicular involvement" }
         ],
         "correctAnswer": { "optionIds": ["b"] },
-        "rationale": "[Placeholder rationale for module 2 image item]",
+        "rationale": "The manual contrasts non-scarring disease (architecture often preserved) with cicatricial disease where bulge/stem-niche destruction limits regrowth—early diagnosis changes prognosis.",
         "evidenceTier": "B",
         "facultyReviewRequired": false
       },
       {
         "id": "quiz_vol1_mod2_item_02",
         "type": "case-reasoning",
-        "stem": "[Placeholder case-reasoning stem for module 2]",
+        "stem": "A 32-year-old describes increased daily hair fall beginning 10–12 weeks after high fever and hospitalisation; no scalp pain or visible patches. Using cycle biology from the manual, outline your working hypothesis, what additional history you would take, and what examination would precede reassurance.",
         "options": [],
         "correctAnswer": {
-          "freeTextSample": "[Placeholder sample answer for module 2 case reasoning]"
+          "freeTextSample": "Working hypothesis: delayed telogen effluvium after systemic illness—consistent with shift of follicles into telogen and later shedding. Additional history: medications during illness, iron deficiency symptoms, thyroid symptoms, postpartum status if relevant, diet change, and prior hair disease. Examination: scalp for inflammatory signs, pattern of density loss, and evidence of breakage; consider limited labs if red flags or atypical features. Reassurance only if examination and history support benign effluvium without scarring or endocrine clues."
         },
-        "rationale": "[Placeholder rationale for module 2 case reasoning]",
+        "rationale": "Tests application of anagen/telogen/exogen/kenogen concepts and safety framing from Module 2.",
         "evidenceTier": "B",
         "facultyReviewRequired": true
       }
@@ -91,26 +91,26 @@
       {
         "id": "quiz_vol1_mod3_item_01",
         "type": "mcq",
-        "stem": "[Placeholder question stem for module 3 MCQ]",
+        "stem": "Which statement best reflects the manual teaching on androgenetic alopecia pathophysiology?",
         "options": [
-          { "id": "a", "label": "[Placeholder option A]" },
-          { "id": "b", "label": "[Placeholder option B]" },
-          { "id": "c", "label": "[Placeholder option C]" }
+          { "id": "a", "label": "Serum testosterone excess alone is required for male patterned miniaturisation" },
+          { "id": "b", "label": "Local androgen sensitivity and regional follicular programming often matter more than serum androgen levels alone" },
+          { "id": "c", "label": "Prostaglandin pathways are irrelevant because AGA is exclusively a DHT problem" }
         ],
-        "correctAnswer": { "optionIds": ["c"] },
-        "rationale": "[Placeholder rationale for module 3 MCQ]",
+        "correctAnswer": { "optionIds": ["b"] },
+        "rationale": "The manual emphasises DHT–androgen receptor effects in susceptible regions but notes normal androgens may still produce loss; prostaglandin balance illustrates broader signalling shifts.",
         "evidenceTier": "B",
         "facultyReviewRequired": false
       },
       {
         "id": "quiz_vol1_mod3_item_02",
         "type": "short-answer",
-        "stem": "[Placeholder short-answer stem for module 3]",
+        "stem": "Using the manual treatment-logic bullets, explain how minoxidil, finasteride/dutasteride, anti-inflammatory scalp care, and regenerative adjuncts differ in mechanism emphasis—and where overclaiming risk is highest.",
         "options": [],
         "correctAnswer": {
-          "freeTextSample": "[Placeholder sample answer for module 3 short-answer]"
+          "freeTextSample": "Minoxidil supports anagen extension and follicular activity but does not directly correct androgen signalling. Finasteride/dutasteride reduce DHT exposure but do not reverse every miniaturisation mechanism. Anti-inflammatory scalp care matters when clinical inflammation is present. Regenerative adjuncts (e.g. PRP) may modulate growth-factor exposure but outcomes vary by preparation and context—overclaiming risk is highest when Tier 3–4 interventions are sold as substitutes for core medical therapy or as cures."
         },
-        "rationale": "[Placeholder rationale for module 3 short-answer]",
+        "rationale": "Directly maps to Volume 1 Module 3 section 3.8.",
         "evidenceTier": "B",
         "facultyReviewRequired": true
       }
@@ -130,26 +130,26 @@
       {
         "id": "quiz_vol1_mod4_item_01",
         "type": "mcq",
-        "stem": "[Placeholder question stem for module 4 MCQ]",
+        "stem": "Which domain must be included as core—not optional—in structured history-taking for a woman presenting with diffuse thinning, per Volume 1 Module 4?",
         "options": [
-          { "id": "a", "label": "[Placeholder option A]" },
-          { "id": "b", "label": "[Placeholder option B]" },
-          { "id": "c", "label": "[Placeholder option C]" }
+          { "id": "a", "label": "Only family history of male relatives" },
+          { "id": "b", "label": "Menstrual regularity, contraceptive or fertility context, hyperandrogenism symptoms, thyroid symptoms, and menopausal transition as indicated" },
+          { "id": "c", "label": "Cosmetic product brand preferences only" }
         ],
-        "correctAnswer": { "optionIds": ["a"] },
-        "rationale": "[Placeholder rationale for module 4 MCQ]",
+        "correctAnswer": { "optionIds": ["b"] },
+        "rationale": "The manual states gynaecologic/endocrine review is central to interpreting female diffuse and patterned loss.",
         "evidenceTier": "consensus",
         "facultyReviewRequired": false
       },
       {
         "id": "quiz_vol1_mod4_item_02",
         "type": "case-reasoning",
-        "stem": "[Placeholder case-reasoning stem for module 4]",
+        "stem": "A 28-year-old woman reports 6 months of progressive widening of her part and ponytail thinning. She has irregular menses, new acne, and mild hirsutism. No scalp pain. Outline: (1) complaint categorisation, (2) minimum additional history, (3) why symptoms alter urgency, (4) how you document uncertainty before examination and labs.",
         "options": [],
         "correctAnswer": {
-          "freeTextSample": "[Placeholder sample answer for module 4 case reasoning]"
+          "freeTextSample": "(1) Category: decreased density/patterned thinning rather than acute shedding or patchy loss—still confirm shedding complaints. (2) Minimum history: menstrual pattern, contraception, fertility intent, weight change, galactorrhoea symptoms, medications, family history, diet/trigger factors, prior therapies. (3) Hyperandrogenism features raise priority for endocrine evaluation (e.g. PCOS spectrum) even if scalp symptoms are absent—influences differentials and investigations. (4) Document working impression as female pattern thinning with hyperandrogenism features pending examination, vitals, and directed labs per local protocol; state planned workup and follow-up; avoid definitive closure before data."
         },
-        "rationale": "[Placeholder rationale for module 4 case reasoning]",
+        "rationale": "Integrates sections 4.1–4.6 and 4.9 assessment themes; aligns to competency doctors_vol1_comp_consultation_history.",
         "evidenceTier": "consensus",
         "facultyReviewRequired": true
       }

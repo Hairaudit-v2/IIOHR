@@ -5,18 +5,22 @@
     "moduleId": "module_foundations_intro",
     "parentType": "module",
     "parentId": "module_foundations_intro",
-    "title": "Case Discussion Prompt: Scope, Boundaries, and Clinical Framing",
+    "title": "Case Discussion: Scope, Evidence Tiers, and Ethical Boundaries",
     "status": "draft",
-    "clinicalScenario": "[Placeholder scenario summary for module 1 case prompt]",
+    "clinicalScenario": "A 40-year-old asks you to confirm they have androgenetic alopecia in one visit and requests exosome injections after reading a clinic advert promising regrowth without drugs. They feel distressed and want a procedure within two weeks. They have no scalp pain or rash. They ask you to rank surgical versus exosome options as the only choices.",
     "discussionPrompts": [
-      "[Placeholder prompt 1 for module 1 case discussion]",
-      "[Placeholder prompt 2 for module 1 case discussion]"
+      "How do you translate their request into a clinical process category before discussing any procedure (Volume 1 Module 1)?",
+      "Using the manual four-tier model, how do you position exosome therapy versus established medical options without overclaiming?",
+      "What ethical and consent issues arise when psychological distress meets commercial urgency, and what documentation supports safe practice?"
     ],
-    "moderatorNotes": "[Placeholder faculty moderation note for module 1 case discussion]",
-    "linkedCompetencies": [
-      "[Placeholder competency link for module 1 case discussion]"
-    ],
-    "evidenceTier": "consensus"
+    "moderatorNotes": "Faculty: ensure learners separate diagnosis from marketing, cite Tier 1–4 language, and refuse premature irreversible planning. Reference manual sections 1.1, 1.4, and 1.5.",
+    "linkedCompetencies": ["doctors_vol1_comp_introduction_scope"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Commercial urgency driving procedure within two weeks without diagnosis",
+      "Request for Tier 4 intervention framed as certainty",
+      "Psychological distress without documented clinical assessment"
+    ]
   },
   {
     "id": "case_vol1_mod2_a",
@@ -24,18 +28,22 @@
     "moduleId": "module_follicle_biology_scalp_science",
     "parentType": "module",
     "parentId": "module_follicle_biology_scalp_science",
-    "title": "Case Discussion Prompt: Follicle Biology and Scalp Interpretation",
+    "title": "Case Discussion: Cycle Biology versus Scarring Risk",
     "status": "draft",
-    "clinicalScenario": "[Placeholder scenario summary for module 2 case prompt]",
+    "clinicalScenario": "A 35-year-old reports 4 months of increasing hair fall after stopping oral contraception; she also notes tight ponytails most days and occasional vertex tenderness. On questioning she has not examined her scalp closely. She believes it is only telogen effluvium from hormones.",
     "discussionPrompts": [
-      "[Placeholder prompt 1 for module 2 case discussion]",
-      "[Placeholder prompt 2 for module 2 case discussion]"
+      "How does cycle biology support or challenge a pure telogen effluvium hypothesis here?",
+      "Which elements in history should trigger careful examination for traction or early cicatricial disease?",
+      "How does bulge/stem-niche biology inform why you might expedite assessment if follicular openings appear diminished?"
     ],
-    "moderatorNotes": "[Placeholder faculty moderation note for module 2 case discussion]",
-    "linkedCompetencies": [
-      "[Placeholder competency link for module 2 case discussion]"
-    ],
-    "evidenceTier": "B"
+    "moderatorNotes": "Faculty: use manual Module 2 sections 2.5 and 2.3; link traction and symptoms to examination urgency; avoid confirming TE without exam.",
+    "linkedCompetencies": ["doctors_vol1_comp_follicle_biology"],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Vertex tenderness with chronic traction",
+      "Risk of traction alopecia or early cicatricial change until examination excludes",
+      "Premature closure on telogen effluvium without scalp exam"
+    ]
   },
   {
     "id": "case_vol1_mod3_a",
@@ -43,18 +51,22 @@
     "moduleId": "module_molecular_hormonal_regulation",
     "parentType": "module",
     "parentId": "module_molecular_hormonal_regulation",
-    "title": "Case Discussion Prompt: Molecular and Hormonal Pattern Recognition",
+    "title": "Case Discussion: Molecular Framing and Adjunctive Therapies",
     "status": "draft",
-    "clinicalScenario": "[Placeholder scenario summary for module 3 case prompt]",
+    "clinicalScenario": "A 50-year-old man with long-standing vertex thinning asks to stop finasteride because of anxiety online and replace it with monthly PRP only. He has no contraindications documented and stable cardiac history. He wants a guarantee of density recovery.",
     "discussionPrompts": [
-      "[Placeholder prompt 1 for module 3 case discussion]",
-      "[Placeholder prompt 2 for module 3 case discussion]"
+      "How does the manual treatment-logic section distinguish core anti-androgen therapy from adjunctive regenerative options?",
+      "What should you explain about evidence heterogeneity for PRP (Tier 2–3) versus finasteride (Tier 1 in appropriate male AGA)?",
+      "How do you document shared decision-making when a patient requests discontinuation of a Tier 1 therapy?"
     ],
-    "moderatorNotes": "[Placeholder faculty moderation note for module 3 case discussion]",
-    "linkedCompetencies": [
-      "[Placeholder competency link for module 3 case discussion]"
-    ],
-    "evidenceTier": "B"
+    "moderatorNotes": "Faculty: stress no guarantees, maintenance expectations, and medico-legal documentation; reference Module 3 sections 3.5 and 3.8.",
+    "linkedCompetencies": ["doctors_vol1_comp_molecular_hormonal"],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Abandoning Tier 1 therapy for adjunct-only plan without clinical review",
+      "Demand for outcome guarantees",
+      "Misrepresentation of PRP evidence as uniform or curative"
+    ]
   },
   {
     "id": "case_vol1_mod4_a",
@@ -62,17 +74,21 @@
     "moduleId": "module_clinical_consultation_history_taking",
     "parentType": "module",
     "parentId": "module_clinical_consultation_history_taking",
-    "title": "Case Discussion Prompt: Consultation, History, and Triage",
+    "title": "Case Discussion: Structured History, Red Flags, and Documentation",
     "status": "draft",
-    "clinicalScenario": "[Placeholder scenario summary for module 4 case prompt]",
+    "clinicalScenario": "A 24-year-old woman presents with diffuse shedding for 8 weeks and mild widening of her part. She reports irregular periods, new jawline acne, and 6 kg weight gain over a year. She denies scalp pain but notes increased dandruff. She is not pregnant. She requests hair transplant referral immediately.",
     "discussionPrompts": [
-      "[Placeholder prompt 1 for module 4 case discussion]",
-      "[Placeholder prompt 2 for module 4 case discussion]"
+      "Classify her complaint(s) and construct a differential branch before any surgical discussion.",
+      "What minimum endocrine and reproductive history is still required, and which investigations might you consider before referral (local protocol dependent)?",
+      "Which red-flag features would change urgency if she reported scalp burning, pustules, or rapid patchy loss—and how would you document uncertainty after the first consult?"
     ],
-    "moderatorNotes": "[Placeholder faculty moderation note for module 4 case discussion]",
-    "linkedCompetencies": [
-      "[Placeholder competency link for module 4 case discussion]"
-    ],
-    "evidenceTier": "consensus"
+    "moderatorNotes": "Faculty: drill manual Module 4 sections 4.1–4.6 and 4.9; block premature transplant discussion; emphasise hyperandrogenism pathway and examination-first discipline.",
+    "linkedCompetencies": ["doctors_vol1_comp_consultation_history"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Irregular menses with acne and weight gain suggesting hyperandrogenism",
+      "Premature surgical referral before endocrine and examination workup",
+      "Diffuse shedding plus pattern change needing structured differentials"
+    ]
   }
 ]

@@ -54,6 +54,105 @@
     "reviewPurpose": "Volume 1 alignment"
   },
   {
+    "id": "consultants_note_volume2_week5_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_04_consultation_structure_information_gathering",
+    "title": "Volume 2 Week 5 — faculty delivery",
+    "note": "Source: Teaching Manual Volume 2 (Week 5: consultation structure and history taking). Live teach the beginning–middle–end arc; open with who/role/plan. Use mock consults and mark notes for factual tone, goals versus fears, and absence of premature treatment closing. Manual practice: template with opening, history, visual concerns, treatment history, red flags, goals, handover—then mock case and revise.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 2 alignment"
+  },
+  {
+    "id": "consultants_note_volume2_week6_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_05_candidate_screening_suitability_support",
+    "title": "Volume 2 Week 6 — faculty delivery",
+    "note": "Source: Volume 2 Week 6 (screening, suitability, escalation). Classify cases as straightforward, cautionary, or high priority for doctor review. Drill deferral language that protects trust. Manual exercise: four mock histories, classification, rationale, one-paragraph handover each.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 2 alignment"
+  },
+  {
+    "id": "consultants_note_volume2_week7_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_07_communication_excellence_trust_based_consultation",
+    "title": "Volume 2 Week 7 — faculty delivery",
+    "note": "Source: Volume 2 Week 7 (communication and expectation management). Treat communication as a safety tool. Language drill: ten risky statements rewritten to measured wording; practise aloud. Discuss warmth versus false certainty.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 2 alignment"
+  },
+  {
+    "id": "consultants_note_volume2_week8_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_08_non_surgical_treatment_education",
+    "title": "Volume 2 Week 8 — faculty delivery",
+    "note": "Source: Volume 2 Week 8 (treatment education for non-doctor roles). Pathway exercise: three summaries (non-surgical-first, surgery-plus-maintenance, delayed pending review). Reinforce educate broadly, defer specifically for medications. Note: broad surgical principles in the manual continue in the program’s Surgical Pathway Education module.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 2 alignment"
+  },
+  {
+    "id": "consultants_note_volume2_surgical_pathway_bridge_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_09_surgical_education_for_non_doctors",
+    "title": "Surgical pathway education (non-doctor) — faculty delivery",
+    "note": "Bridge after Volume 2 Week 8: teach labelled pathway stages (information, doctor-led assessment and planning, procedure day logistics, early aftercare themes as general education only) without graft counts, technique-as-suitability verdicts, anaesthetic advice, or consent closure. Role-play unsafe patient lines (compare two techniques, confirm candidacy, rush booking) and rewrite to boundary-safe responses. Link forward: accurate process explanation makes Volume 3 documentation and handover easier because expectations are not poisoned pre-doctor.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "surgical pathway support alignment"
+  },
+  {
+    "id": "consultants_note_volume3_week9_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_10_clinical_photography_documentation_handover",
+    "title": "Volume 3 Week 9 — faculty delivery",
+    "note": "Source: Teaching Manual Volume 3 (Week 9). Run weak vs strong case file comparison: missing angles, vague wording, note–image mismatch, copy-paste. Practical: mock photo checklist + one-page summary + handover; rewrite narrative-heavy note into doctor-facing summary. Reinforce evidence integrity—no informal messaging as substitute for clinic notes.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 3 alignment"
+  },
+  {
+    "id": "consultants_note_volume3_week10_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_11_pre_operative_coordination_preparation",
+    "title": "Volume 3 Week 10 — faculty delivery",
+    "note": "Source: Volume 3 Week 10. Teach sequencing over instruction dumps. Exercise: week-before-treatment reminder cadence with escalation points; plain-language pre-op checklist. Distinguish routine nerves vs unresolved clinical doubt—slow down when needed.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 3 alignment"
+  },
+  {
+    "id": "consultants_note_volume3_week11_postop_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_12_post_operative_support_follow_up_escalation",
+    "title": "Volume 3 Week 11 (follow-up) — faculty delivery",
+    "note": "Source: Volume 3 Week 11 (post-operative support and follow-up). Scenario pairs: emotionally distressed but medically routine vs calm patient with potentially abnormal symptoms—separate emotional intensity from clinical urgency. Drill message responses and follow-up notes documenting concern, response, escalation decision.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 3 alignment"
+  },
+  {
+    "id": "consultants_note_volume3_week11_difficult_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_13_difficult_consultations_high_risk_scenarios",
+    "title": "Volume 3 Week 11 (difficult cases) — faculty delivery",
+    "note": "Source: Volume 3 Week 11 (complaints, dissatisfaction, difficult conversations—continued in this LMS module). No arguing down distress; no promising outcomes to calm; escalate when dissatisfaction may reflect complication or severe distress. Complaint prevention starts with first difficult conversation.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 3 alignment"
+  },
+  {
+    "id": "consultants_note_volume3_week12_qa_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_14_quality_assurance_audit_clinic_standards",
+    "title": "Volume 3 Week 12 (QA & systems) — faculty delivery",
+    "note": "Source: Volume 3 Week 12 (systems, audit, leadership). Mini audit on sample notes, handovers, follow-up messages. Frame audit as training signal and system design question: what made error easy or success repeatable? Leadership without title: model language, standardise tools, support juniors, encourage escalation when something feels wrong.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 3 alignment"
+  },
+  {
+    "id": "consultants_note_volume3_week12_capstone_faculty",
+    "parentType": "module",
+    "parentId": "consultants_module_15_final_competency_assessment",
+    "title": "Volume 3 Week 12 (capstone) — faculty delivery",
+    "note": "Source: Volume 3 Week 12 final integration. Capstone should simulate clinic: intake summary, case concerns, communication response, handover prep, explicit justify escalation vs watchful waiting. Judge applied capability, usable documentation, mature tone—not memorised scripts. Ethical judgement and scope non-negotiable.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 3 alignment"
+  },
+  {
     "id": "consultants_note_capstone_review",
     "parentType": "assessment",
     "parentId": "consultants_assessment_15_final_competency_assessment",

@@ -5,23 +5,23 @@
     "parentId": "consultants_module_01_role_modern_hair_restoration",
     "title": "Role Boundary Summary",
     "resourceType": "pdf-summary",
-    "fileName": "role-boundary-summary.pdf",
-    "fileUrl": "/academy/resources/consultants/role-boundary-summary.pdf",
+    "fileName": "iiohr-consultant-role-boundary-summary.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-role-boundary-summary.html",
     "version": "1.0",
     "access": "enrolled-only",
-    "description": "Summary sheet covering support-role scope and escalation boundaries."
+    "description": "Print-ready reference: within-scope tasks versus escalate-to-clinician topics. Open in browser to print or save as PDF; editable in Word if needed. Aligns with Volume 1 Week 1 coordinated-clinic framing."
   },
   {
     "id": "consultants_resource_02",
     "parentType": "module",
     "parentId": "consultants_module_04_consultation_structure_information_gathering",
-    "title": "Consultation Structure Template",
+    "title": "Consultation Support Note Template",
     "resourceType": "template",
-    "fileName": "consultation-structure-template.docx",
-    "fileUrl": "/academy/resources/consultants/consultation-structure-template.docx",
+    "fileName": "iiohr-consultant-consultation-support-note-template.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-consultation-support-note-template.html",
     "version": "1.0",
     "access": "enrolled-only",
-    "description": "Structured information-gathering template for clinic use."
+    "description": "Structured first-contact / history-capture layout with handover checks. Volume 2 Week 5 alignment. Neutral, non-diagnostic wording; transfer to your EMR or clinic-approved form."
   },
   {
     "id": "consultants_resource_03",
@@ -29,11 +29,11 @@
     "parentId": "consultants_module_05_candidate_screening_suitability_support",
     "title": "Screening Red Flag Checklist",
     "resourceType": "checklist",
-    "fileName": "screening-red-flag-checklist.pdf",
-    "fileUrl": "/academy/resources/consultants/screening-red-flag-checklist.pdf",
+    "fileName": "iiohr-consultant-screening-red-flag-checklist.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-screening-red-flag-checklist.html",
     "version": "1.0",
     "access": "enrolled-only",
-    "description": "Red flag and escalation checklist for candidate screening support."
+    "description": "Pause-pathway indicators and documentation prompts. Volume 2 Week 6. Does not replace clinical triage — supports coordinator classification and escalation."
   },
   {
     "id": "consultants_resource_04",
@@ -41,23 +41,23 @@
     "parentId": "consultants_module_08_non_surgical_treatment_education",
     "title": "Patient Education Talking Points",
     "resourceType": "worksheet",
-    "fileName": "patient-education-talking-points.pdf",
-    "fileUrl": "/academy/resources/consultants/patient-education-talking-points.pdf",
+    "fileName": "iiohr-consultant-patient-education-talking-points.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-patient-education-talking-points.html",
     "version": "1.0",
     "access": "enrolled-only",
-    "description": "Scope-safe language prompts for treatment education conversations."
+    "description": "Scope-safe stems and high-risk phrases to avoid. Volume 2 Week 8 educate-broadly / defer-specifically discipline."
   },
   {
     "id": "consultants_resource_05",
     "parentType": "module",
     "parentId": "consultants_module_10_clinical_photography_documentation_handover",
-    "title": "Handover Note Template",
+    "title": "Doctor Handover Template",
     "resourceType": "template",
-    "fileName": "handover-note-template.docx",
-    "fileUrl": "/academy/resources/consultants/handover-note-template.docx",
+    "fileName": "iiohr-consultant-doctor-handover-template.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-doctor-handover-template.html",
     "version": "1.0",
     "access": "enrolled-only",
-    "description": "Doctor handover template aligned to academy documentation standards."
+    "description": "Concise clinician-facing summary: evidence alignment, caution flags, focused questions. Volume 3 Week 9. Pair with your clinic photo SOP and angle checklist."
   },
   {
     "id": "consultants_resource_06",
@@ -65,10 +65,46 @@
     "parentId": "consultants_module_11_pre_operative_coordination_preparation",
     "title": "Pre-Operative Preparation Checklist",
     "resourceType": "checklist",
-    "fileName": "pre-operative-preparation-checklist.pdf",
-    "fileUrl": "/academy/resources/consultants/pre-operative-preparation-checklist.pdf",
+    "fileName": "iiohr-consultant-pre-operative-preparation-checklist.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-pre-operative-preparation-checklist.html",
     "version": "1.0",
     "access": "enrolled-only",
-    "description": "Checklist supporting pre-operative coordination and readiness workflows."
+    "description": "Operational readiness rows plus anxiety-versus-uncertainty cue. Volume 3 Week 10. Not medical clearance — clinical sign-off per policy."
+  },
+  {
+    "id": "consultants_resource_07",
+    "parentType": "module",
+    "parentId": "consultants_module_12_post_operative_support_follow_up_escalation",
+    "title": "Post-Operative Follow-Up Contact Log",
+    "resourceType": "template",
+    "fileName": "iiohr-consultant-post-operative-follow-up-log.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-post-operative-follow-up-log.html",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Repeatable table for date, channel, patient report, bounded response, escalation, and clinical follow-up arranged. Volume 3 Week 11. No remote diagnosis or prescribing language."
+  },
+  {
+    "id": "consultants_resource_08",
+    "parentType": "module",
+    "parentId": "consultants_module_13_difficult_consultations_high_risk_scenarios",
+    "title": "Escalation Prompt Sheet",
+    "resourceType": "worksheet",
+    "fileName": "iiohr-consultant-escalation-prompt-sheet.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-escalation-prompt-sheet.html",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Patient-facing routing stems for screening, follow-up, and difficult encounters. Also linked from presentation and screening modules for red-flag discipline. Replace bracketed roles with your local titles and pathways."
+  },
+  {
+    "id": "consultants_resource_09",
+    "parentType": "module",
+    "parentId": "consultants_module_14_quality_assurance_audit_clinic_standards",
+    "title": "Consultation QA Spot-Check Checklist",
+    "resourceType": "checklist",
+    "fileName": "iiohr-consultant-consultation-qa-checklist.html",
+    "fileUrl": "/academy/resources/consultants/iiohr-consultant-consultation-qa-checklist.html",
+    "version": "1.0",
+    "access": "enrolled-only",
+    "description": "Mini-audit criteria for notes, scope language, handover quality, and system reflection. Volume 3 Week 12 support-role lens; formal governance audit remains with authorised leads."
   }
 ]

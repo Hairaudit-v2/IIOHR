@@ -7,7 +7,7 @@
     "title": "Foundation Practice",
     "sequence": 1,
     "status": "draft",
-    "overview": "Foundation section covering role literacy, hair science, consultation structure, and suitability support.",
+    "overview": "Volume 1–2 foundation spine: role and coordinated clinic (Volume 1 Week 1), hair and scalp literacy (Week 3), presentation safety (Week 4), structured consultation capture (Volume 2 Week 5), and screening support with escalation (Week 6).",
     "moduleIds": [
       "consultants_module_01_role_modern_hair_restoration",
       "consultants_module_02_foundations_hair_scalp_science",
@@ -24,7 +24,7 @@
     "title": "Advanced Consultation Practice",
     "sequence": 2,
     "status": "draft",
-    "overview": "Advanced section covering ethics, trust-based communication, treatment education, and handover quality.",
+    "overview": "Volume 1–3 advanced spine: ethics and consent support (Volume 1 Week 2), trust-based communication (Volume 2 Week 7), non-surgical then surgical pathway education within scope (Week 8 → bridge module 9), then Volume 3 Week 9 documentation, photography, and doctor handover.",
     "moduleIds": [
       "consultants_module_06_ethics_consent_scope_of_practice",
       "consultants_module_07_communication_excellence_trust_based_consultation",
@@ -41,7 +41,7 @@
     "title": "Leadership and Clinical Coordination",
     "sequence": 3,
     "status": "draft",
-    "overview": "Leadership section covering coordinated care, escalation, difficult consultations, audit, and capstone integration.",
+    "overview": "Volume 3 diploma spine: pre-op coordination (Week 10), post-op follow-up and escalation (Week 11), difficult and high-risk encounters (Week 11 continued), QA and systems leadership (Week 12), and final competency integration with faculty review.",
     "moduleIds": [
       "consultants_module_11_pre_operative_coordination_preparation",
       "consultants_module_12_post_operative_support_follow_up_escalation",

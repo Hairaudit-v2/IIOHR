@@ -319,7 +319,7 @@
       "notice_consultants_escalation_duty"
     ],
     "referenceIds": ["consultants_reference_03"],
-    "resourceIds": [],
+    "resourceIds": ["consultants_resource_08"],
     "assessmentIds": ["consultants_assessment_03_common_hair_loss_presentations"],
     "caseStudyIds": ["consultants_case_03_common_hair_loss_presentations"],
     "practicalTaskIds": [],
@@ -354,16 +354,17 @@
     "title": "Standardised Consultation Structure and History Capture",
     "sequence": 4,
     "status": "draft",
-    "estimatedStudyMinutes": 60,
-    "overview": "Shows how to structure information gathering so that patient conversations become consistent, useful, and easy to hand over.",
+    "estimatedStudyMinutes": 90,
+    "overview": "Aligned with Teaching Manual Volume 2, Week 5: build consultations that are structured, calm, clinically useful, and professionally bounded. You learn the arc of a strong consult (opening, history, listening for underlying concerns, documentation), and how notes become a handover tool—not a sales diary.",
     "learningObjectives": [
-      "Use a repeatable consultation sequence",
-      "Capture clinically relevant information without leading the patient",
-      "Prepare information for doctor review"
+      "Run a consultation with a logical sequence and clear explanation of your role and what will happen next",
+      "Gather clinically relevant history (onset, pace, family history, prior treatment, medications, scalp symptoms, goals) without leading or closing treatment early",
+      "Distinguish the patient’s surface request from underlying goals, fears, and assumptions to improve expectation setting and doctor handover",
+      "Produce concise, factual notes that support the next clinician and internal review"
     ],
     "body": {
       "format": "richText",
-      "content": "The lesson presents a standard consultation sequence covering presenting concern, history, expectations, red flags, and documentation for doctor review."
+      "content": "Volume 2 Week 5 positions applied consultation practice as the bridge from foundational literacy to safe front-line work. A high-quality consultation has a beginning, middle, and end: it should not feel rushed, improvised, or dominated by sales language. The patient should leave understanding what is known, what still needs medical review, and what the next steps are.\n\nThe flow typically moves from rapport and orientation into structured history and visual or reported concerns, then toward high-level pathway education and expectation setting, ending with a clear handoff or plan for doctor review. Even when the patient wants to discuss treatment immediately, your job is to guide the flow rather than let the conversation become chaotic. Balance empathy with discipline.\n\nOpen professionally in the first minute: who you are, what your role is, and what this session will cover—for example understanding concerns, gathering relevant history, outlining possible pathways at a high level, and preparing the case for doctor review where required. That clarity reduces mistaken authority and builds trust.\n\nHistory taking is not box-ticking; it is how the clinic understands pattern, progression, stability, prior exposure, and possible caution points. Core areas commonly include age of onset, pace of change, family history, previous surgery, treatment history, current medications or supplements, scalp symptoms, and stated goals. Broader medical or hormonal topics may be relevant but must stay within your organisation’s scope—capture and hand over rather than interpret.\n\nPatients rarely speak in clinical terms. They may say they want their old hair back while the real drivers are ageing anxiety, embarrassment, relationship pressure, or panic after recent shedding. Hearing both the surface request and the underlying concern improves expectation setting and the quality of what you pass to the doctor, and it reduces the risk of matching emotional urgency with a rushed treatment conversation.\n\nConsultation notes should be concise, factual, and useful: stated concerns, relevant history, caution points, and questions for clinician clarification. Avoid vague sales-style lines such as wants transplant or good candidate unless your policy explicitly allows and supports them. A strong note is a clinical communication asset.\n\nPractice activity (Volume 2): draft a template with headings for opening, history, visual or reported concerns, treatment history, red flags, patient goals, and next-step handover. Run a mock case, then revise anything that felt unclear, repetitive, or leading.\n\nProfessional caution from the manual: do not let the consult become a treatment recommendation session before adequate history; early certainty often damages documentation and expectations."
     },
     "patientCommunicationExamples": [
       {
@@ -371,27 +372,56 @@
         "title": "Neutral information-gathering prompt",
         "example": "I am going to ask a series of standard questions so the doctor receives a complete and consistent picture.",
         "rationale": "Explains structure while avoiding a sales tone."
+      },
+      {
+        "id": "pc_04b",
+        "title": "Opening with role and plan",
+        "example": "I am [name], and my role is to understand your concerns, gather the key history we need, explain how our pathway works at a high level, and prepare everything for your doctor so nothing important is missed.",
+        "rationale": "Mirrors Volume 2 guidance: who, role, and session purpose."
+      },
+      {
+        "id": "pc_04c",
+        "title": "Surfacing the underlying concern",
+        "example": "You mentioned wanting your hair back the way it was—help me understand what worries you most day to day, so I can reflect that accurately for the clinical team.",
+        "rationale": "Separates emotional drivers from treatment closing without diagnosing."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_04",
         "title": "No leading conclusions",
-        "note": "Questions should gather information, not steer patients toward a treatment decision."
+        "note": "Questions gather information; they must not steer the patient toward a treatment decision or implied suitability."
+      },
+      {
+        "id": "rb_04b",
+        "title": "Notes are for handover, not persuasion",
+        "note": "Documentation should read objectively for clinicians; it is not a record built to justify a sale."
       }
     ],
     "keyTakeaways": [
-      "Structure supports safety and efficiency.",
-      "Consistency improves handover quality.",
-      "Neutral questioning protects trust."
+      "Structure before solutions: Volume 2 Week 5 treats consultation discipline as a safety behaviour.",
+      "Good pacing combines listening with a clear sequence so nothing critical is skipped.",
+      "Goals, fears, and assumptions belong in the note—they change what the doctor needs to address.",
+      "Volume 2 Week 5 maps to this foundation module; screening and slowing down expand in the next module."
     ],
-    "redFlags": ["Missing key history details", "Suggestive questioning that implies suitability"],
+    "redFlags": [
+      "Treatment-heavy conversation before adequate history",
+      "Suggestive questioning that implies suitability or a chosen procedure",
+      "Vague or promotional notes that force the doctor to reconstruct the visit",
+      "Patient reports history elements outside your scope answered with guesses instead of documentation and escalation"
+    ],
     "escalationTriggers": [
       {
         "id": "et_04",
         "title": "Significant unresolved concern",
         "trigger": "Patient reports symptoms or history elements outside routine consultation support.",
         "action": "Stop speculation, document clearly, and escalate."
+      },
+      {
+        "id": "et_04b",
+        "title": "History reveals caution the pathway should not fast-track",
+        "trigger": "Onset, pace, prior surgery, medications, or distress suggest the case needs clinician review before further planning talk.",
+        "action": "Document caution flags neutrally and follow clinic protocol for doctor review before deepening pathway or pricing discussion."
       }
     ],
     "evidenceTier": {
@@ -399,7 +429,7 @@
       "summaryNote": "Structured history-taking is a standards-led support competency.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week5_faculty"],
     "complianceNoticeIds": ["notice_consultants_competency_scope"],
     "referenceIds": ["consultants_reference_04"],
     "resourceIds": ["consultants_resource_02"],
@@ -411,6 +441,12 @@
         "id": "complete_04_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_04_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       },
       {
@@ -437,16 +473,17 @@
     "title": "Candidate Screening Support and Suitability Boundaries",
     "sequence": 5,
     "status": "draft",
-    "estimatedStudyMinutes": 55,
-    "overview": "Focuses on pre-doctor screening support, readiness checks, and recognising when suitability concerns need escalation.",
+    "estimatedStudyMinutes": 85,
+    "overview": "Aligned with Teaching Manual Volume 2, Week 6: screening as a support process that tells the clinic when to proceed, when to pause, and when to escalate—not as a substitute for medical judgement. You learn straightforward versus cautionary versus high-priority pathways, suitability concerns without definitive medical claims, donor humility, emotional caution flags, and professional deferral language.",
     "learningObjectives": [
-      "Gather suitability-relevant information safely",
-      "Recognise screening concerns requiring escalation",
-      "Avoid suitability statements beyond scope"
+      "Differentiate straightforward, cautionary, and high-priority-for-review cases at a support level (not diagnosis)",
+      "Recognise common suitability concern themes (expectations, instability, prior surgery, donor-related caution, psychological urgency) and document them for doctor review",
+      "Explain donor limitation concepts in broad, measured terms without promising numbers or feasibility",
+      "Use deferral and escalation language that protects trust while slowing unsafe fast-tracks"
     ],
     "body": {
       "format": "richText",
-      "content": "Screening support should improve doctor efficiency and patient safety by surfacing relevant information early while avoiding overconfident statements about candidacy."
+      "content": "Volume 2 Week 6 defines screening as identifying whether a case appears straightforward, cautionary, or unsuitable for fast-tracking. In the consultant and nurse pathway, screening supports safe flow and appropriate escalation; it does not replace diagnosis or formal treatment decisions.\n\nDone well, screening protects patient and clinic: it reduces rushed promises, surfaces patients who need sooner doctor review, and improves internal case discussion quality.\n\nSuitability concerns often relate to age, instability of loss, diffuse thinning, donor-related caution, unrealistic expectations, previous failed surgery, or weak understanding of maintenance—not to casually reject patients, but to slow the process, enrich handover, and prevent inappropriate enthusiasm.\n\nMany patients judge donor strength by appearance alone. Calibre, wave, contrast with scalp, prior extractions, miniaturisation, and styling all change how donor presents. Thick-looking hair does not guarantee robust donor availability. You may educate broadly on finite donor supply; specific graft counts, design guarantees, or feasibility promises stay with clinical review.\n\nSome of the highest-risk interactions are emotionally driven: severe distress, desperation to proceed immediately, repeated reassurance seeking, or fixation on perfection. These do not automatically mean unsuitable, but they raise the bar for expectation management and may change how the team sequences consultation and doctor review.\n\nWhen caution exists, the response is often understated: document clearly, state that further doctor review is needed, avoid premature price or outcome conversations, and ensure the next step is clinically appropriate. Deferral should feel protective, not dismissive—good clinics slow down without breaking trust.\n\nPractice activity (Volume 2): review four mock histories; classify each as straightforward, cautionary, or high priority for doctor review; write a short rationale and a one-paragraph handover note for each.\n\nProfessional caution from the manual: never let commercial pressure replace suitability judgement; emotionally urgent or biologically complex patients should not be pushed through simply because they appear motivated to buy."
     },
     "patientCommunicationExamples": [
       {
@@ -454,27 +491,55 @@
         "title": "Suitability boundary language",
         "example": "I can help document your history and preparation, but a suitability decision must come from the treating doctor.",
         "rationale": "Reinforces role clarity."
+      },
+      {
+        "id": "pc_05b",
+        "title": "Professional deferral without dismissal",
+        "example": "Based on what you have shared, I want the doctor to review this properly before we talk specifics. That protects you and makes sure the plan fits your situation—not a rushed guess from me.",
+        "rationale": "Frames slowing down as patient protection."
+      },
+      {
+        "id": "pc_05c",
+        "title": "Donor supply without numbers",
+        "example": "Donor hair is a limited resource, and how strong it looks in photos is not the whole clinical picture. The doctor assesses what is realistically available; my role is not to promise graft numbers today.",
+        "rationale": "Educates on limitation while refusing premature specificity."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_05",
         "title": "Suitability is doctor-led",
-        "note": "Non-doctor staff may support screening but should not present candidacy as confirmed."
+        "note": "You may flag concern themes and complete screening data; you do not confirm or deny surgical candidacy."
+      },
+      {
+        "id": "rb_05b",
+        "title": "Screening is not triage diagnosis",
+        "note": "Classifying a case as cautionary or high priority describes workflow risk, not a medical label for the patient."
       }
     ],
     "keyTakeaways": [
-      "Triage support is not diagnosis.",
-      "Readiness and suitability are not the same thing.",
-      "Escalation should be explicit and documented."
+      "Screening intelligence makes handover safer and reduces harmful fast-tracking.",
+      "Emotional urgency is a signal for pacing and documentation, not for bypassing review.",
+      "Volume 2 Week 6 maps to this module; communication and expectation language deepens in the Communication module (Week 7 in the manual)."
     ],
-    "redFlags": ["Unclear medical history", "Signs of unrealistic expectations or risk"],
+    "redFlags": [
+      "Incomplete screening data with pressure to book or quote outcomes",
+      "Staff labelling someone a good candidate before doctor review",
+      "Dismissing emotional distress or fixation as just motivation to proceed",
+      "Visual donor assumptions used to reassure about surgery extent"
+    ],
     "escalationTriggers": [
       {
         "id": "et_05",
         "title": "Suitability concern",
         "trigger": "History or behaviour raises concern about safety, stability, or expectation mismatch.",
         "action": "Escalate to the doctor and avoid reassuring claims."
+      },
+      {
+        "id": "et_05b",
+        "title": "Commercial tempo conflicts with caution",
+        "trigger": "Targets, discounts, or schedules pressure progression despite documented caution flags.",
+        "action": "Stop the fast-track, document, escalate to clinical or governance lead per policy."
       }
     ],
     "evidenceTier": {
@@ -482,13 +547,13 @@
       "summaryNote": "Screening support relies on clear protocols and escalation pathways.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week6_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_escalation_duty"
     ],
     "referenceIds": ["consultants_reference_05"],
-    "resourceIds": ["consultants_resource_03"],
+    "resourceIds": ["consultants_resource_03", "consultants_resource_08"],
     "assessmentIds": ["consultants_assessment_05_candidate_screening_suitability_support"],
     "caseStudyIds": ["consultants_case_05_candidate_screening_suitability_support"],
     "practicalTaskIds": ["consultants_task_05_candidate_screening_suitability_support"],
@@ -497,6 +562,18 @@
         "id": "complete_05_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_05_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
+        "required": true
+      },
+      {
+        "id": "complete_05_task",
+        "type": "submit-linked-task",
+        "description": "Submit the linked practical task.",
         "required": true
       }
     ],
@@ -629,16 +706,17 @@
     "title": "Trust-Based Communication in Consultation Support",
     "sequence": 7,
     "status": "draft",
-    "estimatedStudyMinutes": 55,
-    "overview": "Develops professional communication habits that favour trust, realism, and patient understanding over conversion pressure.",
+    "estimatedStudyMinutes": 85,
+    "overview": "Aligned with Teaching Manual Volume 2, Week 7: communication as a clinical safety tool, not a soft add-on. Patients build expectations from your words before they judge outcomes from photos. This module links empathy, precision, and restraint—expectation management without hype, risky phrase replacement, and ethical handling of objections.",
     "learningObjectives": [
-      "Use clear, ethical consultation language",
-      "Respond to emotion without losing structure",
-      "Communicate with realism rather than persuasion"
+      "Use communication to improve trust, clarity, and safety while staying scope-safe",
+      "Recognise emotional drivers behind questions about density, timeframes, or graft talk",
+      "Set expectations with realism that clarifies uncertainty and timelines without sounding negative or defensive",
+      "Replace absolute or casual risky phrases with measured alternatives and document concerns for handover"
     ],
     "body": {
       "format": "richText",
-      "content": "Communication quality is treated here as a standards discipline. The goal is not personality-driven persuasion but clinically credible, trust-preserving interaction."
+      "content": "Volume 2 Week 7 states plainly: in hair restoration, communication is part of the real work. Skilled communication helps patients feel heard while preserving realism; it reduces misunderstanding, supports consent quality, and sustains trust when limits or uncertainty must be named.\n\nHair loss can touch confidence, identity, intimacy, social comfort, and professional presence. A question that sounds technical may really be about control, embarrassment, or fear. Responding to the emotional layer often matters as much as the informational layer—without you becoming a therapist or making clinical promises.\n\nRealism is not negativity. Good expectation setting clarifies what may be possible, what remains uncertain, what takes time, and what still requires doctor review. Topics such as finite donor supply, individual variation in results, grounded density expectations, and long-term maintenance should sound calm and matter-of-fact—not apologetic, defensive, or salesy.\n\nCertain phrases create avoidable risk: absolute guarantees, this will fix it, you will not need to worry about that, or overly casual wording that trivialises risk. Healthier patterns sound like: based on what we know so far, this may be appropriate but needs doctor confirmation, we need to review your pattern carefully, or the aim is improvement, not a perfection promise.\n\nObjections are not only obstacles to conversion—they often signal incomplete understanding, cost anxiety, hesitation, or mistrust. Ethical handling clarifies honestly, resists pressure tactics, and gives patients room to think. Pressure may spike short-term conversion but often erodes long-term satisfaction.\n\nPractice activity (Volume 2): take ten risky consultation statements, rewrite them in measured ethical language, then practise aloud until they sound natural rather than robotic.\n\nProfessional caution from the manual: warmth must not become false certainty—support the patient without leading them into promises you cannot keep within scope."
     },
     "patientCommunicationExamples": [
       {
@@ -646,27 +724,55 @@
         "title": "Expectation-setting language",
         "example": "It is important that the doctor reviews your case fully before any recommendation is made, so we keep the process safe and accurate.",
         "rationale": "Reinforces trust and clinical governance."
+      },
+      {
+        "id": "pc_07b",
+        "title": "Measured instead of absolute",
+        "example": "From what we have discussed so far, there may be options worth exploring, but only your doctor can confirm what fits you medically. I will make sure your questions are captured so nothing is skipped.",
+        "rationale": "Mirrors Volume 2 alternatives to risky certainty."
+      },
+      {
+        "id": "pc_07c",
+        "title": "Objection as information gap",
+        "example": "It makes sense you are unsure—this is a big decision. Tell me what worries you most, and I will explain what I can within my role and note the rest for your doctor.",
+        "rationale": "Ethical objection handling without cornering the patient."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_07",
         "title": "No conversion pressure",
-        "note": "Communication should educate and support rather than push a treatment outcome."
+        "note": "Communication educates and supports; it does not substitute for doctor-led planning or consent."
+      },
+      {
+        "id": "rb_07b",
+        "title": "Do not outrun clinical governance",
+        "note": "Confidence in conversation must not exceed what your clinic’s evidence position and protocols support."
       }
     ],
     "keyTakeaways": [
-      "Trust is stronger than conversion pressure.",
-      "Good communication still respects boundaries.",
-      "Patients notice consistency and realism."
+      "Words shape expectations before outcomes do—treat them as a safety surface.",
+      "Realism and kindness coexist; negativity and hype are both failure modes.",
+      "Volume 2 Week 7 maps to this module; treatment pathway education continues in the next module (manual Week 8 themes split: non-surgical depth here, surgical principles in Surgical Pathway Education)."
     ],
-    "redFlags": ["Urgency tactics", "Dismissive handling of hesitation"],
+    "redFlags": [
+      "Absolute outcome or density language from non-doctor staff",
+      "Urgency or discount framing that rushes clinical judgement",
+      "Dismissive responses to hesitation or fear",
+      "Over-reassurance that removes the need for doctor review"
+    ],
     "escalationTriggers": [
       {
         "id": "et_07",
         "title": "Distress or expectation mismatch",
         "trigger": "The patient shows distress, unrealistic expectations, or misunderstanding that requires clinician input.",
         "action": "Pause escalation pressure and involve the appropriate doctor or senior clinician."
+      },
+      {
+        "id": "et_07b",
+        "title": "Communication risk beyond support scope",
+        "trigger": "The patient needs mental-health-level support, or language is veering into clinical decision-making.",
+        "action": "Document, de-escalate sales tempo, and route to clinician or appropriate support per protocol."
       }
     ],
     "evidenceTier": {
@@ -674,7 +780,7 @@
       "summaryNote": "Communication standards are closely tied to clinic safety and trust policy.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week7_faculty"],
     "complianceNoticeIds": ["notice_consultants_competency_scope"],
     "referenceIds": ["consultants_reference_07"],
     "resourceIds": [],
@@ -686,6 +792,18 @@
         "id": "complete_07_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_07_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
+        "required": true
+      },
+      {
+        "id": "complete_07_task",
+        "type": "submit-linked-task",
+        "description": "Submit the linked practical task.",
         "required": true
       }
     ],
@@ -706,16 +824,17 @@
     "title": "Non-Surgical Treatment Education Within Scope",
     "sequence": 8,
     "status": "draft",
-    "estimatedStudyMinutes": 45,
-    "overview": "Shows how to educate patients on non-surgical pathway categories without slipping into prescribing or misleading recommendation language.",
+    "estimatedStudyMinutes": 80,
+    "overview": "Aligned with Teaching Manual Volume 2, Week 8: responsible treatment education for non-doctor roles—pathway thinking, non-surgical categories, medication awareness without prescribing, and presenting care as sequencing rather than selling. This LMS module focuses on non-surgical depth; broad surgical principles from the same manual week continue in the program’s Surgical Pathway Education module.",
     "learningObjectives": [
-      "Describe non-surgical pathway categories accurately",
-      "Set expectation boundaries appropriately",
-      "Know when patient questions require clinician review"
+      "Explain broad treatment pathways clearly: supportive, procedural, delayed pending review, or combination—without presenting surgery as the automatic superior answer",
+      "Discuss common non-surgical modality categories at the level of purpose, timelines, maintenance, and evidence boundaries per clinic policy—without overselling any single option",
+      "Apply educate broadly, defer specifically for medication questions (no independent prescribing advice; side-effect and suitability questions to the prescriber)",
+      "Recognise when front-end confidence would outrun medical governance or evidence position"
     ],
     "body": {
       "format": "richText",
-      "content": "Education is framed as explanation rather than prescribing. The lesson emphasises safe wording, realistic expectation management, and escalation when detailed clinical questions arise."
+      "content": "Volume 2 Week 8 states that patient-facing professionals do not need to prescribe to educate responsibly. You should understand the broad purpose, limits, and sequencing of major pathways so patients prepare better for doctor discussions and fewer misconceptions take root.\n\nPoor treatment education produces false optimism or unnecessary confusion; strong education helps patients see why some routes are supportive, some procedural, and some should wait for further medical review.\n\nNon-surgical discussions in real clinics may touch categories such as platelet-rich plasma, regenerative options where permitted by policy, microneedling, topical support, oral medication awareness, and scalp health optimisation. Your task is not to crown a winner among modalities but to explain purpose, maintenance realities, typical timelines, and where evidence is still debated—using wording that matches your clinic’s actual governance.\n\nPatients often ask about minoxidil, finasteride, dutasteride, or supplement narratives. The manual’s rule is educate broadly, defer specifically: they can understand why a medication conversation exists without receiving unsupervised prescribing instructions or dismissive answers to side-effect concerns. All personalised start, stop, dose, or suitability decisions belong with the regulated prescriber.\n\nThe manual also introduces broad surgical literacy—FUE versus FUT concepts, graft versus hair language, donor limitation, timelines to visible change, and that planning evolves with proper review—while warning against premature specificity. In this certificate pathway, that surgical breadth is developed in the dedicated Surgical Pathway Education module following this one; here, emphasise pathway sequencing and non-surgical framing so patients see care as a pathway, not a single transaction.\n\nMature conversations sound like pathway discussions: non-surgical first, medical review first, surgery later, or combined approaches. That framing builds trust because it signals shared decision-making with the clinical team rather than closing a sale.\n\nPractice activity (Volume 2): write three patient-facing education summaries—likely non-surgical-first pathway, surgery-plus-maintenance pathway, and delayed pathway pending further review—focusing on tone, sequencing, and restraint.\n\nProfessional caution from the manual: avoid presenting surgery as inevitable or superior by default; in a standards-based clinic, pathway logic should lead, not commercial enthusiasm."
     },
     "patientCommunicationExamples": [
       {
@@ -723,27 +842,55 @@
         "title": "Treatment education boundary",
         "example": "I can explain the types of options patients may hear about, but any recommendation needs to come from the clinician managing your case.",
         "rationale": "Maintains a non-prescribing boundary."
+      },
+      {
+        "id": "pc_08b",
+        "title": "Medication: educate broadly, defer specifically",
+        "example": "Those medications are prescribed and monitored by a doctor for a reason—dosing, suitability, and side effects need a proper medical conversation. I can tell you why people often discuss them in hair loss care, but I cannot instruct you how to use them.",
+        "rationale": "Matches Volume 2 medication awareness guidance."
+      },
+      {
+        "id": "pc_08c",
+        "title": "Pathway not product",
+        "example": "Many people need a staged plan rather than one procedure in isolation—sometimes stabilisation or medical review comes first. The doctor maps that with you; my job is to explain how we think in pathways, not to pick your treatment today.",
+        "rationale": "Pathway framing versus transactional selling."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_08",
         "title": "Education is not prescription",
-        "note": "Learners should not advise or prescribe treatment outside approved clinic protocol and scope."
+        "note": "Do not advise start, stop, dose, or combine medications; do not present off-label or emerging options beyond what policy authorises."
+      },
+      {
+        "id": "rb_08b",
+        "title": "Surgical specifics stay clinical",
+        "note": "Exact graft counts, design guarantees, or feasibility promises are for doctor-led consultation; see Surgical Pathway Education module for bounded overview language."
       }
     ],
     "keyTakeaways": [
-      "Education must remain accurate and bounded.",
-      "Expectation setting is safer than overpromising.",
-      "Clinical recommendation belongs with the treating clinician."
+      "Pathway literacy reduces harmful certainty and prepares better doctor encounters.",
+      "Non-surgical education is about honest category explanation, not modality hype.",
+      "Volume 2 Week 8 non-surgical and pathway themes anchor this module; surgical overview depth continues in module 9."
     ],
-    "redFlags": ["Presenting treatment as guaranteed", "Answering prescribing questions beyond scope"],
+    "redFlags": [
+      "Guaranteeing results, density, or suitability from any modality",
+      "Prescribing-style advice or minimising medication risks",
+      "Front-end claims that outrun the clinic’s evidence or policy position",
+      "Framing surgery as the default answer before medical review"
+    ],
     "escalationTriggers": [
       {
         "id": "et_08",
         "title": "Specific treatment decision request",
         "trigger": "Patient requests recommendation, dosing, or personalised treatment certainty.",
         "action": "Escalate to the doctor or regulated prescriber."
+      },
+      {
+        "id": "et_08b",
+        "title": "Emerging or contested modality questions",
+        "trigger": "Patient pushes for certainty on evidence, safety, or candidacy for a novel or restricted treatment.",
+        "action": "Defer to clinician and documented clinic policy; do not improvise authority."
       }
     ],
     "evidenceTier": {
@@ -751,7 +898,7 @@
       "summaryNote": "Educational support is driven by protocol, communication standards, and scope safety.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_week8_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_no_surgical_training"
@@ -766,6 +913,12 @@
         "id": "complete_08_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_08_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       }
     ],
@@ -786,55 +939,88 @@
     "title": "Surgical Pathway Education for Non-Doctor Teams",
     "sequence": 9,
     "status": "draft",
-    "estimatedStudyMinutes": 50,
-    "overview": "Introduces the surgical pathway from a patient education and coordination perspective without granting any procedural or diagnostic authority.",
+    "estimatedStudyMinutes": 90,
+    "overview": "Bridge module between Volume 2 Week 8 (treatment education) and Volume 3 Week 9 (evidence and handover): you give patients a coherent, honest picture of how surgical hair restoration pathways usually unfold—stages, roles, timing, and what still requires doctor-led assessment—without becoming a shadow surgeon. The goal is expectation hygiene and fewer toxic handovers, not procedural detail or suitability verdicts.",
     "learningObjectives": [
-      "Explain the broad surgical journey to patients",
-      "Set governance and clinician review expectations",
-      "Recognise when detailed clinical questions require escalation"
+      "Outline pathway stages in plain language (e.g. clinical assessment, planning discussion, scheduling and logistics, procedure day flow as described by your clinic SOP, early aftercare themes) while stating clearly that medical decisions belong with the treating clinician",
+      "Distinguish helpful process explanation from prohibited territory: graft counts, technique choice as suitability, anaesthetic or medication advice, confirming candidacy, or comparing outcomes between clinics as if you hold clinical authority",
+      "Use consistent wording so patients know what you can schedule or document versus what must wait for the doctor, reducing consent-before-review and discount-driven urgency",
+      "Identify escalation moments: booking or payment pressure, requests to validate another clinic’s plan, complications questions, or any attempt to close a surgical plan without clinician review"
     ],
     "body": {
       "format": "richText",
-      "content": "This lesson gives learners a pathway-level view of surgery so they can communicate process, preparation, and follow-up expectations safely without drifting into surgical advising."
+      "content": "Patients rarely arrive with a clean mental model of surgical hair restoration. Fragmented internet research, influencer claims, and competitor narratives create partial stories. Your job in this module is to supply a stable, clinic-consistent skeleton of the pathway so the doctor encounter is about their case—not undoing misconceptions you accidentally reinforced.\n\nThink in labelled stages, not clinical depth. Typically, a pathway includes: structured information and history capture (often before or with the doctor), doctor-led assessment and planning, informed consent and scheduling governed by the clinical team, procedure day logistics (arrival, time expectations, accompaniment rules—per local policy), and early recovery follow-up themes explained only as broad patterns. Exact wording should follow your organisation’s approved materials; where policy is silent, stay descriptive and defer.\n\nWhat you educate: how the clinic organises the journey, what kinds of questions the team will ask, that planning is individual, that visible density is a long game, that aftercare instructions are important, and that uncertainty until medical review is normal. What you do not do: estimate graft numbers, rank techniques for this patient, interpret scalp photos as suitability, advise on stopping or starting medications, minimise risks, promise cosmetic outcomes, or reassure that they are “definitely fine” for surgery.\n\nCommercial pressure often collides with this module. If marketing tempo pushes booking before medical review, your ethical position aligns with Volume 1 Week 2: slow the pathway, document, escalate. Consent and surgical planning are not coordinator-owned.\n\nConnection to Volume 3: weak or salesy surgical chatter poisons documentation—patients quote you in the doctor room, and notes inherit embedded promises. Neutral process language keeps the record aligned with evidence discipline in the next module.\n\nPractice application: draft a three-minute patient monologue that hits only pathway stages; list ten patient questions and mark each as support-answerable, doctor-only, or escalate; pair with a colleague to challenge you with “just tell me how many grafts” until your refusal sounds calm and habitual."
     },
     "patientCommunicationExamples": [
       {
         "id": "pc_09",
-        "title": "Pathway-level surgical wording",
-        "example": "I can explain how the pathway is typically structured, but procedure planning and clinical suitability must come from the doctor.",
-        "rationale": "Maintains separation between education and clinical authority."
+        "title": "Pathway framing without closing the plan",
+        "example": "The pathway here is staged: first the doctor reviews you properly, then you discuss a plan that fits your goals and health, then we sort scheduling and preparation. I can explain how those stages usually work; I cannot decide the medical plan—that is for your surgeon after they see you.",
+        "rationale": "Gives structure, preserves clinician authority, resists same-day closure."
+      },
+      {
+        "id": "pc_09b",
+        "title": "Deferring graft or technique shopping",
+        "example": "Graft numbers and technique choice depend on your examination and your doctor’s judgement—I would be guessing, and that would not be safe or fair. I can note exactly what you want to ask so nothing is missed in review.",
+        "rationale": "Refuses pseudo-clinical precision while validating the question."
+      },
+      {
+        "id": "pc_09c",
+        "title": "Early recovery without diagnosing",
+        "example": "Right after surgery many people are told to expect phases like redness, crusting, or shedding as part of healing, but what is normal for you is something your clinical team confirms if you are worried. I can document what you are seeing and get you reviewed.",
+        "rationale": "General education plus explicit non-diagnostic boundary."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_09",
-        "title": "No procedural authority",
-        "note": "Learners should not present themselves as able to assess or plan surgery independently."
+        "title": "No procedural or anaesthetic authority",
+        "note": "You do not advise on technique superiority, anaesthesia type, sedation, antibiotics, pain control, or medical clearance—these are clinician and policy domains."
+      },
+      {
+        "id": "rb_09b",
+        "title": "Consent and suitability are not support-staff verdicts",
+        "note": "You may explain that consent is part of the pathway; you do not obtain surgical consent, confirm suitability, or substitute for the treating doctor’s assessment."
       }
     ],
     "keyTakeaways": [
-      "Process education can be helpful without overreach.",
-      "Patients need consistent pathway information.",
-      "Clinical planning belongs with the doctor."
+      "A clear pathway story reduces anxiety without smuggling in clinical decisions.",
+      "Process language should be repeatable across staff so patients hear one clinic voice.",
+      "This module bridges non-surgical education to documentation-heavy Week 9; avoid embedded promises in casual conversation.",
+      "Escalation is professional when patients push for clinical closure before review."
     ],
-    "redFlags": ["Stating likely graft numbers", "Discussing procedural suitability as confirmed"],
+    "redFlags": [
+      "Quoting graft ranges or density promises before doctor assessment",
+      "Presenting one technique as obviously right for this patient",
+      "Advising medication changes (e.g. stop aspirin, alter anticoagulants) without clinician direction",
+      "Booking or deposit pressure that skips or shortens medical review",
+      "Comparing another clinic’s plan as clinically validated or invalidated by non-doctor staff"
+    ],
     "escalationTriggers": [
       {
         "id": "et_09",
-        "title": "Planning question",
-        "trigger": "Patient asks for personalised planning detail or surgical decision-making.",
-        "action": "Escalate to the treating doctor."
+        "title": "Personalised surgical planning question",
+        "trigger": "Patient asks for graft counts, hairline design approval, technique choice, or feasibility verdict before clinician review.",
+        "action": "Document neutrally; route to treating doctor; do not improvise numbers or plans."
+      },
+      {
+        "id": "et_09b",
+        "title": "Consent, urgency, or complication talk",
+        "trigger": "Patient asked to sign or pay for surgery without adequate doctor-led assessment, or describes symptoms suggesting complication—during pathway education or follow-up contact.",
+        "action": "Pause commercial progression; involve clinician or manager per protocol; document."
       }
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "Surgical pathway education is governed by role boundaries and patient communication standards.",
+      "summaryNote": "Surgical pathway education for non-doctors is standards-led; clinical decisions remain with licensed clinicians.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume2_surgical_pathway_bridge_faculty"],
     "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority",
-      "notice_consultants_no_surgical_training"
+      "notice_consultants_no_surgical_training",
+      "notice_consultants_escalation_duty"
     ],
     "referenceIds": ["consultants_reference_09"],
     "resourceIds": [],
@@ -847,13 +1033,19 @@
         "type": "view",
         "description": "Complete the lesson reading.",
         "required": true
+      },
+      {
+        "id": "complete_09_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
+        "required": true
       }
     ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
       "showEscalationPanel": true,
-      "showFacultyNotes": false,
+      "showFacultyNotes": true,
       "showCompliancePanel": true
     }
   },
@@ -866,16 +1058,17 @@
     "title": "Clinical Photography, Documentation, and Handover Standards",
     "sequence": 10,
     "status": "draft",
-    "estimatedStudyMinutes": 60,
-    "overview": "Builds disciplined documentation habits that improve handover quality and reduce ambiguity in clinic workflows.",
+    "estimatedStudyMinutes": 95,
+    "overview": "Aligned with Teaching Manual Volume 3, Week 9: transforming consultations into clear, objective, doctor-ready evidence. Photography and documentation are not clerical extras—they shape decision quality, internal communication, expectation setting, and audit. You will apply standard views, neutral note writing, concise handovers, and evidence-integrity discipline.",
     "learningObjectives": [
-      "Explain why documentation quality matters clinically",
-      "Prepare structured handover summaries",
-      "Use standardised photography and note-taking expectations"
+      "Capture and describe standard photographic views (e.g. frontal, lateral, vertex/crown, donor, areas of concern) with consistent background, lighting, and distance so images are clinically repeatable—not cosmetic marketing shots",
+      "Write objective notes that separate reported history, observed findings, patient goals, clinician questions, and documented uncertainty",
+      "Prepare doctor handovers that reduce cognitive load: key history, risks and expectation issues, aligned photo set, and focused questions—not unstructured narrative",
+      "Identify common documentation failures (missing angles, vague labels like good donor, contradictory note and image, copy-paste, informal chat substituting for records)"
     ],
     "body": {
       "format": "richText",
-      "content": "Structured images and notes make the doctor’s review more efficient and create a safer, more auditable patient pathway. The lesson centres on neutrality, completeness, and consistency."
+      "content": "Volume 3 Week 9 theme: raw encounters become clear, objective evidence for the clinical team.\n\nClinical photography should be consistent and honest: same background and lighting approach where possible; standard views including frontal, both laterals, vertex or crown, donor zone, and any special concern area; hair prepared so the scalp and density pattern are visible rather than cosmetically disguised. Avoid harsh shadows, tilted framing, excessive zoom, and distracting backgrounds. Repeatability matters as much as sharpness—a weak set can lead to weak recommendations.\n\nDocumentation converts the visit into a concise professional summary. Use neutral language: what was observed, what the patient reported, what still needs clarification. Separate patient goals from clinician concerns—both belong, but they are not the same. Avoid assumptions, promotional adjectives, or promises embedded in the record. Document uncertainty explicitly so the doctor knows where to confirm or dig deeper. Strong notes protect continuity and demonstrate professionalism.\n\nDoctor-ready handovers summarise onset, progression, prior treatments and surgery, current concerns, and objectives; highlight risk factors, red flags, or expectation problems; attach a photo set that matches the written record; end with focused questions for review rather than a long unstructured story. The best handovers are short, honest, and easy to interpret.\n\nEvidence integrity pitfalls from the manual include missing essential angles, contradictory notes and images, vague descriptors, copy-paste text across patients, failure to capture patient concerns accurately, and using informal messaging instead of a proper clinic note. Professional clinics are built on evidence that makes later review easier, not harder.\n\nPractice application (Volume 3): build a mock photo checklist for a first consultation, pair it with a one-page case summary and handover note; compare weak versus strong case files and mark gaps; rewrite a narrative-heavy note into a structured doctor-facing summary.\n\nLMS resource mapping: use the linked handover template and your clinic’s SOP for a standard photo checklist and angle guide where those assets exist locally (Volume 3 recommended bundle)."
     },
     "patientCommunicationExamples": [
       {
@@ -883,27 +1076,55 @@
         "title": "Documentation framing language",
         "example": "We use standard photography and notes so the clinical team can review your case accurately and consistently.",
         "rationale": "Explains process quality without sounding commercial."
+      },
+      {
+        "id": "pc_10b",
+        "title": "Why hair may be positioned for photos",
+        "example": "We may ask you to adjust how the hair lies so the photos show your scalp pattern honestly—this helps the doctor, not the marketing folder.",
+        "rationale": "Reduces suspicion that photography is only for sales."
+      },
+      {
+        "id": "pc_10c",
+        "title": "Handover transparency",
+        "example": "Everything I capture today goes into your record so the doctor sees the same story you told me—if something was unclear, I will say so in the handover.",
+        "rationale": "Builds trust in documentation integrity."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_10",
-        "title": "Documentation should stay neutral",
-        "note": "Notes and images should not contain unsupported interpretation or persuasive language."
+        "title": "Documentation stays neutral",
+        "note": "Notes and images are factual communication tools, not persuasive sales copy or unsupported clinical interpretation."
+      },
+      {
+        "id": "rb_10b",
+        "title": "You do not diagnose from images",
+        "note": "Describe views and patient report; clinical meaning is for the treating doctor."
       }
     ],
     "keyTakeaways": [
-      "Neutral documentation protects patients and clinicians.",
-      "Good handover improves doctor efficiency.",
-      "Templates help standardise quality."
+      "Objective evidence reduces repetition, saves clinician time, and supports safer pathways.",
+      "Alignment between photos and text is a quality and safety signal.",
+      "Volume 3 Week 9 maps to this module; pre-operative coordination follows in the next module."
     ],
-    "redFlags": ["Incomplete handover notes", "Image capture that obscures review quality"],
+    "redFlags": [
+      "Incomplete angles or lighting that hides the pattern",
+      "Notes that contradict the image set",
+      "Good candidate or similar labels without definable support in the record",
+      "Case discussion living only in chat or SMS instead of the medical record"
+    ],
     "escalationTriggers": [
       {
         "id": "et_10",
         "title": "Documentation concern",
         "trigger": "Documentation is incomplete or a finding appears to require urgent review.",
         "action": "Escalate before the pathway progresses."
+      },
+      {
+        "id": "et_10b",
+        "title": "Evidence integrity risk",
+        "trigger": "You discover copied notes, mismatched identifiers, or missing consent for capture.",
+        "action": "Stop, fix with governance support, and do not proceed as if the file is complete."
       }
     ],
     "evidenceTier": {
@@ -911,7 +1132,7 @@
       "summaryNote": "Documentation standards are protocol-led and operationally safety critical.",
       "notes": []
     },
-    "facultyNoteIds": ["consultants_note_documentation_standard"],
+    "facultyNoteIds": ["consultants_note_documentation_standard", "consultants_note_volume3_week9_faculty"],
     "complianceNoticeIds": ["notice_consultants_competency_scope"],
     "referenceIds": ["consultants_reference_10"],
     "resourceIds": ["consultants_resource_05"],
@@ -923,6 +1144,12 @@
         "id": "complete_10_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_10_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       },
       {
@@ -949,16 +1176,17 @@
     "title": "Pre-Operative Coordination and Preparation Workflows",
     "sequence": 11,
     "status": "draft",
-    "estimatedStudyMinutes": 50,
-    "overview": "Covers readiness checks, pre-op communication, and workflow discipline for coordinated care.",
+    "estimatedStudyMinutes": 85,
+    "overview": "Aligned with Teaching Manual Volume 3, Week 10: turning treatment intent into an organised, safe, patient-understood pathway. You coordinate readiness, sequenced communication, anxiety versus clinical uncertainty, and proactive confirmation so avoidable day-of problems and cancellations are reduced.",
     "learningObjectives": [
-      "Use pre-op coordination templates consistently",
-      "Recognise missing readiness information",
-      "Communicate preparation requirements clearly"
+      "Explain pre-operative coordination purpose and scope: clarity, sequencing, and escalation—not alarm or false reassurance",
+      "Apply readiness checklists for contact and schedule, medications and supplements, lifestyle disclosures, hair or shaving preparation, what to bring or avoid, and when to contact the clinic urgently",
+      "Distinguish routine pre-procedure nerves from serious misunderstanding or clinical questions that need doctor input; slow the pathway when doubt is significant",
+      "Document late-stage concerns so the treatment team is not surprised on the day of care"
     ],
     "body": {
       "format": "richText",
-      "content": "The lesson focuses on checklist discipline, patient preparation communication, and escalation when readiness information is incomplete or unclear."
+      "content": "Volume 3 Week 10 addresses where many avoidable problems start—or are prevented. Confused, anxious, or unprepared patients often reflect coordination gaps, not only forgetfulness.\n\nYour role is to organise readiness, reinforce instructions, check understanding, and escalate issues that could disrupt treatment or compromise safety. Once a patient is proceeding, coordination converts a general decision into a structured process: they should know what happens next, what is expected of them, and where to ask further questions. Sequence information rather than dumping everything at once; keep tone calm and professional—preparation is clarity, not alarm.\n\nChecklists reduce variation: confirm contacts, schedule, transport and timing; prompt disclosure of medications, supplements, smoking or alcohol, and medical updates needing review; clarify hair preparation and shaving where relevant; state what to bring or avoid; ensure the patient knows which issues require immediate contact. Checklists support judgement; anything concerning still escalates.\n\nAs treatment approaches, many patients become more anxious. Respond with calm explanation, not dismissal. Reinforce the agreed plan without sounding transactional. When questions move beyond your scope, signal that the treating doctor or appropriate clinician will clarify. If doubt becomes significant, slow the process rather than forcing false confidence—a rushed pre-op conversation can break trust faster than a careful one.\n\nFinal days should involve proactive confirmation: sensible reminder intervals; verify forms, photos, and internal approvals are complete; resolve questions before treatment day where possible; document late concerns for the clinical team.\n\nPractice application (Volume 3): design a week-before-treatment communication sequence with reminders, readiness checks, and escalation points; draft a plain-language pre-op checklist that stays clinically useful.\n\nLMS resource mapping: use the linked pre-operative preparation checklist; add locally per SOP a reminder cadence map, common pre-op Q&A, and issue-escalation prompt list as Volume 3 recommends."
     },
     "patientCommunicationExamples": [
       {
@@ -966,27 +1194,55 @@
         "title": "Preparation wording",
         "example": "I am going to walk you through the standard preparation steps so the clinical team has the information they need before your review.",
         "rationale": "Reinforces structured preparation."
+      },
+      {
+        "id": "pc_11b",
+        "title": "Anxiety without false clearance",
+        "example": "It is completely normal to feel nervous. I can explain the process steps I am allowed to cover; anything medical will be confirmed by your treating clinician so you are not guessing.",
+        "rationale": "Volume 3: calm support plus scope boundary."
+      },
+      {
+        "id": "pc_11c",
+        "title": "When to pause",
+        "example": "From what you said, there may be a change since your last clinical review. I am going to document that and make sure the team sees it before we treat—safer to pause than to assume.",
+        "rationale": "Models slowing the pathway when appropriate."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_11",
         "title": "Preparation is not clearance",
-        "note": "Preparation support should not be described as clinical clearance or final approval."
+        "note": "Coordination and checklist completion are not substitutes for doctor-led medical clearance or consent."
+      },
+      {
+        "id": "rb_11b",
+        "title": "Do not interpret medical eligibility",
+        "note": "Capture disclosures and route medication or health-change questions to the clinician."
       }
     ],
     "keyTakeaways": [
-      "Coordination quality affects safety.",
-      "Checklist discipline reduces omissions.",
-      "Escalation is preferable to assumption."
+      "Organised pre-op work protects capacity, reduces staff stress, and improves patient confidence.",
+      "Sequencing beats information dumps; consistent terminology reduces errors.",
+      "Volume 3 Week 10 maps to this module; post-operative support is the next module."
     ],
-    "redFlags": ["Missing critical preparation information", "Patient misunderstanding of next steps"],
+    "redFlags": [
+      "Critical checklist gaps with pressure to proceed anyway",
+      "Patient clearly misunderstanding risk, timing, or aftercare",
+      "New symptoms or medication changes not reflected in the record",
+      "Instructions only in informal channels without chart documentation"
+    ],
     "escalationTriggers": [
       {
         "id": "et_11",
         "title": "Preparation gap",
         "trigger": "Important information, forms, or readiness details are incomplete.",
         "action": "Escalate according to clinic protocol before further progression."
+      },
+      {
+        "id": "et_11b",
+        "title": "Late concern before treatment day",
+        "trigger": "Patient reports a change that could affect safety or consent validity.",
+        "action": "Document verbatim, notify clinical lead per protocol, pause scheduling until addressed."
       }
     ],
     "evidenceTier": {
@@ -994,8 +1250,12 @@
       "summaryNote": "Coordination quality is protocol- and standards-driven.",
       "notes": []
     },
-    "facultyNoteIds": [],
-    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "facultyNoteIds": ["consultants_note_volume3_week10_faculty"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
     "referenceIds": ["consultants_reference_11"],
     "resourceIds": ["consultants_resource_06"],
     "assessmentIds": ["consultants_assessment_11_pre_operative_coordination_preparation"],
@@ -1006,6 +1266,12 @@
         "id": "complete_11_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_11_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       }
     ],
@@ -1026,16 +1292,17 @@
     "title": "Post-Operative Support, Follow-Up, and Red Flag Escalation",
     "sequence": 12,
     "status": "draft",
-    "estimatedStudyMinutes": 50,
-    "overview": "Focuses on reassuring patients appropriately while recognising when follow-up concerns require urgent escalation.",
+    "estimatedStudyMinutes": 85,
+    "overview": "Aligned with Teaching Manual Volume 3, Week 11 (post-operative support and follow-up): mature follow-up is calm, clear, and disciplined—supportive without normalising abnormal recovery or speaking beyond scope. This module focuses routine reassurance, continuity, documentation, escalation, and separating emotional distress from clinical urgency; difficult and dissatisfaction-heavy conversations continue in the next module.",
     "learningObjectives": [
-      "Support routine follow-up professionally",
-      "Recognise post-op red flags",
-      "Escalate concerns without delay"
+      "Describe broad normal recovery themes in patient-friendly language without promising individual outcomes (e.g. early shedding, crusting, redness, tenderness, timeline humility)",
+      "Use structured follow-up so patients know when to expect contact, how to report concerns, and that interactions are documented—especially when symptoms or distress change",
+      "Recognise when recovery may be outside routine and escalate early; treat uncertainty as a reason to involve the clinician, not to reassure away",
+      "Apply the Volume 3 scenario discipline: high emotional intensity with medically routine presentation versus calm patient with potentially abnormal symptoms"
     ],
     "body": {
       "format": "richText",
-      "content": "Post-operative support can build trust and improve continuity, but only when staff are explicit about what is routine and what needs clinician review."
+      "content": "Volume 3 Week 11 begins with the reality that routine post-operative support often sits with coordinators and nurses before the doctor is involved—so your communication strongly influences reassurance, escalation, complaint prevention, and adherence.\n\nPatients may need repeated reassurance about normal healing. Broad patterns can include redness, swelling, crusting, shedding, tenderness, or donor tightness depending on pathway; visible density is not final outcome early on; shock loss and temporary cosmetic disappointment can occur; timeframes for visible progress must be conservative. Routine reassurance is grounded in general patterns, not false certainty about this patient’s case.\n\nGood follow-up reinforces continuity: predictable structure for when the clinic will be in touch; encourage clear, prompt reporting of concerns; document each interaction when symptoms evolve or distress rises; keep a respectful tone when questions repeat—repetition often signals anxiety. Patients should feel held in a process, not abandoned after treatment.\n\nWhen symptoms may be outside routine—unexpected pain, possible infection, severe swelling, unusual wound concerns, rapid emotional deterioration, panic, catastrophic interpretation, or simple uncertainty whether the pattern fits expected recovery—document clearly and escalate early. Safe escalation signals maturity.\n\nDissatisfaction and difficult dialogue techniques (complaints, frustration before outcome can be judged) are developed further in the next LMS module, which continues Volume 3 Week 11 themes.\n\nPractice application (Volume 3): respond to simulated messages spanning routine reassurance, anxiety, dissatisfaction, and urgent concern; draft a follow-up note documenting concern, response given, and escalation decision.\n\nLMS resource mapping: align local SOPs with Volume 3 suggested tools—routine recovery guide, message response framework, escalation trigger chart—without inventing files; use clinic-approved assets where available."
     },
     "patientCommunicationExamples": [
       {
@@ -1043,27 +1310,55 @@
         "title": "Bounded reassurance",
         "example": "I can help document what you are noticing and make sure the clinical team reviews it promptly.",
         "rationale": "Reassures without dismissing risk."
+      },
+      {
+        "id": "pc_12b",
+        "title": "Timeline without guarantees",
+        "example": "Many people go through uneven phases early on, but your situation still needs to fit what your doctor expects for you. I will pass this through so they can judge it, not guess from me.",
+        "rationale": "General education plus doctor-led judgement."
+      },
+      {
+        "id": "pc_12c",
+        "title": "When escalation is kindness",
+        "example": "Because this sounds different from what we would usually expect at this stage, I want the clinical team to see it today. That is the safer option even if it turns out to be okay.",
+        "rationale": "Normalises early escalation."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_12",
         "title": "Do not minimise red flags",
-        "note": "Reassurance should never override escalation protocol when concerns are outside routine expectations."
+        "note": "Reassurance never overrides protocol when presentation may be abnormal; you do not diagnose complications."
+      },
+      {
+        "id": "rb_12b",
+        "title": "No remote clinical closure",
+        "note": "Do not label a symptom as normal or abnormal with finality—capture and route."
       }
     ],
     "keyTakeaways": [
-      "Escalation is part of good follow-up care.",
-      "Routine support still requires accurate documentation.",
-      "Patients should know when the doctor is being involved."
+      "Follow-up quality affects trust, safety, and complaint risk.",
+      "Documentation of changing symptoms is as important as the words said on the call.",
+      "Volume 3 Week 11 (follow-up segment) maps here; high-risk and pressured scenarios continue in module 13."
     ],
-    "redFlags": ["Unexpected pain, bleeding, or signs of complication", "Patient reports worsening concerns outside expected pathway"],
+    "redFlags": [
+      "Worsening pain, bleeding, fever, spreading redness, or wound concerns suggesting infection",
+      "Neurological symptoms, collapse, or other emergency patterns—follow emergency protocol",
+      "Calm wording but story inconsistent with expected recovery",
+      "Patient feels dismissed while reporting escalation of symptoms"
+    ],
     "escalationTriggers": [
       {
         "id": "et_12",
         "title": "Post-op concern",
         "trigger": "Follow-up information suggests the patient may be outside routine recovery expectations.",
         "action": "Escalate according to clinic protocol immediately."
+      },
+      {
+        "id": "et_12b",
+        "title": "Emotional crisis layered on clinical uncertainty",
+        "trigger": "Severe distress plus unclear symptom fit.",
+        "action": "Document, escalate clinically, and involve appropriate support pathways per policy."
       }
     ],
     "evidenceTier": {
@@ -1071,10 +1366,13 @@
       "summaryNote": "Escalation protocol is a mandatory safety control.",
       "notes": []
     },
-    "facultyNoteIds": [],
-    "complianceNoticeIds": ["notice_consultants_escalation_duty"],
+    "facultyNoteIds": ["consultants_note_volume3_week11_postop_faculty"],
+    "complianceNoticeIds": [
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
     "referenceIds": ["consultants_reference_12"],
-    "resourceIds": [],
+    "resourceIds": ["consultants_resource_07", "consultants_resource_08"],
     "assessmentIds": ["consultants_assessment_12_post_operative_support_follow_up_escalation"],
     "caseStudyIds": ["consultants_case_12_post_operative_support_follow_up_escalation"],
     "practicalTaskIds": [],
@@ -1083,6 +1381,12 @@
         "id": "complete_12_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_12_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       }
     ],
@@ -1103,16 +1407,17 @@
     "title": "Difficult Consultations, High-Risk Scenarios, and Ethical Pressure",
     "sequence": 13,
     "status": "draft",
-    "estimatedStudyMinutes": 55,
-    "overview": "Addresses vulnerable patients, unrealistic expectations, emotional distress, and pressure-selling risks in the clinic environment.",
+    "estimatedStudyMinutes": 90,
+    "overview": "Continues Teaching Manual Volume 3, Week 11 (complaints, dissatisfaction, and difficult follow-up conversations) and intersects with high-risk recovery judgement. You manage fear, frustration, and disappointment before outcomes are knowable—without arguing patients down, minimising experience, or promising results to calm the room. Pressure-selling and vulnerability sit in the same safety bucket as post-op escalation.",
     "learningObjectives": [
-      "Recognise high-risk communication scenarios",
-      "Respond ethically to pressure and vulnerability",
-      "Escalate concerns before harm or mistrust develops"
+      "Acknowledge dissatisfaction and fear without defensiveness; clarify the issue and the appropriate clinical review step",
+      "Avoid promising an outcome to de-escalate emotion; route possible complication, procedural concern, or severe distress promptly",
+      "Recognise Volume 3 escalation patterns: unexpected pain or infection concern, rapid emotional deterioration, catastrophic interpretation, uncertainty about fit to expected recovery",
+      "Use ethical pause and documentation when vulnerability, coercion, or commitment pressure appear in consultation or follow-up"
     ],
     "body": {
       "format": "richText",
-      "content": "The lesson treats difficult consultations as a safety domain requiring emotional discipline, ethics, and escalation readiness rather than personality-driven improvisation."
+      "content": "Volume 3 Week 11’s difficult-conversation material sits naturally with high-risk scenario management in this LMS module. Some patients express fear, frustration, or disappointment before enough time or information exists to judge outcome. That requires communication maturity.\n\nDo not argue with a distressed patient or minimise their experience. Acknowledge the concern, clarify what they are experiencing, and explain the next review step the clinic will take. Avoid defensive language and never promise a result purely to quiet the conversation. Escalate promptly when dissatisfaction may link to possible complication, procedural worry, or significant emotional distress—complaint prevention often depends on how the first difficult conversation is handled.\n\nThis integrates with escalation judgement: unexpected pain, possible infection, severe swelling, unusual wound issues, rapid emotional collapse, persistent distress with catastrophic thinking, or uncertainty whether symptoms match the expected course should trigger early clinical involvement. When in doubt, document clearly and escalate—safe escalation is strength.\n\nHigh-risk consultation scenarios—vulnerability, unrealistic urgency, pressure from third parties, or staff incentives to close—still require de-escalation, ethical pause, and governance-aware escalation rather than conversion tactics.\n\nPractice application (Volume 3): paired scenarios from the manual—medically routine but emotionally distressed versus calm with potentially abnormal symptoms—to train separation of emotional intensity from clinical urgency.\n\nLMS resource mapping: align with local dissatisfaction-handling prompts and escalation trigger charts recommended in Volume 3; institute as SOP, not ad hoc chat."
     },
     "patientCommunicationExamples": [
       {
@@ -1120,27 +1425,55 @@
         "title": "High-risk pause language",
         "example": "I want to make sure your concerns are reviewed properly, so I am going to involve the clinical team before we go any further.",
         "rationale": "Signals care and control without pressure."
+      },
+      {
+        "id": "pc_13b",
+        "title": "Acknowledge without promising",
+        "example": "I hear that you are frightened this is going wrong. I cannot tell you the medical meaning of that from my role, but I can make sure the right clinician sees you urgently and that nothing you said is lost in translation.",
+        "rationale": "Volume 3: validation plus scope-safe action."
+      },
+      {
+        "id": "pc_13c",
+        "title": "Defusing defensiveness",
+        "example": "We are not going to argue about how you feel—your experience matters. Here is what we will do next, and I will document your concerns exactly as you described them.",
+        "rationale": "Models non-defensive professionalism."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_13",
         "title": "No pressure-led selling",
-        "note": "High-risk or vulnerable scenarios require de-escalation, not conversion tactics."
+        "note": "Vulnerable or high-risk scenarios require pause and clinical involvement, not tactics to secure commitment."
+      },
+      {
+        "id": "rb_13b",
+        "title": "You are not the outcome arbiter",
+        "note": "Do not reassure that results will be fine or that complications are impossible; facilitate review."
       }
     ],
     "keyTakeaways": [
-      "Trust can be lost quickly in pressured consultations.",
-      "Escalation protects both patients and staff.",
-      "Standardised responses reduce ethical drift."
+      "First difficult conversation quality predicts complaint trajectory.",
+      "Emotion and clinical risk can diverge—train both dimensions.",
+      "Volume 3 Week 11 difficult-case themes map here; quality systems and capstone integration follow."
     ],
-    "redFlags": ["Vulnerability, coercion, or unrealistic urgency", "High emotional volatility or repeated reassurance seeking"],
+    "redFlags": [
+      "Commitment pressure on a visibly distressed or confused patient",
+      "Staff minimising symptoms to reduce workload",
+      "Promises used as sedation instead of clinical review",
+      "Third-party coercion (partner, employer) to proceed"
+    ],
     "escalationTriggers": [
       {
         "id": "et_13",
         "title": "Vulnerability concern",
         "trigger": "Patient behaviour or history suggests significant vulnerability, distress, or expectation mismatch.",
         "action": "Escalate promptly and document the concern clearly."
+      },
+      {
+        "id": "et_13b",
+        "title": "Possible complication or procedural concern",
+        "trigger": "Language or photos suggest wound, infection, or unexpected post-op course.",
+        "action": "Immediate clinical pathway per protocol; full documentation."
       }
     ],
     "evidenceTier": {
@@ -1148,13 +1481,13 @@
       "summaryNote": "Difficult consultation handling is governed by ethics, policy, and escalation protocol.",
       "notes": []
     },
-    "facultyNoteIds": [],
+    "facultyNoteIds": ["consultants_note_volume3_week11_difficult_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_no_diagnostic_authority",
       "notice_consultants_escalation_duty"
     ],
     "referenceIds": ["consultants_reference_13"],
-    "resourceIds": [],
+    "resourceIds": ["consultants_resource_08"],
     "assessmentIds": ["consultants_assessment_13_difficult_consultations_high_risk_scenarios"],
     "caseStudyIds": ["consultants_case_13_difficult_consultations_high_risk_scenarios"],
     "practicalTaskIds": ["consultants_task_13_difficult_consultations_high_risk_scenarios"],
@@ -1163,6 +1496,18 @@
         "id": "complete_13_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_13_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
+        "required": true
+      },
+      {
+        "id": "complete_13_task",
+        "type": "submit-linked-task",
+        "description": "Submit the linked practical task.",
         "required": true
       }
     ],
@@ -1183,16 +1528,17 @@
     "title": "Quality Assurance, Audit, and Clinic Standards Practice",
     "sequence": 14,
     "status": "draft",
-    "estimatedStudyMinutes": 45,
-    "overview": "Shows how standardisation, template discipline, and audit readiness support a credible clinical service model.",
+    "estimatedStudyMinutes": 80,
+    "overview": "Aligned with Teaching Manual Volume 3, Week 12 (quality assurance, leadership, and integration—systems and audit strand): consultation quality is structural, not only interpersonal. You connect consistent intake, handover, documentation, escalation logic, and follow-up communication to reduced variation—and variation is where misunderstanding and avoidable complaints emerge.",
     "learningObjectives": [
-      "Explain why standardisation improves the patient journey",
-      "Use basic audit language appropriately",
-      "Connect documentation quality to clinic standards"
+      "Describe features of strong consultation systems: intake structure, handover pathways, shared documentation standards, escalation logic, predictable follow-up, feedback loops between doctors and front-facing staff",
+      "Participate in audit thinking that reviews notes, photo completeness, expectation language, escalation behaviour, and communication patterns to surface training needs—not only blame",
+      "Model leadership behaviours without formal title: accurate language, tool standardisation, supporting juniors without normalising shortcuts, encouraging escalation when something feels wrong",
+      "Explain how QA supports continuous improvement rather than one-off performance theatre"
     ],
     "body": {
       "format": "richText",
-      "content": "The lesson positions consultant and nurse teams as operational guardians of consistency, template adherence, and quality feedback loops within clinic systems."
+      "content": "Volume 3 Week 12 argues integration: by this point learners should see consultation quality as partly systemic. Charisma and memory are insufficient; clinics embed quality in process.\n\nStrong systems include consistent intake structure, clear handover routes, shared documentation standards, defined escalation rules, predictable follow-up communication, and deliberate feedback between clinicians and patient-facing teams. Systems reduce variation—and variation is often where misunderstanding and complaints appear.\n\nAudit and quality improvement depend on honest review: note quality, photo completeness, expectation-setting language, escalation behaviour, communication tone. Good audit asks what in the system made an error easier or a success repeatable; it should identify training needs, not only fault. Quality improvement is continuous.\n\nLeadership in patient-facing roles is behavioural: model scope-safe language and respect; help standardise tools; mentor without endorsing bad habits; encourage speaking up when something feels off. Leadership here is raising the standard around you, not rank.\n\nThis module prepares for the capstone, which should test applied judgement across the full certificate.\n\nPractice application (Volume 3): mini audit on sample consultation notes, handover summaries, and follow-up messages; short reflective statement on how you would improve consultation quality in your setting.\n\nLMS resource mapping: Volume 3 suggests consultation audit checklists, documentation rubrics, communication exemplars, and capstone rubrics—map these to your clinic’s governed templates; the academy assessment rubrics operationalise similar expectations for faculty review."
     },
     "patientCommunicationExamples": [
       {
@@ -1200,27 +1546,49 @@
         "title": "Standards-led explanation",
         "example": "We use standard documentation and review processes so that care is consistent and clinically accountable.",
         "rationale": "Communicates professionalism and institutional credibility."
+      },
+      {
+        "id": "pc_14b",
+        "title": "Explaining audit to patients when relevant",
+        "example": "Sometimes we review how we document and communicate—not to catch people out, but to keep everyone safe and make good practice repeatable.",
+        "rationale": "Frames QA as patient-centred, not bureaucratic."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_14",
         "title": "Audit is supportive, not punitive",
-        "note": "Quality assurance should be presented as part of safer patient care and continuous improvement."
+        "note": "Present quality work as safety and learning; escalate governance issues through proper channels."
+      },
+      {
+        "id": "rb_14b",
+        "title": "You do not unilaterally change medical policy",
+        "note": "Identify gaps and route to clinical or operational leads for authorised template or protocol updates."
       }
     ],
     "keyTakeaways": [
-      "Standardisation improves safety and trust.",
-      "Audit-ready records support better governance.",
-      "Operational credibility depends on consistency."
+      "Operational maturity is visible in records and workflows, not only in charm.",
+      "Audit mindset strengthens training design and system fixes.",
+      "Volume 3 Week 12 QA and leadership themes map here; capstone integration is module 15."
     ],
-    "redFlags": ["Inconsistent templates", "Missing traceable records in patient pathways"],
+    "redFlags": [
+      "Template drift with no ownership for correction",
+      "Audit used only to blame front-facing staff while ignoring system design",
+      "Missing traceability from communication channel to medical record",
+      "Resistance to escalation culture"
+    ],
     "escalationTriggers": [
       {
         "id": "et_14",
         "title": "Standards gap",
         "trigger": "Quality or documentation issues risk affecting patient care or governance.",
         "action": "Escalate through clinic QA pathways."
+      },
+      {
+        "id": "et_14b",
+        "title": "Repeated systemic failure signal",
+        "trigger": "Same failure type appears across multiple cases or staff.",
+        "action": "Raise through quality improvement forum; propose structured fix with leadership buy-in."
       }
     ],
     "evidenceTier": {
@@ -1228,10 +1596,14 @@
       "summaryNote": "QA and audit disciplines are primarily standards and governance driven.",
       "notes": []
     },
-    "facultyNoteIds": [],
-    "complianceNoticeIds": ["notice_consultants_competency_scope"],
+    "facultyNoteIds": ["consultants_note_volume3_week12_qa_faculty"],
+    "complianceNoticeIds": [
+      "notice_consultants_competency_scope",
+      "notice_consultants_no_diagnostic_authority",
+      "notice_consultants_escalation_duty"
+    ],
     "referenceIds": ["consultants_reference_14"],
-    "resourceIds": [],
+    "resourceIds": ["consultants_resource_09"],
     "assessmentIds": ["consultants_assessment_14_quality_assurance_audit_clinic_standards"],
     "caseStudyIds": ["consultants_case_14_quality_assurance_audit_clinic_standards"],
     "practicalTaskIds": [],
@@ -1240,6 +1612,12 @@
         "id": "complete_14_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_14_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked module assessment.",
         "required": true
       }
     ],
@@ -1260,16 +1638,17 @@
     "title": "Capstone Consultation Pathway Integration",
     "sequence": 15,
     "status": "draft",
-    "estimatedStudyMinutes": 70,
-    "overview": "Prepares learners for a full-pathway capstone spanning consultation support, documentation, triage, escalation, and coordinated care.",
+    "estimatedStudyMinutes": 95,
+    "overview": "Completes Teaching Manual Volume 3, Week 12 (final competency integration): the capstone should feel like a realistic clinic simulation—intake summary, case concerns, communication choices, handover preparation, and explicit justification for escalation versus watchful waiting. Applied capability, usable documentation, and mature tone matter more than memorised scripts; ethics and scope remain non-negotiable.",
     "learningObjectives": [
-      "Integrate all prior consultant academy competencies",
-      "Prepare for faculty-reviewed capstone assessment",
-      "Understand the final award requirements"
+      "Integrate certificate learning across first contact, structure, screening support, documentation and photography, pre- and post-operative coordination, difficult conversations, and QA thinking",
+      "Demonstrate theory connected to scenarios: documentation that is usable not merely long; communication that sounds professional not robotic",
+      "Meet programme completion rules including overall pass threshold, mandatory domain performance on ethics, red flags, escalation, documentation, and communication, and faculty-reviewed evidence",
+      "Articulate why your capstone choices represent the safest and most professional support response, not only what you would say"
     ],
     "body": {
       "format": "richText",
-      "content": "The capstone lesson brings together the full patient pathway and the rules that govern successful completion: 80 percent overall pass, mandatory ethics and escalation performance, and required faculty-reviewed tasks."
+      "content": "Volume 3 Week 12 states final assessment should test applied capability. Knowledge must attach to realistic patient scenarios; documentation must help a clinician act; communication should sound mature; ethical judgement and scope awareness stay mandatory.\n\nThe manual’s capstone direction: simulate clinic reality with intake summary, case concerns, communication response, handover preparation, and short justification for escalation or non-escalation decisions. Faculty should judge integrated performance: structure, scope, escalation, communication, documentation together.\n\nThis programme retains its existing award mechanics (for example overall pass threshold and mandatory domain tags)—your task is to show professional coherence across the whole pathway while remaining a support role, not a substitute clinician.\n\nVolume 3 conclusion: excellent patient-facing care depends on evidence quality, workflow clarity, communication maturity, and timely escalation—Weeks 9–12 bridge academy learning to measurable clinic standards.\n\nPrepare by revisiting weak domains from earlier modules rather than cramming isolated facts."
     },
     "patientCommunicationExamples": [
       {
@@ -1277,21 +1656,31 @@
         "title": "Pathway integration language",
         "example": "Our role is to help your pathway stay clear, safe, and well coordinated while ensuring the clinical team reviews the right information at the right time.",
         "rationale": "Summarises the consultant academy ethos."
+      },
+      {
+        "id": "pc_15b",
+        "title": "Capstone-style closure",
+        "example": "Here is what I have captured, here is what still needs the doctor, and here is how we will follow up—so you are never left guessing where you are in the process.",
+        "rationale": "Demonstrates integrated coordination voice."
       }
     ],
     "roleBoundaryNotes": [
       {
         "id": "rb_15",
         "title": "Integrated competence still respects scope",
-        "note": "Even at diploma level, the learner remains a support professional working within role boundaries."
+        "note": "Diploma-level integration does not grant diagnostic, prescribing, or consent authority."
       }
     ],
     "keyTakeaways": [
-      "Capstone performance is competency-led.",
-      "Mandatory safety domains cannot be offset by high scores elsewhere.",
-      "Faculty review remains part of final award integrity."
+      "Capstone success is judged on integrated safety and professionalism.",
+      "Mandatory domains exist because some failures cannot be averaged away.",
+      "Volume 3 Week 12 capstone framing maps directly to this module and faculty review."
     ],
-    "redFlags": ["Passing total score while failing mandatory safety domains", "Integrated task responses that drift beyond scope"],
+    "redFlags": [
+      "High composite score with failed mandatory ethics or escalation items",
+      "Handover that omits uncertainty or red flags to read cleanly",
+      "Communication that slips into clinical decision-making or guarantees"
+    ],
     "escalationTriggers": [
       {
         "id": "et_15",
@@ -1305,7 +1694,7 @@
       "summaryNote": "The capstone integrates standards-led educational and governance requirements.",
       "notes": []
     },
-    "facultyNoteIds": ["consultants_note_capstone_review"],
+    "facultyNoteIds": ["consultants_note_capstone_review", "consultants_note_volume3_week12_capstone_faculty"],
     "complianceNoticeIds": [
       "notice_consultants_competency_scope",
       "notice_consultants_no_diagnostic_authority",
@@ -1321,6 +1710,12 @@
         "id": "complete_15_view",
         "type": "view",
         "description": "Complete the lesson reading.",
+        "required": true
+      },
+      {
+        "id": "complete_15_assessment",
+        "type": "pass-linked-assessment",
+        "description": "Pass the linked capstone assessment.",
         "required": true
       },
       {

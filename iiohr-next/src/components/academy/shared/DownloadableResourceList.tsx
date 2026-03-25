@@ -34,9 +34,13 @@ export function DownloadableResourceList({
               <div key={resource.id}>
                 <h3 className="font-medium text-foreground">{resource.title}</h3>
                 <p className="mt-1 text-sm text-readable-muted">{resource.description}</p>
-                <Link href={resource.fileUrl} className="link-premium mt-2 inline-block text-sm font-medium">
-                  Download
-                </Link>
+                {resource.fileUrl?.trim() ? (
+                  <Link href={resource.fileUrl} className="link-premium mt-2 inline-block text-sm font-medium">
+                    Download
+                  </Link>
+                ) : (
+                  <p className="mt-2 text-xs text-readable-muted">Download link will appear when the file is published.</p>
+                )}
               </div>
             ))}
           </div>

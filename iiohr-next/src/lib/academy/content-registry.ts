@@ -14,7 +14,9 @@ import consultantPracticalTasksJson from "@/content/academy/programs/certificate
 import consultantReferencesJson from "@/content/academy/programs/certificate-hair-loss-consultation-clinical-patient-coordination/references/index.json";
 import consultantResourcesJson from "@/content/academy/programs/certificate-hair-loss-consultation-clinical-patient-coordination/resources/index.json";
 import consultantSectionsJson from "@/content/academy/programs/certificate-hair-loss-consultation-clinical-patient-coordination/sections/index.json";
+import doctorCompetenciesJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/competencies/index.json";
 import doctorComplianceNoticesJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/compliance-notices/index.json";
+import doctorFacultyNotesJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/faculty-notes/index.json";
 import doctorLevelsJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/levels/index.json";
 import doctorProgramJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/index.json";
 import legacyCasePromptsJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-1/case-prompts/index.json";
@@ -34,9 +36,11 @@ import type {
   AcademyReference,
   AcademySection,
   AcademyStream,
+  ClinicalReasoningBox,
   ComplianceNotice,
   CompletionRule,
   DownloadableResource,
+  EvidenceTierNote,
   FacultyNote,
 } from "@/lib/academy/content-types";
 import type { Competency } from "@/lib/academy/competency-types";
@@ -52,8 +56,57 @@ type LegacyModule = {
   estimatedStudyMinutes: number;
   overview: {
     summary: string;
+    clinicalContext?: string;
     learningObjectives: string[];
+    keyTakeaways?: string[];
+    redFlags?: string[];
+    evidenceTierNotes?: Array<{ label: string; tier: string; note: string }>;
   };
+};
+
+function buildDoctorModuleOverview(module: LegacyModule): string {
+  const parts: string[] = [module.overview.summary, module.overview.clinicalContext].filter(Boolean) as string[];
+  const kt = module.overview.keyTakeaways;
+  if (kt?.length) {
+    parts.push(`Key takeaways\n${kt.map((k) => `• ${k}`).join("\n")}`);
+  }
+  const rf = module.overview.redFlags;
+  if (rf?.length) {
+    parts.push(`Clinical cautions\n${rf.map((r) => `• ${r}`).join("\n")}`);
+  }
+  const etn = module.overview.evidenceTierNotes;
+  if (etn?.length) {
+    parts.push(
+      `Evidence framing\n${etn.map((e) => `• ${e.label} (${e.tier}): ${e.note}`).join("\n")}`
+    );
+  }
+  return parts.join("\n\n");
+}
+
+/** First block of body text, trimmed for use as a lesson overview (not a mid-sentence slice). */
+function lessonLeadOverview(bodyContent: string, maxLen = 280): string {
+  const first = bodyContent.split(/\n\n+/)[0]?.trim().replace(/\s+/g, " ") ?? "";
+  if (first.length <= maxLen) {
+    return first;
+  }
+  const cut = first.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(" ");
+  const end = lastSpace > 48 ? lastSpace : maxLen;
+  return `${cut.slice(0, end)}…`;
+}
+
+const DOCTOR_VOL1_MODULE_COMPETENCIES: Record<string, string[]> = {
+  module_foundations_intro: ["doctors_vol1_comp_introduction_scope"],
+  module_follicle_biology_scalp_science: ["doctors_vol1_comp_follicle_biology"],
+  module_molecular_hormonal_regulation: ["doctors_vol1_comp_molecular_hormonal"],
+  module_clinical_consultation_history_taking: ["doctors_vol1_comp_consultation_history"],
+};
+
+const DOCTOR_VOL1_MODULE_FACULTY_NOTES: Record<string, string[]> = {
+  module_foundations_intro: ["doctors_note_vol1_mod1"],
+  module_follicle_biology_scalp_science: ["doctors_note_vol1_mod2"],
+  module_molecular_hormonal_regulation: ["doctors_note_vol1_mod3"],
+  module_clinical_consultation_history_taking: ["doctors_note_vol1_mod4"],
 };
 
 type LegacyLesson = {
@@ -71,7 +124,9 @@ type LegacyLesson = {
   evidenceTier: {
     overall: AcademyLesson["evidenceTier"]["overall"];
     summaryNote: string;
+    notes?: EvidenceTierNote[];
   };
+  clinicalReasoningBoxes?: ClinicalReasoningBox[];
   downloadableResourceIds: string[];
   quizId: string | null;
   casePromptIds: string[];
@@ -114,6 +169,7 @@ type LegacyCasePrompt = {
   moderatorNotes: string;
   linkedCompetencies: string[];
   evidenceTier: string;
+  redFlags?: string[];
 };
 
 type ProgramBundle = {
@@ -186,9 +242,14 @@ function createDoctorBundle(): ProgramBundle {
     title: legacyVolume.title,
     sequence: 1,
     status: legacyVolume.status,
-    overview: "Doctor-facing seed section adapted from the current volume 1 content model.",
+    overview: "Foundations of Clinical Trichology (Volume 1): physician-led scope, follicular science, molecular and hormonal regulation, and structured consultation—aligned to the academy Volume 1 teaching manual.",
     moduleIds: legacyModules.map((module) => module.id),
   };
+
+  const competencies = doctorCompetenciesJson as Competency[];
+  const facultyNotes = doctorFacultyNotesJson as FacultyNote[];
+
+  const moduleTitleById = new Map(legacyModules.map((m) => [m.id, m.title]));
 
   const modules: AcademyModule[] = legacyModules.map((module) => ({
     id: module.id,
@@ -201,9 +262,9 @@ function createDoctorBundle(): ProgramBundle {
     sequence: module.moduleNumber,
     status: module.status,
     estimatedStudyMinutes: module.estimatedStudyMinutes,
-    moduleOverview: module.overview.summary,
+    moduleOverview: buildDoctorModuleOverview(module),
     learningOutcomes: module.overview.learningObjectives,
-    competencyIds: [],
+    competencyIds: DOCTOR_VOL1_MODULE_COMPETENCIES[module.id] ?? [],
     unlockRules: [],
     assessmentRules: legacyQuizzes
       .filter((quiz) => quiz.moduleId === module.id)
@@ -213,7 +274,7 @@ function createDoctorBundle(): ProgramBundle {
         requiredAssessmentIds: [quiz.id],
         mandatoryDomainTags: [],
       })),
-    facultyNoteIds: [],
+    facultyNoteIds: DOCTOR_VOL1_MODULE_FACULTY_NOTES[module.id] ?? [],
     complianceNoticeIds: complianceNotices.map((notice) => notice.id),
     lessonIds: legacyLessons.filter((lesson) => lesson.moduleId === module.id).map((lesson) => lesson.id),
     assessmentIds: legacyQuizzes.filter((quiz) => quiz.moduleId === module.id).map((quiz) => quiz.id),
@@ -233,18 +294,19 @@ function createDoctorBundle(): ProgramBundle {
     sequence: lesson.lessonNumber,
     status: lesson.status,
     estimatedStudyMinutes: lesson.estimatedStudyMinutes,
-    overview: lesson.body.content.slice(0, 180),
+    overview: lessonLeadOverview(lesson.body.content),
     learningObjectives: lesson.learningObjectives,
     body: lesson.body,
     patientCommunicationExamples: [],
     roleBoundaryNotes: [],
+    clinicalReasoningBoxes: lesson.clinicalReasoningBoxes,
     keyTakeaways: lesson.keyTakeaways,
     redFlags: lesson.redFlags,
     escalationTriggers: [],
     evidenceTier: {
       overall: lesson.evidenceTier.overall,
       summaryNote: lesson.evidenceTier.summaryNote,
-      notes: [],
+      notes: lesson.evidenceTier.notes ?? [],
     },
     facultyNoteIds: [],
     complianceNoticeIds: complianceNotices.map((notice) => notice.id),
@@ -260,37 +322,42 @@ function createDoctorBundle(): ProgramBundle {
       showEscalationPanel: false,
       showFacultyNotes: false,
       showCompliancePanel: true,
+      showClinicalReasoning: lesson.displayFlags.showClinicalReasoning,
     },
   }));
 
-  const assessments: AcademyAssessment[] = legacyQuizzes.map((quiz, index) => ({
-    id: quiz.id,
-    programId: program.id,
-    levelId: section.levelId,
-    moduleId: quiz.moduleId,
-    slug: quiz.slug,
-    title: quiz.title,
-    assessmentType: toLegacyAssessmentType(quiz),
-    status: quiz.status,
-    instructions: "Complete the linked doctor-facing assessment.",
-    passMark: quiz.passMark,
-    retryLimit: quiz.retries,
-    weighting: index === legacyQuizzes.length - 1 ? 10 : 5,
-    facultyReviewRequired: quiz.items.some((item) => item.facultyReviewRequired),
-    mandatoryDomainTags: [],
-    competencyIds: [],
-    itemIds: quiz.items.map((item) => item.id),
-    submissionRules: {
-      allowDraftSave: false,
-      acceptedFormats: ["online"],
-      facultyReviewRequired: quiz.items.some((item) => item.facultyReviewRequired),
-    },
-    completionRules: {
-      passMarkRequired: true,
-      facultyApprovalRequired: quiz.items.some((item) => item.facultyReviewRequired),
+  const assessments: AcademyAssessment[] = legacyQuizzes.map((quiz, index) => {
+    const modTitle = moduleTitleById.get(quiz.moduleId) ?? "this module";
+    const facultyItems = quiz.items.some((item) => item.facultyReviewRequired);
+    return {
+      id: quiz.id,
+      programId: program.id,
+      levelId: section.levelId,
+      moduleId: quiz.moduleId,
+      slug: quiz.slug,
+      title: quiz.title,
+      assessmentType: toLegacyAssessmentType(quiz),
+      status: quiz.status,
+      instructions: `Complete the assessment for "${modTitle}". Demonstrate clinical reasoning aligned to Volume 1 — Foundations of Clinical Trichology. Pass mark ${quiz.passMark}%.${facultyItems ? " At least one item requires faculty review before the attempt is finalised." : ""}`,
+      passMark: quiz.passMark,
+      retryLimit: quiz.retries,
+      weighting: index === legacyQuizzes.length - 1 ? 10 : 5,
+      facultyReviewRequired: facultyItems,
       mandatoryDomainTags: [],
-    },
-  }));
+      competencyIds: DOCTOR_VOL1_MODULE_COMPETENCIES[quiz.moduleId] ?? [],
+      itemIds: quiz.items.map((item) => item.id),
+      submissionRules: {
+        allowDraftSave: false,
+        acceptedFormats: ["online"],
+        facultyReviewRequired: facultyItems,
+      },
+      completionRules: {
+        passMarkRequired: true,
+        facultyApprovalRequired: facultyItems,
+        mandatoryDomainTags: [],
+      },
+    };
+  });
 
   const assessmentItems: AssessmentItem[] = legacyQuizzes.flatMap((quiz) =>
     quiz.items.map((item) => ({
@@ -334,7 +401,7 @@ function createDoctorBundle(): ProgramBundle {
     status: casePrompt.status,
     scenarioSummary: casePrompt.clinicalScenario,
     patientContext: casePrompt.clinicalScenario,
-    redFlags: [],
+    redFlags: casePrompt.redFlags ?? [],
     discussionPrompts: casePrompt.discussionPrompts,
     expectedEscalationPath: casePrompt.moderatorNotes,
     linkedCompetencyIds: casePrompt.linkedCompetencies,
@@ -348,6 +415,7 @@ function createDoctorBundle(): ProgramBundle {
       ...program,
       sectionIds: [section.id],
       moduleIds: modules.map((module) => module.id),
+      competencyIds: competencies.map((c) => c.id),
     },
     levels,
     sections: [section],
@@ -357,8 +425,8 @@ function createDoctorBundle(): ProgramBundle {
     assessmentItems,
     caseStudies,
     practicalTasks: [],
-    competencies: [],
-    facultyNotes: [],
+    competencies,
+    facultyNotes,
     complianceNotices,
     references,
     resources,

@@ -66,13 +66,13 @@
     "slug": "structured-information-gathering",
     "title": "Structured Information Gathering",
     "domain": "consultation-structure",
-    "description": "Gather information in a standardised, reproducible, doctor-supportive format.",
+    "description": "Gather information in a standardised, doctor-supportive format aligned with Volume 2 Week 5: structured consult arc, neutral history, goals/fears capture, and handover-ready notes—not sales-led documentation.",
     "sequence": 4,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_04",
-        "description": "Submit a structured consultation task",
+        "description": "Submit a structured consultation task demonstrating Volume 2 Week 5 note quality (faculty-reviewed)",
         "evidenceType": "practical-task",
         "requiredCount": 1
       }
@@ -86,13 +86,13 @@
     "slug": "candidate-screening-support",
     "title": "Candidate Screening Support",
     "domain": "escalation-safety",
-    "description": "Support screening through consistent data capture, red flag awareness, and correct escalation.",
+    "description": "Support screening per Volume 2 Week 6: classify workflow risk, document caution flags, use deferral language, and escalate—without confirming suitability or replacing doctor judgement.",
     "sequence": 5,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_05",
-        "description": "Pass triage support questions",
+        "description": "Pass triage support questions on screening, suitability boundaries, and escalation",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -126,13 +126,13 @@
     "slug": "patient-communication",
     "title": "Patient Communication",
     "domain": "patient-communication",
-    "description": "Use trust-based, non-misleading, and clinically literate communication with patients.",
+    "description": "Use trust-based, measured communication aligned with Volume 2 Week 7: expectation management, emotional awareness, safe phrasing, and ethical objection handling—without false certainty or conversion pressure.",
     "sequence": 7,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_07",
-        "description": "Submit a faculty-reviewed communication scenario",
+        "description": "Submit a faculty-reviewed communication scenario showing Volume 2 Week 7 restraint and clarity",
         "evidenceType": "practical-task",
         "requiredCount": 1
       }
@@ -146,13 +146,13 @@
     "slug": "non-surgical-education",
     "title": "Non-Surgical Treatment Education",
     "domain": "patient-communication",
-    "description": "Explain non-surgical pathways accurately without overpromising or prescribing outside scope.",
+    "description": "Explain non-surgical pathways and sequencing per Volume 2 Week 8: honest category education, pathway framing, educate broadly / defer specifically for medications—no prescribing or treatment guarantees.",
     "sequence": 8,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_08",
-        "description": "Pass treatment education questions",
+        "description": "Pass treatment education questions on scope-safe pathway and non-surgical explanation",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -166,13 +166,13 @@
     "slug": "surgical-pathway-education",
     "title": "Surgical Pathway Education",
     "domain": "patient-communication",
-    "description": "Describe the surgical pathway and patient journey without overstating outcomes or clinical authority.",
+    "description": "Explain the surgical pathway as staged process and logistics (Volume 2 Week 8 bridge to Volume 3 Week 9) without graft or technique verdicts, medication advice, suitability confirmation, or consent/commerce shortcuts—preserving treating-clinician authority.",
     "sequence": 9,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_09",
-        "description": "Pass surgical education support items",
+        "description": "Pass the multi-item surgical pathway boundary assessment (auto-graded scenarios)",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -186,13 +186,13 @@
     "slug": "documentation-handover",
     "title": "Documentation and Doctor Handover",
     "domain": "documentation-handover",
-    "description": "Capture clear clinical documentation and structured handover notes for the treating doctor.",
+    "description": "Capture objective clinical documentation, repeatable photography discipline, and doctor-ready handovers per Volume 3 Week 9—evidence aligned, neutral, auditable.",
     "sequence": 10,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_10",
-        "description": "Submit a faculty-reviewed documentation task",
+        "description": "Submit a faculty-reviewed documentation/handover task meeting Volume 3 Week 9 evidence standards",
         "evidenceType": "practical-task",
         "requiredCount": 1
       }
@@ -206,13 +206,13 @@
     "slug": "preoperative-coordination",
     "title": "Pre-Operative Coordination",
     "domain": "care-coordination",
-    "description": "Coordinate preparation tasks, documentation, and patient readiness checks in a standards-led way.",
+    "description": "Coordinate pre-operative readiness per Volume 3 Week 10: sequenced communication, checklists, anxiety handling, late-issue documentation, escalation—not medical clearance.",
     "sequence": 11,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_11",
-        "description": "Complete pre-op coordination assessment",
+        "description": "Complete pre-op coordination assessment (Volume 3 Week 10 operational readiness)",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -226,13 +226,13 @@
     "slug": "follow-up-escalation",
     "title": "Post-Operative Follow-Up and Escalation",
     "domain": "escalation-safety",
-    "description": "Recognise when routine follow-up becomes a doctor-review or escalation scenario.",
+    "description": "Manage post-operative follow-up per Volume 3 Week 11: continuity, bounded reassurance, documentation, early escalation—no remote diagnosis of complications.",
     "sequence": 12,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_12",
-        "description": "Pass escalation-focused assessment items",
+        "description": "Pass escalation-focused assessment items (Volume 3 Week 11 follow-up judgement)",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -246,13 +246,13 @@
     "slug": "high-risk-scenario-management",
     "title": "High-Risk Scenario Management",
     "domain": "ethical-practice",
-    "description": "Respond safely to difficult consultations, pressure selling risks, and vulnerable patient scenarios.",
+    "description": "Handle difficult and high-risk scenarios per Volume 3 Week 11: dissatisfaction, distress, complaint risk, vulnerability, and pressure—without minimisation or outcome promises.",
     "sequence": 13,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_13",
-        "description": "Submit a faculty-reviewed difficult consultation response",
+        "description": "Submit a faculty-reviewed difficult consultation response (Volume 3 Week 11 mature dialogue)",
         "evidenceType": "practical-task",
         "requiredCount": 1
       }
@@ -266,13 +266,13 @@
     "slug": "quality-assurance-audit",
     "title": "Quality Assurance and Audit",
     "domain": "leadership-quality",
-    "description": "Use standards, templates, and audit logic to support quality improvement at clinic level.",
+    "description": "Apply QA and audit thinking per Volume 3 Week 12: systems, template discipline, continuous improvement, and leadership behaviours that raise standards.",
     "sequence": 14,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_14",
-        "description": "Pass the quality standards assessment",
+        "description": "Pass the quality standards assessment (Volume 3 Week 12 QA lens)",
         "evidenceType": "assessment",
         "requiredCount": 1
       }
@@ -286,13 +286,13 @@
     "slug": "capstone-consultation-pathway",
     "title": "Capstone Consultation Pathway",
     "domain": "care-coordination",
-    "description": "Demonstrate integrated competence across the consultation, triage, documentation, communication, escalation, and handover pathway.",
+    "description": "Demonstrate integrated certificate competence per Volume 3 Week 12 capstone direction: realistic pathway simulation, usable documentation, ethical scope, mandatory safety domains.",
     "sequence": 15,
     "requiredForAward": true,
     "evidenceRequirements": [
       {
         "id": "ev_15",
-        "description": "Pass the capstone pathway assessment and faculty review",
+        "description": "Pass the capstone pathway assessment and faculty review aligned with Volume 3 integrated competency criteria",
         "evidenceType": "faculty-review",
         "requiredCount": 1
       }

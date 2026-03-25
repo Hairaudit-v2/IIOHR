@@ -1,0 +1,82 @@
+[
+  {
+    "id": "doctors_vol1_comp_introduction_scope",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-1-introduction-physician-led-trichology",
+    "title": "Physician-led trichology: scope, evidence tiers, and ethics",
+    "domain": "ethical-practice",
+    "description": "Define physician-led clinical trichology versus non-medical hair practice; relate trichology to dermatology and transplantation; apply academy evidence tiers (including regenerative and investigational domains); and uphold consent, scope, and medico-legal boundaries as set out in Volume 1 — Foundations of Clinical Trichology.",
+    "sequence": 1,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol1_m1_assessment",
+        "description": "Pass the Module 1 knowledge check integrating scope, evidence framing, and ethical boundaries (case discussion faculty-moderated where academy workflow requires)",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol1_comp_follicle_biology",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-1-follicle-biology-scalp-science",
+    "title": "Follicle biology, cycling, and scalp environment",
+    "domain": "clinical-literacy",
+    "description": "Explain follicular anatomy, stem-cell niches, hair cycling (including kenogen/exogen), shaft architecture, scalp microenvironment, ethnic variation, and aging-related change as clinical foundations for diagnosis, counselling, and procedural planning per Volume 1.",
+    "sequence": 2,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol1_m2_assessment",
+        "description": "Pass the Module 2 assessment including image-interpretation and case-reasoning items aligned with biology and cycle concepts",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol1_comp_molecular_hormonal",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-1-molecular-hormonal-regulation",
+    "title": "Molecular and hormonal drivers of hair loss and therapy logic",
+    "domain": "clinical-literacy",
+    "description": "Integrate androgen biology, Wnt and prostaglandin signalling, growth mediators, microinflammation, and sex-specific endocrine contributors into a reasoning framework for AGA, female pattern loss, and adjunctive or regenerative options without overclaiming, per Volume 1.",
+    "sequence": 3,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol1_m3_assessment",
+        "description": "Pass the Module 3 knowledge check on molecular, hormonal, and treatment-sequence logic",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol1_comp_consultation_history",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-1-structured-consultation-history",
+    "title": "Structured hair loss consultation and history-taking",
+    "domain": "consultation-structure",
+    "description": "Conduct a hypothesis-driven consultation: classify complaint type (shedding, density loss, breakage, patchy/scarring); map onset, tempo, and pattern; obtain mandatory female endocrine and reproductive history; identify drug, nutritional, and trigger factors; document psychosocial burden and uncertainty clearly for longitudinal care and governance, per Volume 1.",
+    "sequence": 4,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol1_m4_assessment",
+        "description": "Pass the Module 4 assessment including case-reasoning on history-based differentials, red flags, and documentation (faculty review on free-text items where configured)",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  }
+]

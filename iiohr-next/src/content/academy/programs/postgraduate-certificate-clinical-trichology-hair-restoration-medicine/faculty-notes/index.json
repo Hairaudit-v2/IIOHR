@@ -1,0 +1,47 @@
+[
+  {
+    "id": "doctors_note_vol1_manual_source",
+    "parentType": "program",
+    "parentId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "title": "Volume 1 primary teaching text",
+    "note": "Doctor Volume 1 learner content is aligned to the academy manual Volume 1 — Foundations of Clinical Trichology (HLI | IIIOHR). Faculty moderation should verify that learners distinguish diagnostic reasoning from memorisation, apply evidence tiers without marketing language, and respect that this program does not confer specialty recognition or replace local licensure or supervised procedural training.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 1 curriculum alignment"
+  },
+  {
+    "id": "doctors_note_vol1_mod1",
+    "parentType": "module",
+    "parentId": "module_foundations_intro",
+    "title": "Module 1 — faculty delivery notes",
+    "note": "Source: Manual Module 1 (sections 1.1–1.5). Emphasise that trichology is applied hair and scalp medicine, not pattern labelling alone. Workshop: map a patient statement to shedding vs thinning vs breakage vs patchy loss before any treatment discussion. Drill evidence tiers using one established, one consensus-evolving, and one investigational example; prohibit equating biological plausibility with proven efficacy.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 1 moderation"
+  },
+  {
+    "id": "doctors_note_vol1_mod2",
+    "parentType": "module",
+    "parentId": "module_follicle_biology_scalp_science",
+    "title": "Module 2 — faculty delivery notes",
+    "note": "Source: Manual Module 2 (sections 2.1–2.8). Use diagrams for infundibulum/isthmus/bulge/bulb. Contrast non-scarring (architecture preserved) vs cicatricial (stem niche destruction). For ethnic variation, keep discussion clinical: breakage, traction context, and surgical planning implications—avoid generalisations that are not evidence-linked.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 2 moderation"
+  },
+  {
+    "id": "doctors_note_vol1_mod3",
+    "parentType": "module",
+    "parentId": "module_molecular_hormonal_regulation",
+    "title": "Module 3 — faculty delivery notes",
+    "note": "Source: Manual Module 3 (sections 3.1–3.8). Stress local androgen sensitivity vs serum androgens alone. When discussing PRP or devices, frame as heterogeneous evidence (Tier 2–3) and dependent on preparation and context. Close with treatment logic: core medical therapy vs adjuncts vs surgery sequencing.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 3 moderation"
+  },
+  {
+    "id": "doctors_note_vol1_mod4",
+    "parentType": "module",
+    "parentId": "module_clinical_consultation_history_taking",
+    "title": "Module 4 — faculty delivery notes",
+    "note": "Source: Manual Module 4 (sections 4.1–4.9). Run live history drills: female diffuse thinning without skipping menstrual, fertility, thyroid, and hyperandrogenism screens. Red-flag review: pain, burning, pustulation, rapid patchy loss, eyebrow loss, systemic symptoms—escalate biopsy or specialist referral per local protocol. Assess documentation for uncertainty phrased supportively.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 4 moderation"
+  }
+]

@@ -1,26 +1,29 @@
 import Link from "next/link";
 import type { AcademyAssessment } from "@/lib/academy/assessment-types";
 
-interface ConsultantAssessmentCalloutProps {
+interface LinkedAssessmentsCalloutProps {
   assessments: AcademyAssessment[];
   basePath: string;
+  /** Intro copy under the heading (stream-specific tone). */
+  description: string;
 }
 
-export function ConsultantAssessmentCallout({ assessments, basePath }: ConsultantAssessmentCalloutProps) {
+export function LinkedAssessmentsCallout({
+  assessments,
+  basePath,
+  description,
+}: LinkedAssessmentsCalloutProps) {
   if (assessments.length === 0) {
     return null;
   }
 
   return (
-    <div className="rounded-xl border border-[color-mix(in_srgb,var(--gold-primary)_35%,transparent)] bg-[color-mix(in_srgb,var(--gold-primary)_6%,var(--bg-secondary))] px-5 py-6 sm:px-8">
+    <div className="rounded-xl border border-border bg-[var(--bg-secondary)] px-5 py-6 sm:px-8">
       <p className="text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-readable-muted">
         Check your learning
       </p>
       <h2 className="mt-2 text-lg font-semibold text-foreground">Linked assessments</h2>
-      <p className="mt-2 max-w-2xl text-sm text-readable-muted">
-        Complete the module assessment to demonstrate scope-safe reasoning. Pass mark and retry limits apply as
-        shown on each assessment page.
-      </p>
+      <p className="mt-2 max-w-2xl text-sm text-readable-muted">{description}</p>
       <ul className="mt-5 space-y-3">
         {assessments.map((a) => (
           <li key={a.id}>

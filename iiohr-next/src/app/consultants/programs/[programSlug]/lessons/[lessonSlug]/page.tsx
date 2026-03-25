@@ -15,7 +15,7 @@ import { ReferenceList } from "@/components/academy/shared/ReferenceList";
 import { DownloadableResourceList } from "@/components/academy/shared/DownloadableResourceList";
 import { RichTextAcademicBody } from "@/components/academy/shared/RichTextAcademicBody";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
-import { ConsultantAssessmentCallout } from "@/components/academy/consultant/ConsultantAssessmentCallout";
+import { LinkedAssessmentsCallout } from "@/components/academy/shared/LinkedAssessmentsCallout";
 import { ConsultantLessonFooterNav } from "@/components/academy/consultant/ConsultantLessonFooterNav";
 import { ConsultantRoleBoundariesCallout } from "@/components/academy/consultant/ConsultantRoleBoundariesCallout";
 import { ConsultantScopeStrip } from "@/components/academy/consultant/ConsultantScopeStrip";
@@ -114,7 +114,11 @@ export default async function ConsultantLessonPage({
       </SectionShell>
 
       <SectionShell muted>
-        <ConsultantAssessmentCallout assessments={viewModel.linkedAssessments} basePath={base} />
+        <LinkedAssessmentsCallout
+          assessments={viewModel.linkedAssessments}
+          basePath={base}
+          description="Complete the module assessment to demonstrate scope-safe reasoning. Pass mark and retry limits apply as shown on each assessment page."
+        />
       </SectionShell>
 
       <SectionShell>
