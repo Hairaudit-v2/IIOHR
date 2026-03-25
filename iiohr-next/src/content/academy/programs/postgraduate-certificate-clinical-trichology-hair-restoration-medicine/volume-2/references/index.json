@@ -1,0 +1,62 @@
+[
+  {
+    "id": "reference_module_vol2_mod5_01",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "parentType": "module",
+    "parentId": "module_diagnostic_clinical_examination_hair_scalp",
+    "citation": "Hair Longevity Institute; International Institute of Hair Restoration (IIIOHR). Volume 2: Diagnostic Trichology and Pattern Hair Loss Medicine — Module 5. Postgraduate teaching manual (doctor education platform).",
+    "sourceType": "consensus",
+    "year": 2026,
+    "url": "",
+    "notes": "Primary module source for global inspection, density and calibre assessment, scalp inflammatory clues, pull test logic, photography, and grading.",
+    "evidenceTier": "consensus"
+  },
+  {
+    "id": "reference_module_vol2_mod6_01",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "parentType": "module",
+    "parentId": "module_diagnostic_trichoscopy_interpretation",
+    "citation": "Hair Longevity Institute; International Institute of Hair Restoration (IIIOHR). Volume 2: Diagnostic Trichology and Pattern Hair Loss Medicine — Module 6. Postgraduate teaching manual (doctor education platform).",
+    "sourceType": "consensus",
+    "year": 2026,
+    "url": "",
+    "notes": "Primary module source for trichoscopy technique, normal findings, pattern hair loss signs, shedding and immune-mediated patterns, scarring clues, and biopsy targeting.",
+    "evidenceTier": "consensus"
+  },
+  {
+    "id": "reference_module_vol2_mod7_01",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "parentType": "module",
+    "parentId": "module_diagnostic_laboratory_biopsy_logic",
+    "citation": "Hair Longevity Institute; International Institute of Hair Restoration (IIIOHR). Volume 2: Diagnostic Trichology and Pattern Hair Loss Medicine — Module 7. Postgraduate teaching manual (doctor education platform).",
+    "sourceType": "consensus",
+    "year": 2026,
+    "url": "",
+    "notes": "Primary module source for phenotype-led investigation, core laboratories, hyperandrogenism workup, biopsy indications, site selection, and histology correlation.",
+    "evidenceTier": "consensus"
+  },
+  {
+    "id": "reference_module_vol2_mod8_01",
+    "moduleId": "module_diagnostic_male_aga",
+    "parentType": "module",
+    "parentId": "module_diagnostic_male_aga",
+    "citation": "Hair Longevity Institute; International Institute of Hair Restoration (IIIOHR). Volume 2: Diagnostic Trichology and Pattern Hair Loss Medicine — Module 8. Postgraduate teaching manual (doctor education platform).",
+    "sourceType": "consensus",
+    "year": 2026,
+    "url": "",
+    "notes": "Primary module source for male AGA epidemiology, staging, trichoscopic differential, medical treatment ladder, regenerative adjuncts, and surgical planning.",
+    "evidenceTier": "consensus"
+  },
+  {
+    "id": "reference_module_vol2_mod9_01",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "parentType": "module",
+    "parentId": "module_diagnostic_female_pattern_hormonal",
+    "citation": "Hair Longevity Institute; International Institute of Hair Restoration (IIIOHR). Volume 2: Diagnostic Trichology and Pattern Hair Loss Medicine — Module 9. Postgraduate teaching manual (doctor education platform).",
+    "sourceType": "consensus",
+    "year": 2026,
+    "url": "",
+    "notes": "Primary module source for female pattern phenotypes, endocrine overlap, investigation, life-stage context, treatment framework, regenerative and surgical caution, and communication.",
+    "evidenceTier": "consensus"
+  }
+]

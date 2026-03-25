@@ -1,0 +1,251 @@
+[
+  {
+    "id": "module_diagnostic_clinical_examination_hair_scalp",
+    "volumeId": "volume_2_diagnostic_trichology_pattern_hair_loss",
+    "moduleNumber": 5,
+    "slug": "clinical-examination-of-hair-and-scalp",
+    "title": "Clinical Examination of Hair and Scalp",
+    "shortTitle": "Clinical examination",
+    "status": "draft",
+    "estimatedStudyMinutes": 200,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "The hair consultation begins before the first instrument is lifted. Pattern, scalp visibility, hairstyle adaptation, eyebrow symmetry, body language, and distribution of loss all offer clues. A strong examiner uses a standard order of examination so that subtle patterned miniaturisation, inflammatory disease, breakage, and scarring are not missed. Content aligns to Volume 2 Module 5 of the Diagnostic Trichology manual.",
+      "clinicalContext": "Distinguish shedding, breakage, and true reduction in follicular density; use grading scales and photography to document baseline; recognise red flags that require urgent workup or biopsy. Symptoms such as pruritus, pain, burning, scale, tenderness, pustulation, and bleeding are not typical primary features of uncomplicated androgenetic alopecia and may indicate inflammatory or cicatricial disease.",
+      "learningObjectives": [
+        "Conduct a complete and reproducible examination of the hair-bearing scalp and adjacent hair-bearing sites.",
+        "Distinguish shedding, breakage, and true reduction in follicular density.",
+        "Use grading scales and photography standards to document baseline severity.",
+        "Identify clinical red flags that require urgent workup or biopsy."
+      ],
+      "keyTakeaways": [
+        "Always distinguish density loss from reduced calibre; patients experience both as ‘thinning’ but they behave differently clinically.",
+        "Symptoms such as burning, tenderness, or pustulation are not explained by uncomplicated pattern hair loss alone.",
+        "A careful baseline photo set is one of the most valuable interventions in long-term management."
+      ],
+      "redFlags": [
+        "Rapid progression over weeks or a few months without a plausible trigger.",
+        "Loss of follicular ostia, scalp pain, perifollicular scale, or pustules.",
+        "Patchy eyebrow loss, body hair loss, or scalp dyspigmentation.",
+        "Marked diffuse shedding with systemic symptoms, weight loss, or menstrual disturbance."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Evidence framing for Volume 2",
+          "tier": "consensus",
+          "note": "Diagnostic and pattern-medicine teaching uses the same academy tier model as Volume 1; apply tiers when discussing treatments referenced in later modules and avoid conflating pattern recognition with definitive therapy claims."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol2_mod5_01",
+      "lesson_vol2_mod5_02",
+      "lesson_vol2_mod5_03",
+      "lesson_vol2_mod5_04"
+    ],
+    "quizIds": ["quiz_vol2_mod5"],
+    "casePromptIds": ["case_vol2_mod5_a"],
+    "downloadableResourceIds": ["resource_module_vol2_mod5_summary"],
+    "referenceIds": ["reference_module_vol2_mod5_01"]
+  },
+  {
+    "id": "module_diagnostic_trichoscopy_interpretation",
+    "volumeId": "volume_2_diagnostic_trichology_pattern_hair_loss",
+    "moduleNumber": 6,
+    "slug": "trichoscopy-foundations-to-advanced-interpretation",
+    "title": "Trichoscopy: Foundations to Advanced Interpretation",
+    "shortTitle": "Trichoscopy",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Trichoscopy should be treated as a diagnostic language rather than a gadget. It improves confidence, supports early diagnosis, guides biopsy site selection, and refines follow-up. Learners should understand which findings are high-yield, which are supportive rather than diagnostic, and how trichoscopy changes management. Content aligns to Volume 2 Module 6.",
+      "clinicalContext": "Use dry and wet trichoscopy appropriately; compare affected zones with an occipital or other internal control; recognise patterns of pattern hair loss, telogen effluvium, alopecia areata, and scarring disease; select informative biopsy margins when histology is indicated.",
+      "learningObjectives": [
+        "Use dry and wet trichoscopy appropriately across hair and scalp disorders.",
+        "Recognise trichoscopic patterns associated with male and female pattern hair loss.",
+        "Identify key signs of alopecia areata, inflammatory scalp disease, and cicatricial alopecias.",
+        "Use trichoscopy to select the most informative biopsy site."
+      ],
+      "keyTakeaways": [
+        "Trichoscopy is most powerful when used comparatively: affected zone versus control zone.",
+        "Early pattern hair loss can be clinically subtle but trichoscopically obvious.",
+        "The best biopsy site is often identified trichoscopically, not by naked-eye inspection alone."
+      ],
+      "redFlags": [
+        "Loss of ostia with symptoms such as burning or tenderness.",
+        "Tufting, pustules, perifollicular casts, or diffuse white scar-like areas.",
+        "Diffuse shedding with trichoscopic immune-mediated clues rather than simple regrowth."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Trichoscopy in practice",
+          "tier": "consensus",
+          "note": "Expert consensus supports trichoscopy as part of pattern hair loss assessment; interpretation must integrate history, examination, and—when needed—histology."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol2_mod6_01",
+      "lesson_vol2_mod6_02",
+      "lesson_vol2_mod6_03",
+      "lesson_vol2_mod6_04"
+    ],
+    "quizIds": ["quiz_vol2_mod6"],
+    "casePromptIds": ["case_vol2_mod6_a"],
+    "downloadableResourceIds": ["resource_module_vol2_mod6_summary"],
+    "referenceIds": ["reference_module_vol2_mod6_01"]
+  },
+  {
+    "id": "module_diagnostic_laboratory_biopsy_logic",
+    "volumeId": "volume_2_diagnostic_trichology_pattern_hair_loss",
+    "moduleNumber": 7,
+    "slug": "laboratory-investigations-endocrine-workup-and-biopsy-logic",
+    "title": "Laboratory Investigations, Endocrine Workup, and Biopsy Logic",
+    "shortTitle": "Investigations and biopsy",
+    "status": "draft",
+    "estimatedStudyMinutes": 210,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Doctors should not order indiscriminate hair-loss blood panels, but neither should they under-investigate patients with diffuse shedding, menstrual disturbance, hyperandrogenic clues, nutritional risk, autoimmune history, or inflammatory disease. The best workup is phenotype-led and hypothesis-driven. Content aligns to Volume 2 Module 7.",
+      "clinicalContext": "Select laboratories based on phenotype; interpret ferritin and thyroid markers in context; know when biopsy is indicated and how to choose site and communicate with pathology; integrate horizontal versus vertical section logic with local expertise.",
+      "learningObjectives": [
+        "Select laboratory investigations based on phenotype, history, and differential diagnosis.",
+        "Interpret common blood markers in the context of shedding and patterned loss.",
+        "Know when biopsy is indicated and how to select the site.",
+        "Integrate laboratory and histologic data with clinical and trichoscopic findings."
+      ],
+      "keyTakeaways": [
+        "Investigation should follow phenotype, not habit.",
+        "Most biopsy failures are site-selection failures rather than pathology failures.",
+        "Clinical notes sent with the biopsy materially improve histologic interpretation."
+      ],
+      "redFlags": [
+        "Diffuse loss with constitutional symptoms or marked fatigue.",
+        "Menstrual disturbance, infertility, or overt hyperandrogenic signs in women.",
+        "Painful scalp, perifollicular change, or loss of ostia suggesting cicatricial disease.",
+        "Failure of a seemingly straightforward diagnosis to behave as expected."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Investigation proportionality",
+          "tier": "consensus",
+          "note": "Classic male pattern with strong phenotype and no systemic symptoms may need minimal tests; atypical or mixed presentations warrant targeted workup per local pathways."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol2_mod7_01",
+      "lesson_vol2_mod7_02",
+      "lesson_vol2_mod7_03",
+      "lesson_vol2_mod7_04"
+    ],
+    "quizIds": ["quiz_vol2_mod7"],
+    "casePromptIds": ["case_vol2_mod7_a"],
+    "downloadableResourceIds": ["resource_module_vol2_mod7_summary"],
+    "referenceIds": ["reference_module_vol2_mod7_01"]
+  },
+  {
+    "id": "module_diagnostic_male_aga",
+    "volumeId": "volume_2_diagnostic_trichology_pattern_hair_loss",
+    "moduleNumber": 8,
+    "slug": "androgenetic-alopecia-in-males",
+    "title": "Androgenetic Alopecia in Males",
+    "shortTitle": "Male AGA",
+    "status": "draft",
+    "estimatedStudyMinutes": 230,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Male androgenetic alopecia is common, but managing it well is not trivial. The skilled physician does more than diagnose Norwood stage; they estimate future pattern evolution, identify aggravating shedding, assess donor stability, discuss medical and surgical timing, and frame treatment as a long-term disease-management partnership. Content aligns to Volume 2 Module 8.",
+      "clinicalContext": "Differentiate uncomplicated male AGA from mimics and overlap; construct evidence-based medical plans; discuss finasteride, minoxidil (topical and low-dose oral where appropriate), combination therapy, and regenerative adjuncts with realistic expectations; assess surgical candidacy and long-range progression risk.",
+      "learningObjectives": [
+        "Diagnose and stage male pattern hair loss using clinical and trichoscopic findings.",
+        "Differentiate uncomplicated male AGA from common mimics and overlap disorders.",
+        "Construct evidence-based medical and regenerative treatment plans.",
+        "Assess surgical candidacy and long-range progression risk."
+      ],
+      "keyTakeaways": [
+        "Men rarely present with ‘just a hairline problem’; they present with a lifelong progression pattern.",
+        "Topical or oral growth stimulation without disease control may disappoint in rapidly progressive AGA.",
+        "A surgical plan should make sense not just today but ten years from now."
+      ],
+      "redFlags": [
+        "Diffuse thinning that extends into the traditionally safer donor zone.",
+        "Rapid severe progression in a very young patient without family-pattern consistency.",
+        "Scalp symptoms or inflammatory signs that do not fit uncomplicated AGA.",
+        "Patient goals centred on a juvenile hairline with no acceptance of maintenance therapy."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Therapeutics referenced in Module 8",
+          "tier": "consensus",
+          "note": "Tier 1 includes established medical options in appropriate candidates; low-dose oral minoxidil and dutasteride are context-dependent and require patient-specific risk discussion; PRP and devices vary by protocol (Tier 2–3)."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol2_mod8_01",
+      "lesson_vol2_mod8_02",
+      "lesson_vol2_mod8_03",
+      "lesson_vol2_mod8_04"
+    ],
+    "quizIds": ["quiz_vol2_mod8"],
+    "casePromptIds": ["case_vol2_mod8_a"],
+    "downloadableResourceIds": ["resource_module_vol2_mod8_summary"],
+    "referenceIds": ["reference_module_vol2_mod8_01"]
+  },
+  {
+    "id": "module_diagnostic_female_pattern_hormonal",
+    "volumeId": "volume_2_diagnostic_trichology_pattern_hair_loss",
+    "moduleNumber": 9,
+    "slug": "female-pattern-hair-loss-and-hormonal-hair-loss-in-women",
+    "title": "Female Pattern Hair Loss and Hormonal Hair Loss in Women",
+    "shortTitle": "Female pattern and hormonal loss",
+    "status": "draft",
+    "estimatedStudyMinutes": 240,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Female hair loss medicine requires greater endocrine literacy, broader differential diagnosis, and more careful reproductive counselling than many male AGA consultations. The physician must integrate pattern recognition with menstrual, metabolic, thyroid, nutritional, postpartum, menopausal, and psychosocial dimensions. Content aligns to Volume 2 Module 9.",
+      "clinicalContext": "Recognise FPHL phenotypes; select targeted endocrine and laboratory investigations when indicated; construct safe treatment plans across reproductive contexts; know when medical, regenerative, or surgical options are appropriate; address psychological burden without minimising distress.",
+      "learningObjectives": [
+        "Recognise common phenotypes of female pattern hair loss and related hormonal hair-loss states.",
+        "Select targeted endocrine and laboratory investigations when indicated.",
+        "Construct safe, evidence-based treatment plans in women of different ages and reproductive contexts.",
+        "Know when medical, regenerative, or surgical options are appropriate or inappropriate."
+      ],
+      "keyTakeaways": [
+        "Female patterned loss often coexists with shedding disorders; mixed aetiology is common, not exceptional.",
+        "Normal serum androgens do not exclude hormonally responsive follicular miniaturisation.",
+        "Treatment safety and reproductive planning are integral to the consultation, not an afterthought."
+      ],
+      "redFlags": [
+        "Rapid diffuse reduction in density with eyebrow/body hair change.",
+        "Marked hirsutism, virilisation, infertility, or severe menstrual disturbance.",
+        "Scalp pain, perifollicular scale, or loss of ostia suggesting inflammatory/scarring disease.",
+        "Requests for surgery before stabilisation of active diffuse loss."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Anti-androgen and reproductive safety",
+          "tier": "consensus",
+          "note": "Anti-androgen options require rigorous contraception and teratogenicity counselling where applicable; align prescribing to local guidelines and multidisciplinary care when needed."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol2_mod9_01",
+      "lesson_vol2_mod9_02",
+      "lesson_vol2_mod9_03",
+      "lesson_vol2_mod9_04"
+    ],
+    "quizIds": ["quiz_vol2_mod9"],
+    "casePromptIds": ["case_vol2_mod9_a"],
+    "downloadableResourceIds": ["resource_module_vol2_mod9_summary"],
+    "referenceIds": ["reference_module_vol2_mod9_01"]
+  }
+]

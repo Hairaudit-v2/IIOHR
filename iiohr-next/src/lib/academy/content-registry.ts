@@ -26,6 +26,13 @@ import legacyQuizzesJson from "@/content/academy/programs/postgraduate-certifica
 import legacyReferencesJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-1/references/index.json";
 import legacyResourcesJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-1/resources/index.json";
 import legacyVolumeJson from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-1/index.json";
+import legacyCasePromptsVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/case-prompts/index.json";
+import legacyLessonsVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/lessons/index.json";
+import legacyModulesVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/modules/index.json";
+import legacyQuizzesVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/quizzes/index.json";
+import legacyReferencesVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/references/index.json";
+import legacyResourcesVol2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/resources/index.json";
+import legacyVolume2Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-2/index.json";
 import type { AcademyAssessment, AssessmentItem } from "@/lib/academy/assessment-types";
 import type { ScopeSafeCopyBlock } from "@/lib/academy/compliance-types";
 import type {
@@ -107,6 +114,22 @@ const DOCTOR_VOL1_MODULE_FACULTY_NOTES: Record<string, string[]> = {
   module_follicle_biology_scalp_science: ["doctors_note_vol1_mod2"],
   module_molecular_hormonal_regulation: ["doctors_note_vol1_mod3"],
   module_clinical_consultation_history_taking: ["doctors_note_vol1_mod4"],
+};
+
+const DOCTOR_VOL2_MODULE_COMPETENCIES: Record<string, string[]> = {
+  module_diagnostic_clinical_examination_hair_scalp: ["doctors_vol2_comp_clinical_examination"],
+  module_diagnostic_trichoscopy_interpretation: ["doctors_vol2_comp_trichoscopy"],
+  module_diagnostic_laboratory_biopsy_logic: ["doctors_vol2_comp_investigations_biopsy"],
+  module_diagnostic_male_aga: ["doctors_vol2_comp_male_aga"],
+  module_diagnostic_female_pattern_hormonal: ["doctors_vol2_comp_female_pattern"],
+};
+
+const DOCTOR_VOL2_MODULE_FACULTY_NOTES: Record<string, string[]> = {
+  module_diagnostic_clinical_examination_hair_scalp: ["doctors_note_vol2_mod5"],
+  module_diagnostic_trichoscopy_interpretation: ["doctors_note_vol2_mod6"],
+  module_diagnostic_laboratory_biopsy_logic: ["doctors_note_vol2_mod7"],
+  module_diagnostic_male_aga: ["doctors_note_vol2_mod8"],
+  module_diagnostic_female_pattern_hormonal: ["doctors_note_vol2_mod9"],
 };
 
 type LegacyLesson = {
@@ -221,40 +244,70 @@ function createLegacyCompletionRules(hasAssessment: boolean): CompletionRule[] {
   return rules;
 }
 
-function createDoctorBundle(): ProgramBundle {
-  const stream = doctorStreamJson as AcademyStream;
-  const program = doctorProgramJson as AcademyProgram;
-  const levels = doctorLevelsJson as AcademyLevel[];
-  const complianceNotices = doctorComplianceNoticesJson as ComplianceNotice[];
-  const legacyModules = legacyModulesJson as LegacyModule[];
-  const legacyLessons = legacyLessonsJson as LegacyLesson[];
-  const legacyQuizzes = legacyQuizzesJson as LegacyQuiz[];
-  const legacyCasePrompts = legacyCasePromptsJson as LegacyCasePrompt[];
-  const references = legacyReferencesJson as AcademyReference[];
-  const resources = legacyResourcesJson as DownloadableResource[];
-  const legacyVolume = legacyVolumeJson as { id: string; title: string; slug: string; status: AcademySection["status"] };
+type DoctorVolumeMeta = { slug: string; title: string; status: AcademySection["status"] };
+
+function buildDoctorVolumeRuntime(params: {
+  program: AcademyProgram;
+  levelId: string;
+  complianceNotices: ComplianceNotice[];
+  sectionId: string;
+  sectionSequence: number;
+  volumeMeta: DoctorVolumeMeta;
+  sectionOverview: string;
+  legacyModules: LegacyModule[];
+  legacyLessons: LegacyLesson[];
+  legacyQuizzes: LegacyQuiz[];
+  legacyCasePrompts: LegacyCasePrompt[];
+  references: AcademyReference[];
+  resources: DownloadableResource[];
+  moduleCompetencies: Record<string, string[]>;
+  moduleFacultyNotes: Record<string, string[]>;
+  assessmentVolumeLabel: string;
+}): {
+  section: AcademySection;
+  modules: AcademyModule[];
+  lessons: AcademyLesson[];
+  assessments: AcademyAssessment[];
+  assessmentItems: AssessmentItem[];
+  caseStudies: CaseStudy[];
+} {
+  const {
+    program,
+    levelId,
+    complianceNotices,
+    sectionId,
+    sectionSequence,
+    volumeMeta,
+    sectionOverview,
+    legacyModules,
+    legacyLessons,
+    legacyQuizzes,
+    legacyCasePrompts,
+    references,
+    resources,
+    moduleCompetencies,
+    moduleFacultyNotes,
+    assessmentVolumeLabel,
+  } = params;
 
   const section: AcademySection = {
-    id: "section_doctors_volume_1",
+    id: sectionId,
     programId: program.id,
-    levelId: levels[0]?.id ?? "level_doctors_postgraduate_certificate",
-    slug: legacyVolume.slug,
-    title: legacyVolume.title,
-    sequence: 1,
-    status: legacyVolume.status,
-    overview: "Foundations of Clinical Trichology (Volume 1): physician-led scope, follicular science, molecular and hormonal regulation, and structured consultation—aligned to the academy Volume 1 teaching manual.",
+    levelId,
+    slug: volumeMeta.slug,
+    title: volumeMeta.title,
+    sequence: sectionSequence,
+    status: volumeMeta.status,
+    overview: sectionOverview,
     moduleIds: legacyModules.map((module) => module.id),
   };
-
-  const competencies = doctorCompetenciesJson as Competency[];
-  const facultyNotes = doctorFacultyNotesJson as FacultyNote[];
 
   const moduleTitleById = new Map(legacyModules.map((m) => [m.id, m.title]));
 
   const modules: AcademyModule[] = legacyModules.map((module) => ({
     id: module.id,
     programId: program.id,
-    levelId: section.levelId,
+    levelId,
     sectionId: section.id,
     slug: module.slug,
     title: module.title,
@@ -264,7 +317,7 @@ function createDoctorBundle(): ProgramBundle {
     estimatedStudyMinutes: module.estimatedStudyMinutes,
     moduleOverview: buildDoctorModuleOverview(module),
     learningOutcomes: module.overview.learningObjectives,
-    competencyIds: DOCTOR_VOL1_MODULE_COMPETENCIES[module.id] ?? [],
+    competencyIds: moduleCompetencies[module.id] ?? [],
     unlockRules: [],
     assessmentRules: legacyQuizzes
       .filter((quiz) => quiz.moduleId === module.id)
@@ -274,7 +327,7 @@ function createDoctorBundle(): ProgramBundle {
         requiredAssessmentIds: [quiz.id],
         mandatoryDomainTags: [],
       })),
-    facultyNoteIds: DOCTOR_VOL1_MODULE_FACULTY_NOTES[module.id] ?? [],
+    facultyNoteIds: moduleFacultyNotes[module.id] ?? [],
     complianceNoticeIds: complianceNotices.map((notice) => notice.id),
     lessonIds: legacyLessons.filter((lesson) => lesson.moduleId === module.id).map((lesson) => lesson.id),
     assessmentIds: legacyQuizzes.filter((quiz) => quiz.moduleId === module.id).map((quiz) => quiz.id),
@@ -287,7 +340,7 @@ function createDoctorBundle(): ProgramBundle {
   const lessons: AcademyLesson[] = legacyLessons.map((lesson) => ({
     id: lesson.id,
     programId: program.id,
-    levelId: section.levelId,
+    levelId,
     moduleId: lesson.moduleId,
     slug: lesson.slug,
     title: lesson.title,
@@ -326,25 +379,25 @@ function createDoctorBundle(): ProgramBundle {
     },
   }));
 
-  const assessments: AcademyAssessment[] = legacyQuizzes.map((quiz, index) => {
+  const assessments: AcademyAssessment[] = legacyQuizzes.map((quiz) => {
     const modTitle = moduleTitleById.get(quiz.moduleId) ?? "this module";
     const facultyItems = quiz.items.some((item) => item.facultyReviewRequired);
     return {
       id: quiz.id,
       programId: program.id,
-      levelId: section.levelId,
+      levelId,
       moduleId: quiz.moduleId,
       slug: quiz.slug,
       title: quiz.title,
       assessmentType: toLegacyAssessmentType(quiz),
       status: quiz.status,
-      instructions: `Complete the assessment for "${modTitle}". Demonstrate clinical reasoning aligned to Volume 1 — Foundations of Clinical Trichology. Pass mark ${quiz.passMark}%.${facultyItems ? " At least one item requires faculty review before the attempt is finalised." : ""}`,
+      instructions: `Complete the assessment for "${modTitle}". Demonstrate clinical reasoning aligned to ${assessmentVolumeLabel}. Pass mark ${quiz.passMark}%.${facultyItems ? " At least one item requires faculty review before the attempt is finalised." : ""}`,
       passMark: quiz.passMark,
       retryLimit: quiz.retries,
-      weighting: index === legacyQuizzes.length - 1 ? 10 : 5,
+      weighting: 5,
       facultyReviewRequired: facultyItems,
       mandatoryDomainTags: [],
-      competencyIds: DOCTOR_VOL1_MODULE_COMPETENCIES[quiz.moduleId] ?? [],
+      competencyIds: moduleCompetencies[quiz.moduleId] ?? [],
       itemIds: quiz.items.map((item) => item.id),
       submissionRules: {
         allowDraftSave: false,
@@ -409,21 +462,84 @@ function createDoctorBundle(): ProgramBundle {
     referenceIds: [],
   }));
 
+  return { section, modules, lessons, assessments, assessmentItems, caseStudies };
+}
+
+function createDoctorBundle(): ProgramBundle {
+  const stream = doctorStreamJson as AcademyStream;
+  const program = doctorProgramJson as AcademyProgram;
+  const levels = doctorLevelsJson as AcademyLevel[];
+  const complianceNotices = doctorComplianceNoticesJson as ComplianceNotice[];
+  const competencies = doctorCompetenciesJson as Competency[];
+  const facultyNotes = doctorFacultyNotesJson as FacultyNote[];
+
+  const levelId = levels[0]?.id ?? "level_doctors_postgraduate_certificate";
+  const legacyVolume = legacyVolumeJson as DoctorVolumeMeta;
+  const legacyVolume2 = legacyVolume2Json as DoctorVolumeMeta;
+
+  const vol1 = buildDoctorVolumeRuntime({
+    program,
+    levelId,
+    complianceNotices,
+    sectionId: "section_doctors_volume_1",
+    sectionSequence: 1,
+    volumeMeta: legacyVolume,
+    sectionOverview:
+      "Foundations of Clinical Trichology (Volume 1): physician-led scope, follicular science, molecular and hormonal regulation, and structured consultation—aligned to the academy Volume 1 teaching manual.",
+    legacyModules: legacyModulesJson as LegacyModule[],
+    legacyLessons: legacyLessonsJson as LegacyLesson[],
+    legacyQuizzes: legacyQuizzesJson as LegacyQuiz[],
+    legacyCasePrompts: legacyCasePromptsJson as LegacyCasePrompt[],
+    references: legacyReferencesJson as AcademyReference[],
+    resources: legacyResourcesJson as DownloadableResource[],
+    moduleCompetencies: DOCTOR_VOL1_MODULE_COMPETENCIES,
+    moduleFacultyNotes: DOCTOR_VOL1_MODULE_FACULTY_NOTES,
+    assessmentVolumeLabel: "Volume 1 — Foundations of Clinical Trichology",
+  });
+
+  const vol2 = buildDoctorVolumeRuntime({
+    program,
+    levelId,
+    complianceNotices,
+    sectionId: "section_doctors_volume_2",
+    sectionSequence: 2,
+    volumeMeta: legacyVolume2,
+    sectionOverview:
+      "Diagnostic Trichology and Pattern Hair Loss Medicine (Volume 2): structured examination, trichoscopy, phenotype-led investigation and biopsy logic, and male and female pattern hair loss medicine—aligned to the academy Volume 2 teaching manual.",
+    legacyModules: legacyModulesVol2Json as LegacyModule[],
+    legacyLessons: legacyLessonsVol2Json as LegacyLesson[],
+    legacyQuizzes: legacyQuizzesVol2Json as LegacyQuiz[],
+    legacyCasePrompts: legacyCasePromptsVol2Json as LegacyCasePrompt[],
+    references: legacyReferencesVol2Json as AcademyReference[],
+    resources: legacyResourcesVol2Json as DownloadableResource[],
+    moduleCompetencies: DOCTOR_VOL2_MODULE_COMPETENCIES,
+    moduleFacultyNotes: DOCTOR_VOL2_MODULE_FACULTY_NOTES,
+    assessmentVolumeLabel: "Volume 2 — Diagnostic Trichology and Pattern Hair Loss Medicine",
+  });
+
+  const mergedAssessments = [...vol1.assessments, ...vol2.assessments].map((assessment, index, arr) => ({
+    ...assessment,
+    weighting: index === arr.length - 1 ? 10 : 5,
+  }));
+
+  const references = [...(legacyReferencesJson as AcademyReference[]), ...(legacyReferencesVol2Json as AcademyReference[])];
+  const resources = [...(legacyResourcesJson as DownloadableResource[]), ...(legacyResourcesVol2Json as DownloadableResource[])];
+
   return {
     stream,
     program: {
       ...program,
-      sectionIds: [section.id],
-      moduleIds: modules.map((module) => module.id),
+      sectionIds: [vol1.section.id, vol2.section.id],
+      moduleIds: [...vol1.modules, ...vol2.modules].map((module) => module.id),
       competencyIds: competencies.map((c) => c.id),
     },
     levels,
-    sections: [section],
-    modules,
-    lessons,
-    assessments,
-    assessmentItems,
-    caseStudies,
+    sections: [vol1.section, vol2.section],
+    modules: [...vol1.modules, ...vol2.modules],
+    lessons: [...vol1.lessons, ...vol2.lessons],
+    assessments: mergedAssessments,
+    assessmentItems: [...vol1.assessmentItems, ...vol2.assessmentItems],
+    caseStudies: [...vol1.caseStudies, ...vol2.caseStudies],
     practicalTasks: [],
     competencies,
     facultyNotes,

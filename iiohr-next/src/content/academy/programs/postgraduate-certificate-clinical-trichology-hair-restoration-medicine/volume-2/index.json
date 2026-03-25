@@ -1,0 +1,18 @@
+{
+  "id": "volume_2_diagnostic_trichology_pattern_hair_loss",
+  "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+  "volumeNumber": 2,
+  "slug": "diagnostic-trichology-and-pattern-hair-loss-medicine",
+  "title": "Diagnostic Trichology and Pattern Hair Loss Medicine",
+  "subtitle": "Volume 2",
+  "status": "draft",
+  "brandProfiles": ["iiohr", "hli", "iiiohr"],
+  "audience": ["doctors", "surgeons", "physicians"],
+  "moduleOrder": [
+    "module_diagnostic_clinical_examination_hair_scalp",
+    "module_diagnostic_trichoscopy_interpretation",
+    "module_diagnostic_laboratory_biopsy_logic",
+    "module_diagnostic_male_aga",
+    "module_diagnostic_female_pattern_hormonal"
+  ]
+}

@@ -18,13 +18,18 @@
     "completionRules": [
       "Complete required modules and assessments in good academic standing"
     ],
-    "sectionIds": ["section_doctors_volume_1"],
+    "sectionIds": ["section_doctors_volume_1", "section_doctors_volume_2"],
     "moduleIds": [],
     "competencyIds": [
       "doctors_vol1_comp_introduction_scope",
       "doctors_vol1_comp_follicle_biology",
       "doctors_vol1_comp_molecular_hormonal",
-      "doctors_vol1_comp_consultation_history"
+      "doctors_vol1_comp_consultation_history",
+      "doctors_vol2_comp_clinical_examination",
+      "doctors_vol2_comp_trichoscopy",
+      "doctors_vol2_comp_investigations_biopsy",
+      "doctors_vol2_comp_male_aga",
+      "doctors_vol2_comp_female_pattern"
     ],
     "certificateTemplateKey": "doctor-pgcert-certificate",
     "badgeTemplateKey": "doctor-pgcert-badge"

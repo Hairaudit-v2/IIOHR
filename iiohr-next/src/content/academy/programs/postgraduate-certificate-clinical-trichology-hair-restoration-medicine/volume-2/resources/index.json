@@ -1,0 +1,67 @@
+[
+  {
+    "id": "resource_module_vol2_mod5_summary",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "parentType": "module",
+    "parentId": "module_diagnostic_clinical_examination_hair_scalp",
+    "title": "Module Summary: Clinical Examination of Hair and Scalp",
+    "resourceType": "pdf-summary",
+    "fileName": "volume-2-module-5-summary.pdf",
+    "fileUrl": "",
+    "version": "v1",
+    "access": "enrolled-only",
+    "description": "Condensed module summary: inspection, pattern recognition, density and calibre, scalp clues, pull test and shed versus breakage, photography and grading — from Volume 2 manual Module 5. PDF distributed when released."
+  },
+  {
+    "id": "resource_module_vol2_mod6_summary",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "parentType": "module",
+    "parentId": "module_diagnostic_trichoscopy_interpretation",
+    "title": "Module Summary: Trichoscopy",
+    "resourceType": "pdf-summary",
+    "fileName": "volume-2-module-6-summary.pdf",
+    "fileUrl": "",
+    "version": "v1",
+    "access": "enrolled-only",
+    "description": "Condensed module summary: equipment and technique, normal background, pattern hair loss, shedding and immune-mediated patterns, scarring and biopsy targeting, reporting — from Volume 2 manual Module 6."
+  },
+  {
+    "id": "resource_module_vol2_mod7_summary",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "parentType": "module",
+    "parentId": "module_diagnostic_laboratory_biopsy_logic",
+    "title": "Module Summary: Investigations and Biopsy Logic",
+    "resourceType": "pdf-summary",
+    "fileName": "volume-2-module-7-summary.pdf",
+    "fileUrl": "",
+    "version": "v1",
+    "access": "enrolled-only",
+    "description": "Condensed module summary: phenotype-led workup, core labs, hyperandrogenism, biopsy indications and site selection, horizontal versus vertical sections — from Volume 2 manual Module 7."
+  },
+  {
+    "id": "resource_module_vol2_mod8_summary",
+    "moduleId": "module_diagnostic_male_aga",
+    "parentType": "module",
+    "parentId": "module_diagnostic_male_aga",
+    "title": "Module Summary: Androgenetic Alopecia in Males",
+    "resourceType": "pdf-summary",
+    "fileName": "volume-2-module-8-summary.pdf",
+    "fileUrl": "",
+    "version": "v1",
+    "access": "enrolled-only",
+    "description": "Condensed module summary: staging, differential, medical ladder, regenerative adjuncts, surgical candidacy and long-term planning — from Volume 2 manual Module 8."
+  },
+  {
+    "id": "resource_module_vol2_mod9_summary",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "parentType": "module",
+    "parentId": "module_diagnostic_female_pattern_hormonal",
+    "title": "Module Summary: Female Pattern and Hormonal Hair Loss",
+    "resourceType": "pdf-summary",
+    "fileName": "volume-2-module-9-summary.pdf",
+    "fileUrl": "",
+    "version": "v1",
+    "access": "enrolled-only",
+    "description": "Condensed module summary: phenotypes, endocrine overlap, investigations, reproductive context, treatment framework, adjuncts and surgery caution, communication — from Volume 2 manual Module 9."
+  }
+]

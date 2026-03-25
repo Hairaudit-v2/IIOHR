@@ -1,0 +1,117 @@
+[
+  {
+    "id": "case_vol2_mod5_a",
+    "slug": "examination-pattern-and-red-flags-case",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "parentType": "module",
+    "parentId": "module_diagnostic_clinical_examination_hair_scalp",
+    "title": "Case Discussion: Pattern Recognition and Examination Discipline",
+    "status": "draft",
+    "clinicalScenario": "A 38-year-old woman reports progressive ponytail thinning over 18 months and widening of the central part. She has no scalp pain. On quick inspection she has heavy camouflage fibres and avoids bright light examination. She asks only for a hair transplant quote today.",
+    "discussionPrompts": [
+      "What do you inspect before accepting a patterned hair loss label, and how do hairstyle and camouflage bias your exam?",
+      "Which features on examination would move you toward inflammatory, cicatricial, or alternate diagnoses rather than uncomplicated FPHL?",
+      "How do you document baseline severity using narrative plus scales/photography per Volume 2 Module 5?"
+    ],
+    "moderatorNotes": "Faculty: emphasise standardised exam order, removal of camouflage where appropriate, symptom review, and that surgery discussion is premature without diagnosis and stability.",
+    "linkedCompetencies": ["doctors_vol2_comp_clinical_examination"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Rushing to surgical planning without full examination",
+      "Missing symptoms or signs of scarring or inflammatory disease",
+      "Failing to establish photographic baseline"
+    ]
+  },
+  {
+    "id": "case_vol2_mod6_a",
+    "slug": "trichoscopy-comparative-reasoning-case",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "parentType": "module",
+    "parentId": "module_diagnostic_trichoscopy_interpretation",
+    "title": "Case Discussion: Comparative Trichoscopy",
+    "status": "draft",
+    "clinicalScenario": "A 29-year-old man has early frontal thinning with preserved hairline shape. Trichoscopy of the frontal scalp shows increased diameter diversity; occipital scalp looks comparatively uniform. He also reports six weeks of increased daily shedding after viral illness.",
+    "discussionPrompts": [
+      "How do you integrate trichoscopic miniaturisation with a recent shedding trigger?",
+      "What additional trichoscopic zones would you compare and why?",
+      "When would you repeat examination or defer major procedural planning?"
+    ],
+    "moderatorNotes": "Faculty: use Module 6 comparative logic; mixed AGA plus TE is common—avoid binary thinking.",
+    "linkedCompetencies": ["doctors_vol2_comp_trichoscopy"],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Ignoring occipital control comparison",
+      "Attributing all shedding to AGA without time-course reasoning",
+      "Proceeding to surgery without stability assessment"
+    ]
+  },
+  {
+    "id": "case_vol2_mod7_a",
+    "slug": "investigation-and-biopsy-planning-case",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "parentType": "module",
+    "parentId": "module_diagnostic_laboratory_biopsy_logic",
+    "title": "Case Discussion: Phenotype-Led Workup",
+    "status": "draft",
+    "clinicalScenario": "A 33-year-old woman has diffuse shedding for 4 months, heavy menses, fatigue, and brittle nails. She is not pregnant. She requests ‘the full hair blood panel’ her friend had abroad. Examination shows no scarring clues; part line is mildly widened.",
+    "discussionPrompts": [
+      "Which first-line investigations are proportionate and why is ferritin interpreted in context?",
+      "What features would trigger broader endocrine or autoimmune testing?",
+      "If trichoscopy later suggests diffuse alopecia areata, how does your plan change?"
+    ],
+    "moderatorNotes": "Faculty: Module 7 phenotype-led workup; avoid reflexive panels; document shared rationale.",
+    "linkedCompetencies": ["doctors_vol2_comp_investigations_biopsy"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Ordering tests without clinical indication",
+      "Ignoring iron deficiency context in reproductive-age women",
+      "Missing alternate diagnoses when response to empiric care is poor"
+    ]
+  },
+  {
+    "id": "case_vol2_mod8_a",
+    "slug": "male-aga-treatment-ladder-case",
+    "moduleId": "module_diagnostic_male_aga",
+    "parentType": "module",
+    "parentId": "module_diagnostic_male_aga",
+    "title": "Case Discussion: Medical Ladder and Surgical Realism",
+    "status": "draft",
+    "clinicalScenario": "A 26-year-old man has rapid bitemporal and frontal miniaturisation over 12 months with strong family history of advanced patterns. He wants a dense hairline transplant this year and refuses any medical therapy. Donor appears reasonable on cursory look.",
+    "discussionPrompts": [
+      "How does Module 8 frame progression risk and long-view planning in young men?",
+      "What donor and pattern features must you assess before endorsing surgery?",
+      "How do you document informed refusal of maintenance medical options?"
+    ],
+    "moderatorNotes": "Faculty: failure analysis and surgical caution; medico-legal documentation of refusal and expectations.",
+    "linkedCompetencies": ["doctors_vol2_comp_male_aga"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Juvenile hairline goals without maintenance acceptance",
+      "Rapid progression without medical stabilisation discussion",
+      "Cursory donor assessment"
+    ]
+  },
+  {
+    "id": "case_vol2_mod9_a",
+    "slug": "female-pattern-reproductive-safety-case",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "parentType": "module",
+    "parentId": "module_diagnostic_female_pattern_hormonal",
+    "title": "Case Discussion: FPHL, Hyperandrogenism, and Reproductive Planning",
+    "status": "draft",
+    "clinicalScenario": "A 31-year-old woman has acne, irregular cycles, part widening, and central thinning. She is not pregnant but may try to conceive within two years. She asks for spironolactone and oral minoxidil today.",
+    "discussionPrompts": [
+      "What investigations are appropriate before therapy selection?",
+      "How do you counsel on anti-androgen teratogenicity and contraception reliability?",
+      "How do you set goals for stabilisation versus cosmetic density in a mixed endocrine phenotype?"
+    ],
+    "moderatorNotes": "Faculty: Module 9 reproductive safety; multidisciplinary referral when appropriate.",
+    "linkedCompetencies": ["doctors_vol2_comp_female_pattern"],
+    "evidenceTier": "consensus",
+    "redFlags": [
+      "Prescribing teratogenic therapy without reproductive planning",
+      "Ignoring PCOS/hyperandrogenism clues",
+      "Promising transplant without stabilising active diffuse loss"
+    ]
+  }
+]

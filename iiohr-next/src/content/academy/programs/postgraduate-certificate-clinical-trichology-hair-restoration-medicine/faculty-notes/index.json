@@ -43,5 +43,59 @@
     "note": "Source: Manual Module 4 (sections 4.1–4.9). Run live history drills: female diffuse thinning without skipping menstrual, fertility, thyroid, and hyperandrogenism screens. Red-flag review: pain, burning, pustulation, rapid patchy loss, eyebrow loss, systemic symptoms—escalate biopsy or specialist referral per local protocol. Assess documentation for uncertainty phrased supportively.",
     "visibility": "faculty-only",
     "reviewPurpose": "Module 4 moderation"
+  },
+  {
+    "id": "doctors_note_vol2_manual_source",
+    "parentType": "program",
+    "parentId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "title": "Volume 2 primary teaching text",
+    "note": "Doctor Volume 2 learner content is aligned to the academy manual Volume 2 — Diagnostic Trichology and Pattern Hair Loss Medicine (HLI | IIIOHR). Faculty moderation should verify comparative trichoscopy reasoning, phenotype-led investigation discipline, reproductive safety in female pattern medicine, and realistic surgical framing without overclaiming regenerative therapies.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 2 curriculum alignment"
+  },
+  {
+    "id": "doctors_note_vol2_mod5",
+    "parentType": "module",
+    "parentId": "module_diagnostic_clinical_examination_hair_scalp",
+    "title": "Module 5 — faculty delivery notes",
+    "note": "Source: Manual Module 5 (sections 5.1–5.5). Workshop: timed one-minute global inspection drill; then density versus calibre sorting using patient language. Photography: require a written eight-view checklist before accepting learner portfolios. Red-flag rapid-fire: ostia loss, pain, pustules, systemic symptoms.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 5 moderation"
+  },
+  {
+    "id": "doctors_note_vol2_mod6",
+    "parentType": "module",
+    "parentId": "module_diagnostic_trichoscopy_interpretation",
+    "title": "Module 6 — faculty delivery notes",
+    "note": "Source: Manual Module 6 (sections 6.1–6.7). Teach comparator-first discipline (affected vs occipital). Image atlas exercises for pattern loss, TE, AA, and scarring margins. Biopsy targeting: mark advancing margin on a clinical photo before learners choose site.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 6 moderation"
+  },
+  {
+    "id": "doctors_note_vol2_mod7",
+    "parentType": "module",
+    "parentId": "module_diagnostic_laboratory_biopsy_logic",
+    "title": "Module 7 — faculty delivery notes",
+    "note": "Source: Manual Module 7 (sections 7.1–7.7). Case-based panels: phenotype-led test selection vs reflex panels. Discuss ferritin and thyroid interpretation with real comorbid contexts. Pathology handoff: require a one-paragraph clinical letter template with differentials and trichoscopy summary.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 7 moderation"
+  },
+  {
+    "id": "doctors_note_vol2_mod8",
+    "parentType": "module",
+    "parentId": "module_diagnostic_male_aga",
+    "title": "Module 8 — faculty delivery notes",
+    "note": "Source: Manual Module 8 (sections 8.1–8.7). Role-play stabilisation counselling and refusal documentation. Surgical triage: donor miniaturisation, diffuse unpatterned thinning, and juvenile hairline demands. Regenerative framing: PRP heterogeneity; exosomes as emerging only.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 8 moderation"
+  },
+  {
+    "id": "doctors_note_vol2_mod9",
+    "parentType": "module",
+    "parentId": "module_diagnostic_female_pattern_hormonal",
+    "title": "Module 9 — faculty delivery notes",
+    "note": "Source: Manual Module 9 (sections 9.1–9.8). Drill hyperandrogenism screens without over-testing every FPHL patient. Reproductive safety: contraception reliability and teratogenic meds. Surgery caution in diffuse patterns; prioritise stabilisation and compassionate language for chronic disease.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 9 moderation"
   }
 ]

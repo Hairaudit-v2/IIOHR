@@ -1,0 +1,957 @@
+[
+  {
+    "id": "lesson_vol2_mod5_01",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "lessonNumber": 1,
+    "slug": "global-visual-inspection-and-pattern-recognition",
+    "title": "Global Visual Inspection and Pattern Recognition",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Use the first minute of consultation to extract pattern, camouflage behaviour, and distribution clues.",
+      "Contrast common male versus female pattern presentations at a glance."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The first minute of the consultation provides information that no dermatoscope can replace. Observe part-line width, frontal fringe retention, temporal recession, crown see-through, eyebrow loss, body hair changes, and whether the patient uses camouflage or styling to conceal specific zones.\n\nPattern recognition should be taught as a disciplined skill. Male patterned loss commonly affects frontotemporal angles, frontal forelock, mid-scalp, and crown, whereas female pattern loss more often presents with widening of the central part, reduced ponytail volume, and variable frontal accentuation. Diffuse thinning with preserved pattern should trigger consideration of telogen effluvium, diffuse alopecia areata, chronic illness, or medication-related loss.\n\nScalp symptoms matter. Pruritus, pain, burning, perifollicular scale, tenderness, pustulation, and bleeding are not typical primary features of uncomplicated androgenetic alopecia and may indicate inflammatory or cicatricial disease."
+    },
+    "keyTakeaways": [
+      "Global inspection precedes instrumentation; camouflage and styling can hide critical zones.",
+      "Pattern context differs by sex; diffuse phenotypes widen the differential.",
+      "Symptoms inconsistent with uncomplicated pattern loss deserve escalation thinking."
+    ],
+    "redFlags": [
+      "Treating visible pattern alone when symptoms suggest inflammatory or scarring disease.",
+      "Proceeding to procedural planning before pattern and tempo are characterised."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 5, section 5.1: global visual inspection and pattern recognition."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod5_01",
+        "title": "Clinical reasoning",
+        "prompt": "A patient reports ‘thinning everywhere’ but examination shows central part widening with frontal fringe relatively preserved. What pattern hypothesis do you start with and what history questions immediately refine the differential?",
+        "teachingPoint": "Start with female pattern phenotype as a working frame, then actively exclude telogen effluvium, diffuse alopecia areata, and inflammatory scalp disease using tempo, shedding description, symptoms, and targeted exam."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod5_02",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "lessonNumber": 2,
+    "slug": "density-calibre-and-part-line-assessment",
+    "title": "Density, Calibre, and Part-Line Assessment",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Separate true density loss from reduced shaft calibre as patient-reported ‘thinning’.",
+      "Use part-line width in standard partings as a longitudinal marker in women."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Density is not merely the number of visible hairs; it is the combined effect of follicular unit density, hairs per unit, calibre, hair colour contrast, curl, and shaft length. A patient with fine-calibre hair may appear ‘thin’ despite adequate follicle counts.\n\nCalibre variability is one of the most useful bedside clues to miniaturisation. Mixed terminal and miniaturised hairs in patterned zones support androgenetic alopecia, while uniform-calibre short broken hairs suggest fragility or breakage disorders.\n\nPart-line width should be observed in standard central, left, and right partings. In women, progressive central widening is a practical longitudinal marker of worsening patterned loss."
+    },
+    "keyTakeaways": [
+      "Miniaturisation and density loss both feel like thinning to patients but imply different mechanisms.",
+      "Calibre heterogeneity is a high-yield bedside sign in patterned zones.",
+      "Serial part-line documentation supports monitoring and counselling."
+    ],
+    "redFlags": [
+      "Assuming fine hair equals low follicle count without examination.",
+      "Ignoring breakage patterns that mimic density loss."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 5, section 5.2."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod5_02",
+        "title": "Clinical reasoning",
+        "prompt": "A woman describes severe thinning but you see many short broken hairs without club roots. What diagnostic category rises to the top and what changes your examination focus?",
+        "teachingPoint": "Prioritise shaft fragility and breakage disorders; shift toward traction, cosmetic damage, and inflammatory causes rather than pure miniaturisation-only reasoning."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod5_03",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "lessonNumber": 3,
+    "slug": "scalp-examination-and-inflammatory-clues",
+    "title": "Scalp Examination and Inflammatory Clues",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Systematically scan for erythema, scale types, ostia loss, tufting, pustulation, and atrophy.",
+      "Adjust interpretation for skin of colour where erythema may be subtle."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Examine erythema, perifollicular scale, greasy scale, adherent scale, loss of ostia, tufting, pustules, dyspigmentation, atrophy, and follicular hyperkeratosis. Loss of follicular openings and shiny atrophic skin should immediately raise concern for scarring alopecia.\n\nDo not let dandruff distract from pathology. Diffuse fine white scale may reflect xerosis, seborrhoeic dermatitis, psoriasis, contact dermatitis, or lichen planopilaris; the distribution and associated erythema matter.\n\nIn darker skin, erythema may be understated; clinicians must use texture changes, perifollicular keratosis, tenderness, and patient-reported burning to detect active inflammation."
+    },
+    "keyTakeaways": [
+      "Ostia loss and atrophy are scarring red flags until proven otherwise.",
+      "Scale type and distribution refine inflammatory differentials.",
+      "Pigment and texture cues matter when erythema is hard to see."
+    ],
+    "redFlags": [
+      "Dismissing symptoms because the scalp ‘looks fine’ at a glance.",
+      "Mislabelling all scale as benign dandruff without context."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 5, section 5.3."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod5_03",
+        "title": "Clinical reasoning",
+        "prompt": "A patient has burning with perifollicular scale but little visible erythema on dark skin. What is your working risk category and next step?",
+        "teachingPoint": "Treat as possible active inflammatory or cicatricial disease until examination, trichoscopy, and sometimes histology exclude it; document symptoms and morphology carefully."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod5_04",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "lessonNumber": 4,
+    "slug": "hair-pull-test-photography-and-grading",
+    "title": "Hair Pull Test, Shed versus Breakage, Photography, and Grading",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Interpret the hair pull test in context of region and history.",
+      "Apply a reproducible photography protocol and use staging scales as adjuncts to narrative."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "The hair pull test is a bedside assessment, not a standalone diagnosis. It is most informative when performed in multiple scalp regions and interpreted with history. A positive pull at the margins of an alopecia areata patch suggests activity; a diffuse positive pull may support telogen effluvium or diffuse immune-mediated shedding.\n\nPatients often confuse shed hair with broken hair. Shed telogen hairs typically show a depigmented club root; broken hairs lack a club and vary in shaft length. This distinction changes the entire differential.\n\nPhotography is a clinical instrument. Use fixed lighting, camera distance, hairstyle preparation, and reproducible views: frontal, frontal oblique, vertex, crown, lateral views, donor view, and part-line close-ups where relevant. Severity scales are useful when combined with clinical narrative. Norwood-Hamilton staging supports male pattern documentation; Ludwig, Sinclair, and Olsen descriptors support female documentation. Scales should not replace nuanced phenotype description. Pre-treatment photography is essential before medical, regenerative, or surgical intervention."
+    },
+    "keyTakeaways": [
+      "Pull test meaning is regional and historical—avoid overcalling or dismissing it.",
+      "Club roots versus broken shafts redirects the diagnostic path.",
+      "Standardised photos are clinical data, not marketing extras."
+    ],
+    "redFlags": [
+      "Using a pull test alone to label telogen effluvium without broader assessment.",
+      "Major intervention without baseline photography and documented severity."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 5, sections 5.4–5.5."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod5_04",
+        "title": "Clinical reasoning",
+        "prompt": "Diffuse positive pull test in a woman with widened part: what three parallel explanations would you hold before closing the diagnosis?",
+        "teachingPoint": "Telogen effluvium, diffuse alopecia areata, and patterned miniaturisation with superimposed shedding—integrate trichoscopy and labs as indicated."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": "quiz_vol2_mod5",
+    "casePromptIds": ["case_vol2_mod5_a"],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod6_01",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "lessonNumber": 1,
+    "slug": "trichoscopy-equipment-technique-and-normal-background",
+    "title": "Equipment, Technique, and Normal Trichoscopic Background",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Match magnification and dry versus wet technique to the clinical question.",
+      "Describe normal follicular units, pigment network, and ethnic/age-related variation."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Different magnifications answer different questions. Lower magnification assists global pattern and perifollicular mapping; higher magnification supports shaft and follicular detail. Dry trichoscopy is useful for scale and shaft disorders; interface fluid may help reduce light scatter and improve vascular and follicular detail.\n\nStandardisation matters. Examine frontal, mid-scalp, crown, occipital scalp, and any symptomatic zones. The occipital scalp is not merely a donor area; it is your internal control site in many pattern loss consultations.\n\nBefore learning disease, doctors must learn the normal range: follicular units containing one to four hairs, interfollicular pigment network, occasional empty follicles after natural cycling, and expected variation by scalp site and ethnicity. Normal findings vary with hair curl pattern, pigmentation, cosmetic treatments, and age. Overcalling pathology from normal heterogeneity is a common novice error."
+    },
+    "keyTakeaways": [
+      "Technique follows diagnostic intent; compare affected and control zones.",
+      "Occipital scalp is often the comparator, not only the donor harvest area.",
+      "Normal variation mimics disease when trichoscopy is rushed."
+    ],
+    "redFlags": [
+      "Single-site trichoscopy without comparator logic.",
+      "Declaring pathology from one magnified field alone."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 2 Module 6, sections 6.1–6.2."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod6_01",
+        "title": "Clinical reasoning",
+        "prompt": "Why might occipital comparison be more informative than frontal-only imaging in some women with pattern complaints?",
+        "teachingPoint": "Female pattern loss may show subtle midline change early; comparing with occipital units clarifies miniaturisation gradients and reduces false reassurance."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod6_02",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "lessonNumber": 2,
+    "slug": "pattern-hair-loss-under-trichoscopy",
+    "title": "Pattern Hair Loss under Trichoscopy",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Recognise diameter diversity, miniaturised hairs, and perifollicular signs associated with pattern loss.",
+      "Explain why trichoscopy can precede dramatic visible thinning."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Pattern hair loss is supported by increased hair shaft diameter diversity, a rising proportion of thin and vellus-like hairs in affected zones, reduced average hairs per follicular unit, and perifollicular brown discolouration or peripilar sign in some patients.\n\nIn women, frontal and midline comparison with occipital scalp is often more informative than searching for a single pathognomonic sign. In men, frontotemporal and frontal forelock zones usually show the most obvious heterogeneity early.\n\nTrichoscopy can detect patterned miniaturisation before gross alopecia is visually dramatic. This is one reason it is regarded as essential in current expert consensus for pattern hair loss assessment."
+    },
+    "keyTakeaways": [
+      "Diameter diversity and miniaturisation gradients are central pattern-loss signatures.",
+      "Women’s diagnoses often rest on comparative logic rather than one isolated sign.",
+      "Early disease may be trichoscopically obvious before the patient sees ‘baldness’."
+    ],
+    "redFlags": [
+      "Declaring AGA from trichoscopy alone when history suggests alternate diagnoses.",
+      "Ignoring mixed disease when shedding and pattern coexist."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 2 Module 6, section 6.3."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod6_02",
+        "title": "Clinical reasoning",
+        "prompt": "When would you still pursue labs or biopsy despite trichoscopic pattern-loss features?",
+        "teachingPoint": "When symptoms, atypical tempo, inflammatory clues, or diagnostic uncertainty remain—trichoscopy informs but does not replace integrated reasoning."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod6_03",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "lessonNumber": 3,
+    "slug": "telogen-effluvium-alopecia-areata-and-scarring-patterns",
+    "title": "Telogen Effluvium, Alopecia Areata, and Scarring Patterns",
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Contrast shedding and regrowth patterns with pattern-loss miniaturisation.",
+      "Recognise immune-mediated and cicatricial trichoscopic clues and link them to biopsy urgency."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Acute telogen effluvium often shows relative preservation of shaft diversity compared with androgenetic alopecia. Numerous short regrowing hairs may appear during recovery, but these do not necessarily indicate miniaturisation. When diffuse shedding coexists with pattern hair loss, the occipital control area and a careful history become particularly important. Mixed disorders are common and trichoscopy should be interpreted alongside time course and labs.\n\nYellow dots, black dots, broken hairs, exclamation mark hairs, tapered hairs, and regrowing upright hairs support alopecia areata when the clinical setting fits. No single sign should be read in isolation. Diffuse alopecia areata can mimic telogen effluvium or diffuse patterned loss.\n\nLoss of follicular openings, perifollicular scale or casts, perifollicular erythema, white structureless areas, tufting, and pustulation can indicate cicatricial alopecia or destructive folliculitis. The most informative biopsy site is usually the active advancing margin rather than the burned-out centre. Trichoscopy is not a substitute for histology in suspected scarring disease, but it is extremely valuable in directing where and when to biopsy."
+    },
+    "keyTakeaways": [
+      "Shedding disorders and pattern loss can coexist—interpret comparatively.",
+      "AA signs are contextual; diffuse AA is a mimic.",
+      "Cicatricial clues plus symptoms raise urgency; biopsy site targets activity."
+    ],
+    "redFlags": [
+      "Missing diffuse AA or early scarring because the patient labels it ‘stress shedding’.",
+      "Biopsying end-stage scar without active margin targeting."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 2 Module 6, sections 6.4–6.6."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod6_03",
+        "title": "Clinical reasoning",
+        "prompt": "Diffuse yellow dots with broken hairs: what diagnoses enter the differential and what single mistake should you avoid?",
+        "teachingPoint": "AA variants and some inflammatory conditions enter the differential; avoid anchoring on one sign without clinical correlation and pattern of loss."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod6_04",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "lessonNumber": 4,
+    "slug": "trichoscopy-reporting-and-longitudinal-follow-up",
+    "title": "Reporting Standards and Longitudinal Follow-Up",
+    "status": "draft",
+    "estimatedStudyMinutes": 40,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Produce concise reports that state sites, method, comparator logic, and management impact.",
+      "Plan repeat imaging at consistent sites for objective follow-up."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "A clinical report should state site examined, magnification method, comparison zones, and the key findings that changed or supported management. Avoid overlong descriptive dumps without interpretation.\n\nLongitudinal follow-up benefits from repeat imaging at the same sites. This supports a trichoscopic atlas approach within the academy and online platform."
+    },
+    "keyTakeaways": [
+      "Reports should answer: what did you see, where, compared with what, and so what?",
+      "Repeatability enables meaningful change detection over time."
+    ],
+    "redFlags": [
+      "Vague documentation that cannot support medico-legal or multidisciplinary review.",
+      "Changing sites arbitrarily between visits so change cannot be judged."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 6, section 6.7."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod6_04",
+        "title": "Clinical reasoning",
+        "prompt": "How would you document trichoscopy differently for a medico-legal chart versus an internal teaching case?",
+        "teachingPoint": "Clinical notes emphasise findings, uncertainty, comparator sites, and management decisions; teaching cases may add pedagogical structure while preserving patient confidentiality."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": "quiz_vol2_mod6",
+    "casePromptIds": ["case_vol2_mod6_a"],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod7_01",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "lessonNumber": 1,
+    "slug": "phenotype-led-investigation-principles",
+    "title": "Principles of a Phenotype-Led Workup",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Avoid reflexive panels and under-investigation extremes.",
+      "Match testing to diffuse shedding, endocrine clues, and inflammatory risk."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Not every patient with hair loss needs the same tests. Classic male patterned loss with a strong family history and no systemic symptoms can often be diagnosed clinically. By contrast, diffuse shedding, menstrual irregularity, hirsutism, acne, severe fatigue, major dietary restriction, or autoimmune features justify targeted laboratory assessment.\n\nA common error is to over-medicalise straightforward pattern hair loss in one patient and miss endocrine or inflammatory drivers in another. The physician must learn proportionate investigation."
+    },
+    "keyTakeaways": [
+      "Investigation follows phenotype and red flags, not habit.",
+      "Proportionality is a safety and stewardship skill."
+    ],
+    "redFlags": [
+      "Ordering every hair-loss panel for every patient.",
+      "Ignoring systemic, endocrine, or nutritional clues in diffuse presentations."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 7, section 7.1."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod7_01",
+        "title": "Clinical reasoning",
+        "prompt": "A young man has classic gradual vertex thinning, no symptoms, and strong family history. What is your default testing posture and why?",
+        "teachingPoint": "Clinical diagnosis may suffice initially; investigate if atypical features, rapid progression, or systemic clues appear—avoid reflexive overtesting."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod7_02",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "lessonNumber": 2,
+    "slug": "core-laboratory-markers-and-thyroid-iron-context",
+    "title": "Core Laboratory Markers: Thyroid, Iron, and Context",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Select core tests in diffuse shedding and female hair loss contexts.",
+      "Interpret ferritin and thyroid results with menstrual, inflammatory, and dietary context."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Common core tests in appropriate patients include full blood count, ferritin and iron studies, thyroid function, vitamin D where deficiency risk is present, B12/folate in selected contexts, and inflammatory markers when systemic disease is suspected.\n\nFerritin should not be interpreted in isolation from clinical context and the rest of the iron panel. Inflammation can distort ferritin; menstrual history and dietary adequacy matter.\n\nThyroid dysfunction can present with shedding, texture change, and eyebrow loss. Mild biochemical abnormalities require correlation with symptoms and general medical care."
+    },
+    "keyTakeaways": [
+      "Ferritin is context-dependent; inflammation elevates ferritin.",
+      "Thyroid dysfunction is a real-world shedding mimic and contributor.",
+      "Labs support history and examination—they rarely replace them."
+    ],
+    "redFlags": [
+      "Treating a number without addressing iron deficiency drivers or thyroid care.",
+      "Missing heavy menstrual losses or malabsorption contexts."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 7, section 7.2."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod7_02",
+        "title": "Clinical reasoning",
+        "prompt": "Ferritin is in the ‘normal’ laboratory range but history suggests iron-limited physiology. How do you proceed?",
+        "teachingPoint": "Integrate symptoms, menstrual losses, diet, ferritin trends, and full iron studies with general practice or haematology pathways as appropriate—avoid literal range worship."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod7_03",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "lessonNumber": 3,
+    "slug": "hyperandrogenism-and-broader-systems-review",
+    "title": "Hyperandrogenism and Broader Systems Review",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Choose endocrine tests when clinical clues justify them.",
+      "Keep syphilis, nutrition, medications, and autoimmune disease in real-world differentials."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Women with FPHL do not all need an androgen panel. Testing is most useful where there are signs of hyperandrogenism or endocrine disturbance: irregular cycles, infertility, severe acne, hirsutism, obesity with insulin resistance, or rapid severe onset.\n\nPossible investigations may include total/free testosterone or calculated equivalents, sex hormone binding globulin, DHEAS, prolactin, LH/FSH where relevant, and metabolic screening. These should be interpreted in the broader endocrine picture, not as isolated cosmetic values.\n\nAutoimmune screening may be appropriate in diffuse or patchy loss with a relevant history. Syphilis, nutritional deficiency, and medication-related loss remain part of real-world differentials. In men, systemic workup should also be guided by phenotype rather than reflexive overtesting.\n\nLaboratory workup is only as good as the accompanying history. Hair loss can be the visible endpoint of childbirth, surgery, severe illness, restrictive dieting, thyroid disease, inflammatory bowel disease, or chronic stress."
+    },
+    "keyTakeaways": [
+      "Trigger androgen testing with phenotypic clues, not by default.",
+      "Interpret hormones in clinical context, not as standalone cosmetic metrics.",
+      "Maintain broad differentials for diffuse or atypical presentations."
+    ],
+    "redFlags": [
+      "Missing PCOS or hyperandrogenism patterns in appropriate patients.",
+      "Anchoring on hair-only thinking without system review."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 7, sections 7.3–7.4."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod7_03",
+        "title": "Clinical reasoning",
+        "prompt": "When would you involve gynaecology or endocrinology in a hair-loss consultation?",
+        "teachingPoint": "When cycles, fertility, virilisation, marked metabolic risk, or complex endocrine diagnoses exceed primary-care management—document clear referral questions."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod7_04",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "lessonNumber": 4,
+    "slug": "biopsy-indications-site-selection-and-histology-correlation",
+    "title": "Biopsy Indications, Site Selection, and Histology Correlation",
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "State indications for biopsy in hair loss beyond straightforward pattern disease.",
+      "Choose active margins, communicate with pathology, and integrate horizontal versus vertical section strengths."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Biopsy becomes important when there is diagnostic uncertainty, concern for cicatricial alopecia, overlap inflammatory disease, disproportionate symptoms, atypical diffuse loss, or failure of a reasonable empiric plan.\n\nPattern hair loss alone does not usually need biopsy when clinicotrichoscopic evidence is strong. However, biopsy can be helpful in women with mixed presentations, suspected diffuse alopecia areata, or possible scarring disease masquerading as pattern loss.\n\nA poor biopsy can waste the opportunity for diagnosis. The ideal site is active but not fully destroyed: an advancing symptomatic margin with perifollicular change rather than a slick end-stage scar centre.\n\nClinical information should accompany the specimen: time course, symptoms, differential diagnosis, trichoscopic findings, treatment already used, and whether horizontal or vertical sections are preferred locally. Clinicopathological dialogue increases diagnostic yield.\n\nHorizontal sections are particularly valuable in quantitative assessment of follicle number, miniaturisation, and terminal-to-vellus relationships. Vertical sections can be useful for interface change, perifollicular inflammation, and deeper anatomic relationships. Local pathology expertise and protocol matter.\n\nHistology does not exist in a vacuum. A good physician does not ask, 'What did the biopsy say?' but 'How do the biopsy, symptoms, scalp signs, and trichoscopy fit together?'"
+    },
+    "keyTakeaways": [
+      "Biopsy is for uncertainty, atypical course, and scarring concern—not routine pattern labels.",
+      "Site selection often determines diagnostic success.",
+      "Clinical information to pathology is part of the test."
+    ],
+    "redFlags": [
+      "Biopsying the centre of an end-stage scar expecting diagnostic yield.",
+      "Receiving a report without reconciling it to the patient in front of you."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 2 Module 7, sections 7.5–7.7."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod7_04",
+        "title": "Clinical reasoning",
+        "prompt": "When horizontal sections help most versus when vertical sections add value?",
+        "teachingPoint": "Horizontal sections excel at counts and miniaturisation ratios; vertical sections help interface and deeper inflammatory anatomy—coordinate with local pathologists."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": "quiz_vol2_mod7",
+    "casePromptIds": ["case_vol2_mod7_a"],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod8_01",
+    "moduleId": "module_diagnostic_male_aga",
+    "lessonNumber": 1,
+    "slug": "male-aga-epidemiology-genetics-and-phenotype",
+    "title": "Epidemiology, Genetics, and Clinical Phenotype",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Explain variable age-linked expression despite family history.",
+      "Describe staging beyond Norwood labels using donor, calibre, and pattern narrative."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Male AGA is a genetically influenced androgen-dependent miniaturisation process. Susceptible follicles do not all miniaturise at the same age; this helps explain why a man may have a strong family history yet maintain density until a biologically programmed period of activation.\n\nThe physician should explain to patients that genes create susceptibility, while the timing and tempo of expression vary. This helps move the conversation away from simplistic blame narratives around shampoo, hats, or short-term stressors.\n\nFrontotemporal recession, frontal forelock thinning, mid-scalp see-through, and crown involvement develop in different sequences across patients. Norwood-Hamilton staging is useful, but the clinician must also describe quality of donor, calibre, hair colour contrast, and whether diffuse patterned thinning is present.\n\nYoung patients with aggressive bitemporal change and diffuse frontal miniaturisation require long-view planning rather than reactive hairline restoration alone."
+    },
+    "keyTakeaways": [
+      "Family history informs risk, not timing certainty.",
+      "Staging labels supplement but do not replace donor and progression narrative.",
+      "Aggressive early patterns require conservative surgical thinking."
+    ],
+    "redFlags": [
+      "Promising hairlines to young patients without discussing future pattern evolution.",
+      "Ignoring diffuse or donor-zone miniaturisation that challenges candidacy."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 8, sections 8.1–8.2."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod8_01",
+        "title": "Clinical reasoning",
+        "prompt": "How would you explain to a patient why two brothers with the same genes can thin at different ages?",
+        "teachingPoint": "Susceptibility is inherited; tempo and pattern expression vary with biology and environment—set expectations for monitoring, not certainty of timing."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod8_02",
+    "moduleId": "module_diagnostic_male_aga",
+    "lessonNumber": 2,
+    "slug": "male-aga-trichoscopy-and-differential-diagnosis",
+    "title": "Trichoscopy and Differential Diagnosis",
+    "status": "draft",
+    "estimatedStudyMinutes": 45,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Recognise trichoscopic features supporting male AGA and coexistence of inflammatory or shedding disorders.",
+      "Treat scalp symptoms as modifiers of adherence and comfort even when AGA is primary."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Trichoscopy typically shows anisotrichosis, a higher proportion of fine/vellus-like hairs, reduced hairs per unit, and patterned predominance in frontal/crown zones. Diffuse telogen effluvium, alopecia areata incognita, seborrhoeic dermatitis, or early cicatricial disease may coexist and alter presentation.\n\nScalp symptoms should not be dismissed. Seborrhoeic or inflammatory disease can worsen comfort, adherence, and perceived shedding even when AGA remains the primary diagnosis."
+    },
+    "keyTakeaways": [
+      "Overlap is common; one diagnosis does not exclude another.",
+      "Symptomatic scalps need dermatologic attention alongside AGA planning."
+    ],
+    "redFlags": [
+      "Ignoring symptoms because trichoscopy ‘shows AGA’.",
+      "Missing a second active process that changes prognosis or surgery timing."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 2 Module 8, section 8.3."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod8_02",
+        "title": "Clinical reasoning",
+        "prompt": "A man with classic miniaturisation reports flares of itching and greasy scale. What is your parallel management principle?",
+        "teachingPoint": "Treat seborrhoeic or inflammatory scalp disease to improve adherence and comfort while maintaining long-term AGA therapy planning."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod8_03",
+    "moduleId": "module_diagnostic_male_aga",
+    "lessonNumber": 3,
+    "slug": "medical-treatment-ladder-in-male-aga",
+    "title": "Medical Treatment Ladder in Male AGA",
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Discuss topical and oral minoxidil, finasteride, dutasteride where appropriate, and combination rationale.",
+      "Frame stabilisation versus regrowth timelines honestly."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Topical minoxidil remains a long-established option. Low-dose oral minoxidil has become an increasingly discussed alternative or adjunct, particularly where topical adherence or tolerance is poor, although clinicians must weigh cardiovascular history, side effects, and patient suitability.\n\nFinasteride remains a central DHT-lowering treatment in male AGA; dutasteride may be used selectively in more resistant or advanced disease. Treatment discussions must include realistic timelines, stabilisation versus regrowth, and the importance of maintenance.\n\nCombination therapy often outperforms monotherapy in real-world practice because AGA is not a single-pathway disease. Calibre support, DHT reduction, scalp control, and treatment adherence all matter."
+    },
+    "keyTakeaways": [
+      "Medical therapy is long-term; benefits accrue over months.",
+      "Combination approaches address multiple drivers of miniaturisation.",
+      "Oral minoxidil and dutasteride require patient-specific safety counselling."
+    ],
+    "redFlags": [
+      "Guaranteeing density outcomes from any medical regimen.",
+      "Switching therapies repeatedly without adherence or adequate trial duration."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 8, section 8.4; align to local prescribing governance."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod8_03",
+        "title": "Clinical reasoning",
+        "prompt": "A patient wants to stop finasteride after eight weeks citing no visible regrowth. How do you counsel using stabilisation framing?",
+        "teachingPoint": "Explain that early goals may be reduced progression; visible regrowth is variable; premature discontinuation loses both stabilisation and potential regrowth—document shared expectations."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod8_04",
+    "moduleId": "module_diagnostic_male_aga",
+    "lessonNumber": 4,
+    "slug": "regenerative-adjuncts-surgical-candidacy-and-long-term-planning",
+    "title": "Regenerative Adjuncts, Surgical Candidacy, and Long-Term Planning",
+    "status": "draft",
+    "estimatedStudyMinutes": 60,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Position PRP and microneedling as adjuncts with variable evidence; frame exosomes cautiously.",
+      "Assess transplant candidacy using age, progression, donor biology, expectations, and maintenance acceptance."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "PRP has the strongest current clinical footing among regenerative adjuncts in routine practice, though preparation systems and treatment intervals vary. It is best framed as adjunctive rather than a substitute for core medical therapy in most men with established AGA.\n\nMicroneedling may be used to enhance topical delivery and stimulate local wound-healing pathways. Exosome-based therapies remain promising but less standardised and should be positioned carefully as emerging rather than established mainstream care.\n\nA good transplant candidate is not simply someone who wants more hair. The physician must assess age, progression rate, donor density and miniaturisation, family trajectory, expectations, medical willingness, and whether crown demand will later compete with frontal reconstruction.\n\nDiffuse unpatterned thinning, unstable donor, unrealistic juvenile hairline goals, and refusal of long-term maintenance are major caution points. Surgery without disease planning can create lifelong repair problems.\n\nHairline design should respect age, facial proportions, ethnicity, and likely future loss. Crowns consume grafts rapidly and should be approached with realism, especially in younger men with progressive disease.\n\nWhen treatment seems to fail, ask: Was the diagnosis incomplete? Was shedding mistaken for progression? Was adherence poor? Was donor misread? Did the patient expect regrowth from a stabilising therapy? Failure analysis is a core physician skill."
+    },
+    "keyTakeaways": [
+      "Regenerative tools vary by protocol; avoid universal claims.",
+      "Surgery demands donor stability, realistic design, and maintenance buy-in.",
+      "Structured failure analysis prevents repeated clinical errors."
+    ],
+    "redFlags": [
+      "Operating on unstable or diffuse unpatterned thinning without safeguards.",
+      "Offering exosomes as proven replacement for core medical therapy."
+    ],
+    "evidenceTier": {
+      "overall": "B",
+      "summaryNote": "Volume 2 Module 8, sections 8.5–8.7; regenerative evidence tiers per academy framing."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod8_04",
+        "title": "Clinical reasoning",
+        "prompt": "List three questions that distinguish surgical demand from medical stability readiness.",
+        "teachingPoint": "Progression rate, donor miniaturisation, and willingness to maintain non-surgical therapy are core gates before irreversible surgery."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": "quiz_vol2_mod8",
+    "casePromptIds": ["case_vol2_mod8_a"],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod9_01",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "lessonNumber": 1,
+    "slug": "female-pattern-phenotypes-and-classification",
+    "title": "Female Pattern Phenotypes and Classification",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "core-lesson",
+    "learningObjectives": [
+      "Describe variable FPHL presentations beyond a single visual stereotype.",
+      "Use Ludwig/Sinclair/Olsen descriptors as adjuncts to narrative, not replacements."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Female pattern hair loss is not one visual stereotype. Central part widening, diffuse crown attenuation, reduced overall density, frontal accentuation, preserved frontal fringe, and bitemporal recession may all occur. Ludwig, Sinclair, and Olsen descriptors are useful but should accompany a descriptive clinical narrative.\n\nMany women present later than men because the early change is loss of volume, not overt baldness. Ponytail reduction, scalp visibility in bright light, and difficulty styling are diagnostically meaningful complaints."
+    },
+    "keyTakeaways": [
+      "FPHL phenotypes vary; listen for volume and styling complaints.",
+      "Classification aids communication but cannot replace good description."
+    ],
+    "redFlags": [
+      "Dismissing distress because hairline looks preserved.",
+      "Forcing a single grading label without clinical nuance."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 9, section 9.1."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod9_01",
+        "title": "Clinical reasoning",
+        "prompt": "A woman denies ‘balding’ but shows progressive central widening on examination. How do you align her narrative with your findings?",
+        "teachingPoint": "Use her language—volume, ponytail, styling—then mirror objective findings with photography and part-line documentation."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod9_02",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "lessonNumber": 2,
+    "slug": "hyperandrogenism-pcos-and-endocrine-overlap",
+    "title": "Hyperandrogenism, PCOS, and Endocrine Overlap",
+    "status": "draft",
+    "estimatedStudyMinutes": 50,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Identify clinical clues that should trigger targeted endocrine assessment.",
+      "Explain that scalp can be the dominant androgen-sensitive site in some women."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Not all female patterned loss is hyperandrogenic, but a subset of patients show endocrine clues that require broader medical reasoning. Acne, hirsutism, irregular cycles, infertility, weight gain, insulin resistance, or rapid progression increase suspicion for androgen excess or PCOS-related mechanisms.\n\nIn some women, the scalp is the most visible androgen-sensitive site. In others, patterned loss occurs despite normal routine androgens, reminding the clinician that follicular sensitivity matters as much as circulating hormone values."
+    },
+    "keyTakeaways": [
+      "Hyperandrogenic screens follow phenotypic triggers.",
+      "Normal androgens do not eliminate hormonally responsive hair follicle biology."
+    ],
+    "redFlags": [
+      "Ignoring menstrual and metabolic clues in young women with pattern loss.",
+      "Presuming PCOS from hair loss alone without a broader picture."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 9, section 9.2."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod9_02",
+        "title": "Clinical reasoning",
+        "prompt": "When would you delay cosmetic hair procedures pending endocrine assessment?",
+        "teachingPoint": "When rapid progression, virilisation, or marked reproductive/metabolic symptoms suggest uncontrolled endocrine disease—coordinate care before irreversible steps."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod9_03",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "lessonNumber": 3,
+    "slug": "thyroid-nutrition-shedding-and-life-stage-context",
+    "title": "Thyroid, Nutrition, Shedding Overlap, and Life-Stage Context",
+    "status": "draft",
+    "estimatedStudyMinutes": 55,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Integrate iron, thyroid, postpartum, and menopausal contributors with patterned loss.",
+      "Use precise language for physiological shedding versus chronic miniaturisation."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Women commonly present with mixed patterns: baseline FPHL plus telogen effluvium triggered by low iron availability, thyroid dysfunction, postpartum change, stress, restrictive dieting, or systemic illness. Treating only one driver will underperform.\n\nThe history should actively include menses, contraception, pregnancies, dietary restriction, bariatric history, weight change, and chronic inflammatory disease.\n\nPostpartum shedding is common and usually self-limited, but it may unmask underlying patterned loss. Perimenopause and menopause may alter shaft quality, calibre, sebum, and androgen-oestrogen balance, contributing to visible thinning.\n\nThese phases are emotionally loaded. Clinical language must distinguish physiological shedding, chronic patterned miniaturisation, and reversible contributing factors."
+    },
+    "keyTakeaways": [
+      "Mixed aetiology is common in women—address contributors, not only labels.",
+      "Life-stage context changes both biology and counselling needs.",
+      "Clear language reduces shame and aligns expectations."
+    ],
+    "redFlags": [
+      "Treating FPHL monotherapy while ignoring remediable shedding drivers.",
+      "Minimising psychological impact during postpartum or menopausal transitions."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 9, sections 9.3–9.4."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod9_03",
+        "title": "Clinical reasoning",
+        "prompt": "Postpartum shedding improves but density never returns to baseline—what should you revisit?",
+        "teachingPoint": "Reassess for unmasked FPHL, ongoing iron or thyroid issues, and alternate diagnoses rather than assuming isolated self-limited telogen effluvium."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": null,
+    "casePromptIds": [],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  },
+  {
+    "id": "lesson_vol2_mod9_04",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "lessonNumber": 4,
+    "slug": "treatment-framework-regenerative-surgery-and-communication",
+    "title": "Treatment Framework, Regenerative and Surgical Caution, Communication",
+    "status": "draft",
+    "estimatedStudyMinutes": 60,
+    "lessonType": "clinical-application",
+    "learningObjectives": [
+      "Build topical and oral minoxidil, anti-androgen, and monitoring plans with reproductive safety.",
+      "Position PRP, exosomes, and surgery cautiously in women with diffuse patterns."
+    ],
+    "body": {
+      "format": "richText",
+      "content": "Trichoscopy assists distinction between FPHL, chronic telogen effluvium, diffuse alopecia areata, and inflammatory scalp disease. Occipital comparison, shaft diversity, reduced hairs per unit, and miniaturised frontal-zone hairs are particularly useful.\n\nBiopsy is not routine in straightforward FPHL but becomes valuable in diagnostically mixed cases or when inflammatory disease is suspected.\n\nTopical minoxidil remains foundational. Low-dose oral minoxidil has become an important option in selected women when topical treatment is poorly tolerated or insufficient, but adverse effects such as hypertrichosis, oedema, and cardiovascular considerations require counselling and monitoring.\n\nAnti-androgen therapy may be considered in suitable women, particularly where hyperandrogenic features exist. Reproductive potential, contraceptive reliability, and teratogenic risk are central to prescribing decisions.\n\nTreatment plans should define the goal clearly: stabilisation, calibre support, reduced shedding, improved coverage, or pre-surgical optimisation. Ambiguous goals lead to perceived treatment failure.\n\nPRP can be a useful adjunct in female patterned loss, especially where the aim is calibre support and density optimisation rather than replacement of absent follicles. Exosomes remain investigational/emerging in standard clinical practice.\n\nSurgery in women requires careful recipient and donor evaluation. Women with diffuse unpatterned thinning, active inflammatory disease, or unstable generalised miniaturisation may be poor candidates despite severe distress. Long Hair FUE or zone-shave strategies may improve acceptability in selected patients.\n\nHair loss in women often carries a disproportionate burden of shame, concealment, and social anxiety. Doctors should not mistake a calm presentation for low impact. Many women have already normalised distress for years before seeking medical help.\n\nBecause female hair loss is frequently chronic and multifactorial, the physician should frame management as longitudinal optimisation rather than one-off rescue."
+    },
+    "keyTakeaways": [
+      "Define goals explicitly; chronic disease needs chronic partnership.",
+      "Reproductive safety is non-negotiable for teratogenic therapies.",
+      "Surgery in women demands caution with diffuse patterns and activity."
+    ],
+    "redFlags": [
+      "Prescribing anti-androgens without rigorous contraception planning where required.",
+      "Offering surgery for unstable diffuse loss without medical stabilisation."
+    ],
+    "evidenceTier": {
+      "overall": "consensus",
+      "summaryNote": "Volume 2 Module 9, sections 9.5–9.8; align prescribing to local governance."
+    },
+    "clinicalReasoningBoxes": [
+      {
+        "id": "reasoning_lesson_vol2_mod9_04",
+        "title": "Clinical reasoning",
+        "prompt": "A woman requests transplant for diffuse thinning. What gates must pass before referral?",
+        "teachingPoint": "Confirm diagnosis, stabilise active shedding or inflammatory disease, assess donor and pattern, align expectations, and ensure medical optimisation first—many women are better served by medical and adjunctive plans."
+      }
+    ],
+    "downloadableResourceIds": [],
+    "quizId": "quiz_vol2_mod9",
+    "casePromptIds": ["case_vol2_mod9_a"],
+    "referenceIds": [],
+    "displayFlags": {
+      "showEvidencePanel": true,
+      "showRedFlagsPanel": true,
+      "showClinicalReasoning": true
+    }
+  }
+]

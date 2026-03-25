@@ -78,5 +78,105 @@
       }
     ],
     "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol2_comp_clinical_examination",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-2-clinical-examination-hair-scalp",
+    "title": "Clinical examination of hair and scalp",
+    "domain": "clinical-literacy",
+    "description": "Perform a reproducible examination: global pattern recognition, density versus calibre, scalp inflammatory and scarring clues, pull test and shed versus breakage logic, and standardised photography and grading aligned to Volume 2 — Diagnostic Trichology and Pattern Hair Loss Medicine.",
+    "sequence": 5,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol2_m5_assessment",
+        "description": "Pass the Module 5 knowledge check on examination, photography, and red-flag reasoning",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol2_comp_trichoscopy",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-2-trichoscopy-interpretation",
+    "title": "Trichoscopy: technique, patterns, and biopsy targeting",
+    "domain": "clinical-literacy",
+    "description": "Use dry and wet trichoscopy with comparator logic; recognise pattern hair loss features, shedding and immune-mediated patterns, and scarring clues; report findings clearly; and select informative biopsy margins when histology is indicated, per Volume 2.",
+    "sequence": 6,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol2_m6_assessment",
+        "description": "Pass the Module 6 trichoscopy knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol2_comp_investigations_biopsy",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-2-investigations-biopsy-logic",
+    "title": "Laboratory investigations and biopsy logic",
+    "domain": "clinical-literacy",
+    "description": "Apply phenotype-led investigation; interpret core laboratories in context; target endocrine workup when clinically indicated; decide when biopsy is required; select site and communicate effectively with pathology; integrate histology with trichoscopy and history, per Volume 2.",
+    "sequence": 7,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol2_m7_assessment",
+        "description": "Pass the Module 7 investigations and biopsy case-reasoning assessment",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol2_comp_male_aga",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-2-male-androgenetic-alopecia",
+    "title": "Male androgenetic alopecia: medical ladder and surgical planning",
+    "domain": "clinical-literacy",
+    "description": "Diagnose and stage male AGA; recognise overlap disorders; construct evidence-based medical and adjunctive plans with honest stabilisation versus regrowth framing; assess surgical candidacy, donor risk, and long-term hairline realism, per Volume 2.",
+    "sequence": 8,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol2_m8_assessment",
+        "description": "Pass the Module 8 male AGA knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol2_comp_female_pattern",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-2-female-pattern-hormonal-hair-loss",
+    "title": "Female pattern and hormonal hair loss",
+    "domain": "clinical-literacy",
+    "description": "Recognise FPHL phenotypes and overlap with shedding and endocrine disease; investigate proportionately; build reproductive-safe treatment strategies; position adjunctive and surgical options cautiously; and communicate for chronic longitudinal care, per Volume 2.",
+    "sequence": 9,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol2_m9_assessment",
+        "description": "Pass the Module 9 female pattern hair loss knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
   }
 ]

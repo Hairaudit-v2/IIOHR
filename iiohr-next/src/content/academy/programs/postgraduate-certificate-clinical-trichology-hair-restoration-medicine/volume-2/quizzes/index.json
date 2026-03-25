@@ -1,0 +1,197 @@
+[
+  {
+    "id": "quiz_vol2_mod5",
+    "slug": "clinical-examination-knowledge-check",
+    "moduleId": "module_diagnostic_clinical_examination_hair_scalp",
+    "parentType": "module",
+    "parentId": "module_diagnostic_clinical_examination_hair_scalp",
+    "title": "Module Knowledge Check: Clinical Examination of Hair and Scalp",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol2_mod5_item_01",
+        "type": "mcq",
+        "stem": "According to Volume 2 Module 5, which bedside clue most strongly supports miniaturisation rather than pure telogen shedding?",
+        "options": [
+          { "id": "a", "label": "Marked calibre variability and mixed terminal and miniaturised hairs in patterned zones" },
+          { "id": "b", "label": "Uniform-calibre short broken hairs without club roots" },
+          { "id": "c", "label": "Shed telogen hairs with depigmented club roots only" }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "The manual emphasises calibre variability as a key clue to miniaturisation; uniform short broken hairs suggest breakage; club roots typify shed telogen hairs.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol2_mod5_item_02",
+        "type": "short-answer",
+        "stem": "Outline a standard photography documentation approach for patterned hair loss and name two clinical features that should trigger escalation beyond reassurance-only pattern loss management.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Photography: fixed lighting and distance, reproducible views (e.g. frontal, frontal oblique, vertex, crown, lateral, donor, part-line close-ups as relevant), consistent hair preparation. Escalation examples: loss of follicular ostia or scarring clues; scalp pain, pustulation, or marked inflammatory signs; rapid progression without plausible trigger; systemic symptoms with diffuse shedding; patchy eyebrow or body hair loss."
+        },
+        "rationale": "Aligned to Volume 2 Module 5 sections on photography/grading and red flags.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol2_mod6",
+    "slug": "trichoscopy-knowledge-check",
+    "moduleId": "module_diagnostic_trichoscopy_interpretation",
+    "parentType": "module",
+    "parentId": "module_diagnostic_trichoscopy_interpretation",
+    "title": "Module Knowledge Check: Trichoscopy",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol2_mod6_item_01",
+        "type": "mcq",
+        "stem": "Which trichoscopic theme best supports a diagnosis of pattern hair loss in affected zones compared with a suitable control area?",
+        "options": [
+          { "id": "a", "label": "Increased shaft diameter diversity and a higher proportion of thin or vellus-like hairs with reduced hairs per follicular unit" },
+          { "id": "b", "label": "Preservation of shaft diversity with no miniaturisation gradient between frontal and occipital scalp in all cases" },
+          { "id": "c", "label": "Yellow dots as the only finding, with no clinical correlation required" }
+        ],
+        "correctAnswer": { "optionIds": ["a"] },
+        "rationale": "Volume 2 describes diameter diversity, miniaturised hairs, and reduced hairs per unit as supportive of pattern loss; interpretation is comparative and contextual.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol2_mod6_item_02",
+        "type": "short-answer",
+        "stem": "Explain why trichoscopy is valuable for biopsy site selection in suspected scarring alopecia and what types of findings would increase urgency for histology.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Trichoscopy maps active disease and structural loss (e.g. loss of ostia, white scar-like areas, tufting, casts, pustulation) and helps target an active advancing margin rather than end-stage scar. Findings suggesting cicatricial or destructive folliculitis increase urgency because delay can mean irreversible loss."
+        },
+        "rationale": "Module 6 biopsy-targeting and scarring sections.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol2_mod7",
+    "slug": "investigations-biopsy-knowledge-check",
+    "moduleId": "module_diagnostic_laboratory_biopsy_logic",
+    "parentType": "module",
+    "parentId": "module_diagnostic_laboratory_biopsy_logic",
+    "title": "Module Knowledge Check: Investigations and Biopsy Logic",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol2_mod7_item_01",
+        "type": "mcq",
+        "stem": "When is broad androgen testing most justified in a woman with patterned hair loss according to the manual’s phenotype-led approach?",
+        "options": [
+          { "id": "a", "label": "In every woman with central part widening regardless of history or examination" },
+          { "id": "b", "label": "When there are hyperandrogenic or endocrine clues such as irregular cycles, hirsutism, severe acne, rapid severe onset, or infertility context" },
+          { "id": "c", "label": "Only after hair transplant has been completed" }
+        ],
+        "correctAnswer": { "optionIds": ["b"] },
+        "rationale": "Module 7 stresses targeted testing when clinical clues exist; not all FPHL requires androgen panels.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol2_mod7_item_02",
+        "type": "case-reasoning",
+        "stem": "A patient has diagnostic uncertainty, symptoms suggesting possible cicatricial disease, and trichoscopic loss of ostia at the margin of a patch. Outline your biopsy decision, preferred site philosophy, and what clinical information you send to pathology.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Biopsy is indicated due to diagnostic uncertainty and scarring concern. Site: active symptomatic margin with trichoscopic activity rather than burnt-out centre. Accompanying information: time course, symptoms, differentials, trichoscopic summary, prior treatments, and whether horizontal/vertical sections are preferred locally—invite clinicopathological correlation."
+        },
+        "rationale": "Module 7 biopsy indications and communication.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol2_mod8",
+    "slug": "male-aga-knowledge-check",
+    "moduleId": "module_diagnostic_male_aga",
+    "parentType": "module",
+    "parentId": "module_diagnostic_male_aga",
+    "title": "Module Knowledge Check: Androgenetic Alopecia in Males",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol2_mod8_item_01",
+        "type": "mcq",
+        "stem": "Which scenario most strongly challenges uncomplicated male AGA surgical candidacy?",
+        "options": [
+          { "id": "a", "label": "Stable Norwood pattern with preserved donor characteristics and aligned expectations" },
+          { "id": "b", "label": "Diffuse thinning extending into the traditionally safer donor zone or unstable donor miniaturisation" },
+          { "id": "c", "label": "Mild frontal recession with strong family history" }
+        ],
+        "correctAnswer": { "optionIds": ["b"] },
+        "rationale": "Module 8 highlights donor-zone involvement and instability as major caution points for surgery.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol2_mod8_item_02",
+        "type": "short-answer",
+        "stem": "Describe how you would counsel a man on stabilisation versus regrowth expectations when discussing finasteride and minoxidil (topical or oral where appropriate), without guaranteeing outcomes.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Explain AGA as chronic miniaturisation needing long-term maintenance; finasteride targets DHT pathway in appropriate candidates; minoxidil supports growth calibre in responders; timelines are months; goals may be stabilisation, partial regrowth, or reduced progression—document shared decision-making, side-effect discussion, and that surgery is not a substitute for medical planning."
+        },
+        "rationale": "Module 8 medical ladder and counselling themes.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol2_mod9",
+    "slug": "female-pattern-hair-loss-knowledge-check",
+    "moduleId": "module_diagnostic_female_pattern_hormonal",
+    "parentType": "module",
+    "parentId": "module_diagnostic_female_pattern_hormonal",
+    "title": "Module Knowledge Check: Female Pattern and Hormonal Hair Loss",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol2_mod9_item_01",
+        "type": "mcq",
+        "stem": "Which statement best reflects the manual’s teaching on female pattern hair loss and serum androgens?",
+        "options": [
+          { "id": "a", "label": "Normal androgens exclude hormonally responsive follicular miniaturisation" },
+          { "id": "b", "label": "Follicular sensitivity and phenotype can matter even when routine androgen measures are not elevated" },
+          { "id": "c", "label": "Hyperandrogenism is present in all cases of FPHL" }
+        ],
+        "correctAnswer": { "optionIds": ["b"] },
+        "rationale": "Module 9 stresses that normal serum androgens do not exclude responsive miniaturisation; not all FPHL is hyperandrogenic.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol2_mod9_item_02",
+        "type": "short-answer",
+        "stem": "Outline how you differentiate chronic telogen effluvium from female pattern hair loss in practice, naming at least two history elements and two examination/trichoscopy themes.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "History: time course, triggers, postpartum, thyroid/iron/nutrition, medication, systemic symptoms, androgenic symptoms. Examination/trichoscopy: occipital comparison, pattern of miniaturisation and shaft diameter diversity in FPHL versus relative diversity preservation in acute TE (with caveats for mixed disease); part-line change; exclude inflammatory/scarring clues. Often requires integrated assessment rather than a single sign."
+        },
+        "rationale": "Module 9 overlap and trichoscopy sections.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  }
+]
