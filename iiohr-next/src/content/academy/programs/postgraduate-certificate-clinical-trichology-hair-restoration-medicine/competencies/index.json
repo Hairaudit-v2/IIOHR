@@ -319,4 +319,245 @@
     ],
     "mustBeFacultyVerified": false
   }
+,
+  {
+    "id": "doctors_vol4_comp_medical_management",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-4-medical-management-of-hair-loss",
+    "title": "Medical management of hair loss",
+    "domain": "clinical-literacy",
+    "description": "Select and sequence medical therapies by disease activity and treatment goal; apply topical and oral minoxidil with expectation-setting and safety monitoring; use DHT inhibition appropriately; frame anti-androgen strategies in women with reproductive caution; and perform disciplined monitoring and failure analysis, per Volume 4.",
+    "sequence": 17,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol4_m17_assessment",
+        "description": "Pass the Module 17 medical management knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol4_comp_nutritional_lifestyle_support",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-4-nutritional-lifestyle-and-systemic-support",
+    "title": "Nutritional, lifestyle, and systemic support",
+    "domain": "clinical-literacy",
+    "description": "Apply the systemic lens to identify correctable internal drivers; interpret iron and ferritin in clinical context; prioritise proven deficiencies and nutritional adequacy over indiscriminate supplement marketing; translate stress and sleep into mechanism-aware counselling; and strengthen adherence with longitudinal behavioural support, per Volume 4.",
+    "sequence": 18,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol4_m18_assessment",
+        "description": "Pass the Module 18 systemic support knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol4_comp_regenerative_medicine",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-4-regenerative-medicine-in-trichology",
+    "title": "Regenerative medicine in trichology",
+    "domain": "clinical-literacy",
+    "description": "Position regenerative therapies with evidence-tier discipline; counsel on PRP variability and realistic outcomes; teach cautious, governance-driven framing for emerging modalities such as exosomes; integrate regenerative medicine into longitudinal treatment plans; and document protocols and outcomes for auditability, per Volume 4.",
+    "sequence": 19,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol4_m19_assessment",
+        "description": "Pass the Module 19 regenerative medicine knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol4_comp_hair_transplantation",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-4-principles-of-hair-transplantation",
+    "title": "Hair transplantation principles",
+    "domain": "clinical-literacy",
+    "description": "Apply transplant candidacy discipline based on diagnosis quality, stability and disease quiescence; assess donor as a finite biologic resource; plan recipient design with naturalness restraint and progression awareness; counsel FUT vs FUE trade-offs without technique ideology; and build long-term planning that includes shock loss and ongoing disease management, per Volume 4.",
+    "sequence": 20,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol4_m20_assessment",
+        "description": "Pass the Module 20 hair transplantation knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol4_comp_advanced_fue_science",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-4-advanced-fue-science",
+    "title": "Advanced FUE science",
+    "domain": "clinical-literacy",
+    "description": "Teach advanced FUE reasoning as adaptive precision: explain transection risk determinants and how decisions change by hair/scalp variables; apply donor distribution governance to prevent overharvesting and visible depletion; apply graft handling and survival logic across workflow; and plan density allocation and naturalness restraint with a safe bridge to advanced techniques, per Volume 4.",
+    "sequence": 21,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol4_m21_assessment",
+        "description": "Pass the Module 21 advanced FUE science knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol5_comp_long_hair_fue_unshaven",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-5-long-hair-fue-unshaven-techniques",
+    "title": "Long Hair FUE and unshaven techniques",
+    "domain": "clinical-literacy",
+    "description": "Select concealment-oriented Long Hair FUE and unshaven strategies by indication, donor economics, and workflow governance; apply female and eyebrow design sensitivity; and communicate staged planning without overpromising immediate coverage, per Volume 5.",
+    "sequence": 22,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol5_m22_assessment",
+        "description": "Pass the Module 22 Long Hair FUE and unshaven techniques knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol5_comp_partial_transection_regenerative_donor",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-5-partial-transection-regenerative-donor-concepts",
+    "title": "Partial transection and regenerative donor concepts",
+    "domain": "clinical-literacy",
+    "description": "Position partial-transection donor concepts as advanced-emerging practice with explicit evidence-tier restraint; explain biologic rationale and limits; integrate donor-support strategy with protocol transparency and audit governance; and communicate responsible innovation ethically, per Volume 5.",
+    "sequence": 23,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol5_m23_assessment",
+        "description": "Pass the Module 23 partial transection and regenerative donor concepts knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol5_comp_recovery_optimisation_complications",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-5-surgical-recovery-optimisation-complication-management",
+    "title": "Surgical recovery, optimisation, and complication management",
+    "domain": "clinical-literacy",
+    "description": "Interpret post-operative recovery biology, detect early warning signs, classify complications, apply forensic repair logic, and use governance-based escalation and communication pathways in advanced surgical follow-up, per Volume 5.",
+    "sequence": 24,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol5_m24_assessment",
+        "description": "Pass the Module 24 surgical recovery and complication-management knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol5_comp_consultation_ethics_psychological_care",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-5-consultation-mastery-ethics-psychological-care",
+    "title": "Consultation mastery, ethics, and psychological care",
+    "domain": "consultation-structure",
+    "description": "Conduct psychologically-informed consultations with layered explanation, process-based consent, explicit ethical boundaries, and longitudinal trust-preserving communication, including safe refusal-to-proceed logic when demands conflict with standards, per Volume 5.",
+    "sequence": 25,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol5_m25_assessment",
+        "description": "Pass the Module 25 consultation, ethics, and psychological-care knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol5_comp_research_literacy_evidence_appraisal",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-5-research-literacy-evidence-appraisal",
+    "title": "Research literacy and evidence appraisal",
+    "domain": "clinical-literacy",
+    "description": "Critically appraise hair literature and bias patterns, evaluate before-and-after evidence quality, and apply registry-style outcomes governance for audit, quality improvement, and evidence-aware patient counselling, per Volume 5.",
+    "sequence": 26,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol5_m26_assessment",
+        "description": "Pass the Module 26 research literacy and evidence-appraisal knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol5_comp_capstone_clinical_integration",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-5-capstone-case-review-clinical-integration",
+    "title": "Capstone case review and clinical integration",
+    "domain": "consultation-structure",
+    "description": "Integrate full-case reasoning across history, examination, differential, investigations, sequencing, ethics, referral thresholds, and longitudinal planning; defend decisions under viva-style challenge with explicit uncertainty and evidence-tier logic, per Volume 5.",
+    "sequence": 27,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol5_m27_assessment",
+        "description": "Pass the Module 27 capstone clinical integration knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  },
+  {
+    "id": "doctors_vol5_comp_final_assessment_certification",
+    "programId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "levelId": "level_doctors_postgraduate_certificate",
+    "slug": "volume-5-final-assessment-certification",
+    "title": "Final assessment and certification standards",
+    "domain": "ethical-practice",
+    "description": "Apply certification governance with cross-domain pass thresholds, moderation logic, and standards-integrity controls so final award decisions reflect demonstrable postgraduate competence in evidence-aware and ethical hair medicine practice, per Volume 5.",
+    "sequence": 28,
+    "requiredForAward": true,
+    "evidenceRequirements": [
+      {
+        "id": "ev_vol5_m28_assessment",
+        "description": "Pass the Module 28 final assessment and certification standards knowledge check",
+        "evidenceType": "assessment",
+        "requiredCount": 1
+      }
+    ],
+    "mustBeFacultyVerified": false
+  }
 ]

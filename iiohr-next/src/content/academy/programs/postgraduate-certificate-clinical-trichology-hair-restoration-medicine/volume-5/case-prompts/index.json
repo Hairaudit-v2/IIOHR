@@ -1,0 +1,177 @@
+[
+  {
+    "id": "case_vol5_mod22_a",
+    "slug": "vol5-mod22-case",
+    "moduleId": "module_vol5_long_hair_fue_unshaven_techniques",
+    "parentType": "module",
+    "parentId": "module_vol5_long_hair_fue_unshaven_techniques",
+    "title": "Case Discussion: Concealment-Driven Surgical Planning",
+    "status": "draft",
+    "clinicalScenario": "A 39-year-old media professional wants unshaven frontal refinement and temple restoration with no visible donor change before an on-camera schedule in four weeks. She has diffuse calibre variability and high anxiety about shaving. She requests maximum coverage in a single session.",
+    "discussionPrompts": [
+      "How do you determine whether long-hair/unshaven strategy is appropriate and which zones to prioritise?",
+      "What donor and miniaturisation checks are essential before accepting an accelerated concealment request?",
+      "How do you present a staged plan while maintaining trust and expectation realism?"
+    ],
+    "moderatorNotes": "Faculty: emphasise indication-driven long-hair planning, female miniaturisation risk, and staged governance rather than promise-led design.",
+    "linkedCompetencies": [
+      "doctors_vol5_comp_long_hair_fue_unshaven"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Accepting one-session maximal coverage despite donor and visibility constraints.",
+      "Ignoring diffuse miniaturisation risk because shaving is avoided.",
+      "Overpromising downtime concealment outcomes without staged alternatives."
+    ]
+  },
+  {
+    "id": "case_vol5_mod23_a",
+    "slug": "vol5-mod23-case",
+    "moduleId": "module_vol5_partial_transection_regenerative_donor_concepts",
+    "parentType": "module",
+    "parentId": "module_vol5_partial_transection_regenerative_donor_concepts",
+    "title": "Case Discussion: Emerging Donor Concept Counselling",
+    "status": "draft",
+    "clinicalScenario": "A 41-year-old repeat-transplant patient asks for partial-transection donor strategy after reading online claims of donor regeneration. He is highly motivated and accepts innovation, but expects near-certain donor replenishment and less visible depletion. Your clinic has internal protocol experience but limited long-term comparative publication data.",
+    "discussionPrompts": [
+      "How do you set evidence-tier expectations while preserving patient engagement?",
+      "What selection criteria and contraindication domains would you apply before offering this pathway?",
+      "What protocol, consent, and outcomes tracking elements are non-negotiable for academic defensibility?"
+    ],
+    "moderatorNotes": "Faculty: emphasise disciplined emerging-technique counselling, donor ethics, and auditable innovation framework.",
+    "linkedCompetencies": [
+      "doctors_vol5_comp_partial_transection_regenerative_donor"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Allowing patient assumptions of guaranteed donor regeneration.",
+      "Proceeding without protocol transparency and longitudinal audit fields.",
+      "Framing innovation as routine standard without evidence-tier qualification."
+    ]
+  },
+  {
+    "id": "case_vol5_mod24_a",
+    "slug": "vol5-mod24-case",
+    "moduleId": "module_vol5_surgical_recovery_optimisation_complication_management",
+    "parentType": "module",
+    "parentId": "module_vol5_surgical_recovery_optimisation_complication_management",
+    "title": "Case Discussion: Recovery Surveillance and Repair Decision",
+    "status": "draft",
+    "clinicalScenario": "A 35-year-old patient presents at month 9 after prior FUE with persistent donor patchiness, intermittent folliculitis, and lower-than-expected recipient density. They request immediate corrective surgery and report high distress. Your records include incomplete early follow-up photography.",
+    "discussionPrompts": [
+      "How do you classify likely contributors (design, donor planning, graft stewardship, progression, expectation mismatch) before any repair commitment?",
+      "Which red flags in this case mandate escalation beyond reassurance?",
+      "How do you structure communication and documentation when outcomes are mixed and uncertainty remains?"
+    ],
+    "moderatorNotes": "Faculty: emphasise forensic-repair logic, escalation governance, and communication quality under patient distress.",
+    "linkedCompetencies": [
+      "doctors_vol5_comp_recovery_optimisation_complications"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Committing to immediate repair without causal analysis.",
+      "Under-documenting donor/recipient objective findings and timeline.",
+      "Neglecting inflammatory warning signs during follow-up."
+    ]
+  },
+  {
+    "id": "case_vol5_mod25_a",
+    "slug": "vol5-mod25-case",
+    "moduleId": "module_vol5_consultation_mastery_ethics_psychological_care",
+    "parentType": "module",
+    "parentId": "module_vol5_consultation_mastery_ethics_psychological_care",
+    "title": "Case Discussion: Ethical Boundaries Under Demand Pressure",
+    "status": "draft",
+    "clinicalScenario": "A 27-year-old patient with early patterned loss requests an aggressive low juvenile hairline and same-week surgery. They state they will seek another clinic if delayed. Their history reveals prior dissatisfaction with multiple cosmetic treatments and high social-media pressure. They reject non-surgical options and ask you to skip 'long explanation'.",
+    "discussionPrompts": [
+      "How do you maintain consultation structure and informed consent standards under urgency pressure?",
+      "Which ethical boundaries in this case are non-negotiable, and how do you communicate them without escalation?",
+      "How do you document the discussion if you decline or stage intervention?"
+    ],
+    "moderatorNotes": "Faculty: evaluate practical ethical communication, refusal-to-proceed language, and trust-preserving boundary setting.",
+    "linkedCompetencies": [
+      "doctors_vol5_comp_consultation_ethics_psychological_care"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Allowing urgency pressure to bypass informed consent depth.",
+      "Accepting age-inappropriate design without progression counselling.",
+      "Failing to document refusal of alternatives and safety rationale."
+    ]
+  },
+  {
+    "id": "case_vol5_mod26_a",
+    "slug": "vol5-mod26-case",
+    "moduleId": "module_vol5_research_literacy_evidence_appraisal",
+    "parentType": "module",
+    "parentId": "module_vol5_research_literacy_evidence_appraisal",
+    "title": "Case Discussion: Evidence Appraisal Under Commercial Pressure",
+    "status": "draft",
+    "clinicalScenario": "A vendor presents a regenerative protocol claiming superior outcomes based on short-term before-and-after photos from a small series. Your team wants to adopt it rapidly. The protocol details are partially disclosed and follow-up beyond 4 months is unavailable.",
+    "discussionPrompts": [
+      "How do you appraise this evidence using bias and visual-data quality checks?",
+      "What minimum governance requirements should be met before pilot adoption in a clinical setting?",
+      "How would you communicate provisional status to patients without dismissing potential innovation?"
+    ],
+    "moderatorNotes": "Faculty: require evidence-tier language, bias analysis, and practical governance plan before adoption decisions.",
+    "linkedCompetencies": [
+      "doctors_vol5_comp_research_literacy_evidence_appraisal"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Adopting protocols on short-term visuals without methodological controls.",
+      "Insufficient protocol transparency and follow-up depth.",
+      "Patient-facing certainty language unsupported by evidence quality."
+    ]
+  },
+  {
+    "id": "case_vol5_mod27_a",
+    "slug": "vol5-mod27-case",
+    "moduleId": "module_vol5_capstone_case_review_clinical_integration",
+    "parentType": "module",
+    "parentId": "module_vol5_capstone_case_review_clinical_integration",
+    "title": "Case Discussion: Integrated Mixed-Phenotype Decision Making",
+    "status": "draft",
+    "clinicalScenario": "A 38-year-old physician presents with chronic diffuse shedding, background miniaturisation, and intermittent scalp burning. They are highly informed, request immediate transplant booking, and report prior partial response to minoxidil. Examination suggests mixed pathology with unresolved inflammatory risk and uncertain candidacy timing.",
+    "discussionPrompts": [
+      "How do you structure differential and investigation logic to avoid premature procedural anchoring?",
+      "What sequencing would you defend for stabilisation versus surgery readiness?",
+      "How do you communicate uncertainty, risk boundaries, and timeline to a medically literate but urgency-driven patient?"
+    ],
+    "moderatorNotes": "Faculty: assess full integration quality—diagnostic layering, sequencing, ethics, and longitudinal planning under pressure.",
+    "linkedCompetencies": [
+      "doctors_vol5_comp_capstone_clinical_integration"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Procedural anchoring before unresolved inflammatory/candidacy clarification.",
+      "No explicit timeline for reassessment and surgery re-entry criteria.",
+      "Defensive communication with high-literacy patients instead of structured transparency."
+    ]
+  },
+  {
+    "id": "case_vol5_mod28_a",
+    "slug": "vol5-mod28-case",
+    "moduleId": "module_vol5_final_assessment_and_certification",
+    "parentType": "module",
+    "parentId": "module_vol5_final_assessment_and_certification",
+    "title": "Case Discussion: Borderline Certification Decision",
+    "status": "draft",
+    "clinicalScenario": "At final board review, a candidate has excellent written performance and acceptable image interpretation but repeated weaknesses in integrated case sequencing, referral-threshold reasoning, and consent communication. Faculty are split between pass and remediation because the candidate is technically strong.",
+    "discussionPrompts": [
+      "What domain-based decision framework should guide pass vs remediation for standards integrity?",
+      "How do you document and communicate a remediation pathway that is fair, specific, and defensible?",
+      "Which governance controls (moderation/versioning/faculty oversight) are essential in this borderline decision?"
+    ],
+    "moderatorNotes": "Faculty: use Module 28 standards governance. Evaluate fairness, transparency, and patient-safety implications of certification decisions.",
+    "linkedCompetencies": [
+      "doctors_vol5_comp_final_assessment_certification"
+    ],
+    "evidenceTier": "B",
+    "redFlags": [
+      "Passing on technical strength while unresolved clinical-reasoning/ethics deficits persist.",
+      "Undocumented moderation rationale in high-stakes decisions.",
+      "Vague remediation plans without measurable reassessment criteria."
+    ]
+  }
+]

@@ -7,6 +7,8 @@ This folder contains **two different roles** of JSON. Keeping them separate avoi
 - **`volume-1/`** — Doctor Volume 1: `modules`, `lessons`, `quizzes`, `case-prompts`, `references`, `resources`, and `volume-1/index.json`.
 - **`volume-2/`** — Doctor Volume 2: same layout as `volume-1/`, plus `volume-2/index.json`.
 - **`volume-3/`** — Doctor Volume 3: same layout as `volume-1/`, plus `volume-3/index.json`.
+- **`volume-4/`** — Doctor Volume 4: same layout as `volume-1/`, plus `volume-4/index.json`.
+- **`volume-5/`** — Doctor Volume 5: same layout as `volume-1/`, plus `volume-5/index.json`.
 - **`competencies/index.json`**, **`faculty-notes/index.json`**, **`compliance-notices/index.json`**, **`levels/index.json`**, **`index.json`** (program) — merged doctor program metadata used with the volumes.
 
 The doctor **Postgraduate Certificate** runtime bundle is assembled in code from these paths (`createDoctorBundle` in `src/lib/academy/content-registry.ts`). **Edit volumes and the merged program files to change what learners see.**
@@ -27,6 +29,14 @@ Runtime JSON in `volume-2/` should stay aligned to that manual as content is ref
 Authoritative teaching text for Volume 3:  
 `public/IIIOHR doctor education platform/Volume3_Diffuse_Shedding_Cicatricial_Alopecia_and_Scalp_Disease.docx`.  
 Runtime JSON in `volume-3/` should stay aligned to that manual as content is refined. Optional regeneration helper: `scripts/generate-doctor-volume3-runtime.mjs` (lessons, quizzes, cases, references, resources scaffolding).
+
+Authoritative teaching text for Volume 4:  
+`public/IIIOHR doctor education platform/Volume4_Therapeutics_Regenerative_Medicine_and_Foundations_of_Hair_Restoration_Surgery.docx`.  
+Runtime JSON in `volume-4/` should stay aligned to that manual as content is refined. Optional regeneration helper: `scripts/generate-doctor-volume4-runtime.mjs`.
+
+Authoritative teaching text for Volume 5:  
+`public/IIIOHR doctor education platform/Volume5_Advanced_Surgical_Integration_Professional_Practice_Research_and_Certification.docx`.  
+Runtime JSON in `volume-5/` should stay aligned to that manual as content is refined. Optional regeneration helper: `scripts/generate-doctor-volume5-runtime.mjs`.
 
 ## Consultant program
 

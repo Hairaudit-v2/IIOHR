@@ -169,5 +169,131 @@
     "note": "Source: Manual Module 16 (inflammatory and infectious scalp). Product audit exercise. Tinea kerion and scarring risk—time-to-treatment narratives. Reassess primary alopecia labels after inflammation control.",
     "visibility": "faculty-only",
     "reviewPurpose": "Module 16 moderation"
+  },
+  {
+    "id": "doctors_note_vol4_manual_source",
+    "parentType": "program",
+    "parentId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "title": "Volume 4 primary teaching text",
+    "note": "Doctor Volume 4 learner content is aligned to the academy manual Volume 4 — Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery. Faculty moderation should verify evidence-tier therapeutic framing, disciplined off-label counselling for oral minoxidil, cautious positioning of emerging regenerative modalities (e.g., exosomes), transplant candidacy discipline, and advanced FUE governance messaging without overclaiming.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 4 curriculum alignment"
+  },
+  {
+    "id": "doctors_note_vol4_mod17",
+    "parentType": "module",
+    "parentId": "module_vol4_medical_management_of_hair_loss",
+    "title": "Module 17 — faculty delivery notes",
+    "note": "Source: Manual Module 17 (medical management). Workshop: build a treatment ladder that starts with activity and a defined goal, then sequence topical/oral minoxidil and DHT inhibition. Emphasise oral minoxidil as off-label with safety counselling and monitoring discipline. Teach failure analysis: adherence and expected timelines before intensifying. Validate careful reproductive framing in women.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 17 moderation"
+  },
+  {
+    "id": "doctors_note_vol4_mod18",
+    "parentType": "module",
+    "parentId": "module_vol4_nutritional_lifestyle_and_systemic_support",
+    "title": "Module 18 — faculty delivery notes",
+    "note": "Source: Manual Module 18 (systemic support). Reinforce the systemic lens: identify whether internal drivers accelerate/amplify/perpetuate hair disorder. Teach ferritin and iron interpretation with clinical context and inflammation awareness. Avoid supplement marketing: only correct proven deficiencies and address modifiable lifestyle/adherence and stress-to-mechanism translation.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 18 moderation"
+  },
+  {
+    "id": "doctors_note_vol4_mod19",
+    "parentType": "module",
+    "parentId": "module_vol4_regenerative_medicine_in_trichology",
+    "title": "Module 19 — faculty delivery notes",
+    "note": "Source: Manual Module 19 (regenerative medicine). Teach evidence-tier clarity: PRP as supportive but variably standardised; exosomes as emerging/investigational. Require governance language: document protocol details and track outcomes with baseline photos/trichoscopy. Prevent marketing-driven overclaiming or replacing disease control with regenerative shopping.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 19 moderation"
+  },
+  {
+    "id": "doctors_note_vol4_mod20",
+    "parentType": "module",
+    "parentId": "module_vol4_principles_of_hair_transplantation",
+    "title": "Module 20 — faculty delivery notes",
+    "note": "Source: Manual Module 20 (transplant foundations). Role-play candidacy discipline: stable loss, quiescence requirements in scarring alopecia, realistic forecasting, and donor reserve constraints. Emphasise surgery as a component of lifelong management including shock loss and ongoing progression. Teach informed refusal-to-proceed and long-view counselling.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 20 moderation"
+  },
+  {
+    "id": "doctors_note_vol4_mod21",
+    "parentType": "module",
+    "parentId": "module_vol4_advanced_fue_science",
+    "title": "Module 21 — faculty delivery notes",
+    "note": "Source: Manual Module 21 (advanced FUE science). Workshop: transection-risk reasoning and how decisions adapt to hair/scalp variables. Drill donor distribution governance to prevent overharvesting and moth-eaten depletion. Teach graft stewardship workflow discipline: excellent implantation cannot rescue poor extraction/holding. Reinforce density allocation logic and naturalness restraint with a safe bridge into advanced techniques later.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 21 moderation"
+  },
+  {
+    "id": "doctors_note_vol5_manual_source",
+    "parentType": "program",
+    "parentId": "program_pgcert_clinical_trichology_hair_restoration_medicine",
+    "title": "Volume 5 primary teaching text",
+    "note": "Doctor Volume 5 learner content is aligned to the academy manual Volume 5 — Advanced Surgical Integration, Professional Practice, Research, and Certification. Faculty moderation should verify evidence-tier restraint for advanced innovation topics, practical complication and repair governance, ethical consultation boundaries, research-appraisal discipline, and defensible standards architecture for final certification decisions.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Volume 5 curriculum alignment"
+  },
+  {
+    "id": "doctors_note_vol5_mod22",
+    "parentType": "module",
+    "parentId": "module_vol5_long_hair_fue_unshaven_techniques",
+    "title": "Module 22 — faculty delivery notes",
+    "note": "Source: Manual Module 22 (Long Hair FUE and unshaven techniques). Focus on indication discipline over marketing appeal. Drill female and eyebrow pathway selection, concealment trade-offs, and staged planning when full coverage is unsafe. Require donor-governance documentation in all long-hair case discussions.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 22 moderation"
+  },
+  {
+    "id": "doctors_note_vol5_mod23",
+    "parentType": "module",
+    "parentId": "module_vol5_partial_transection_regenerative_donor_concepts",
+    "title": "Module 23 — faculty delivery notes",
+    "note": "Source: Manual Module 23 (partial transection and regenerative donor concepts). Enforce disciplined tone: biologic plausibility with explicit uncertainty and emerging evidence boundaries. Teach protocol transparency, informed consent language for innovation, and mandatory outcome-audit fields.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 23 moderation"
+  },
+  {
+    "id": "doctors_note_vol5_mod24",
+    "parentType": "module",
+    "parentId": "module_vol5_surgical_recovery_optimisation_complication_management",
+    "title": "Module 24 — faculty delivery notes",
+    "note": "Source: Manual Module 24 (recovery and complications). Train recovery timeline literacy and red-flag escalation triggers. Repair teaching should remain forensic: map design, donor, graft-survival, progression, and expectation factors before re-intervention. Require objective follow-up documentation.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 24 moderation"
+  },
+  {
+    "id": "doctors_note_vol5_mod25",
+    "parentType": "module",
+    "parentId": "module_vol5_consultation_mastery_ethics_psychological_care",
+    "title": "Module 25 — faculty delivery notes",
+    "note": "Source: Manual Module 25 (consultation ethics and psychological care). Use scenario-based role-play for pressure demands, age-inappropriate design requests, and refusal-to-proceed communication. Evaluate process-based consent quality, not form completion.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 25 moderation"
+  },
+  {
+    "id": "doctors_note_vol5_mod26",
+    "parentType": "module",
+    "parentId": "module_vol5_research_literacy_evidence_appraisal",
+    "title": "Module 26 — faculty delivery notes",
+    "note": "Source: Manual Module 26 (research literacy). Require bias-check walkthroughs and before/after critique checklists in tutorial discussions. Emphasize registry-thinking and protocol/outcome logging as patient-safety and quality tools.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 26 moderation"
+  },
+  {
+    "id": "doctors_note_vol5_mod27",
+    "parentType": "module",
+    "parentId": "module_vol5_capstone_case_review_clinical_integration",
+    "title": "Module 27 — faculty delivery notes",
+    "note": "Source: Manual Module 27 (capstone integration). Viva drills should test differential exclusion, sequencing logic, escalation thresholds, and uncertainty language under challenge. Mark against integrated reasoning quality rather than confidence of delivery.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 27 moderation"
+  },
+  {
+    "id": "doctors_note_vol5_mod28",
+    "parentType": "module",
+    "parentId": "module_vol5_final_assessment_and_certification",
+    "title": "Module 28 — faculty delivery notes",
+    "note": "Source: Manual Module 28 (final assessment and certification). Reinforce multi-domain threshold logic, moderation documentation, and standards-integrity governance for borderline pass/remediation decisions. Certification credibility should be tied to explicit architecture, not single-score shortcuts.",
+    "visibility": "faculty-only",
+    "reviewPurpose": "Module 28 moderation"
   }
 ]

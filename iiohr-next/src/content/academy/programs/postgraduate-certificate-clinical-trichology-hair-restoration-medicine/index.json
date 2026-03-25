@@ -44,7 +44,13 @@
     "pacingModel": "cohort-flexible postgraduate online delivery"
   },
   "levelIds": ["level_doctors_postgraduate_certificate"],
-  "sectionIds": ["section_doctors_volume_1", "section_doctors_volume_2", "section_doctors_volume_3"],
+  "sectionIds": [
+    "section_doctors_volume_1",
+    "section_doctors_volume_2",
+    "section_doctors_volume_3",
+    "section_doctors_volume_4",
+    "section_doctors_volume_5"
+  ],
   "moduleIds": [],
   "competencyIds": [
     "doctors_vol1_comp_introduction_scope",
@@ -62,7 +68,19 @@
     "doctors_vol3_comp_cicatricial_principles",
     "doctors_vol3_comp_lymphocytic_cicatricial",
     "doctors_vol3_comp_neutrophilic_cicatricial",
-    "doctors_vol3_comp_scalp_inflammatory_infectious"
+    "doctors_vol3_comp_scalp_inflammatory_infectious",
+    "doctors_vol4_comp_medical_management",
+    "doctors_vol4_comp_nutritional_lifestyle_support",
+    "doctors_vol4_comp_regenerative_medicine",
+    "doctors_vol4_comp_hair_transplantation",
+    "doctors_vol4_comp_advanced_fue_science",
+    "doctors_vol5_comp_long_hair_fue_unshaven",
+    "doctors_vol5_comp_partial_transection_regenerative_donor",
+    "doctors_vol5_comp_recovery_optimisation_complications",
+    "doctors_vol5_comp_consultation_ethics_psychological_care",
+    "doctors_vol5_comp_research_literacy_evidence_appraisal",
+    "doctors_vol5_comp_capstone_clinical_integration",
+    "doctors_vol5_comp_final_assessment_certification"
   ],
   "complianceNoticeIds": [
     "notice_doctors_medical_scope",

@@ -1,0 +1,366 @@
+[
+  {
+    "id": "module_vol5_long_hair_fue_unshaven_techniques",
+    "volumeId": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+    "moduleNumber": 22,
+    "slug": "long-hair-fue-and-unshaven-techniques",
+    "title": "Long Hair FUE and Unshaven Techniques",
+    "shortTitle": "Long Hair FUE",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Long Hair FUE and unshaven approaches address real barriers around privacy, social recovery, and aesthetic continuity, especially in concealment-sensitive pathways.",
+      "clinicalContext": "Select long-hair strategies by indication, donor economics, and workflow capability; treat as advanced operational methods rather than marketing labels.",
+      "learningObjectives": [
+        "Define indications and limits of Long Hair FUE and unshaven approaches.",
+        "Select high-value patient groups, including female and concealment-sensitive pathways.",
+        "Manage workflow, orientation, and team coordination differences from shaved FUE.",
+        "Integrate long-hair strategy into eyebrow and facial-design sensitive work safely."
+      ],
+      "keyTakeaways": [
+        "Concealment value is clinically meaningful in selected pathways.",
+        "Long-hair workflows require advanced operational discipline.",
+        "Female/eyebrow applications demand conservative design governance."
+      ],
+      "redFlags": [
+        "Technique-first marketing without indication logic.",
+        "Compromising donor or design quality in pursuit of concealment promises."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Applied indication",
+          "tier": "B",
+          "note": "Use Long Hair FUE when pathway barriers and concealment priorities justify advanced workflow complexity."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol5_mod22_01",
+      "lesson_vol5_mod22_02",
+      "lesson_vol5_mod22_03",
+      "lesson_vol5_mod22_04"
+    ],
+    "quizIds": [
+      "quiz_vol5_mod22"
+    ],
+    "casePromptIds": [
+      "case_vol5_mod22_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol5_mod22_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol5_mod22_01"
+    ]
+  },
+  {
+    "id": "module_vol5_partial_transection_regenerative_donor_concepts",
+    "volumeId": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+    "moduleNumber": 23,
+    "slug": "partial-transection-and-regenerative-donor-concepts",
+    "title": "Partial Transection and Regenerative Donor Concepts",
+    "shortTitle": "Partial transection",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Partial transection and regenerative donor concepts are academy-signature advanced ideas requiring scientific ambition and explicit academic restraint.",
+      "clinicalContext": "Teach biologic plausibility with evidence-tier honesty, selective advanced-pathway positioning, and audit-ready governance rather than routine-standard claims.",
+      "learningObjectives": [
+        "Explain conceptual and biologic rationale for donor-preservation hypotheses.",
+        "Position partial transection correctly as advanced-emerging practice.",
+        "Integrate donor-support strategies with protocol transparency and regulation-aware boundaries.",
+        "Demonstrate responsible-innovation communication and defensibility."
+      ],
+      "keyTakeaways": [
+        "Emerging innovation demands transparent uncertainty language.",
+        "Biologic rationale informs but does not finalize clinical standards.",
+        "Audit and protocol governance are essential to defensible adoption."
+      ],
+      "redFlags": [
+        "Promotional certainty outrunning evidence.",
+        "Routine deployment without advanced-pathway safeguards."
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol5_mod23_01",
+      "lesson_vol5_mod23_02",
+      "lesson_vol5_mod23_03",
+      "lesson_vol5_mod23_04"
+    ],
+    "quizIds": [
+      "quiz_vol5_mod23"
+    ],
+    "casePromptIds": [
+      "case_vol5_mod23_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol5_mod23_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol5_mod23_01"
+    ]
+  },
+  {
+    "id": "module_vol5_surgical_recovery_optimisation_complication_management",
+    "volumeId": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+    "moduleNumber": 24,
+    "slug": "surgical-recovery-optimisation-and-complication-management",
+    "title": "Surgical Recovery, Optimisation, and Complication Management",
+    "shortTitle": "Recovery & complications",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Surgical outcomes depend on post-operative biology, donor/recipient recovery quality, complication recognition, and forensic repair reasoning.",
+      "clinicalContext": "Teach structured surveillance, escalation criteria, and evidence-based communication under mixed or disappointing outcomes.",
+      "learningObjectives": [
+        "Interpret recovery stages and expected timeline patterns.",
+        "Optimise donor recovery and identify early warning signs.",
+        "Classify complications and perform forensic cause analysis before repair.",
+        "Apply governance-based escalation and documentation pathways."
+      ],
+      "keyTakeaways": [
+        "Post-op governance is as critical as surgical technique.",
+        "Repair is a diagnostic process, not automatic repeat surgery.",
+        "Structured escalation preserves safety and trust."
+      ],
+      "redFlags": [
+        "Reassurance without objective reassessment in red-flag scenarios.",
+        "Immediate re-surgery without causal mapping."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Forensic repair",
+          "tier": "B",
+          "note": "Repair planning should follow documented root-cause analysis and escalation governance."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol5_mod24_01",
+      "lesson_vol5_mod24_02",
+      "lesson_vol5_mod24_03",
+      "lesson_vol5_mod24_04"
+    ],
+    "quizIds": [
+      "quiz_vol5_mod24"
+    ],
+    "casePromptIds": [
+      "case_vol5_mod24_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol5_mod24_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol5_mod24_01"
+    ]
+  },
+  {
+    "id": "module_vol5_consultation_mastery_ethics_psychological_care",
+    "volumeId": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+    "moduleNumber": 25,
+    "slug": "consultation-mastery-ethics-and-psychological-care",
+    "title": "Consultation Mastery, Ethics, and Psychological Care",
+    "shortTitle": "Consultation ethics",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Technical expertise without communication, consent, and ethics can still produce poor outcomes; this module anchors professional identity and trust governance.",
+      "clinicalContext": "Use listening-first structure, explicit ethical boundaries, and longitudinal partnership logic in psychologically charged consultations.",
+      "learningObjectives": [
+        "Address emotional meaning of hair loss without overpathologising.",
+        "Apply layered consultation structure from diagnosis to recommendation.",
+        "Deliver process-based consent with uncertainty and future progression framing.",
+        "Maintain trust through longitudinal plan adaptation."
+      ],
+      "keyTakeaways": [
+        "Consultation quality is a patient-safety and outcomes skill.",
+        "Consent is a process with uncertainty, alternatives, and maintenance burden.",
+        "Ethical boundaries protect both patient and institutional credibility."
+      ],
+      "redFlags": [
+        "Sales-led urgency replacing informed recommendation.",
+        "Ignoring long-term relationship dynamics when outcomes are partial."
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol5_mod25_01",
+      "lesson_vol5_mod25_02",
+      "lesson_vol5_mod25_03",
+      "lesson_vol5_mod25_04"
+    ],
+    "quizIds": [
+      "quiz_vol5_mod25"
+    ],
+    "casePromptIds": [
+      "case_vol5_mod25_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol5_mod25_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol5_mod25_01"
+    ]
+  },
+  {
+    "id": "module_vol5_research_literacy_evidence_appraisal",
+    "volumeId": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+    "moduleNumber": 26,
+    "slug": "research-literacy-and-evidence-appraisal",
+    "title": "Research Literacy and Evidence Appraisal",
+    "shortTitle": "Research literacy",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Research literacy is a clinical safety skill in a field containing strong evidence, weak studies, commercial bias, and rapidly evolving claims.",
+      "clinicalContext": "Train critical appraisal of bias, visual data quality, and protocol heterogeneity; connect appraisal to registry-grade outcomes governance.",
+      "learningObjectives": [
+        "Interpret evidence levels in procedure-heavy contexts.",
+        "Detect common bias sources in hair literature and regenerative claims.",
+        "Critically evaluate before-and-after evidence quality.",
+        "Apply registry-style documentation for quality improvement and publication readiness."
+      ],
+      "keyTakeaways": [
+        "Evidence quality must be interpreted, not assumed.",
+        "Visual claims require methodological checks.",
+        "Registry thinking improves reliability and accountability."
+      ],
+      "redFlags": [
+        "Adopting interventions based on uncontrolled visual narratives.",
+        "No structured outcomes dataset for advanced modalities."
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol5_mod26_01",
+      "lesson_vol5_mod26_02",
+      "lesson_vol5_mod26_03",
+      "lesson_vol5_mod26_04"
+    ],
+    "quizIds": [
+      "quiz_vol5_mod26"
+    ],
+    "casePromptIds": [
+      "case_vol5_mod26_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol5_mod26_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol5_mod26_01"
+    ]
+  },
+  {
+    "id": "module_vol5_capstone_case_review_clinical_integration",
+    "volumeId": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+    "moduleNumber": 27,
+    "slug": "capstone-case-review-and-clinical-integration",
+    "title": "Capstone Case Review and Clinical Integration",
+    "shortTitle": "Capstone integration",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Capstone integration tests whether knowledge can be executed as full clinical competence across diagnosis, sequencing, ethics, and longitudinal planning.",
+      "clinicalContext": "Use complex multi-domain cases to assess integrated reasoning under uncertainty and pressure.",
+      "learningObjectives": [
+        "Integrate cross-volume reasoning for mixed and high-risk case domains.",
+        "Demonstrate safe sequencing, contraindication logic, and referral thresholds.",
+        "Defend decisions in viva-style argument structure.",
+        "Produce faculty-reviewable integrated case outputs."
+      ],
+      "keyTakeaways": [
+        "Capstone pass requires integration, not isolated module recall.",
+        "Viva quality depends on explicit alternative exclusion and uncertainty handling.",
+        "Longitudinal planning is mandatory in final-case decisions."
+      ],
+      "redFlags": [
+        "Binary diagnosis with no sequencing or governance boundaries.",
+        "Argument-by-confidence without defensible structure."
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol5_mod27_01",
+      "lesson_vol5_mod27_02",
+      "lesson_vol5_mod27_03",
+      "lesson_vol5_mod27_04"
+    ],
+    "quizIds": [
+      "quiz_vol5_mod27"
+    ],
+    "casePromptIds": [
+      "case_vol5_mod27_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol5_mod27_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol5_mod27_01"
+    ]
+  },
+  {
+    "id": "module_vol5_final_assessment_and_certification",
+    "volumeId": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+    "moduleNumber": 28,
+    "slug": "final-assessment-and-certification",
+    "title": "Final Assessment and Certification",
+    "shortTitle": "Final certification",
+    "status": "draft",
+    "estimatedStudyMinutes": 220,
+    "academicLevel": "postgraduate-certificate",
+    "stream": "core",
+    "overview": {
+      "summary": "Final assessment and certification standards determine whether completion represents demonstrable competence rather than passive participation.",
+      "clinicalContext": "Use multi-domain architecture, threshold logic, moderation, and standards governance to protect certification credibility.",
+      "learningObjectives": [
+        "Describe final assessment domains and why architecture matters.",
+        "Apply pass criteria across knowledge, reasoning, and integration thresholds.",
+        "Define certification meaning in academically defensible scope-safe language.",
+        "Implement governance and moderation in borderline decisions."
+      ],
+      "keyTakeaways": [
+        "Certification credibility is architecture-dependent.",
+        "Domain thresholds prevent unsafe compensation by single strengths.",
+        "Moderation and version control are standards-integrity tools."
+      ],
+      "redFlags": [
+        "High-stakes sign-off without documented moderation rationale.",
+        "Certification based on recall-only performance despite integration deficits."
+      ],
+      "evidenceTierNotes": [
+        {
+          "label": "Standards governance",
+          "tier": "B",
+          "note": "Final sign-off should include documented domain thresholds, moderation logic, and evidence-tier differentiation."
+        }
+      ]
+    },
+    "lessonIds": [
+      "lesson_vol5_mod28_01",
+      "lesson_vol5_mod28_02",
+      "lesson_vol5_mod28_03",
+      "lesson_vol5_mod28_04"
+    ],
+    "quizIds": [
+      "quiz_vol5_mod28"
+    ],
+    "casePromptIds": [
+      "case_vol5_mod28_a"
+    ],
+    "downloadableResourceIds": [
+      "resource_module_vol5_mod28_summary"
+    ],
+    "referenceIds": [
+      "reference_module_vol5_mod28_01"
+    ]
+  }
+]

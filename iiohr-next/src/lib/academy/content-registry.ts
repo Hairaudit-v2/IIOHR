@@ -40,6 +40,20 @@ import legacyQuizzesVol3Json from "@/content/academy/programs/postgraduate-certi
 import legacyReferencesVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/references/index.json";
 import legacyResourcesVol3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/resources/index.json";
 import legacyVolume3Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-3/index.json";
+import legacyCasePromptsVol4Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-4/case-prompts/index.json";
+import legacyLessonsVol4Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-4/lessons/index.json";
+import legacyModulesVol4Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-4/modules/index.json";
+import legacyQuizzesVol4Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-4/quizzes/index.json";
+import legacyReferencesVol4Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-4/references/index.json";
+import legacyResourcesVol4Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-4/resources/index.json";
+import legacyVolume4Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-4/index.json";
+import legacyCasePromptsVol5Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-5/case-prompts/index.json";
+import legacyLessonsVol5Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-5/lessons/index.json";
+import legacyModulesVol5Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-5/modules/index.json";
+import legacyQuizzesVol5Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-5/quizzes/index.json";
+import legacyReferencesVol5Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-5/references/index.json";
+import legacyResourcesVol5Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-5/resources/index.json";
+import legacyVolume5Json from "@/content/academy/programs/postgraduate-certificate-clinical-trichology-hair-restoration-medicine/volume-5/index.json";
 import type { AcademyAssessment, AssessmentItem } from "@/lib/academy/assessment-types";
 import type { ScopeSafeCopyBlock } from "@/lib/academy/compliance-types";
 import type {
@@ -157,6 +171,42 @@ const DOCTOR_VOL3_MODULE_FACULTY_NOTES: Record<string, string[]> = {
   module_vol3_lymphocytic_cicatricial_alopecias: ["doctors_note_vol3_mod14"],
   module_vol3_neutrophilic_mixed_cicatricial: ["doctors_note_vol3_mod15"],
   module_vol3_inflammatory_infectious_scalp: ["doctors_note_vol3_mod16"],
+};
+
+const DOCTOR_VOL4_MODULE_COMPETENCIES: Record<string, string[]> = {
+  module_vol4_medical_management_of_hair_loss: ["doctors_vol4_comp_medical_management"],
+  module_vol4_nutritional_lifestyle_and_systemic_support: ["doctors_vol4_comp_nutritional_lifestyle_support"],
+  module_vol4_regenerative_medicine_in_trichology: ["doctors_vol4_comp_regenerative_medicine"],
+  module_vol4_principles_of_hair_transplantation: ["doctors_vol4_comp_hair_transplantation"],
+  module_vol4_advanced_fue_science: ["doctors_vol4_comp_advanced_fue_science"],
+};
+
+const DOCTOR_VOL4_MODULE_FACULTY_NOTES: Record<string, string[]> = {
+  module_vol4_medical_management_of_hair_loss: ["doctors_note_vol4_mod17"],
+  module_vol4_nutritional_lifestyle_and_systemic_support: ["doctors_note_vol4_mod18"],
+  module_vol4_regenerative_medicine_in_trichology: ["doctors_note_vol4_mod19"],
+  module_vol4_principles_of_hair_transplantation: ["doctors_note_vol4_mod20"],
+  module_vol4_advanced_fue_science: ["doctors_note_vol4_mod21"],
+};
+
+const DOCTOR_VOL5_MODULE_COMPETENCIES: Record<string, string[]> = {
+  module_vol5_long_hair_fue_unshaven_techniques: ["doctors_vol5_comp_long_hair_fue_unshaven"],
+  module_vol5_partial_transection_regenerative_donor_concepts: ["doctors_vol5_comp_partial_transection_regenerative_donor"],
+  module_vol5_surgical_recovery_optimisation_complication_management: ["doctors_vol5_comp_recovery_optimisation_complications"],
+  module_vol5_consultation_mastery_ethics_psychological_care: ["doctors_vol5_comp_consultation_ethics_psychological_care"],
+  module_vol5_research_literacy_evidence_appraisal: ["doctors_vol5_comp_research_literacy_evidence_appraisal"],
+  module_vol5_capstone_case_review_clinical_integration: ["doctors_vol5_comp_capstone_clinical_integration"],
+  module_vol5_final_assessment_and_certification: ["doctors_vol5_comp_final_assessment_certification"],
+};
+
+const DOCTOR_VOL5_MODULE_FACULTY_NOTES: Record<string, string[]> = {
+  module_vol5_long_hair_fue_unshaven_techniques: ["doctors_note_vol5_mod22"],
+  module_vol5_partial_transection_regenerative_donor_concepts: ["doctors_note_vol5_mod23"],
+  module_vol5_surgical_recovery_optimisation_complication_management: ["doctors_note_vol5_mod24"],
+  module_vol5_consultation_mastery_ethics_psychological_care: ["doctors_note_vol5_mod25"],
+  module_vol5_research_literacy_evidence_appraisal: ["doctors_note_vol5_mod26"],
+  module_vol5_capstone_case_review_clinical_integration: ["doctors_note_vol5_mod27"],
+  module_vol5_final_assessment_and_certification: ["doctors_note_vol5_mod28"],
 };
 
 type LegacyLesson = {
@@ -503,7 +553,9 @@ function createDoctorBundle(): ProgramBundle {
   const levelId = levels[0]?.id ?? "level_doctors_postgraduate_certificate";
   const legacyVolume = legacyVolumeJson as DoctorVolumeMeta;
   const legacyVolume2 = legacyVolume2Json as DoctorVolumeMeta;
+  const legacyVolume4 = legacyVolume4Json as DoctorVolumeMeta;
   const legacyVolume3 = legacyVolume3Json as DoctorVolumeMeta;
+  const legacyVolume5 = legacyVolume5Json as DoctorVolumeMeta;
 
   const vol1 = buildDoctorVolumeRuntime({
     program,
@@ -565,9 +617,50 @@ function createDoctorBundle(): ProgramBundle {
     assessmentVolumeLabel: "Volume 3 — Diffuse Shedding, Cicatricial Alopecia, and Scalp Disease",
   });
 
+  const vol4 = buildDoctorVolumeRuntime({
+    program,
+    levelId,
+    complianceNotices,
+    sectionId: "section_doctors_volume_4",
+    sectionSequence: 4,
+    volumeMeta: legacyVolume4,
+    sectionOverview:
+      "Therapeutics, Regenerative Medicine, and Foundations of Hair Restoration Surgery (Volume 4): medical and systemic management; evidence-tier regenerative medicine positioning; surgical candidacy and transplantation principles; and advanced FUE science governance—aligned to the academy Volume 4 teaching manual.",
+    legacyModules: legacyModulesVol4Json as LegacyModule[],
+    legacyLessons: legacyLessonsVol4Json as LegacyLesson[],
+    legacyQuizzes: legacyQuizzesVol4Json as LegacyQuiz[],
+    legacyCasePrompts: legacyCasePromptsVol4Json as LegacyCasePrompt[],
+    references: legacyReferencesVol4Json as AcademyReference[],
+    resources: legacyResourcesVol4Json as DownloadableResource[],
+    moduleCompetencies: DOCTOR_VOL4_MODULE_COMPETENCIES,
+    moduleFacultyNotes: DOCTOR_VOL4_MODULE_FACULTY_NOTES,
+    assessmentVolumeLabel: "Volume 4 — Therapeutics, Regenerative Medicine, and Hair Restoration Surgery",
+  });
+
+  const vol5 = buildDoctorVolumeRuntime({
+    program,
+    levelId,
+    complianceNotices,
+    sectionId: "section_doctors_volume_5",
+    sectionSequence: 5,
+    volumeMeta: legacyVolume5,
+    sectionOverview:
+      "Advanced Surgical Integration, Professional Practice, Research, and Certification (Volume 5): long-hair and unshaven surgical pathways; advanced donor-preservation concepts with evidence-tier restraint; recovery and complication governance; consultation ethics and psychological care; research appraisal; capstone integration; and certification readiness—aligned to the academy Volume 5 teaching manual.",
+    legacyModules: legacyModulesVol5Json as LegacyModule[],
+    legacyLessons: legacyLessonsVol5Json as LegacyLesson[],
+    legacyQuizzes: legacyQuizzesVol5Json as LegacyQuiz[],
+    legacyCasePrompts: legacyCasePromptsVol5Json as LegacyCasePrompt[],
+    references: legacyReferencesVol5Json as AcademyReference[],
+    resources: legacyResourcesVol5Json as DownloadableResource[],
+    moduleCompetencies: DOCTOR_VOL5_MODULE_COMPETENCIES,
+    moduleFacultyNotes: DOCTOR_VOL5_MODULE_FACULTY_NOTES,
+    assessmentVolumeLabel:
+      "Volume 5 — Advanced Surgical Integration, Professional Practice, Research, and Certification",
+  });
+
   // Certificate weighted score: last assessment in the merged array gets weight 10; others 5.
-  // When adding Volume 4+, revisit this rule so the final quiz is not arbitrarily “most important.”
-  const mergedAssessments = [...vol1.assessments, ...vol2.assessments, ...vol3.assessments].map(
+  // When adding Volume 6+, revisit this rule so the final quiz is not arbitrarily “most important.”
+  const mergedAssessments = [...vol1.assessments, ...vol2.assessments, ...vol3.assessments, ...vol4.assessments, ...vol5.assessments].map(
     (assessment, index, arr) => ({
       ...assessment,
       weighting: index === arr.length - 1 ? 10 : 5,
@@ -578,28 +671,32 @@ function createDoctorBundle(): ProgramBundle {
     ...(legacyReferencesJson as AcademyReference[]),
     ...(legacyReferencesVol2Json as AcademyReference[]),
     ...(legacyReferencesVol3Json as AcademyReference[]),
+    ...(legacyReferencesVol4Json as AcademyReference[]),
+    ...(legacyReferencesVol5Json as AcademyReference[]),
   ];
   const resources = [
     ...(legacyResourcesJson as DownloadableResource[]),
     ...(legacyResourcesVol2Json as DownloadableResource[]),
     ...(legacyResourcesVol3Json as DownloadableResource[]),
+    ...(legacyResourcesVol4Json as DownloadableResource[]),
+    ...(legacyResourcesVol5Json as DownloadableResource[]),
   ];
 
   return {
     stream,
     program: {
       ...program,
-      sectionIds: [vol1.section.id, vol2.section.id, vol3.section.id],
-      moduleIds: [...vol1.modules, ...vol2.modules, ...vol3.modules].map((module) => module.id),
+      sectionIds: [vol1.section.id, vol2.section.id, vol3.section.id, vol4.section.id, vol5.section.id],
+      moduleIds: [...vol1.modules, ...vol2.modules, ...vol3.modules, ...vol4.modules, ...vol5.modules].map((module) => module.id),
       competencyIds: competencies.map((c) => c.id),
     },
     levels,
-    sections: [vol1.section, vol2.section, vol3.section],
-    modules: [...vol1.modules, ...vol2.modules, ...vol3.modules],
-    lessons: [...vol1.lessons, ...vol2.lessons, ...vol3.lessons],
+    sections: [vol1.section, vol2.section, vol3.section, vol4.section, vol5.section],
+    modules: [...vol1.modules, ...vol2.modules, ...vol3.modules, ...vol4.modules, ...vol5.modules],
+    lessons: [...vol1.lessons, ...vol2.lessons, ...vol3.lessons, ...vol4.lessons, ...vol5.lessons],
     assessments: mergedAssessments,
-    assessmentItems: [...vol1.assessmentItems, ...vol2.assessmentItems, ...vol3.assessmentItems],
-    caseStudies: [...vol1.caseStudies, ...vol2.caseStudies, ...vol3.caseStudies],
+    assessmentItems: [...vol1.assessmentItems, ...vol2.assessmentItems, ...vol3.assessmentItems, ...vol4.assessmentItems, ...vol5.assessmentItems],
+    caseStudies: [...vol1.caseStudies, ...vol2.caseStudies, ...vol3.caseStudies, ...vol4.caseStudies, ...vol5.caseStudies],
     practicalTasks: [],
     competencies,
     facultyNotes,

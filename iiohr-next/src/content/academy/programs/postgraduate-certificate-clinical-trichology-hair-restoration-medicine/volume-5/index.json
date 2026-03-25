@@ -1,0 +1,28 @@
+{
+  "id": "volume_5_advanced_surgical_integration_professional_practice_research_certification",
+  "programSlug": "postgraduate-certificate-clinical-trichology-hair-restoration-medicine",
+  "volumeNumber": 5,
+  "slug": "advanced-surgical-integration-professional-practice-research-and-certification",
+  "title": "Advanced Surgical Integration, Professional Practice, Research, and Certification",
+  "subtitle": "Volume 5",
+  "status": "draft",
+  "brandProfiles": [
+    "iiohr",
+    "hli",
+    "iiiohr"
+  ],
+  "audience": [
+    "doctors",
+    "surgeons",
+    "physicians"
+  ],
+  "moduleOrder": [
+    "module_vol5_long_hair_fue_unshaven_techniques",
+    "module_vol5_partial_transection_regenerative_donor_concepts",
+    "module_vol5_surgical_recovery_optimisation_complication_management",
+    "module_vol5_consultation_mastery_ethics_psychological_care",
+    "module_vol5_research_literacy_evidence_appraisal",
+    "module_vol5_capstone_case_review_clinical_integration",
+    "module_vol5_final_assessment_and_certification"
+  ]
+}

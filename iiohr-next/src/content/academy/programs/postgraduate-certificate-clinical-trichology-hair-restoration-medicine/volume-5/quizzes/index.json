@@ -1,0 +1,366 @@
+[
+  {
+    "id": "quiz_vol5_mod22",
+    "slug": "long-hair-fue-unshaven-knowledge-check",
+    "moduleId": "module_vol5_long_hair_fue_unshaven_techniques",
+    "parentType": "module",
+    "parentId": "module_vol5_long_hair_fue_unshaven_techniques",
+    "title": "Module Knowledge Check: Long Hair FUE and Unshaven Techniques",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol5_mod22_item_01",
+        "type": "mcq",
+        "stem": "Which statement best reflects disciplined use of Long Hair FUE?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Select it when concealment and social recovery materially improve the treatment pathway, while preserving donor and design governance."
+          },
+          {
+            "id": "b",
+            "label": "Offer it as a universal upgrade because it avoids shaving and is always technically superior."
+          },
+          {
+            "id": "c",
+            "label": "Use it to maximize graft count regardless of field-visibility limitations."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 22 frames Long Hair FUE as indication-driven and governance-aware; it is not a universal replacement for all shaved workflows.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol5_mod22_item_02",
+        "type": "short-answer",
+        "stem": "A female patient requests unshaven frontal and temple restoration with minimal downtime. Outline your case-selection logic, key workflow cautions, and what you document before proceeding.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Confirm diagnosis and miniaturisation risk, donor reserve, realistic zone priorities, and team workflow capacity in a long-hair field. Counsel on trade-offs: visibility constraints, staged planning, and expected recovery. Document indication for concealment-oriented method, design rationale, donor strategy, and alternatives if full coverage is unsafe in one session."
+        },
+        "rationale": "Module 22 requires applied case-selection discipline in female concealment-sensitive pathways.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol5_mod23",
+    "slug": "partial-transection-regenerative-donor-knowledge-check",
+    "moduleId": "module_vol5_partial_transection_regenerative_donor_concepts",
+    "parentType": "module",
+    "parentId": "module_vol5_partial_transection_regenerative_donor_concepts",
+    "title": "Module Knowledge Check: Partial Transection and Regenerative Donor Concepts",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol5_mod23_item_01",
+        "type": "mcq",
+        "stem": "Which statement best reflects academically defensible positioning of partial transection?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Teach it as advanced-emerging with biologic rationale, explicit uncertainty, and protocol-level outcome tracking."
+          },
+          {
+            "id": "b",
+            "label": "Treat it as universal guideline-standard in all donor management pathways now."
+          },
+          {
+            "id": "c",
+            "label": "Avoid any discussion of limits so patient confidence remains high."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 23 positions partial transection as academy-signature emerging innovation with explicit limits and governance expectations.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol5_mod23_item_02",
+        "type": "short-answer",
+        "stem": "Describe how you would counsel a candidate for partial-transection strategy regarding biologic rationale, uncertainty, selection criteria, and audit documentation.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Explain biologic plausibility (follicular signaling and donor-preservation hypothesis) while stating emerging evidence status and unresolved comparative questions. Confirm advanced-pathway selection criteria and alternatives. Document protocol specifics, expected benefits and limits, uncertainty language, and planned longitudinal outcomes tracking. Ensure consent reflects structured innovation rather than settled-standard claims."
+        },
+        "rationale": "Tests Module 23 communication discipline and governance in emerging innovation contexts.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol5_mod24",
+    "slug": "surgical-recovery-complication-management-knowledge-check",
+    "moduleId": "module_vol5_surgical_recovery_optimisation_complication_management",
+    "parentType": "module",
+    "parentId": "module_vol5_surgical_recovery_optimisation_complication_management",
+    "title": "Module Knowledge Check: Surgical Recovery, Optimisation, and Complication Management",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol5_mod24_item_01",
+        "type": "mcq",
+        "stem": "Which approach best reflects postgraduate complication-management discipline?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Treat repair as forensic diagnosis: classify failure domains first, then define escalation or re-intervention."
+          },
+          {
+            "id": "b",
+            "label": "Repeat surgery quickly whenever growth feels disappointing to reassure patient confidence."
+          },
+          {
+            "id": "c",
+            "label": "Assume all low-density outcomes are expected timeline variation until one year regardless of warning signs."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 24 frames repair as forensic and risk-stratified, with explicit red-flag escalation rather than reflex re-surgery or blanket reassurance.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol5_mod24_item_02",
+        "type": "short-answer",
+        "stem": "A patient has persistent donor patchiness and lower-than-expected recipient growth. Outline your escalation framework and what you document before deciding on repair.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Document objective donor/recipient findings, timeline stage, and possible contributors: donor distribution strategy, graft handling/survival factors, disease progression, and expectation mismatch. Define red flags (persistent inflammation/scarring, severe depletion, unexpectedly low survival) and triage to monitoring, medical optimisation, or repair planning. Communicate uncertainty transparently and record consent-level discussion before intervention decisions."
+        },
+        "rationale": "Applies Module 24 governance and forensic logic to a realistic complication scenario.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol5_mod25",
+    "slug": "consultation-ethics-psychological-care-knowledge-check",
+    "moduleId": "module_vol5_consultation_mastery_ethics_psychological_care",
+    "parentType": "module",
+    "parentId": "module_vol5_consultation_mastery_ethics_psychological_care",
+    "title": "Module Knowledge Check: Consultation Mastery, Ethics, and Psychological Care",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol5_mod25_item_01",
+        "type": "mcq",
+        "stem": "Which statement best reflects postgraduate consultation ethics in hair medicine?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Consent is a process including alternatives, uncertainty, maintenance burden, and progression—not just procedural signatures."
+          },
+          {
+            "id": "b",
+            "label": "If the technical plan is strong, detailed expectation discussion can be abbreviated to reduce anxiety."
+          },
+          {
+            "id": "c",
+            "label": "Emerging interventions can be framed as settled science if the patient is enthusiastic."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 25 emphasises process-based consent, ethical boundaries, and non-promotional evidence communication.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol5_mod25_item_02",
+        "type": "short-answer",
+        "stem": "Outline how you would handle a consultation where a patient requests urgent surgery with unrealistic goals and declines discussion of alternatives.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Maintain consultation structure: clarify diagnosis, progression risk, alternatives, and realistic limits. Use explicit ethical boundaries against unsafe or age-inappropriate design and document that refusal to discuss alternatives undermines valid consent. Offer staged or non-surgical pathways where appropriate and reserve the right to decline unsafe intervention while preserving respectful communication."
+        },
+        "rationale": "Assesses applied ethics and consent governance under pressure scenarios.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol5_mod26",
+    "slug": "research-literacy-evidence-appraisal-knowledge-check",
+    "moduleId": "module_vol5_research_literacy_evidence_appraisal",
+    "parentType": "module",
+    "parentId": "module_vol5_research_literacy_evidence_appraisal",
+    "title": "Module Knowledge Check: Research Literacy and Evidence Appraisal",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol5_mod26_item_01",
+        "type": "mcq",
+        "stem": "Which interpretation is most defensible for a small uncontrolled before-and-after procedural series with short follow-up?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Potentially hypothesis-generating but limited for strong efficacy claims due to design, bias, and follow-up constraints."
+          },
+          {
+            "id": "b",
+            "label": "Equivalent to high-quality comparative evidence if visual improvement appears obvious."
+          },
+          {
+            "id": "c",
+            "label": "Sufficient to establish universal standard of care in routine practice."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 26 trains cautious interpretation and bias-aware appraisal in procedure-heavy literature.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol5_mod26_item_02",
+        "type": "short-answer",
+        "stem": "Outline a practical checklist for critiquing before-and-after evidence and explain how registry-style tracking can improve decision quality.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Check image standardization (angle, lighting, styling, length, concealment), timescale adequacy, protocol transparency, and comparability. Flag bias domains and sponsorship language. Integrate registry-style tracking with baseline/interval imaging, protocol logs, donor mapping where relevant, and adverse-event fields so outcomes are auditable and comparable over time."
+        },
+        "rationale": "Tests applied appraisal and governance linkage rather than theoretical recall.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol5_mod27",
+    "slug": "capstone-case-integration-knowledge-check",
+    "moduleId": "module_vol5_capstone_case_review_clinical_integration",
+    "parentType": "module",
+    "parentId": "module_vol5_capstone_case_review_clinical_integration",
+    "title": "Module Knowledge Check: Capstone Case Review and Clinical Integration",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol5_mod27_item_01",
+        "type": "mcq",
+        "stem": "Which response best reflects capstone-level integrated reasoning?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Classify disease, justify differential exclusions, sequence treatment by evidence/risk, define escalation boundaries, and plan longitudinal follow-up."
+          },
+          {
+            "id": "b",
+            "label": "Provide a likely diagnosis and immediate treatment without discussing alternatives or uncertainty."
+          },
+          {
+            "id": "c",
+            "label": "Focus on procedural options first and defer investigation logic to later visits."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 27 evaluates integrated cross-domain reasoning with explicit safety and longitudinal structure.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol5_mod27_item_02",
+        "type": "case-reasoning",
+        "stem": "A patient has diffuse shedding, central miniaturisation, intermittent scalp burning, and high urgency for surgery. Outline your integrated plan across differential, investigations, treatment sequencing, ethical communication, and follow-up.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Frame mixed-phenotype differential (TE + pattern overlap; inflammatory/scarring possibilities). Perform directed exam/trichoscopy and proportionate investigations; escalate biopsy/referral if scarring signals persist. Sequence non-surgical stabilisation first, explain surgery timing constraints and risk boundaries, and use ethical consent language including uncertainty and maintenance burden. Define objective monitoring intervals and explicit escalation triggers before any procedural commitment."
+        },
+        "rationale": "Applies full capstone integration under high-pressure mixed-presentation conditions.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  },
+  {
+    "id": "quiz_vol5_mod28",
+    "slug": "final-assessment-certification-knowledge-check",
+    "moduleId": "module_vol5_final_assessment_and_certification",
+    "parentType": "module",
+    "parentId": "module_vol5_final_assessment_and_certification",
+    "title": "Module Knowledge Check: Final Assessment and Certification",
+    "status": "draft",
+    "passMark": 70,
+    "retries": 2,
+    "items": [
+      {
+        "id": "quiz_vol5_mod28_item_01",
+        "type": "mcq",
+        "stem": "Which certification principle best supports credibility in this postgraduate doctor stream?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Require satisfactory performance across knowledge, reasoning, and integrated case domains with moderation governance."
+          },
+          {
+            "id": "b",
+            "label": "Award certification based on completion of content pages and attendance only."
+          },
+          {
+            "id": "c",
+            "label": "Use one high-stakes MCQ score as sole determinant of competence."
+          }
+        ],
+        "correctAnswer": {
+          "optionIds": [
+            "a"
+          ]
+        },
+        "rationale": "Module 28 emphasizes multi-domain assessment architecture, moderation, and standards governance for credible certification.",
+        "evidenceTier": "consensus",
+        "facultyReviewRequired": false
+      },
+      {
+        "id": "quiz_vol5_mod28_item_02",
+        "type": "case-reasoning",
+        "stem": "A learner performs strongly in written tests but is inconsistent in capstone case integration and ethics communication. Outline a defensible pass/remediation decision pathway.",
+        "options": [],
+        "correctAnswer": {
+          "freeTextSample": "Use domain-based thresholds: written strength cannot compensate for unsafe integration/communication deficits. Trigger moderation review with documented evidence across domains, define specific remediation targets (case integration, ethical communication, escalation boundaries), and require reassessment in deficient domains before certification. Record rationale for transparency and standards integrity."
+        },
+        "rationale": "Tests applied certification-governance reasoning under borderline decisions.",
+        "evidenceTier": "B",
+        "facultyReviewRequired": true
+      }
+    ]
+  }
+]
