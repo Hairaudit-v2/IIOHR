@@ -37,10 +37,14 @@
         "teachingPoint": "Start with female pattern phenotype as a working frame, then actively exclude telogen effluvium, diffuse alopecia areata, and inflammatory scalp disease using tempo, shedding description, symptoms, and targeted exam."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod5_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod5_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -85,10 +89,14 @@
         "teachingPoint": "Prioritise shaft fragility and breakage disorders; shift toward traction, cosmetic damage, and inflammatory causes rather than pure miniaturisation-only reasoning."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod5_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod5_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -133,10 +141,14 @@
         "teachingPoint": "Treat as possible active inflammatory or cicatricial disease until examination, trichoscopy, and sometimes histology exclude it; document symptoms and morphology carefully."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod5_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod5_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -181,10 +193,16 @@
         "teachingPoint": "Telogen effluvium, diffuse alopecia areata, and patterned miniaturisation with superimposed shedding—integrate trichoscopy and labs as indicated."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod5_04_summary"
+    ],
     "quizId": "quiz_vol2_mod5",
-    "casePromptIds": ["case_vol2_mod5_a"],
-    "referenceIds": [],
+    "casePromptIds": [
+      "case_vol2_mod5_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol2_mod5_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -229,10 +247,14 @@
         "teachingPoint": "Female pattern loss may show subtle midline change early; comparing with occipital units clarifies miniaturisation gradients and reduces false reassurance."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod6_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod6_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -277,10 +299,14 @@
         "teachingPoint": "When symptoms, atypical tempo, inflammatory clues, or diagnostic uncertainty remain—trichoscopy informs but does not replace integrated reasoning."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod6_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod6_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -315,7 +341,14 @@
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "Volume 2 Module 6, sections 6.4–6.6."
+      "summaryNote": "Volume 2 Module 6, sections 6.4–6.6.",
+      "notes": [
+        {
+          "label": "Biopsy and scarring urgency",
+          "tier": "B",
+          "note": "Trichoscopy directs timing and site for histology when cicatricial disease is suspected; delaying biopsy in active scarring can forfeit diagnostic yield and risks irreversible loss—local dermatology pathways apply."
+        }
+      ]
     },
     "clinicalReasoningBoxes": [
       {
@@ -325,10 +358,14 @@
         "teachingPoint": "AA variants and some inflammatory conditions enter the differential; avoid anchoring on one sign without clinical correlation and pattern of loss."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod6_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod6_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -342,7 +379,7 @@
     "slug": "trichoscopy-reporting-and-longitudinal-follow-up",
     "title": "Reporting Standards and Longitudinal Follow-Up",
     "status": "draft",
-    "estimatedStudyMinutes": 40,
+    "estimatedStudyMinutes": 50,
     "lessonType": "core-lesson",
     "learningObjectives": [
       "Produce concise reports that state sites, method, comparator logic, and management impact.",
@@ -350,7 +387,7 @@
     ],
     "body": {
       "format": "richText",
-      "content": "A clinical report should state site examined, magnification method, comparison zones, and the key findings that changed or supported management. Avoid overlong descriptive dumps without interpretation.\n\nLongitudinal follow-up benefits from repeat imaging at the same sites. This supports a trichoscopic atlas approach within the academy and online platform."
+      "content": "A clinical trichoscopy record should function like any other diagnostic report: it must be reproducible by a colleague, honest about uncertainty, and tied to management decisions. Begin with context—demographics relevant to hair biology, symptom presence, sites examined, device and magnification (dry versus interface fluid), and which zones served as internal comparators (typically affected frontal or mid-scalp versus occipital or less-involved control).\n\nStructure findings as interpretation, not a stream of consciousness. For each site, summarise dominant patterns: for example, increased diameter diversity and miniaturised hairs supportive of pattern hair loss; yellow dots or broken hairs in an appropriate clinical context suggesting alopecia areata; loss of ostia with perifollicular change suggesting cicatricial activity. State what would change the differential if history or examination differed, and avoid claiming more certainty than the combined data support.\n\nLink findings to decisions explicitly: reassurance and monitoring; targeted laboratories; biopsy with a planned site and clinical letter to pathology; treatment trial with defined goals; or referral. If biopsy is deferred, document why and what would trigger reconsideration.\n\nLongitudinal follow-up depends on repeatability. Select a small set of indexed fields—fixed camera distance, angle, lighting, and part-line position—and revisit them at agreed intervals rather than ad hoc snapshots. Compare current with prior images when discussing stabilisation versus progression; slow change over months is easy to miss from memory alone.\n\nFor medico-legal and multidisciplinary settings, avoid superlatives, unqualified certainty, and device marketing language. Record who performed the examination, date, limitations (cosmetics, shaving, prior procedures), and whether biopsy or referral was recommended. Teaching documentation may add structured teaching fields; clinical notes prioritise decision support and auditability.\n\nClose the loop in the chart: what changed in the plan, and what does the patient understand about next steps? A trichoscopy entry that cannot answer “so what?” for management has not finished its clinical job."
     },
     "keyTakeaways": [
       "Reports should answer: what did you see, where, compared with what, and so what?",
@@ -362,7 +399,14 @@
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "Volume 2 Module 6, section 6.7."
+      "summaryNote": "Volume 2 Module 6, section 6.7.",
+      "notes": [
+        {
+          "label": "Documentation and medico-legal prudence",
+          "tier": "consensus",
+          "note": "Clinical notes should support audit, referral, and consent discussions; avoid absolute claims beyond what imaging and examination support."
+        }
+      ]
     },
     "clinicalReasoningBoxes": [
       {
@@ -372,10 +416,16 @@
         "teachingPoint": "Clinical notes emphasise findings, uncertainty, comparator sites, and management decisions; teaching cases may add pedagogical structure while preserving patient confidentiality."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod6_04_summary"
+    ],
     "quizId": "quiz_vol2_mod6",
-    "casePromptIds": ["case_vol2_mod6_a"],
-    "referenceIds": [],
+    "casePromptIds": [
+      "case_vol2_mod6_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol2_mod6_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -409,7 +459,14 @@
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "Volume 2 Module 7, section 7.1."
+      "summaryNote": "Volume 2 Module 7, section 7.1.",
+      "notes": [
+        {
+          "label": "Investigation stewardship",
+          "tier": "consensus",
+          "note": "Reflexive panels waste resources and alarm patients; under-investigation in atypical diffuse or endocrine-flagged presentations misses treatable drivers. The manual frames proportionality as a core physician skill, not optional."
+        }
+      ]
     },
     "clinicalReasoningBoxes": [
       {
@@ -419,10 +476,14 @@
         "teachingPoint": "Clinical diagnosis may suffice initially; investigate if atypical features, rapid progression, or systemic clues appear—avoid reflexive overtesting."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod7_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod7_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -467,10 +528,14 @@
         "teachingPoint": "Integrate symptoms, menstrual losses, diet, ferritin trends, and full iron studies with general practice or haematology pathways as appropriate—avoid literal range worship."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod7_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod7_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -515,10 +580,14 @@
         "teachingPoint": "When cycles, fertility, virilisation, marked metabolic risk, or complex endocrine diagnoses exceed primary-care management—document clear referral questions."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod7_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod7_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -553,7 +622,14 @@
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "Volume 2 Module 7, sections 7.5–7.7."
+      "summaryNote": "Volume 2 Module 7, sections 7.5–7.7.",
+      "notes": [
+        {
+          "label": "Histology as part of the whole",
+          "tier": "B",
+          "note": "Biopsy reports are interpreted alongside symptoms, examination, and trichoscopy; horizontal versus vertical section strengths depend on the clinical question and local pathology practice."
+        }
+      ]
     },
     "clinicalReasoningBoxes": [
       {
@@ -563,10 +639,16 @@
         "teachingPoint": "Horizontal sections excel at counts and miniaturisation ratios; vertical sections help interface and deeper inflammatory anatomy—coordinate with local pathologists."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod7_04_summary"
+    ],
     "quizId": "quiz_vol2_mod7",
-    "casePromptIds": ["case_vol2_mod7_a"],
-    "referenceIds": [],
+    "casePromptIds": [
+      "case_vol2_mod7_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol2_mod7_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -611,10 +693,14 @@
         "teachingPoint": "Susceptibility is inherited; tempo and pattern expression vary with biology and environment—set expectations for monitoring, not certainty of timing."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod8_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod8_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -658,10 +744,14 @@
         "teachingPoint": "Treat seborrhoeic or inflammatory scalp disease to improve adherence and comfort while maintaining long-term AGA therapy planning."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod8_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod8_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -696,7 +786,14 @@
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "Volume 2 Module 8, section 8.4; align to local prescribing governance."
+      "summaryNote": "Volume 2 Module 8, section 8.4; align to local prescribing governance.",
+      "notes": [
+        {
+          "label": "Therapy evidence bands (male AGA)",
+          "tier": "consensus",
+          "note": "Topical minoxidil and finasteride (where indicated) sit in established practice for many male AGA contexts; low-dose oral minoxidil and dutasteride require patient-specific cardiovascular, fertility, and monitoring discussions per local prescribing rules."
+        }
+      ]
     },
     "clinicalReasoningBoxes": [
       {
@@ -706,10 +803,14 @@
         "teachingPoint": "Explain that early goals may be reduced progression; visible regrowth is variable; premature discontinuation loses both stabilisation and potential regrowth—document shared expectations."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod8_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod8_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -744,7 +845,14 @@
     ],
     "evidenceTier": {
       "overall": "B",
-      "summaryNote": "Volume 2 Module 8, sections 8.5–8.7; regenerative evidence tiers per academy framing."
+      "summaryNote": "Volume 2 Module 8, sections 8.5–8.7; regenerative evidence tiers per academy framing.",
+      "notes": [
+        {
+          "label": "Regenerative and surgical framing",
+          "tier": "B",
+          "note": "PRP and device adjuvants are heterogeneous in protocol and evidence (often academy Tier 2–3); exosomes remain emerging/investigational for mainstream positioning. Surgery does not replace medical stabilisation and donor assessment."
+        }
+      ]
     },
     "clinicalReasoningBoxes": [
       {
@@ -754,10 +862,16 @@
         "teachingPoint": "Progression rate, donor miniaturisation, and willingness to maintain non-surgical therapy are core gates before irreversible surgery."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod8_04_summary"
+    ],
     "quizId": "quiz_vol2_mod8",
-    "casePromptIds": ["case_vol2_mod8_a"],
-    "referenceIds": [],
+    "casePromptIds": [
+      "case_vol2_mod8_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol2_mod8_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -801,10 +915,14 @@
         "teachingPoint": "Use her language—volume, ponytail, styling—then mirror objective findings with photography and part-line documentation."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod9_01_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod9_01"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -848,10 +966,14 @@
         "teachingPoint": "When rapid progression, virilisation, or marked reproductive/metabolic symptoms suggest uncontrolled endocrine disease—coordinate care before irreversible steps."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod9_02_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod9_02"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -896,10 +1018,14 @@
         "teachingPoint": "Reassess for unmasked FPHL, ongoing iron or thyroid issues, and alternate diagnoses rather than assuming isolated self-limited telogen effluvium."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod9_03_summary"
+    ],
     "quizId": null,
     "casePromptIds": [],
-    "referenceIds": [],
+    "referenceIds": [
+      "reference_lesson_vol2_mod9_03"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,
@@ -934,7 +1060,19 @@
     ],
     "evidenceTier": {
       "overall": "consensus",
-      "summaryNote": "Volume 2 Module 9, sections 9.5–9.8; align prescribing to local governance."
+      "summaryNote": "Volume 2 Module 9, sections 9.5–9.8; align prescribing to local governance.",
+      "notes": [
+        {
+          "label": "Reproductive safety and teratogenic risk",
+          "tier": "consensus",
+          "note": "Anti-androgen options demand rigorous contraception and teratogenicity counselling where applicable; prescribing must follow local guidelines and often multidisciplinary input."
+        },
+        {
+          "label": "Adjunct and surgical caution in women",
+          "tier": "B",
+          "note": "PRP may be framed as adjunctive calibre support; exosomes as investigational. Transplant candidacy in diffuse patterns requires caution—stabilise active shedding or inflammation before irreversible steps."
+        }
+      ]
     },
     "clinicalReasoningBoxes": [
       {
@@ -944,10 +1082,16 @@
         "teachingPoint": "Confirm diagnosis, stabilise active shedding or inflammatory disease, assess donor and pattern, align expectations, and ensure medical optimisation first—many women are better served by medical and adjunctive plans."
       }
     ],
-    "downloadableResourceIds": [],
+    "downloadableResourceIds": [
+      "resource_lesson_vol2_mod9_04_summary"
+    ],
     "quizId": "quiz_vol2_mod9",
-    "casePromptIds": ["case_vol2_mod9_a"],
-    "referenceIds": [],
+    "casePromptIds": [
+      "case_vol2_mod9_a"
+    ],
+    "referenceIds": [
+      "reference_lesson_vol2_mod9_04"
+    ],
     "displayFlags": {
       "showEvidencePanel": true,
       "showRedFlagsPanel": true,

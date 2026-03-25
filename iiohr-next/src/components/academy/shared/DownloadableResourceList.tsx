@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { AcademyPanel } from "@/components/academy/shared/AcademyPanel";
 
+function resourceLinkLabel(fileUrl: string): string {
+  const u = fileUrl.toLowerCase();
+  if (u.endsWith(".html") || u.endsWith(".htm")) {
+    return "Open / print to PDF";
+  }
+  return "Download";
+}
+
 interface ResourceEntry {
   id: string;
   title: string;
@@ -36,10 +44,10 @@ export function DownloadableResourceList({
                 <p className="mt-1 text-sm text-readable-muted">{resource.description}</p>
                 {resource.fileUrl?.trim() ? (
                   <Link href={resource.fileUrl} className="link-premium mt-2 inline-block text-sm font-medium">
-                    Download
+                    {resourceLinkLabel(resource.fileUrl)}
                   </Link>
                 ) : (
-                  <p className="mt-2 text-xs text-readable-muted">Download link will appear when the file is published.</p>
+                  <p className="mt-2 text-xs text-readable-muted">Resource link will appear when the file is published.</p>
                 )}
               </div>
             ))}
