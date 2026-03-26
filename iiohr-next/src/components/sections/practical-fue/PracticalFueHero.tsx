@@ -5,10 +5,10 @@ export function PracticalFueHero() {
   return (
     <PageHero
       eyebrow="Practical FUE"
-      title="Supervised practical surgical development for FUE clinicians"
-      description="Practical FUE at IIOHR is supervised clinical development inside an institute-led pathway. The focus is judgment, donor stewardship, planning discipline, and accountable progression under review."
-      primaryCta={{ href: "/admissions", label: "Start Admissions Review" }}
-      secondaryCta={{ href: "#practical-fue-model", label: "What Practical FUE Means" }}
+      title="Partner-led practical FUE training for international doctors"
+      description="IIOHR Practical FUE now includes partner-led delivery in Gurgaon, India through Evolved Hair Restoration / Evolved Training Institute. The offering centres on Modified FUE Technique with Implanter Pen, supervised hands-on exposure on live patients, and course pathways from foundation to advanced immersion."
+      primaryCta={{ href: "#course-levels-fees", label: "View Course Levels and Fees" }}
+      secondaryCta={{ href: "#partner-training-overview", label: "Explore Partner Training" }}
       image={getHeroImage("practicalFue")}
     />
   );

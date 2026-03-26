@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { FluencyProgressionSection } from "@/components/sections/practical-fue/FluencyProgressionSection";
-import { PracticalFueAudienceSection } from "@/components/sections/practical-fue/PracticalFueAudienceSection";
+import { CourseLevelsFeesSection } from "@/components/sections/practical-fue/CourseLevelsFeesSection";
+import { GurgaonTrainingLocationSection } from "@/components/sections/practical-fue/GurgaonTrainingLocationSection";
+import { NurseTechnicianTrainingSection } from "@/components/sections/practical-fue/NurseTechnicianTrainingSection";
+import { PartnerFacultySection } from "@/components/sections/practical-fue/PartnerFacultySection";
+import { PartnerTrainingSitesSection } from "@/components/sections/practical-fue/PartnerTrainingSitesSection";
 import { PracticalFueCtaSection } from "@/components/sections/practical-fue/PracticalFueCtaSection";
 import { PracticalFueHero } from "@/components/sections/practical-fue/PracticalFueHero";
 import { PracticalFueMeaningSection } from "@/components/sections/practical-fue/PracticalFueMeaningSection";
@@ -12,7 +15,7 @@ const canonical = "https://iiohr.com/practical-fue";
 export const metadata: Metadata = {
   title: "Practical FUE",
   description:
-    "Practical FUE at IIOHR is supervised practical surgical development within an institute-led pathway focused on judgment, donor stewardship, staged responsibility, and clinical accountability.",
+    "Practical FUE at IIOHR includes partner-led delivery in Gurgaon, India, with modified FUE training, supervised hands-on exposure, course pricing, and faculty information for international doctors.",
   alternates: { canonical },
   openGraph: { url: canonical },
 };
@@ -23,9 +26,12 @@ export default function PracticalFuePage() {
       <PracticalFueHero />
       <PracticalFueMeaningSection />
       <SupervisedHandsOnSection />
+      <PartnerFacultySection />
       <TechnicalDevelopmentSection />
-      <FluencyProgressionSection />
-      <PracticalFueAudienceSection />
+      <CourseLevelsFeesSection />
+      <GurgaonTrainingLocationSection />
+      <NurseTechnicianTrainingSection />
+      <PartnerTrainingSitesSection />
       <PracticalFueCtaSection />
     </>
   );

@@ -2,47 +2,55 @@ import Link from "next/link";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { siteConfig } from "@/lib/site";
 
 export function PracticalFueCtaSection() {
   return (
-    <SectionShell anchor>
+    <SectionShell anchor id="partner-enquiry">
       <SectionHeading
-        eyebrow="Next Step"
-        title="Progress through admissions and pathway selection"
-        description="Practical FUE sits within the wider IIOHR development pathway, alongside foundational science, supervised practice, and ongoing review. Use the route that matches your current role and stage."
+        eyebrow="Enquiry"
+        title="Enquire about Gurgaon partner-led practical FUE training"
+        description="For the first live partner site, brochure contact details are provided for training enquiries. IIOHR can present the public programme structure here while retaining a premium institutional route into further conversation."
       />
       <div className="mt-8 flex flex-wrap gap-3">
-        <Button href="/admissions" variant="primary">
-          Start Admissions Review
+        <Button href="mailto:nidhi@evolvedhairindia.com" variant="primary">
+          Email Nidhi Khurana
         </Button>
-        <Button href="/apply/doctors" variant="secondary">
-          Apply as a Doctor
+        <Button href="tel:+919711284755" variant="secondary">
+          Call or WhatsApp
         </Button>
-        <Button href="/doctors" variant="ghost">
-          Explore Doctors
-        </Button>
-        <Button href="/login?redirectTo=%2Fapply" variant="ghost">
-          Sign In / Access Account
+        <Button href="/admissions" variant="ghost">
+          Explore Admissions
         </Button>
       </div>
-      <p className="mt-6 text-sm text-readable-muted">
-        <Link href="/training-pathways" className="link-premium">
-          Full training pathway
-        </Link>
-        {" · "}
-        <Link href="/hair-loss-science" className="link-premium">
-          Hair loss science
-        </Link>
-        {" · "}
-        <Link href="/admissions" className="link-premium">
-          Understand readiness and entry
-        </Link>
-        {" · "}
-        <a href={`mailto:${siteConfig.applicationEmail}`} className="link-premium">
-          Contact admissions
-        </a>
-      </p>
+      <div className="mt-8 grid gap-6 md:grid-cols-2">
+        <div className="space-y-2 text-sm text-readable-muted">
+          <p className="font-semibold text-foreground">Nidhi Khurana</p>
+          <p>Operations Head</p>
+          <p>
+            <a href="mailto:nidhi@evolvedhairindia.com" className="link-premium">
+              nidhi@evolvedhairindia.com
+            </a>
+          </p>
+          <p>
+            <a href="tel:+919711284755" className="link-premium">
+              +91 97112 84755
+            </a>
+          </p>
+        </div>
+        <p className="text-sm leading-relaxed text-readable-muted">
+          <Link href="/training-pathways" className="link-premium">
+            Full training pathways
+          </Link>
+          {" · "}
+          <Link href="/admissions" className="link-premium">
+            Admissions route
+          </Link>
+          {" · "}
+          <Link href="/doctors" className="link-premium">
+            Doctor pathways
+          </Link>
+        </p>
+      </div>
     </SectionShell>
   );
 }

@@ -1,0 +1,47 @@
+import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Card } from "@/components/ui/Card";
+
+const sites = [
+  {
+    city: "Gurgaon",
+    status: "Live Partner Site",
+    description:
+      "Evolved Hair Restoration / Evolved Training Institute is the first confirmed partner host for IIOHR Practical FUE.",
+    details:
+      "Current public information includes partner faculty, course levels, pricing, optional nurse training, and Golf Course Road location details.",
+  },
+  {
+    city: "Mumbai",
+    status: "Coming Soon",
+    description:
+      "A second partner site is planned for Mumbai and is intentionally presented without pricing, faculty, or timing details at this stage.",
+    details: "Further information will be published only when the site is confirmed for public release.",
+  },
+];
+
+export function PartnerTrainingSitesSection() {
+  return (
+    <SectionShell muted id="partner-training-sites">
+      <SectionHeading
+        eyebrow="Training Sites"
+        title="The first partner site is live, with Mumbai reserved as the next location"
+        description="IIOHR Practical FUE can now present partner-led site information in a controlled public format: Gurgaon is active, and Mumbai is marked as coming soon."
+      />
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
+        {sites.map((site) => (
+          <Card key={site.city} interactive>
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="text-2xl font-semibold tracking-tight">{site.city}</h3>
+              <span className="rounded-full border border-foreground/18 bg-surface-elevated px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-foreground uppercase">
+                {site.status}
+              </span>
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{site.description}</p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{site.details}</p>
+          </Card>
+        ))}
+      </div>
+    </SectionShell>
+  );
+}

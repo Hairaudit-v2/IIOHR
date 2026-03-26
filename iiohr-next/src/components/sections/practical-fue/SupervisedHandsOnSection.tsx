@@ -4,19 +4,29 @@ import { Card } from "@/components/ui/Card";
 
 const supervisionBlocks = [
   {
-    title: "Direct supervision in live care settings",
+    title: "Supervised hands-on training on live patients",
     description:
-      "Practical exposure is delivered under experienced surgical supervision so technique, sequencing, and safety standards are corrected in real time.",
+      "The brochure positions India as a setting where supervised practical exposure can take place on live patients rather than simulations or mannequin-based practice.",
   },
   {
-    title: "Why observation alone is insufficient",
+    title: "Doctor-driven, structured, outcome-oriented",
     description:
-      "Observation builds awareness, but operative judgment is formed only through supervised responsibility in real procedures where decisions carry consequences.",
+      "The training model is presented as doctor-led and structured, with progression anchored in clinical discipline rather than volume-led technician delivery.",
   },
   {
-    title: "Staged responsibility with accountability",
+    title: "Real clinical exposure",
     description:
-      "Responsibility expands only as readiness is demonstrated, with case-based feedback and review to improve consistency, discipline, and clinical accountability.",
+      "Active patient care is positioned as the basis for building practical skill under supervision and repeated real-case exposure.",
+  },
+  {
+    title: "World-class faculty",
+    description:
+      "Faculty-led delivery is central to the Gurgaon partner site, with named clinical and trichology leadership presented throughout the training offer.",
+  },
+  {
+    title: "Superior economics",
+    description:
+      "The brochure frames India as offering high-quality training at a fraction of typical global costs, supporting international doctors who need practical exposure and economic efficiency.",
   },
 ];
 
@@ -24,11 +34,11 @@ export function SupervisedHandsOnSection() {
   return (
     <SectionShell>
       <SectionHeading
-        eyebrow="Clinical Supervision"
-        title="Supervised development where responsibility is earned in stages"
-        description="The practical environment prioritizes patient safety, disciplined execution, and transparent review. Progression is governed by readiness and supervision so standards and judgment lead technical development."
+        eyebrow="Why India"
+        title="Clinical partner delivery positioned around live exposure and structured supervision"
+        description="For international doctors, the Gurgaon partner site is framed as a doctor-driven environment with supervised hands-on experience, real clinical exposure, world-class faculty, and stronger training economics."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {supervisionBlocks.map((block) => (
           <Card key={block.title}>
             <h3 className="text-lg font-semibold">{block.title}</h3>
