@@ -13,7 +13,7 @@ const canonical = "https://iiohr.com/about";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn why IIOHR exists and how its institute model combines practical training, science, mentorship, and auditing for long-term surgical development.",
+    "Learn what IIOHR is, why it exists, and how its institute model uses standards, progression, review, and ecosystem support to strengthen long-term clinical development.",
   alternates: { canonical },
   openGraph: { url: canonical },
 };
@@ -26,8 +26,8 @@ export default function AboutPage() {
       <ShortCourseLimitationsSection />
       <InstituteDifferenceSection />
       <GovernanceStandardsSection />
-      <EcosystemRelationshipSection />
       <StandardsDevelopmentSection />
+      <EcosystemRelationshipSection />
       <AboutCtaSection />
     </>
   );

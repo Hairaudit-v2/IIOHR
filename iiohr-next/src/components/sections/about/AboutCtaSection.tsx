@@ -7,23 +7,23 @@ export function AboutCtaSection() {
     <SectionShell anchor>
       <SectionHeading
         eyebrow="Next step"
-        title="Explore pathways or begin your application"
-        description="Whether you’re entering the field or leading a clinic, we’ll match you to the right pathway. Review the framework below or apply directly."
+        title="Choose the next step into the institute"
+        description="Use admissions to review pathway fit, apply when ready, or explore the doctor, consultant, and clinic routes in more detail."
       />
       <div className="mt-8 flex flex-wrap gap-3">
-        <Button href="/training-pathways" variant="primary">
-          Explore pathways
+        <Button href="/admissions" variant="primary">
+          Start Admissions Review
         </Button>
         <Button href="/apply" variant="secondary">
           Apply to IIOHR
         </Button>
         <Button href="/for-clinics" variant="ghost">
-          For clinics
+          Explore Clinic Pathways
         </Button>
       </div>
       <div className="mt-6">
-        <Button href="/admissions" variant="tertiary">
-          Explore admissions
+        <Button href="/training-pathways" variant="tertiary">
+          View training pathways
         </Button>
       </div>
     </SectionShell>

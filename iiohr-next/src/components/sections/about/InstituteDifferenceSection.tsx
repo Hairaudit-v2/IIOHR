@@ -4,34 +4,34 @@ import { Card } from "@/components/ui/Card";
 
 const modelComponents = [
   {
-    title: "Practical training",
+    title: "Standards-led placement",
     description:
-      "Supervised operative development designed for consistency, safety, and progressive responsibility.",
+      "Admissions and pathway placement are designed to match applicants to the right route rather than treating all development as the same.",
   },
   {
-    title: "Scientific depth",
+    title: "Staged progression",
     description:
-      "Trichology and biological understanding are integrated to strengthen diagnostic and planning decisions.",
+      "Capability is expected to build in sequence, with clearer transitions between foundations, supervised development, review, and advancement.",
   },
   {
-    title: "Mentorship continuity",
+    title: "Practical development",
     description:
-      "Structured mentor correction supports judgment refinement beyond initial technical training.",
+      "Learning is tied to real clinical application so education does not drift away from operational and patient-facing reality.",
   },
   {
-    title: "Audit-backed review",
+    title: "Review and accountability",
     description:
-      "Performance analysis and benchmarking provide objective feedback loops for measurable improvement.",
+      "Standards, supervision, mentor input, and review loops are used to guide improvement rather than relying on confidence alone.",
   },
-];
+] as const;
 
 export function InstituteDifferenceSection() {
   return (
     <SectionShell muted>
       <SectionHeading
-        eyebrow="The IIOHR Model"
-        title="What makes IIOHR different"
-        description="IIOHR combines practical training, science, mentorship, and auditing as one integrated development system."
+        eyebrow="Institute Model"
+        title="How the institute model works"
+        description="The model is structured around pathway placement, explicit standards, staged development, and ongoing review."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {modelComponents.map((item) => (

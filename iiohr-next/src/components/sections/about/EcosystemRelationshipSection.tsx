@@ -8,28 +8,28 @@ const ecosystemRoles = [
   {
     title: "HairAudit",
     description:
-      "Supports structured surgical audit and quality review to guide targeted development priorities.",
+      "Supports audit and review so standards can be checked against real clinical work.",
   },
   {
     title: "Follicle Intelligence",
     description:
-      "Provides analytical insight and benchmarking to strengthen case-based feedback and refinement.",
+      "Adds analytical feedback and benchmarking that can sharpen review and improvement.",
   },
   {
     title: "Hair Longevity Institute",
     description:
-      "Contributes biological and treatment-depth context that informs long-term clinical planning.",
+      "Contributes broader biological and treatment context around long-term hair care and planning.",
   },
-];
+] as const;
 
 export function EcosystemRelationshipSection() {
   return (
     <>
       <SectionShell muted>
         <SectionHeading
-          eyebrow="Ecosystem Relationship"
-          title="How IIOHR connects with the wider intelligence ecosystem"
-          description="IIOHR is the education and certification pillar, designed to operate alongside ecosystem platforms that strengthen outcome review, analytics, and biological depth."
+          eyebrow="Wider Ecosystem"
+          title="How IIOHR sits within the wider system"
+          description="IIOHR is the education and development institute within a wider ecosystem that also includes audit, analytics, and broader biological context."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           {ecosystemRoles.map((item) => (
@@ -42,8 +42,8 @@ export function EcosystemRelationshipSection() {
       </SectionShell>
       <GlobalHairIntelligenceSection
         variant="iiohr"
-        heading="Connected education, audit, analytics, and biology"
-        description="IIOHR links surgeon development to ecosystem intelligence so training remains measurable, standards-led, and clinically relevant over the long term."
+        heading="Connected education, audit, and clinical intelligence"
+        description="The ecosystem is designed to keep education connected to review and intelligence without turning the institute into a product layer."
         size="compact"
         nodeLinks={GLOBAL_NETWORK_NODE_LINKS}
       />

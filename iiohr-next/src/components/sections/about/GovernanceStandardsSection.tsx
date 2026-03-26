@@ -4,26 +4,26 @@ import { Card } from "@/components/ui/Card";
 
 const items = [
   {
-    title: "Institute-led assessment",
-    description: "Admissions and pathway placement are decided by the institute team, with clear criteria and direct communication.",
+    title: "Standards-led development",
+    description: "Progress depends on clearer expectations rather than informal assumptions about readiness.",
   },
   {
-    title: "Explicit progression standards",
-    description: "Capability milestones are defined so trainees and mentors share a common frame for readiness and advancement.",
+    title: "Staged progression",
+    description: "Responsibility grows in a sequence that can be reviewed, discussed, and justified.",
   },
   {
     title: "Review and accountability",
-    description: "Case review, audit feedback, and mentor input form a continuous loop rather than a one-off evaluation.",
+    description: "Feedback, audit, and mentor input help keep development visible rather than opaque.",
   },
-];
+] as const;
 
 export function GovernanceStandardsSection() {
   return (
     <SectionShell>
       <SectionHeading
-        eyebrow="Governance and standards"
-        title="How we maintain rigour"
-        description="Quality is built into the model through assessment, clear standards, and ongoing review—not only at the point of entry."
+        eyebrow="Operating Structure"
+        title="How credibility is built into the model"
+        description="IIOHR is designed to make development more traceable through standards, progression, review, and accountability."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {items.map((item) => (

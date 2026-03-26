@@ -4,29 +4,29 @@ import { Card } from "@/components/ui/Card";
 
 const pillars = [
   {
-    title: "Mission",
+    title: "What IIOHR is",
     description:
-      "To develop confident, accountable hair restoration surgeons through structured education, supervised practical progression, and rigorous review.",
+      "An education institute for structured development in hair restoration across doctor, consultant, nurse, and clinic pathways.",
   },
   {
-    title: "Positioning",
+    title: "Why it exists",
     description:
-      "IIOHR operates as an institute-level training pathway, not a transactional short-format teaching provider.",
+      "To replace fragmented training logic with clearer standards, staged progression, and stronger review across the field.",
   },
   {
-    title: "Purpose",
+    title: "What it is designed to do",
     description:
-      "To bridge the gap between initial procedural exposure and sustained, high-quality clinical performance over time.",
+      "To connect education, supervision, admissions, and accountability so capability can build more reliably over time.",
   },
-];
+] as const;
 
 export function MissionPositioningSection() {
   return (
     <SectionShell muted joinPrevious>
       <SectionHeading
-        eyebrow="Mission and Positioning"
-        title="Why IIOHR exists"
-        description="IIOHR was established to create a serious educational framework for surgeon development in hair restoration, with clear standards and explicit progression."
+        eyebrow="Institute Purpose"
+        title="What IIOHR exists to do"
+        description="IIOHR exists to make development in hair restoration more structured, more legible, and more credible than ad hoc training pathways often allow."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {pillars.map((item) => (

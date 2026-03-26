@@ -3,19 +3,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 
 const limitations = [
-  "Short-course structures often prioritize exposure over sustained capability development.",
-  "Post-course support is frequently limited, leaving surgeons without ongoing correction loops.",
-  "Outcome feedback mechanisms are often absent or too informal for reliable improvement.",
-  "Progression pathways are rarely explicit, making long-term standards consistency difficult.",
-];
+  "Exposure without a longer development structure rarely produces consistent capability.",
+  "Support after initial training is often too limited to guide correction and improvement.",
+  "Review loops are frequently informal, making accountability and refinement harder to sustain.",
+  "Progression standards are often unclear, so readiness is interpreted rather than defined.",
+] as const;
 
 export function ShortCourseLimitationsSection() {
   return (
     <SectionShell>
       <SectionHeading
-        eyebrow="Training Context"
-        title="Why traditional short-course models are insufficient"
-        description="Hair restoration surgery requires more than isolated technical exposure. Development quality depends on structured progression, supervision, and review continuity."
+        eyebrow="Field Context"
+        title="Why the institute model is needed"
+        description="Hair restoration requires more than isolated training events. It needs progression, supervision, review, and clearer standards over time."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {limitations.map((item) => (
