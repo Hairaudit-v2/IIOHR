@@ -3,10 +3,10 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 
 const nextSteps = [
-  "Initial intake review of your profile and goals",
-  "Pathway-fit discussion with the IIOHR team",
-  "Recommendation of the most suitable entry stage",
-  "Intake guidance and next-step planning",
+  "Admissions reviews your submission in context",
+  "Pathway fit is considered against role, experience, and intended direction",
+  "Guidance is given on the most appropriate next step",
+  "Account-based access or admissions follow-up may follow where relevant",
 ];
 
 export function ApplyNextStepsSection() {
@@ -15,7 +15,7 @@ export function ApplyNextStepsSection() {
       <SectionHeading
         eyebrow="Next Steps"
         title="What happens after submission"
-        description="Every enquiry is reviewed by the admissions team and matched to pathway suitability before progression decisions are made."
+        description="Submissions are reviewed for fit and direction. The aim is to guide the next step clearly, not to force every applicant through a one-size-fits-all intake."
       />
       <ol className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {nextSteps.map((step, index) => (

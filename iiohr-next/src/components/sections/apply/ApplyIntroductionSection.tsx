@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/Card";
 import { LinkArrow } from "@/components/ui/LinkArrow";
 
 const introPoints = [
-  "We review your clinical background, experience level, and development goals.",
-  "Individual doctors and clinic teams use the same intake process.",
-  "You receive a pathway recommendation after initial review.",
+  "Use this form if you appear broadly aligned and want pathway-fit review before deeper account-based access.",
+  "You may be asked for your role, background, development goals, and current level of exposure.",
+  "The submission helps admissions understand fit, likely direction, and the most appropriate next step.",
 ];
 
 export function ApplyIntroductionSection() {
@@ -14,11 +14,11 @@ export function ApplyIntroductionSection() {
     <SectionShell muted joinPrevious>
       <SectionHeading
         eyebrow="Before You Apply"
-        title="Structured intake process"
-        description="We match you to the right pathway stage based on your background and goals, ensuring safe, realistic progression."
+        title="A guided submission, not a raw intake form"
+        description="The purpose of this form is to give admissions enough context to review pathway fit and guide you toward the right route."
       />
       <div className="mt-10">
-        <LinkArrow href="/admissions">Not sure if you are ready? Review admissions criteria</LinkArrow>
+        <LinkArrow href="/admissions">Not sure if this is the right step? Review admissions first</LinkArrow>
       </div>
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {introPoints.map((point) => (

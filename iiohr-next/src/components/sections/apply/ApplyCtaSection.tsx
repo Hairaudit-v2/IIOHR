@@ -10,9 +10,9 @@ export function ApplyCtaSection() {
   return (
     <SectionShell anchor>
       <SectionHeading
-        eyebrow="Ready to Proceed"
-        title="Begin your IIOHR application pathway"
-        description="Whether you are an individual clinician or a clinic team, IIOHR provides a clear review and response process with direct admissions support."
+        eyebrow="Support"
+        title="Use the route that best fits your next step"
+        description="Complete the form if you are ready to submit, or use the links below if you need role-specific guidance before continuing."
       />
       <div className="mt-8 flex flex-wrap gap-3">
         <Button href="#application-form" variant="primary">
@@ -21,6 +21,25 @@ export function ApplyCtaSection() {
         <a href={`mailto:${siteConfig.applicationEmail}`} className={mailtoClass}>
           Enquire by Email
         </a>
+        <Button href="/admissions" variant="ghost">
+          Review Admissions
+        </Button>
+      </div>
+      <div className="mt-6 flex flex-wrap gap-3">
+        <Button href="/doctors" variant="secondary">
+          Explore Doctors
+        </Button>
+        <Button href="/consultants" variant="secondary">
+          Explore Consultants
+        </Button>
+        <Button href="/for-clinics" variant="secondary">
+          Explore For Clinics
+        </Button>
+      </div>
+      <div className="mt-6">
+        <Button href="/login?redirectTo=%2Fapply" variant="tertiary">
+          Sign In / Access Account
+        </Button>
       </div>
     </SectionShell>
   );

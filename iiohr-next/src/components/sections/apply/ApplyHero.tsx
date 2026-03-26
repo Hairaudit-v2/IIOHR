@@ -5,10 +5,11 @@ export function ApplyHero() {
   return (
     <PageHero
       eyebrow="Apply"
-      title="Application and enquiry for doctors and clinics"
-      description="Submit your details and training interests so the IIOHR team can review pathway fit and advise the most suitable next step."
+      title="Submit your application for pathway review"
+      description="If your background and goals appear broadly aligned with IIOHR, this is the right next step. We review submissions for pathway fit and guidance rather than treating every applicant as the same."
       primaryCta={{ href: "#application-form", label: "Start Application" }}
-      secondaryCta={{ href: "/training-pathways", label: "Review Training Pathways" }}
+      secondaryCta={{ href: "/admissions", label: "Review Admissions" }}
+      tertiaryCta={{ href: "/login?redirectTo=%2Fapply", label: "Sign In / Access Account" }}
       image={getHeroImage("apply")}
     />
   );

@@ -25,7 +25,7 @@ export default function ApplyPage() {
         data-section-tone="light"
       >
         <p className="text-readable-muted">
-          Stream-specific academy applications open after sign-in. Continue here if you already have an account:{" "}
+          Already have an account? Continue to the stream-specific application routes here:{" "}
           <Link href="/apply/doctors" className="link-premium font-medium">
             Doctors
           </Link>
@@ -35,7 +35,7 @@ export default function ApplyPage() {
           </Link>
           {" · "}
           <Link href="/login?redirectTo=%2Fapply" className="link-premium font-medium">
-            Sign in / create account
+            Sign in / access account
           </Link>
         </p>
       </section>

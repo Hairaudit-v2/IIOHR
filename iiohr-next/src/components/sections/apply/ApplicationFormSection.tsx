@@ -67,8 +67,8 @@ export function ApplicationFormSection() {
         <div className="min-w-0">
           <SectionHeading
             eyebrow="Application or Enquiry"
-            title="Submit your details for pathway review"
-            description="Complete the form below. Our admissions team will review your profile and respond with pathway guidance."
+            title="Submit your details for pathway-fit review"
+            description="Complete the form below to give admissions the context needed to review your background, intended direction, and likely next step."
           />
 
           {status === "success" && (
@@ -79,8 +79,8 @@ export function ApplicationFormSection() {
             >
               <p className="font-semibold text-primary">Thank you for your application.</p>
               <p className="mt-2 text-sm leading-relaxed text-readable-muted break-words">
-                We have received your details and will be in touch to discuss your pathway fit. If you have
-                urgent questions, email us at{" "}
+                We have received your details and will review them in context before guiding the next step. If you have
+                questions, email us at{" "}
                 <a href={`mailto:${siteConfig.applicationEmail}`} className="link-premium">
                   {siteConfig.applicationEmail}
                 </a>
@@ -350,7 +350,7 @@ export function ApplicationFormSection() {
 
           {status !== "success" && (
             <p className="mt-6 text-sm text-readable-muted">
-              Your information is used only for pathway review and admissions. For direct contact, email{" "}
+              Your information is used only for pathway review and admissions. The purpose is guidance and pathway matching, not automatic intake. For direct contact, email{" "}
               <a className="link-premium" href={`mailto:${siteConfig.applicationEmail}`}>
                 {siteConfig.applicationEmail}
               </a>
@@ -361,17 +361,23 @@ export function ApplicationFormSection() {
 
         <aside className="space-y-6">
           <Card>
-            <h3 className="text-lg font-semibold text-heading">What happens next</h3>
+            <h3 className="text-lg font-semibold text-heading">What this form is for</h3>
             <ul className="mt-4 space-y-3 text-sm text-readable-muted">
-              <li>Institute-led assessment of your profile</li>
-              <li>Pathway recommendation matched to your goals</li>
-              <li>Direct contact from the admissions team</li>
+              <li>Share enough context for pathway-fit review</li>
+              <li>Help admissions understand role, goals, and current stage</li>
+              <li>Support the most appropriate next-step guidance</li>
             </ul>
           </Card>
           <Card>
-            <h3 className="text-lg font-semibold text-heading">Privacy</h3>
+            <h3 className="text-lg font-semibold text-heading">Before you submit</h3>
             <p className="mt-4 text-sm leading-relaxed text-readable-muted">
-              We use your details only for pathway review and admissions. See our{" "}
+              Not every applicant is entering at the same stage. Submissions are reviewed in context so route guidance can reflect role, exposure, and intended development direction.
+            </p>
+          </Card>
+          <Card>
+            <h3 className="text-lg font-semibold text-heading">Privacy and account access</h3>
+            <p className="mt-4 text-sm leading-relaxed text-readable-muted">
+              We use your details only for pathway review and admissions. Protected academy content remains behind sign-in and approved access. See our{" "}
               <Link href="/privacy-policy" className="link-premium">
                 Privacy Policy
               </Link>
