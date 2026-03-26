@@ -70,8 +70,8 @@ export function SiteFooter() {
               ))}
               <li>
                 Contact:{" "}
-                <a href={`mailto:${siteConfig.email}`} className="link-premium text-slate-100 hover:text-white">
-                  {siteConfig.email}
+                <a href={`mailto:${siteConfig.emails.info}`} className="link-premium text-slate-100 hover:text-white">
+                  {siteConfig.emails.info}
                 </a>
               </li>
             </ul>

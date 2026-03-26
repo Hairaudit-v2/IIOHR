@@ -79,8 +79,8 @@ export default function CookiePolicyPage() {
           <LegalSection id="contact" title="4. Contact">
             <p>
               For questions about this cookie policy:{" "}
-              <a href={`mailto:${siteConfig.email}`} className="link-premium">
-                {siteConfig.email}
+              <a href={`mailto:${siteConfig.emails.support}`} className="link-premium">
+                {siteConfig.emails.support}
               </a>
               .
             </p>

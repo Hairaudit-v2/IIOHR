@@ -3,6 +3,7 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
+import { siteConfig } from "@/lib/site";
 
 export function PracticalFueCtaSection() {
   return (
@@ -27,8 +28,8 @@ export function PracticalFueCtaSection() {
             <Button href="/doctors" variant="secondary">
               Explore Doctor Pathways
             </Button>
-            <Button href="mailto:nidhi@evolvedhairindia.com" variant="ghost">
-              Request Gurgaon Site Contact
+            <Button href={`mailto:${siteConfig.emails.training}`} variant="ghost">
+              Email Training Team
             </Button>
           </div>
         </Card>
@@ -43,11 +44,14 @@ export function PracticalFueCtaSection() {
             </span>
           </div>
           <div className="mt-6 space-y-4 text-sm text-readable-muted">
-            <p className="font-semibold text-foreground">Nidhi Khurana</p>
-            <p>Operations Head</p>
             <p>
-              <a href="mailto:nidhi@evolvedhairindia.com" className="link-premium">
-                nidhi@evolvedhairindia.com
+              <a href={`mailto:${siteConfig.emails.training}`} className="link-premium">
+                {siteConfig.emails.training}
+              </a>
+            </p>
+            <p>
+              <a href={`mailto:${siteConfig.emails.india}`} className="link-premium">
+                {siteConfig.emails.india}
               </a>
             </p>
             <p>

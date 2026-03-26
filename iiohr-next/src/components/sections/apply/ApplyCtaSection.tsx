@@ -18,7 +18,7 @@ export function ApplyCtaSection() {
         <Button href="#application-form" variant="primary">
           Complete Form
         </Button>
-        <a href={`mailto:${siteConfig.applicationEmail}`} className={mailtoClass}>
+        <a href={`mailto:${siteConfig.emails.admissions}`} className={mailtoClass}>
           Enquire by Email
         </a>
         <Button href="/admissions" variant="ghost">

@@ -14,7 +14,12 @@ export function ApplicationFormSection() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [enquiryType, setEnquiryType] = useState<"doctor" | "consultant" | "clinic">("doctor");
+  const [submittedEnquiryType, setSubmittedEnquiryType] = useState<"doctor" | "consultant" | "clinic" | null>(null);
   const [formStarted, setFormStarted] = useState(false);
+
+  function getPublicEmail(type: "doctor" | "consultant" | "clinic") {
+    return type === "clinic" ? siteConfig.emails.clinics : siteConfig.emails.admissions;
+  }
 
   const roleForEnquiryType = enquiryType === "doctor"
     ? "doctor"
@@ -44,6 +49,7 @@ export function ApplicationFormSection() {
 
     setStatus("submitting");
     setErrorMessage("");
+    setSubmittedEnquiryType(payload.enquiryType === "clinic" ? "clinic" : payload.enquiryType === "consultant" ? "consultant" : "doctor");
     trackAnalyticsEvent("funnel_form_submit_attempted", {
       form_id: "apply_public",
       enquiry_type: String(payload.enquiryType ?? enquiryType),
@@ -79,7 +85,7 @@ export function ApplicationFormSection() {
       form.reset();
     } catch {
       setStatus("error");
-      setErrorMessage("Network error. Please try again or email " + siteConfig.applicationEmail + " directly.");
+      setErrorMessage("Network error. Please try again or email " + getPublicEmail(enquiryType) + " directly.");
       trackAnalyticsEvent("funnel_form_submit_failed", {
         form_id: "apply_public",
         enquiry_type: String(payload.enquiryType ?? enquiryType),
@@ -95,6 +101,9 @@ export function ApplicationFormSection() {
   const isDoctor = enquiryType === "doctor";
   const isConsultant = enquiryType === "consultant";
   const isClinic = enquiryType === "clinic";
+  const displayedEnquiryType = submittedEnquiryType ?? enquiryType;
+  const displayedIsClinic = displayedEnquiryType === "clinic";
+  const publicEmail = getPublicEmail(displayedEnquiryType);
   const clinicalContextLabel = isDoctor
     ? "Current medical background"
     : isConsultant
@@ -123,15 +132,15 @@ export function ApplicationFormSection() {
               className="mt-8 rounded-xl border border-border bg-surface p-6 text-foreground break-words"
             >
               <p className="font-semibold text-primary">
-                {isClinic ? "Thank you for your enquiry." : "Thank you for your application."}
+                {displayedIsClinic ? "Thank you for your enquiry." : "Thank you for your application."}
               </p>
               <p className="mt-2 text-sm leading-relaxed text-readable-muted break-words">
-                {isClinic
+                {displayedIsClinic
                   ? "We have received your clinic details and will review your enquiry in context before recommending a suitable next step."
                   : "We have received your details and will review them in context before guiding the next step."}{" "}
                 If you have questions, email us at{" "}
-                <a href={`mailto:${siteConfig.applicationEmail}`} className="link-premium">
-                  {siteConfig.applicationEmail}
+                <a href={`mailto:${publicEmail}`} className="link-premium">
+                  {publicEmail}
                 </a>
                 .
               </p>
@@ -149,8 +158,8 @@ export function ApplicationFormSection() {
               <p className="font-medium break-words">{errorMessage}</p>
               <p className="mt-2 text-readable-muted break-words">
                 You can also send your enquiry directly to{" "}
-                <a href={`mailto:${siteConfig.applicationEmail}`} className="link-premium">
-                  {siteConfig.applicationEmail}
+                <a href={`mailto:${publicEmail}`} className="link-premium">
+                  {publicEmail}
                 </a>
                 .
               </p>
@@ -485,14 +494,14 @@ export function ApplicationFormSection() {
                     {status === "submitting" ? "Submitting…" : isClinic ? "Submit enquiry" : "Submit application"}
                   </button>
                   <a
-                    href={`mailto:${siteConfig.applicationEmail}`}
+                    href={`mailto:${getPublicEmail(enquiryType)}`}
                     className="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-foreground/16 bg-surface px-6 py-3 text-sm font-semibold tracking-[0.02em] text-foreground transition-colors hover:border-accent/40 hover:bg-surface-elevated"
                     data-analytics-event="funnel_cta_clicked"
                     data-analytics-page="/apply"
                     data-analytics-cta="Prefer email enquiry"
                     data-analytics-section="form_actions"
                     data-analytics-role={roleForEnquiryType}
-                    data-analytics-destination={`mailto:${siteConfig.applicationEmail}`}
+                    data-analytics-destination={`mailto:${getPublicEmail(enquiryType)}`}
                   >
                     Prefer email enquiry
                   </a>
@@ -504,8 +513,8 @@ export function ApplicationFormSection() {
           {status !== "success" && (
             <p className="mt-7 text-sm leading-relaxed text-readable-muted">
               Your information is used only for pathway review and admissions. The purpose is guidance and pathway matching, not automatic intake. For direct contact, email{" "}
-              <a className="link-premium" href={`mailto:${siteConfig.applicationEmail}`}>
-                {siteConfig.applicationEmail}
+              <a className="link-premium" href={`mailto:${getPublicEmail(enquiryType)}`}>
+                {getPublicEmail(enquiryType)}
               </a>
               .
             </p>

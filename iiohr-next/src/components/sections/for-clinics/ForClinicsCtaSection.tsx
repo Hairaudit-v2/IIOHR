@@ -50,14 +50,14 @@ export function ForClinicsCtaSection() {
           Start New Enquiry
         </Button>
         <a
-          href={`mailto:${siteConfig.applicationEmail}?subject=Clinic%20partnership%20enquiry`}
+          href={`mailto:${siteConfig.emails.clinics}?subject=Clinic%20partnership%20enquiry`}
           className={mailtoClass}
           data-analytics-event="funnel_cta_clicked"
           data-analytics-page="/for-clinics"
           data-analytics-cta="Email clinic enquiry"
           data-analytics-section="next_step"
           data-analytics-role="clinic_group"
-          data-analytics-destination={`mailto:${siteConfig.applicationEmail}`}
+          data-analytics-destination={`mailto:${siteConfig.emails.clinics}`}
         >
           Email clinic enquiry
         </a>

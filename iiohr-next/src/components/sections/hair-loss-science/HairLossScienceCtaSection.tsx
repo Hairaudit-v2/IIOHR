@@ -19,7 +19,7 @@ export function HairLossScienceCtaSection() {
         <Button href="/apply" variant="primary">
           Apply for Training
         </Button>
-        <a href={`mailto:${siteConfig.applicationEmail}`} className={mailtoClass}>
+        <a href={`mailto:${siteConfig.emails.training}`} className={mailtoClass}>
           Enquire by Email
         </a>
       </div>
