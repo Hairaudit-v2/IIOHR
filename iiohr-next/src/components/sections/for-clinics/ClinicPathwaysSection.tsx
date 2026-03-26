@@ -4,40 +4,40 @@ import { Card } from "@/components/ui/Card";
 
 const clinicPathways = [
   {
-    title: "First-time capability build",
+    title: "Consistency",
     description:
-      "For clinics establishing internal hair restoration development for the first time, with staged entry and supervision foundations.",
+      "A clearer internal model helps teams work to more consistent communication and development expectations.",
   },
   {
-    title: "Consistency improvement pathway",
+    title: "Trust",
     description:
-      "For clinics with existing activity that need stronger consistency in planning, execution, and outcome-linked review.",
+      "Patients and teams benefit when clinics use role-safe pathways rather than informal or personality-led training behaviour.",
   },
   {
-    title: "Internal doctor progression",
+    title: "Team readiness",
     description:
-      "For clinics developing structured internal progression for doctors across entrant stages and capability milestones.",
+      "Structured routes help clinics understand what different team members are building and where support is needed.",
   },
   {
-    title: "Multi-doctor standards alignment",
+    title: "Structured growth",
     description:
-      "For larger teams seeking a shared standards framework, governance cadence, and progression logic across multiple clinicians.",
+      "Growth becomes more manageable when progression, standards, and review are treated as operating infrastructure.",
   },
-];
+] as const;
 
 export function ClinicPathwaysSection() {
   return (
     <SectionShell muted>
       <SectionHeading
-        eyebrow="Clinic Pathways"
-        title="Pathway models for different clinic maturity contexts"
-        description="Clinic leaders can use these pathway models to self-identify the development approach most aligned to current readiness, team structure, and capability goals."
+        eyebrow="Why It Matters Operationally"
+        title="Why this matters operationally"
+        description="The clinic case for IIOHR is about reducing ad hoc training dependence and building a more durable standards culture."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {clinicPathways.map((pathway, index) => (
           <Card key={pathway.title}>
             <p className="text-[10px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">
-              {`Pathway 0${index + 1}`}
+              {`Area 0${index + 1}`}
             </p>
             <h3 className="mt-2 text-lg font-semibold">{pathway.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{pathway.description}</p>

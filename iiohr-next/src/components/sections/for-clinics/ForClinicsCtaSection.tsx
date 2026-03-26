@@ -11,19 +11,30 @@ export function ForClinicsCtaSection() {
   return (
     <SectionShell anchor>
       <SectionHeading
-        eyebrow="Partnership enquiry"
-        title="Discuss a clinic partnership pathway"
-        description="Contact the IIOHR team to define a development plan for your surgeons, standards, and quality goals. Clinics can apply via the form or email directly."
+        eyebrow="Next Step"
+        title="Choose the right next step for your clinic"
+        description="Use admissions if you want to review fit first, apply or enquire when you are ready, or explore the doctor and consultant routes that sit around the wider clinic model."
       />
       <div className="mt-8 flex flex-wrap gap-3">
+        <Button href="/admissions" variant="primary">
+          Start Admissions Review
+        </Button>
+        <Button href="/apply" variant="secondary">
+          Apply / Enquire
+        </Button>
         <a
           href={`mailto:${siteConfig.applicationEmail}?subject=Clinic%20partnership%20enquiry`}
           className={mailtoClass}
         >
-          Email: clinic partnership
+          Email clinic enquiry
         </a>
-        <Button href="/apply" variant="secondary">
-          Submit application (clinic)
+      </div>
+      <div className="mt-6 flex flex-wrap gap-3">
+        <Button href="/doctors" variant="ghost">
+          Explore Doctors
+        </Button>
+        <Button href="/consultants" variant="ghost">
+          Explore Consultants
         </Button>
       </div>
       <p className="mt-6 text-sm text-readable-muted">
@@ -31,8 +42,8 @@ export function ForClinicsCtaSection() {
           Understand readiness and entry
         </Link>
         {" · "}
-        <Link href="/certification-framework" className="link-premium">
-          View certification framework
+        <Link href="/apply" className="link-premium">
+          Review application route
         </Link>
       </p>
     </SectionShell>

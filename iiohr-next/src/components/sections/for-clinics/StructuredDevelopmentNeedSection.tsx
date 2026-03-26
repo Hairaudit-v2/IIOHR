@@ -3,22 +3,23 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 
 const pressures = [
-  "Unstructured training can lead to variable clinical quality across surgeons.",
-  "One-off courses rarely provide the longitudinal support required for reliable performance.",
-  "Without clear progression pathways, internal capability growth becomes inconsistent.",
-  "Governance expectations require transparent standards, review cadence, and accountability.",
-];
+  "Founder-led clinics building a more durable internal development model.",
+  "Growing multi-practitioner clinics seeking clearer standards across teams.",
+  "Teams strengthening consultant and nurse capability alongside doctor development.",
+  "Clinics that want less dependence on ad hoc training decisions and one-off courses.",
+  "Operators looking for a more structured route to standards alignment and review.",
+] as const;
 
 export function StructuredDevelopmentNeedSection() {
   return (
     <SectionShell muted joinPrevious className="scroll-mt-24">
       <div id="clinic-development-need">
         <SectionHeading
-          eyebrow="Why Structured Development Matters"
-          title="Clinics need systems, not isolated training events"
-          description="IIOHR is positioned as a development partner for clinics that require repeatable surgeon progression, measurable quality controls, and aligned clinical standards."
+          eyebrow="Who This Is For"
+          title="Built for clinics that want a more structured internal pathway"
+          description="This route is for clinics using development as an operational priority rather than treating training as a disconnected event."
         />
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {pressures.map((item) => (
             <Card key={item}>
               <p className="text-sm leading-relaxed text-muted-foreground">{item}</p>

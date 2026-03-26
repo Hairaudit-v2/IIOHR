@@ -6,37 +6,37 @@ const supports = [
   {
     title: "Enquiry and fit",
     description:
-      "Initial discussion clarifies clinic context, goals, and whether an IIOHR partnership model is the right strategic fit.",
+      "Initial discussion clarifies clinic context, current needs, and whether the IIOHR model is the right fit.",
   },
   {
     title: "Readiness review",
     description:
-      "A readiness review identifies baseline capability, supervision capacity, and governance conditions required for safe staged rollout.",
+      "Readiness review helps identify current capability, supervision context, and whether a structured route is appropriate.",
   },
   {
     title: "Pathway design",
     description:
-      "Entry stages, development milestones, and review points are mapped so progression is practical, structured, and repeatable.",
+      "Development direction is matched at a high level so progression is structured rather than improvised.",
   },
   {
-    title: "Supervised development",
+    title: "Role-aligned development",
     description:
-      "Implementation emphasizes supervised practical progression with standards-led support rather than isolated one-off training events.",
+      "Doctor, consultant, nurse, and clinic needs can be aligned without exposing protected internal content in the public layer.",
   },
   {
     title: "Review and progression",
     description:
-      "Ongoing case review and performance reflection are used to guide next-stage progression and quality consistency over time.",
+      "Review and progression help clinics move away from ad hoc training dependence toward a clearer development system.",
   },
-];
+] as const;
 
 export function ClinicImplementationSection() {
   return (
     <SectionShell>
       <SectionHeading
-        eyebrow="Implementation support"
-        title="How implementation works in staged practice"
-        description="Clinic implementation is structured as a phased, standards-led process from fit and readiness through supervised development and progression review."
+        eyebrow="Operational Model"
+        title="How clinic engagement works in public-safe terms"
+        description="The public page does not expose internal programme detail. It explains the high-level logic: fit, readiness, route matching, and structured progression."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {supports.map((item) => (

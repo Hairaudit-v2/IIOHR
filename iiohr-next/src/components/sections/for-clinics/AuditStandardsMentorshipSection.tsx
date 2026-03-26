@@ -4,29 +4,29 @@ import { Card } from "@/components/ui/Card";
 
 const pillars = [
   {
-    title: "Audit-backed improvement",
+    title: "Standards-led development",
     description:
-      "Performance is reviewed through structured outcome analysis so development priorities are objective and trackable.",
+      "Clinic development is anchored to clearer expectations rather than informal assumptions about readiness or quality.",
   },
   {
-    title: "Standards alignment",
+    title: "Staged progression",
     description:
-      "Training progression is anchored to explicit clinical standards, supporting governance and quality consistency.",
+      "Capability is expected to build in sequence, with transitions that can be reviewed and justified.",
   },
   {
-    title: "Mentorship and post-training support",
+    title: "Review and accountability",
     description:
-      "Surgeons continue to receive mentor correction and case-based guidance beyond initial practical exposure.",
+      "Oversight, reflection, and review help clinics avoid treating training as a one-off event.",
   },
-];
+] as const;
 
 export function AuditStandardsMentorshipSection() {
   return (
     <SectionShell muted>
       <SectionHeading
-        eyebrow="Quality Infrastructure"
-        title="Audit, standards, and mentorship work as one development system"
-        description="IIOHR clinic partnerships are designed to strengthen both individual surgeon progression and organizational quality assurance."
+        eyebrow="How The Model Works"
+        title="An institute model rather than a course provider model"
+        description="IIOHR is positioned as a capability partner: standards, staged progression, and review are intended to support more reliable clinic development over time."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {pillars.map((pillar) => (

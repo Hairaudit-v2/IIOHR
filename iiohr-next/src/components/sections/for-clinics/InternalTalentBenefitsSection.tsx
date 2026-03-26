@@ -4,29 +4,29 @@ import { Card } from "@/components/ui/Card";
 
 const benefits = [
   {
-    title: "Retention of clinical knowledge",
+    title: "Structured internal development",
     description:
-      "Internal training pathways preserve procedural standards and reduce dependence on ad hoc external hiring.",
+      "Clinics can build clearer development pathways instead of relying on fragmented decisions about how people should progress.",
   },
   {
-    title: "Consistent patient experience",
+    title: "More consistent consultation standards",
     description:
-      "Shared training and review frameworks improve consistency in planning, execution, and follow-up care.",
+      "Shared expectations across doctors, consultants, and nurses help make communication and patient handover more consistent.",
   },
   {
-    title: "Scalable capability growth",
+    title: "Longer-term quality infrastructure",
     description:
-      "A structured surgeon pipeline allows clinics to expand safely without compromising quality expectations.",
+      "Standards, review, and progression logic give clinics a stronger foundation for capability over time.",
   },
-];
+] as const;
 
 export function InternalTalentBenefitsSection() {
   return (
     <SectionShell>
       <SectionHeading
-        eyebrow="Internal Talent Development"
-        title="Training internal surgeons creates long-term strategic value"
-        description="IIOHR supports clinics that want durable capability growth, not temporary short-course uplift."
+        eyebrow="Why Clinics Engage"
+        title="Why clinics engage with IIOHR"
+        description="The value is not only educational. It is also operational: stronger consistency, clearer development pathways, and a more credible capability model."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {benefits.map((benefit) => (
