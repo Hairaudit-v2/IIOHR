@@ -1,9 +1,16 @@
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { CertificateEligibilityCard } from "@/components/academy/shared/CertificateEligibilityCard";
 import { DigitalBadgeCard } from "@/components/academy/shared/DigitalBadgeCard";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 
-export default function ConsultantsCertificatesPage() {
+export default async function ConsultantsCertificatesPage() {
+  const access = await getProtectedAcademyAccess("consultants", "/consultants/certificates");
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   return (
     <SectionShell>
       <SectionHeading

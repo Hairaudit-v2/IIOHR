@@ -7,9 +7,11 @@ import { DownloadableResourceList } from "@/components/academy/shared/Downloadab
 import { LinkedCaseStudiesPanel } from "@/components/academy/shared/LinkedCaseStudiesPanel";
 import { ModuleHero } from "@/components/academy/shared/ModuleHero";
 import { ModuleOutcomePanel } from "@/components/academy/shared/ModuleOutcomePanel";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { ReferenceList } from "@/components/academy/shared/ReferenceList";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { ModuleFacultyNotesTeaser } from "@/components/academy/doctor/ModuleFacultyNotesTeaser";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { partitionDownloadableResourcesByFile } from "@/lib/academy/public-asset-exists";
 import { getModulePageViewModel } from "@/lib/academy/view-models/module";
 
@@ -19,6 +21,14 @@ export default async function DoctorModulePage({
   params: Promise<{ programSlug: string; moduleSlug: string }>;
 }) {
   const { programSlug, moduleSlug } = await params;
+  const access = await getProtectedAcademyAccess(
+    "doctors",
+    `/doctors/programs/${programSlug}/modules/${moduleSlug}`
+  );
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const viewModel = getModulePageViewModel(programSlug, moduleSlug);
 
   if (!viewModel || viewModel.stream.slug !== "doctors") {

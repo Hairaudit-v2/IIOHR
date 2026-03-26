@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { ComplianceStatementPanel } from "@/components/academy/shared/ComplianceStatementPanel";
 import { CompetencyTagList } from "@/components/academy/shared/CompetencyTagList";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getCompetenciesByIds, getComplianceNoticesByIds } from "@/lib/academy/content-loader";
 import { getLevelPageViewModel } from "@/lib/academy/view-models/level";
 
@@ -13,6 +15,14 @@ export default async function ConsultantLevelPage({
   params: Promise<{ programSlug: string; levelSlug: string }>;
 }) {
   const { programSlug, levelSlug } = await params;
+  const access = await getProtectedAcademyAccess(
+    "consultants",
+    `/consultants/programs/${programSlug}/levels/${levelSlug}`
+  );
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const viewModel = getLevelPageViewModel(programSlug, levelSlug);
 
   if (!viewModel || viewModel.stream.slug !== "consultants") {

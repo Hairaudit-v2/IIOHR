@@ -10,6 +10,7 @@ import { LessonOverviewPanel } from "@/components/academy/shared/LessonOverviewP
 import { LinkedCaseStudiesPanel } from "@/components/academy/shared/LinkedCaseStudiesPanel";
 import { LinkedPracticalTasksPanel } from "@/components/academy/shared/LinkedPracticalTasksPanel";
 import { PatientCommunicationExamples } from "@/components/academy/shared/PatientCommunicationExamples";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { RedFlagsPanel } from "@/components/academy/shared/RedFlagsPanel";
 import { ReferenceList } from "@/components/academy/shared/ReferenceList";
 import { DownloadableResourceList } from "@/components/academy/shared/DownloadableResourceList";
@@ -19,6 +20,7 @@ import { LinkedAssessmentsCallout } from "@/components/academy/shared/LinkedAsse
 import { ConsultantLessonFooterNav } from "@/components/academy/consultant/ConsultantLessonFooterNav";
 import { ConsultantRoleBoundariesCallout } from "@/components/academy/consultant/ConsultantRoleBoundariesCallout";
 import { ConsultantScopeStrip } from "@/components/academy/consultant/ConsultantScopeStrip";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getLessonPageViewModel } from "@/lib/academy/view-models/lesson";
 import { partitionDownloadableResourcesByFile } from "@/lib/academy/public-asset-exists";
 
@@ -28,6 +30,14 @@ export default async function ConsultantLessonPage({
   params: Promise<{ programSlug: string; lessonSlug: string }>;
 }) {
   const { programSlug, lessonSlug } = await params;
+  const access = await getProtectedAcademyAccess(
+    "consultants",
+    `/consultants/programs/${programSlug}/lessons/${lessonSlug}`
+  );
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const viewModel = getLessonPageViewModel(programSlug, lessonSlug);
 
   if (!viewModel || viewModel.stream.slug !== "consultants") {

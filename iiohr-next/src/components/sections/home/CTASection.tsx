@@ -7,12 +7,12 @@ const segmentLinks = [
   {
     href: "/doctors",
     label: "Doctors",
-    description: "Programmes, academy routes, and entry points.",
+    description: "Academy overview, admissions route, and doctor application entry point.",
   },
   {
     href: "/consultants",
     label: "Consultants / nurses",
-    description: "Consultant academy route and competencies.",
+    description: "Consultant pathway overview, admissions route, and account-based next steps.",
   },
   {
     href: "/for-clinics",

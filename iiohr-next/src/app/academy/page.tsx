@@ -287,7 +287,7 @@ export default function AcademyPage() {
         <SectionHeading
           eyebrow="Pathways by audience"
           title="Clear next steps for doctors and clinics"
-          description="Choose the entry point that matches your role and development goals."
+          description="Choose the entry point that matches your role and development goals. Detailed programme and curriculum access opens after sign-in and approved access."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {audiencePathways.map((group) => (
@@ -333,8 +333,8 @@ export default function AcademyPage() {
       <SectionShell anchor>
         <SectionHeading
           eyebrow="Final step"
-          title="Apply, enquire, or explore the full pathway structure"
-          description="Whether you are applying as an individual doctor or seeking a clinic development pathway, IIOHR will map the right next step."
+          title="Apply, enquire, or sign in for protected academy access"
+          description="Whether you are applying as an individual doctor or seeking a clinic development pathway, public pages stay high level while detailed academy content is delivered within the approved account journey."
         />
         <SectionCTA
           variant="light"
@@ -342,7 +342,7 @@ export default function AcademyPage() {
           secondary={[
             { href: "/for-clinics", label: "Enquire" },
             { href: "/training-pathways", label: "Explore Pathways" },
-            { href: "/certification-framework", label: "Certification Framework" },
+            { href: "/login?redirectTo=%2Facademy", label: "Login / Create Account" },
           ]}
           tertiary={[{ href: "/admissions", label: "Explore admissions" }]}
           className="mt-16"

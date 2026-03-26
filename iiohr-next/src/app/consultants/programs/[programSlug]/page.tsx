@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { ComplianceStatementPanel } from "@/components/academy/shared/ComplianceStatementPanel";
 import { LevelProgressionRail } from "@/components/academy/shared/LevelProgressionRail";
 import { ProgramOverviewHeader } from "@/components/academy/shared/ProgramOverviewHeader";
 import { ProgramPillarCardGrid } from "@/components/academy/shared/ProgramPillarCardGrid";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getProgramComplianceNotices } from "@/lib/academy/content-loader";
 import { getProgramPageViewModel } from "@/lib/academy/view-models/program";
 
@@ -14,6 +16,11 @@ export default async function ConsultantProgramPage({
   params: Promise<{ programSlug: string }>;
 }) {
   const { programSlug } = await params;
+  const access = await getProtectedAcademyAccess("consultants", `/consultants/programs/${programSlug}`);
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const viewModel = getProgramPageViewModel(programSlug);
 
   if (!viewModel || viewModel.stream.slug !== "consultants") {

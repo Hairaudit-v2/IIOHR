@@ -1,11 +1,18 @@
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { CompetencyTranscriptTable } from "@/components/academy/shared/CompetencyTranscriptTable";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getProgramCompetencies } from "@/lib/academy/content-loader";
 
 const programSlug = "certificate-hair-loss-consultation-clinical-patient-coordination";
 
-export default function ConsultantsCompetenciesPage() {
+export default async function ConsultantsCompetenciesPage() {
+  const access = await getProtectedAcademyAccess("consultants", "/consultants/competencies");
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const competencies = getProgramCompetencies(programSlug);
 
   return (

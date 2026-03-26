@@ -2,14 +2,34 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AcademyStreamHero } from "@/components/academy/shared/AcademyStreamHero";
 import { ProgramPillarCardGrid } from "@/components/academy/shared/ProgramPillarCardGrid";
+import { Card } from "@/components/ui/Card";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAcademyStreams } from "@/lib/academy/content-registry";
-import { getStreamPrograms } from "@/lib/academy/content-loader";
+
+const nextStepCards = [
+  {
+    title: "Admissions",
+    body: "Review who this stream is for, how pathway fit is assessed, and what happens after review.",
+    href: "/admissions",
+    label: "Review admissions",
+  },
+  {
+    title: "Apply",
+    body: "Submit consultant or nurse interest, understand review expectations, and receive next-step guidance.",
+    href: "/apply/consultants",
+    label: "Continue consultant application",
+  },
+  {
+    title: "Account access",
+    body: "Detailed programmes, competencies, assessments, and internal academy assets open only inside approved learner access.",
+    href: "/login?redirectTo=%2Fconsultants%2Fdashboard",
+    label: "Sign in or create account",
+  },
+] as const;
 
 export default function ConsultantsPage() {
   const stream = getAcademyStreams().find((entry) => entry.slug === "consultants");
-  const programs = getStreamPrograms("consultants");
 
   if (!stream) {
     notFound();
@@ -20,9 +40,9 @@ export default function ConsultantsPage() {
       <AcademyStreamHero
         eyebrow="IIOHR Consultant Academy"
         title="Consultant and Nurse Academy"
-        description={stream.positioning}
-        primaryCta={{ href: "/consultants/programs", label: "View Programs" }}
-        secondaryCta={{ href: "/consultants/competencies", label: "View Competencies" }}
+        description={`${stream.positioning} Public pages explain pathway intent and admissions; detailed academy content opens after sign-in and approved access.`}
+        primaryCta={{ href: "/admissions", label: "View Admissions" }}
+        secondaryCta={{ href: "/apply/consultants", label: "Apply as Consultant / Nurse" }}
       />
       <SectionShell>
         <SectionHeading
@@ -39,19 +59,21 @@ export default function ConsultantsPage() {
       </SectionShell>
       <SectionShell muted>
         <SectionHeading
-          eyebrow="Programs"
-          title="Consultant programs"
-          description="Consultant routes remain fully separate from doctor-facing route trees, content, and role language."
+          eyebrow="Protected curriculum access"
+          title="Public positioning first, detailed academy content after approval"
+          description="Consultant programme detail, competency transcripts, modules, lessons, assessments, and downloads are now separated from the public marketing and admissions layer."
         />
-        <div className="mt-12 grid gap-4">
-          {programs.map((program) => (
-            <Link
-              key={program.id}
-              href={`/consultants/programs/${program.slug}`}
-              className="rounded-[10px] border border-border bg-surface px-6 py-5 text-sm text-foreground transition-colors hover:border-accent/40"
-            >
-              {program.title}
-            </Link>
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {nextStepCards.map((item) => (
+            <Card key={item.title}>
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
+              <p className="mt-5 text-sm">
+                <Link href={item.href} className="link-premium font-medium">
+                  {item.label}
+                </Link>
+              </p>
+            </Card>
           ))}
         </div>
       </SectionShell>

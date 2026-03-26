@@ -116,9 +116,9 @@ export default function AdmissionsPage() {
       <PageHero
         eyebrow="Admissions"
         title="Find your pathway entry point"
-        description="Review your readiness, identify the right entrant level, and understand your progression route before you apply."
+        description="Review your readiness, identify the right entrant level, and understand your progression route before you apply. Detailed academy content is shared after account review and approved access."
         primaryCta={{ href: "/apply", label: "Apply now" }}
-        secondaryCta={{ href: "/academy", label: "Explore Academy" }}
+        secondaryCta={{ href: "/login?redirectTo=%2Fapply", label: "Login / Create Account" }}
       />
 
       <SectionShell muted joinPrevious>
@@ -229,14 +229,14 @@ export default function AdmissionsPage() {
       <SectionShell anchor>
         <SectionHeading
           eyebrow="Next step"
-          title="Apply or explore your pathway options"
-          description="Use admissions guidance to choose the most suitable route, then proceed to formal application."
+          title="Apply, sign in, or continue your admissions route"
+          description="Use admissions guidance to choose the most suitable route, then proceed to application and account-based review."
         />
         <SectionCTA
           variant="light"
           primary={{ href: "/apply", label: "Apply now" }}
           secondary={[
-            { href: "/academy", label: "Explore Academy" },
+            { href: "/login?redirectTo=%2Fapply", label: "Login / Create Account" },
             { href: "/training-pathways", label: "Explore Training Pathways" },
           ]}
           className="mt-16"

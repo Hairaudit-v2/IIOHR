@@ -1,12 +1,14 @@
 import { notFound } from "next/navigation";
 import { AssessmentHeader } from "@/components/academy/shared/AssessmentHeader";
 import { AssessmentInstructionPanel } from "@/components/academy/shared/AssessmentInstructionPanel";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { AssessmentRenderer } from "@/components/academy/shared/AssessmentRenderer";
 import { CommunicationRoleplayTask } from "@/components/academy/shared/CommunicationRoleplayTask";
 import { ComplianceStatementPanel } from "@/components/academy/shared/ComplianceStatementPanel";
 import { DocumentationTaskEditor } from "@/components/academy/shared/DocumentationTaskEditor";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { ConsultantScopeStrip } from "@/components/academy/consultant/ConsultantScopeStrip";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getAssessmentPageViewModel } from "@/lib/academy/view-models/assessment";
 
 export default async function ConsultantAssessmentPage({
@@ -15,6 +17,14 @@ export default async function ConsultantAssessmentPage({
   params: Promise<{ programSlug: string; assessmentSlug: string }>;
 }) {
   const { programSlug, assessmentSlug } = await params;
+  const access = await getProtectedAcademyAccess(
+    "consultants",
+    `/consultants/programs/${programSlug}/assessments/${assessmentSlug}`
+  );
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const viewModel = getAssessmentPageViewModel(programSlug, assessmentSlug);
 
   if (!viewModel || viewModel.stream.slug !== "consultants") {

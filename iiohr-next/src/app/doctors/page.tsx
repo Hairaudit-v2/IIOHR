@@ -2,14 +2,34 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AcademyStreamHero } from "@/components/academy/shared/AcademyStreamHero";
 import { ProgramPillarCardGrid } from "@/components/academy/shared/ProgramPillarCardGrid";
+import { Card } from "@/components/ui/Card";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAcademyStreams } from "@/lib/academy/content-registry";
-import { getStreamPrograms } from "@/lib/academy/content-loader";
+
+const nextStepCards = [
+  {
+    title: "Admissions",
+    body: "Review who typically applies, how pathway fit is assessed, and what happens after your enquiry.",
+    href: "/admissions",
+    label: "Review admissions",
+  },
+  {
+    title: "Apply",
+    body: "Submit your interest or application and receive high-level guidance on review and next steps.",
+    href: "/apply/doctors",
+    label: "Continue doctor application",
+  },
+  {
+    title: "Account access",
+    body: "Detailed curriculum, module content, and internal academy resources open after sign-in and approved access.",
+    href: "/login?redirectTo=%2Fdoctors%2Fdashboard",
+    label: "Sign in or create account",
+  },
+] as const;
 
 export default function DoctorsPage() {
   const stream = getAcademyStreams().find((entry) => entry.slug === "doctors");
-  const programs = getStreamPrograms("doctors");
 
   if (!stream) {
     notFound();
@@ -20,9 +40,9 @@ export default function DoctorsPage() {
       <AcademyStreamHero
         eyebrow="IIOHR Doctor Academy"
         title={stream.title}
-        description={stream.positioning}
-        primaryCta={{ href: "/doctors/programs", label: "View Programs" }}
-        secondaryCta={{ href: "/academy", label: "Academy Overview" }}
+        description={`${stream.positioning} Public pages explain the academy model and admissions route; detailed curriculum opens within approved learner access.`}
+        primaryCta={{ href: "/admissions", label: "View Admissions" }}
+        secondaryCta={{ href: "/apply/doctors", label: "Apply as a Doctor" }}
       />
       <SectionShell>
         <SectionHeading
@@ -39,19 +59,21 @@ export default function DoctorsPage() {
       </SectionShell>
       <SectionShell muted>
         <SectionHeading
-          eyebrow="Programs"
-          title="Current doctor programs"
-          description="Doctor curriculum routes now resolve through the shared academy registry rather than a single hardcoded volume."
+          eyebrow="Protected curriculum access"
+          title="Public overview first, detailed programme access after approval"
+          description="Doctor-facing curriculum detail, modules, lessons, assessments, and downloads now sit behind account access so admissions, review, and enrolled learning are clearly separated."
         />
-        <div className="mt-12 grid gap-4">
-          {programs.map((program) => (
-            <Link
-              key={program.id}
-              href={`/doctors/programs/${program.slug}`}
-              className="rounded-[10px] border border-border bg-surface px-6 py-5 text-sm text-foreground transition-colors hover:border-accent/40"
-            >
-              {program.title}
-            </Link>
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {nextStepCards.map((item) => (
+            <Card key={item.title}>
+              <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
+              <p className="mt-5 text-sm">
+                <Link href={item.href} className="link-premium font-medium">
+                  {item.label}
+                </Link>
+              </p>
+            </Card>
           ))}
         </div>
       </SectionShell>

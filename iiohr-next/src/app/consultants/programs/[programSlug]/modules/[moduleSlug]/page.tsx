@@ -7,12 +7,14 @@ import { ModuleHero } from "@/components/academy/shared/ModuleHero";
 import { ModuleOutcomePanel } from "@/components/academy/shared/ModuleOutcomePanel";
 import { LinkedCaseStudiesPanel } from "@/components/academy/shared/LinkedCaseStudiesPanel";
 import { LinkedPracticalTasksPanel } from "@/components/academy/shared/LinkedPracticalTasksPanel";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { ReferenceList } from "@/components/academy/shared/ReferenceList";
 import { DownloadableResourceList } from "@/components/academy/shared/DownloadableResourceList";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { ConsultantModuleFlowIntro } from "@/components/academy/consultant/ConsultantModuleFlowIntro";
 import { ConsultantModuleFooterNav } from "@/components/academy/consultant/ConsultantModuleFooterNav";
 import { ConsultantScopeStrip } from "@/components/academy/consultant/ConsultantScopeStrip";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getModulePageViewModel } from "@/lib/academy/view-models/module";
 import { partitionDownloadableResourcesByFile } from "@/lib/academy/public-asset-exists";
 
@@ -22,6 +24,14 @@ export default async function ConsultantModulePage({
   params: Promise<{ programSlug: string; moduleSlug: string }>;
 }) {
   const { programSlug, moduleSlug } = await params;
+  const access = await getProtectedAcademyAccess(
+    "consultants",
+    `/consultants/programs/${programSlug}/modules/${moduleSlug}`
+  );
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const viewModel = getModulePageViewModel(programSlug, moduleSlug);
 
   if (!viewModel || viewModel.stream.slug !== "consultants") {

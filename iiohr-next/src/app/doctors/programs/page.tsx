@@ -1,9 +1,16 @@
 import Link from "next/link";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getStreamPrograms } from "@/lib/academy/content-loader";
 
-export default function DoctorProgramsPage() {
+export default async function DoctorProgramsPage() {
+  const access = await getProtectedAcademyAccess("doctors", "/doctors/programs");
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const programs = getStreamPrograms("doctors");
 
   return (

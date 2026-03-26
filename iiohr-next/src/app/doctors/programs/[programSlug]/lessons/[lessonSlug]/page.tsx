@@ -10,10 +10,12 @@ import { LessonHeader } from "@/components/academy/shared/LessonHeader";
 import { LessonOverviewPanel } from "@/components/academy/shared/LessonOverviewPanel";
 import { LinkedAssessmentsCallout } from "@/components/academy/shared/LinkedAssessmentsCallout";
 import { LinkedCaseStudiesPanel } from "@/components/academy/shared/LinkedCaseStudiesPanel";
+import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { RedFlagsPanel } from "@/components/academy/shared/RedFlagsPanel";
 import { ReferenceList } from "@/components/academy/shared/ReferenceList";
 import { RichTextAcademicBody } from "@/components/academy/shared/RichTextAcademicBody";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { partitionDownloadableResourcesByFile } from "@/lib/academy/public-asset-exists";
 import { getLessonPageViewModel } from "@/lib/academy/view-models/lesson";
 
@@ -23,6 +25,14 @@ export default async function DoctorLessonPage({
   params: Promise<{ programSlug: string; lessonSlug: string }>;
 }) {
   const { programSlug, lessonSlug } = await params;
+  const access = await getProtectedAcademyAccess(
+    "doctors",
+    `/doctors/programs/${programSlug}/lessons/${lessonSlug}`
+  );
+  if (!access.hasProtectedAccess) {
+    return <ProtectedAcademyAccessBoundary {...access} />;
+  }
+
   const viewModel = getLessonPageViewModel(programSlug, lessonSlug);
 
   if (!viewModel || viewModel.stream.slug !== "doctors") {

@@ -38,8 +38,11 @@ export function DifferenceAndCurriculumSection() {
         <SectionCTA
           variant="light"
           primary={{ href: "/training-pathways", label: "View Pathway Structure" }}
-          secondary={[{ href: "/practical-fue", label: "View Practical FUE Curriculum" }]}
-          tertiary={[{ href: "/apply", label: "Start Admissions Review" }]}
+          secondary={[{ href: "/practical-fue", label: "View Practical FUE Overview" }]}
+          tertiary={[
+            { href: "/admissions", label: "Review Admissions" },
+            { href: "/apply", label: "Start Admissions Review" },
+          ]}
         />
       </div>
     </SectionShell>
