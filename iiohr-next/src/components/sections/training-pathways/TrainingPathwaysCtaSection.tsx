@@ -11,40 +11,36 @@ export function TrainingPathwaysCtaSection() {
   return (
     <SectionShell anchor>
       <SectionHeading
-        eyebrow="Next step"
-        title="Apply or enquire about pathway fit"
-        description="Individual doctors and clinic teams can apply through the same intake. We’ll identify the right entry stage from your background and goals. Explore practical FUE and hair loss science as part of the pathway."
+        eyebrow="Next Step"
+        title="Choose the next route"
+        description="Use admissions to review fit first, apply when ready, or move into the doctor, consultant, and clinic pages for more role-specific context."
       />
       <div className="mt-8 flex flex-wrap gap-3">
-        <Button href="/apply" variant="primary">
-          Apply as an individual
+        <Button href="/admissions" variant="primary">
+          Start Admissions Review
         </Button>
-        <Button href="/for-clinics" variant="secondary">
-          Clinic enquiry
+        <Button href="/apply" variant="secondary">
+          Apply to IIOHR
         </Button>
         <a href={`mailto:${siteConfig.applicationEmail}`} className={mailtoClass}>
           Enquire by email
         </a>
       </div>
+      <div className="mt-6 flex flex-wrap gap-3">
+        <Button href="/doctors" variant="ghost">
+          Explore Doctors
+        </Button>
+        <Button href="/consultants" variant="ghost">
+          Explore Consultants
+        </Button>
+        <Button href="/for-clinics" variant="ghost">
+          Explore For Clinics
+        </Button>
+      </div>
       <p className="mt-6 text-sm text-readable-muted">
-        <Link href="/practical-fue" className="link-premium">
-          Practical FUE
+        <Link href="/login?redirectTo=%2Fapply" className="link-premium">
+          Sign In / Access Account
         </Link>
-        {" · "}
-        <Link href="/hair-loss-science" className="link-premium">
-          Hair loss science
-        </Link>
-        {" · "}
-        <Link href="/certification-framework" className="link-premium">
-          Certification framework
-        </Link>
-      </p>
-      <p className="mt-3 text-sm text-readable-muted">
-        Not sure where to start?{" "}
-        <Link href="/admissions" className="link-premium">
-          Review admissions and readiness
-        </Link>
-        .
       </p>
     </SectionShell>
   );

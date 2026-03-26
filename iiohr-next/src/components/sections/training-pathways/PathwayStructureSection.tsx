@@ -4,28 +4,32 @@ import { Card } from "@/components/ui/Card";
 
 const structureItems = [
   {
-    title: "Staged milestones",
-    description: "Each stage has defined outcomes so you and your mentors know when you’re ready for the next level of responsibility.",
+    title: "Foundation",
+    description: "Progression begins with the science, clinical understanding, and role context needed for safer development.",
   },
   {
-    title: "Supervised exposure",
-    description: "Practical work is done under direct supervision with real-time correction and safety oversight.",
+    title: "Observation",
+    description: "Live workflow and real clinical context help make standards visible before responsibility increases.",
   },
   {
-    title: "Review cadence",
-    description: "Cases are reviewed against benchmarks so improvement priorities are evidence-based, not anecdotal.",
+    title: "Supported practical development",
+    description: "Responsibility increases in a controlled way, with supervision and correction built into the process.",
   },
-];
+  {
+    title: "Review and advancement",
+    description: "Review, reflection, and standards shape when the next stage is appropriate.",
+  },
+] as const;
 
 export function PathwayStructureSection() {
   return (
     <SectionShell>
       <SectionHeading
-        eyebrow="Pathway structure"
-        title="How progression works in practice"
-        description="The pathway is designed so capability builds step by step—from learning and observation through supervised performance and audit—with supervision and review built in from the start. That structure is why progression is predictable and standards-based, not ad hoc."
+        eyebrow="How Progression Works"
+        title="How progression works in public-safe terms"
+        description="Public pathway pages explain the shape of development at a high level: foundations, observation, supported responsibility, review, and advancement aligned to readiness."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         {structureItems.map((item) => (
           <Card key={item.title}>
             <h3 className="text-lg font-semibold">{item.title}</h3>

@@ -4,36 +4,31 @@ import { Card } from "@/components/ui/Card";
 
 const entrantLevels = [
   {
-    title: "New entrant doctors",
+    title: "Doctors",
     description:
-      "Gain structured foundational training with supervised exposure and clear progression checkpoints.",
+      "Doctor pathways use staged progression to support safer development from foundations through greater responsibility.",
   },
   {
-    title: "Existing hair surgeons",
+    title: "Consultants and nurses",
     description:
-      "Refine existing surgical capability through audit-led feedback, advanced theory, and targeted mentorship.",
+      "Consultant and nurse pathways apply the same progression logic within clearly defined non-doctor scope boundaries.",
   },
   {
-    title: "Clinics developing internal talent",
+    title: "Clinics building team pathways",
     description:
-      "Build internal surgeon pipelines with pathway design, consistency controls, and standards alignment.",
+      "Clinic routes use pathway thinking to support internal standards, role alignment, and more structured team development.",
   },
-  {
-    title: "International surgeons",
-    description:
-      "Access institute-level progression frameworks informed by Australian standards and outcome governance.",
-  },
-];
+] as const;
 
 export function EntrantLevelsSection() {
   return (
     <SectionShell muted>
       <SectionHeading
-        eyebrow="Entrant Levels"
-        title="Pathway options for different stages of professional entry"
-        description="Pathways are adapted by entrant level so development remains relevant and clinically rigorous. Whether you are new to the field, already practising, or a clinic building internal talent, structured education clarifies entry points and how different professionals progress from theory to applied practice."
+        eyebrow="Who This Applies To"
+        title="One progression logic across different routes"
+        description="The institute uses a shared staged model, but it is applied differently for doctors, consultants and nurses, and clinics building internal pathways."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-2">
+      <div className="mt-16 grid gap-6 md:grid-cols-3">
         {entrantLevels.map((level) => (
           <Card key={level.title}>
             <h3 className="text-xl font-semibold">{level.title}</h3>

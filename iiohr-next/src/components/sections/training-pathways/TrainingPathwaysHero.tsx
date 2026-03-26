@@ -5,10 +5,11 @@ export function TrainingPathwaysHero() {
   return (
     <PageHero
       eyebrow="Training Pathways"
-      title="A structured progression system, not a one-off short course"
-      description="IIOHR pathways are designed to build durable surgeon capability through staged practical exposure, academic depth, quality auditing, and long-term mentorship."
-      primaryCta={{ href: "/apply", label: "Apply for Training" }}
-      secondaryCta={{ href: "#pathway-philosophy", label: "Explore the Pathway" }}
+      title="Training pathways explain how progression works across the institute"
+      description="At IIOHR, progression is structured in stages rather than treated as one-off exposure. Public pages explain that logic at a high level without exposing protected academy detail."
+      primaryCta={{ href: "/admissions", label: "Start Admissions Review" }}
+      secondaryCta={{ href: "/apply", label: "Apply to IIOHR" }}
+      tertiaryCta={{ href: "#pathway-philosophy", label: "View progression model" }}
       image={getHeroImage("trainingPathways")}
     />
   );

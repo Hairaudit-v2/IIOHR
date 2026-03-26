@@ -12,7 +12,7 @@ const canonical = "https://iiohr.com/training-pathways";
 export const metadata: Metadata = {
   title: "Training Pathways",
   description:
-    "IIOHR Training Pathways provide a structured progression system combining practical education, science, audit, and mentorship.",
+    "IIOHR Training Pathways explains how staged progression works across the institute through standards, review, practical responsibility, and role-appropriate development.",
   alternates: { canonical },
   openGraph: { url: canonical },
 };

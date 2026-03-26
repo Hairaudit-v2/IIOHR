@@ -4,51 +4,36 @@ import { Card } from "@/components/ui/Card";
 
 const stagedSteps = [
   {
-    label: "Learn",
-    description:
-      "Build core principles in practical FUE, clinical judgment, and safety fundamentals.",
+    label: "Foundation",
+    description: "Build the understanding needed for safer role-appropriate development.",
   },
   {
     label: "Observe",
-    description:
-      "Study live surgery under senior supervision to internalize standards and workflow.",
+    description: "See standards, workflow, and decision-making in real context.",
   },
   {
-    label: "Assist",
-    description:
-      "Support procedural delivery in controlled settings to develop team and technical discipline.",
+    label: "Support",
+    description: "Take defined responsibilities with supervision and correction.",
   },
   {
-    label: "Perform Under Supervision",
-    description:
-      "Execute defined surgical steps with direct faculty oversight and structured feedback.",
-  },
-  {
-    label: "Audit",
-    description:
-      "Review cases against outcome metrics and benchmarks to identify specific development gaps.",
-  },
-  {
-    label: "Improve",
-    description:
-      "Apply targeted adjustments through case-based review and mentor-guided refinement.",
+    label: "Review",
+    description: "Use standards and feedback to identify what should improve next.",
   },
   {
     label: "Advance",
-    description:
-      "Progress into higher-complexity decision-making with greater consistency and accountability.",
+    description: "Move forward only when readiness and scope alignment support it.",
   },
-];
+] as const;
 
 export function StagedProgressionSection() {
   return (
     <SectionShell muted>
       <SectionHeading
-        eyebrow="Staged Progression Model"
-        title="A clear advancement sequence for sustainable capability development"
-        description="The pathway is intentionally staged to ensure readiness, safety, and consistency before each next level of responsibility."
+        eyebrow="Progression Sequence"
+        title="A staged sequence rather than one-size-fits-all intake"
+        description="Not every person or clinic enters at the same point. Progression is matched to current role, experience, and readiness."
       />
-      <ol className="mt-14 grid min-w-0 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+      <ol className="mt-14 grid min-w-0 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {stagedSteps.map((step, index) => (
           <Card key={step.label} as="li" interactive marker={`0${index + 1}`}>
             <p className="text-[10px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">
