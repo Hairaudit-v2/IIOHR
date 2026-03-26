@@ -49,13 +49,13 @@ export function AudienceSection() {
       <div className="mt-16 pt-6">
         <SectionCTA
           variant="light"
-          primary={{ href: "/apply", label: "Apply Now" }}
+          primary={{ href: "/admissions", label: "Start Admissions Review" }}
           secondary={[
+            { href: "/apply", label: "Apply to IIOHR" },
             { href: "/training-pathways", label: "Explore Pathways" },
-            { href: "/for-clinics", label: "Enquire About Training" },
+            { href: "/for-clinics", label: "Explore For Clinics" },
           ]}
           tertiary={[
-            { href: "/training-pathways", label: "Explore training pathways" },
             { href: "/about", label: "Learn More" },
           ]}
         />

@@ -35,7 +35,7 @@ export default function ApplyPage() {
           </Link>
           {" · "}
           <Link href="/login?redirectTo=%2Fapply" className="link-premium font-medium">
-            Sign in / access account
+            Sign In / Access Account
           </Link>
         </p>
       </section>

@@ -40,7 +40,7 @@ export function HumanImpactSection() {
             <SectionCTA
               variant="light"
               primary={{ href: "/training-pathways", label: "View Staged Progression" }}
-              secondary={[{ href: "/apply", label: "Start Admissions Review" }]}
+              secondary={[{ href: "/admissions", label: "Start Admissions Review" }]}
             />
           </div>
         </div>

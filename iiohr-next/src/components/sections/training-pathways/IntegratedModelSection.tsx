@@ -6,27 +6,27 @@ const integrationBlocks = [
   {
     title: "Science and clinical understanding",
     description:
-      "Progression needs a stronger base than exposure alone, so scientific and clinical understanding remain part of the pathway model.",
+      "Progression is anchored to scientific understanding and clinical reasoning, not practical exposure alone.",
   },
   {
-    title: "Practical responsibility",
+    title: "Supervised practical responsibility",
     description:
-      "Responsibility should increase in a controlled way rather than being handed over informally.",
+      "Practical responsibility increases in controlled stages under supervision, with correction and review built in.",
   },
   {
-    title: "Standards alignment",
+    title: "Standards and progression criteria",
     description:
-      "Development is tied to clearer expectations so readiness can be discussed and justified.",
+      "Advancement is aligned to institute standards so readiness can be discussed with clarity and consistency.",
   },
   {
     title: "Review and accountability",
     description:
-      "Feedback, review, and accountability keep progression visible rather than opaque.",
+      "Progression decisions are supported by review over time so development remains visible and accountable.",
   },
   {
-    title: "Scope-appropriate development",
+    title: "Scope-appropriate pathways",
     description:
-      "Doctors, consultants, nurses, and clinics do not follow the same route, but the institute progression logic remains consistent across them.",
+      "Doctors, consultants, and clinics enter through role-appropriate routes while following the same institute progression logic.",
   },
 ] as const;
 
@@ -36,7 +36,7 @@ export function IntegratedModelSection() {
       <SectionHeading
         eyebrow="What Progression Is Built Around"
         title="What progression is built around"
-        description="The pathway model is not only about practice. It is built around science, responsibility, standards, review, and role-appropriate development."
+        description="The integrated model connects science, supervised practice, standards, and accountable review so progression remains credible and role-appropriate."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {integrationBlocks.map((block) => (

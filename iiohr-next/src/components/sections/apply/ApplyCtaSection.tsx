@@ -22,7 +22,7 @@ export function ApplyCtaSection() {
           Enquire by Email
         </a>
         <Button href="/admissions" variant="ghost">
-          Review Admissions
+          Start Admissions Review
         </Button>
       </div>
       <div className="mt-6 flex flex-wrap gap-3">

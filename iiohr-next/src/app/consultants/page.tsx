@@ -12,19 +12,19 @@ import { getAcademyStreams } from "@/lib/academy/content-registry";
 const audienceCards = [
   {
     title: "Clinic consultants",
-    body: "For consultants guiding patients through enquiry, education, preparation, and follow-up within a structured clinic pathway.",
+    body: "Consultants guiding patients through enquiry, education, preparation, and follow-up within a structured clinic pathway.",
   },
   {
     title: "Nurses in hair restoration settings",
-    body: "For nurses supporting communication, triage awareness, coordination, and continuity inside doctor-led care pathways.",
+    body: "Nurses supporting communication, triage awareness, coordination, and continuity inside doctor-led care pathways.",
   },
   {
     title: "Patient-facing team members",
-    body: "For staff responsible for patient education, pathway guidance, documentation, and safe handover.",
+    body: "Staff responsible for patient education, pathway guidance, documentation, and safe handover.",
   },
   {
     title: "Clinic operators improving consistency",
-    body: "For clinics seeking a more standardised front-end model for communication, escalation, and patient experience.",
+    body: "Clinic operators seeking a more standardised front-end model for communication, escalation, and patient experience.",
   },
 ] as const;
 
@@ -51,14 +51,14 @@ const whyItMattersCards = [
   },
   {
     title: "Structured development",
-    body: "The goal is to move beyond informal on-the-job learning toward a more credible institute model.",
+    body: "The goal is to move beyond informal on-the-job learning toward a credible institute model.",
   },
 ] as const;
 
 const capabilityCards = [
   {
     title: "Consultation quality",
-    body: "Develop clearer, more structured patient conversations from first enquiry through pathway guidance.",
+    body: "Develop clearer patient conversations from first enquiry through pathway guidance.",
   },
   {
     title: "Communication standards",
@@ -74,7 +74,7 @@ const capabilityCards = [
   },
   {
     title: "Treatment understanding",
-    body: "Strengthen high-level literacy around hair restoration pathways so patient education is more accurate and coherent.",
+    body: "Strengthen high-level literacy around hair restoration pathways so patient education is accurate and coherent.",
   },
   {
     title: "Escalation boundaries",
@@ -105,7 +105,7 @@ const progressionSteps = [
   {
     label: "04",
     title: "Improve consistency",
-    body: "Use standards, review, and reflection to make patient guidance and coordination more reliable.",
+    body: "Use review and reflection to make patient guidance and coordination more reliable.",
   },
   {
     label: "05",
@@ -119,7 +119,7 @@ const nextStepCards = [
     title: "Admissions",
     body: "Review how pathway fit is assessed and how public guidance moves into structured admissions review.",
     href: "/admissions",
-    label: "Review Admissions",
+    label: "Start Admissions Review",
   },
   {
     title: "Apply",
@@ -165,7 +165,7 @@ export default function ConsultantsPage() {
         <SectionHeading
           eyebrow="Who It Is For"
           title="Built for patient-facing teams and clinic consistency"
-          description="The public pathway page is designed for consultants, nurses, and clinic teams who need a clearer development route without blurring into doctor responsibilities."
+          description="This public pathway page is for consultants, nurses, and clinic teams who need a clearer development route without blurring doctor responsibilities."
         />
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {audienceCards.map((item) => (
@@ -213,7 +213,7 @@ export default function ConsultantsPage() {
         <SectionHeading
           eyebrow="Progression"
           title="How progression works"
-          description="Public pages explain the shape of development without exposing internal lessons, assessments, or protected academy detail."
+          description="Public pages explain development progression without exposing internal lessons, assessments, or protected academy detail."
         />
         <ol className="mt-12 grid list-none gap-4 sm:grid-cols-2 xl:grid-cols-5">
           {progressionSteps.map((step) => (

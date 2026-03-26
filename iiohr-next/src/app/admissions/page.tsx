@@ -19,97 +19,97 @@ export const metadata: Metadata = {
 const audienceGroups = [
   {
     title: "Early-career doctors",
-    body: "Doctors entering hair restoration who need a more structured route than isolated exposure or informal progression.",
+    body: "Doctors entering hair restoration who need a structured route rather than isolated exposure.",
   },
   {
     title: "Transitioning clinicians",
-    body: "Practitioners moving into the field and looking for clearer pathway placement, staged development, and realistic next-step guidance.",
+    body: "Clinicians moving into the field who need clearer pathway placement and staged progression.",
   },
   {
     title: "Experienced practitioners refining standards",
-    body: "Doctors seeking a more credible framework for judgment, review, consistency, and standards-led development.",
+    body: "Doctors seeking stronger consistency, judgment, and standards-led development.",
   },
   {
     title: "Consultants and nurses",
-    body: "Patient-facing teams looking for structured development in communication, triage awareness, coordination, and role-safe progression.",
+    body: "Patient-facing teams seeking structured development in communication, triage awareness, and coordination.",
   },
   {
     title: "Clinics exploring team development",
-    body: "Clinic owners and operators who want a clearer route for matching individuals or teams to the right development pathway.",
+    body: "Clinic leaders who need clearer matching of individuals or teams to suitable pathways.",
   },
 ] as const;
 
 const fitFactors = [
   {
     title: "Current role",
-    body: "Admissions considers whether you are applying as a doctor, consultant, nurse, or clinic representative.",
+    body: "Your route starts with role: doctor, consultant, nurse, or clinic representative.",
   },
   {
     title: "Prior exposure",
-    body: "Existing clinical exposure, prior training, and current responsibilities help clarify the most suitable entry point.",
+    body: "Existing exposure and responsibilities help identify a suitable entry point.",
   },
   {
     title: "Intended development direction",
-    body: "We consider what you are trying to build next, rather than assuming every applicant should enter in the same way.",
+    body: "Admissions considers what you need to build next rather than using one route for everyone.",
   },
   {
     title: "Readiness for staged progression",
-    body: "Pathway matching reflects whether a staged route is appropriate, realistic, and aligned with current experience.",
+    body: "Progression advice reflects readiness for staged development.",
   },
   {
     title: "Scope alignment",
-    body: "Admissions checks that the route being considered matches the responsibilities and boundaries of your role.",
+    body: "Recommendations stay aligned with the responsibilities and boundaries of your role.",
   },
 ] as const;
 
 const reviewItems = [
   {
     title: "Professional background",
-    body: "Applicants share their current role, experience, and the context in which they are working or planning to work.",
+    body: "Admissions reviews your current role, experience, and clinical context.",
   },
   {
     title: "Development goals",
-    body: "Admissions reviews what you are aiming to develop next so pathway guidance stays relevant and realistic.",
+    body: "Your stated goals guide role-appropriate pathway recommendations.",
   },
   {
     title: "Current exposure and interests",
-    body: "We consider prior exposure and intended direction without exposing or requiring protected curriculum detail on the public page.",
+    body: "Prior exposure and intended direction are considered at a public-safe, high level.",
   },
   {
     title: "Role and scope",
-    body: "Applications are reviewed with role boundaries in mind so pathway matching stays credible and safe.",
+    body: "Review is filtered through role boundaries so guidance remains credible and safe.",
   },
   {
     title: "Clinic context where relevant",
-    body: "For clinic-led enquiries, admissions may consider team structure, intended development use, and pathway fit at organisational level.",
+    body: "For clinic enquiries, team structure and intended use are considered at organisational level.",
   },
 ] as const;
 
 const admissionsJourney = [
   {
     step: "01",
-    title: "Submit an enquiry or application",
-    detail: "You share your role, background, and intended development direction through the public admissions route.",
+    title: "Submit your details",
+    detail: "You provide role, background, and intended development direction through the public admissions route.",
   },
   {
     step: "02",
     title: "Admissions review",
-    detail: "The admissions team reviews fit at a high level rather than treating application as an automatic acceptance step.",
+    detail: "The team reviews fit at a high level; submission does not imply automatic acceptance.",
   },
   {
     step: "03",
     title: "Pathway matching",
-    detail: "Applicants are guided toward the most suitable route based on role, exposure, scope, and intended direction.",
+    detail: "You are guided toward the most suitable route based on role, exposure, and scope.",
   },
   {
     step: "04",
     title: "Next-step guidance",
-    detail: "You receive guidance on whether to proceed, which route to follow, and what the next step should be.",
+    detail: "You receive clear guidance on whether to proceed and which route to follow.",
   },
   {
     step: "05",
-    title: "Account or admissions follow-up",
-    detail: "Where appropriate, the process moves into account-based application, admissions follow-up, or the relevant pathway page.",
+    title: "Application or follow-up",
+    detail: "Where appropriate, you move into application, admissions follow-up, or the relevant pathway page.",
   },
 ] as const;
 
@@ -120,7 +120,7 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Admissions helps you understand likely fit before you apply"
         description="Use Admissions to understand whether the pathway is likely to suit your role, how matching works at a high level, and what happens after enquiry or application."
-        primaryCta={{ href: "/apply", label: "Start Application" }}
+        primaryCta={{ href: "/apply", label: "Apply to IIOHR" }}
         secondaryCta={{ href: "/login?redirectTo=%2Fapply", label: "Sign In / Access Account" }}
         tertiaryCta={{ href: "/training-pathways", label: "View Training Pathways" }}
       />
@@ -129,7 +129,7 @@ export default function AdmissionsPage() {
         <SectionHeading
           eyebrow="Who Typically Applies"
           title="Admissions is designed to help applicants self-sort"
-          description="This page is for people and clinics trying to understand whether IIOHR is likely to be the right fit before moving into application."
+          description="This page helps individuals and clinics decide likely fit before moving into application."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {audienceGroups.map((item) => (
@@ -145,7 +145,7 @@ export default function AdmissionsPage() {
         <SectionHeading
           eyebrow="Pathway Fit"
           title="How pathway fit is assessed"
-          description="Admissions looks at a small set of practical criteria to understand where you may fit and whether a staged route is appropriate."
+          description="Admissions uses a focused set of criteria to identify suitable entry and progression direction."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
           {fitFactors.map((item) => (
@@ -161,7 +161,7 @@ export default function AdmissionsPage() {
         <SectionHeading
           eyebrow="What We Review"
           title="What admissions is actually considering"
-          description="Public admissions does not assess protected curriculum detail. It reviews the context needed to make pathway guidance more useful and role-appropriate."
+          description="Public admissions does not assess protected curriculum detail. It reviews context needed for useful, role-appropriate guidance."
         />
         <div className="mt-14 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {reviewItems.map((item) => (
@@ -177,7 +177,7 @@ export default function AdmissionsPage() {
         <SectionHeading
           eyebrow="What Happens Next"
           title="A calm review and pathway-matching process"
-          description="Admissions is intended to clarify fit and next-step direction before the process moves deeper into application or account-based access."
+          description="Admissions clarifies fit and next-step direction before deeper application or account-based access."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
           {admissionsJourney.map((item) => (
@@ -197,7 +197,7 @@ export default function AdmissionsPage() {
         />
         <SectionCTA
           variant="light"
-          primary={{ href: "/apply", label: "Start Application" }}
+          primary={{ href: "/apply", label: "Apply to IIOHR" }}
           secondary={[
             { href: "/doctors", label: "Explore Doctors" },
             { href: "/consultants", label: "Explore Consultants" },
@@ -214,7 +214,7 @@ export default function AdmissionsPage() {
             </p>
             <p className="mt-5 text-sm">
               <Link href="/apply" className="link-premium font-medium">
-                Begin application
+                Apply to IIOHR
               </Link>
             </p>
           </Card>

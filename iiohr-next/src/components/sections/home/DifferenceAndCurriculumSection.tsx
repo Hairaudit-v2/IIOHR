@@ -40,8 +40,8 @@ export function DifferenceAndCurriculumSection() {
           primary={{ href: "/training-pathways", label: "View Pathway Structure" }}
           secondary={[{ href: "/practical-fue", label: "View Practical FUE Overview" }]}
           tertiary={[
-            { href: "/admissions", label: "Review Admissions" },
-            { href: "/apply", label: "Start Admissions Review" },
+            { href: "/admissions", label: "Start Admissions Review" },
+            { href: "/apply", label: "Apply to IIOHR" },
           ]}
         />
       </div>

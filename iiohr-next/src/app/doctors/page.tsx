@@ -12,15 +12,15 @@ import { getAcademyStreams } from "@/lib/academy/content-registry";
 const audienceCards = [
   {
     title: "Early-career doctors",
-    body: "For doctors entering hair restoration who need a more structured clinical route than short-course exposure alone.",
+    body: "Doctors entering hair restoration who need a structured route beyond short-course exposure.",
   },
   {
     title: "Transitioning clinicians",
-    body: "For physicians moving into the field and looking for a clearer framework around trichology, planning, and procedural judgment.",
+    body: "Physicians moving into the field who need a clearer framework for trichology, planning, and procedural judgment.",
   },
   {
     title: "Experienced practitioners",
-    body: "For doctors refining technique, judgment, and standards alignment within a more accountable institute model.",
+    body: "Doctors refining technique and clinical judgment within an accountable institute model.",
   },
 ] as const;
 
@@ -31,7 +31,7 @@ const modelCards = [
   },
   {
     title: "Staged progression",
-    body: "Responsibility grows through a defined route rather than isolated exposure or informal escalation.",
+    body: "Responsibility grows through a defined route rather than isolated exposure.",
   },
   {
     title: "Supervised development",
@@ -39,7 +39,7 @@ const modelCards = [
   },
   {
     title: "Review and accountability",
-    body: "Case discussion, audit, and standards help determine what should improve before the next step.",
+    body: "Case discussion and audit show what should improve before the next step.",
   },
   {
     title: "Long-term capability",
@@ -66,7 +66,7 @@ const capabilityCards = [
   },
   {
     title: "Operative discipline",
-    body: "Build consistency in workflow, handling, supervision, and standards-led execution.",
+    body: "Build consistency in workflow, handling, and supervised execution.",
   },
   {
     title: "Review and improvement",
@@ -88,12 +88,12 @@ const progressionSteps = [
   {
     label: "03",
     title: "Take defined responsibility",
-    body: "Move into supervised roles with responsibilities that are clear enough to review properly.",
+    body: "Move into supervised roles with clear, reviewable responsibilities.",
   },
   {
     label: "04",
     title: "Review performance",
-    body: "Use standards, audit, and case discussion to identify gaps before advancing.",
+    body: "Use audit and case discussion to identify gaps before advancing.",
   },
   {
     label: "05",
@@ -107,7 +107,7 @@ const nextStepCards = [
     title: "Admissions",
     body: "Review how pathway fit is assessed and how public guidance transitions into structured review.",
     href: "/admissions",
-    label: "Review Admissions",
+    label: "Start Admissions Review",
   },
   {
     title: "Apply",
@@ -153,7 +153,7 @@ export default function DoctorsPage() {
         <SectionHeading
           eyebrow="Who It Is For"
           title="A doctor-specific route with multiple points of entry"
-          description="The public pathway page is designed to help doctors understand fit before admissions, whether they are entering the field or refining an existing practice."
+          description="This page helps doctors understand likely fit before admissions, whether entering the field or refining existing practice."
         />
         <div className="mt-12 grid gap-4 lg:grid-cols-3">
           {audienceCards.map((item) => (
@@ -169,7 +169,7 @@ export default function DoctorsPage() {
         <SectionHeading
           eyebrow="Why This Model"
           title="A more serious route than short-course surgical training"
-          description="IIOHR positions doctor development as an institute pathway: clinically grounded, standards-led, and built for capability over time."
+          description="IIOHR positions doctor development as an institute pathway built for clinical capability over time."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
           {modelCards.map((item) => (
@@ -201,7 +201,7 @@ export default function DoctorsPage() {
         <SectionHeading
           eyebrow="Progression"
           title="How progression works"
-          description="Public pages explain the structure of advancement without exposing protected curriculum detail."
+          description="Public pages explain advancement structure without exposing protected curriculum detail."
         />
         <ol className="mt-12 grid list-none gap-4 sm:grid-cols-2 xl:grid-cols-5">
           {progressionSteps.map((step) => (

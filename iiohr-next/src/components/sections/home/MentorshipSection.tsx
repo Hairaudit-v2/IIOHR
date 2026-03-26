@@ -47,7 +47,7 @@ export function MentorshipSection() {
             <SectionCTA
               variant="light"
               primary={{ href: "/faculty-and-mentorship", label: "See Faculty and Mentorship" }}
-              secondary={[{ href: "/apply", label: "Start Admissions Review" }]}
+              secondary={[{ href: "/admissions", label: "Start Admissions Review" }]}
             />
           </div>
         </div>

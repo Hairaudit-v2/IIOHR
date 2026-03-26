@@ -45,7 +45,7 @@ export function HeroSection() {
               </p>
               <div className="mt-10 flex flex-col gap-10">
                 <div className="flex flex-wrap items-center gap-4 md:gap-5">
-                  <Button href="/apply" variant="dark">
+                  <Button href="/admissions" variant="dark">
                     Start Admissions Review
                   </Button>
                   <Button href="/training-pathways" variant="darkSecondary" className="opacity-95">

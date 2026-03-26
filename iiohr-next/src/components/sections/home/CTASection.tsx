@@ -31,7 +31,7 @@ export function CTASection() {
       />
       <SectionCTA
         variant="light"
-        primary={{ href: "/apply", label: "Start Admissions Review" }}
+        primary={{ href: "/admissions", label: "Start Admissions Review" }}
         secondary={[
           { href: "/training-pathways", label: "View Training Pathways" },
           { href: "/for-clinics", label: "Explore Clinic Pathways" },

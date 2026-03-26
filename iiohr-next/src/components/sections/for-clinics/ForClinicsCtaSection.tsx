@@ -13,14 +13,14 @@ export function ForClinicsCtaSection() {
       <SectionHeading
         eyebrow="Next Step"
         title="Choose the right next step for your clinic"
-        description="Use admissions if you want to review fit first, apply or enquire when you are ready, or explore the doctor and consultant routes that sit around the wider clinic model."
+        description="Use admissions to review fit first, apply when ready, or explore the doctor and consultant routes that sit around the wider clinic model."
       />
       <div className="mt-8 flex flex-wrap gap-3">
         <Button href="/admissions" variant="primary">
           Start Admissions Review
         </Button>
         <Button href="/apply" variant="secondary">
-          Apply / Enquire
+          Apply to IIOHR
         </Button>
         <a
           href={`mailto:${siteConfig.applicationEmail}?subject=Clinic%20partnership%20enquiry`}
