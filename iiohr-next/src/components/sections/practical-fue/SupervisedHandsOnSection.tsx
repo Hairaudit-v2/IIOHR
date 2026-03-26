@@ -4,19 +4,19 @@ import { Card } from "@/components/ui/Card";
 
 const supervisionBlocks = [
   {
-    title: "Supervised hands-on training",
+    title: "Direct supervision in live care settings",
     description:
-      "Practical work is delivered under direct supervision so technique is corrected in real time and safety standards are maintained.",
+      "Practical exposure is delivered under experienced surgical supervision so technique, sequencing, and safety standards are corrected in real time.",
   },
   {
-    title: "Live patient exposure",
+    title: "Why observation alone is insufficient",
     description:
-      "Trainees progress from observation to supervised participation in live clinical cases, with responsibilities matched to readiness.",
+      "Observation builds awareness, but operative judgment is formed only through supervised responsibility in real procedures where decisions carry consequences.",
   },
   {
-    title: "Mentorship and correction",
+    title: "Staged responsibility with accountability",
     description:
-      "Mentors provide structured feedback, immediate correction, and case-by-case guidance to strengthen judgment and consistency.",
+      "Responsibility expands only as readiness is demonstrated, with case-based feedback and review to improve consistency, discipline, and clinical accountability.",
   },
 ];
 
@@ -25,8 +25,8 @@ export function SupervisedHandsOnSection() {
     <SectionShell>
       <SectionHeading
         eyebrow="Clinical Supervision"
-        title="Hands-on development under experienced surgical guidance"
-        description="The training environment prioritizes safe execution, transparent feedback, and progressive responsibility. Practical exposure under supervision ensures technique is corrected in real time and that standards, not trial-and-error, guide development."
+        title="Supervised development where responsibility is earned in stages"
+        description="The practical environment prioritizes patient safety, disciplined execution, and transparent review. Progression is governed by readiness and supervision so standards and judgment lead technical development."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {supervisionBlocks.map((block) => (

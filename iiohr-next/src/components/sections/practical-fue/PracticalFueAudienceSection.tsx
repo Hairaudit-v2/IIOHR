@@ -31,7 +31,7 @@ export function PracticalFueAudienceSection() {
       <SectionHeading
         eyebrow="Who This Is Suited For"
         title="Practical FUE pathways matched to entrant profile and clinical stage"
-        description="IIOHR pathways are tailored to baseline experience so progression remains safe, credible, and outcome-oriented."
+        description="Within the wider IIOHR pathway, practical development is aligned to baseline clinical experience so progression remains safe, supervised, and standards-led."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {suitedFor.map((item) => (

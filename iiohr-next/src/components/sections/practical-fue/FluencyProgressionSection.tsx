@@ -36,7 +36,7 @@ export function FluencyProgressionSection() {
       <SectionHeading
         eyebrow="Progression Logic"
         title="From controlled repetition to surgical fluency"
-        description="Fluency is developed through repeated supervised practice, structured correction, and progressively more complex procedural responsibility."
+        description="Practical development advances through supervised repetition, case-based correction, and staged responsibility. This structure links technical fluency to judgment, standards, and durable clinical quality."
       />
       <ol className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
         {progressionSteps.map((step, index) => (

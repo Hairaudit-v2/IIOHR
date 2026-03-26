@@ -3,10 +3,10 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 
 const meaningPoints = [
-  "Training is planned as a progression system, not a single short intervention.",
-  "Technical execution is taught alongside patient selection and operative planning.",
-  "Each stage is supervised with correction, not independent trial-and-error.",
-  "Review and refinement are built into the pathway from the beginning.",
+  "Practical development is structured as staged responsibility, not a short observational attachment.",
+  "Technical execution is developed alongside case judgment, donor protection, and surgical planning.",
+  "Progression is supervised and corrected in context rather than left to independent trial-and-error.",
+  "Ongoing review is integral, so standards and decision quality are reinforced over time.",
 ];
 
 export function PracticalFueMeaningSection() {
@@ -15,8 +15,8 @@ export function PracticalFueMeaningSection() {
       <div id="practical-fue-model">
         <SectionHeading
           eyebrow="What Practical FUE Means at IIOHR"
-          title="A serious training framework for surgical capability development"
-          description="At IIOHR, Practical FUE means structured operative training with clear supervision, measurable progression, and clinical accountability. Hands-on education is grounded in standards and donor management from first principles—not shortcuts—so technical discipline and planning come before volume."
+          title="A supervised institute framework for practical surgical capability"
+          description="At IIOHR, Practical FUE means supervised practical exposure within a wider clinical training model. It develops operative judgment, donor stewardship, planning discipline, and standards-based execution through staged responsibility and structured review."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {meaningPoints.map((point) => (

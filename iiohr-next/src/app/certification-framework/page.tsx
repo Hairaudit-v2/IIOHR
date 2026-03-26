@@ -11,56 +11,56 @@ const canonical = "https://iiohr.com/certification-framework";
 export const metadata: Metadata = {
   title: "Certification Framework",
   description:
-    "The IIOHR Certification Framework outlines standards-led progression, evidence-informed review, and long-term clinical development for doctors and clinics.",
+    "The IIOHR Certification Framework explains how certification supports staged progression, standards, review, and accountable clinical development across the institute model.",
   alternates: { canonical },
   openGraph: { url: canonical },
 };
 
 const principles = [
   {
-    title: "Standards-led",
-    body: "Certification is anchored to defined professional standards so progression is structured, transparent, and aligned with clinical expectations.",
+    title: "Standards alignment",
+    body: "Certification is anchored to institute standards so progression is structured, consistent, and clinically credible.",
   },
   {
-    title: "Evidence-based",
-    body: "Progress is interpreted through multiple evidence inputs rather than a single event, supporting a more credible development record over time.",
+    title: "Staged development",
+    body: "Certification reflects progression over time, not a single checkpoint. Responsibility and expectations increase in stages.",
   },
   {
-    title: "Progression-aware",
-    body: "Certification is designed as staged advancement with capability maturity at each phase, not a one-time endpoint.",
+    title: "Observed readiness",
+    body: "Progression is linked to readiness observed in supervised development contexts rather than attendance alone.",
   },
   {
-    title: "Clinically relevant",
-    body: "The framework emphasizes practical judgment, supervised development context, and real-world applicability in modern hair restoration practice.",
+    title: "Review and accountability",
+    body: "Certification decisions are supported by review and development evidence so accountability remains visible and defensible.",
   },
 ] as const;
 
 const pathwayStages = [
   {
-    title: "Foundational readiness",
-    body: "Core preparation in scientific understanding, clinical reasoning, and pathway suitability before higher responsibility is introduced.",
+    title: "Foundational entry and suitability",
+    body: "Entrant readiness and baseline capability are considered before progression into higher-responsibility stages.",
   },
   {
-    title: "Supervised operative development",
-    body: "Structured practical progression under supervision, focused on safety, technique discipline, and feedback-informed improvement.",
+    title: "Supervised development",
+    body: "Clinical development advances under supervision, with standards and review guiding practical progression.",
   },
   {
-    title: "Advanced practical fluency",
-    body: "Greater consistency in planning and execution, with stronger procedural confidence and refinement under standards-based review.",
+    title: "Scope-appropriate progression",
+    body: "As capability matures, progression aligns with role scope and pathway stage rather than uniform expectations for all entrants.",
   },
   {
-    title: "Broader clinical maturity",
-    body: "Integrated capability across decision quality, outcomes reflection, and long-term professional development expectations.",
+    title: "Ongoing accountability",
+    body: "Certification sits inside continued professional development and periodic review rather than acting as a terminal event.",
   },
 ] as const;
 
 const evidenceInputs = [
-  "Training participation",
-  "Practical development",
-  "Assessment",
-  "Case review",
-  "Audit-informed improvement",
-  "Mentorship engagement",
+  "Observed development in supervised contexts",
+  "Consistency with institute standards",
+  "Review inputs across progression stages",
+  "Case-based reflection and professional judgment",
+  "Mentorship and faculty-led guidance",
+  "Documented development over time",
 ] as const;
 
 export default function CertificationFrameworkPage() {
@@ -68,25 +68,25 @@ export default function CertificationFrameworkPage() {
     <>
       <PageHero
         eyebrow="Certification Framework"
-        title="Structured progression for credible clinical development"
-        description="IIOHR certification is positioned as a staged progression framework that supports standards-led development and evidence-informed advancement for doctors and clinics."
-        primaryCta={{ href: "/apply", label: "Apply or Enquire" }}
-        secondaryCta={{ href: "/academy", label: "Explore Academy" }}
+        title="Certification as a standards-led progression framework"
+        description="At IIOHR, certification is a structured approach to progression, review, and accountability across the wider institute model. It is not a ceremonial badge or a one-off event."
+        primaryCta={{ href: "/admissions", label: "Start Admissions Review" }}
+        secondaryCta={{ href: "/training-pathways", label: "Explore Training Pathways" }}
       />
 
       <SectionShell muted joinPrevious>
         <SectionHeading
-          eyebrow="Why certification matters"
-          title="Measured progression requires clear standards and credible evidence"
-          description="In complex clinical disciplines, development quality is strengthened when progression is framed by standards, reviewed with consistency, and supported by evidence over time rather than isolated milestones."
+          eyebrow="Why a framework is necessary"
+          title="Capability cannot be reduced to attendance or isolated exposure"
+          description="In clinical practice, attendance alone does not demonstrate readiness. A framework is needed so progression is staged, reviewed, and anchored to standards over time."
         />
       </SectionShell>
 
       <SectionShell>
         <SectionHeading
-          eyebrow="Certification principles"
-          title="Institute-led principles guiding framework design"
-          description="The framework is designed to remain rigorous, practical, and adaptable as standards evolve."
+          eyebrow="What certification is built around"
+          title="Core principles that support credible progression"
+          description="The framework is designed to keep certification practical, accountable, and aligned with real clinical development."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {principles.map((item) => (
@@ -100,9 +100,9 @@ export default function CertificationFrameworkPage() {
 
       <SectionShell muted>
         <SectionHeading
-          eyebrow="Certification pathway"
-          title="High-level stages of capability progression"
-          description="Pathway stages indicate development direction and maturity expectations while allowing detailed framework criteria to evolve."
+          eyebrow="How certification fits the institute model"
+          title="Connected to admissions, pathways, supervision, and progression"
+          description="Certification operates within the broader IIOHR model: admissions positioning, pathway-aligned development, supervised practice, and staged advancement under review."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {pathwayStages.map((stage) => (
@@ -116,9 +116,9 @@ export default function CertificationFrameworkPage() {
 
       <SectionShell>
         <SectionHeading
-          eyebrow="What may contribute to certification"
-          title="Multiple evidence sources support progression decisions"
-          description="Certification review can draw on a combination of participation, performance context, and development engagement."
+          eyebrow="Evidence-informed review"
+          title="Progression is supported by multiple evidence inputs"
+          description="Publicly, we describe certification as evidence-informed and standards-led. Detailed internal assessment design remains within protected academy environments."
         />
         <ul className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {evidenceInputs.map((item) => (
@@ -131,17 +131,17 @@ export default function CertificationFrameworkPage() {
 
       <SectionShell muted>
         <SectionHeading
-          eyebrow="Doctors and clinics"
-          title="A framework that supports both individual and system-level capability"
-          description="For doctors, certification can clarify staged professional progression. For clinics, it can support internal capability systems, standards alignment, and structured development pathways across teams."
+          eyebrow="Why this matters"
+          title="A framework that supports clinicians, teams, clinics, and public trust"
+          description="For doctors and consultants, it supports role-appropriate progression and accountability. For clinics, it supports standards-led team development. For external stakeholders, it reinforces a serious approach to quality and professional responsibility."
         />
       </SectionShell>
 
       <SectionShell>
         <SectionHeading
-          eyebrow="Long-term development"
-          title="Certification as part of continuous quality improvement"
-          description="Certification is positioned within an ongoing development cycle that includes continued learning, reflective practice, feedback integration, and progressive refinement over time."
+          eyebrow="Long-term quality"
+          title="Certification supports sustained development, not a finish line"
+          description="Within the IIOHR model, certification is part of an ongoing cycle of progression, reflection, supervision, and standards review."
         />
       </SectionShell>
 
@@ -150,19 +150,21 @@ export default function CertificationFrameworkPage() {
       <SectionShell anchor>
         <SectionHeading
           eyebrow="Next step"
-          title="Explore pathways, academy structure, and admissions"
-          description="Use the links below to review development pathways, clinic partnership options, and application routes."
+          title="Choose the route that matches your role"
+          description="Use these entry points to begin admissions, apply, explore role-specific pathways, or access your account."
         />
         <SectionCTA
           variant="light"
-          primary={{ href: "/academy", label: "Explore Academy" }}
+          primary={{ href: "/admissions", label: "Start Admissions Review" }}
           secondary={[
-            { href: "/training-pathways", label: "Training Pathways" },
-            { href: "/for-clinics", label: "For Clinics" },
+            { href: "/apply", label: "Apply to IIOHR" },
+            { href: "/training-pathways", label: "Explore Training Pathways" },
+            { href: "/doctors", label: "Explore Doctors" },
           ]}
           tertiary={[
-            { href: "/admissions", label: "View admissions process" },
-            { href: "/apply", label: "Apply or Enquire" },
+            { href: "/consultants", label: "Explore Consultants" },
+            { href: "/for-clinics", label: "Explore For Clinics" },
+            { href: "/login?redirectTo=%2Fapply", label: "Sign In / Access Account" },
           ]}
           className="mt-16"
         />

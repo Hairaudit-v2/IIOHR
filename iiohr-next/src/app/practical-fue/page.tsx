@@ -12,7 +12,7 @@ const canonical = "https://iiohr.com/practical-fue";
 export const metadata: Metadata = {
   title: "Practical FUE",
   description:
-    "Practical FUE at IIOHR is a structured hands-on surgical training pathway emphasizing supervision, technical discipline, and progressive clinical fluency.",
+    "Practical FUE at IIOHR is supervised practical surgical development within an institute-led pathway focused on judgment, donor stewardship, staged responsibility, and clinical accountability.",
   alternates: { canonical },
   openGraph: { url: canonical },
 };

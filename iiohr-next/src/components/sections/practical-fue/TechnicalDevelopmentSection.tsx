@@ -2,27 +2,27 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 
-const skillModules = [
-  "Donor assessment and handling discipline",
-  "Extraction strategy and procedural control",
-  "Implantation technique and recipient management",
-  "Surgical planning and case preparation",
-  "Refinement through post-case review",
+const technicalPillars = [
+  "Donor assessment and stewardship discipline",
+  "Extraction control and graft handling precision",
+  "Recipient planning and implantation discipline",
+  "Case planning, execution sequencing, and intra-operative judgment",
+  "Post-case reflection and standards-based refinement",
 ];
 
 export function TechnicalDevelopmentSection() {
   return (
     <SectionShell muted>
       <SectionHeading
-        eyebrow="Technical Skill Development"
-        title="Core operative competencies developed through deliberate practice"
-        description="Practical FUE training is organized into technical modules so progression remains precise, consistent, and clinically grounded. Donor assessment, planning, extraction strategy, graft handling, and recipient management are developed deliberately—so surgical discipline supports long-term outcomes."
+        eyebrow="Technical Development"
+        title="Core operative standards developed through disciplined practice"
+        description="Practical FUE development emphasizes donor stewardship, procedural control, planning discipline, and review. The aim is not speed, but reliable clinical execution that supports long-term quality and accountability."
       />
       <ol className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-        {skillModules.map((module, index) => (
-          <Card key={module} interactive>
-            <p className="text-xs tracking-[0.14em] text-muted-foreground uppercase">{`Module ${index + 1}`}</p>
-            <p className="mt-2 text-sm leading-relaxed text-foreground">{module}</p>
+        {technicalPillars.map((pillar, index) => (
+          <Card key={pillar} interactive>
+            <p className="text-xs tracking-[0.14em] text-muted-foreground uppercase">{`Pillar ${index + 1}`}</p>
+            <p className="mt-2 text-sm leading-relaxed text-foreground">{pillar}</p>
           </Card>
         ))}
       </ol>
