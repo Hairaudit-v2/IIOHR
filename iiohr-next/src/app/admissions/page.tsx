@@ -193,14 +193,14 @@ export default function AdmissionsPage() {
         <SectionHeading
           eyebrow="Next Step"
           title="Choose the next route"
-          description="Move into application, review the doctor or consultant pathways, or explore the clinic route if you are sorting team development."
+          description="Move into a doctor application, consultant / nurse application, or clinic / group enquiry route with clear pathway alignment."
         />
         <SectionCTA
           variant="light"
           primary={{ href: "/apply", label: "Apply to IIOHR" }}
           secondary={[
             { href: "/doctors", label: "Explore Doctors" },
-            { href: "/consultants", label: "Explore Consultants" },
+            { href: "/consultants", label: "Explore Consultants / Nurses" },
             { href: "/for-clinics", label: "Explore For Clinics" },
           ]}
           tertiary={[{ href: "/login?redirectTo=%2Fapply", label: "Sign In / Access Account" }]}
@@ -221,7 +221,7 @@ export default function AdmissionsPage() {
           <Card>
             <h3 className="text-lg font-semibold tracking-tight text-foreground">Pathway pages</h3>
             <p className="mt-3 text-sm leading-relaxed text-readable-muted">
-              Review the public doctor, consultant, and clinic pages if you need more role-specific context before applying.
+                Review the public doctor, consultant / nurse, and clinic pages if you need more role-specific context before applying.
             </p>
             <p className="mt-5 text-sm">
               <Link href="/doctors" className="link-premium font-medium">

@@ -40,7 +40,9 @@ export function StreamApplyFormFields({
   const defaultProgram = defaultProgramSlugForStream(stream);
 
   const streamSectionTitle =
-    stream === "doctors" ? "Professional details (doctor stream)" : "Professional details (consultant stream)";
+    stream === "doctors"
+      ? "Professional details (doctor stream)"
+      : "Professional details (consultant / nurse stream)";
 
   return (
     <>

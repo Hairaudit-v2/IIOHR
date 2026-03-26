@@ -53,7 +53,7 @@ export function HeroSection() {
                   </Button>
                 </div>
                 <p className="max-w-xl text-sm leading-relaxed text-section-charcoal-muted/90">
-                  Doctors and consultants can begin admissions review. Clinics can explore team development.
+                  Doctors and consultants / nurses can begin admissions review. Clinics can explore team development.
                 </p>
                 <div className="pt-2">
                   <div className="mb-2 h-px max-w-xs bg-section-charcoal-border/65" aria-hidden />

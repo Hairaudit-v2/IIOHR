@@ -11,7 +11,7 @@ const canonical = "https://iiohr.com/apply";
 export const metadata: Metadata = {
   title: "Apply",
   description:
-    "Submit an application or enquiry to IIOHR for individual or clinic pathway review and admissions guidance.",
+    "Submit a doctor application, consultant/nurse application, or clinic/group enquiry to IIOHR for admissions review and pathway guidance.",
   alternates: { canonical },
   openGraph: { url: canonical },
 };
@@ -25,13 +25,17 @@ export default function ApplyPage() {
         data-section-tone="light"
       >
         <p className="text-readable-muted">
-          Already have an account? Continue to the stream-specific application routes here:{" "}
+          Already have an account? Continue your pathway application route here:{" "}
           <Link href="/apply/doctors" className="link-premium font-medium">
             Doctors
           </Link>
           {" · "}
           <Link href="/apply/consultants" className="link-premium font-medium">
-            Consultants
+            Consultants / nurses
+          </Link>
+          {" · "}
+          <Link href="/for-clinics" className="link-premium font-medium">
+            Clinics / groups
           </Link>
           {" · "}
           <Link href="/login?redirectTo=%2Fapply" className="link-premium font-medium">

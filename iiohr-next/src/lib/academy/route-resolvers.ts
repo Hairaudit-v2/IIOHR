@@ -17,7 +17,7 @@ export function buildStreamBreadcrumbs(
   items: BreadcrumbItem[]
 ): BreadcrumbItem[] {
   return [
-    { href: `/${streamSlug}`, label: streamSlug === "doctors" ? "Doctors" : "Consultants" },
+    { href: `/${streamSlug}`, label: streamSlug === "doctors" ? "Doctors" : "Consultants / Nurses" },
     ...items,
   ];
 }

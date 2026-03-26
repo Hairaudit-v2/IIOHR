@@ -12,6 +12,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 export function ApplicationFormSection() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [enquiryType, setEnquiryType] = useState<"doctor" | "consultant" | "clinic">("doctor");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -19,7 +20,7 @@ export function ApplicationFormSection() {
     const data = new FormData(form);
 
     const payload = {
-      enquiryType: data.get("enquiryType") ?? "individual",
+      enquiryType: data.get("enquiryType") ?? "doctor",
       fullName: (data.get("fullName") as string)?.trim(),
       email: (data.get("email") as string)?.trim(),
       phone: (data.get("phone") as string)?.trim() || "",
@@ -50,6 +51,7 @@ export function ApplicationFormSection() {
         return;
       }
       setStatus("success");
+      setEnquiryType("doctor");
       form.reset();
     } catch {
       setStatus("error");
@@ -60,6 +62,18 @@ export function ApplicationFormSection() {
   const inputClass =
     "w-full rounded-md border-2 border-foreground/16 bg-surface px-3 py-2.5 text-sm text-foreground placeholder:text-readable-subtle shadow-sm outline-none transition-[border-color,box-shadow] focus:border-accent/45 focus:ring-2 focus:ring-accent/15 disabled:border-border disabled:bg-surface-soft disabled:text-readable-muted disabled:opacity-70 [&:-webkit-autofill]:[-webkit-text-fill-color:var(--text-primary)] [&:-webkit-autofill]:shadow-[inset_0_0_0px_1000px_var(--surface)] [&:-webkit-autofill:focus]:shadow-[inset_0_0_0px_1000px_var(--surface)]";
   const labelClass = "text-sm font-medium text-foreground";
+  const isDoctor = enquiryType === "doctor";
+  const isConsultant = enquiryType === "consultant";
+  const clinicalContextLabel = isDoctor
+    ? "Current medical background"
+    : isConsultant
+      ? "Current clinical or patient-facing background"
+      : "Current clinic or group context";
+  const experienceLabel = isDoctor
+    ? "Current level of hair restoration experience"
+    : isConsultant
+      ? "Current level of hair-loss consultation / support experience"
+      : "Current level of team training implementation";
 
   return (
     <SectionShell>
@@ -125,25 +139,37 @@ export function ApplicationFormSection() {
 
               <fieldset className="rounded-xl border-2 border-foreground/16 bg-surface px-5 py-6">
                 <legend className="px-1 text-sm font-semibold text-foreground">Enquiry Type</legend>
-                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                <div className="mt-5 grid gap-3 md:grid-cols-3">
                   <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-surface px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
                     <input
                       type="radio"
                       name="enquiryType"
-                      value="individual"
+                      value="doctor"
                       defaultChecked
+                      onChange={() => setEnquiryType("doctor")}
                       className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
                     />
-                    <span className="leading-snug">Individual doctor enquiry</span>
+                    <span className="leading-snug">Doctor application</span>
+                  </label>
+                  <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-surface px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
+                    <input
+                      type="radio"
+                      name="enquiryType"
+                      value="consultant"
+                      onChange={() => setEnquiryType("consultant")}
+                      className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
+                    />
+                    <span className="leading-snug">Consultant / nurse application</span>
                   </label>
                   <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-surface px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
                     <input
                       type="radio"
                       name="enquiryType"
                       value="clinic"
+                      onChange={() => setEnquiryType("clinic")}
                       className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
                     />
-                    <span className="leading-snug">Clinic or group enquiry</span>
+                    <span className="leading-snug">Clinic / group enquiry</span>
                   </label>
                 </div>
               </fieldset>
@@ -221,7 +247,7 @@ export function ApplicationFormSection() {
                 </legend>
                 <div className="mt-4 space-y-2.5">
                   <label htmlFor="medicalBackground" className={labelClass}>
-                    Current medical background <span className="text-readable-muted">(required)</span>
+                    {clinicalContextLabel} <span className="text-readable-muted">(required)</span>
                   </label>
                   <textarea
                     id="medicalBackground"
@@ -242,7 +268,7 @@ export function ApplicationFormSection() {
                 <div className="mt-4 grid gap-5 md:grid-cols-2 md:gap-6">
                   <div className="space-y-2.5">
                     <label htmlFor="experienceLevel" className={labelClass}>
-                      Current level of hair restoration experience <span className="text-readable-muted">(required)</span>
+                      {experienceLabel} <span className="text-readable-muted">(required)</span>
                     </label>
                     <select
                       id="experienceLevel"
@@ -254,10 +280,28 @@ export function ApplicationFormSection() {
                       className={inputClass}
                     >
                       <option value="" disabled>Select experience level</option>
-                      <option value="none">No procedural experience yet</option>
-                      <option value="early">Early-stage practical exposure</option>
-                      <option value="intermediate">Performing cases with supervision</option>
-                      <option value="experienced">Established surgeon seeking refinement</option>
+                      {isDoctor ? (
+                        <>
+                          <option value="none">No procedural experience yet</option>
+                          <option value="early">Early-stage practical exposure</option>
+                          <option value="intermediate">Performing cases with supervision</option>
+                          <option value="experienced">Established surgeon seeking refinement</option>
+                        </>
+                      ) : isConsultant ? (
+                        <>
+                          <option value="none">New to structured consultation support</option>
+                          <option value="early">Some patient-facing exposure</option>
+                          <option value="intermediate">Supporting pathways with supervision</option>
+                          <option value="experienced">Experienced coordinator / nurse seeking formal progression</option>
+                        </>
+                      ) : (
+                        <>
+                          <option value="planning">Planning team pathway rollout</option>
+                          <option value="early">Early-stage team implementation</option>
+                          <option value="intermediate">Active internal pathway in place</option>
+                          <option value="mature">Mature clinic programme seeking refinement</option>
+                        </>
+                      )}
                     </select>
                   </div>
                   <div className="space-y-2.5">
@@ -274,10 +318,28 @@ export function ApplicationFormSection() {
                       className={inputClass}
                     >
                       <option value="" disabled>Select interest area</option>
-                      <option value="training-pathways">Training Pathways</option>
-                      <option value="practical-fue">Practical FUE</option>
-                      <option value="hair-loss-science">Hair Loss Science</option>
-                      <option value="clinic-partnership">Clinic Partnership Pathway</option>
+                      {isDoctor ? (
+                        <>
+                          <option value="doctor-application">Doctor application</option>
+                          <option value="training-pathways">Training Pathways</option>
+                          <option value="practical-fue">Practical FUE</option>
+                          <option value="hair-loss-science">Hair Loss Science</option>
+                        </>
+                      ) : isConsultant ? (
+                        <>
+                          <option value="consultant-nurse-application">Consultant / nurse application</option>
+                          <option value="consultant-certificate">Consultant / nurse certificate pathway</option>
+                          <option value="communication-and-triage">Communication and triage progression</option>
+                          <option value="documentation-and-handover">Documentation and handover standards</option>
+                        </>
+                      ) : (
+                        <>
+                          <option value="clinic-group-enquiry">Clinic / group enquiry</option>
+                          <option value="team-development">Team development pathway</option>
+                          <option value="standards-and-governance">Standards and governance support</option>
+                          <option value="implementation-roadmap">Implementation roadmap</option>
+                        </>
+                      )}
                     </select>
                   </div>
                 </div>

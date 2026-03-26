@@ -22,6 +22,7 @@ const REQUIRED = [
 const HONEYPOT_FIELD = "website";
 
 type ApplicationPayload = Record<string, unknown>;
+type EnquiryType = "doctor" | "consultant" | "clinic";
 
 function isValidString(value: unknown): value is string {
   return typeof value === "string" && value.trim().length > 0;
@@ -29,6 +30,27 @@ function isValidString(value: unknown): value is string {
 
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+}
+
+/**
+ * Accept legacy values safely and normalize to explicit route types.
+ */
+function normalizeEnquiryType(value: unknown): EnquiryType | null {
+  if (typeof value !== "string") return null;
+  const normalized = value.trim().toLowerCase();
+  if (normalized === "doctor" || normalized === "consultant" || normalized === "clinic") {
+    return normalized;
+  }
+  if (
+    normalized === "consultant-nurse" ||
+    normalized === "consultant_nurse" ||
+    normalized === "consultant/nurse"
+  ) {
+    return "consultant";
+  }
+  // Backward compatibility for older public form payloads.
+  if (normalized === "individual") return "doctor";
+  return null;
 }
 
 /** Webhook result for logging and error handling. */
@@ -53,6 +75,12 @@ async function forwardToWebhook(payload: ApplicationPayload): Promise<WebhookRes
     experienceLevel: payload.experienceLevel,
     answers: {
       enquiryType: payload.enquiryType,
+      enquiryTypeLabel:
+        payload.enquiryType === "doctor"
+          ? "Doctor application"
+          : payload.enquiryType === "consultant"
+            ? "Consultant / nurse application"
+            : "Clinic / group enquiry",
       medicalBackground: payload.medicalBackground,
       interestArea: payload.interestArea,
       goals: payload.goals,
@@ -127,8 +155,16 @@ export async function POST(request: Request) {
       );
     }
 
+    const enquiryType = normalizeEnquiryType(body.enquiryType);
+    if (!enquiryType) {
+      return NextResponse.json(
+        { error: "Invalid enquiry type. Please select doctor, consultant/nurse, or clinic/group." },
+        { status: 400 }
+      );
+    }
+
     const payload: ApplicationPayload = {
-      enquiryType: body.enquiryType,
+      enquiryType,
       fullName: body.fullName,
       email: body.email,
       phone: body.phone ?? "",

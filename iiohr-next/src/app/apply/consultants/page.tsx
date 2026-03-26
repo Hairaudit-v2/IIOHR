@@ -17,8 +17,8 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { saveStreamApplicationDraftAction, submitStreamApplicationAction } from "../stream-application-actions";
 
 export const metadata: Metadata = {
-  title: "Apply — Consultant academy stream",
-  description: "Submit an admissions application for the IIOHR consultant academy stream.",
+  title: "Apply — Consultant / nurse academy stream",
+  description: "Submit an admissions application for the IIOHR consultant / nurse academy stream.",
 };
 
 export const dynamic = "force-dynamic";
@@ -76,7 +76,7 @@ export default async function ApplyConsultantsPage({
             Academy
           </Link>
         </p>
-        <h1 className="mt-4 text-lg font-semibold tracking-tight">Consultant stream application</h1>
+        <h1 className="mt-4 text-lg font-semibold tracking-tight">Consultant / nurse stream application</h1>
         <p className="mt-2 text-readable-muted leading-relaxed">
           Complete your applicant and professional details, accept the required consents, then submit. You can save a draft
           at any time; your account email and name are pre-filled when available—please confirm before submitting.
@@ -86,7 +86,7 @@ export default async function ApplyConsultantsPage({
           <p className="mt-6 rounded-lg border border-border bg-[var(--bg-soft)] p-4 text-foreground">
             Thank you — your latest updates were submitted. Admissions will continue their review. You can explore the{" "}
             <Link href="/consultants" className="link-premium font-medium">
-              consultant academy
+              consultant / nurse academy
             </Link>{" "}
             areas that are open to you.
           </p>

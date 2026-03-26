@@ -12,6 +12,12 @@ import {
   admissionsUpdateInternalNotesAction,
 } from "./actions";
 
+function streamLabel(slug: string): string {
+  if (slug === "doctors") return "Doctors";
+  if (slug === "consultants") return "Consultants / nurses";
+  return slug;
+}
+
 export const metadata: Metadata = {
   title: "Admissions review",
   description: "Review submitted academy applications (admin).",
@@ -150,7 +156,7 @@ export default async function AdmissionsReviewPage({
                   </p>
                   <p className="mt-1 text-readable-muted">
                     Applicant <span className="font-mono text-xs">{app.user_id}</span> · stream{" "}
-                    <span className="font-mono">{app.target_stream_slug}</span> · program{" "}
+                    <span className="font-mono">{streamLabel(app.target_stream_slug)}</span> · program{" "}
                     <span className="font-mono">{app.target_program_slug ?? "—"}</span> · status{" "}
                     <span className="font-mono">{app.status}</span>
                     {app.submitted_at ? (
