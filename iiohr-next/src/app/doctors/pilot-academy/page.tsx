@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
@@ -10,6 +11,12 @@ import { createProgressTrackingService } from "@/lib/academy/services/progress-t
 import { pilotMarkLessonAndRefreshAction, pilotSubmitAssessmentAttemptAction } from "./actions";
 
 export const dynamic = "force-dynamic";
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 const flashMessages: Record<string, string> = {
   "auth-required": "Sign in required to run pilot actions.",

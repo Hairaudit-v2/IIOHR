@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 const canonical = "https://iiohr.com/admissions";
 
 export const metadata: Metadata = {
-  title: "Admissions",
+  title: "Admissions Review",
   description:
     "IIOHR Admissions helps applicants understand likely fit, pathway matching, review criteria, and the next step into application and protected account access.",
   alternates: { canonical },

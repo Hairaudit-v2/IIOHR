@@ -6,6 +6,10 @@ import { LoginForm } from "./LoginForm";
 export const metadata: Metadata = {
   title: "Sign in",
   description: "Sign in to IIOHR academy and admissions tools.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export const dynamic = "force-dynamic";

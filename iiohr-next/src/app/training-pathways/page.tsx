@@ -10,7 +10,7 @@ import { TrainingPathwaysHero } from "@/components/sections/training-pathways/Tr
 const canonical = "https://iiohr.com/training-pathways";
 
 export const metadata: Metadata = {
-  title: "Training Pathways",
+  title: "Training Pathways Overview",
   description:
     "IIOHR Training Pathways explains how staged progression works across the institute through standards, review, practical responsibility, and role-appropriate development.",
   alternates: { canonical },

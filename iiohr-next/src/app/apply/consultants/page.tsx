@@ -19,6 +19,10 @@ import { saveStreamApplicationDraftAction, submitStreamApplicationAction } from 
 export const metadata: Metadata = {
   title: "Apply — Consultant / nurse academy stream",
   description: "Submit an admissions application for the IIOHR consultant / nurse academy stream.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export const dynamic = "force-dynamic";

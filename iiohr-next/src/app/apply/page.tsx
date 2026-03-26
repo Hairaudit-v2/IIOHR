@@ -9,7 +9,7 @@ import { ApplicationFormSection } from "@/components/sections/apply/ApplicationF
 const canonical = "https://iiohr.com/apply";
 
 export const metadata: Metadata = {
-  title: "Apply",
+  title: "Apply to IIOHR",
   description:
     "Submit a doctor application, consultant/nurse application, or clinic/group enquiry to IIOHR for admissions review and pathway guidance.",
   alternates: { canonical },

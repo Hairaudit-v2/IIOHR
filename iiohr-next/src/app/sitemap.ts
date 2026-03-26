@@ -6,7 +6,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/about",
+    "/doctors",
+    "/consultants",
+    "/admissions",
     "/apply",
+    "/certification-framework",
     "/training-pathways",
     "/practical-fue",
     "/hair-loss-science",

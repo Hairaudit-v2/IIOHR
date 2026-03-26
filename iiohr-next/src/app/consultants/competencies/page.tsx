@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { CompetencyTranscriptTable } from "@/components/academy/shared/CompetencyTranscriptTable";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
@@ -6,6 +7,13 @@ import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { getProgramCompetencies } from "@/lib/academy/content-loader";
 
 const programSlug = "certificate-hair-loss-consultation-clinical-patient-coordination";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function ConsultantsCompetenciesPage() {
   const access = await getProtectedAcademyAccess("consultants", "/consultants/competencies");

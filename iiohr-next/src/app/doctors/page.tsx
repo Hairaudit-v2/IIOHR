@@ -9,6 +9,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { heroEducationImage } from "@/lib/homeImages";
 import { getAcademyStreams } from "@/lib/academy/content-registry";
 
+const canonical = "https://iiohr.com/doctors";
+
 const audienceCards = [
   {
     title: "Early-career doctors",
@@ -124,9 +126,11 @@ const nextStepCards = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Doctors",
+  title: "Doctors Pathway",
   description:
     "A public overview of the IIOHR doctor pathway covering who it is for, how development is structured, and how to move into admissions and protected academy access.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 export default function DoctorsPage() {

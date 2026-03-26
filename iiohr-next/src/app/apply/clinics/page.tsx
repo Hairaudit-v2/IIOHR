@@ -6,6 +6,10 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Clinic / group enquiry continuation",
   description: "Continue your clinic or group enquiry with admissions guidance and next-step coordination.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export const dynamic = "force-dynamic";

@@ -13,6 +13,17 @@ import { GlobalHairIntelligenceSection } from "@/components/ecosystem";
 import { getWebPageJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import { HOME_IMAGES, ecosystemLabImage } from "@/lib/homeImages";
+import type { Metadata } from "next";
+
+const canonical = "https://iiohr.com";
+
+export const metadata: Metadata = {
+  title: "International Institute of Hair Restoration",
+  description:
+    "IIOHR is a standards-led institute for hair restoration education, practical FUE development, and structured progression for doctors, consultants, nurses, and clinics.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
+};
 
 export default function HomePage() {
   const webPageJsonLd = getWebPageJsonLd({

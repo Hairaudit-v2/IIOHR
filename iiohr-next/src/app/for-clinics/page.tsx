@@ -10,7 +10,7 @@ import { StructuredDevelopmentNeedSection } from "@/components/sections/for-clin
 const canonical = "https://iiohr.com/for-clinics";
 
 export const metadata: Metadata = {
-  title: "For Clinics",
+  title: "For Clinics and Groups",
   description:
     "IIOHR partners with clinics and medical groups to build structured surgeon development pathways with standards alignment and audit-backed improvement.",
   alternates: { canonical },

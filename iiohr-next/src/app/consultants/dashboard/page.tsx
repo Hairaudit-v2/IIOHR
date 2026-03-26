@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ApplicantApplicationStatusPanel } from "@/components/academy/admissions/ApplicantApplicationStatusPanel";
 import { ProgressSummaryCard } from "@/components/academy/shared/ProgressSummaryCard";
 import { getLatestApplicationForUserStream } from "@/lib/academy/admissions/application-queries";
@@ -7,6 +8,12 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export const dynamic = "force-dynamic";
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function ConsultantsDashboardPage() {
   const supabase = await createSupabaseServerClient();

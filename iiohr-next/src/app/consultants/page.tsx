@@ -9,6 +9,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { heroEducationImage } from "@/lib/homeImages";
 import { getAcademyStreams } from "@/lib/academy/content-registry";
 
+const canonical = "https://iiohr.com/consultants";
+
 const audienceCards = [
   {
     title: "Clinic consultants",
@@ -136,9 +138,11 @@ const nextStepCards = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Consultants",
+  title: "Consultants and Nurses Pathway",
   description:
     "A public overview of the IIOHR consultant and nurse pathway covering who it is for, what it develops, and how to move into admissions and protected academy access.",
+  alternates: { canonical },
+  openGraph: { url: canonical },
 };
 
 export default function ConsultantsPage() {

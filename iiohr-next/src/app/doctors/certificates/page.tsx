@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import { ProtectedAcademyAccessBoundary } from "@/components/academy/shared/ProtectedAcademyAccessBoundary";
 import { CertificateEligibilityCard } from "@/components/academy/shared/CertificateEligibilityCard";
 import { DigitalBadgeCard } from "@/components/academy/shared/DigitalBadgeCard";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getProtectedAcademyAccess } from "@/lib/academy/access";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function DoctorsCertificatesPage() {
   const access = await getProtectedAcademyAccess("doctors", "/doctors/certificates");
