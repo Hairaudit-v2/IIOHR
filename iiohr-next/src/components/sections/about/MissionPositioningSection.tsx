@@ -26,7 +26,7 @@ export function MissionPositioningSection() {
       <SectionHeading
         eyebrow="Institute Purpose"
         title="What IIOHR exists to do"
-        description="IIOHR exists to make development in hair restoration more structured, more legible, and more credible than ad hoc training pathways often allow."
+        description="IIOHR exists to make development in hair restoration more structured and credible than ad hoc training pathways."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {pillars.map((item) => (

@@ -27,7 +27,7 @@ export function StandardsDevelopmentSection() {
       <SectionHeading
         eyebrow="Why It Matters"
         title="Why this model matters"
-        description="The value of an institute model is not only educational. It also affects trust, consistency, and how standards are carried through the field."
+        description="An institute model affects trust, consistency, and how standards are carried through the field."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {standards.map((item) => (

@@ -21,7 +21,7 @@ const clinicPathways = [
   {
     title: "Structured growth",
     description:
-      "Growth becomes more manageable when progression, standards, and review are treated as operating infrastructure.",
+      "Growth becomes more manageable when progression and review are treated as operating infrastructure.",
   },
 ] as const;
 
@@ -31,7 +31,7 @@ export function ClinicPathwaysSection() {
       <SectionHeading
         eyebrow="Why It Matters Operationally"
         title="Why this matters operationally"
-        description="The clinic case for IIOHR is about reducing ad hoc training dependence and building a more durable standards culture."
+        description="The clinic case for IIOHR is operational: reduce ad hoc training dependence and build a more durable standards culture."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         {clinicPathways.map((pathway, index) => (

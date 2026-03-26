@@ -43,7 +43,7 @@ export function EcosystemRelationshipSection() {
       <GlobalHairIntelligenceSection
         variant="iiohr"
         heading="Connected education, audit, and clinical intelligence"
-        description="The ecosystem is designed to keep education connected to review and intelligence without turning the institute into a product layer."
+        description="The ecosystem keeps education connected to review and intelligence without turning the institute into a product layer."
         size="compact"
         nodeLinks={GLOBAL_NETWORK_NODE_LINKS}
       />

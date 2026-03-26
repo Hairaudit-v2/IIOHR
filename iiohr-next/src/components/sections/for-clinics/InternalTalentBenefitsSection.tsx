@@ -6,7 +6,7 @@ const benefits = [
   {
     title: "Structured internal development",
     description:
-      "Clinics can build clearer development pathways instead of relying on fragmented decisions about how people should progress.",
+      "Clinics can build clearer development pathways instead of fragmented progression decisions.",
   },
   {
     title: "More consistent consultation standards",
@@ -16,7 +16,7 @@ const benefits = [
   {
     title: "Longer-term quality infrastructure",
     description:
-      "Standards, review, and progression logic give clinics a stronger foundation for capability over time.",
+      "Standards and review give clinics a stronger foundation for capability over time.",
   },
 ] as const;
 
@@ -26,7 +26,7 @@ export function InternalTalentBenefitsSection() {
       <SectionHeading
         eyebrow="Why Clinics Engage"
         title="Why clinics engage with IIOHR"
-        description="The value is not only educational. It is also operational: stronger consistency, clearer development pathways, and a more credible capability model."
+        description="The value is operational: stronger consistency, clearer development pathways, and a more credible capability model."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {benefits.map((benefit) => (

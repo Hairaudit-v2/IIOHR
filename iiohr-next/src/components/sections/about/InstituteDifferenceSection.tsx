@@ -16,7 +16,7 @@ const modelComponents = [
   {
     title: "Practical development",
     description:
-      "Learning is tied to real clinical application so education does not drift away from operational and patient-facing reality.",
+      "Learning is tied to real clinical application so education stays close to patient-facing reality.",
   },
   {
     title: "Review and accountability",

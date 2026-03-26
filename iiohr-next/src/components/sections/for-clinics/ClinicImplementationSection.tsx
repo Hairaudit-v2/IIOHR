@@ -11,7 +11,7 @@ const supports = [
   {
     title: "Readiness review",
     description:
-      "Readiness review helps identify current capability, supervision context, and whether a structured route is appropriate.",
+      "Readiness review identifies current capability, supervision context, and whether a structured route is appropriate.",
   },
   {
     title: "Pathway design",
@@ -26,7 +26,7 @@ const supports = [
   {
     title: "Review and progression",
     description:
-      "Review and progression help clinics move away from ad hoc training dependence toward a clearer development system.",
+      "Review and progression help clinics move from ad hoc training dependence to a clearer development system.",
   },
 ] as const;
 
@@ -36,7 +36,7 @@ export function ClinicImplementationSection() {
       <SectionHeading
         eyebrow="Operational Model"
         title="How clinic engagement works in public-safe terms"
-        description="The public page does not expose internal programme detail. It explains the high-level logic: fit, readiness, route matching, and structured progression."
+        description="The public page does not expose internal programme detail. It outlines the operational sequence: fit, readiness, route matching, and progression."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {supports.map((item) => (

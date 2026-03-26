@@ -63,7 +63,7 @@ export function ApplicationFormSection() {
 
   return (
     <SectionShell>
-      <div id="application-form" className="grid min-w-0 gap-10 lg:grid-cols-[1.8fr_1fr] lg:gap-12">
+      <div id="application-form" className="grid min-w-0 gap-12 lg:grid-cols-[1.72fr_1fr] lg:gap-12">
         <div className="min-w-0">
           <SectionHeading
             eyebrow="Application or Enquiry"
@@ -116,7 +116,7 @@ export function ApplicationFormSection() {
           )}
 
           {status !== "success" && (
-            <form onSubmit={handleSubmit} className="mt-8 space-y-8" noValidate>
+            <form onSubmit={handleSubmit} className="mt-8 space-y-9" noValidate>
               {/* Honeypot – leave empty; bots often fill it */}
               <div className="absolute -left-[9999px] top-0" aria-hidden="true">
                 <label htmlFor="website">Website</label>
@@ -148,161 +148,176 @@ export function ApplicationFormSection() {
                 </div>
               </fieldset>
 
-              <div className="grid gap-5 md:grid-cols-2 md:gap-6">
-                <div className="space-y-2.5">
-                  <label htmlFor="fullName" className={labelClass}>
-                    Full name <span className="text-readable-muted">(required)</span>
-                  </label>
-                  <input
-                    id="fullName"
-                    name="fullName"
-                    type="text"
-                    autoComplete="name"
-                    required
-                    aria-required="true"
-                    disabled={status === "submitting"}
-                    className={inputClass}
-                  />
+              <fieldset className="rounded-xl border border-border/65 bg-surface/75 p-5 md:p-6">
+                <legend className="px-1 text-xs font-semibold tracking-[0.12em] text-readable-muted uppercase">
+                  Contact details
+                </legend>
+                <div className="mt-4 grid gap-5 md:grid-cols-2 md:gap-6">
+                  <div className="space-y-2.5">
+                    <label htmlFor="fullName" className={labelClass}>
+                      Full name <span className="text-readable-muted">(required)</span>
+                    </label>
+                    <input
+                      id="fullName"
+                      name="fullName"
+                      type="text"
+                      autoComplete="name"
+                      required
+                      aria-required="true"
+                      disabled={status === "submitting"}
+                      className={inputClass}
+                    />
+                  </div>
+                  <div className="space-y-2.5">
+                    <label htmlFor="email" className={labelClass}>
+                      Email <span className="text-readable-muted">(required)</span>
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      aria-required="true"
+                      disabled={status === "submitting"}
+                      className={inputClass}
+                    />
+                  </div>
+                  <div className="space-y-2.5">
+                    <label htmlFor="phone" className={labelClass}>
+                      Phone
+                    </label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      autoComplete="tel"
+                      inputMode="tel"
+                      disabled={status === "submitting"}
+                      className={inputClass}
+                    />
+                  </div>
+                  <div className="space-y-2.5">
+                    <label htmlFor="country" className={labelClass}>
+                      Country <span className="text-readable-muted">(required)</span>
+                    </label>
+                    <input
+                      id="country"
+                      name="country"
+                      type="text"
+                      autoComplete="country-name"
+                      required
+                      aria-required="true"
+                      disabled={status === "submitting"}
+                      className={inputClass}
+                    />
+                  </div>
                 </div>
-                <div className="space-y-2.5">
-                  <label htmlFor="email" className={labelClass}>
-                    Email <span className="text-readable-muted">(required)</span>
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    required
-                    aria-required="true"
-                    disabled={status === "submitting"}
-                    className={inputClass}
-                  />
-                </div>
-                <div className="space-y-2.5">
-                  <label htmlFor="phone" className={labelClass}>
-                    Phone
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autoComplete="tel"
-                    inputMode="tel"
-                    disabled={status === "submitting"}
-                    className={inputClass}
-                  />
-                </div>
-                <div className="space-y-2.5">
-                  <label htmlFor="country" className={labelClass}>
-                    Country <span className="text-readable-muted">(required)</span>
-                  </label>
-                  <input
-                    id="country"
-                    name="country"
-                    type="text"
-                    autoComplete="country-name"
-                    required
-                    aria-required="true"
-                    disabled={status === "submitting"}
-                    className={inputClass}
-                  />
-                </div>
-              </div>
+              </fieldset>
 
-              <div className="space-y-2.5">
-                <label htmlFor="medicalBackground" className={labelClass}>
-                  Current medical background <span className="text-readable-muted">(required)</span>
-                </label>
-                <textarea
-                  id="medicalBackground"
-                  name="medicalBackground"
-                  rows={3}
-                  required
-                  aria-required="true"
-                  disabled={status === "submitting"}
-                  className={inputClass}
-                />
-              </div>
+              <fieldset className="rounded-xl border border-border/65 bg-surface/75 p-5 md:p-6">
+                <legend className="px-1 text-xs font-semibold tracking-[0.12em] text-readable-muted uppercase">
+                  Clinical context
+                </legend>
+                <div className="mt-4 space-y-2.5">
+                  <label htmlFor="medicalBackground" className={labelClass}>
+                    Current medical background <span className="text-readable-muted">(required)</span>
+                  </label>
+                  <textarea
+                    id="medicalBackground"
+                    name="medicalBackground"
+                    rows={3}
+                    required
+                    aria-required="true"
+                    disabled={status === "submitting"}
+                    className={inputClass}
+                  />
+                </div>
+              </fieldset>
 
-              <div className="grid gap-5 md:grid-cols-2 md:gap-6">
-                <div className="space-y-2.5">
-                  <label htmlFor="experienceLevel" className={labelClass}>
-                    Current level of hair restoration experience <span className="text-readable-muted">(required)</span>
+              <fieldset className="rounded-xl border border-border/65 bg-surface/75 p-5 md:p-6">
+                <legend className="px-1 text-xs font-semibold tracking-[0.12em] text-readable-muted uppercase">
+                  Pathway direction
+                </legend>
+                <div className="mt-4 grid gap-5 md:grid-cols-2 md:gap-6">
+                  <div className="space-y-2.5">
+                    <label htmlFor="experienceLevel" className={labelClass}>
+                      Current level of hair restoration experience <span className="text-readable-muted">(required)</span>
+                    </label>
+                    <select
+                      id="experienceLevel"
+                      name="experienceLevel"
+                      required
+                      aria-required="true"
+                      defaultValue=""
+                      disabled={status === "submitting"}
+                      className={inputClass}
+                    >
+                      <option value="" disabled>Select experience level</option>
+                      <option value="none">No procedural experience yet</option>
+                      <option value="early">Early-stage practical exposure</option>
+                      <option value="intermediate">Performing cases with supervision</option>
+                      <option value="experienced">Established surgeon seeking refinement</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2.5">
+                    <label htmlFor="interestArea" className={labelClass}>
+                      Interest area <span className="text-readable-muted">(required)</span>
+                    </label>
+                    <select
+                      id="interestArea"
+                      name="interestArea"
+                      required
+                      aria-required="true"
+                      defaultValue=""
+                      disabled={status === "submitting"}
+                      className={inputClass}
+                    >
+                      <option value="" disabled>Select interest area</option>
+                      <option value="training-pathways">Training Pathways</option>
+                      <option value="practical-fue">Practical FUE</option>
+                      <option value="hair-loss-science">Hair Loss Science</option>
+                      <option value="clinic-partnership">Clinic Partnership Pathway</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="mt-6 space-y-2.5">
+                  <label htmlFor="goals" className={labelClass}>
+                    Goals <span className="text-readable-muted">(required)</span>
+                  </label>
+                  <textarea
+                    id="goals"
+                    name="goals"
+                    rows={4}
+                    required
+                    aria-required="true"
+                    disabled={status === "submitting"}
+                    className={inputClass}
+                  />
+                </div>
+
+                <div className="mt-6 space-y-2.5">
+                  <label htmlFor="timeframe" className={labelClass}>
+                    Preferred timeframe <span className="text-readable-muted">(required)</span>
                   </label>
                   <select
-                    id="experienceLevel"
-                    name="experienceLevel"
+                    id="timeframe"
+                    name="timeframe"
                     required
                     aria-required="true"
                     defaultValue=""
                     disabled={status === "submitting"}
                     className={inputClass}
                   >
-                    <option value="" disabled>Select experience level</option>
-                    <option value="none">No procedural experience yet</option>
-                    <option value="early">Early-stage practical exposure</option>
-                    <option value="intermediate">Performing cases with supervision</option>
-                    <option value="experienced">Established surgeon seeking refinement</option>
+                    <option value="" disabled>Select preferred timeframe</option>
+                    <option value="immediate">Immediate (0–2 months)</option>
+                    <option value="short-term">Short term (3–6 months)</option>
+                    <option value="medium-term">Medium term (6–12 months)</option>
+                    <option value="planning">Planning stage (12+ months)</option>
                   </select>
                 </div>
-                <div className="space-y-2.5">
-                  <label htmlFor="interestArea" className={labelClass}>
-                    Interest area <span className="text-readable-muted">(required)</span>
-                  </label>
-                  <select
-                    id="interestArea"
-                    name="interestArea"
-                    required
-                    aria-required="true"
-                    defaultValue=""
-                    disabled={status === "submitting"}
-                    className={inputClass}
-                  >
-                    <option value="" disabled>Select interest area</option>
-                    <option value="training-pathways">Training Pathways</option>
-                    <option value="practical-fue">Practical FUE</option>
-                    <option value="hair-loss-science">Hair Loss Science</option>
-                    <option value="clinic-partnership">Clinic Partnership Pathway</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="space-y-2.5">
-                <label htmlFor="goals" className={labelClass}>
-                  Goals <span className="text-readable-muted">(required)</span>
-                </label>
-                <textarea
-                  id="goals"
-                  name="goals"
-                  rows={4}
-                  required
-                  aria-required="true"
-                  disabled={status === "submitting"}
-                  className={inputClass}
-                />
-              </div>
-
-              <div className="space-y-2.5">
-                <label htmlFor="timeframe" className={labelClass}>
-                  Preferred timeframe <span className="text-readable-muted">(required)</span>
-                </label>
-                <select
-                  id="timeframe"
-                  name="timeframe"
-                  required
-                  aria-required="true"
-                  defaultValue=""
-                  disabled={status === "submitting"}
-                  className={inputClass}
-                >
-                  <option value="" disabled>Select preferred timeframe</option>
-                  <option value="immediate">Immediate (0–2 months)</option>
-                  <option value="short-term">Short term (3–6 months)</option>
-                  <option value="medium-term">Medium term (6–12 months)</option>
-                  <option value="planning">Planning stage (12+ months)</option>
-                </select>
-              </div>
+              </fieldset>
 
               <div className="rounded-xl border-2 border-border/80 bg-surface-soft/60 p-5 md:p-6">
                 <label className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-foreground">
@@ -325,7 +340,7 @@ export function ApplicationFormSection() {
                 </label>
               </div>
 
-              <div className="border-t border-border/25 pt-8">
+              <div className="border-t border-border/25 pt-7">
                 <p className="mb-4 text-xs font-medium uppercase tracking-[0.1em] text-readable-muted">
                   Submit or email
                 </p>
@@ -349,7 +364,7 @@ export function ApplicationFormSection() {
           )}
 
           {status !== "success" && (
-            <p className="mt-6 text-sm text-readable-muted">
+            <p className="mt-7 text-sm leading-relaxed text-readable-muted">
               Your information is used only for pathway review and admissions. The purpose is guidance and pathway matching, not automatic intake. For direct contact, email{" "}
               <a className="link-premium" href={`mailto:${siteConfig.applicationEmail}`}>
                 {siteConfig.applicationEmail}
@@ -359,23 +374,23 @@ export function ApplicationFormSection() {
           )}
         </div>
 
-        <aside className="space-y-6">
-          <Card>
-            <h3 className="text-lg font-semibold text-heading">What this form is for</h3>
+        <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+          <Card quiet>
+            <h3 className="text-base font-semibold text-heading">What this form is for</h3>
             <ul className="mt-4 space-y-3 text-sm text-readable-muted">
               <li>Share enough context for pathway-fit review</li>
               <li>Help admissions understand role, goals, and current stage</li>
               <li>Support the most appropriate next-step guidance</li>
             </ul>
           </Card>
-          <Card>
-            <h3 className="text-lg font-semibold text-heading">Before you submit</h3>
+          <Card quiet>
+            <h3 className="text-base font-semibold text-heading">Before you submit</h3>
             <p className="mt-4 text-sm leading-relaxed text-readable-muted">
               Not every applicant is entering at the same stage. Submissions are reviewed in context so route guidance can reflect role, exposure, and intended development direction.
             </p>
           </Card>
-          <Card>
-            <h3 className="text-lg font-semibold text-heading">Privacy and account access</h3>
+          <Card quiet>
+            <h3 className="text-base font-semibold text-heading">Privacy and account access</h3>
             <p className="mt-4 text-sm leading-relaxed text-readable-muted">
               We use your details only for pathway review and admissions. Protected academy content remains behind sign-in and approved access. See our{" "}
               <Link href="/privacy-policy" className="link-premium">

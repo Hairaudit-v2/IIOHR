@@ -26,7 +26,7 @@ export function AuditStandardsMentorshipSection() {
       <SectionHeading
         eyebrow="How The Model Works"
         title="An institute model rather than a course provider model"
-        description="IIOHR is positioned as a capability partner: standards, staged progression, and review are intended to support more reliable clinic development over time."
+        description="IIOHR operates as a capability partner: standards, staged progression, and review support more reliable clinic development over time."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {pillars.map((pillar) => (

@@ -21,7 +21,7 @@ export default function ApplyPage() {
     <>
       <ApplyHero />
       <section
-        className="section-light-muted section-flow border-b border-border px-6 py-6 text-center text-sm text-foreground"
+        className="section-light-muted section-flow border-b border-border px-6 py-5 text-center text-sm text-foreground"
         data-section-tone="light"
       >
         <p className="text-readable-muted">

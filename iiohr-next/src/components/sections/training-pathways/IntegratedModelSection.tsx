@@ -36,7 +36,7 @@ export function IntegratedModelSection() {
       <SectionHeading
         eyebrow="What Progression Is Built Around"
         title="What progression is built around"
-        description="The integrated model connects science, supervised practice, standards, and accountable review so progression remains credible and role-appropriate."
+        description="The integrated model connects science, supervised practice, standards, and accountable review so progression remains clinically credible."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {integrationBlocks.map((block) => (

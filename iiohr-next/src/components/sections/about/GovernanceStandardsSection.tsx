@@ -23,7 +23,7 @@ export function GovernanceStandardsSection() {
       <SectionHeading
         eyebrow="Operating Structure"
         title="How credibility is built into the model"
-        description="IIOHR is designed to make development more traceable through standards, progression, review, and accountability."
+        description="IIOHR is designed to make development more traceable through standards, review, and accountability."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-3">
         {items.map((item) => (
