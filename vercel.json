@@ -1,5 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "npm ci --prefix iiohr-next",
-  "buildCommand": "npm run build --prefix iiohr-next"
+  "installCommand": "if [ -f iiohr-next/package-lock.json ]; then npm ci --prefix iiohr-next; else npm ci; fi",
+  "buildCommand": "if [ -f iiohr-next/package.json ]; then npm run build --prefix iiohr-next; else npm run build; fi"
 }
