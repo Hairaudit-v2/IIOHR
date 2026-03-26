@@ -123,6 +123,7 @@ export default function AdmissionsPage() {
         primaryCta={{ href: "/apply", label: "Apply to IIOHR" }}
         secondaryCta={{ href: "/login?redirectTo=%2Fapply", label: "Sign In / Access Account" }}
         tertiaryCta={{ href: "/training-pathways", label: "View Training Pathways" }}
+        analyticsPage="/admissions"
       />
 
       <SectionShell muted joinPrevious>
@@ -204,6 +205,8 @@ export default function AdmissionsPage() {
             { href: "/for-clinics", label: "Explore For Clinics" },
           ]}
           tertiary={[{ href: "/login?redirectTo=%2Fapply", label: "Sign In / Access Account" }]}
+          analyticsPage="/admissions"
+          analyticsSection="next_step"
           className="mt-16"
         />
         <div className="mt-16 grid gap-6 md:grid-cols-3">
@@ -213,7 +216,15 @@ export default function AdmissionsPage() {
               Start here if you want to understand likely fit and how pathway matching works before going deeper.
             </p>
             <p className="mt-5 text-sm">
-              <Link href="/apply" className="link-premium font-medium">
+              <Link
+                href="/apply"
+                className="link-premium font-medium"
+                data-analytics-event="funnel_cta_clicked"
+                data-analytics-page="/admissions"
+                data-analytics-cta="Apply to IIOHR"
+                data-analytics-section="next_step_cards"
+                data-analytics-destination="/apply"
+              >
                 Apply to IIOHR
               </Link>
             </p>
@@ -224,7 +235,15 @@ export default function AdmissionsPage() {
                 Review the public doctor, consultant / nurse, and clinic pages if you need more role-specific context before applying.
             </p>
             <p className="mt-5 text-sm">
-              <Link href="/doctors" className="link-premium font-medium">
+              <Link
+                href="/doctors"
+                className="link-premium font-medium"
+                data-analytics-event="funnel_cta_clicked"
+                data-analytics-page="/admissions"
+                data-analytics-cta="Review pathway pages"
+                data-analytics-section="next_step_cards"
+                data-analytics-destination="/doctors"
+              >
                 Review pathway pages
               </Link>
             </p>
@@ -235,7 +254,15 @@ export default function AdmissionsPage() {
               Protected academy detail opens through sign-in and approved access rather than from the public admissions layer.
             </p>
             <p className="mt-5 text-sm">
-              <Link href="/login?redirectTo=%2Fapply" className="link-premium font-medium">
+              <Link
+                href="/login?redirectTo=%2Fapply"
+                className="link-premium font-medium"
+                data-analytics-event="funnel_cta_clicked"
+                data-analytics-page="/admissions"
+                data-analytics-cta="Sign in / access account"
+                data-analytics-section="next_step_cards"
+                data-analytics-destination="/login?redirectTo=%2Fapply"
+              >
                 Sign in / access account
               </Link>
             </p>

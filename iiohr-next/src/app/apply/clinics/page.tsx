@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ContinuationAnalyticsBeacon } from "@/components/analytics/ContinuationAnalyticsBeacon";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { siteConfig } from "@/lib/site";
 
@@ -26,6 +27,7 @@ export default async function ApplyClinicsPage() {
       data-section-tone="light"
     >
       <div className="mx-auto max-w-2xl px-6 py-12">
+        <ContinuationAnalyticsBeacon role="clinic_group" route="/apply/clinics" signedIn={Boolean(user)} />
         <p className="text-readable-muted">
           <Link href="/apply" className="link-premium font-medium">
             Apply
@@ -47,6 +49,12 @@ export default async function ApplyClinicsPage() {
             <Link
               href={`/login?redirectTo=${encodeURIComponent("/apply/clinics")}`}
               className="link-premium font-medium"
+              data-analytics-event="funnel_cta_clicked"
+              data-analytics-page="/apply/clinics"
+              data-analytics-cta="Sign in"
+              data-analytics-section="continuation_gate"
+              data-analytics-role="clinic_group"
+              data-analytics-destination="/login?redirectTo=%2Fapply%2Fclinics"
             >
               Sign in
             </Link>

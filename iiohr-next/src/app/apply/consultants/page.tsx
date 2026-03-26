@@ -5,6 +5,7 @@ import {
   applicantFormApplicationId,
   shouldShowApplyForm,
 } from "@/components/academy/admissions/ApplicantApplicationStatusPanel";
+import { ContinuationAnalyticsBeacon } from "@/components/analytics/ContinuationAnalyticsBeacon";
 import { StreamApplyFormFields } from "@/components/academy/admissions/StreamApplyFormFields";
 import {
   getLatestApplicationForUserStream,
@@ -71,6 +72,7 @@ export default async function ApplyConsultantsPage({
       data-section-tone="light"
     >
       <div className="mx-auto max-w-2xl px-6 py-12">
+        <ContinuationAnalyticsBeacon role="consultant_nurse" route="/apply/consultants" signedIn={Boolean(user)} />
         <p className="text-readable-muted">
           <Link href="/apply" className="link-premium font-medium">
             Apply
@@ -102,6 +104,12 @@ export default async function ApplyConsultantsPage({
             <Link
               href={`/login?redirectTo=${encodeURIComponent("/apply/consultants")}`}
               className="link-premium font-medium"
+              data-analytics-event="funnel_cta_clicked"
+              data-analytics-page="/apply/consultants"
+              data-analytics-cta="Sign in"
+              data-analytics-section="continuation_gate"
+              data-analytics-role="consultant_nurse"
+              data-analytics-destination="/login?redirectTo=%2Fapply%2Fconsultants"
             >
               Sign in
             </Link>

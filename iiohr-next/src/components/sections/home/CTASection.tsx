@@ -36,6 +36,8 @@ export function CTASection() {
           { href: "/training-pathways", label: "View Training Pathways" },
           { href: "/for-clinics", label: "Explore Clinic Pathways" },
         ]}
+        analyticsPage="/"
+        analyticsSection="next_step"
         className="mt-16"
       />
       <div className="mt-16 pt-12">
@@ -52,6 +54,11 @@ export function CTASection() {
               <Link
                 href={item.href}
                 className="group block min-h-[44px] rounded-xl border border-border/75 bg-surface/72 px-4 py-3.5 text-sm text-foreground transition-all duration-200 hover:border-foreground/30 hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:min-h-0"
+                data-analytics-event="funnel_cta_clicked"
+                data-analytics-page="/"
+                data-analytics-cta={item.label}
+                data-analytics-section="guided_routes"
+                data-analytics-destination={item.href}
               >
                 <span className="font-medium">{item.label}</span>
                 <span className="mt-1 block text-xs text-muted-foreground">{item.description}</span>

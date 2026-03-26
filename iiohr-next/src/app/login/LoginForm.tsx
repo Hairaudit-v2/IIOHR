@@ -2,16 +2,24 @@
 
 import { useState } from "react";
 import { requestMagicLinkAction } from "./actions";
+import { trackAnalyticsEvent } from "@/lib/analytics/events";
 
 export function LoginForm({ defaultRedirect }: { defaultRedirect: string }) {
   const [pending, setPending] = useState(false);
   const [notice, setNotice] = useState<{ ok: boolean; text: string } | null>(null);
 
   async function submit(formData: FormData) {
+    trackAnalyticsEvent("auth_magic_link_requested", {
+      redirect_to: defaultRedirect || "/",
+    });
     setPending(true);
     try {
       const r = await requestMagicLinkAction(formData);
       setNotice({ ok: r.ok, text: r.message });
+      trackAnalyticsEvent("auth_magic_link_result", {
+        ok: r.ok,
+        redirect_to: defaultRedirect || "/",
+      });
     } finally {
       setPending(false);
     }

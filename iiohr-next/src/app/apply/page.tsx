@@ -26,19 +26,54 @@ export default function ApplyPage() {
       >
         <p className="text-readable-muted">
           Already have an account? Continue your pathway route here:{" "}
-          <Link href="/apply/doctors" className="link-premium font-medium">
+          <Link
+            href="/apply/doctors"
+            className="link-premium font-medium"
+            data-analytics-event="funnel_cta_clicked"
+            data-analytics-page="/apply"
+            data-analytics-cta="Doctors continuation"
+            data-analytics-section="continuation_links"
+            data-analytics-role="doctor"
+            data-analytics-destination="/apply/doctors"
+          >
             Doctors
           </Link>
           {" · "}
-          <Link href="/apply/consultants" className="link-premium font-medium">
+          <Link
+            href="/apply/consultants"
+            className="link-premium font-medium"
+            data-analytics-event="funnel_cta_clicked"
+            data-analytics-page="/apply"
+            data-analytics-cta="Consultants / nurses continuation"
+            data-analytics-section="continuation_links"
+            data-analytics-role="consultant_nurse"
+            data-analytics-destination="/apply/consultants"
+          >
             Consultants / nurses
           </Link>
           {" · "}
-          <Link href="/apply/clinics" className="link-premium font-medium">
+          <Link
+            href="/apply/clinics"
+            className="link-premium font-medium"
+            data-analytics-event="funnel_cta_clicked"
+            data-analytics-page="/apply"
+            data-analytics-cta="Clinics / groups continuation"
+            data-analytics-section="continuation_links"
+            data-analytics-role="clinic_group"
+            data-analytics-destination="/apply/clinics"
+          >
             Clinics / groups
           </Link>
           {" · "}
-          <Link href="/login?redirectTo=%2Fapply" className="link-premium font-medium">
+          <Link
+            href="/login?redirectTo=%2Fapply"
+            className="link-premium font-medium"
+            data-analytics-event="funnel_cta_clicked"
+            data-analytics-page="/apply"
+            data-analytics-cta="Sign In / Access Account"
+            data-analytics-section="continuation_links"
+            data-analytics-destination="/login?redirectTo=%2Fapply"
+          >
             Sign In / Access Account
           </Link>
         </p>

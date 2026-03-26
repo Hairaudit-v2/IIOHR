@@ -11,6 +11,8 @@ export function ForClinicsHero() {
       secondaryCta={{ href: "/apply", label: "Apply to IIOHR" }}
       tertiaryCta={{ href: "#clinic-development-need", label: "View clinic model" }}
       image={getHeroImage("forClinics")}
+      analyticsPage="/for-clinics"
+      analyticsRole="clinic_group"
     />
   );
 }

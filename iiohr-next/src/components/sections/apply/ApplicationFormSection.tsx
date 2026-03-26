@@ -6,6 +6,7 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { siteConfig } from "@/lib/site";
+import { trackAnalyticsEvent } from "@/lib/analytics/events";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -13,6 +14,13 @@ export function ApplicationFormSection() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [enquiryType, setEnquiryType] = useState<"doctor" | "consultant" | "clinic">("doctor");
+  const [formStarted, setFormStarted] = useState(false);
+
+  const roleForEnquiryType = enquiryType === "doctor"
+    ? "doctor"
+    : enquiryType === "consultant"
+      ? "consultant_nurse"
+      : "clinic_group";
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -36,6 +44,11 @@ export function ApplicationFormSection() {
 
     setStatus("submitting");
     setErrorMessage("");
+    trackAnalyticsEvent("funnel_form_submit_attempted", {
+      form_id: "apply_public",
+      enquiry_type: String(payload.enquiryType ?? enquiryType),
+      role: roleForEnquiryType,
+    });
 
     try {
       const res = await fetch("/api/application", {
@@ -48,14 +61,31 @@ export function ApplicationFormSection() {
       if (!res.ok) {
         setStatus("error");
         setErrorMessage(json.error ?? "Something went wrong. Please try again or email us directly.");
+        trackAnalyticsEvent("funnel_form_submit_failed", {
+          form_id: "apply_public",
+          enquiry_type: String(payload.enquiryType ?? enquiryType),
+          role: roleForEnquiryType,
+          reason: "server",
+        });
         return;
       }
       setStatus("success");
+      trackAnalyticsEvent("funnel_form_submit_succeeded", {
+        form_id: "apply_public",
+        enquiry_type: String(payload.enquiryType ?? enquiryType),
+        role: roleForEnquiryType,
+      });
       setEnquiryType("doctor");
       form.reset();
     } catch {
       setStatus("error");
       setErrorMessage("Network error. Please try again or email " + siteConfig.applicationEmail + " directly.");
+      trackAnalyticsEvent("funnel_form_submit_failed", {
+        form_id: "apply_public",
+        enquiry_type: String(payload.enquiryType ?? enquiryType),
+        role: roleForEnquiryType,
+        reason: "network",
+      });
     }
   }
 
@@ -135,7 +165,21 @@ export function ApplicationFormSection() {
           )}
 
           {status !== "success" && (
-            <form onSubmit={handleSubmit} className="mt-8 space-y-9" noValidate>
+            <form
+              onSubmit={handleSubmit}
+              className="mt-8 space-y-9"
+              noValidate
+              data-analytics-form="apply_public"
+              onFocusCapture={() => {
+                if (formStarted) return;
+                setFormStarted(true);
+                trackAnalyticsEvent("funnel_form_started", {
+                  form_id: "apply_public",
+                  enquiry_type: enquiryType,
+                  role: roleForEnquiryType,
+                });
+              }}
+            >
               {/* Honeypot – leave empty; bots often fill it */}
               <div className="absolute -left-[9999px] top-0" aria-hidden="true">
                 <label htmlFor="website">Website</label>
@@ -151,7 +195,14 @@ export function ApplicationFormSection() {
                       name="enquiryType"
                       value="doctor"
                       defaultChecked
-                      onChange={() => setEnquiryType("doctor")}
+                      onChange={() => {
+                        setEnquiryType("doctor");
+                        trackAnalyticsEvent("funnel_enquiry_type_selected", {
+                          form_id: "apply_public",
+                          enquiry_type: "doctor",
+                          role: "doctor",
+                        });
+                      }}
                       className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
                     />
                     <span className="leading-snug">Doctor application</span>
@@ -161,7 +212,14 @@ export function ApplicationFormSection() {
                       type="radio"
                       name="enquiryType"
                       value="consultant"
-                      onChange={() => setEnquiryType("consultant")}
+                      onChange={() => {
+                        setEnquiryType("consultant");
+                        trackAnalyticsEvent("funnel_enquiry_type_selected", {
+                          form_id: "apply_public",
+                          enquiry_type: "consultant",
+                          role: "consultant_nurse",
+                        });
+                      }}
                       className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
                     />
                     <span className="leading-snug">Consultant / nurse application</span>
@@ -171,7 +229,14 @@ export function ApplicationFormSection() {
                       type="radio"
                       name="enquiryType"
                       value="clinic"
-                      onChange={() => setEnquiryType("clinic")}
+                      onChange={() => {
+                        setEnquiryType("clinic");
+                        trackAnalyticsEvent("funnel_enquiry_type_selected", {
+                          form_id: "apply_public",
+                          enquiry_type: "clinic",
+                          role: "clinic_group",
+                        });
+                      }}
                       className="mt-0.5 h-4 w-4 shrink-0 border-border text-primary"
                     />
                     <span className="leading-snug">Clinic / group enquiry</span>
@@ -422,6 +487,12 @@ export function ApplicationFormSection() {
                   <a
                     href={`mailto:${siteConfig.applicationEmail}`}
                     className="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-foreground/16 bg-surface px-6 py-3 text-sm font-semibold tracking-[0.02em] text-foreground transition-colors hover:border-accent/40 hover:bg-surface-elevated"
+                    data-analytics-event="funnel_cta_clicked"
+                    data-analytics-page="/apply"
+                    data-analytics-cta="Prefer email enquiry"
+                    data-analytics-section="form_actions"
+                    data-analytics-role={roleForEnquiryType}
+                    data-analytics-destination={`mailto:${siteConfig.applicationEmail}`}
                   >
                     Prefer email enquiry
                   </a>

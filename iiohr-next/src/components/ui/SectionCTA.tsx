@@ -18,6 +18,12 @@ interface SectionCTAProps {
   tertiary?: CTAItem[];
   /** Extra class on the wrapper */
   className?: string;
+  /** Optional analytics page key for CTA tracking. */
+  analyticsPage?: string;
+  /** Optional analytics role key for CTA tracking. */
+  analyticsRole?: "doctor" | "consultant_nurse" | "clinic_group" | "unknown";
+  /** Optional analytics section key for CTA tracking. */
+  analyticsSection?: string;
 }
 
 const buttonGap = "gap-x-4 gap-y-3 md:gap-x-5";
@@ -30,6 +36,9 @@ export function SectionCTA({
   secondary = [],
   tertiary = [],
   className = "",
+  analyticsPage,
+  analyticsRole = "unknown",
+  analyticsSection = "section_cta",
 }: SectionCTAProps) {
   const isDark = variant === "dark";
   const primaryV = isDark ? "dark" : "primary";
@@ -45,12 +54,29 @@ export function SectionCTA({
       {hasButtons && (
         <div className={`flex flex-wrap items-center ${buttonGap}`}>
           {primary && (
-            <Button href={primary.href} variant={primaryV}>
+            <Button
+              href={primary.href}
+              variant={primaryV}
+              analyticsEvent="funnel_cta_clicked"
+              analyticsPage={analyticsPage}
+              analyticsCta={primary.label}
+              analyticsSection={analyticsSection}
+              analyticsRole={analyticsRole}
+            >
               {primary.label}
             </Button>
           )}
           {secondary.map((item) => (
-            <Button key={item.href + item.label} href={item.href} variant={secondaryV}>
+            <Button
+              key={item.href + item.label}
+              href={item.href}
+              variant={secondaryV}
+              analyticsEvent="funnel_cta_clicked"
+              analyticsPage={analyticsPage}
+              analyticsCta={item.label}
+              analyticsSection={analyticsSection}
+              analyticsRole={analyticsRole}
+            >
               {item.label}
             </Button>
           ))}
@@ -60,11 +86,28 @@ export function SectionCTA({
         <div className={`flex flex-wrap ${tertiaryGap}`}>
           {tertiary.map((item) =>
             item.external ? (
-              <LinkArrow key={item.href + item.label} href={item.href} external>
+              <LinkArrow
+                key={item.href + item.label}
+                href={item.href}
+                external
+                analyticsEvent="funnel_cta_clicked"
+                analyticsPage={analyticsPage}
+                analyticsCta={item.label}
+                analyticsSection={analyticsSection}
+                analyticsRole={analyticsRole}
+              >
                 {item.label}
               </LinkArrow>
             ) : (
-              <LinkArrow key={item.href + item.label} href={item.href}>
+              <LinkArrow
+                key={item.href + item.label}
+                href={item.href}
+                analyticsEvent="funnel_cta_clicked"
+                analyticsPage={analyticsPage}
+                analyticsCta={item.label}
+                analyticsSection={analyticsSection}
+                analyticsRole={analyticsRole}
+              >
                 {item.label}
               </LinkArrow>
             )

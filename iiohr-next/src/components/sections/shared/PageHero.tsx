@@ -21,6 +21,10 @@ interface PageHeroProps {
   imagePriority?: boolean;
   /** "dark" = charcoal hero with light text. */
   variant?: "light" | "dark";
+  /** Optional analytics page key for CTA tracking. */
+  analyticsPage?: string;
+  /** Optional role key for CTA tracking. */
+  analyticsRole?: "doctor" | "consultant_nurse" | "clinic_group" | "unknown";
 }
 
 /** Hero — light (ivory) or dark (charcoal) with generous whitespace. */
@@ -34,6 +38,8 @@ export function PageHero({
   image,
   imagePriority = false,
   variant = "dark",
+  analyticsPage,
+  analyticsRole = "unknown",
 }: PageHeroProps) {
   const isDark = variant === "dark";
   const sectionClass = isDark ? "section-dark section-sep-dark" : "section-light section-flow";
@@ -73,7 +79,15 @@ export function PageHero({
               <div className="mt-14 flex flex-col gap-12">
                 <div className="flex flex-wrap items-center gap-4 md:gap-5">
                   {primaryCta ? (
-                    <Button href={primaryCta.href} variant={isDark ? "dark" : "primary"}>
+                    <Button
+                      href={primaryCta.href}
+                      variant={isDark ? "dark" : "primary"}
+                      analyticsEvent="funnel_cta_clicked"
+                      analyticsPage={analyticsPage}
+                      analyticsCta={primaryCta.label}
+                      analyticsSection="hero"
+                      analyticsRole={analyticsRole}
+                    >
                       {primaryCta.label}
                     </Button>
                   ) : null}
@@ -81,6 +95,11 @@ export function PageHero({
                     <Button
                       href={secondaryCta.href}
                       variant={isDark ? "darkSecondary" : "secondary"}
+                      analyticsEvent="funnel_cta_clicked"
+                      analyticsPage={analyticsPage}
+                      analyticsCta={secondaryCta.label}
+                      analyticsSection="hero"
+                      analyticsRole={analyticsRole}
                     >
                       {secondaryCta.label}
                     </Button>
@@ -90,7 +109,15 @@ export function PageHero({
                   <div className="pt-2">
                     <div className="mb-3 h-px max-w-xs bg-border/75" aria-hidden />
                     <p className="text-sm">
-                      <Button href={tertiaryCta.href} variant="tertiary">
+                      <Button
+                        href={tertiaryCta.href}
+                        variant="tertiary"
+                        analyticsEvent="funnel_cta_clicked"
+                        analyticsPage={analyticsPage}
+                        analyticsCta={tertiaryCta.label}
+                        analyticsSection="hero"
+                        analyticsRole={analyticsRole}
+                      >
                         {tertiaryCta.label}
                       </Button>
                     </p>

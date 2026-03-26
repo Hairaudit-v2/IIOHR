@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { JsonLdScript } from "@/components/seo/JsonLdScript";
+import { AnalyticsListener } from "@/components/analytics/AnalyticsListener";
 import { getOrganizationJsonLd, getWebSiteJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -79,6 +80,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AnalyticsListener />
         <JsonLdScript data={[organizationJsonLd, webSiteJsonLd]} />
         <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
           <a

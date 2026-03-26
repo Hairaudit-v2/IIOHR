@@ -163,6 +163,8 @@ export default function ConsultantsPage() {
         tertiaryCta={{ href: "/login?redirectTo=%2Fconsultants%2Fdashboard", label: "Sign In / Access Account" }}
         image={heroEducationImage}
         variant="dark"
+        analyticsPage="/consultants"
+        analyticsRole="consultant_nurse"
       />
 
       <SectionShell continuous aria-label="Who the pathway is for">
@@ -242,6 +244,9 @@ export default function ConsultantsPage() {
             { href: "/apply/consultants", label: "Apply as Consultant / Nurse" },
             { href: "/login?redirectTo=%2Fconsultants%2Fdashboard", label: "Sign In / Access Account" },
           ]}
+          analyticsPage="/consultants"
+          analyticsRole="consultant_nurse"
+          analyticsSection="next_step"
           className="mt-16"
         />
         <div className="mt-16 grid gap-6 md:grid-cols-3">
@@ -250,7 +255,16 @@ export default function ConsultantsPage() {
               <h3 className="text-lg font-semibold tracking-tight text-foreground">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-readable-muted">{item.body}</p>
               <p className="mt-5 text-sm">
-                <Link href={item.href} className="link-premium font-medium">
+                <Link
+                  href={item.href}
+                  className="link-premium font-medium"
+                  data-analytics-event="funnel_cta_clicked"
+                  data-analytics-page="/consultants"
+                  data-analytics-cta={item.label}
+                  data-analytics-section="next_step_cards"
+                  data-analytics-role="consultant_nurse"
+                  data-analytics-destination={item.href}
+                >
                   {item.label}
                 </Link>
               </p>

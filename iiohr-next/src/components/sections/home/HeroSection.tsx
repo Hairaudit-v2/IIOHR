@@ -45,10 +45,25 @@ export function HeroSection() {
               </p>
               <div className="mt-10 flex flex-col gap-10">
                 <div className="flex flex-wrap items-center gap-4 md:gap-5">
-                  <Button href="/admissions" variant="dark">
+                  <Button
+                    href="/admissions"
+                    variant="dark"
+                    analyticsEvent="funnel_cta_clicked"
+                    analyticsPage="/"
+                    analyticsCta="Start Admissions Review"
+                    analyticsSection="hero"
+                  >
                     Start Admissions Review
                   </Button>
-                  <Button href="/training-pathways" variant="darkSecondary" className="opacity-95">
+                  <Button
+                    href="/training-pathways"
+                    variant="darkSecondary"
+                    className="opacity-95"
+                    analyticsEvent="funnel_cta_clicked"
+                    analyticsPage="/"
+                    analyticsCta="View Training Pathways"
+                    analyticsSection="hero"
+                  >
                     View Training Pathways
                   </Button>
                 </div>
@@ -58,7 +73,14 @@ export function HeroSection() {
                 <div className="pt-2">
                   <div className="mb-2 h-px max-w-xs bg-section-charcoal-border/65" aria-hidden />
                   <p className="text-sm">
-                    <Button href="/about" variant="tertiary">
+                    <Button
+                      href="/about"
+                      variant="tertiary"
+                      analyticsEvent="funnel_cta_clicked"
+                      analyticsPage="/"
+                      analyticsCta="About IIOHR"
+                      analyticsSection="hero"
+                    >
                       About IIOHR
                     </Button>
                   </p>

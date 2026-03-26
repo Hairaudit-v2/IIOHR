@@ -8,6 +8,12 @@ interface ButtonProps {
   children: ReactNode;
   variant?: ButtonVariant;
   className?: string;
+  analyticsEvent?: string;
+  analyticsPage?: string;
+  analyticsCta?: string;
+  analyticsSection?: string;
+  analyticsRole?: string;
+  analyticsJourney?: string;
 }
 
 /** Shared CTA sizing and focus for consistency across sections */
@@ -34,9 +40,30 @@ const variantStyles: Record<ButtonVariant, string> = {
     "btn-dark-secondary border border-[rgba(255,255,255,0.14)] bg-[var(--bg-dark-elevated)] text-[#f8fafc] hover:bg-[var(--bg-dark-panel)] hover:border-[rgba(255,255,255,0.14)] focus-visible:ring-offset-section-charcoal",
 };
 
-export function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {
+export function Button({
+  href,
+  children,
+  variant = "primary",
+  className = "",
+  analyticsEvent,
+  analyticsPage,
+  analyticsCta,
+  analyticsSection,
+  analyticsRole,
+  analyticsJourney,
+}: ButtonProps) {
   return (
-    <Link href={href} className={`${ctaBase} ${variantStyles[variant]} ${className}`}>
+    <Link
+      href={href}
+      className={`${ctaBase} ${variantStyles[variant]} ${className}`}
+      data-analytics-event={analyticsEvent}
+      data-analytics-page={analyticsPage}
+      data-analytics-cta={analyticsCta}
+      data-analytics-section={analyticsSection}
+      data-analytics-role={analyticsRole}
+      data-analytics-journey={analyticsJourney}
+      data-analytics-destination={href}
+    >
       {children}
     </Link>
   );
