@@ -78,7 +78,7 @@ export default function CertificationFrameworkPage() {
         <SectionHeading
           eyebrow="Why a framework is necessary"
           title="Capability cannot be reduced to attendance or isolated exposure"
-          description="In clinical practice, attendance alone does not demonstrate readiness. A framework is needed so progression is staged, reviewed, and anchored to standards over time."
+          description="In clinical practice, attendance alone does not demonstrate readiness. A framework is needed so progression is staged, reviewed, and anchored to standards over time. In practice, this means pathway decisions are based on observed development, not participation alone."
         />
       </SectionShell>
 
@@ -133,7 +133,7 @@ export default function CertificationFrameworkPage() {
         <SectionHeading
           eyebrow="Why this matters"
           title="A framework that supports clinicians, teams, clinics, and public trust"
-          description="For doctors and consultants, it supports role-appropriate progression and accountability. For clinics, it supports standards-led team development. For external stakeholders, it reinforces a serious approach to quality and professional responsibility."
+          description="For doctors and consultants, it supports role-appropriate progression and accountability. For clinics, it supports standards-led team development. For external stakeholders, it signals a serious approach to quality and professional responsibility."
         />
       </SectionShell>
 
@@ -141,7 +141,7 @@ export default function CertificationFrameworkPage() {
         <SectionHeading
           eyebrow="Long-term quality"
           title="Certification supports sustained development, not a finish line"
-          description="Within the IIOHR model, certification is part of an ongoing cycle of progression, reflection, supervision, and standards review."
+          description="Within the IIOHR model, certification is part of an ongoing cycle of progression, reflection, supervision, and standards review. In practice, this supports clearer next-step decisions as responsibilities evolve."
         />
       </SectionShell>
 
@@ -158,7 +158,6 @@ export default function CertificationFrameworkPage() {
           primary={{ href: "/admissions", label: "Start Admissions Review" }}
           secondary={[
             { href: "/apply", label: "Apply to IIOHR" },
-            { href: "/training-pathways", label: "Explore Training Pathways" },
             { href: "/doctors", label: "Explore Doctors" },
           ]}
           tertiary={[

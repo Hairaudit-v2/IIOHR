@@ -58,7 +58,7 @@ export function ApplicationFormSection() {
   }
 
   const inputClass =
-    "w-full rounded-md border-2 border-foreground/16 bg-background px-3 py-2.5 text-sm text-foreground shadow-sm outline-none transition-[border-color,box-shadow] focus:border-accent/45 focus:ring-2 focus:ring-accent/15 disabled:opacity-70";
+    "w-full rounded-md border-2 border-foreground/16 bg-surface px-3 py-2.5 text-sm text-foreground placeholder:text-readable-subtle shadow-sm outline-none transition-[border-color,box-shadow] focus:border-accent/45 focus:ring-2 focus:ring-accent/15 disabled:border-border disabled:bg-surface-soft disabled:text-readable-muted disabled:opacity-70 [&:-webkit-autofill]:[-webkit-text-fill-color:var(--text-primary)] [&:-webkit-autofill]:shadow-[inset_0_0_0px_1000px_var(--surface)] [&:-webkit-autofill:focus]:shadow-[inset_0_0_0px_1000px_var(--surface)]";
   const labelClass = "text-sm font-medium text-foreground";
 
   return (
@@ -126,7 +126,7 @@ export function ApplicationFormSection() {
               <fieldset className="rounded-xl border-2 border-foreground/16 bg-surface px-5 py-6">
                 <legend className="px-1 text-sm font-semibold text-foreground">Enquiry Type</legend>
                 <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                  <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-background px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
+                  <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-surface px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
                     <input
                       type="radio"
                       name="enquiryType"
@@ -136,7 +136,7 @@ export function ApplicationFormSection() {
                     />
                     <span className="leading-snug">Individual doctor enquiry</span>
                   </label>
-                  <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-background px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
+                  <label className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border/80 bg-surface px-4 py-3.5 text-sm text-foreground has-[:checked]:border-accent/45 has-[:checked]:bg-surface-soft/60">
                     <input
                       type="radio"
                       name="enquiryType"
