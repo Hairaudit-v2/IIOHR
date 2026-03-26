@@ -4,10 +4,21 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 const segmentLinks = [
-  { href: "/apply", label: "New to hair restoration", description: "Apply for training" },
-  { href: "/apply", label: "Already practising", description: "Refine your practice" },
-  { href: "/for-clinics", label: "Clinic or group", description: "Partnership enquiry" },
-  { href: "/apply", label: "International applicant", description: "Apply from overseas" },
+  {
+    href: "/doctors",
+    label: "Doctors",
+    description: "Programmes, academy routes, and entry points.",
+  },
+  {
+    href: "/consultants",
+    label: "Consultants / nurses",
+    description: "Consultant academy route and competencies.",
+  },
+  {
+    href: "/for-clinics",
+    label: "Clinics",
+    description: "Team development, standards, and implementation.",
+  },
 ];
 
 export function CTASection() {
@@ -15,15 +26,15 @@ export function CTASection() {
     <SectionShell anchor>
       <SectionHeading
         eyebrow="Next step"
-        title="Begin your institute pathway"
-        description="Whether you’re entering the field, refining your practice, or building clinic capability, we’ll match you to the right pathway. Apply now or explore pathways below."
+        title="Choose your route"
+        description="Select the page that matches your role, then move into admissions when ready."
       />
       <SectionCTA
         variant="light"
-        primary={{ href: "/apply", label: "Apply Now" }}
+        primary={{ href: "/apply", label: "Start Admissions Review" }}
         secondary={[
-          { href: "/training-pathways", label: "Explore Pathways" },
-          { href: "/for-clinics", label: "Enquire About Training" },
+          { href: "/training-pathways", label: "View Training Pathways" },
+          { href: "/for-clinics", label: "Explore Clinic Pathways" },
         ]}
         className="mt-16"
       />
@@ -33,9 +44,9 @@ export function CTASection() {
           aria-hidden
         />
         <p className="text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
-          I am…
+          Guided routes
         </p>
-        <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-5 grid gap-4 md:grid-cols-3">
           {segmentLinks.map((item) => (
             <li key={item.label}>
               <Link

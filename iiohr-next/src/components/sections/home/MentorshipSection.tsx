@@ -32,8 +32,8 @@ export function MentorshipSection() {
         <div>
           <SectionHeading
             eyebrow="Mentorship"
-            title="Practical mentorship across the pathway"
-            description="Experienced surgeons mentor, review cases, and sharpen judgment in real clinical context."
+            title="Mentorship built into the model"
+            description="Experienced surgeons review cases, correct technique, and support decision-making as responsibility increases."
           />
           <div className="list-rail mt-10 md:mt-12">
             {mentorshipItems.map((item) => (
@@ -46,8 +46,8 @@ export function MentorshipSection() {
           <div className="mt-12 pt-2 md:mt-14">
             <SectionCTA
               variant="light"
-              primary={{ href: "/apply", label: "Apply Now" }}
-              secondary={[{ href: "/training-pathways", label: "Explore Pathways" }]}
+              primary={{ href: "/faculty-and-mentorship", label: "See Faculty and Mentorship" }}
+              secondary={[{ href: "/apply", label: "Start Admissions Review" }]}
             />
           </div>
         </div>

@@ -5,12 +5,10 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { HOME_IMAGES, hairProgressionImage } from "@/lib/homeImages";
 
 const impactItems = [
-  "Repetition through supervised practical exposure",
-  "Feedback loops from structured auditing",
-  "Benchmarking that clarifies improvement priorities",
-  "Case-based reflection tied to outcomes",
-  "Mentorship continuity beyond initial training",
-  "Science-led decision support in daily practice",
+  "More deliberate repetition in clinical settings",
+  "Clearer feedback from audit and benchmarking",
+  "Outcome review tied to improvement",
+  "Support that continues beyond initial training",
 ];
 
 export function HumanImpactSection() {
@@ -28,8 +26,8 @@ export function HumanImpactSection() {
         <div>
           <SectionHeading
             eyebrow="Outcomes"
-            title="Why this model produces better surgeons"
-            description="Practice, review, and support over time—instead of a course, then silence."
+            title="Why the model improves practice"
+            description="Capability grows when exposure, feedback, and support continue beyond the first training block."
           />
           <div className="list-rail mt-10 md:mt-12">
             {impactItems.map((item) => (
@@ -41,8 +39,8 @@ export function HumanImpactSection() {
           <div className="mt-12 pt-2 md:mt-14">
             <SectionCTA
               variant="light"
-              primary={{ href: "/apply", label: "Apply Now" }}
-              secondary={[{ href: "/training-pathways", label: "Explore Pathways" }]}
+              primary={{ href: "/training-pathways", label: "View Staged Progression" }}
+              secondary={[{ href: "/apply", label: "Start Admissions Review" }]}
             />
           </div>
         </div>

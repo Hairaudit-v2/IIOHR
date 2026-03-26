@@ -30,18 +30,18 @@ export default function HomePage() {
       <PathwayAndStandardsSection />
       <HumanImpactSection />
       <MentorshipSection />
+      <TrustSignalsSection />
       <SectionSpacer airy minimal />
       {/* Single ecosystem centerpiece (platform grid lives here) */}
       <GlobalHairIntelligenceSection
         variant="iiohr"
         id="ecosystem-platforms"
-        heading="The Engine Behind the Ecosystem"
-        description="One intelligence layer across education, audit, and treatment pathways—shared standards, measurable feedback, global alignment."
+        heading="A connected system behind the training"
+        description="The academy sits within a wider system for audit and clinical intelligence, extending standards and feedback beyond training."
         size="hero"
         sectionTone="dark"
         labImage={{ src: HOME_IMAGES.ecosystem.dnaLab, alt: ecosystemLabImage.alt }}
       />
-      <TrustSignalsSection />
       <CTASection />
     </>
   );

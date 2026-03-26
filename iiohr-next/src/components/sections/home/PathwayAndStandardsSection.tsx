@@ -3,27 +3,27 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 
 const steps = [
-  { label: "Learn", description: "Theory and clinical foundations." },
-  { label: "Observe", description: "Supervised observation in practice." },
-  { label: "Perform", description: "Hands-on under direct supervision." },
-  { label: "Audit", description: "Outcome review and benchmarking." },
-  { label: "Improve", description: "Refinement and planning." },
-  { label: "Advance", description: "Next stage when ready." },
+  { label: "Learn", description: "Science, assessment, and surgical foundations." },
+  { label: "Observe", description: "Live cases and decision-making under faculty guidance." },
+  { label: "Assist", description: "Defined roles in supervised clinical settings." },
+  { label: "Perform", description: "Hands-on steps under direct supervision." },
+  { label: "Audit", description: "Case review against standards." },
+  { label: "Advance", description: "Progression when the next scope is earned." },
 ] as const;
 
 /** Supporting strip: interprets the steps without restating progression/audit jargon. */
 const inPractice = [
   {
-    title: "Named readiness",
-    body: "You know what “ready for the next stage” means at each step.",
+    title: "Defined responsibilities",
+    body: "Each stage has a named scope, rather than leaving readiness open to interpretation.",
   },
   {
-    title: "Supervision that eases",
-    body: "Hands-on responsibility grows as consistency shows in the data.",
+    title: "Supervision before autonomy",
+    body: "Clinical exposure expands with oversight, correction, and responsibility matched to performance.",
   },
   {
-    title: "Evidence in the room",
-    body: "Mentors and surgeons cite standards and audit—not opinion alone.",
+    title: "Review before advancement",
+    body: "Case review and standards shape when the next step is appropriate.",
   },
 ] as const;
 
@@ -32,8 +32,8 @@ export function PathwayAndStandardsSection() {
     <SectionShell continuous muted joinPrevious>
       <SectionHeading
         eyebrow="Pathway"
-        title="Six stages. One thread."
-        description="From foundations through supervised practice, review, and advancement—so capability accumulates instead of resetting after a course."
+        title="A staged route into clinical responsibility"
+        description="The route is clear: learn the science, observe live cases, take defined responsibilities, review performance, and advance when ready."
       />
       <ol className="mt-10 grid list-none gap-3 sm:grid-cols-2 md:mt-12 lg:grid-cols-3 xl:grid-cols-6">
         {steps.map((step, index) => (
@@ -46,7 +46,7 @@ export function PathwayAndStandardsSection() {
         ))}
       </ol>
       <div className="mt-10 border-t border-border/20 pt-8 md:mt-12 md:pt-10">
-        <p className="text-sm text-muted-foreground">How that shows up in the programme</p>
+        <p className="text-sm text-muted-foreground">In practice</p>
         <div className="list-rail mt-5">
           {inPractice.map((row) => (
             <div key={row.title} className="list-rail-item">

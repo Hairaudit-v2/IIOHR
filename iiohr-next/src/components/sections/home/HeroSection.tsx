@@ -38,25 +38,28 @@ export function HeroSection() {
               <Eyebrow variant="dark">International Institute of Hair Restoration</Eyebrow>
               <div className="section-kicker-rule mt-4" aria-hidden />
               <h1 className="mt-9 max-w-4xl text-[3.35rem] font-semibold leading-[0.98] tracking-[-0.038em] text-section-charcoal-foreground md:text-[4.3rem] lg:text-[4.95rem] [text-wrap:balance]">
-                Beyond the short course. From technician to surgeon.
+                Hair restoration training for doctors, consultants, and clinics.
               </h1>
               <p className="mt-10 max-w-2xl text-[1.05rem] leading-relaxed text-section-charcoal-muted md:text-[1.14rem] [line-height:1.82]">
-                A global education and mentorship platform for hair restoration: clinically grounded training, practical surgical exposure, and standards-based progression for doctors and clinics.
+                Science-first teaching, supervised clinical exposure, and defined progression for practitioners and teams building capability through an institute model.
               </p>
               <div className="mt-10 flex flex-col gap-10">
                 <div className="flex flex-wrap items-center gap-4 md:gap-5">
                   <Button href="/apply" variant="dark">
-                    Apply Now
+                    Start Admissions Review
                   </Button>
                   <Button href="/training-pathways" variant="darkSecondary" className="opacity-95">
-                    Explore Pathways
+                    View Training Pathways
                   </Button>
                 </div>
+                <p className="max-w-xl text-sm leading-relaxed text-section-charcoal-muted/90">
+                  Doctors and consultants can begin admissions review. Clinics can explore team development.
+                </p>
                 <div className="pt-2">
                   <div className="mb-2 h-px max-w-xs bg-section-charcoal-border/65" aria-hidden />
                   <p className="text-sm">
                     <Button href="/about" variant="tertiary">
-                      Learn More
+                      About IIOHR
                     </Button>
                   </p>
                 </div>

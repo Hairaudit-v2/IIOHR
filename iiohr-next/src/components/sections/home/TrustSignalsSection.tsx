@@ -1,38 +1,45 @@
+import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 
 const signals = [
   {
-    title: "Faculty-led",
-    description: "Practising surgeons with real teaching responsibility.",
+    title: "Science-led curriculum",
+    description: "Biology, diagnosis, and planning come before technique.",
   },
   {
-    title: "Measurable improvement",
-    description: "Audit and benchmarks set priorities—not guesswork.",
+    title: "Staged progression",
+    description: "Responsibility increases through defined stages.",
+  },
+  {
+    title: "Supervised exposure",
+    description: "Live-case learning is matched to oversight and readiness.",
+  },
+  {
+    title: "Case review",
+    description: "Cases are reviewed, corrected, and revisited.",
   },
   {
     title: "Explicit standards",
-    description: "Governance and milestones everyone can point to.",
+    description: "Advancement is tied to standards and governance.",
   },
 ] as const;
 
-/** Quiet strip after the ecosystem centerpiece—no second hero moment. */
 export function TrustSignalsSection() {
   return (
     <SectionShell continuous compact>
       <SectionHeading
-        eyebrow="Governance"
-        title="How we uphold quality"
-        description="Credibility, evidence, and standards you can trace."
+        eyebrow="Institute Model"
+        title="How the training is structured"
+        description="A science-led curriculum, supervised exposure, case review, and explicit standards."
       />
-      <ul className="authority-panel mt-8 grid list-none gap-0 overflow-hidden sm:grid-cols-3 md:mt-9">
+      <ul className="mt-8 grid list-none gap-4 md:mt-9 md:grid-cols-2 xl:grid-cols-5">
         {signals.map((item) => (
-          <li
-            key={item.title}
-            className="border-b border-border/35 px-5 py-5 last:border-b-0 sm:border-b-0 sm:px-6 sm:py-6 sm:[&:not(:first-child)]:border-l sm:[&:not(:first-child)]:border-border/35"
-          >
-            <span className="text-sm font-semibold text-foreground">{item.title}</span>
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+          <li key={item.title}>
+            <Card quiet className="h-full">
+              <span className="text-sm font-semibold text-foreground">{item.title}</span>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+            </Card>
           </li>
         ))}
       </ul>

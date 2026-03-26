@@ -5,11 +5,11 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 
 const pillars = [
   "Supervised practical FUE with live-patient progression",
-  "Science and trichology for decisions—not slide decks alone",
-  "Donor stewardship and operative discipline from first principles",
-  "Audit and Follicle Intelligence tied to real outcomes",
-  "Mentorship and case review that continues after initial training",
-  "Staged milestones against explicit clinical standards",
+  "Science and trichology for clinical decisions",
+  "Donor stewardship and operative discipline",
+  "Audit and Follicle Intelligence linked to outcomes",
+  "Mentorship and faculty feedback beyond initial training",
+  "Explicit milestones for clinical progression",
 ] as const;
 
 export function DifferenceAndCurriculumSection() {
@@ -17,8 +17,8 @@ export function DifferenceAndCurriculumSection() {
     <SectionShell continuous muted joinPrevious>
       <SectionHeading
         eyebrow="Model"
-        title="The IIOHR difference"
-        description="Surgery, science, audit, and mentorship in one standards-led pathway—not a short course with theory bolted on."
+        title="An institute model, not a short course"
+        description="Science, surgery, audit, and mentorship sit inside one training model, so development stays structured from first principles to practice."
       />
       <div className="mt-12 grid gap-6 sm:grid-cols-2 md:mt-14 lg:grid-cols-2 lg:gap-7">
         {pillars.map((item, index) => (
@@ -37,9 +37,9 @@ export function DifferenceAndCurriculumSection() {
       <div className="authority-panel mt-14 px-6 py-6 md:mt-16 md:px-7 md:py-7">
         <SectionCTA
           variant="light"
-          primary={{ href: "/training-pathways", label: "Explore Pathways" }}
-          secondary={[{ href: "/practical-fue", label: "View Curriculum" }]}
-          tertiary={[{ href: "/about", label: "Learn More" }]}
+          primary={{ href: "/training-pathways", label: "View Pathway Structure" }}
+          secondary={[{ href: "/practical-fue", label: "View Practical FUE Curriculum" }]}
+          tertiary={[{ href: "/apply", label: "Start Admissions Review" }]}
         />
       </div>
     </SectionShell>
