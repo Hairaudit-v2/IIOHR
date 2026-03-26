@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/Card";
 
 const partnerOverview = [
   {
-    title: "Partner training host",
+    title: "Academy model",
     description:
-      "The first live partner training site is Evolved Hair Restoration / Evolved Training Institute in Gurgaon, India.",
+      "The training offer is presented as the IIOHR India Clinical Training Academy, with Gurgaon serving as the first live partner site.",
   },
   {
     title: "Technique focus",
@@ -19,9 +19,9 @@ const partnerOverview = [
       "Available levels run from Foundation to Advanced Immersion, with optional continued mentorship and surgical audit support.",
   },
   {
-    title: "Training environment",
+    title: "Delivery partnership",
     description:
-      "Delivery takes place inside a state-of-the-art clinic-cum-training academy designed for live clinical exposure.",
+      "Delivery is presented in partnership with Evolved Hair Restoration, Gurgaon, inside a state-of-the-art clinic-cum-training academy designed for live clinical exposure.",
   },
 ];
 
@@ -38,8 +38,8 @@ export function PracticalFueMeaningSection() {
       <div>
         <SectionHeading
           eyebrow="Partner Training Overview"
-          title="Institute-led pathways, delivered through a premium clinical partner site"
-          description="IIOHR Practical FUE now presents partner-hosted training delivery in Gurgaon, India for international doctors seeking advanced technique, expert faculty, and a structured practical framework. The current live host is positioned around best-in-class training, supervised exposure, and disciplined clinical execution."
+          title="An IIOHR-led academy model, delivered through a premium Gurgaon partner site"
+          description="IIOHR Practical FUE now presents the IIOHR India Clinical Training Academy for international doctors seeking advanced technique, expert faculty, and a structured practical framework. Gurgaon is the first live partner site, with delivery credited in partnership with Evolved Hair Restoration."
         />
         <div className="mt-16 grid gap-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(0,0.88fr)] lg:items-start">
           <div className="grid gap-6 md:grid-cols-2">
@@ -57,7 +57,7 @@ export function PracticalFueMeaningSection() {
             <div className="flex items-center justify-between gap-4">
               <div>
                 <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">Proof points</p>
-                <h3 className="mt-3 text-2xl font-semibold tracking-tight">Training academy positioning</h3>
+                <h3 className="mt-3 text-2xl font-semibold tracking-tight">IIOHR India Clinical Training Academy</h3>
               </div>
               <span className="rounded-full border border-foreground/18 bg-surface-elevated px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-foreground uppercase">
                 Gurgaon live site

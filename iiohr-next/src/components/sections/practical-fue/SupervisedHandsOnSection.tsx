@@ -21,7 +21,7 @@ const supervisionBlocks = [
   {
     title: "World-class faculty",
     description:
-      "Faculty-led delivery is central to the Gurgaon partner site, with named clinical and trichology leadership presented throughout the training offer.",
+      "Faculty-led delivery is central to the IIOHR-led Gurgaon academy site, with named clinical and trichology leadership presented throughout the training offer.",
   },
   {
     title: "Superior economics",
@@ -35,8 +35,8 @@ export function SupervisedHandsOnSection() {
     <SectionShell>
       <SectionHeading
         eyebrow="Why India"
-        title="Clinical partner delivery positioned around live exposure and structured supervision"
-        description="For international doctors, the Gurgaon partner site is framed as a doctor-driven environment with supervised hands-on experience, real clinical exposure, world-class faculty, and stronger training economics."
+        title="An IIOHR-led India academy model positioned around live exposure and structured supervision"
+        description="For international doctors, the Gurgaon site is framed as the first live IIOHR India academy location, with supervised hands-on experience, real clinical exposure, world-class faculty, and stronger training economics."
       />
       <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {supervisionBlocks.map((block) => (

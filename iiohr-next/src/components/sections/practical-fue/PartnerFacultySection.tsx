@@ -22,8 +22,8 @@ export function PartnerFacultySection() {
     <SectionShell compact id="partner-faculty">
       <SectionHeading
         eyebrow="Meet the Partner Faculty"
-        title="Named faculty presented for the first live partner training site"
-        description="The Gurgaon delivery model is led by world-class faculty named in the brochure, combining clinical leadership, surgical training oversight, and trichology expertise."
+        title="Named faculty presented for the first live IIOHR India academy site"
+        description="The first live Gurgaon site for the IIOHR India Clinical Training Academy is supported by world-class faculty named in the brochure, combining clinical leadership, surgical training oversight, and trichology expertise."
       />
       <div className="mt-12 grid gap-5 md:grid-cols-3">
         {faculty.map((member, index) => (
