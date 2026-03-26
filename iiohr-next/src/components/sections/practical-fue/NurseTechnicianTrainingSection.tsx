@@ -11,14 +11,14 @@ const trainingAreas = [
 
 export function NurseTechnicianTrainingSection() {
   return (
-    <SectionShell id="nurse-technician-training">
+    <SectionShell compact id="nurse-technician-training">
       <SectionHeading
         eyebrow="Optional Nurse / Technician Training"
         title="A separate support-team training option can run alongside doctor training"
         description="The brochure includes an optional nurse or technician training pathway that can be organised in parallel with doctor training at the Gurgaon site."
       />
-      <div className="mt-16 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card>
+      <div className="mt-12 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <Card quiet className="h-full">
           <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">Training scope</p>
           <div className="mt-5 grid gap-4">
             {trainingAreas.map((area) => (
@@ -28,9 +28,14 @@ export function NurseTechnicianTrainingSection() {
             ))}
           </div>
         </Card>
-        <Card>
-          <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">Course fee</p>
-          <p className="mt-3 text-3xl font-semibold tracking-tight text-foreground">USD 5,000</p>
+        <Card className="h-full">
+          <div className="flex items-center justify-between gap-4">
+            <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">Optional add-on</p>
+            <span className="rounded-full border border-foreground/18 bg-surface-elevated px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-foreground uppercase">
+              Gurgaon
+            </span>
+          </div>
+          <p className="mt-4 text-3xl font-semibold tracking-tight text-foreground">USD 5,000</p>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
             This option is described as subsidised and can be organised hand-in-hand with doctor training at the
             Gurgaon partner site.

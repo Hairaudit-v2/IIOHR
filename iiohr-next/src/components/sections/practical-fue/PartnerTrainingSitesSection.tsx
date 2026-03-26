@@ -28,19 +28,28 @@ export function PartnerTrainingSitesSection() {
         title="The first partner site is live, with Mumbai reserved as the next location"
         description="IIOHR Practical FUE can now present partner-led site information in a controlled public format: Gurgaon is active, and Mumbai is marked as coming soon."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-2">
-        {sites.map((site) => (
-          <Card key={site.city} interactive>
-            <div className="flex items-center justify-between gap-4">
-              <h3 className="text-2xl font-semibold tracking-tight">{site.city}</h3>
-              <span className="rounded-full border border-foreground/18 bg-surface-elevated px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-foreground uppercase">
-                {site.status}
-              </span>
-            </div>
-            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{site.description}</p>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{site.details}</p>
-          </Card>
-        ))}
+      <div className="mt-16 grid gap-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(0,0.88fr)]">
+        <Card interactive className="h-full">
+          <div className="flex items-center justify-between gap-4">
+            <h3 className="text-2xl font-semibold tracking-tight">{sites[0]?.city}</h3>
+            <span className="rounded-full border border-foreground/18 bg-surface-elevated px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-foreground uppercase">
+              {sites[0]?.status}
+            </span>
+          </div>
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{sites[0]?.description}</p>
+          <div className="mt-6 h-px bg-border/70" aria-hidden />
+          <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{sites[0]?.details}</p>
+        </Card>
+        <Card quiet className="h-full opacity-90">
+          <div className="flex items-center justify-between gap-4">
+            <h3 className="text-2xl font-semibold tracking-tight">{sites[1]?.city}</h3>
+            <span className="rounded-full border border-foreground/14 bg-transparent px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase">
+              {sites[1]?.status}
+            </span>
+          </div>
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{sites[1]?.description}</p>
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{sites[1]?.details}</p>
+        </Card>
       </div>
     </SectionShell>
   );

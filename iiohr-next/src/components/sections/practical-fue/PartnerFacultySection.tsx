@@ -19,16 +19,18 @@ const faculty = [
 
 export function PartnerFacultySection() {
   return (
-    <SectionShell id="partner-faculty">
+    <SectionShell compact id="partner-faculty">
       <SectionHeading
         eyebrow="Meet the Partner Faculty"
         title="Named faculty presented for the first live partner training site"
         description="The Gurgaon delivery model is led by world-class faculty named in the brochure, combining clinical leadership, surgical training oversight, and trichology expertise."
       />
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
-        {faculty.map((member) => (
-          <Card key={member.name}>
-            <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">Faculty</p>
+      <div className="mt-12 grid gap-5 md:grid-cols-3">
+        {faculty.map((member, index) => (
+          <Card key={member.name} quiet className="h-full">
+            <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">
+              {`Faculty 0${index + 1}`}
+            </p>
             <h3 className="mt-3 text-xl font-semibold">{member.name}</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{member.role}</p>
           </Card>
