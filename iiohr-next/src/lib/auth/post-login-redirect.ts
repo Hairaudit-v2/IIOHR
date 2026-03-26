@@ -40,5 +40,9 @@ export async function resolvePostLoginRedirect(
     return "/academy/faculty-review";
   }
 
+  if (roleSet.has("clinic_manager")) {
+    return "/apply/clinics";
+  }
+
   return "/apply";
 }

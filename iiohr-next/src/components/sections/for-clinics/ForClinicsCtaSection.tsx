@@ -13,14 +13,17 @@ export function ForClinicsCtaSection() {
       <SectionHeading
         eyebrow="Next Step"
         title="Choose the right next step for your clinic"
-        description="Use admissions to review fit first, apply when ready, or explore the doctor and consultant routes that sit around the wider clinic model."
+        description="Use admissions to review fit first, apply when ready, or explore the doctor and consultant / nurse routes that sit around the wider clinic model."
       />
       <div className="mt-8 flex flex-wrap gap-3">
         <Button href="/admissions" variant="primary">
           Start Admissions Review
         </Button>
-        <Button href="/apply" variant="secondary">
-          Apply to IIOHR
+        <Button href="/apply/clinics" variant="secondary">
+          Continue Clinic Enquiry
+        </Button>
+        <Button href="/apply" variant="ghost">
+          Start New Enquiry
         </Button>
         <a
           href={`mailto:${siteConfig.applicationEmail}?subject=Clinic%20partnership%20enquiry`}
@@ -34,7 +37,7 @@ export function ForClinicsCtaSection() {
           Explore Doctors
         </Button>
         <Button href="/consultants" variant="ghost">
-          Explore Consultants
+          Explore Consultants / nurses
         </Button>
       </div>
       <p className="mt-6 text-sm text-readable-muted">
@@ -42,8 +45,12 @@ export function ForClinicsCtaSection() {
           Understand readiness and entry
         </Link>
         {" · "}
-        <Link href="/apply" className="link-premium">
-          Review application route
+        <Link href="/apply/clinics" className="link-premium">
+          Continue clinic account route
+        </Link>
+        {" · "}
+        <Link href="/login?redirectTo=%2Fapply%2Fclinics" className="link-premium">
+          Sign in for clinic continuation
         </Link>
       </p>
     </SectionShell>

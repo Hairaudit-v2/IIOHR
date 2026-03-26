@@ -64,6 +64,7 @@ export function ApplicationFormSection() {
   const labelClass = "text-sm font-medium text-foreground";
   const isDoctor = enquiryType === "doctor";
   const isConsultant = enquiryType === "consultant";
+  const isClinic = enquiryType === "clinic";
   const clinicalContextLabel = isDoctor
     ? "Current medical background"
     : isConsultant
@@ -91,10 +92,14 @@ export function ApplicationFormSection() {
               aria-live="polite"
               className="mt-8 rounded-xl border border-border bg-surface p-6 text-foreground break-words"
             >
-              <p className="font-semibold text-primary">Thank you for your application.</p>
+              <p className="font-semibold text-primary">
+                {isClinic ? "Thank you for your enquiry." : "Thank you for your application."}
+              </p>
               <p className="mt-2 text-sm leading-relaxed text-readable-muted break-words">
-                We have received your details and will review them in context before guiding the next step. If you have
-                questions, email us at{" "}
+                {isClinic
+                  ? "We have received your clinic details and will review your enquiry in context before recommending a suitable next step."
+                  : "We have received your details and will review them in context before guiding the next step."}{" "}
+                If you have questions, email us at{" "}
                 <a href={`mailto:${siteConfig.applicationEmail}`} className="link-premium">
                   {siteConfig.applicationEmail}
                 </a>
@@ -397,7 +402,7 @@ export function ApplicationFormSection() {
                       Privacy Policy
                     </Link>
                     {" "}and agree to my data being used for pathway review and admissions contact. I consent to
-                    being contacted by IIOHR in relation to my application.
+                    being contacted by IIOHR in relation to my {isClinic ? "enquiry" : "application"}.
                   </span>
                 </label>
               </div>
@@ -412,7 +417,7 @@ export function ApplicationFormSection() {
                     disabled={status === "submitting"}
                     className="inline-flex min-h-11 items-center justify-center rounded-lg border-2 border-accent bg-accent px-6 py-3 text-sm font-semibold tracking-[0.04em] text-primary shadow-[var(--shadow-btn-primary)] hover:bg-accent-muted disabled:opacity-70"
                   >
-                    {status === "submitting" ? "Submitting…" : "Submit application"}
+                    {status === "submitting" ? "Submitting…" : isClinic ? "Submit enquiry" : "Submit application"}
                   </button>
                   <a
                     href={`mailto:${siteConfig.applicationEmail}`}

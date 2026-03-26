@@ -25,7 +25,7 @@ export default function ApplyPage() {
         data-section-tone="light"
       >
         <p className="text-readable-muted">
-          Already have an account? Continue your pathway application route here:{" "}
+          Already have an account? Continue your pathway route here:{" "}
           <Link href="/apply/doctors" className="link-premium font-medium">
             Doctors
           </Link>
@@ -34,7 +34,7 @@ export default function ApplyPage() {
             Consultants / nurses
           </Link>
           {" · "}
-          <Link href="/for-clinics" className="link-premium font-medium">
+          <Link href="/apply/clinics" className="link-premium font-medium">
             Clinics / groups
           </Link>
           {" · "}

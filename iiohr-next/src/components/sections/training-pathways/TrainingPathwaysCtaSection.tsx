@@ -31,7 +31,7 @@ export function TrainingPathwaysCtaSection() {
           Explore Doctors
         </Button>
         <Button href="/consultants" variant="ghost">
-          Explore Consultants
+          Explore Consultants / nurses
         </Button>
         <Button href="/for-clinics" variant="ghost">
           Explore For Clinics

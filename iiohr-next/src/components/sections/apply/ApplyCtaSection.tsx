@@ -30,7 +30,7 @@ export function ApplyCtaSection() {
           Explore Doctors
         </Button>
         <Button href="/consultants" variant="secondary">
-          Explore Consultants
+          Explore Consultants / nurses
         </Button>
         <Button href="/for-clinics" variant="secondary">
           Explore For Clinics
