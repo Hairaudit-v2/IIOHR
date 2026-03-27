@@ -6,7 +6,7 @@ const techniqueCards = [
   {
     title: "Modified FUE Technique with Implanter Pen",
     description:
-      "The core technical focus of the Gurgaon partner site is Modified FUE Technique with Implanter Pen for modern hair transplantation.",
+      "The core technical focus of the IIOHR India Clinical Training Academy at the Gurgaon site is Modified FUE Technique with Implanter Pen for modern hair transplantation.",
   },
   {
     title: "Foundation",
@@ -37,8 +37,8 @@ export function TechnicalDevelopmentSection() {
     <SectionShell muted>
       <SectionHeading
         eyebrow="Techniques and Training Options"
-        title="Structured practical options built around the partner site's core technique"
-        description="The Gurgaon partner site presents one primary technique pathway and multiple training levels, allowing IIOHR to show a public-safe view of practical options without exposing protected curriculum detail."
+        title="Structured practical options built around the IIOHR India academy's core technique"
+        description="The first live Gurgaon site for the IIOHR India Clinical Training Academy presents one primary technique pathway and multiple training levels, allowing IIOHR to show a public-safe view of practical options without exposing protected curriculum detail."
       />
       <div className="mt-16 grid gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start">
         <Card interactive className="h-full">

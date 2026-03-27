@@ -100,8 +100,8 @@ export default function PrivacyPolicyPage() {
           <LegalSection id="contact" title="6. Contact">
             <p>
               For privacy-related enquiries or to exercise your rights, contact:{" "}
-              <a href={`mailto:${siteConfig.email}`} className="link-premium">
-                {siteConfig.email}
+              <a href={`mailto:${siteConfig.emails.support}`} className="link-premium">
+                {siteConfig.emails.support}
               </a>
               . We will respond within a reasonable time.
             </p>

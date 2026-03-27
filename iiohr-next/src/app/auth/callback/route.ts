@@ -1,12 +1,13 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
-import { resolvePostLoginRedirect } from "@/lib/auth/post-login-redirect";
+import { fetchIiohrAccessSnapshot, mergeIiohrPostLoginWithNext } from "@/lib/auth/iiohr-post-login";
 import { sanitizeRedirectPath } from "@/lib/auth/safe-redirect-path";
 
 /**
  * Supabase Auth redirect target (PKCE `code`, or `token_hash` + `type` for some email flows).
- * Query `next`: optional safe internal path; otherwise post-login role resolution applies.
+ * Query `next`: optional safe internal path; honored only when `userCanAccessIiohrPath` allows it,
+ * otherwise the central IIOHR post-login resolver chooses the default destination.
  */
 export async function GET(request: NextRequest) {
   const url = new URL(request.url);
@@ -67,8 +68,11 @@ export async function GET(request: NextRequest) {
   }
 
   const safeNext = sanitizeRedirectPath(nextRaw);
-  const dest =
-    safeNext && safeNext !== "/" ? safeNext : await resolvePostLoginRedirect(supabase, user.id);
+  const snapshot = await fetchIiohrAccessSnapshot(supabase, user.id);
+  const { destination: dest } = mergeIiohrPostLoginWithNext(
+    safeNext && safeNext !== "/" ? safeNext : null,
+    snapshot
+  );
 
   return NextResponse.redirect(new URL(dest, url.origin));
 }

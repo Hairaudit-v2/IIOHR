@@ -100,8 +100,8 @@ export default function TermsOfUsePage() {
           <LegalSection id="contact" title="6. Contact">
             <p>
               For questions about these terms:{" "}
-              <a href={`mailto:${siteConfig.email}`} className="link-premium">
-                {siteConfig.email}
+              <a href={`mailto:${siteConfig.emails.support}`} className="link-premium">
+                {siteConfig.emails.support}
               </a>
               .
             </p>

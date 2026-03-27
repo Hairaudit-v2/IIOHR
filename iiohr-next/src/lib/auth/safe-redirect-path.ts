@@ -10,7 +10,7 @@ export function sanitizeRedirectPath(raw: string | null | undefined): string {
   if (s.length === 0 || s.length > 512) {
     return "/";
   }
-  if (!s.startsWith("/") || s.startsWith("//") || s.includes("\\")) {
+  if (!s.startsWith("/") || s.startsWith("//") || s.includes("\\") || s.includes("..")) {
     return "/";
   }
   if (s.includes("://") || s.toLowerCase().startsWith("/javascript:")) {

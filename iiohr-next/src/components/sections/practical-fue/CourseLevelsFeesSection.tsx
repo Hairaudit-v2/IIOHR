@@ -46,7 +46,7 @@ const pricingSignals = [
   { label: "Course levels", value: "4" },
   { label: "Starting fee", value: "USD 3,000" },
   { label: "Longest format", value: "30 days" },
-  { label: "Live site", value: "Gurgaon" },
+  { label: "Live academy site", value: "Gurgaon" },
 ];
 
 export function CourseLevelsFeesSection() {
@@ -56,7 +56,7 @@ export function CourseLevelsFeesSection() {
         eyebrow="Course Levels and Fees"
         eyebrowOnDark
         title="Course pathways and pricing designed for quick comparison"
-        description="The Gurgaon partner site currently presents four course levels, each with a defined duration and fee for international doctors. Optional continued support is listed separately for clarity."
+        description="The first live Gurgaon site for the IIOHR India Clinical Training Academy currently presents four course levels, each with a defined duration and fee for international doctors. Optional continued support is listed separately for clarity."
       />
       <div className="mt-14 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {pricingSignals.map((signal) => (
@@ -85,7 +85,7 @@ export function CourseLevelsFeesSection() {
                 <h3 className="mt-3 text-2xl font-semibold tracking-tight text-white">{course.name}</h3>
               </div>
               <span className="rounded-full border border-[rgba(255,255,255,0.14)] bg-[var(--bg-dark-elevated)] px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-[#f8fafc] uppercase">
-                Gurgaon
+                IIOHR Gurgaon site
               </span>
             </div>
             <div className="mt-8 rounded-[10px] border border-[rgba(255,255,255,0.12)] bg-[var(--bg-dark-elevated)] p-5">

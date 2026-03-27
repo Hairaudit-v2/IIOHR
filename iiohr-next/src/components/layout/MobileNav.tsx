@@ -87,11 +87,11 @@ export function MobileNav() {
               </p>
               <div className="mt-3 space-y-2">
                 <a
-                  href={`mailto:${siteConfig.applicationEmail}`}
+                  href={`mailto:${siteConfig.emails.admissions}`}
                   onClick={() => setOpen(false)}
                   className="flex min-h-[44px] items-center rounded-[6px] border border-white/18 bg-white/5 px-3 py-2.5 text-sm text-[#f8fafc] hover:border-white/30 hover:text-white"
                 >
-                  {siteConfig.applicationEmail}
+                  {siteConfig.emails.admissions}
                 </a>
               </div>
             </div>

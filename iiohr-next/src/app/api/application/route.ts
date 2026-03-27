@@ -117,6 +117,7 @@ async function forwardToWebhook(payload: ApplicationPayload): Promise<WebhookRes
 }
 
 export async function POST(request: Request) {
+  let publicContactEmail: string = siteConfig.emails.admissions;
   try {
     const body = (await request.json()) as ApplicationPayload;
 
@@ -163,6 +164,8 @@ export async function POST(request: Request) {
       );
     }
 
+    publicContactEmail = enquiryType === "clinic" ? siteConfig.emails.clinics : siteConfig.emails.admissions;
+
     const payload: ApplicationPayload = {
       enquiryType,
       fullName: body.fullName,
@@ -187,7 +190,7 @@ export async function POST(request: Request) {
           {
             error:
               "Your submission could not be delivered right now. Please try again in a moment or email " +
-              siteConfig.applicationEmail +
+              publicContactEmail +
               " directly.",
           },
           { status: 502 }
@@ -202,7 +205,7 @@ export async function POST(request: Request) {
       {
         error:
           "Something went wrong. Please try again or email " +
-          siteConfig.applicationEmail +
+          publicContactEmail +
           " directly.",
       },
       { status: 500 }

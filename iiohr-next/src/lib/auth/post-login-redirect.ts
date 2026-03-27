@@ -1,48 +1,17 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import {
+  fetchIiohrAccessSnapshot,
+  resolveIiohrPostLoginDestination,
+} from "@/lib/auth/iiohr-post-login";
 
 /**
- * Default landing after magic link when no explicit `next` path was requested.
- * Order: admin → active enrollment (stream) → faculty → apply.
+ * Default landing after magic link when `mergeIiohrPostLoginWithNext` is not used.
+ * Delegates to `resolveIiohrPostLoginDestination` (roles, enrollments, applications).
  */
 export async function resolvePostLoginRedirect(
   supabase: SupabaseClient,
   userId: string
 ): Promise<string> {
-  const { data: roles, error: rErr } = await supabase
-    .from("user_roles")
-    .select("role")
-    .eq("user_id", userId);
-  if (rErr) {
-    return "/apply";
-  }
-  const roleSet = new Set((roles ?? []).map((r: { role: string }) => r.role));
-  if (roleSet.has("admin")) {
-    return "/academy/admissions/review";
-  }
-
-  const { data: enrollments, error: eErr } = await supabase
-    .from("program_enrollments")
-    .select("stream_slug")
-    .eq("user_id", userId)
-    .eq("status", "active")
-    .limit(1);
-  if (!eErr && enrollments?.length) {
-    const stream = (enrollments[0] as { stream_slug: string }).stream_slug;
-    if (stream === "doctors") {
-      return "/doctors/dashboard";
-    }
-    if (stream === "consultants") {
-      return "/consultants/dashboard";
-    }
-  }
-
-  if (roleSet.has("faculty")) {
-    return "/academy/faculty-review";
-  }
-
-  if (roleSet.has("clinic_manager")) {
-    return "/apply/clinics";
-  }
-
-  return "/apply";
+  const snapshot = await fetchIiohrAccessSnapshot(supabase, userId);
+  return resolveIiohrPostLoginDestination(snapshot).destination;
 }

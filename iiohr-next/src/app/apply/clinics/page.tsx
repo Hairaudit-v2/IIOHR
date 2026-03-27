@@ -81,7 +81,7 @@ export default async function ApplyClinicsPage() {
                 Review clinic pathway context
               </Link>
               <a
-                href={`mailto:${siteConfig.applicationEmail}?subject=Clinic%20continuation%20enquiry`}
+                href={`mailto:${siteConfig.emails.clinics}?subject=Clinic%20continuation%20enquiry`}
                 className="rounded-md border border-transparent bg-[var(--text-primary)] px-4 py-2 font-medium text-[var(--bg-secondary)] hover:opacity-90"
               >
                 Contact admissions by email

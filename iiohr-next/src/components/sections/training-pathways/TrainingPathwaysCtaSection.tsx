@@ -22,7 +22,7 @@ export function TrainingPathwaysCtaSection() {
         <Button href="/apply" variant="secondary">
           Apply to IIOHR
         </Button>
-        <a href={`mailto:${siteConfig.applicationEmail}`} className={mailtoClass}>
+        <a href={`mailto:${siteConfig.emails.training}`} className={mailtoClass}>
           Enquire by email
         </a>
       </div>

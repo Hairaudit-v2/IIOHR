@@ -30,23 +30,24 @@ export function GurgaonTrainingLocationSection() {
     <SectionShell muted id="gurgaon-training-location">
       <SectionHeading
         eyebrow="Gurgaon Training Location"
-        title="A premium Gurgaon setting for the first live partner-led training site"
-        description="The brochure locates the training experience on Golf Course Road, Gurgaon, with accommodation and transport details intended to help international doctors plan a practical training stay with confidence."
+        title="A premium Gurgaon setting for the first live IIOHR India academy site"
+        description="The brochure locates the first live Gurgaon site for the IIOHR India Clinical Training Academy on Golf Course Road, with accommodation and transport details intended to help international doctors plan a practical training stay with confidence."
       />
       <div className="mt-16 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <Card className="h-full">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">Live partner site</p>
-              <h3 className="mt-3 text-2xl font-semibold tracking-tight">Evolved Hair Restoration / Evolved Training Institute</h3>
+              <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">Live academy site</p>
+              <h3 className="mt-3 text-2xl font-semibold tracking-tight">IIOHR India Clinical Training Academy</h3>
             </div>
             <span className="rounded-full border border-foreground/18 bg-surface-elevated px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-foreground uppercase">
-              Gurgaon
+              Gurgaon partner site - live
             </span>
           </div>
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-            The Gurgaon site is presented as a state-of-the-art clinic-cum-training academy and currently serves
-            as the first confirmed partner training host for IIOHR Practical FUE.
+            The Gurgaon site is presented as the first live location for the IIOHR India Clinical Training Academy,
+            delivered in partnership with Evolved Hair Restoration, Gurgaon, inside a state-of-the-art
+            clinic-cum-training academy.
           </p>
           <div className="mt-6 h-px bg-border/70" aria-hidden />
           <p className="mt-6 text-sm leading-relaxed text-muted-foreground">

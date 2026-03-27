@@ -4,18 +4,18 @@ import { Card } from "@/components/ui/Card";
 
 const sites = [
   {
-    city: "Gurgaon",
-    status: "Live Partner Site",
+    city: "Gurgaon Partner Site",
+    status: "Live",
     description:
-      "Evolved Hair Restoration / Evolved Training Institute is the first confirmed partner host for IIOHR Practical FUE.",
+      "The first live site for the IIOHR India Clinical Training Academy is Gurgaon, delivered in partnership with Evolved Hair Restoration.",
     details:
       "Current public information includes partner faculty, course levels, pricing, optional nurse training, and Golf Course Road location details.",
   },
   {
-    city: "Mumbai",
+    city: "Mumbai Partner Site",
     status: "Coming Soon",
     description:
-      "A second partner site is planned for Mumbai and is intentionally presented without pricing, faculty, or timing details at this stage.",
+      "A second IIOHR India academy site is planned for Mumbai and is intentionally presented without pricing, faculty, or timing details at this stage.",
     details: "Further information will be published only when the site is confirmed for public release.",
   },
 ];
@@ -25,8 +25,8 @@ export function PartnerTrainingSitesSection() {
     <SectionShell muted id="partner-training-sites">
       <SectionHeading
         eyebrow="Training Sites"
-        title="The first partner site is live, with Mumbai reserved as the next location"
-        description="IIOHR Practical FUE can now present partner-led site information in a controlled public format: Gurgaon is active, and Mumbai is marked as coming soon."
+        title="The first IIOHR India academy site is live, with Mumbai reserved as the next location"
+        description="IIOHR Practical FUE now presents academy-site information in a controlled public format: Gurgaon is the live partner site, and Mumbai is marked as coming soon."
       />
       <div className="mt-16 grid gap-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(0,0.88fr)]">
         <Card interactive className="h-full">
