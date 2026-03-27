@@ -16,7 +16,6 @@ export const primaryNavigation: NavigationItem[] = [
   { href: "/training-pathways", label: "Training Pathways" },
   { href: "/practical-fue", label: "Practical FUE" },
   { href: "/hair-loss-science", label: "Hair Loss Science" },
-  { href: "https://follicleintelligence.ai", label: "Follicle Intelligence", external: true },
   { href: "/for-clinics", label: "For Clinics" },
 ];
 
