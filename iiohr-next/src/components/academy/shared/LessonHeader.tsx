@@ -17,6 +17,10 @@ interface LessonHeaderProps {
    * Stronger title scale, accent bar, and meta strip — benchmark pilot lessons only (defaults off).
    */
   deckAuthority?: boolean;
+  /** Deck: prominent value line (e.g. full lesson overview) under the title when not using showDeckOverview. */
+  deckValueLead?: string | null;
+  /** Deck: compact track pill (e.g. module short title) beside study time. */
+  deckTrackPill?: string | null;
 }
 
 export function LessonHeader({
@@ -29,6 +33,8 @@ export function LessonHeader({
   variant = "default",
   showDeckOverview = true,
   deckAuthority = false,
+  deckValueLead = null,
+  deckTrackPill = null,
 }: LessonHeaderProps) {
   if (variant === "deck") {
     return (
@@ -72,13 +78,23 @@ export function LessonHeader({
           {showDeckOverview ? (
             <p className="max-w-3xl text-sm leading-[1.7] text-readable-muted">{overview}</p>
           ) : null}
+          {deckValueLead ? (
+            <p className="mt-1 max-w-2xl text-[0.95rem] leading-[1.72] text-readable-muted sm:mt-2 sm:text-base sm:leading-[1.75]">
+              {deckValueLead}
+            </p>
+          ) : null}
           <div
-            className={`flex flex-wrap items-center gap-x-4 gap-y-2 ${
-              deckAuthority
+            className={`flex flex-wrap items-center gap-2 gap-x-3 ${
+              deckAuthority || deckTrackPill || deckValueLead
                 ? "border-t border-[color-mix(in_srgb,var(--gold-primary)_14%,transparent)] pt-3"
                 : "pt-1"
             }`}
           >
+            {deckTrackPill ? (
+              <span className="inline-flex min-h-[2.25rem] max-w-full items-center rounded-full border border-[color-mix(in_srgb,var(--gold-primary)_22%,var(--border))] bg-[color-mix(in_srgb,var(--gold-soft)_40%,var(--bg-secondary))] px-3.5 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-foreground">
+                {deckTrackPill}
+              </span>
+            ) : null}
             {deckAuthority ? (
               <span className="inline-flex min-h-[2.25rem] items-center rounded-md border border-border/85 bg-surface/90 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.12em] text-muted-foreground">
                 Study time · {studyTimeMinutes} min

@@ -56,6 +56,8 @@ export interface ConsultantPilotLessonNavInput extends ConsultantLessonNavInput 
   hasOutcomes: boolean;
   hasClinicalApplication: boolean;
   hasTakeaways: boolean;
+  /** Scope / workflow split visual (objective parses into two lanes). */
+  hasWorkflowVisual: boolean;
 }
 
 /** Chapter rail for consultant gold-standard pilot: extra context bands + knowledge check label. */
@@ -68,7 +70,7 @@ export function buildConsultantPilotLessonChapterNav(
     items.push({ id: "lesson-scope", label: "Academy scope" });
   }
   if (input.hasModuleContext) {
-    items.push({ id: "lesson-why", label: "Module context" });
+    items.push({ id: "lesson-spine", label: "Module spine" });
   }
   if (input.showLessonIntro) {
     items.push({ id: "lesson-intro", label: "This lesson" });
@@ -76,11 +78,15 @@ export function buildConsultantPilotLessonChapterNav(
   if (input.hasOutcomes) {
     items.push({ id: "lesson-outcomes", label: "Outcomes" });
   }
-  if (input.hasRoleBoundaries) {
-    items.push({ id: "lesson-pathway", label: "Role & boundaries" });
-  }
 
-  items.push({ id: "lesson-reading", label: "Core reading" });
+  items.push({ id: "lesson-reading", label: "Core teaching" });
+
+  if (input.hasWorkflowVisual) {
+    items.push({ id: "lesson-workflow", label: "Workflow" });
+  }
+  if (input.hasRoleBoundaries) {
+    items.push({ id: "lesson-pathway", label: "Role boundaries" });
+  }
 
   if (input.showEvidence) {
     items.push({ id: "lesson-evidence", label: "Evidence tier" });
@@ -89,10 +95,10 @@ export function buildConsultantPilotLessonChapterNav(
     items.push({ id: "lesson-application", label: "Clinical application" });
   }
   if (input.hasTakeaways) {
-    items.push({ id: "lesson-takeaways", label: "Key takeaways" });
+    items.push({ id: "lesson-principle", label: "Principle" });
   }
   if (input.hasAssessments) {
-    items.push({ id: "lesson-check", label: "Knowledge check" });
+    items.push({ id: "lesson-check", label: "Recap & check" });
   }
 
   items.push({ id: "lesson-safety", label: "Safety & escalation" });

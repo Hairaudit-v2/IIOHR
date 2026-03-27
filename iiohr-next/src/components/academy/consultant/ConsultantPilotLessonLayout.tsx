@@ -8,7 +8,6 @@ import { LessonHeader } from "@/components/academy/shared/LessonHeader";
 import { LessonOutcomesDualPanel } from "@/components/academy/shared/LessonOutcomesDualPanel";
 import { LessonSection } from "@/components/academy/shared/LessonSection";
 import { LinkedAssessmentsCallout } from "@/components/academy/shared/LinkedAssessmentsCallout";
-import { LinkedCaseStudiesPanel } from "@/components/academy/shared/LinkedCaseStudiesPanel";
 import { LinkedPracticalTasksPanel } from "@/components/academy/shared/LinkedPracticalTasksPanel";
 import { PatientCommunicationExamples } from "@/components/academy/shared/PatientCommunicationExamples";
 import { RedFlagsPanel } from "@/components/academy/shared/RedFlagsPanel";
@@ -17,12 +16,15 @@ import { DownloadableResourceList } from "@/components/academy/shared/Downloadab
 import { RichTextAcademicBody } from "@/components/academy/shared/RichTextAcademicBody";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { ConsultantLessonFooterNav } from "@/components/academy/consultant/ConsultantLessonFooterNav";
-import { PilotJourneyFigureStrip } from "@/components/academy/consultant/PilotJourneyFigureStrip";
-import { PilotKeyConceptCard } from "@/components/academy/consultant/PilotKeyConceptCard";
+import { PilotCaseDecisionBlock } from "@/components/academy/consultant/PilotCaseDecisionBlock";
+import { PilotPreAssessmentRecap } from "@/components/academy/consultant/PilotPreAssessmentRecap";
+import { PilotPrincipleSummaryCard } from "@/components/academy/consultant/PilotPrincipleSummaryCard";
+import { PilotScopeWorkflowVisual } from "@/components/academy/consultant/PilotScopeWorkflowVisual";
 import { ConsultantRoleBoundariesCallout } from "@/components/academy/consultant/ConsultantRoleBoundariesCallout";
 import { ConsultantScopeStrip } from "@/components/academy/consultant/ConsultantScopeStrip";
 import type { ComplianceNotice, DownloadableResource } from "@/lib/academy/content-types";
 import { buildConsultantPilotLessonChapterNav } from "@/lib/academy/lesson-chapter-nav";
+import { splitScopeVersusDoctorObjective } from "@/lib/academy/pilot-lesson-ui";
 import type { LessonPageViewModel } from "@/lib/academy/view-models/lesson";
 
 interface ConsultantPilotLessonLayoutProps {
@@ -48,8 +50,9 @@ export function ConsultantPilotLessonLayout({
   const lesson = viewModel.lesson;
   const seq = viewModel.lessonSequence;
 
-  const keyConceptLine =
+  const scopeObjective =
     lesson.learningObjectives.length > 2 ? lesson.learningObjectives[2]! : null;
+  const hasWorkflowVisual = Boolean(scopeObjective && splitScopeVersusDoctorObjective(scopeObjective));
 
   const hasModuleContext = Boolean(mod?.moduleOverview);
   const hasClinicalApplication =
@@ -57,6 +60,7 @@ export function ConsultantPilotLessonLayout({
     viewModel.caseStudies.length > 0 ||
     viewModel.practicalTasks.length > 0;
   const hasTakeaways = lesson.keyTakeaways.length > 0;
+  const primaryCase = viewModel.caseStudies[0] ?? null;
 
   const navItems = buildConsultantPilotLessonChapterNav({
     showScopeStrip: viewModel.programComplianceNotices.length > 0,
@@ -67,18 +71,19 @@ export function ConsultantPilotLessonLayout({
     hasAssessments: viewModel.linkedAssessments.length > 0,
     hasReferencesOrResources: viewModel.references.length > 0 || viewModel.resources.length > 0,
     hasModuleContext,
-    showLessonIntro: Boolean(lesson.overview),
+    showLessonIntro: false,
     hasOutcomes:
       (mod?.learningOutcomes.length ?? 0) > 0 || lesson.learningObjectives.length > 0,
     hasClinicalApplication,
     hasTakeaways,
+    hasWorkflowVisual,
   });
 
   return (
     <>
       <SectionShell
         id="lesson-hero"
-        className="scroll-mt-32 border-b border-[color-mix(in_srgb,var(--gold-primary)_16%,transparent)] bg-[linear-gradient(180deg,color-mix(in_srgb,var(--bg-secondary)_100%,transparent)_0%,var(--bg-primary)_100%)]"
+        className="scroll-mt-32 border-b border-[color-mix(in_srgb,var(--gold-primary)_22%,transparent)] bg-[linear-gradient(185deg,color-mix(in_srgb,var(--bg-secondary)_100%,transparent)_0%,var(--bg-primary)_100%)] shadow-[inset_0_1px_0_0_color-mix(in_srgb,var(--gold-primary)_14%,transparent)]"
       >
         {viewModel.programComplianceNotices.length > 0 ? (
           <div id="lesson-scope" className="scroll-mt-32">
@@ -90,6 +95,8 @@ export function ConsultantPilotLessonLayout({
             variant="deck"
             deckAuthority
             showDeckOverview={false}
+            deckValueLead={lesson.overview}
+            deckTrackPill={mod?.shortTitle ?? null}
             title={lesson.title}
             overview={lesson.overview}
             studyTimeMinutes={lesson.estimatedStudyMinutes}
@@ -104,19 +111,13 @@ export function ConsultantPilotLessonLayout({
 
       {hasModuleContext ? (
         <LessonSection
-          id="lesson-why"
+          id="lesson-spine"
           muted
           relaxed
-          eyebrow="Teaching manual · module"
-          title="Why this module matters"
+          eyebrow="Start here"
+          title="Module placement"
           intro={mod!.moduleOverview}
         />
-      ) : null}
-
-      {lesson.overview ? (
-        <LessonSection id="lesson-intro" relaxed eyebrow="This lesson" title="Focus and expectations" constrain>
-          <p className="text-sm leading-[1.75] text-readable-muted">{lesson.overview}</p>
-        </LessonSection>
       ) : null}
 
       {mod?.learningOutcomes.length ? (
@@ -145,28 +146,30 @@ export function ConsultantPilotLessonLayout({
         </LessonSection>
       )}
 
-      {lesson.roleBoundaryNotes.length > 0 ? (
-        <LessonSection id="lesson-pathway" muted relaxed eyebrow="Scope" constrain={false}>
-          <ConsultantRoleBoundariesCallout notes={lesson.roleBoundaryNotes} />
-        </LessonSection>
-      ) : null}
-
       <LessonSection
         id="lesson-reading"
         muted
         relaxed
-        eyebrow="Core reading"
+        eyebrow="Guided read"
         title="Teaching notes"
         constrain={false}
       >
-        <div className="space-y-7">
-          {keyConceptLine ? <PilotKeyConceptCard text={keyConceptLine} /> : null}
-          <div className="rounded-xl border border-[color-mix(in_srgb,var(--gold-primary)_10%,var(--border))] bg-surface/75 p-6 shadow-[var(--glow-soft)] md:p-8">
-            <RichTextAcademicBody content={lesson.body.content} pilotBand />
-          </div>
-          <PilotJourneyFigureStrip lessonBodyContent={lesson.body.content} />
+        <div className="rounded-xl border border-[color-mix(in_srgb,var(--gold-primary)_16%,var(--border))] bg-surface/80 p-5 shadow-[var(--glow-soft)] ring-1 ring-[color-mix(in_srgb,var(--gold-primary)_8%,transparent)] sm:p-7 md:p-8">
+          <RichTextAcademicBody content={lesson.body.content} pilotBand beatNumbers />
         </div>
       </LessonSection>
+
+      {hasWorkflowVisual && scopeObjective ? (
+        <LessonSection id="lesson-workflow" relaxed eyebrow="Visual" title="Support vs clinician lane" constrain={false}>
+          <PilotScopeWorkflowVisual scopeObjective={scopeObjective} />
+        </LessonSection>
+      ) : null}
+
+      {lesson.roleBoundaryNotes.length > 0 ? (
+        <LessonSection id="lesson-pathway" muted relaxed eyebrow="Detail" title="Role boundaries" constrain={false}>
+          <ConsultantRoleBoundariesCallout notes={lesson.roleBoundaryNotes} />
+        </LessonSection>
+      ) : null}
 
       {lesson.displayFlags.showEvidencePanel ? (
         <LessonSection
@@ -186,7 +189,7 @@ export function ConsultantPilotLessonLayout({
           muted
           relaxed
           eyebrow="Application"
-          title="From principles to practice"
+          title="Practice lenses"
           constrain={false}
         >
           <div className="grid gap-8 lg:grid-cols-2">
@@ -196,9 +199,7 @@ export function ConsultantPilotLessonLayout({
                 title="Patient communication — scope-safe phrasing"
               />
             ) : null}
-            {viewModel.caseStudies.length > 0 ? (
-              <LinkedCaseStudiesPanel caseStudies={viewModel.caseStudies} />
-            ) : null}
+            {primaryCase ? <PilotCaseDecisionBlock caseStudy={primaryCase} /> : null}
             {viewModel.practicalTasks.length > 0 ? (
               <LinkedPracticalTasksPanel tasks={viewModel.practicalTasks} />
             ) : null}
@@ -207,20 +208,8 @@ export function ConsultantPilotLessonLayout({
       ) : null}
 
       {hasTakeaways ? (
-        <LessonSection id="lesson-takeaways" relaxed eyebrow="Synthesis" title="Key takeaways" constrain>
-          <AcademyPanel title="Carry-forwards" quiet>
-            <ul className="space-y-3 text-sm leading-relaxed">
-              {lesson.keyTakeaways.map((item) => (
-                <li key={item} className="flex gap-2.5">
-                  <span
-                    className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--gold-primary)]"
-                    aria-hidden
-                  />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </AcademyPanel>
+        <LessonSection id="lesson-principle" relaxed eyebrow="Synthesis" title="Lock it in" constrain={false}>
+          <PilotPrincipleSummaryCard takeaways={lesson.keyTakeaways} />
         </LessonSection>
       ) : null}
 
@@ -230,14 +219,20 @@ export function ConsultantPilotLessonLayout({
           muted
           relaxed
           eyebrow="Assessment"
-          title="Knowledge check"
+          title="Recap and knowledge check"
           constrain={false}
         >
-          <LinkedAssessmentsCallout
-            assessments={viewModel.linkedAssessments}
-            basePath={base}
-            description="Complete the module assessment to demonstrate scope-safe reasoning. Pass mark and retry limits apply as shown on each assessment page."
-          />
+          <div className="rounded-2xl border border-[color-mix(in_srgb,var(--gold-primary)_20%,var(--border))] bg-[color-mix(in_srgb,var(--bg-secondary)_70%,var(--bg-primary))] p-4 shadow-[0_14px_44px_-18px_color-mix(in_srgb,var(--bg-dark)_26%,transparent)] sm:p-6">
+            <div className="space-y-6">
+              <PilotPreAssessmentRecap objectives={lesson.learningObjectives} />
+              <div className="h-px w-full bg-[color-mix(in_srgb,var(--gold-primary)_18%,var(--border))]" aria-hidden />
+              <LinkedAssessmentsCallout
+                assessments={viewModel.linkedAssessments}
+                basePath={base}
+                description="Complete the module assessment to demonstrate scope-safe reasoning. Pass mark and retry limits apply as shown on each assessment page."
+              />
+            </div>
+          </div>
         </LessonSection>
       ) : null}
 

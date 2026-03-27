@@ -4,23 +4,53 @@ interface RichTextAcademicBodyProps {
   content: string;
   /** Benchmark pilot: optimal measure, looser cadence, softer hr rhythm (default off). */
   pilotBand?: boolean;
+  /** Number h2 sections as teaching beats (pilot short modules; default off). */
+  beatNumbers?: boolean;
 }
 
-export function RichTextAcademicBody({ content, pilotBand = false }: RichTextAcademicBodyProps) {
+export function RichTextAcademicBody({
+  content,
+  pilotBand = false,
+  beatNumbers = false,
+}: RichTextAcademicBodyProps) {
   const blocks = parseLessonBodyContent(content);
+  let beat = 0;
 
   return (
     <div
       className={`lesson-reading-body text-readable-muted ${
         pilotBand
-          ? "mx-auto max-w-[65ch] space-y-7 text-[15px] leading-[1.78] md:text-[15px] md:leading-[1.82]"
+          ? "mx-auto max-w-[62ch] space-y-4 text-[15px] leading-[1.76] md:leading-[1.8]"
           : "space-y-5"
       }`}
     >
       {blocks.map((block, index) => {
         const key = `${block.type}-${index}`;
         switch (block.type) {
-          case "h2":
+          case "h2": {
+            beat += 1;
+            if (pilotBand && beatNumbers) {
+              return (
+                <div
+                  key={key}
+                  className={`flex gap-3 rounded-lg border-b border-[color-mix(in_srgb,var(--gold-primary)_26%,transparent)] bg-[color-mix(in_srgb,var(--gold-soft)_22%,transparent)] px-3 py-3 pb-4 sm:gap-4 sm:px-4 ${
+                    beat > 1
+                      ? "mt-12 border-t border-dashed border-[color-mix(in_srgb,var(--text-primary)_10%,var(--border))] pt-10"
+                      : "first:pt-1"
+                  }`}
+                >
+                  <span
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[color-mix(in_srgb,var(--gold-primary)_42%,var(--border))] bg-surface text-sm font-semibold tabular-nums text-foreground shadow-[var(--shadow-card)]"
+                    aria-hidden
+                  >
+                    {beat}
+                  </span>
+                  <h2 className="flex-1 text-[1.06rem] font-semibold leading-snug tracking-tight text-foreground sm:text-[1.12rem]">
+                    {block.text}
+                  </h2>
+                </div>
+              );
+            }
             return (
               <h2
                 key={key}
@@ -29,6 +59,7 @@ export function RichTextAcademicBody({ content, pilotBand = false }: RichTextAca
                 {block.text}
               </h2>
             );
+          }
           case "h3":
             return (
               <h3 key={key} className="text-base font-semibold tracking-tight text-foreground">
@@ -42,7 +73,7 @@ export function RichTextAcademicBody({ content, pilotBand = false }: RichTextAca
                   key={key}
                   className={
                     pilotBand
-                      ? "text-[1.02rem] leading-[1.72] text-foreground/95 md:text-[1.05rem]"
+                      ? "text-[1.02rem] leading-[1.72] text-foreground/95 md:text-[1.04rem]"
                       : "text-[0.95rem] leading-[1.65] text-foreground/95"
                   }
                 >
@@ -51,7 +82,12 @@ export function RichTextAcademicBody({ content, pilotBand = false }: RichTextAca
               );
             }
             return (
-              <p key={key} className={pilotBand ? "text-[15px] leading-[1.78] md:leading-[1.82]" : "text-sm leading-relaxed"}>
+              <p
+                key={key}
+                className={
+                  pilotBand ? "text-[15px] leading-[1.76] md:leading-[1.8]" : "text-sm leading-relaxed"
+                }
+              >
                 {block.text}
               </p>
             );
@@ -91,7 +127,7 @@ export function RichTextAcademicBody({ content, pilotBand = false }: RichTextAca
                 key={key}
                 className={
                   pilotBand
-                    ? "my-10 border-0 border-t border-dashed border-[color-mix(in_srgb,var(--gold-primary)_22%,var(--border))]"
+                    ? "my-8 border-0 border-t border-dashed border-[color-mix(in_srgb,var(--gold-primary)_22%,var(--border))]"
                     : "border-0 border-t border-dashed border-border/90"
                 }
               />
