@@ -4,6 +4,7 @@ import { CertificatesCard } from "@/components/dashboard/shared/CertificatesCard
 import { DashboardEmptyState } from "@/components/dashboard/shared/DashboardEmptyState";
 import { DashboardHero } from "@/components/dashboard/shared/DashboardHero";
 import { TeamProgressTable } from "@/components/dashboard/shared/TeamProgressTable";
+import { ClinicTeamManagementPanel } from "@/components/dashboard/workspaces/ClinicTeamManagementPanel";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { siteConfig } from "@/lib/site";
@@ -61,7 +62,7 @@ export function ClinicDashboardWorkspace({ vm }: { vm: ClinicDashboardVm }) {
         <Card quiet>
           <h3 className="text-base font-semibold text-heading">Team members</h3>
           <p className="mt-2 text-3xl font-semibold tabular-nums text-foreground">{vm.teamMembers.length}</p>
-          <p className="mt-1 text-xs text-readable-muted">Summary (preview until roster API is connected).</p>
+          <p className="mt-1 text-xs text-readable-muted">Learners with enrollments under your clinic scope.</p>
           <ul className="mt-4 space-y-1.5 border-t border-border/60 pt-4 text-sm text-readable-muted">
             {vm.teamMembers.slice(0, 5).map((m) => (
               <li key={m.id}>
@@ -81,10 +82,12 @@ export function ClinicDashboardWorkspace({ vm }: { vm: ClinicDashboardVm }) {
         </Card>
       </div>
 
+      {vm.management?.enabled ? <ClinicTeamManagementPanel vm={vm} /> : null}
+
       <Card quiet>
         <h3 className="text-base font-semibold text-heading">Assign training pathway by role</h3>
         <p className="mt-1 text-sm text-readable-muted">
-          Map roles to IIOHR tracks. Live assignment flows will use your roster when the backend is wired.
+          High-level mix for your site. Use team management above for per-learner pathway placement when enrollments exist.
         </p>
         <ul className="mt-4 divide-y divide-border/50 border-t border-border/60">
           {vm.trainingByRole.map((row) => (
@@ -96,7 +99,7 @@ export function ClinicDashboardWorkspace({ vm }: { vm: ClinicDashboardVm }) {
       <Card quiet>
         <TeamProgressTable
           heading="Team progress"
-          caption="Placeholder rows — replace with organisation roster and enrollment progress."
+          caption={vm.teamProgressCaption ?? "Enrollment progress for learners under this clinic."}
           members={vm.teamProgress}
         />
       </Card>

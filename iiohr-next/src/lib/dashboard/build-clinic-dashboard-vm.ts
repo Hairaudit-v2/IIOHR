@@ -35,6 +35,18 @@ function formatLastActivity(iso: string | null | undefined): string | undefined 
   }
 }
 
+function pathwayAssignedLabel(row: {
+  assigned_pathway_stream?: string;
+  assigned_pathway_program?: string | null;
+  stream_slug: string;
+  program_slug: string;
+}): string {
+  const slug = row.assigned_pathway_program ?? row.program_slug;
+  const title = getProgram(slug)?.title ?? slug;
+  const stream = row.assigned_pathway_stream ?? row.stream_slug;
+  return `${stream} — ${title}`;
+}
+
 export async function buildClinicDashboardVm(
   supabase: SupabaseClient,
   input: { userId: string; displayName: string | null }
@@ -48,35 +60,45 @@ export async function buildClinicDashboardVm(
       ? snap.teamMembers.map((row) => {
           const activity = formatLastActivity(row.last_activity_at);
           const statusLabel = row.enrollment_status?.replace(/_/g, " ") ?? "";
-          const hintParts = [statusLabel, activity].filter(Boolean);
+          const assign = row.assignment_status?.replace(/_/g, " ") ?? "";
+          const hintParts = [assign && `Placement: ${assign}`, statusLabel && `Enrollment: ${statusLabel}`, activity].filter(
+            Boolean
+          );
           return {
             id: row.enrollment_id,
             name: row.display_name?.trim() ? row.display_name.trim() : "Learner",
             role: row.stream_slug === "doctors" ? "Doctor track" : "Consultant track",
-            pathwayLabel: getProgram(row.program_slug)?.title ?? row.program_slug,
+            pathwayLabel: pathwayAssignedLabel(row),
             progressPercent: row.progress_percent ?? 0,
             lastActivityHint: hintParts.length > 0 ? hintParts.join(" · ") : "—",
+            assignmentStatus: row.assignment_status,
+            pathwayAssignedLabel: pathwayAssignedLabel(row),
+            memberRecordId: row.member_record_id ?? null,
+            userId: row.user_id,
           };
         })
       : [];
 
-  const hasDoc = snap.teamMembers.some((t) => t.stream_slug === "doctors");
-  const hasCon = snap.teamMembers.some((t) => t.stream_slug === "consultants");
+  const hasDoc = snap.teamMembers.some((t) => t.stream_slug === "doctors" || t.assigned_pathway_stream === "doctors");
+  const hasCon = snap.teamMembers.some(
+    (t) => t.stream_slug === "consultants" || t.assigned_pathway_stream === "consultants"
+  );
+  const hasPendingInvites = snap.pendingInvites.length > 0;
 
   const trainingByRole: ClinicDashboardVm["trainingByRole"] =
-    snap.teamMembers.length > 0
+    snap.teamMembers.length > 0 || hasPendingInvites
       ? [
           {
             roleLabel: "Surgeons / doctors",
             pathwayLabel: "IIOHR doctor stream",
             assigned: hasDoc,
-            note: hasDoc ? undefined : "No active doctor enrollment under this clinic scope",
+            note: hasDoc ? undefined : "No doctor stream enrollments or placements yet",
           },
           {
             roleLabel: "Consultants & nurses",
             pathwayLabel: "IIOHR consultant stream",
             assigned: hasCon,
-            note: hasCon ? undefined : "No active consultant enrollment under this clinic scope",
+            note: hasCon ? undefined : "No consultant stream enrollments or placements yet",
           },
           {
             roleLabel: "Front-of-house",
@@ -91,9 +113,12 @@ export async function buildClinicDashboardVm(
   if (snap.clinicId) {
     seatSummaryParts.push("Clinic scope resolved for this account.");
     if (snap.teamMembers.length > 0) {
-      seatSummaryParts.push(`${snap.teamMembers.length} learner enrollment(s) in this clinic (active, paused, or completed).`);
+      seatSummaryParts.push(`${snap.teamMembers.length} learner enrollment(s) in this clinic.`);
     } else if (snap.isClinicManager) {
       seatSummaryParts.push("No learner enrollments under this clinic_id yet.");
+    }
+    if (hasPendingInvites) {
+      seatSummaryParts.push(`${snap.pendingInvites.length} pending email invite(s).`);
     }
     if (snap.teamSnapshotError) {
       seatSummaryParts.push(`Team snapshot: ${snap.teamSnapshotError}`);
@@ -106,8 +131,8 @@ export async function buildClinicDashboardVm(
     clinicName: input.displayName ? `${input.displayName}'s organisation` : "Your clinic",
     seatSummary: seatSummaryParts.join(" "),
     pathwayMixSummary:
-      snap.teamMembers.length > 0
-        ? `Active streams: ${[hasDoc && "doctors", hasCon && "consultants"].filter(Boolean).join(", ") || "—"}.`
+      snap.teamMembers.length > 0 || hasPendingInvites
+        ? `Streams: ${[hasDoc && "doctors", hasCon && "consultants"].filter(Boolean).join(", ") || "—"}.`
         : "Doctor and consultant tracks can run in parallel for the same site.",
   };
 
@@ -149,17 +174,15 @@ export async function buildClinicDashboardVm(
       },
       {
         label: "Training roster",
-        state: snap.teamMembers.length > 0 ? "in_progress" : "not_started",
+        state: snap.teamMembers.length > 0 || hasPendingInvites ? "in_progress" : "not_started",
         detail: snap.teamSnapshotError
           ? `Snapshot: ${snap.teamSnapshotError}`
-          : snap.teamMembers.length > 0
-            ? `${snap.teamMembers.length} enrollment row(s) from secure clinic snapshot`
-            : "No team rows yet",
+          : `${snap.teamMembers.length} enrollment(s); ${snap.pendingInvites.length} invite(s)`,
       },
       {
         label: "Pathway assignment",
-        state: hasDoc || hasCon ? "in_progress" : "not_started",
-        detail: "Inferred from active enrollments by stream",
+        state: hasDoc || hasCon || hasPendingInvites ? "in_progress" : "not_started",
+        detail: "Placements stored in clinic_team_members; invites pending until learners join",
       },
       {
         label: "Quality loop",
@@ -168,6 +191,29 @@ export async function buildClinicDashboardVm(
       },
     ],
   };
+
+  const management: ClinicDashboardVm["management"] =
+    snap.isClinicManager && snap.clinicId
+      ? {
+          enabled: true,
+          clinicId: snap.clinicId,
+          pendingInvites: snap.pendingInvites.map((p) => ({
+            memberId: p.member_id,
+            email: p.invite_email,
+            targetStreamSlug: p.target_stream_slug,
+            targetProgramSlug: p.target_program_slug,
+          })),
+          pathwayAssignees: snap.teamMembers.map((row) => ({
+            userId: row.user_id,
+            displayLabel: `${row.display_name?.trim() || "Learner"} · ${row.stream_slug}`,
+          })),
+        }
+      : undefined;
+
+  const teamProgressCaption =
+    snap.teamSnapshotError
+      ? `Could not load full snapshot: ${snap.teamSnapshotError}`
+      : "Enrollment progress, pathway placement, and activity — from secure clinic snapshot (read-only aggregate).";
 
   return {
     accent: "clinic",
@@ -181,6 +227,8 @@ export async function buildClinicDashboardVm(
     certificatesOverview,
     implementation,
     setupIncomplete,
+    management,
+    teamProgressCaption,
     emptyState: setupIncomplete
       ? {
           title: "Clinic setup incomplete",

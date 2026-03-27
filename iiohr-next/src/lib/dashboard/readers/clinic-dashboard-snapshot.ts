@@ -1,6 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 
-/** One row from `get_clinic_team_snapshot` RPC (SECURITY DEFINER aggregate). */
+/** One enrollment row from `get_clinic_team_snapshot` (merged with `clinic_team_members` when present). */
 export type ClinicTeamMemberSnapshot = {
   enrollment_id: string;
   user_id: string;
@@ -11,21 +11,28 @@ export type ClinicTeamMemberSnapshot = {
   progress_percent: number;
   certificate_count: number;
   last_activity_at: string | null;
+  member_record_id?: string | null;
+  assignment_status?: string;
+  assigned_pathway_stream?: string;
+  assigned_pathway_program?: string | null;
+};
+
+export type ClinicPendingInviteSnapshot = {
+  member_id: string;
+  invite_email: string;
+  target_stream_slug: string;
+  target_program_slug: string | null;
+  member_status: string;
 };
 
 export type ClinicDashboardSnapshot = {
   isClinicManager: boolean;
-  /** Primary clinic scope for the dashboard (first resolved id). */
   clinicId: string | null;
-  /** All clinic ids the user can manage (RPC + enrollment-derived). */
   clinicIds: string[];
-  /** Aggregated team rows from `get_clinic_team_snapshot` when authorized. */
   teamMembers: ClinicTeamMemberSnapshot[];
-  /** Mean module percent keyed by enrollment id — populated only for legacy fallbacks; prefer `teamMembers[].progress_percent`. */
+  pendingInvites: ClinicPendingInviteSnapshot[];
   progressByEnrollmentId: Record<string, number>;
-  /** Set when the team RPC fails (e.g. not authorized); UI keeps explanatory copy. */
   teamSnapshotError?: string;
-  /** Total certificates counted across team rows (from snapshot). */
   teamCertificateTotal: number;
 };
 
@@ -34,28 +41,44 @@ const EMPTY: ClinicDashboardSnapshot = {
   clinicId: null,
   clinicIds: [],
   teamMembers: [],
+  pendingInvites: [],
   progressByEnrollmentId: {},
   teamCertificateTotal: 0,
 };
 
-function parseTeamSnapshotPayload(data: unknown): ClinicTeamMemberSnapshot[] {
-  if (!data) return [];
-  if (Array.isArray(data)) {
-    return data as ClinicTeamMemberSnapshot[];
+function parseTeamSnapshotPayload(data: unknown): {
+  enrollments: ClinicTeamMemberSnapshot[];
+  pendingInvites: ClinicPendingInviteSnapshot[];
+} {
+  if (!data) {
+    return { enrollments: [], pendingInvites: [] };
   }
   if (typeof data === "string") {
     try {
       const parsed = JSON.parse(data) as unknown;
-      return Array.isArray(parsed) ? (parsed as ClinicTeamMemberSnapshot[]) : [];
+      return parseTeamSnapshotPayload(parsed);
     } catch {
-      return [];
+      return { enrollments: [], pendingInvites: [] };
     }
   }
-  return [];
+  if (Array.isArray(data)) {
+    return { enrollments: data as ClinicTeamMemberSnapshot[], pendingInvites: [] };
+  }
+  if (typeof data === "object" && data !== null && "enrollments" in data) {
+    const o = data as { enrollments?: unknown; pending_invites?: unknown };
+    const enrollments = Array.isArray(o.enrollments)
+      ? (o.enrollments as ClinicTeamMemberSnapshot[])
+      : [];
+    const pendingInvites = Array.isArray(o.pending_invites)
+      ? (o.pending_invites as ClinicPendingInviteSnapshot[])
+      : [];
+    return { enrollments, pendingInvites };
+  }
+  return { enrollments: [], pendingInvites: [] };
 }
 
 /**
- * Resolves clinic scope via `user_clinic_ids` + enrollment, then loads team training data
+ * Resolves clinic scope via `user_clinic_ids` + enrollment, then loads team data
  * through `get_clinic_team_snapshot` (no broad learner-table reads for managers).
  */
 export async function fetchClinicDashboardSnapshot(
@@ -91,6 +114,7 @@ export async function fetchClinicDashboardSnapshot(
 
     const progressByEnrollmentId: Record<string, number> = {};
     let teamMembers: ClinicTeamMemberSnapshot[] = [];
+    let pendingInvites: ClinicPendingInviteSnapshot[] = [];
     let teamSnapshotError: string | undefined;
     let teamCertificateTotal = 0;
 
@@ -99,10 +123,12 @@ export async function fetchClinicDashboardSnapshot(
       if (snap.error) {
         teamSnapshotError = snap.error.message;
       } else {
-        teamMembers = parseTeamSnapshotPayload(snap.data).map((row) => ({
+        const parsed = parseTeamSnapshotPayload(snap.data);
+        teamMembers = parsed.enrollments.map((row) => ({
           ...row,
           display_name: row.display_name?.trim() ? row.display_name.trim() : null,
         }));
+        pendingInvites = parsed.pendingInvites;
         for (const row of teamMembers) {
           progressByEnrollmentId[row.enrollment_id] = row.progress_percent;
         }
@@ -115,6 +141,7 @@ export async function fetchClinicDashboardSnapshot(
       clinicId,
       clinicIds,
       teamMembers,
+      pendingInvites,
       progressByEnrollmentId,
       teamSnapshotError,
       teamCertificateTotal,

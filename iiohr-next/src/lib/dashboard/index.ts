@@ -11,5 +11,6 @@ export { fetchLearnerDashboardSnapshot } from "@/lib/dashboard/readers/learner-d
 export { fetchClinicDashboardSnapshot } from "@/lib/dashboard/readers/clinic-dashboard-snapshot";
 export type {
   ClinicDashboardSnapshot,
+  ClinicPendingInviteSnapshot,
   ClinicTeamMemberSnapshot,
 } from "@/lib/dashboard/readers/clinic-dashboard-snapshot";

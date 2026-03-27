@@ -72,6 +72,28 @@ export interface ClinicTeamMemberVm {
   pathwayLabel: string;
   progressPercent: number;
   lastActivityHint?: string;
+  /** From `clinic_team_members` or enrollment-derived. */
+  assignmentStatus?: string;
+  /** Intended pathway (stream + program slug or title). */
+  pathwayAssignedLabel?: string;
+  memberRecordId?: string | null;
+  userId?: string;
+}
+
+export interface ClinicPendingInviteVm {
+  memberId: string;
+  email: string;
+  targetStreamSlug: string;
+  targetProgramSlug: string | null;
+}
+
+/** Server-driven team management (forms post to RPCs). */
+export interface ClinicManagementVm {
+  enabled: boolean;
+  clinicId: string | null;
+  pendingInvites: ClinicPendingInviteVm[];
+  /** Learners with enrollments under this clinic (pathway assignment target). */
+  pathwayAssignees: { userId: string; displayLabel: string }[];
 }
 
 export interface ClinicOverviewVm {
@@ -147,4 +169,8 @@ export interface ClinicDashboardVm {
   implementation: ImplementationReadinessVm;
   setupIncomplete: boolean;
   emptyState?: { title: string; body: string; primaryHref: string; primaryLabel: string };
+  /** When set, renders team invite / pathway forms (additive panel). */
+  management?: ClinicManagementVm;
+  /** Replaces generic team table caption when present. */
+  teamProgressCaption?: string;
 }
