@@ -120,8 +120,8 @@ export function GlobalHairIntelligenceNetwork({
   const resolvedTheme = theme === "auto" ? "light" : theme;
   const links = nodeLinks ?? GLOBAL_NETWORK_NODE_LINKS;
   const activeNode = nodes.find((node) => node.id === variant);
-  const centerNode = nodes.find((node) => node.id === "iiohr");
-  const orbitNodes = nodes.filter((node) => node.id !== "iiohr");
+  const centerNode = nodes.find((node) => node.id === "fi");
+  const orbitNodes = nodes.filter((node) => node.id !== "fi");
 
   return (
     <div

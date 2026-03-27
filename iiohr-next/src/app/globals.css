@@ -1013,9 +1013,6 @@ textarea:focus-visible {
   .ghn-wheel-rings {
     animation: ghn-wheel-spin 52s linear infinite;
   }
-  .ghn-wheel-center {
-    animation: ghn-wheel-pulse 9s ease-in-out infinite;
-  }
 }
 
 @keyframes ghn-wheel-spin {
@@ -1027,19 +1024,8 @@ textarea:focus-visible {
   }
 }
 
-@keyframes ghn-wheel-pulse {
-  0%,
-  100% {
-    filter: brightness(1);
-  }
-  50% {
-    filter: brightness(1.05);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .ghn-wheel-rings,
-  .ghn-wheel-center {
+  .ghn-wheel-rings {
     animation: none !important;
   }
 }
