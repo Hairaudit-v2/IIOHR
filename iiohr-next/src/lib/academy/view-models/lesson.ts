@@ -14,6 +14,8 @@ import {
 } from "@/lib/academy/content-loader";
 import { lessonPageLayout } from "@/lib/academy/layouts/page-layouts";
 
+export type LessonPageViewModel = NonNullable<ReturnType<typeof getLessonPageViewModel>>;
+
 export function getLessonPageViewModel(programSlug: string, lessonSlug: string) {
   const stream = getProgramStream(programSlug);
   const program = getProgram(programSlug);

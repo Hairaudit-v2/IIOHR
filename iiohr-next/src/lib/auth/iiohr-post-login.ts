@@ -3,7 +3,10 @@ import type { AcademyStreamSlug } from "@/lib/academy/constants";
 import type { ApplicationRow, DbAppUserRole } from "@/lib/academy/db/types";
 import {
   normalizeIiohrPath,
+  pathMatchesAcademyPreviewHub,
+  pathMatchesConsultantCurriculumRbac,
   pathMatchesConsultantStreamRbac,
+  pathMatchesDoctorCurriculumRbac,
   pathMatchesDoctorStreamRbac,
 } from "@/lib/auth/iiohr-protected-paths";
 
@@ -16,6 +19,7 @@ export type IiohrResolvedAccessType =
   | "applicant_draft"
   | "applicant_outcome"
   | "faculty"
+  | "academy_preview"
   | "none";
 
 export type ResolveIiohrPostLoginResult = {
@@ -78,7 +82,13 @@ export async function fetchIiohrAccessSnapshot(
 
   const roles = ((rolesRes.data ?? []) as { role: string }[])
     .map((row) => row.role)
-    .filter((role): role is DbAppUserRole => role === "admin" || role === "faculty" || role === "clinic_manager");
+    .filter(
+      (role): role is DbAppUserRole =>
+        role === "admin" ||
+        role === "faculty" ||
+        role === "clinic_manager" ||
+        role === "academy_preview"
+    );
 
   const activeEnrollmentsByStream: Partial<Record<AcademyStreamSlug, true>> = {};
   if (!enrollRes.error) {
@@ -180,6 +190,14 @@ export function resolveIiohrPostLoginDestination(snapshot: IiohrAccessSnapshot):
     };
   }
 
+  if (r.has("academy_preview")) {
+    return {
+      destination: "/academy/preview",
+      resolvedAccessType: "academy_preview",
+      reasonCode: "ROLE_ACADEMY_PREVIEW",
+    };
+  }
+
   return {
     destination: "/academy/access-pending",
     resolvedAccessType: "none",
@@ -222,11 +240,24 @@ export function userCanAccessIiohrPath(path: string, snapshot: IiohrAccessSnapsh
   if (p === "/academy/faculty-review" || p.startsWith("/academy/faculty-review/")) {
     return isAdmin || isFaculty;
   }
+  if (pathMatchesAcademyPreviewHub(p)) {
+    return isAdmin || isFaculty || r.has("academy_preview");
+  }
   if (pathMatchesDoctorStreamRbac(p)) {
-    return isAdmin || isFaculty || Boolean(enroll.doctors);
+    return (
+      isAdmin ||
+      isFaculty ||
+      Boolean(enroll.doctors) ||
+      (r.has("academy_preview") && pathMatchesDoctorCurriculumRbac(p))
+    );
   }
   if (pathMatchesConsultantStreamRbac(p)) {
-    return isAdmin || isFaculty || Boolean(enroll.consultants);
+    return (
+      isAdmin ||
+      isFaculty ||
+      Boolean(enroll.consultants) ||
+      (r.has("academy_preview") && pathMatchesConsultantCurriculumRbac(p))
+    );
   }
   if (p === "/clinics/dashboard" || p.startsWith("/clinics/dashboard/")) {
     return isAdmin || isClinic;

@@ -52,7 +52,7 @@ export type DbApplicationStatus =
   | "withdrawn";
 
 /** Postgres `public.app_user_role` */
-export type DbAppUserRole = "admin" | "faculty" | "clinic_manager";
+export type DbAppUserRole = "admin" | "faculty" | "clinic_manager" | "academy_preview";
 
 export interface ProfileRow {
   id: string;

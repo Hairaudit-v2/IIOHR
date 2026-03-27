@@ -68,6 +68,7 @@ export async function getProtectedAcademyAccess(
 
   const roles = ((rolesData ?? []) as Array<{ role: DbAppUserRole }>).map((entry) => entry.role);
   const hasPrivilegedRole = roles.includes("admin") || roles.includes("faculty");
+  const hasAcademyPreviewRole = roles.includes("academy_preview");
   const hasActiveEnrollment = Boolean(enrollmentData?.length);
 
   return {
@@ -77,7 +78,7 @@ export async function getProtectedAcademyAccess(
     roles,
     hasPrivilegedRole,
     hasActiveEnrollment,
-    hasProtectedAccess: hasPrivilegedRole || hasActiveEnrollment,
+    hasProtectedAccess: hasPrivilegedRole || hasAcademyPreviewRole || hasActiveEnrollment,
     loginHref,
     dashboardHref,
     applyHref,

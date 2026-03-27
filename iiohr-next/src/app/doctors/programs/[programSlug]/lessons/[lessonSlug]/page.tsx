@@ -15,7 +15,9 @@ import { RedFlagsPanel } from "@/components/academy/shared/RedFlagsPanel";
 import { ReferenceList } from "@/components/academy/shared/ReferenceList";
 import { RichTextAcademicBody } from "@/components/academy/shared/RichTextAcademicBody";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { LessonChapterNav } from "@/components/academy/shared/LessonChapterNav";
 import { getProtectedAcademyAccess } from "@/lib/academy/access";
+import { buildDoctorLessonChapterNav } from "@/lib/academy/lesson-chapter-nav";
 import { partitionDownloadableResourcesByFile } from "@/lib/academy/public-asset-exists";
 import { getLessonPageViewModel } from "@/lib/academy/view-models/lesson";
 
@@ -62,20 +64,38 @@ export default async function DoctorLessonPage({
   }
 
   const reasoningBoxes = viewModel.lesson.clinicalReasoningBoxes ?? [];
-  const showReasoning =
-    viewModel.lesson.displayFlags.showClinicalReasoning && reasoningBoxes.length > 0;
+  const showReasoning = Boolean(
+    viewModel.lesson.displayFlags.showClinicalReasoning && reasoningBoxes.length > 0
+  );
+  const showRedFlags =
+    viewModel.lesson.displayFlags.showRedFlagsPanel && viewModel.lesson.redFlags.length > 0;
+
+  const navItems = buildDoctorLessonChapterNav({
+    showEvidence: viewModel.lesson.displayFlags.showEvidencePanel,
+    showClinicalReasoning: showReasoning,
+    hasScenarios: viewModel.caseStudies.length > 0,
+    hasAssessments: viewModel.linkedAssessments.length > 0,
+    showRedFlags,
+    hasReferencesOrResources: viewModel.references.length > 0 || viewModel.resources.length > 0,
+  });
 
   return (
     <>
-      <SectionShell>
+      <SectionShell id="lesson-hero" className="scroll-mt-32">
         <LessonHeader
+          variant="deck"
           title={viewModel.lesson.title}
           overview={viewModel.lesson.overview}
           studyTimeMinutes={viewModel.lesson.estimatedStudyMinutes}
           sequenceLabel={sequenceLabel}
+          programWorkingTitle={viewModel.program.workingTitle}
+          moduleTitle={viewModel.moduleForLesson?.title ?? null}
         />
       </SectionShell>
-      <SectionShell muted>
+
+      <LessonChapterNav items={navItems} />
+
+      <SectionShell muted id="lesson-focus" className="scroll-mt-32">
         <div className="grid gap-6 lg:grid-cols-2">
           <LearningObjectivesList objectives={viewModel.lesson.learningObjectives} title="What you will learn" />
           <LessonOverviewPanel
@@ -84,23 +104,23 @@ export default async function DoctorLessonPage({
           />
         </div>
       </SectionShell>
-      <SectionShell>
-        <AcademyPanel title="Core reading">
+      <SectionShell id="lesson-reading" className="scroll-mt-32">
+        <AcademyPanel title="Core reading" eyebrow="Teaching notes" quiet>
           <RichTextAcademicBody content={viewModel.lesson.body.content} />
         </AcademyPanel>
       </SectionShell>
       {showReasoning ? (
-        <SectionShell muted>
+        <SectionShell muted id="lesson-reasoning" className="scroll-mt-32">
           <ClinicalReasoningPanel boxes={reasoningBoxes} />
         </SectionShell>
       ) : null}
       {viewModel.lesson.displayFlags.showEvidencePanel ? (
-        <SectionShell>
+        <SectionShell id="lesson-evidence" className="scroll-mt-32">
           <LessonEvidenceTierPanel lesson={viewModel.lesson} />
         </SectionShell>
       ) : null}
       {viewModel.caseStudies.length > 0 || viewModel.linkedAssessments.length > 0 ? (
-        <SectionShell muted>
+        <SectionShell muted id="lesson-scenarios" className="scroll-mt-32">
           <div className="grid gap-8 lg:grid-cols-2">
             <LinkedCaseStudiesPanel caseStudies={viewModel.caseStudies} />
             <LinkedAssessmentsCallout
@@ -111,25 +131,27 @@ export default async function DoctorLessonPage({
           </div>
         </SectionShell>
       ) : null}
-      {viewModel.lesson.displayFlags.showRedFlagsPanel && viewModel.lesson.redFlags.length > 0 ? (
-        <SectionShell>
+      {showRedFlags ? (
+        <SectionShell id="lesson-safety" className="scroll-mt-32">
           <RedFlagsPanel redFlags={viewModel.lesson.redFlags} />
         </SectionShell>
       ) : null}
-      <SectionShell muted>
+      <SectionShell muted id="lesson-completion" className="scroll-mt-32">
         <LessonCompletionRulesPanel rules={viewModel.lesson.completionRules} />
       </SectionShell>
-      <SectionShell>
-        <div className="grid gap-6 lg:grid-cols-2">
-          <ReferenceList references={viewModel.references} />
-          <DownloadableResourceList
-            resources={resourcesAvailable}
-            pendingResources={resourcesPending}
-            title="Resources and downloads"
-          />
-        </div>
-      </SectionShell>
-      <SectionShell muted>
+      {viewModel.references.length > 0 || viewModel.resources.length > 0 ? (
+        <SectionShell id="lesson-references" className="scroll-mt-32">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <ReferenceList references={viewModel.references} />
+            <DownloadableResourceList
+              resources={resourcesAvailable}
+              pendingResources={resourcesPending}
+              title="Resources and downloads"
+            />
+          </div>
+        </SectionShell>
+      ) : null}
+      <SectionShell muted id="lesson-compliance" className="scroll-mt-32">
         <ComplianceStatementPanel notices={mergedComplianceForDetail} />
       </SectionShell>
     </>

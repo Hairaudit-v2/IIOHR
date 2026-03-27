@@ -18,9 +18,13 @@ import { RichTextAcademicBody } from "@/components/academy/shared/RichTextAcadem
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { LinkedAssessmentsCallout } from "@/components/academy/shared/LinkedAssessmentsCallout";
 import { ConsultantLessonFooterNav } from "@/components/academy/consultant/ConsultantLessonFooterNav";
+import { ConsultantPilotLessonLayout } from "@/components/academy/consultant/ConsultantPilotLessonLayout";
 import { ConsultantRoleBoundariesCallout } from "@/components/academy/consultant/ConsultantRoleBoundariesCallout";
 import { ConsultantScopeStrip } from "@/components/academy/consultant/ConsultantScopeStrip";
+import { LessonChapterNav } from "@/components/academy/shared/LessonChapterNav";
 import { getProtectedAcademyAccess } from "@/lib/academy/access";
+import { buildConsultantLessonChapterNav } from "@/lib/academy/lesson-chapter-nav";
+import { CONSULTANT_ACADEMY_PILOT_LESSON_SLUG } from "@/lib/academy/pilot-lesson";
 import { getLessonPageViewModel } from "@/lib/academy/view-models/lesson";
 import { partitionDownloadableResourcesByFile } from "@/lib/academy/public-asset-exists";
 
@@ -66,25 +70,60 @@ export default async function ConsultantLessonPage({
     }
   }
 
+  if (lessonSlug === CONSULTANT_ACADEMY_PILOT_LESSON_SLUG) {
+    return (
+      <ConsultantPilotLessonLayout
+        viewModel={viewModel}
+        programSlug={programSlug}
+        base={base}
+        sequenceLabel={sequenceLabel}
+        mergedComplianceForDetail={mergedComplianceForDetail}
+        resourcesAvailable={resourcesAvailable}
+        resourcesPending={resourcesPending}
+      />
+    );
+  }
+
+  const navItems = buildConsultantLessonChapterNav({
+    showScopeStrip: viewModel.programComplianceNotices.length > 0,
+    hasRoleBoundaries: viewModel.lesson.roleBoundaryNotes.length > 0,
+    showEvidence: viewModel.lesson.displayFlags.showEvidencePanel,
+    hasCommunicationExamples: viewModel.lesson.patientCommunicationExamples.length > 0,
+    hasScenarios: viewModel.caseStudies.length > 0 || viewModel.practicalTasks.length > 0,
+    hasAssessments: viewModel.linkedAssessments.length > 0,
+    hasReferencesOrResources: viewModel.references.length > 0 || viewModel.resources.length > 0,
+  });
+
   return (
     <>
-      <SectionShell>
-        <ConsultantScopeStrip notices={viewModel.programComplianceNotices} />
+      <SectionShell id="lesson-hero" className="scroll-mt-32">
+        {viewModel.programComplianceNotices.length > 0 ? (
+          <div id="lesson-scope" className="scroll-mt-32">
+            <ConsultantScopeStrip notices={viewModel.programComplianceNotices} />
+          </div>
+        ) : null}
         <div className="mt-8">
           <LessonHeader
+            variant="deck"
             title={viewModel.lesson.title}
             overview={viewModel.lesson.overview}
             studyTimeMinutes={viewModel.lesson.estimatedStudyMinutes}
             sequenceLabel={sequenceLabel}
+            programWorkingTitle={viewModel.program.workingTitle}
+            moduleTitle={viewModel.moduleForLesson?.title ?? null}
           />
         </div>
       </SectionShell>
 
-      <SectionShell muted>
-        <ConsultantRoleBoundariesCallout notes={viewModel.lesson.roleBoundaryNotes} />
-      </SectionShell>
+      <LessonChapterNav items={navItems} />
 
-      <SectionShell>
+      {viewModel.lesson.roleBoundaryNotes.length > 0 ? (
+        <SectionShell muted id="lesson-pathway" className="scroll-mt-32">
+          <ConsultantRoleBoundariesCallout notes={viewModel.lesson.roleBoundaryNotes} />
+        </SectionShell>
+      ) : null}
+
+      <SectionShell id="lesson-focus" className="scroll-mt-32">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">
           <LearningObjectivesList
             objectives={viewModel.lesson.learningObjectives}
@@ -97,41 +136,47 @@ export default async function ConsultantLessonPage({
         </div>
       </SectionShell>
 
-      <SectionShell muted>
-        <AcademyPanel title="Core reading">
+      <SectionShell muted id="lesson-reading" className="scroll-mt-32">
+        <AcademyPanel title="Core reading" eyebrow="Teaching notes" quiet>
           <RichTextAcademicBody content={viewModel.lesson.body.content} />
         </AcademyPanel>
       </SectionShell>
 
       {viewModel.lesson.displayFlags.showEvidencePanel ? (
-        <SectionShell>
+        <SectionShell id="lesson-evidence" className="scroll-mt-32">
           <LessonEvidenceTierPanel lesson={viewModel.lesson} />
         </SectionShell>
       ) : null}
 
-      <SectionShell muted>
-        <PatientCommunicationExamples
-          examples={viewModel.lesson.patientCommunicationExamples}
-          title="Patient communication — scope-safe phrasing"
-        />
-      </SectionShell>
+      {viewModel.lesson.patientCommunicationExamples.length > 0 ? (
+        <SectionShell muted id="lesson-communication" className="scroll-mt-32">
+          <PatientCommunicationExamples
+            examples={viewModel.lesson.patientCommunicationExamples}
+            title="Patient communication — scope-safe phrasing"
+          />
+        </SectionShell>
+      ) : null}
 
-      <SectionShell>
-        <div className="grid gap-8 lg:grid-cols-2">
-          <LinkedCaseStudiesPanel caseStudies={viewModel.caseStudies} />
-          <LinkedPracticalTasksPanel tasks={viewModel.practicalTasks} />
-        </div>
-      </SectionShell>
+      {viewModel.caseStudies.length > 0 || viewModel.practicalTasks.length > 0 ? (
+        <SectionShell id="lesson-scenarios" className="scroll-mt-32">
+          <div className="grid gap-8 lg:grid-cols-2">
+            <LinkedCaseStudiesPanel caseStudies={viewModel.caseStudies} />
+            <LinkedPracticalTasksPanel tasks={viewModel.practicalTasks} />
+          </div>
+        </SectionShell>
+      ) : null}
 
-      <SectionShell muted>
-        <LinkedAssessmentsCallout
-          assessments={viewModel.linkedAssessments}
-          basePath={base}
-          description="Complete the module assessment to demonstrate scope-safe reasoning. Pass mark and retry limits apply as shown on each assessment page."
-        />
-      </SectionShell>
+      {viewModel.linkedAssessments.length > 0 ? (
+        <SectionShell muted id="lesson-assessment" className="scroll-mt-32">
+          <LinkedAssessmentsCallout
+            assessments={viewModel.linkedAssessments}
+            basePath={base}
+            description="Complete the module assessment to demonstrate scope-safe reasoning. Pass mark and retry limits apply as shown on each assessment page."
+          />
+        </SectionShell>
+      ) : null}
 
-      <SectionShell>
+      <SectionShell id="lesson-safety" className="scroll-mt-32">
         <div
           id="safety-escalation"
           className="rounded-xl border border-[color-mix(in_srgb,var(--gold-primary)_22%,transparent)] bg-[var(--bg-secondary)] p-5 sm:p-6"
@@ -146,7 +191,7 @@ export default async function ConsultantLessonPage({
         </div>
       </SectionShell>
 
-      <SectionShell muted>
+      <SectionShell muted id="lesson-compliance" className="scroll-mt-32">
         <ComplianceStatementPanel
           notices={mergedComplianceForDetail}
           title="Compliance, scope, and how to interpret this lesson"
@@ -154,20 +199,22 @@ export default async function ConsultantLessonPage({
         />
       </SectionShell>
 
-      <SectionShell>
+      <SectionShell id="lesson-completion" className="scroll-mt-32">
         <LessonCompletionRulesPanel rules={viewModel.lesson.completionRules} />
       </SectionShell>
 
-      <SectionShell muted>
-        <div className="grid gap-8 lg:grid-cols-2">
-          <ReferenceList references={viewModel.references} />
-          <DownloadableResourceList
-            resources={resourcesAvailable}
-            pendingResources={resourcesPending}
-            title="Resources and downloads"
-          />
-        </div>
-      </SectionShell>
+      {viewModel.references.length > 0 || viewModel.resources.length > 0 ? (
+        <SectionShell muted id="lesson-references" className="scroll-mt-32">
+          <div className="grid gap-8 lg:grid-cols-2">
+            <ReferenceList references={viewModel.references} />
+            <DownloadableResourceList
+              resources={resourcesAvailable}
+              pendingResources={resourcesPending}
+              title="Resources and downloads"
+            />
+          </div>
+        </SectionShell>
+      ) : null}
 
       <SectionShell>
         {seq ? (

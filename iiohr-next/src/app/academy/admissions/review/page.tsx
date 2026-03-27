@@ -103,6 +103,12 @@ export default async function AdmissionsReviewPage({
           <code className="rounded bg-[var(--bg-soft)] px-1 font-mono text-[0.85em]">user_roles.role = admin</code>.
         </p>
         <p className="mt-3 text-readable-muted">
+          <Link href="/academy/preview" className="link-premium font-medium">
+            Curriculum preview hub
+          </Link>{" "}
+          — internal map of doctor and consultant programmes and modules.
+        </p>
+        <p className="mt-3 text-readable-muted">
           {includeTerminal ? (
             <>
               Showing outcomes archive (no drafts or withdrawn).{" "}
