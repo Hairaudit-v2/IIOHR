@@ -19,6 +19,7 @@ export interface GlobalHairIntelligenceNetworkProps {
   className?: string;
   nodeLinks?: Partial<Record<GlobalNetworkNodeId, string>>;
   size?: "hero" | "compact";
+  enableLinks?: boolean;
 }
 
 const nodes: NetworkNode[] = [
@@ -37,11 +38,13 @@ function NodeCard({
   active,
   href,
   theme,
+  enableLinks,
 }: {
   node: NetworkNode;
   active: boolean;
   href?: string;
   theme: GlobalNetworkTheme;
+  enableLinks: boolean;
 }) {
   const isDark = theme === "dark";
   const visitLabel = "Visit platform";
@@ -63,7 +66,7 @@ function NodeCard({
     </Card>
   );
 
-  if (href) {
+  if (href && enableLinks) {
     const isExternal = href.startsWith("http");
     const linkClass =
       "ghn-node-card ghn-node-card--linked group block cursor-pointer rounded-lg no-underline text-foreground hover:text-foreground focus-visible:outline focus-visible:ring-2 focus-visible:ring-offset-2 " +
@@ -111,10 +114,14 @@ export function GlobalHairIntelligenceNetwork({
   className = "",
   nodeLinks,
   size = "hero",
+  enableLinks = true,
 }: GlobalHairIntelligenceNetworkProps) {
   const maxWidth = size === "compact" ? "max-w-4xl" : "max-w-5xl";
   const resolvedTheme = theme === "auto" ? "light" : theme;
   const links = nodeLinks ?? GLOBAL_NETWORK_NODE_LINKS;
+  const activeNode = nodes.find((node) => node.id === variant);
+  const centerNode = nodes.find((node) => node.id === "iiohr");
+  const orbitNodes = nodes.filter((node) => node.id !== "iiohr");
 
   return (
     <div
@@ -124,17 +131,65 @@ export function GlobalHairIntelligenceNetwork({
       <p className="ghn-network-title text-center text-[11px] uppercase">
         {title}
       </p>
-      <div className="relative z-10 mt-6 grid min-w-0 gap-5 md:mt-8 md:grid-cols-2 md:gap-6">
-        {nodes.map((node) => (
-          <NodeCard
-            key={node.id}
-            node={node}
-            active={node.id === variant}
-            href={links[node.id]}
-            theme={resolvedTheme}
-          />
-        ))}
-      </div>
+      {size === "hero" ? (
+        <div className="ghn-wheel relative z-10 mt-6 min-h-[24rem] md:mt-8 md:min-h-[34rem]">
+          <div className="ghn-wheel-rings" aria-hidden />
+          {centerNode ? (
+            <div className="ghn-wheel-center">
+              <NodeCard
+                node={centerNode}
+                active
+                href={links[centerNode.id]}
+                theme={resolvedTheme}
+                enableLinks={enableLinks}
+              />
+            </div>
+          ) : null}
+          <div className="ghn-wheel-orbit hidden md:block">
+            {orbitNodes.map((node, index) => (
+              <div key={node.id} className={`ghn-wheel-node ghn-wheel-node-${index + 1}`}>
+                <NodeCard
+                  node={node}
+                  active={node.id === variant}
+                  href={links[node.id]}
+                  theme={resolvedTheme}
+                  enableLinks={enableLinks}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="mt-5 grid min-w-0 gap-4 md:hidden">
+            {orbitNodes.map((node) => (
+              <NodeCard
+                key={node.id}
+                node={node}
+                active={node.id === variant}
+                href={links[node.id]}
+                theme={resolvedTheme}
+                enableLinks={enableLinks}
+              />
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="relative z-10 mt-6 grid min-w-0 gap-5 md:mt-8 md:grid-cols-2 md:gap-6">
+          {nodes.map((node) => (
+            <NodeCard
+              key={node.id}
+              node={node}
+              active={node.id === variant}
+              href={links[node.id]}
+              theme={resolvedTheme}
+              enableLinks={enableLinks}
+            />
+          ))}
+        </div>
+      )}
+      {activeNode ? (
+        <p className="mx-auto mt-5 max-w-2xl text-center text-xs text-muted-foreground md:mt-6">
+          Active standard anchor: <span className="text-foreground">{activeNode.title}</span>
+        </p>
+      ) : null}
     </div>
   );
 }

@@ -40,6 +40,10 @@ export interface GlobalHairIntelligenceSectionProps {
   diagramSlot?: ReactNode;
   /** Optional lab/DNA background visual when sectionTone is dark (homepage). */
   labImage?: { src: string; alt: string };
+  /** Disable external links where ecosystem should be informational only. */
+  enableOutboundLinks?: boolean;
+  /** Controls supporting content beneath the visual. */
+  supportingLayout?: "cards" | "roles";
 }
 
 /**
@@ -60,6 +64,8 @@ export function GlobalHairIntelligenceSection({
   nodeLinks = GLOBAL_NETWORK_NODE_LINKS,
   diagramSlot,
   labImage,
+  enableOutboundLinks = true,
+  supportingLayout = "cards",
 }: GlobalHairIntelligenceSectionProps) {
   const isDark = sectionTone === "dark";
   const sectionClass = isDark
@@ -128,6 +134,7 @@ export function GlobalHairIntelligenceSection({
                 size={size}
                 title="Global Hair Intelligence Network"
                 nodeLinks={nodeLinks}
+                enableLinks={enableOutboundLinks}
               />
             </div>
           )}
@@ -137,55 +144,93 @@ export function GlobalHairIntelligenceSection({
           className={`mx-auto w-full min-w-0 ${isHeroCenterpiece ? "mt-20 md:mt-24 lg:mt-28" : "mt-14 md:mt-16 lg:mt-20"}`}
           aria-label="Ecosystem platforms"
         >
-          <p className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground md:mb-8">
-            Explore each platform
-          </p>
-          <div className={`grid gap-4 sm:grid-cols-2 lg:grid-cols-4 ${isDark ? "ghn-platform-cards" : ""}`}>
-            {SUPPORTING_PLATFORM_ORDER.map((id) => {
-              const platform = ECOSYSTEM_PLATFORMS.find((p) => p.id === id);
-              if (!platform) return null;
-              const displayName = platform.id === "iiohr" ? "IIOHR" : platform.name;
-              const ctaLabel = "Visit platform";
-              const cardContent = (
-                <>
-                  <h3 className="text-heading text-lg font-semibold tracking-tight">
-                    {displayName}
+          {supportingLayout === "roles" ? (
+            <>
+              <p className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground md:mb-8">
+                Ecosystem roles
+              </p>
+              <div className={`grid gap-4 sm:grid-cols-2 ${isDark ? "ghn-platform-cards" : ""}`}>
+                <Card className="h-full min-w-0" dark={isDark}>
+                  <h3 className="text-heading text-base font-semibold tracking-tight">IIOHR</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    Training, progression, and certification standards.
+                  </p>
+                </Card>
+                <Card className="h-full min-w-0" dark={isDark}>
+                  <h3 className="text-heading text-base font-semibold tracking-tight">HairAudit</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    Independent review, transparency, and benchmarking.
+                  </p>
+                </Card>
+                <Card className="h-full min-w-0" dark={isDark}>
+                  <h3 className="text-heading text-base font-semibold tracking-tight">HLI</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    Biological and longitudinal treatment context.
+                  </p>
+                </Card>
+                <Card className="h-full min-w-0" dark={isDark}>
+                  <h3 className="text-heading text-base font-semibold tracking-tight">
+                    Follicle Intelligence
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {platform.blurb}
+                    Analysis and intelligence layer across outcomes.
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-accent">
-                    {ctaLabel}
-                    <span aria-hidden>→</span>
-                  </span>
-                </>
-              );
-              const cardClass =
-                "block h-full cursor-pointer rounded-lg no-underline text-foreground hover:text-foreground focus-visible:outline focus-visible:ring-2 focus-visible:ring-offset-2 " +
-                (isDark
-                  ? "focus-visible:ring-intel/50 focus-visible:ring-offset-section-charcoal"
-                  : "focus-visible:ring-intel/45 focus-visible:ring-offset-background");
-              return (
-                <Card key={platform.id} interactive className="h-full min-w-0">
-                  {platform.isInternal ? (
-                    <Link href="/" className={cardClass} aria-label={`${displayName}. ${ctaLabel}.`}>
-                      {cardContent}
-                    </Link>
-                  ) : (
-                    <a
-                      href={platform.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={cardClass}
-                      aria-label={`${displayName}. ${ctaLabel}.`}
-                    >
-                      {cardContent}
-                    </a>
-                  )}
                 </Card>
-              );
-            })}
-          </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground md:mb-8">
+                Explore each platform
+              </p>
+              <div className={`grid gap-4 sm:grid-cols-2 lg:grid-cols-4 ${isDark ? "ghn-platform-cards" : ""}`}>
+                {SUPPORTING_PLATFORM_ORDER.map((id) => {
+                  const platform = ECOSYSTEM_PLATFORMS.find((p) => p.id === id);
+                  if (!platform) return null;
+                  const displayName = platform.id === "iiohr" ? "IIOHR" : platform.name;
+                  const ctaLabel = "Visit platform";
+                  const cardContent = (
+                    <>
+                      <h3 className="text-heading text-lg font-semibold tracking-tight">
+                        {displayName}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                        {platform.blurb}
+                      </p>
+                      <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.04em] text-accent">
+                        {ctaLabel}
+                        <span aria-hidden>→</span>
+                      </span>
+                    </>
+                  );
+                  const cardClass =
+                    "block h-full cursor-pointer rounded-lg no-underline text-foreground hover:text-foreground focus-visible:outline focus-visible:ring-2 focus-visible:ring-offset-2 " +
+                    (isDark
+                      ? "focus-visible:ring-intel/50 focus-visible:ring-offset-section-charcoal"
+                      : "focus-visible:ring-intel/45 focus-visible:ring-offset-background");
+                  return (
+                    <Card key={platform.id} interactive className="h-full min-w-0">
+                      {platform.isInternal ? (
+                        <Link href="/" className={cardClass} aria-label={`${displayName}. ${ctaLabel}.`}>
+                          {cardContent}
+                        </Link>
+                      ) : (
+                        <a
+                          href={platform.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cardClass}
+                          aria-label={`${displayName}. ${ctaLabel}.`}
+                        >
+                          {cardContent}
+                        </a>
+                      )}
+                    </Card>
+                  );
+                })}
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

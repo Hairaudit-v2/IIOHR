@@ -47,11 +47,13 @@ export default function HomePage() {
       <GlobalHairIntelligenceSection
         variant="iiohr"
         id="ecosystem-platforms"
-        heading="A connected system behind the training"
-        description="The academy sits within a wider system for audit and clinical intelligence, extending standards and feedback beyond training."
+        heading="Ecosystem intelligence behind IIOHR standards"
+        description="IIOHR remains the training and certification center, supported by a wider ecosystem for review, biological context, and intelligence."
         size="hero"
         sectionTone="dark"
         labImage={{ src: HOME_IMAGES.ecosystem.dnaLab, alt: ecosystemLabImage.alt }}
+        enableOutboundLinks={false}
+        supportingLayout="roles"
       />
       <CTASection />
     </>

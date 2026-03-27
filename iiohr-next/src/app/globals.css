@@ -946,6 +946,104 @@ textarea:focus-visible {
   font-weight: 600;
 }
 
+/* Ecosystem wheel: restrained "intelligence" visual language */
+.ghn-wheel {
+  position: relative;
+}
+.ghn-wheel-rings {
+  position: absolute;
+  inset: 10% 12%;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--bg-secondary) 14%, transparent);
+  background:
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--accent-blue) 8%, transparent), transparent 62%),
+    radial-gradient(circle at 50% 50%, transparent 48%, color-mix(in srgb, var(--bg-secondary) 8%, transparent) 49%, transparent 50%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+.ghn-wheel-rings::before,
+.ghn-wheel-rings::after {
+  content: "";
+  position: absolute;
+  inset: 9%;
+  border-radius: inherit;
+  border: 1px dashed color-mix(in srgb, var(--bg-secondary) 12%, transparent);
+  opacity: 0.55;
+}
+.ghn-wheel-rings::after {
+  inset: 24%;
+  opacity: 0.5;
+}
+.ghn-wheel-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(24rem, calc(100% - 2.5rem));
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.ghn-wheel-center .ghn-node-card .card {
+  border-color: color-mix(in srgb, var(--gold-primary) 34%, transparent) !important;
+}
+.ghn-wheel-orbit {
+  position: absolute;
+  inset: 0;
+}
+.ghn-wheel-node {
+  position: absolute;
+  width: 14.5rem;
+}
+.ghn-wheel-node-1 {
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+}
+.ghn-wheel-node-2 {
+  left: 4%;
+  top: 56%;
+  transform: translateY(-50%);
+}
+.ghn-wheel-node-3 {
+  right: 4%;
+  top: 56%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .ghn-wheel-rings {
+    animation: ghn-wheel-spin 52s linear infinite;
+  }
+  .ghn-wheel-center {
+    animation: ghn-wheel-pulse 9s ease-in-out infinite;
+  }
+}
+
+@keyframes ghn-wheel-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ghn-wheel-pulse {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ghn-wheel-rings,
+  .ghn-wheel-center {
+    animation: none !important;
+  }
+}
+
 /* Image treatment — premium editorial, restrained frame (uses design-system glow) */
 .img-panel {
   border-radius: 16px;
