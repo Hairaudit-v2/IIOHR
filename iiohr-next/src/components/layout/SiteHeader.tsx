@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { primaryNavigation } from "@/lib/navigation";
+import { applyTrainingHref, primaryNavigation } from "@/lib/navigation";
 import { Button } from "@/components/ui/Button";
 import { MobileNav } from "@/components/layout/MobileNav";
 
@@ -57,7 +57,7 @@ export function SiteHeader() {
               </Link>
             )
           ))}
-          <Button href="/apply" variant="dark" className="ml-1.5">
+          <Button href={applyTrainingHref} variant="dark" className="ml-1.5">
             Apply for Training
           </Button>
         </nav>

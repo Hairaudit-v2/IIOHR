@@ -6,6 +6,7 @@ import type { ApplicationRow } from "@/lib/academy/db/types";
 import type { AcademyStreamSlug } from "@/lib/academy/constants";
 import { pickPrimaryApplicationForStatusDisplay } from "@/lib/auth/iiohr-post-login";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { applyTrainingHref } from "@/lib/navigation";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -54,7 +55,7 @@ export default async function AcademyApplicationStatusPage() {
             Academy
           </Link>
           {" · "}
-          <Link href="/apply" className="link-premium font-medium">
+          <Link href={applyTrainingHref} className="link-premium font-medium">
             Apply
           </Link>
         </p>

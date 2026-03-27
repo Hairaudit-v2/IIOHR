@@ -3,6 +3,7 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site";
+import { applyTrainingHref } from "@/lib/navigation";
 
 const mailtoClass =
   "inline-flex min-h-10 items-center justify-center rounded-md border-2 border-foreground/16 bg-surface px-5 py-2.5 text-sm font-semibold tracking-[0.02em] text-foreground transition-colors hover:border-accent/40 hover:bg-surface-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/45 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
@@ -39,7 +40,7 @@ export function ForClinicsCtaSection() {
           Continue Clinic Enquiry
         </Button>
         <Button
-          href="/apply"
+          href={applyTrainingHref}
           variant="ghost"
           analyticsEvent="funnel_cta_clicked"
           analyticsPage="/for-clinics"

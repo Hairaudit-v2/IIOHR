@@ -9,6 +9,7 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getHeroImage } from "@/lib/heroImages";
 import { HOME_IMAGES, dnaBridgeImage, ecosystemLabImage } from "@/lib/homeImages";
+import { applyTrainingHref } from "@/lib/navigation";
 
 const canonical = "https://iiohr.com/academy";
 
@@ -100,7 +101,7 @@ const audiencePathways = [
       { href: "/training-pathways", label: "Training Pathways" },
       { href: "/practical-fue", label: "Practical FUE" },
       { href: "/hair-loss-science", label: "Hair Loss Science" },
-      { href: "/apply", label: "Apply" },
+      { href: applyTrainingHref, label: "Apply" },
     ],
   },
   {
@@ -110,7 +111,7 @@ const audiencePathways = [
     links: [
       { href: "/for-clinics", label: "For Clinics" },
       { href: "/training-pathways", label: "Training Pathways" },
-      { href: "/apply", label: "Enquire / Apply" },
+      { href: applyTrainingHref, label: "Enquire / Apply" },
     ],
   },
 ] as const;
@@ -131,7 +132,7 @@ const doctorJourneySteps = [
   {
     step: "3",
     title: "Submit an application",
-    href: "/apply",
+    href: applyTrainingHref,
     label: "Apply now",
   },
 ] as const;
@@ -143,7 +144,7 @@ export default function AcademyPage() {
         eyebrow="IIOHR Academy"
         title="Structured, standards-led surgical education for doctors and clinics"
         description="Progression-based training in practical FUE, clinical science, and mentored development through the IIOHR partner network."
-        primaryCta={{ href: "/apply", label: "Apply or Enquire" }}
+        primaryCta={{ href: applyTrainingHref, label: "Apply or Enquire" }}
         secondaryCta={{ href: "/training-pathways", label: "Explore Pathways" }}
         tertiaryCta={{ href: "/admissions", label: "View Admissions" }}
         image={getHeroImage("academy")}
@@ -338,7 +339,7 @@ export default function AcademyPage() {
         />
         <SectionCTA
           variant="light"
-          primary={{ href: "/apply", label: "Apply" }}
+          primary={{ href: applyTrainingHref, label: "Apply" }}
           secondary={[
             { href: "/for-clinics", label: "Enquire" },
             { href: "/training-pathways", label: "Explore Pathways" },

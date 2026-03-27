@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getHeroImage } from "@/lib/heroImages";
+import { applyTrainingHref } from "@/lib/navigation";
 
 const canonical = "https://iiohr.com/faculty-and-mentorship";
 
@@ -168,7 +169,7 @@ export default function FacultyAndMentorshipPage() {
             { href: "/admissions", label: "Admissions" },
             { href: "/training-pathways", label: "Training Pathways" },
           ]}
-          tertiary={[{ href: "/apply", label: "Apply" }]}
+          tertiary={[{ href: applyTrainingHref, label: "Apply" }]}
           className="mt-16"
         />
       </SectionShell>

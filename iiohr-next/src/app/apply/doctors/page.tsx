@@ -15,6 +15,7 @@ import {
 import { loadApplicantAdmissionsTimeline } from "@/lib/academy/admissions/applicant-timeline";
 import { mergeApplyInitialAnswers } from "@/lib/academy/admissions/merge-apply-initial-answers";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { applyTrainingHref } from "@/lib/navigation";
 import { saveStreamApplicationDraftAction, submitStreamApplicationAction } from "../stream-application-actions";
 
 export const metadata: Metadata = {
@@ -74,7 +75,7 @@ export default async function ApplyDoctorsPage({
       <div className="mx-auto max-w-2xl px-6 py-12">
         <ContinuationAnalyticsBeacon role="doctor" route="/apply/doctors" signedIn={Boolean(user)} />
         <p className="text-readable-muted">
-          <Link href="/apply" className="link-premium font-medium">
+          <Link href={applyTrainingHref} className="link-premium font-medium">
             Apply
           </Link>
           {" · "}

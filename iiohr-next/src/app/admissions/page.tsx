@@ -5,6 +5,7 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { applyTrainingHref } from "@/lib/navigation";
 
 const canonical = "https://iiohr.com/admissions";
 
@@ -120,7 +121,7 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Admissions helps you understand likely fit before you apply"
         description="Use Admissions to understand whether the pathway is likely to suit your role, how matching works at a high level, and what happens after enquiry or application."
-        primaryCta={{ href: "/apply", label: "Apply to IIOHR" }}
+        primaryCta={{ href: applyTrainingHref, label: "Apply to IIOHR" }}
         secondaryCta={{ href: "/login?redirectTo=%2Fapply", label: "Sign In / Access Account" }}
         tertiaryCta={{ href: "/training-pathways", label: "View Training Pathways" }}
         analyticsPage="/admissions"
@@ -198,7 +199,7 @@ export default function AdmissionsPage() {
         />
         <SectionCTA
           variant="light"
-          primary={{ href: "/apply", label: "Apply to IIOHR" }}
+          primary={{ href: applyTrainingHref, label: "Apply to IIOHR" }}
           secondary={[
             { href: "/doctors", label: "Explore Doctors" },
             { href: "/consultants", label: "Explore Consultants / Nurses" },
@@ -217,13 +218,13 @@ export default function AdmissionsPage() {
             </p>
             <p className="mt-5 text-sm">
               <Link
-                href="/apply"
+                href={applyTrainingHref}
                 className="link-premium font-medium"
                 data-analytics-event="funnel_cta_clicked"
                 data-analytics-page="/admissions"
                 data-analytics-cta="Apply to IIOHR"
                 data-analytics-section="next_step_cards"
-                data-analytics-destination="/apply"
+                data-analytics-destination={applyTrainingHref}
               >
                 Apply to IIOHR
               </Link>

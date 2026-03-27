@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { useState } from "react";
-import { primaryNavigation } from "@/lib/navigation";
+import { applyTrainingHref, primaryNavigation } from "@/lib/navigation";
 import { siteConfig } from "@/lib/site";
 
 export function MobileNav() {
@@ -97,7 +97,7 @@ export function MobileNav() {
             </div>
             <div className="pt-4">
               <Link
-                href="/apply"
+                href={applyTrainingHref}
                 onClick={() => setOpen(false)}
                 className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[6px] border border-gold bg-gold px-3 py-2.5 text-sm font-semibold text-slate-950"
               >

@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionCTA } from "@/components/ui/SectionCTA";
+import { applyTrainingHref } from "@/lib/navigation";
 
 const audienceItems = [
   {
@@ -51,7 +52,7 @@ export function AudienceSection() {
           variant="light"
           primary={{ href: "/admissions", label: "Start Admissions Review" }}
           secondary={[
-            { href: "/apply", label: "Apply to IIOHR" },
+            { href: applyTrainingHref, label: "Apply to IIOHR" },
             { href: "/training-pathways", label: "Explore Pathways" },
             { href: "/for-clinics", label: "Explore For Clinics" },
           ]}

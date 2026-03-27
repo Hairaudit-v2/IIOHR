@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  applyTrainingHref,
   ecosystemNavigation,
   footerNavigation,
   legalNavigation,
@@ -41,7 +42,7 @@ export function SiteFooter() {
               restoration.
             </p>
             <div className="mt-6">
-              <LinkArrow href="/apply" className="text-slate-100 hover:text-white">
+              <LinkArrow href={applyTrainingHref} className="text-slate-100 hover:text-white">
                 Apply for Training
               </LinkArrow>
             </div>

@@ -1,6 +1,7 @@
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
+import { applyTrainingHref } from "@/lib/navigation";
 
 export function AboutCtaSection() {
   return (
@@ -14,7 +15,7 @@ export function AboutCtaSection() {
         <Button href="/admissions" variant="primary">
           Start Admissions Review
         </Button>
-        <Button href="/apply" variant="secondary">
+        <Button href={applyTrainingHref} variant="secondary">
           Apply to IIOHR
         </Button>
         <Button href="/for-clinics" variant="ghost">

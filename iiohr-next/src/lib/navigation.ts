@@ -4,6 +4,9 @@ export interface NavigationItem {
   external?: boolean;
 }
 
+/** Deep link to the public pathway-fit review form on `/apply` (matches `#application-form`). */
+export const applyTrainingHref = "/apply#application-form";
+
 export const primaryNavigation: NavigationItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
@@ -18,7 +21,7 @@ export const primaryNavigation: NavigationItem[] = [
 ];
 
 export const utilityNavigation: NavigationItem[] = [
-  { href: "/apply", label: "Apply for Training" },
+  { href: applyTrainingHref, label: "Apply for Training" },
 ];
 
 export const footerNavigation: NavigationItem[] = [
@@ -32,7 +35,7 @@ export const footerNavigation: NavigationItem[] = [
   { href: "/practical-fue", label: "Practical FUE" },
   { href: "/hair-loss-science", label: "Hair Loss Science" },
   { href: "/for-clinics", label: "For Clinics" },
-  { href: "/apply", label: "Apply for Training" },
+  { href: applyTrainingHref, label: "Apply for Training" },
 ];
 
 export const ecosystemNavigation: NavigationItem[] = [

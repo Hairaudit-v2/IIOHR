@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ContinuationAnalyticsBeacon } from "@/components/analytics/ContinuationAnalyticsBeacon";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { siteConfig } from "@/lib/site";
+import { applyTrainingHref } from "@/lib/navigation";
 
 export const metadata: Metadata = {
   title: "Clinic / group enquiry continuation",
@@ -29,7 +30,7 @@ export default async function ApplyClinicsPage() {
       <div className="mx-auto max-w-2xl px-6 py-12">
         <ContinuationAnalyticsBeacon role="clinic_group" route="/apply/clinics" signedIn={Boolean(user)} />
         <p className="text-readable-muted">
-          <Link href="/apply" className="link-premium font-medium">
+          <Link href={applyTrainingHref} className="link-premium font-medium">
             Apply
           </Link>
           {" · "}

@@ -117,7 +117,10 @@ export function ApplicationFormSection() {
 
   return (
     <SectionShell>
-      <div id="application-form" className="grid min-w-0 gap-12 lg:grid-cols-[1.72fr_1fr] lg:gap-12">
+      <div
+        id="application-form"
+        className="scroll-mt-28 grid min-w-0 gap-12 lg:grid-cols-[1.72fr_1fr] lg:gap-12"
+      >
         <div className="min-w-0">
           <SectionHeading
             eyebrow="Application or Enquiry"

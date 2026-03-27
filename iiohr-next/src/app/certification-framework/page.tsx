@@ -5,6 +5,7 @@ import { AcademyFrameworkSection } from "@/components/sections/shared/AcademyFra
 import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { applyTrainingHref } from "@/lib/navigation";
 
 const canonical = "https://iiohr.com/certification-framework";
 
@@ -157,7 +158,7 @@ export default function CertificationFrameworkPage() {
           variant="light"
           primary={{ href: "/admissions", label: "Start Admissions Review" }}
           secondary={[
-            { href: "/apply", label: "Apply to IIOHR" },
+            { href: applyTrainingHref, label: "Apply to IIOHR" },
             { href: "/doctors", label: "Explore Doctors" },
           ]}
           tertiary={[

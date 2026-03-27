@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionCTA } from "@/components/ui/SectionCTA";
+import { applyTrainingHref } from "@/lib/navigation";
 
 const pillars = [
   "Supervised practical FUE with live-patient progression",
@@ -41,7 +42,7 @@ export function DifferenceAndCurriculumSection() {
           secondary={[{ href: "/practical-fue", label: "View Practical FUE Overview" }]}
           tertiary={[
             { href: "/admissions", label: "Start Admissions Review" },
-            { href: "/apply", label: "Apply to IIOHR" },
+            { href: applyTrainingHref, label: "Apply to IIOHR" },
           ]}
         />
       </div>

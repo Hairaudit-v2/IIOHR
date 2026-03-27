@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { applyTrainingHref } from "@/lib/navigation";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default async function AcademyAccessPendingPage() {
         </p>
         <ul className="mt-6 list-disc space-y-2 pl-5 text-readable-muted">
           <li>
-            <Link href="/apply" className="link-premium font-medium">
+            <Link href={applyTrainingHref} className="link-premium font-medium">
               Start or continue an application
             </Link>
           </li>
