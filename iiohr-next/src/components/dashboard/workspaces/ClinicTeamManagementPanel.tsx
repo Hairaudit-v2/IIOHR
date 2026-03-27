@@ -24,8 +24,9 @@ export function ClinicTeamManagementPanel({ vm }: { vm: ClinicDashboardVm }) {
     <Card quiet>
       <h3 className="text-base font-semibold text-heading">Team & pathway management</h3>
       <p className="mt-1 text-sm text-readable-muted">
-        Invite colleagues by email, record intended doctor or consultant pathways, and update placement status. Seat limits
-        and billing are not enforced in this pass — future Stripe linkage can use the same roster.
+        Invite colleagues by email, record intended doctor or consultant pathways, and update placement status. This is
+        team placement — not program enrollment. Seat entitlement is summarized in Billing / seats; new invites are
+        logged against limits (soft warnings only until Stripe).
       </p>
 
       <div className="mt-8 space-y-8 border-t border-border/60 pt-8">

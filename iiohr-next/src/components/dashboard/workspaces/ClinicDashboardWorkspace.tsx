@@ -47,7 +47,10 @@ export function ClinicDashboardWorkspace({ vm }: { vm: ClinicDashboardVm }) {
         <Card quiet className="md:col-span-2">
           <h3 className="text-base font-semibold text-heading">Clinic overview</h3>
           <p className="mt-2 text-sm font-medium text-foreground">{vm.overview.clinicName}</p>
-          <p className="mt-2 text-sm text-readable-muted">{vm.overview.seatSummary}</p>
+          <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-readable-muted">Team & placement</p>
+          <p className="mt-1 text-sm text-readable-muted">{vm.overview.placementSummary}</p>
+          <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-readable-muted">Billing & seat entitlement</p>
+          <p className="mt-1 text-sm text-readable-muted">{vm.overview.billingSummary}</p>
           <p className="mt-3 text-sm text-readable-muted">{vm.overview.pathwayMixSummary}</p>
           <p className="mt-5 text-sm">
             <Link href="/for-clinics" className="link-premium font-medium">
@@ -62,7 +65,9 @@ export function ClinicDashboardWorkspace({ vm }: { vm: ClinicDashboardVm }) {
         <Card quiet>
           <h3 className="text-base font-semibold text-heading">Team members</h3>
           <p className="mt-2 text-3xl font-semibold tabular-nums text-foreground">{vm.teamMembers.length}</p>
-          <p className="mt-1 text-xs text-readable-muted">Learners with enrollments under your clinic scope.</p>
+          <p className="mt-1 text-xs text-readable-muted">
+            Learners with program enrollments under this clinic. Seat totals use billing rules (see Billing / seats).
+          </p>
           <ul className="mt-4 space-y-1.5 border-t border-border/60 pt-4 text-sm text-readable-muted">
             {vm.teamMembers.slice(0, 5).map((m) => (
               <li key={m.id}>
@@ -131,7 +136,7 @@ export function ClinicDashboardWorkspace({ vm }: { vm: ClinicDashboardVm }) {
         </Card>
       </div>
 
-      <BillingAccessCard />
+      <BillingAccessCard variant="clinic" entitlement={vm.seatEntitlement} />
     </div>
   );
 }

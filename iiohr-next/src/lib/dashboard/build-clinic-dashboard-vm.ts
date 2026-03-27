@@ -1,8 +1,20 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { getProgram } from "@/lib/academy/content-loader";
-import type { ClinicDashboardVm } from "@/lib/dashboard/types";
+import type { ClinicBillingEntitlementCounts } from "@/lib/clinic/fetch-clinic-billing-entitlement";
+import type { ClinicDashboardVm, ClinicSeatEntitlementVm } from "@/lib/dashboard/types";
 import { fetchClinicDashboardSnapshot } from "@/lib/dashboard/readers/clinic-dashboard-snapshot";
 import { siteConfig } from "@/lib/site";
+
+function emptyEntitlementCounts(): ClinicBillingEntitlementCounts {
+  return {
+    pendingInvites: 0,
+    linkedPlacementNoEnrollment: 0,
+    enrolledUsersActive: 0,
+    enrolledUsersPausedOnly: 0,
+    enrolledUsersCompletedOnly: 0,
+    enrolledUsersWithdrawnOnly: 0,
+  };
+}
 
 function defaultTrainingByRole(): ClinicDashboardVm["trainingByRole"] {
   return [
@@ -109,32 +121,72 @@ export async function buildClinicDashboardVm(
         ]
       : defaultTrainingByRole();
 
-  const seatSummaryParts: string[] = [];
+  const placementParts: string[] = [];
   if (snap.clinicId) {
-    seatSummaryParts.push("Clinic scope resolved for this account.");
+    placementParts.push("Clinic scope resolved for this account.");
     if (snap.isClinicManager) {
-      seatSummaryParts.push(
+      placementParts.push(
         "Pending email invites are linked to learner accounts automatically when they sign in with the same email (placement only — enrollment is provisioned separately)."
       );
     }
     if (snap.teamMembers.length > 0) {
-      seatSummaryParts.push(`${snap.teamMembers.length} learner enrollment(s) in this clinic.`);
+      placementParts.push(`${snap.teamMembers.length} learner enrollment row(s) in this clinic (program enrollments).`);
     } else if (snap.isClinicManager) {
-      seatSummaryParts.push("No learner enrollments under this clinic_id yet.");
+      placementParts.push("No learner enrollments under this clinic_id yet.");
     }
     if (hasPendingInvites) {
-      seatSummaryParts.push(`${snap.pendingInvites.length} pending email invite(s).`);
+      placementParts.push(`${snap.pendingInvites.length} pending email invite(s) for pathway placement.`);
     }
     if (snap.teamSnapshotError) {
-      seatSummaryParts.push(`Team snapshot: ${snap.teamSnapshotError}`);
+      placementParts.push(`Team snapshot: ${snap.teamSnapshotError}`);
     }
   } else {
-    seatSummaryParts.push("No clinic scope on this account — map a clinic in admin or enrol with a clinic_id.");
+    placementParts.push("No clinic scope on this account — map a clinic in admin or enrol with a clinic_id.");
+  }
+
+  let billingSummary: string;
+  if (!snap.isClinicManager || !snap.clinicId) {
+    billingSummary =
+      "Seat entitlement and billing counters are shown to clinic managers. They are separate from team placement and program enrollment.";
+  } else if (snap.billingEntitlementError && !snap.billingEntitlement) {
+    billingSummary = `Could not load seat entitlement: ${snap.billingEntitlementError}.`;
+  } else if (snap.billingEntitlement) {
+    const be = snap.billingEntitlement;
+    const c = be.counts;
+    const capLine =
+      be.seatLimit == null
+        ? "No seat cap configured yet (set in clinic_billing_entitlements or future Stripe sync)."
+        : `Configured cap ${be.seatLimit}; ${be.seatsAvailable ?? 0} seat(s) available.`;
+    const overLine = be.overLimit ? " Currently over the configured cap." : "";
+    billingSummary = `Billable seats in use: ${be.seatsUsed}. ${capLine}${overLine} Breakdown — pending invites: ${c.pendingInvites}; linked placement without enrollment: ${c.linkedPlacementNoEnrollment}; learners with active enrollment: ${c.enrolledUsersActive}; paused-only: ${c.enrolledUsersPausedOnly}; completed-only (not counted toward cap): ${c.enrolledUsersCompletedOnly}; withdrawn-only: ${c.enrolledUsersWithdrawnOnly}. Policy: completed-only program enrollments do not consume paid seats.`;
+  } else {
+    billingSummary = "Seat snapshot unavailable.";
+  }
+
+  let seatEntitlement: ClinicSeatEntitlementVm | undefined;
+  if (snap.isClinicManager && snap.clinicId) {
+    if (snap.billingEntitlement) {
+      seatEntitlement = {
+        ...snap.billingEntitlement,
+        loadError: snap.billingEntitlementError,
+      };
+    } else if (snap.billingEntitlementError) {
+      seatEntitlement = {
+        seatLimit: null,
+        seatsUsed: 0,
+        seatsAvailable: null,
+        overLimit: false,
+        completedEnrollmentConsumesSeat: false,
+        counts: emptyEntitlementCounts(),
+        loadError: snap.billingEntitlementError,
+      };
+    }
   }
 
   const overview: ClinicDashboardVm["overview"] = {
     clinicName: input.displayName ? `${input.displayName}'s organisation` : "Your clinic",
-    seatSummary: seatSummaryParts.join(" "),
+    placementSummary: placementParts.join(" "),
+    billingSummary,
     pathwayMixSummary:
       snap.teamMembers.length > 0 || hasPendingInvites
         ? `Streams: ${[hasDoc && "doctors", hasCon && "consultants"].filter(Boolean).join(", ") || "—"}.`
@@ -190,6 +242,20 @@ export async function buildClinicDashboardVm(
         detail: "Placements stored in clinic_team_members; invites pending until learners join",
       },
       {
+        label: "Seat entitlement",
+        state:
+          snap.billingEntitlement && !snap.billingEntitlementError
+            ? "ready"
+            : snap.isClinicManager && snap.clinicId
+              ? "in_progress"
+              : "not_started",
+        detail: snap.billingEntitlementError
+          ? snap.billingEntitlementError
+          : snap.billingEntitlement
+            ? `${snap.billingEntitlement.seatsUsed} seat(s) in use${snap.billingEntitlement.seatLimit != null ? ` / ${snap.billingEntitlement.seatLimit} cap` : " (no cap)"}`
+            : "—",
+      },
+      {
         label: "Quality loop",
         state: "not_started",
         detail: "HairAudit / review cadence",
@@ -233,6 +299,7 @@ export async function buildClinicDashboardVm(
     implementation,
     setupIncomplete,
     management,
+    seatEntitlement,
     teamProgressCaption,
     emptyState: setupIncomplete
       ? {

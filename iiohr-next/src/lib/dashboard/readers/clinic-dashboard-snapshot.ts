@@ -1,4 +1,8 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import {
+  fetchClinicBillingEntitlementSnapshot,
+  type ClinicBillingEntitlementSnapshot,
+} from "@/lib/clinic/fetch-clinic-billing-entitlement";
 
 /** One enrollment row from `get_clinic_team_snapshot` (merged with `clinic_team_members` when present). */
 export type ClinicTeamMemberSnapshot = {
@@ -34,6 +38,8 @@ export type ClinicDashboardSnapshot = {
   progressByEnrollmentId: Record<string, number>;
   teamSnapshotError?: string;
   teamCertificateTotal: number;
+  billingEntitlement: ClinicBillingEntitlementSnapshot | null;
+  billingEntitlementError?: string;
 };
 
 const EMPTY: ClinicDashboardSnapshot = {
@@ -44,6 +50,7 @@ const EMPTY: ClinicDashboardSnapshot = {
   pendingInvites: [],
   progressByEnrollmentId: {},
   teamCertificateTotal: 0,
+  billingEntitlement: null,
 };
 
 function parseTeamSnapshotPayload(data: unknown): {
@@ -117,6 +124,8 @@ export async function fetchClinicDashboardSnapshot(
     let pendingInvites: ClinicPendingInviteSnapshot[] = [];
     let teamSnapshotError: string | undefined;
     let teamCertificateTotal = 0;
+    let billingEntitlement: ClinicBillingEntitlementSnapshot | null = null;
+    let billingEntitlementError: string | undefined;
 
     if (clinicId && isClinicManager) {
       const snap = await supabase.rpc("get_clinic_team_snapshot", { p_clinic_id: clinicId });
@@ -134,6 +143,10 @@ export async function fetchClinicDashboardSnapshot(
         }
         teamCertificateTotal = teamMembers.reduce((s, r) => s + (r.certificate_count ?? 0), 0);
       }
+
+      const be = await fetchClinicBillingEntitlementSnapshot(supabase, clinicId);
+      billingEntitlement = be.snapshot;
+      billingEntitlementError = be.error;
     }
 
     return {
@@ -145,6 +158,8 @@ export async function fetchClinicDashboardSnapshot(
       progressByEnrollmentId,
       teamSnapshotError,
       teamCertificateTotal,
+      billingEntitlement,
+      billingEntitlementError,
     };
   } catch {
     return { ...EMPTY };

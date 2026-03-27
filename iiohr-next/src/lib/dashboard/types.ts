@@ -1,5 +1,7 @@
 /** View-models for protected dashboards — UI-facing shapes only; not tied to raw DB rows. */
 
+import type { ClinicBillingEntitlementCounts } from "@/lib/clinic/fetch-clinic-billing-entitlement";
+
 export type DashboardRoleAccent = "doctor" | "consultant" | "clinic";
 
 export type TimelineItemState = "complete" | "current" | "upcoming";
@@ -98,8 +100,22 @@ export interface ClinicManagementVm {
 
 export interface ClinicOverviewVm {
   clinicName: string;
-  seatSummary: string;
+  /** Team placement, invites, and enrollment roster — not subscription math. */
+  placementSummary: string;
+  /** Seat entitlement / internal billing counters (managers). */
+  billingSummary: string;
   pathwayMixSummary: string;
+}
+
+/** Seat snapshot for billing card; mirrors `get_clinic_billing_entitlement_snapshot`. */
+export interface ClinicSeatEntitlementVm {
+  seatLimit: number | null;
+  seatsUsed: number;
+  seatsAvailable: number | null;
+  overLimit: boolean;
+  completedEnrollmentConsumesSeat: boolean;
+  counts: ClinicBillingEntitlementCounts;
+  loadError?: string;
 }
 
 export interface TrainingAssignmentVm {
@@ -173,4 +189,6 @@ export interface ClinicDashboardVm {
   management?: ClinicManagementVm;
   /** Replaces generic team table caption when present. */
   teamProgressCaption?: string;
+  /** Present for clinic managers with clinic scope; drives Billing / access card. */
+  seatEntitlement?: ClinicSeatEntitlementVm;
 }

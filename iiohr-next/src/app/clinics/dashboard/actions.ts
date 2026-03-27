@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { logClinicSeatEntitlementContext } from "@/lib/clinic/warn-clinic-seat-entitlement";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 function revalidateClinicDashboard() {
@@ -16,6 +17,7 @@ export async function inviteClinicTeamMember(formData: FormData) {
     return;
   }
   const supabase = await createSupabaseServerClient();
+  await logClinicSeatEntitlementContext(supabase, clinicId, "inviteClinicTeamMember", "before");
   const { error } = await supabase.rpc("clinic_invite_team_member", {
     p_clinic_id: clinicId,
     p_invite_email: email,
@@ -26,6 +28,7 @@ export async function inviteClinicTeamMember(formData: FormData) {
     console.error("[inviteClinicTeamMember]", error.message);
     return;
   }
+  await logClinicSeatEntitlementContext(supabase, clinicId, "inviteClinicTeamMember", "after");
   revalidateClinicDashboard();
 }
 
