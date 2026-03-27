@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ClinicDashboardWorkspace } from "@/components/dashboard/workspaces/ClinicDashboardWorkspace";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
+import { linkPendingClinicInvitesForSession } from "@/lib/clinic/link-pending-invites";
 import { buildClinicDashboardVm, loadDashboardDisplayName } from "@/lib/dashboard";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
@@ -17,6 +18,9 @@ export default async function ClinicsDashboardPage() {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  if (user) {
+    await linkPendingClinicInvitesForSession(supabase);
+  }
   const displayName = user ? await loadDashboardDisplayName(supabase, user.id, user.email ?? undefined) : null;
 
   const vm = await buildClinicDashboardVm(supabase, {

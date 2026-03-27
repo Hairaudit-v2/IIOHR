@@ -112,6 +112,11 @@ export async function buildClinicDashboardVm(
   const seatSummaryParts: string[] = [];
   if (snap.clinicId) {
     seatSummaryParts.push("Clinic scope resolved for this account.");
+    if (snap.isClinicManager) {
+      seatSummaryParts.push(
+        "Pending email invites are linked to learner accounts automatically when they sign in with the same email (placement only — enrollment is provisioned separately)."
+      );
+    }
     if (snap.teamMembers.length > 0) {
       seatSummaryParts.push(`${snap.teamMembers.length} learner enrollment(s) in this clinic.`);
     } else if (snap.isClinicManager) {

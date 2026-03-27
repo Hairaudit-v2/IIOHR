@@ -213,6 +213,12 @@ export function ClinicTeamManagementPanel({ vm }: { vm: ClinicDashboardVm }) {
             </form>
           </section>
         ) : null}
+
+        <p className="mt-6 border-t border-border/60 pt-6 text-xs leading-relaxed text-readable-subtle">
+          When an invited learner signs in with the same email as the invite, their placement row is linked to their
+          account automatically. Program enrollment is still created only through admissions — placement is not an
+          enrollment.
+        </p>
       </div>
     </Card>
   );

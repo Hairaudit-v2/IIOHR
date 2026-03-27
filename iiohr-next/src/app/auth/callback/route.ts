@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
 import { fetchIiohrAccessSnapshot, mergeIiohrPostLoginWithNext } from "@/lib/auth/iiohr-post-login";
 import { sanitizeRedirectPath } from "@/lib/auth/safe-redirect-path";
+import { linkPendingClinicInvitesForSession } from "@/lib/clinic/link-pending-invites";
 
 /**
  * Supabase Auth redirect target (PKCE `code`, or `token_hash` + `type` for some email flows).
@@ -66,6 +67,8 @@ export async function GET(request: NextRequest) {
   if (!user) {
     return NextResponse.redirect(new URL("/login?error=auth", url.origin));
   }
+
+  await linkPendingClinicInvitesForSession(supabase);
 
   const safeNext = sanitizeRedirectPath(nextRaw);
   const snapshot = await fetchIiohrAccessSnapshot(supabase, user.id);
