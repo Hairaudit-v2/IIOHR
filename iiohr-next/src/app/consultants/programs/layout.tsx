@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import { assertIiohrEntitledPath } from "@/lib/auth/iiohr-route-guard";
 
 export const metadata: Metadata = {
   robots: {
@@ -7,10 +9,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ConsultantProgramsLayout({
+export default async function ConsultantProgramsLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: ReactNode }>) {
+  await assertIiohrEntitledPath("/consultants/programs");
   return children;
 }

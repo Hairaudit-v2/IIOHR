@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { type NextRequest, NextResponse } from "next/server";
+import { pathRequiresIiohrSession } from "@/lib/auth/iiohr-protected-paths";
 
 /**
  * Keeps Supabase auth cookies fresh. Required for reliable session in Server Actions.
@@ -26,7 +27,19 @@ export async function middleware(request: NextRequest) {
     },
   });
 
-  await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user && pathRequiresIiohrSession(request.nextUrl.pathname)) {
+    const login = new URL("/login", request.url);
+    login.searchParams.set(
+      "redirectTo",
+      `${request.nextUrl.pathname}${request.nextUrl.search}`
+    );
+    return NextResponse.redirect(login);
+  }
+
   return response;
 }
 

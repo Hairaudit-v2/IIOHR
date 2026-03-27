@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { ApplicantApplicationStatusPanel } from "@/components/academy/admissions/ApplicantApplicationStatusPanel";
-import { ProgressSummaryCard } from "@/components/academy/shared/ProgressSummaryCard";
+import { ConsultantDashboardWorkspace } from "@/components/dashboard/workspaces/ConsultantDashboardWorkspace";
+import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { getLatestApplicationForUserStream } from "@/lib/academy/admissions/application-queries";
 import { loadApplicantAdmissionsTimeline } from "@/lib/academy/admissions/applicant-timeline";
+import { buildConsultantDashboardVm, loadDashboardDisplayName } from "@/lib/dashboard";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
-import { SectionShell } from "@/components/sections/shared/SectionShell";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
@@ -20,33 +20,33 @@ export default async function ConsultantsDashboardPage() {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  const displayName = user ? await loadDashboardDisplayName(supabase, user.id, user.email ?? undefined) : null;
   const latestApp = user ? await getLatestApplicationForUserStream(supabase, user.id, "consultants") : null;
   const timelineEntries =
     user && latestApp ? await loadApplicantAdmissionsTimeline(supabase, latestApp.id) : [];
 
+  const vm = await buildConsultantDashboardVm(supabase, {
+    userId: user?.id ?? "",
+    displayName,
+    application: latestApp,
+  });
+
   return (
     <SectionShell>
-      <SectionHeading
-        eyebrow="Consultant Dashboard"
-        title="Consultant learner dashboard"
-        description="Dashboard routes are now consultant-specific and ready to connect to progress, competency, faculty review, and certificate services."
+      <ConsultantDashboardWorkspace
+        vm={vm}
+        admissionsPanel={
+          latestApp ? (
+            <ApplicantApplicationStatusPanel
+              stream="consultants"
+              app={latestApp}
+              applyPath="/apply/consultants"
+              variant="compact"
+              timelineEntries={timelineEntries}
+            />
+          ) : undefined
+        }
       />
-      {latestApp ? (
-        <div className="mt-8 max-w-2xl">
-          <ApplicantApplicationStatusPanel
-            stream="consultants"
-            app={latestApp}
-            applyPath="/apply/consultants"
-            variant="compact"
-            timelineEntries={timelineEntries}
-          />
-        </div>
-      ) : null}
-      <div className="mt-12 grid gap-4 md:grid-cols-3">
-        <ProgressSummaryCard title="Levels" value="3" supportingText="Foundation, advanced, and diploma pathways are seeded." />
-        <ProgressSummaryCard title="Modules" value="15" supportingText="Consultant curriculum backbone is now content-driven." />
-        <ProgressSummaryCard title="Competencies" value="15" supportingText="Competencies are first-class entities, not certificate prose." />
-      </div>
     </SectionShell>
   );
 }
