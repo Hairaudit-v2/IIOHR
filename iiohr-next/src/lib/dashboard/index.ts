@@ -9,3 +9,7 @@ export {
 } from "@/lib/dashboard/map-application-to-stage";
 export { fetchLearnerDashboardSnapshot } from "@/lib/dashboard/readers/learner-dashboard-snapshot";
 export { fetchClinicDashboardSnapshot } from "@/lib/dashboard/readers/clinic-dashboard-snapshot";
+export type {
+  ClinicDashboardSnapshot,
+  ClinicTeamMemberSnapshot,
+} from "@/lib/dashboard/readers/clinic-dashboard-snapshot";

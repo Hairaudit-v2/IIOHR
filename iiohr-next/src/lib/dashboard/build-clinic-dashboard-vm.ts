@@ -24,6 +24,17 @@ function defaultCertificates(): ClinicDashboardVm["certificatesOverview"] {
   };
 }
 
+function formatLastActivity(iso: string | null | undefined): string | undefined {
+  if (!iso) return undefined;
+  try {
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return undefined;
+    return d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  } catch {
+    return undefined;
+  }
+}
+
 export async function buildClinicDashboardVm(
   supabase: SupabaseClient,
   input: { userId: string; displayName: string | null }
@@ -32,23 +43,28 @@ export async function buildClinicDashboardVm(
 
   const setupIncomplete = !snap.isClinicManager && !snap.clinicId;
 
-  const teamMembers: ClinicDashboardVm["teamMembers"] =
-    snap.teamEnrollments.length > 0
-      ? snap.teamEnrollments.map((row, i) => ({
-          id: row.id,
-          name: `Learner ${i + 1}`,
-          role: row.stream_slug === "doctors" ? "Doctor track" : "Consultant track",
-          pathwayLabel: getProgram(row.program_slug)?.title ?? row.program_slug,
-          progressPercent: snap.progressByEnrollmentId[row.id] ?? 0,
-          lastActivityHint: "Enrollment-backed",
-        }))
+  const teamVm: ClinicDashboardVm["teamMembers"] =
+    snap.teamMembers.length > 0
+      ? snap.teamMembers.map((row) => {
+          const activity = formatLastActivity(row.last_activity_at);
+          const statusLabel = row.enrollment_status?.replace(/_/g, " ") ?? "";
+          const hintParts = [statusLabel, activity].filter(Boolean);
+          return {
+            id: row.enrollment_id,
+            name: row.display_name?.trim() ? row.display_name.trim() : "Learner",
+            role: row.stream_slug === "doctors" ? "Doctor track" : "Consultant track",
+            pathwayLabel: getProgram(row.program_slug)?.title ?? row.program_slug,
+            progressPercent: row.progress_percent ?? 0,
+            lastActivityHint: hintParts.length > 0 ? hintParts.join(" · ") : "—",
+          };
+        })
       : [];
 
-  const hasDoc = snap.teamEnrollments.some((t) => t.stream_slug === "doctors");
-  const hasCon = snap.teamEnrollments.some((t) => t.stream_slug === "consultants");
+  const hasDoc = snap.teamMembers.some((t) => t.stream_slug === "doctors");
+  const hasCon = snap.teamMembers.some((t) => t.stream_slug === "consultants");
 
   const trainingByRole: ClinicDashboardVm["trainingByRole"] =
-    snap.teamEnrollments.length > 0
+    snap.teamMembers.length > 0
       ? [
           {
             roleLabel: "Surgeons / doctors",
@@ -71,27 +87,47 @@ export async function buildClinicDashboardVm(
         ]
       : defaultTrainingByRole();
 
+  const seatSummaryParts: string[] = [];
+  if (snap.clinicId) {
+    seatSummaryParts.push("Clinic scope resolved for this account.");
+    if (snap.teamMembers.length > 0) {
+      seatSummaryParts.push(`${snap.teamMembers.length} learner enrollment(s) in this clinic (active, paused, or completed).`);
+    } else if (snap.isClinicManager) {
+      seatSummaryParts.push("No learner enrollments under this clinic_id yet.");
+    }
+    if (snap.teamSnapshotError) {
+      seatSummaryParts.push(`Team snapshot: ${snap.teamSnapshotError}`);
+    }
+  } else {
+    seatSummaryParts.push("No clinic scope on this account — map a clinic in admin or enrol with a clinic_id.");
+  }
+
   const overview: ClinicDashboardVm["overview"] = {
     clinicName: input.displayName ? `${input.displayName}'s organisation` : "Your clinic",
-    seatSummary: snap.clinicId
-      ? snap.teamEnrollments.length > 0
-        ? `${snap.teamEnrollments.length} active enrollment(s) under this clinic scope.`
-        : "Clinic scope on record — team rows appear when learners are enrolled with this clinic_id (RLS may limit visibility until policies are extended)."
-      : "No clinic scope detected on this account — link your organisation through admissions or internal provisioning.",
+    seatSummary: seatSummaryParts.join(" "),
     pathwayMixSummary:
-      snap.teamEnrollments.length > 0
+      snap.teamMembers.length > 0
         ? `Active streams: ${[hasDoc && "doctors", hasCon && "consultants"].filter(Boolean).join(", ") || "—"}.`
-      : "Doctor and consultant tracks can run in parallel for the same site.",
+        : "Doctor and consultant tracks can run in parallel for the same site.",
   };
 
   const certificatesOverview: ClinicDashboardVm["certificatesOverview"] =
-    snap.teamEnrollments.length > 0
+    snap.teamMembers.length > 0
       ? {
           headline: "Certificates & completions",
-          body: "Team has active enrollments — certificate roll-ups will reflect issued awards per learner as they complete programs.",
+          body:
+            snap.teamCertificateTotal > 0
+              ? `Total certificate awards recorded across the team: ${snap.teamCertificateTotal}. Individual PDF downloads are managed in each learner’s own dashboard, not here.`
+              : "No certificate awards recorded for this team yet — they will appear as learners complete eligible programs.",
           items: [
-            { label: "Active program enrollments (team)", state: "in_progress" },
-            { label: "Issued credentials (aggregate)", state: "pending" },
+            {
+              label: "Certificates issued (team aggregate)",
+              state: snap.teamCertificateTotal > 0 ? "in_progress" : "pending",
+            },
+            {
+              label: "Team enrollments tracked",
+              state: "in_progress",
+            },
           ],
           downloadReadyCount: 0,
         }
@@ -105,17 +141,20 @@ export async function buildClinicDashboardVm(
         state: snap.isClinicManager && snap.clinicId ? "ready" : snap.isClinicManager ? "in_progress" : "not_started",
         detail: snap.isClinicManager
           ? snap.clinicId
-            ? "Clinic manager role with clinic scope"
-            : "Manager role — awaiting clinic_id linkage"
+            ? snap.clinicIds.length > 1
+              ? `${snap.clinicIds.length} clinic scope(s) — dashboard shows primary`
+              : "Clinic manager role with clinic scope"
+            : "Manager role — add clinic_manager_clinics row or enroll with clinic_id"
           : "Requires clinic manager role",
       },
       {
         label: "Training roster",
-        state: snap.teamEnrollments.length > 0 ? "in_progress" : "not_started",
-        detail:
-          snap.teamEnrollments.length > 0
-            ? `${snap.teamEnrollments.length} enrollment(s) visible`
-            : "No team enrollments visible yet",
+        state: snap.teamMembers.length > 0 ? "in_progress" : "not_started",
+        detail: snap.teamSnapshotError
+          ? `Snapshot: ${snap.teamSnapshotError}`
+          : snap.teamMembers.length > 0
+            ? `${snap.teamMembers.length} enrollment row(s) from secure clinic snapshot`
+            : "No team rows yet",
       },
       {
         label: "Pathway assignment",
@@ -136,16 +175,16 @@ export async function buildClinicDashboardVm(
     heroSubtitle:
       "Team development, pathway assignment by role, and completion visibility — aligned to IIOHR’s clinic promise.",
     overview,
-    teamMembers,
+    teamMembers: teamVm,
     trainingByRole,
-    teamProgress: teamMembers,
+    teamProgress: teamVm,
     certificatesOverview,
     implementation,
     setupIncomplete,
     emptyState: setupIncomplete
       ? {
           title: "Clinic setup incomplete",
-          body: `Ensure this account has the clinic manager role and a linked clinic scope. Continue your clinic journey or contact ${siteConfig.emails.clinics}.`,
+          body: `Ensure this account has the clinic_manager role and a clinic mapping (admin-maintained clinic_manager_clinics or an enrollment with clinic_id). Contact ${siteConfig.emails.clinics}.`,
           primaryHref: "/apply/clinics",
           primaryLabel: "Clinic continuation",
         }
