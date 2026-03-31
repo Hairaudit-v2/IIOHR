@@ -6,6 +6,8 @@ import { Card } from "@/components/ui/Card";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { applyTrainingHref } from "@/lib/navigation";
+import { IiohrGuidesSection } from "@/components/guides/IiohrGuidesSection";
+import { getIiohrGuidesByIds } from "@/lib/guides/iiohr-guides";
 
 const canonical = "https://iiohr.com/admissions";
 
@@ -126,6 +128,17 @@ export default function AdmissionsPage() {
         tertiaryCta={{ href: "/training-pathways", label: "View Training Pathways" }}
         analyticsPage="/admissions"
       />
+
+      <SectionShell muted joinPrevious compact>
+        <IiohrGuidesSection
+          layout="compact"
+          guides={getIiohrGuidesByIds(["iiohr-admissions"])}
+          viewAllHref="/about#iiohr-guides"
+          viewAllLabel="All IIOHR guides (PDF)"
+          analyticsPage="/admissions"
+          analyticsSection="admissions_guide"
+        />
+      </SectionShell>
 
       <SectionShell muted joinPrevious>
         <SectionHeading

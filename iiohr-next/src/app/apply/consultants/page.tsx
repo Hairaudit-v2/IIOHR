@@ -17,6 +17,8 @@ import { mergeApplyInitialAnswers } from "@/lib/academy/admissions/merge-apply-i
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { applyTrainingHref } from "@/lib/navigation";
 import { saveStreamApplicationDraftAction, submitStreamApplicationAction } from "../stream-application-actions";
+import { IiohrGuidesSection } from "@/components/guides/IiohrGuidesSection";
+import { getIiohrGuidesByIds } from "@/lib/guides/iiohr-guides";
 
 export const metadata: Metadata = {
   title: "Apply — Consultant / nurse academy stream",
@@ -88,6 +90,15 @@ export default async function ApplyConsultantsPage({
           Complete your applicant and professional details, accept the required consents, then submit. You can save a draft
           at any time; your account email and name are pre-filled when available—please confirm before submitting.
         </p>
+
+        <IiohrGuidesSection
+          layout="compact"
+          guides={getIiohrGuidesByIds(["iiohr-admissions"])}
+          viewAllHref="/about#iiohr-guides"
+          viewAllLabel="All IIOHR guides (PDF)"
+          analyticsPage="/apply/consultants"
+          analyticsSection="apply_consultants_admissions_guide"
+        />
 
         {sp.submitted ? (
           <p className="mt-6 rounded-lg border border-border bg-[var(--bg-soft)] p-4 text-foreground">

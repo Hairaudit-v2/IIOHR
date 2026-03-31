@@ -4,6 +4,8 @@ import { ContinuationAnalyticsBeacon } from "@/components/analytics/Continuation
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { siteConfig } from "@/lib/site";
 import { applyTrainingHref } from "@/lib/navigation";
+import { IiohrGuidesSection } from "@/components/guides/IiohrGuidesSection";
+import { getIiohrGuidesByIds } from "@/lib/guides/iiohr-guides";
 
 export const metadata: Metadata = {
   title: "Clinic / group enquiry continuation",
@@ -43,6 +45,23 @@ export default async function ApplyClinicsPage() {
           This account page is for clinics and groups progressing an admissions enquiry. It is intentionally enquiry-led,
           with no academy stream assumptions.
         </p>
+
+        <IiohrGuidesSection
+          layout="compact"
+          guides={getIiohrGuidesByIds(["iiohr-admissions"])}
+          viewAllHref="/about#iiohr-guides"
+          viewAllLabel="All IIOHR guides (PDF)"
+          analyticsPage="/apply/clinics"
+          analyticsSection="apply_clinics_admissions_guide"
+        />
+        <IiohrGuidesSection
+          layout="compact"
+          guides={getIiohrGuidesByIds(["iiohr-institutional"])}
+          viewAllHref="/about#iiohr-guides"
+          viewAllLabel="All IIOHR guides (PDF)"
+          analyticsPage="/apply/clinics"
+          analyticsSection="apply_clinics_institutional_guide"
+        />
 
         {!user ? (
           <p className="mt-8 rounded-lg border border-border bg-[var(--bg-secondary)] p-4 text-readable-muted">

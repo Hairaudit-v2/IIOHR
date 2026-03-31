@@ -6,6 +6,8 @@ import { PathwayStructureSection } from "@/components/sections/training-pathways
 import { StagedProgressionSection } from "@/components/sections/training-pathways/StagedProgressionSection";
 import { TrainingPathwaysCtaSection } from "@/components/sections/training-pathways/TrainingPathwaysCtaSection";
 import { TrainingPathwaysHero } from "@/components/sections/training-pathways/TrainingPathwaysHero";
+import { IiohrGuidesSection } from "@/components/guides/IiohrGuidesSection";
+import { getIiohrGuidesByIds } from "@/lib/guides/iiohr-guides";
 
 const canonical = "https://iiohr.com/training-pathways";
 
@@ -26,6 +28,16 @@ export default function TrainingPathwaysPage() {
       <StagedProgressionSection />
       <IntegratedModelSection />
       <EntrantLevelsSection />
+      <IiohrGuidesSection
+        guides={getIiohrGuidesByIds(["why-iiohr-executive", "iiohr-institutional"])}
+        eyebrow="Downloads"
+        title="Orientation guides"
+        description="Executive and institutional PDFs for stakeholders reviewing pathways, standards, and partner context."
+        viewAllHref="/about#iiohr-guides"
+        viewAllLabel="View all IIOHR guides"
+        analyticsPage="/training-pathways"
+        analyticsSection="pathways_guides"
+      />
       <TrainingPathwaysCtaSection />
     </>
   );

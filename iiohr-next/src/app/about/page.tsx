@@ -7,6 +7,8 @@ import { InstituteDifferenceSection } from "@/components/sections/about/Institut
 import { MissionPositioningSection } from "@/components/sections/about/MissionPositioningSection";
 import { ShortCourseLimitationsSection } from "@/components/sections/about/ShortCourseLimitationsSection";
 import { StandardsDevelopmentSection } from "@/components/sections/about/StandardsDevelopmentSection";
+import { IiohrGuidesSection } from "@/components/guides/IiohrGuidesSection";
+import { IIOHR_GUIDES } from "@/lib/guides/iiohr-guides";
 
 const canonical = "https://iiohr.com/about";
 
@@ -28,6 +30,14 @@ export default function AboutPage() {
       <GovernanceStandardsSection />
       <StandardsDevelopmentSection />
       <EcosystemRelationshipSection />
+      <IiohrGuidesSection
+        guides={IIOHR_GUIDES}
+        sectionId="iiohr-guides"
+        eyebrow="Downloads"
+        title="IIOHR guides (PDF)"
+        description="Executive, admissions, and institutional PDFs you can share with colleagues or review offline."
+        analyticsPage="/about"
+      />
       <AboutCtaSection />
     </>
   );

@@ -2,6 +2,8 @@ import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { LinkArrow } from "@/components/ui/LinkArrow";
+import { IiohrGuidesSection } from "@/components/guides/IiohrGuidesSection";
+import { getIiohrGuidesByIds } from "@/lib/guides/iiohr-guides";
 
 const introPoints = [
   "Confirm this route is appropriate for your current role and development stage.",
@@ -20,6 +22,14 @@ export function ApplyIntroductionSection() {
       <div className="mt-10">
         <LinkArrow href="/admissions">Not sure if this is the right step? Review admissions first</LinkArrow>
       </div>
+      <IiohrGuidesSection
+        layout="compact"
+        guides={getIiohrGuidesByIds(["iiohr-admissions"])}
+        viewAllHref="/about#iiohr-guides"
+        viewAllLabel="All IIOHR guides (PDF)"
+        analyticsPage="/apply"
+        analyticsSection="apply_admissions_guide"
+      />
       <div className="mt-12 grid gap-4 md:grid-cols-3">
         {introPoints.map((point, index) => (
           <Card key={point} quiet className="h-full">

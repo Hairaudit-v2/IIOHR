@@ -26,6 +26,7 @@ export const utilityNavigation: NavigationItem[] = [
 export const footerNavigation: NavigationItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/about#iiohr-guides", label: "Downloadable guides" },
   { href: "/academy", label: "Academy" },
   { href: "/doctors", label: "Doctor Academy" },
   { href: "/consultants", label: "Consultants / nurses academy" },

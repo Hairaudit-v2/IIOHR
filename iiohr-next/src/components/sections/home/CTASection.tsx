@@ -2,6 +2,9 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionShell } from "@/components/sections/shared/SectionShell";
 import { SectionCTA } from "@/components/ui/SectionCTA";
+import { IIOHR_GUIDE_DESTINATIONS } from "@/lib/guides/iiohr-guide-destinations";
+import { getIiohrGuide } from "@/lib/guides/iiohr-guides";
+import { iiohrGuideDownloadFilename } from "@/lib/guides/iiohr-guides";
 
 const segmentLinks = [
   {
@@ -22,6 +25,9 @@ const segmentLinks = [
 ];
 
 export function CTASection() {
+  const executiveGuide = getIiohrGuide("why-iiohr-executive");
+  const execFile = executiveGuide ? iiohrGuideDownloadFilename(executiveGuide) : "";
+
   return (
     <SectionShell anchor>
       <SectionHeading
@@ -40,6 +46,98 @@ export function CTASection() {
         analyticsSection="next_step"
         className="mt-16"
       />
+      {executiveGuide ? (
+        <div className="mt-12 rounded-xl border border-border/75 bg-surface/72 px-4 py-4 sm:px-5">
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">PDF guide</p>
+          <p className="mt-2 text-sm text-foreground">
+            <span className="font-medium">{executiveGuide.shortTitle}</span>
+            <span className="text-muted-foreground"> — </span>
+            <span className="text-muted-foreground">Executive overview</span>
+          </p>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <a
+              href={executiveGuide.fileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-premium font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2"
+              aria-label={`${executiveGuide.primaryCtaLabel} — ${executiveGuide.shortTitle} (opens in new tab)`}
+              data-analytics-event="guide_pdf_view"
+              data-analytics-page="/"
+              data-analytics-section="home_cta_guides"
+              data-analytics-guide-id={executiveGuide.id}
+              data-analytics-destination={executiveGuide.fileUrl}
+            >
+              {executiveGuide.primaryCtaLabel}
+            </a>
+            <a
+              href={executiveGuide.fileUrl}
+              download={execFile}
+              className="link-premium font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-intel/50 focus-visible:ring-offset-2"
+              aria-label={`${executiveGuide.secondaryCtaLabel} — ${executiveGuide.shortTitle}`}
+              data-analytics-event="guide_pdf_download"
+              data-analytics-page="/"
+              data-analytics-section="home_cta_guides"
+              data-analytics-guide-id={executiveGuide.id}
+              data-analytics-destination={executiveGuide.fileUrl}
+            >
+              {executiveGuide.secondaryCtaLabel}
+            </a>
+            <Link
+              href="/about#iiohr-guides"
+              className="link-premium font-semibold"
+              data-analytics-event="funnel_cta_clicked"
+              data-analytics-page="/"
+              data-analytics-cta="All guides"
+              data-analytics-section="home_cta_guides"
+              data-analytics-destination="/about#iiohr-guides"
+            >
+              All guides
+            </Link>
+          </div>
+          <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
+            <span className="font-semibold uppercase tracking-[0.12em]">Ecosystem</span>
+            {" · "}
+            <a
+              href={IIOHR_GUIDE_DESTINATIONS.hairAudit.absoluteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-premium font-medium"
+              data-analytics-event="guide_related_link"
+              data-analytics-page="/"
+              data-analytics-section="home_cta_guides_ecosystem"
+              data-analytics-destination={IIOHR_GUIDE_DESTINATIONS.hairAudit.absoluteUrl}
+            >
+              HairAudit
+            </a>
+            {" · "}
+            <a
+              href={IIOHR_GUIDE_DESTINATIONS.hli.absoluteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-premium font-medium"
+              data-analytics-event="guide_related_link"
+              data-analytics-page="/"
+              data-analytics-section="home_cta_guides_ecosystem"
+              data-analytics-destination={IIOHR_GUIDE_DESTINATIONS.hli.absoluteUrl}
+            >
+              Hair Longevity Institute
+            </a>
+            {" · "}
+            <a
+              href={IIOHR_GUIDE_DESTINATIONS.follicleIntelligence.absoluteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-premium font-medium"
+              data-analytics-event="guide_related_link"
+              data-analytics-page="/"
+              data-analytics-section="home_cta_guides_ecosystem"
+              data-analytics-destination={IIOHR_GUIDE_DESTINATIONS.follicleIntelligence.absoluteUrl}
+            >
+              Follicle Intelligence
+            </a>
+          </p>
+        </div>
+      ) : null}
       <div className="mt-16 pt-12">
         <div
           className="mb-10 h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-border/65 to-transparent"

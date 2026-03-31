@@ -6,6 +6,8 @@ import { ForClinicsCtaSection } from "@/components/sections/for-clinics/ForClini
 import { ForClinicsHero } from "@/components/sections/for-clinics/ForClinicsHero";
 import { InternalTalentBenefitsSection } from "@/components/sections/for-clinics/InternalTalentBenefitsSection";
 import { StructuredDevelopmentNeedSection } from "@/components/sections/for-clinics/StructuredDevelopmentNeedSection";
+import { IiohrGuidesSection } from "@/components/guides/IiohrGuidesSection";
+import { getIiohrGuidesByIds } from "@/lib/guides/iiohr-guides";
 
 const canonical = "https://iiohr.com/for-clinics";
 
@@ -26,6 +28,16 @@ export default function ForClinicsPage() {
       <AuditStandardsMentorshipSection />
       <ClinicImplementationSection />
       <ClinicPathwaysSection />
+      <IiohrGuidesSection
+        guides={getIiohrGuidesByIds(["iiohr-institutional"])}
+        eyebrow="Downloads"
+        title="Institutional guide (PDF)"
+        description="Share or save the institute-level overview for leadership and partnership discussions."
+        viewAllHref="/about#iiohr-guides"
+        viewAllLabel="All IIOHR guides"
+        analyticsPage="/for-clinics"
+        analyticsSection="clinic_institutional_guide"
+      />
       <ForClinicsCtaSection />
     </>
   );
