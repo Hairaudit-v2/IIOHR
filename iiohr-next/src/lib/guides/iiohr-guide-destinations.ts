@@ -1,10 +1,11 @@
 import { siteConfig } from "@/lib/site";
 
 /**
- * Canonical origin for absolute URLs used in PDFs, emails, and external docs.
- * Aligns with public marketing URLs (e.g. doctors pathway).
+ * Canonical production origin for guide absolute URLs (PDF share links, hyperlink authoring).
+ * Derived from `siteConfig.links.iiohr` so it stays aligned with `app/layout.tsx` metadataBase
+ * and page-level canonicals (`https://iiohr.com`, no www).
  */
-export const IIOHR_GUIDE_SITE_ORIGIN = "https://www.iiohr.com" as const;
+export const IIOHR_GUIDE_SITE_ORIGIN: string = new URL(siteConfig.links.iiohr).origin;
 
 /** Core IIOHR + ecosystem targets for guide CTAs and PDF hyperlink authoring. */
 export type IiohrGuideDestinationKey =

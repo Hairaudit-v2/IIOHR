@@ -1,60 +1,89 @@
 # IIOHR public PDF guides
 
-## Where the final PDFs go
+## Canonical host (production)
 
-- **Directory:** `iiohr-next/public/guides/iiohr/`
-- **Filenames (stable — do not rename):**
+- **Site-wide:** `https://iiohr.com` — see `app/layout.tsx` (`metadataBase`), `siteConfig.links.iiohr`, and per-page `canonical` constants.
+- **Guide absolute URLs:** Built with **`IIOHR_GUIDE_SITE_ORIGIN`** in `iiohr-guide-destinations.ts`, sourced from `siteConfig.links.iiohr`, so PDF/embed links stay consistent with SEO canonicals.
+
+Public **paths** are always root-relative in the app (e.g. `/guides/iiohr/...`, `/admissions`); only share/PDF-authoring URLs include the origin.
+
+---
+
+## Stable public PDF paths (do not change)
+
+Files on disk:
+
+- **Folder:** `iiohr-next/public/guides/iiohr/`
+- **Filenames (exact):**
   - `why-iiohr-executive-guide.pdf`
   - `iiohr-admissions-guide.pdf`
   - `iiohr-institutional-guide.pdf`
 
-Replace files in place to update content. Public URLs stay:
+Public URLs (same on production):
 
-- `https://www.iiohr.com/guides/iiohr/why-iiohr-executive-guide.pdf` (and the same path on the deployed host)
-- Same pattern for the other two filenames.
+- `/guides/iiohr/why-iiohr-executive-guide.pdf`
+- `/guides/iiohr/iiohr-admissions-guide.pdf`
+- `/guides/iiohr/iiohr-institutional-guide.pdf`
 
-In-app, PDFs are still referenced with root-relative paths (e.g. `/guides/iiohr/...`). Absolute URLs for embedding in PDFs or email are built in code — see below.
+Absolute examples (origin from `IIOHR_GUIDE_SITE_ORIGIN`):
+
+- `https://iiohr.com/guides/iiohr/why-iiohr-executive-guide.pdf` (and the two sibling filenames)
+
+---
+
+## Pre-flight checklist: replacing PDF files
+
+Use this before or after dropping in final exported PDFs.
+
+1. **Location:** Replace only under `iiohr-next/public/guides/iiohr/` (not under `src/`).
+2. **Filenames:** Keep the three names above exactly — no renames, no extra segments.
+3. **In-PDF links:** When adding clickable links inside the PDFs, use URLs from **`iiohr-guide-hyperlink-map.ts`** (`IIOHR_PDF_HYPERLINK_REFERENCE_TABLE` / per-guide plan) or from **`iiohr-guide-destinations.ts`** so they match production.
+4. **After replacement:** In the deployed or local site, open each guide card (About hub is enough) and verify **View PDF** (new tab) and **Download PDF** both serve the new file.
+5. **Related pages:** Spot-check **Related pages** on hub cards and the home CTA ecosystem row — internal routes still use `sitePath`; external ecosystem URLs come from `siteConfig.links`.
+
+---
 
 ## Destination URL constants (single source of truth)
 
 - **`src/lib/guides/iiohr-guide-destinations.ts`**
   - Nine keyed destinations: `iiohrHome`, `academy`, `apply`, `admissionsReview`, `doctorsPathway`, `consultantsPathway`, `follicleIntelligence`, `hli`, `hairAudit`
-  - IIOHR pages use origin **`https://www.iiohr.com`** for absolute URLs (PDF-safe).
+  - On-site IIOHR pages use **`IIOHR_GUIDE_SITE_ORIGIN`** + path (aligned with apex canonical host).
   - Ecosystem URLs mirror `siteConfig.links` (HairAudit, Follicle Intelligence, Hair Longevity Institute).
   - **`IIOHR_GUIDE_FOR_CLINICS`** — institutional / partnership page (`/for-clinics`); not part of the nine-key enum.
 
 ## Guide metadata
 
 - **`src/lib/guides/iiohr-guides.ts`** — titles, PDF paths, `relatedDestinationRefs` for on-site hub cards.
-- **`getIiohrGuidePrimaryPdfAbsoluteUrls(guide)`** — `primaryViewUrl` / `primaryDownloadUrl` (same href today; stable for tooling).
+- **`getIiohrGuidePrimaryPdfAbsoluteUrls(guide)`** — `primaryViewUrl` / `primaryDownloadUrl` using `IIOHR_GUIDE_SITE_ORIGIN` + `guide.fileUrl`.
 
 ## In-PDF hyperlink map (authoring reference)
 
 - **`src/lib/guides/iiohr-guide-hyperlink-map.ts`**
-  - `IIOHR_PDF_HYPERLINK_REFERENCE_TABLE` — every named anchor id and **exact URL** to paste into PDF editors.
-  - `IIOHR_GUIDE_HYPERLINK_PLAN` — per-guide list of recommended anchors for the executive, admissions, and institutional PDFs.
+  - `IIOHR_PDF_HYPERLINK_REFERENCE_TABLE` — named anchor ids and **exact URLs** for PDF editors.
+  - `IIOHR_GUIDE_HYPERLINK_PLAN` — per-guide recommended anchors.
 
-There is **no** automated PDF post-processing in this repo; the map is the contract for design/production when adding clickable links inside the files.
-
-## What still requires manual PDF work
-
-- Open each final PDF in your authoring tool and add links using the URLs from `iiohr-guide-hyperlink-map.ts` (or from `iiohr-guide-destinations.ts`).
-- After linking, spot-check that `apply` links include the `#application-form` fragment where the form should open.
+There is **no** automated PDF post-processing in this repo.
 
 ## Where CTAs render
 
 - **Hub (section layout + related links):** `/about#iiohr-guides` — `IiohrGuidesSection`.
 - **Compact blocks (PDF only, no related list):** `/admissions`, `/apply`, `/apply/doctors`, `/apply/consultants`, `/apply/clinics`.
-- **Training Pathways / For Clinics:** section layouts with PDFs + related links where the section shows multiple cards.
-- **Home:** `CTASection` — executive PDF View/Download unchanged; ecosystem row uses destination constants.
+- **Training Pathways / For Clinics:** section layouts with PDFs + related links.
+- **Home:** `CTASection` — executive PDF View/Download; ecosystem row uses destination constants.
 - **Footer:** “Downloadable guides” → `/about#iiohr-guides`.
 
 ## UI behavior
 
-- **View PDF** / **Download PDF** → always the static files under `/guides/iiohr/*.pdf`.
-- **Related pages** (hub cards only) → `sitePath` via Next `Link` when on-site; absolute URLs open in a new tab for ecosystem sites.
+- **View PDF** / **Download PDF** → static files under `/guides/iiohr/*.pdf` (paths unchanged).
+- **Related pages** (hub cards) → Next `Link` + `sitePath` on-site; ecosystem `<a href={absoluteUrl}>` in a new tab.
+
+## What remains manual outside the codebase
+
+- Exporting final PDF binaries and copying them into `public/guides/iiohr/` (checklist above).
+- Embedding and testing links inside PDF binaries using the hyperlink map.
+- DNS / hosting: ensuring `iiohr.com` (and any `www` redirect) serves the same app so relative `/guides/...` links always work.
 
 ## Unresolved / out of scope
 
 - No dedicated “contact-only” institutional URL beyond **`/for-clinics`** and signed-in **`/apply/clinics`** continuation; the hyperlink plan notes this.
-- If marketing standardizes on non-`www` or a different apex domain, update **`IIOHR_GUIDE_SITE_ORIGIN`** in `iiohr-guide-destinations.ts` and re-export PDFs with matching links.
+- If the marketing apex URL changes, update **`siteConfig.links.iiohr`** (and layout metadata if needed); guide destinations follow via `IIOHR_GUIDE_SITE_ORIGIN`.
