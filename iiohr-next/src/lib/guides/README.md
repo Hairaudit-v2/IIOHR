@@ -87,3 +87,41 @@ There is **no** automated PDF post-processing in this repo.
 
 - No dedicated “contact-only” institutional URL beyond **`/for-clinics`** and signed-in **`/apply/clinics`** continuation; the hyperlink plan notes this.
 - If the marketing apex URL changes, update **`siteConfig.links.iiohr`** (and layout metadata if needed); guide destinations follow via `IIOHR_GUIDE_SITE_ORIGIN`.
+
+---
+
+## Preview QA pass (guide PDFs + surfaces)
+
+**Asset status:** The three files under `public/guides/iiohr/` are **production-sized** (not byte placeholders), start with **`%PDF-1.7`**, and keep the exact required filenames. To refresh content later, overwrite those files in place (see pre-flight checklist above).
+
+**Static / code verification (no browser session):**
+
+- **PDF paths:** `/guides/iiohr/why-iiohr-executive-guide.pdf`, `iiohr-admissions-guide.pdf`, `iiohr-institutional-guide.pdf` — served from `public/` by Next; no dynamic routes.
+- **Absolute helpers:** `IIOHR_GUIDE_SITE_ORIGIN` resolves to `https://iiohr.com` via `siteConfig.links.iiohr`; `getIiohrGuidePrimaryPdfAbsoluteUrls` = that origin + root-relative `guide.fileUrl`.
+- **Hyperlink map:** `iiohr-guide-hyperlink-map.ts` builds rows from `IIOHR_GUIDE_DESTINATIONS` — same apex host for on-site targets.
+- **`next build`:** Run before preview deploy to confirm guide components compile (no guide-specific hydration logic; hub uses `Link` + static anchors).
+
+**Surfaces to exercise in a live click-through (staging / preview URL):**
+
+| Location | Expected |
+|----------|----------|
+| `/` (CTASection) | Executive guide View/Download; “All guides” → `/about#iiohr-guides`; ecosystem: HairAudit, HLI, Follicle Intelligence |
+| `/about#iiohr-guides` | All three guides; View/Download each; Related pages per card |
+| `/admissions` | Compact admissions guide; link to hub |
+| `/apply` | Compact admissions guide (ApplyIntroductionSection) |
+| `/apply/doctors`, `/apply/consultants` | Compact admissions guide |
+| `/apply/clinics` | Admissions + institutional compacts |
+| `/training-pathways` | Executive + institutional cards + hub link |
+| `/for-clinics` | Institutional card + hub link |
+| Footer “Downloadable guides” | `/about#iiohr-guides` |
+
+**Still manual outside the app**
+
+- Opening each PDF in a browser to confirm content is the intended final export (visual QA).
+- Clicking **embedded links inside** the PDF files (authoring), not the React shell.
+- Cross-browser download behavior for the `download` attribute on same-origin PDFs.
+
+**Caveats**
+
+- Preview readiness for stakeholders assumes the **deployed** host serves `public/guides/iiohr/*.pdf` with correct cache headers; after replacing files, hard-refresh or cache-bust if an old PDF appears.
+- No PDF metadata (title/author) is read by the UI; longer documents do not affect layout.
