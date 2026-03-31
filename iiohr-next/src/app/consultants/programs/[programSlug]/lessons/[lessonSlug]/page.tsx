@@ -24,7 +24,10 @@ import { ConsultantScopeStrip } from "@/components/academy/consultant/Consultant
 import { LessonChapterNav } from "@/components/academy/shared/LessonChapterNav";
 import { getProtectedAcademyAccess } from "@/lib/academy/access";
 import { buildConsultantLessonChapterNav } from "@/lib/academy/lesson-chapter-nav";
-import { CONSULTANT_ACADEMY_PILOT_LESSON_SLUG } from "@/lib/academy/pilot-lesson";
+import {
+  CONSULTANT_ACADEMY_PILOT_LESSON_SLUG,
+  NURSE_ACADEMY_PILOT_LESSON_SLUG,
+} from "@/lib/academy/pilot-lesson";
 import { getLessonPageViewModel } from "@/lib/academy/view-models/lesson";
 import { partitionDownloadableResourcesByFile } from "@/lib/academy/public-asset-exists";
 
@@ -70,7 +73,10 @@ export default async function ConsultantLessonPage({
     }
   }
 
-  if (lessonSlug === CONSULTANT_ACADEMY_PILOT_LESSON_SLUG) {
+  if (
+    lessonSlug === CONSULTANT_ACADEMY_PILOT_LESSON_SLUG ||
+    lessonSlug === NURSE_ACADEMY_PILOT_LESSON_SLUG
+  ) {
     return (
       <ConsultantPilotLessonLayout
         viewModel={viewModel}
